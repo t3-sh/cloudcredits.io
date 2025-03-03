@@ -1,0 +1,51 @@
+---
+import Logo from "@/components/Logo.astro";
+import Social from "@/components/Social.astro";
+import config from "@/config/config.json";
+import menu from "@/config/menu.json";
+import social from "@/config/social.json";
+import { markdownify } from "@/lib/utils/textConverter";
+import Search from "@/layouts/components/Search.astro";
+
+const { footer }: { footer: { name: string; url: string }[] } = menu;
+---
+
+<footer class="transform-gpu">
+  <div class="container">
+    <div
+      class="rounded-2xl backdrop-blur-xl bg-white/10 dark:bg-black/20 border border-white/10 dark:border-white/5 shadow-lg transform-gpu transition-all duration-300 hover:bg-white/15 dark:hover:bg-black/25 mb-6"
+    >
+      <div class="row items-center py-10 px-6">
+        <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
+          <Logo />
+        </div>
+        <div class="mb-8 text-center lg:col-6 lg:mb-0">
+          <ul>
+            {
+              footer.map((menu) => (
+                <li class="m-3 inline-block">
+                  <a
+                    href={menu.url}
+                    class="hover:text-primary transition-colors duration-300 px-4 py-2 rounded-full backdrop-blur-sm bg-white/5 dark:bg-white/5 border border-white/10 dark:border-white/5 hover:bg-white/15 dark:hover:bg-white/10"
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
+          <Social source={social.main} className="social-icons" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="backdrop-blur-md bg-white/5 dark:bg-black/10 border-t border-white/10 dark:border-white/5 py-7 transform-gpu"
+  >
+    <div class="container text-center text-light dark:text-darkmode-light">
+      <p set:html={markdownify(config.params.copyright)} />
+    </div>
+  </div>
+</footer>

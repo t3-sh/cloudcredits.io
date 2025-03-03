@@ -1,0 +1,38 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Providers",
+      "url": "/providers"
+    },
+    {
+      "name": "Categories",
+      "url": "/tags"
+    },
+    {
+      "name": "Roadmap",
+      "url": "/roadmap"
+    }
+  ],
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Roadmap",
+      "url": "/roadmap"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    }
+  ]
+}

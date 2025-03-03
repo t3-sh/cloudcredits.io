@@ -1,0 +1,82 @@
+provider_slug: "gcp"
+title: "Google AI Startup Program"
+meta_title: "Iterate and Innovate Faster with Google's AI Startup Program"
+intro: "Through the Google for Startups Cloud Program, AI startups can access specialized credits and resources to build on Google Cloud’s infrastructure, generative AI products, and foundation models."
+description: >
+  The Google AI Startup Program offers two distinct tiers—Start and Scale—catering to AI-focused startups from pre-seed through Series A. Qualified participants gain access to significant Google Cloud and Firebase credits, support plans, advanced AI learning resources, architectural guidance, and expert Q&A sessions. To apply, startups must meet specific eligibility requirements around founding date, funding stage, and prior usage of Google Cloud credits. Acceptance is at Google Cloud’s discretion.
+
+status: "Active"
+tags: ["cloud", "ai", "ml"]
+url: "https://cloud.google.com/startup/ai"
+value_type: "credits"
+currency: "USD"
+min_value: 2000
+max_value: 350000
+
+tiers:
+  - name: "Start Tier"
+    intro: "For pre-seed AI-first startups without institutional funding."
+    max_value: 2000
+    url: "https://cloud.google.com/startup/ai"
+    benefits:
+      - "Up to $2,000 USD in Google Cloud credits (valid for one year)"
+      - "Apply credits to Customer Care plan for unlimited technical support"
+      - "12 months of free Google Workspace Business Plus for new signups"
+      - "Access to AI experts via webinars and Q&A sessions"
+      - "Free advanced AI learning labs and workshops"
+    benefits_level: 1
+    duration: ["1 year"]
+    eligibility:
+      - "Core AI technology for primary product/solution"
+      - "No funding from institutional investors or foundations"
+      - "Founded within the last 5 years"
+      - "Not yet received Google Cloud credits beyond the free trial"
+      - "Eligibility at the discretion of Google Cloud"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Obtain Google Cloud Billing ID"
+        description: "Sign up for Google Cloud if needed to generate a billing account ID"
+        action: "Sign Up"
+        action_url: "https://cloud.google.com/"
+      - name: "Set Up Google Workspace"
+        description: "Ensure your business email matches your startup’s website domain"
+        action: "Sign Up"
+        action_url: "https://workspace.google.com/"
+      - name: "Complete the AI Startup Application"
+        description: "Provide details about your startup’s AI use case and stage"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startups"
+  - name: "Scale Tier"
+    intro: "For seed to series A AI-first startups with verified equity funding."
+    max_value: 350000
+    url: "https://cloud.google.com/startup/ai"
+    benefits:
+      - "Up to $350,000 USD in Google Cloud & Firebase credits over 2 years"
+      - "$12,000 USD in Google Cloud Enhanced Support credits for one year"
+      - "12 months of free Google Workspace Business Plus for new signups"
+      - "Access to AI experts, including roadmap insights"
+      - "Advanced AI labs, architectural guidance, and Trusted Tester early access"
+    benefits_level: 4
+    duration: ["2 years"]
+    eligibility:
+      - "Core AI technology for primary product/solution"
+      - "Equity funding from seed to Series A (if Series A, raised within last 12 months)"
+      - "Founded within the last 10 years"
+      - "Not yet received more than $4,000 in Google Cloud credits"
+      - "Eligibility at the discretion of Google Cloud"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Obtain Google Cloud Billing ID"
+        description: "Create or confirm your billing account ID under an existing Google Cloud account"
+        action: "Sign Up"
+        action_url: "https://cloud.google.com/"
+      - name: "Set Up Google Workspace"
+        description: "Use a business email from the same domain as your startup’s website"
+        action: "Sign Up"
+        action_url: "https://workspace.google.com/"
+      - name: "Complete the Scale Application"
+        description: "Provide funding stage and AI details for Google Cloud’s review"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startup/ai"
+
+faq: []

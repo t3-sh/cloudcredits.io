@@ -1,0 +1,69 @@
+provider_slug: "akamai"
+title: "Akamai $100 Free Trial & Business Credits"
+meta_title: "Instant Access with $100 Credit or Up to $5,000 for Businesses"
+intro: "Sign up for a new Akamai Connected Cloud account and receive $100 in free credits. A valid payment method is required to verify your identity, but you won't be billed unless you exceed the trial credit. Business customers can apply for up to $5,000 in credits."
+description: "This free trial provides $100 in credits for new customers interested in trying Akamai's core cloud services. The trial excludes GPU plans but can be used on many other offerings such as compute instances, Object Storage, Block Storage, and NodeBalancers. Credits expire 60 days from activation. Business customers can apply for up to $5,000 in credits with flexible payment options."
+status: "Active"
+tags: ["cloud"]
+url: "https://www.akamai.com"
+value_type: "credits"
+currency: "USD"
+max_value: 5000
+tiers:
+  - name: "Free Trial Tier"
+    intro: "Instant access to $100 credit for new customers."
+    max_value: 100
+    url: "https://www.akamai.com"
+    benefits:
+      - "$100 in free credits"
+      - "60-day credit validity"
+      - "Access to most Akamai Compute offerings (GPU plans excluded)"
+      - "24/7 support via phone and email"
+    benefits_level: 1
+    duration:
+      - "60 days"
+    eligibility:
+      - "New customers only"
+      - "Valid payment method required"
+    effort:
+      - "Account creation with Google, GitHub, or email"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create an Account"
+        description: "Use Google, GitHub, or a valid email to sign up."
+        action: "Sign Up"
+        action_url: "https://www.linode.com/lp/free-credit-100-5000/"
+  - name: "Business Credits Tier"
+    intro: "Apply for up to $5,000 in credits for business customers."
+    max_value: 5000
+    url: "https://www.akamai.com/lp/free-credit-100-5000/"
+    benefits:
+      - "Up to $5,000 in business credits"
+      - "Deploy what you need when you need it"
+      - "Flexible payment options"
+      - "24/7 support via phone and email"
+    benefits_level: 2
+    duration:
+      - "Varies based on approval"
+    eligibility:
+      - "Available to new and existing business customers"
+      - "No credit card or pre-authorization required"
+    effort:
+      - "Business application process"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Apply for Business Credits"
+        description: "Fill out the business application form to request up to $5,000 in credits."
+        action: "Apply for Credits"
+        action_url: "https://www.akamai.com/lp/free-credit-100-5000/"
+faq:
+  - question: "How do I sign up for the free trial?"
+    answer: "Use Google or GitHub single sign-on, or provide your email to create a new account. A valid payment method is required for identity verification. Promotional credits are available only to new customers who have not previously signed up for a free trial."
+  - question: "What can I do with my free trial?"
+    answer: "Once you complete the sign-up process, you can use your credit towards many Compute plans (GPU plans are excluded), Object Storage, Block Storage, or NodeBalancers offerings. If you exceed the allotted credit amount within the 60-day trial period, the overage will be charged at standard rates."
+  - question: "What forms of payment do you accept?"
+    answer: "Visa, Mastercard, American Express, Discover, PayPal, and Google Pay with an associated credit card are all accepted. Additional options like wire transfer, purchase orders, and ACH are available upon request. Note that a temporary pre-authorization request may be sent to your bank, which will be immediately released but may take a few days to clear."
+  - question: "What happens after my trial period ends?"
+    answer: "You must spend your service credits during the trial period. Unused service credits will automatically expire, and you will be charged standard rates for any service over the allotted credit amount."
+  - question: "How do I apply for business credits?"
+    answer: "Business customers can apply for up to $5,000 in credits through the business application process. No credit card or pre-authorization is required, and you can pay via wire transfer, purchase order, ACH, and more."

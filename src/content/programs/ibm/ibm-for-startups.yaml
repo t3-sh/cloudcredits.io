@@ -1,0 +1,53 @@
+provider_slug: "ibm"
+title: "IBM for Startups"
+meta_title: "Accelerate and Scale Innovation with IBM AI"
+intro: "Partner with IBM for Startups to accelerate innovation with IBM AI, scale globally, and present your solution to enterprises and investors—no cost, no equity required."
+description: "IBM for Startups is a program designed to help startups drive innovation and growth through IBM’s AI and cloud offerings. Participants can receive up to $120,000 USD in IBM Cloud credits, gain access to over 170 products and services, engage with mentors and experts, and showcase solutions to potential investors. Startups must meet eligibility criteria regarding revenue, company age, and prior IBM Cloud usage status."
+status: "Active"
+tags:
+  - "cloud"
+url: "https://www.ibm.com/startups"
+value_type: "credits"
+currency: "USD"
+max_value: 120000
+tiers:
+  - name: "IBM for Startups"
+    intro: "Up to $120,000 IBM Cloud credits, expert mentorship, and global scale opportunities"
+    max_value: 120000
+    url: "https://www.ibm.com/startups"
+    benefits:
+      - "Up to $120,000 IBM Cloud credits"
+      - "Access to 170+ products (AI, IoT, data, dev, etc.)"
+      - "Mentorship from IBM experts and global mentors"
+      - "Opportunities to pitch in front of enterprises and investors"
+      - "No-cost, no-equity participation"
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - "Revenue below $15M in last 12 months"
+      - "Privately held and under 10 years old"
+      - "Not a paying IBM Cloud customer"
+      - "Verifiable entity with website and dedicated email domain"
+    effort: []
+    effort_level: 2
+    steps_to_apply:
+      - name: "Check Eligibility"
+        description: "Ensure your startup meets the revenue, age, and verifiable entity criteria"
+        action: "View Requirements"
+        action_url: "https://www.ibm.com/startups"
+      - name: "Register Online"
+        description: "Create your profile on the IBM for Startups portal"
+        action: "Register"
+        action_url: "https://www.ibm.com/startups"
+        
+faq:
+  - question: "Who can apply for the program?"
+    answer: "IBM for Startups is open to all—from students with an idea to established startups with software-based solutions. Specific eligibility criteria include revenue under USD 15 million, private ownership for under 10 years, and no prior paid IBM Cloud usage."
+  - question: "Does it cost anything to join the program?"
+    answer: "No. IBM for Startups is offered at no cost and requires no equity from participants."
+  - question: "What are the next steps to getting started?"
+    answer: "Begin by confirming your eligibility, then register on the IBM for Startups web portal to access credits, resources, and mentorship opportunities."
+  - question: "How can IBM help me scale and promote my solution?"
+    answer: "IBM for Startups provides opportunities to present your solution to global enterprises and investors, plus co-marketing and community support via events and partner networks."
+  - question: "Does the IBM for Startups program have a specific time frame?"
+    answer: "No fixed time frame is mentioned for this program. Once admitted, you can leverage IBM resources, credits, and mentorship at your own pace."

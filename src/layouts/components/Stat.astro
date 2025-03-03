@@ -1,0 +1,67 @@
+---
+import config from "@/config/config.json";
+import DynamicIcon from "@/helpers/DynamicIcon";
+
+interface Props {
+  title: string;
+  metric: string | number;
+  icon?: string;
+  iconClass?: string;
+  comparison?: string;
+  iconColor?: string;
+}
+
+const {
+  title,
+  metric,
+  icon,
+  iconClass = "w-8 h-8",
+  comparison,
+  iconColor = "text-primary",
+} = Astro.props;
+
+const { gradients } = config.theme;
+
+// Extract color values without the # for the filter
+const fromColor = gradients.brand.from.replace("#", "");
+const toColor = gradients.brand.to.replace("#", "");
+---
+
+<div class="p-6 group relative">
+  <div class="flex flex-col relative z-10">
+    <h3
+      class="text-sm font-medium text-gray-500 dark:text-gray-300 mb-1.5 transition-colors group-hover:text-gray-700 dark:group-hover:text-white"
+    >
+      {title}
+    </h3>
+
+    <div class="flex items-center gap-3 mb-2">
+      {
+        icon && (
+          <div
+            class={`${iconColor} opacity-90 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110`}
+          >
+            <DynamicIcon icon={icon} className={iconClass} />
+          </div>
+        )
+      }
+      <p
+        class={`text-4xl font-bold bg-gradient-to-r from-[${gradients.brand.from}] to-[${gradients.brand.to}] bg-clip-text text-transparent group-hover:scale-[1.02] transition-all duration-300`}
+      >
+        {metric}
+      </p>
+    </div>
+
+    {
+      comparison && (
+        <p class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-300">
+          {comparison}
+        </p>
+      )
+    }
+  </div>
+  <div
+    class="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent dark:from-white/[0.01] dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  >
+  </div>
+</div>

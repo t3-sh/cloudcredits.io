@@ -1,0 +1,13 @@
+active: true
+name: "HubSpot"
+short_name: "HubSpot"
+slug: "hubspot"
+url: "https://www.hubspot.com/hatch"
+color: "#F87520"
+best_deal: "75% off first year"
+intro: "Leading inbound marketing and CRM platform delivering unified sales, marketing, and service solutions to attract, engage, and delight customers."
+video: "https://www.hubspot.com/startups?wvideo=1zu65wv5mu"
+tags:
+  - "marketing"
+  - "sales"
+  - "crm"

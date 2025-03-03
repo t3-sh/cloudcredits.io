@@ -1,0 +1,56 @@
+---
+import Base from "@/layouts/Base.astro";
+import {
+  getCombinedTags,
+  getAllCombinedTags,
+} from "@/lib/taxonomyParser.astro";
+import { humanize } from "@/lib/utils/textConverter";
+import PageHeader from "@/partials/PageHeader.astro";
+import { FaTag } from "react-icons/fa6";
+
+// Get all unique tags
+const tags = await getCombinedTags();
+// Get all tag instances (including duplicates for counting)
+const allTags = await getAllCombinedTags();
+
+// Sort tags alphabetically
+tags.sort();
+---
+
+<Base title={"Categories"}>
+  <PageHeader title={"Categories"} />
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="text-center mb-8">
+            <p class="mt-2">Explore cloud credits and programs by category</p>
+          </div>
+          <ul class="flex flex-wrap justify-center gap-3">
+            {
+              tags.map((tag: string) => {
+                const count = allTags.filter((t) => t === tag).length;
+                return (
+                  <li class="m-2 inline-block transform-gpu">
+                    <a
+                      href={`/tags/${tag}`}
+                      class="flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-sm bg-white/10 dark:bg-white/5 text-gray-700 dark:text-gray-200 text-lg 
+                      border border-white/10 dark:border-white/5 transition-all duration-300 transform-gpu
+                      hover:bg-white/20 dark:hover:bg-white/10 hover:shadow-lg hover:-translate-y-1 lowercase"
+                    >
+                      <FaTag className="text-primary dark:text-primary/80" />
+                      {tag}{" "}
+                      <span class="ml-1 rounded-full bg-white/20 dark:bg-white/10 px-2 py-0.5 text-sm">
+                        {count}
+                      </span>
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,80 @@
+provider_slug: "gcp"
+title: "Google for Startups Cloud Program"
+intro: "Accelerate your startup journey with flexible tiers that match your company’s growth stage—providing up to $200,000 USD in Google Cloud credits, technical resources, business support, and more."
+description: "This program helps eligible startups build quickly and scale efficiently on Google Cloud. Two primary tiers (Start and Scale) offer incremental credits, technical and business support, Google-wide perks, and training to empower teams as they grow. Acceptance is determined based on specific funding and eligibility criteria."
+status: "Active"
+url: "https://cloud.google.com/startup"
+value_type: "credits"
+currency: "USD"
+max_value: 200000
+tags:
+  - "cloud"
+
+tiers:
+  - name: "Start Tier"
+    intro: "Designed for early-stage startups without equity funding—providing foundational credits and resources."
+    max_value: 2000
+    url: "https://cloud.google.com/startup"
+    benefits:
+      - "Up to $2,000 in Google Cloud credits (valid for 1 year)"
+      - "$200 Google Cloud Skills Boost credits for training"
+      - "Technical support via Customer Care plan (credits can be applied)"
+      - "Access to Google Cloud Startup Community"
+      - "12 months of free Google Workspace Business Plus (for new signups)"
+    benefits_level: 1
+    duration: ["1 year"]
+    eligibility:
+      - "Not yet funded by an institutional investor"
+      - "Founded within the last 5 years"
+      - "No prior Google Cloud credits beyond the free trial"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Have Billing Account and Business Email"
+        description: "Obtain a valid Google Cloud billing account ID and use a domain-based business email"
+        action: "Create Billing Account"
+        action_url: "https://cloud.google.com"
+      - name: "Check Eligibility"
+        description: "Ensure your startup meets the criteria for the Start tier"
+        action: "Review Requirements"
+        action_url: "https://cloud.google.com/startup"
+      - name: "Complete Application"
+        description: "Submit program details about your startup"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startup"
+
+  - name: "Scale Tier"
+    intro: "For funded startups with equity investments up to (and including) Series A, providing higher credits and deeper support."
+    max_value: 200000
+    url: "https://cloud.google.com/startup"
+    benefits:
+      - "Up to $100,000 in credits for Year 1, plus 20% coverage (up to $100,000) for Year 2"
+      - "$500 Google Cloud Skills Boost credits"
+      - "$12,000 in Enhanced Support credits for 1 year"
+      - "Access to Startup Success Manager and co-marketing opportunities"
+      - "12 months of free Google Workspace Business Plus (for new signups)"
+    benefits_level: 4
+    duration: ["2 years"]
+    eligibility:
+      - "Equity funding from pre-seed to Series A"
+      - "Founded within the last 10 years"
+      - "No more than $5,000 previously received in Google Cloud credits"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Verify Funding Stage"
+        description: "Prepare documentation of equity funding from pre-seed to Series A"
+      - name: "Have Billing Account and Domain Email"
+        description: "Obtain a valid Google Cloud billing account ID and domain-based email"
+        action: "Register or Log In"
+        action_url: "https://cloud.google.com"
+      - name: "Submit Scale Application"
+        description: "Include relevant details about your funding and growth plans"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startup"
+
+faq:
+  - question: "What does the program offer?"
+    answer: "Depending on your tier, you can receive up to $200,000 in Google Cloud credits, technical support, training, and access to Google-wide discounts. Both tiers benefit from networking opportunities and business guidance."
+  - question: "How do I determine which tier applies to me?"
+    answer: "Start Tier is for startups without institutional funding, founded within the last 5 years, while Scale Tier supports equity-funded startups (up to Series A) within the last 10 years. Funding level and prior Google Cloud credits determine eligibility."
+  - question: "How long do the credits last?"
+    answer: "Start Tier credits are valid for one year. Scale Tier credits are divided across two years, with Year 1 fully covered up to $100,000, and Year 2 at 20% coverage up to an additional $100,000."

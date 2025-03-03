@@ -1,0 +1,188 @@
+---
+import ProgramCard from "@/components/ProgramCard.astro";
+import ImageMod from "@/components/ImageMod.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { render } from "astro:content";
+import StatGroup from "@/components/StatGroup.astro";
+import Stat from "@/components/Stat.astro";
+import { getCollection } from "astro:content";
+import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
+
+// get all static paths for providers
+export async function getStaticPaths() {
+  const COLLECTION_FOLDER = "providers";
+  const providers = await getSinglePage(COLLECTION_FOLDER);
+  const paths = providers.map((provider) => ({
+    params: {
+      single: provider.data.slug,
+    },
+    props: { provider },
+  }));
+  return paths;
+}
+
+const { provider } = Astro.props;
+const {
+  name,
+  short_name,
+  slug,
+  intro,
+  url,
+  color = "#232f3e",
+  video,
+} = provider.data;
+const { Content } = await render(provider);
+
+// Get only the programs for this provider
+const providerPrograms = await getCollection(
+  "programs",
+  ({ data }) => data.provider_slug === slug && !data.draft,
+);
+
+// Calculate stats
+const totalPrograms = providerPrograms.length;
+
+// Separate programs by value type
+const creditPrograms = providerPrograms.filter(
+  (p) => p.data.value_type === "credits",
+);
+const discountPrograms = providerPrograms.filter(
+  (p) => p.data.value_type === "discount",
+);
+
+// Calculate max values for each type
+const maxCredits =
+  creditPrograms.length > 0
+    ? Math.max(...creditPrograms.map((p) => p.data.max_value))
+    : 0;
+const maxDiscount =
+  discountPrograms.length > 0
+    ? Math.max(...discountPrograms.map((p) => p.data.max_value))
+    : 0;
+
+// Determine which currency to show (use the first credit program's currency, default to USD)
+const currency =
+  creditPrograms.length > 0 ? creditPrograms[0].data.currency : "USD";
+const currencySymbol = currency === "USD" ? "$" : "€";
+
+const logo = `/images/providers/${slug}.svg`;
+---
+
+<Base title={short_name} meta_title={name} description={intro} image={logo}>
+  <section class="relative min-h-screen">
+    <!-- Base gradient background -->
+    <div
+      class="fixed inset-0"
+      style={`
+        background: radial-gradient(
+          circle at top,
+          ${color}35 0%,
+          ${color}20 30%,
+          ${color}10 60%,
+          transparent 100%
+        );
+        @media (prefers-color-scheme: dark) {
+          background: radial-gradient(
+            circle at top,
+            ${color}45 0%,
+            ${color}30 30%,
+            ${color}20 60%,
+            transparent 100%
+          );
+        }
+      `}
+    >
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10">
+      <!-- Breadcrumbs -->
+      <div class="container pt-8">
+        <div class="flex justify-center">
+          <Breadcrumbs className="mb-8" />
+        </div>
+      </div>
+
+      <div class="text-center py-20">
+        {
+          logo && (
+            <ImageMod
+              src={logo}
+              class="mx-auto mb-10 max-h-[60px] w-auto"
+              width={120}
+              height={60}
+              alt={`${name} logo`}
+              format="svg"
+            />
+          )
+        }
+
+        <div class="max-w-3xl mx-auto px-6">
+          <p class="text-xl">{intro}</p>
+          <div class="content prose dark:prose-invert">
+            <Content />
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats using StatGroup and Stat components -->
+      <div class="max-w-4xl mx-auto px-6 py-14">
+        <StatGroup>
+          <Stat
+            title="Total Programs"
+            metric={totalPrograms}
+            icon="FaCloud"
+            iconColor={color}
+          />
+          {
+            maxCredits > 0 && (
+              <Stat
+                title="Max Credits"
+                metric={`${currencySymbol}${maxCredits.toLocaleString()}`}
+                icon="FaCoins"
+                iconColor={color}
+              />
+            )
+          }
+          {
+            maxDiscount > 0 && (
+              <Stat
+                title="Max Discount"
+                metric={`${maxDiscount}%`}
+                icon="FaPercent"
+                iconColor={color}
+              />
+            )
+          }
+        </StatGroup>
+      </div>
+
+      <!-- Program Cards Section -->
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+          {
+            providerPrograms.length === 1 ? (
+              <div class="md:col-span-2 lg:col-span-3 flex justify-center">
+                <div class="max-w-md">
+                  <ProgramCard program={providerPrograms[0]} />
+                </div>
+              </div>
+            ) : (
+              providerPrograms.map((program) => <ProgramCard program={program} />)
+            )
+          }
+        </div>
+        {
+          providerPrograms.length === 0 && (
+            <div class="text-center py-10">
+              <p class="text-lg text-gray-600 dark:text-gray-400">
+                No active programs available at the moment.
+              </p>
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </section>
+</Base>

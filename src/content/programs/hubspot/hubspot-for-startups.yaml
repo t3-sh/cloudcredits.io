@@ -1,0 +1,89 @@
+provider_slug: "hubspot"
+title: "HubSpot for Startups"
+meta_title: "HubSpot for Startups - CloudCredits.io"
+intro: "Eligible startups save 30%-75% on HubSpot's AI-powered CRM platform trusted by 248,000+ growing businesses"
+description: "Multi-year discount program offering decreasing annual discounts on Professional/Enterprise CRM packages for qualified startups, with additional resources for fundraising and scaling operations."
+status: "Active"
+url: "https://www.hubspot.com/startups"
+min_value: 30
+max_value: 75
+value_type: discount
+currency: "USD"
+tags: ["crm", "sales", "marketing"]
+date: 2025-02-25
+
+tiers:
+  - name: "30% off year one"
+    intro: "Startups eligible for up to 30% off year one"
+    max_value: 30
+    url: "https://www.hubspot.com/startups"
+    benefits:
+      - "30% first-year discount"
+      - "15% second-year discount"
+      - "Access to exclusive resources"
+    benefits_level: 1
+    duration: ["2 years"]
+    eligibility:
+      - "Associated with one of HubSpot's approved entrepreneurial organizations"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Apply Here"
+        description: "Apply for the program on HubSpot's website"
+        action: "Apply Now"
+        action_url: "https://app.hubspot.com/signup-hubspot/hubspot-for-startups?odysseyEnabled=true&hubs_signup-url=www.hubspot.com%2Fstartups&hubs_signup-cta=Apply+Now&_ga=2.230263196.1483886328.1666637754-1163652573.1666382956&uuid=anon2004e066ed8b58e7c3808ba83b19"
+
+  - name: "50% off year one"
+    intro: "For startups with over $2M funding (pre-Series B)"
+    max_value: 50
+    url: "https://www.hubspot.com/startups"
+    benefits:
+      - "50% first-year discount"
+      - "25% second-year discount"
+      - "Startup community access"
+    benefits_level: 1
+    duration: ["2 years"]
+    eligibility:
+      - "Raised >$2M funding"
+      - "Have not raised Series B or beyond"
+      - "Associated with one of HubSpot's approved partner organizations"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Apply Here"
+        description: "Apply for the program on HubSpot's website"
+        action: "Apply Now"
+        action_url: "https://app.hubspot.com/signup-hubspot/hubspot-for-startups?odysseyEnabled=true&hubs_signup-url=www.hubspot.com%2Fstartups&hubs_signup-cta=Apply+Now&_ga=2.230263196.1483886328.1666637754-1163652573.1666382956&uuid=anon2004e066ed8b58e7c3808ba83b19"
+
+  - name: "75% off year one"
+    intro: "Max discount for startups with up to $2M funding"
+    max_value: 75
+    url: "https://www.hubspot.com/startups"
+    benefits:
+      - "75% first-year discount"
+      - "50% second-year discount"
+      - "25% third-year discount"
+    benefits_level: 2
+    duration: ["3 years"]
+    eligibility:
+      - "Raised funding up to $2M"
+      - "Associated with one of HubSpot's approved VC, Incubator, or Accelerator partners"
+    effort_level: 3
+    timeline_indication: "Immediate activation upon approval"
+    steps_to_apply:
+      - name: "Apply Here"
+        description: "Apply for the program on HubSpot's website"
+        action: "Apply Now"
+        action_url: "https://app.hubspot.com/signup-hubspot/hubspot-for-startups?odysseyEnabled=true&hubs_signup-url=www.hubspot.com%2Fstartups&hubs_signup-cta=Apply+Now&_ga=2.230263196.1483886328.1666637754-1163652573.1666382956&uuid=anon2004e066ed8b58e7c3808ba83b19"
+
+faq:
+  - question: "What does the HubSpot for Startups program include?"
+    answer: "Discounted access to HubSpot's CRM platform with AI features, sales automation tools, and customer service solutions, plus fundraising resources and community support."
+  - question: "What proof of funding is required?"
+    answer: "Startups must provide documentation of investment rounds and partnership verification with approved organizations."
+  - question: "Can existing HubSpot users apply?"
+    answer: "Discounts apply only to net-new Professional/Enterprise subscriptions, not upgrades or renewals."
+  - question: "What happens after the discount period?"
+    answer: "After the discount period ends, pricing reverts to standard rates. The website notes that HubSpot for Startups pricing is applicable to net-new Professional or Enterprise level products only."
+  - question: "Are non-tech startups eligible?"
+    answer: "Program open to all industries but requires partner organization affiliation for verification."
+  - question: "How to access fundraising resources?"
+    answer: "Approved startups receive benchmark reports, workshop invites, and tech stack guides through the partner portal."

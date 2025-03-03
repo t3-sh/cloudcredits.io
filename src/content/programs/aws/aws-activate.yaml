@@ -1,0 +1,80 @@
+provider_slug: "aws"
+title: "AWS Activate"
+meta_title: "Get AWS Activate Credits - AWS Startups"
+intro: "Apply for up to $100,000 in AWS Activate credits and unlock access to our partners' tools and services."
+description: "AWS helps startups bring their ideas to life through AWS Activate. As you build and scale your business, Activate Credits grow with you to support your changing needs. If you're an AWS Activate member, you may be eligible for up to $100,000 in credits to help offset your AWS bill."
+status: "Active"
+tags: ["cloud"]
+url: "https://aws.amazon.com/startups/credits"
+value_type: "credits"
+currency: "USD"
+min_value: 1000
+max_value: 100000
+
+
+tiers:
+  - name: "Activate Founders"
+    intro: "Start here if your startup is not yet associated with an Activate Provider"
+    max_value: 1000
+    url: "https://aws.amazon.com/startups/credits"
+    benefits:
+      - "$1,000 USD AWS Activate Credits"
+      - "Eligible for usage on hundreds of AWS services"
+    benefits_level: 1
+    duration: []
+    eligibility:
+      - "New to AWS Activate Credits"
+      - "Self-funded or pre-Series B (most recent funding round must be within the last 12 months, if applicable)"
+      - "Have a fully-functioning company website"
+      - "Founded in the past 10 years"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create AWS Builder ID"
+        description: "Create an AWS Builder ID to access AWS services and apply for Activate"
+        action: "Create Builder ID"
+        action_url: "https://us-east-1.signin.aws/platform/login?workflowStateHandle=1ca962ab-8ba6-48ac-926f-cb961b6b037a"
+      - name: "Complete Founders Application"
+        description: "Fill out and submit the Activate Founders package application"
+        action: "Apply Now"
+        action_url: "https://aws.amazon.com/startups/credits"
+
+  - name: "Activate Portfolio"
+    intro: "Start here if your startup is associated with an Activate Provider"
+    max_value: 100000
+    url: "https://aws.amazon.com/startups/credits"
+    benefits:
+      - "Up to $100,000 USD AWS Activate Credits"
+      - "Eligible for usage on hundreds of AWS services"
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - "Have not previously received AWS Activate Credits of equal or greater value"
+      - "Self-funded or pre-Series B (most recent funding round must be within the last 12 months, if applicable)"
+      - "Have a fully-functioning company website"
+      - "Founded in the past 10 years"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Obtain Organization ID"
+        description: "Contact your Activate Provider to request a valid Organization ID"
+        action: "Request Org ID"
+        action_url: "https://aws.amazon.com/activate/portfolio-detail/"
+      - name: "Complete Portfolio Application"
+        description: "Fill out and submit the Activate Portfolio package application using your Org ID"
+        action: "Apply Now"
+        action_url: "https://aws.amazon.com/startups/credits"
+
+faq:
+  - question: "What can I use AWS Activate Credits for?"
+    answer: "AWS offers over 200 services worldwide. You can use Activate Credits toward eligible AWS services and support, including infrastructure, machine learning, analytics, and more. For a full list of eligible services, see the AWS Billing and Cost Management console after receiving your approval email. Additional details are in the AWS Activate Terms & Conditions."
+  - question: "What is not covered by AWS Activate Credits?"
+    answer: "AWS Activate Credits cannot be applied to certain AWS Support tiers, AWS Marketplace products (except specific models on Amazon Bedrock), AWS Professional Services, or other ineligible fees. For comprehensive details on what's excluded, review the AWS Promotional Credit Terms & Conditions and the AWS Activate Terms & Conditions."
+  - question: "How do I use my AWS Activate Credits?"
+    answer: "Once approved, your credits are automatically applied to offset eligible AWS services and support costs. You can track credit usage and expiration dates within the AWS Activate Console or AWS Billing and Cost Management Console."
+  - question: "What is an organization ID?"
+    answer: "An organization ID is a numeric code associated with your Activate Provider. It's required if you're applying for the Activate Portfolio package. If you are not affiliated with a provider, you can apply for the Activate Founders package without an organization ID."
+  - question: "What is an Activate Provider?"
+    answer: "Activate Providers are accelerators, venture capital firms, and other startup enablers that collaborate with AWS. They issue organization IDs to qualifying startups, enabling them to apply for and receive AWS Activate Credits."
+  - question: "Where can I find details about my credits including usage and expiration dates?"
+    answer: "You can view your AWS Activate Credits balance, expiration date, and usage within both the AWS Billing and Cost Management Console and the AWS Activate Console. Email notifications will also be sent prior to expiration or when approaching full usage."
+  - question: "How are my credits applied to Reserved Instances or Saving Plans?"
+    answer: "Activate Credits apply to usage-based fees for Reserved Instances and Savings Plans. However, the upfront costs for RIs or Savings Plans are not covered by AWS Activate Credits."

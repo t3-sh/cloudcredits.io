@@ -1,0 +1,85 @@
+provider_slug: "scaleway"
+title: "Scaleway Startup Program"
+meta_title: "Cloud Support for Startups"
+intro: "Get up to €36,000 cost-coverage for cloud services with free consulting support from solution architects and access to a 800+ startup community"
+description: "Time-limited cloud partnership program offering infrastructure credits, technical guidance, and community benefits for European startups at different growth stages. Participants gain access to Scaleway's partner ecosystem with over €250,000 in value."
+status: "Active"
+url: "https://www.scaleway.com/en/startup-program/"
+min_value: 1000
+max_value: 36000
+tags: ["cloud", "europe"]
+date: 2025-02-25
+
+tiers:
+  - name: "Founders Program"
+    intro: "For youngest projects launching in startup-friendly environment with initial cloud cost coverage"
+    max_value: 1000
+    url: "https://www.scaleway.com/en/startup-program/"
+    benefits:
+      - "€1,000 cloud credits over 1 year"
+      - "Technical content library and scaling resources"
+      - "Multi-cloud product access"
+      - "Dedicated Program Lead onboarding"
+      - "Access to Scaleway community Slack channel (800+ members)"
+    benefits_level: 1
+    duration: ["1 year"]
+    eligibility:
+      - "Early-stage startups"
+      - "Pre-revenue projects"
+    effort_level: 1
+    timeline_indication: "7 business days"
+    steps_to_apply:
+      - name: "Create Scaleway Account"
+        description: "Scaleway can't process your application without an account"
+        action: "Register"
+        action_url: "https://account.scaleway.com/register"
+      - name: "Complete Application Form"
+        description: "Fill out the application form (~15 minutes)"
+        action: "Apply Now"
+        action_url: "https://www.scaleway.com/en/startup-program/"
+  - name: "Early Stage"
+    intro: "Six-month program for pre-seed to seed stage startups"
+    max_value: 9000
+    url: "https://www.scaleway.com/en/startup-program/"
+    benefits:
+      - "€9,000 credits over 6 months"
+      - "Infrastructure optimization guidance"
+      - "Customer Success Manager support"
+      - "Eligibility for case studies and webinars"
+    benefits_level: 2
+    duration: ["6 months"]
+    eligibility:
+      - "Pre-seed to seed stage"
+      - "Registered startup"
+    effort_level: 2
+
+  - name: "Growth Stage"
+    intro: "For scaling startups from seed to series A"
+    max_value: 36000
+    url: "https://www.scaleway.com/en/startup-program/"
+    benefits:
+      - "€36,000 annual credits"
+      - "24/7 technical support"
+      - "Partner offers (€250k+ value)"
+      - "Trade show access and beta product early access"
+      - "Technical masterclasses and startup events"
+    benefits_level: 3
+    duration: ["1 year"]
+    eligibility:
+      - "Seed to Series A"
+      - "Scaling infrastructure needs"
+    effort_level: 2
+
+faq:
+  - question: "What is the Scaleway Startup Program?"
+    answer: "A time-limited cloud partnership program providing infrastructure credits and technical assistance. Participants leverage Scaleway's public cloud infrastructure along with advisory resources and community support."
+  - question: "Who can apply to the program?"
+    answer: "Scaleway accepts applications from startups at any stage. The admission committee prioritizes projects demonstrating innovative use of cloud infrastructure."
+  - question: "How long does the program last?"
+    answer: "The program end date is scheduled exactly 6 or 12 months after Scaleway invites you in, depending on your stage. For instance, if you submit your application before June 15th and get selected, then the Program runs from July 1st to January 1st or June 30th of the following year. Periodically, they will sit together with you and review your consumption and plan all necessary adjustments ahead of time."
+  - question: "How can I benefit most from the program?"
+    answer: "Beyond cloud credits, Scaleway provides architecture guidance from their technical engineers, access to a global startup community, and visibility opportunities through case studies and events."
+  - question: "Are there any costs to join?"
+    answer: "No participation fees. Scaleway covers the cloud credits, with users responsible only for usage beyond allocated credits."
+  - question: "Where can I get more information?"
+    answer: "Interested startups should contact Scaleway's program team at startup-program@scaleway.com."

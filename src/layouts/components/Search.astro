@@ -1,0 +1,176 @@
+---
+// Search.astro
+---
+
+<div class="search-container">
+  <div class="search-input-wrapper">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search providers and programs..."
+      class="search-input"
+    />
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    // Dynamically import Pagefind
+    const { search } = await import("/pagefind/pagefind.js");
+
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+
+    if (!searchInput || !searchResults) return;
+
+    searchInput.addEventListener("input", async (e) => {
+      const query = e.target.value.trim();
+
+      if (!query) {
+        searchResults.innerHTML = "";
+        return;
+      }
+
+      try {
+        // Perform the search
+        const results = await search(query);
+
+        if (results.results.length === 0) {
+          searchResults.innerHTML =
+            '<p class="no-results">No results found</p>';
+          return;
+        }
+
+        // Build results HTML
+        let resultsHTML = '<div class="results-list">';
+
+        for (const result of results.results) {
+          const data = await result.data();
+
+          resultsHTML += `
+              <a href="${data.url}" class="result-item">
+                <h3 class="result-title">${data.meta.title || "Untitled"}</h3>
+                <p class="result-excerpt">${data.excerpt}</p>
+                <div class="result-meta">
+                  ${data.meta.provider ? `<span class="provider-tag">${data.meta.provider}</span>` : ""}
+                  ${
+                    data.meta.tags
+                      ? data.meta.tags
+                          .split(",")
+                          .map(
+                            (tag) => `<span class="tag">${tag.trim()}</span>`,
+                          )
+                          .join("")
+                      : ""
+                  }
+                </div>
+              </a>
+            `;
+        }
+
+        resultsHTML += "</div>";
+        searchResults.innerHTML = resultsHTML;
+      } catch (error) {
+        console.error("Search error:", error);
+        searchResults.innerHTML =
+          '<p class="error">An error occurred while searching</p>';
+      }
+    });
+  });
+</script>
+
+<style>
+  .search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #8c3fed;
+  }
+
+  .search-results {
+    margin-top: 1rem;
+  }
+
+  .results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .result-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f8fafc;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .result-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .result-title {
+    margin: 0 0 0.5rem;
+    color: #1e293b;
+  }
+
+  .result-excerpt {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+
+  .result-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .provider-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #8c3fed;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #e2e8f0;
+    color: #475569;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .no-results,
+  .error {
+    text-align: center;
+    padding: 1rem;
+    color: #64748b;
+  }
+</style>

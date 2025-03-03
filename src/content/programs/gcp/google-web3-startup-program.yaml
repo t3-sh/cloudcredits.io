@@ -1,0 +1,84 @@
+provider_slug: "gcp"
+title: "Google Cloud Web3 Startup Program"
+intro: "Build faster and easier with Google Cloud’s Web3 startup program, giving you the technology, community, and resources to focus on innovation over infrastructure."
+description: "This program offers two tiers—Start and Scale—designed for Web3 projects at different funding stages. Participants receive Google Cloud credits, technical support, training resources, and exclusive partner benefits. Eligibility is based on funding stage, company age, prior credits usage, and other factors. Acceptance into this program is at Google Cloud’s discretion, with restrictions for companies that have IPO’d, been acquired, or conflict with regulatory guidance in their jurisdiction. Additional partner grants and offers from Aptos, Celo, Flow, the HBAR Foundation, Near, Solana Foundation, Polygon Ventures, Base Ecosystem, Nansen, Alchemy, and thirdweb can further accelerate growth and innovation."
+status: "Active"
+url: "https://cloud.google.com/startup/web3"
+value_type: "credits"
+currency: "USD"
+min_value: 2000
+max_value: 200000
+tags:
+  - "cloud"
+  - "web3"
+  - "blockchain"
+
+tiers:
+  - name: "Start Tier"
+    intro: "For Web3 projects and startups without institutional funding (pre-seed), founded within the last 5 years, and that haven’t exceeded the free trial credits."
+    max_value: 2000
+    url: "https://cloud.google.com/startup/web3"
+    benefits:
+      - "Up to $2,000 in Google Cloud credits (valid for 1 year)"
+      - "Apply credits to a Customer Care plan for unlimited technical support"
+      - "12 months of free Google Workspace Business Plus for new sign-ups"
+      - "Invite-only Discord channel for community and direct access to Web3 product teams"
+      - "Access to Google Cloud events at major global Web3 conferences"
+    benefits_level: 1
+    duration:
+      - "1 year of credits"
+      - "12 months of Workspace"
+    eligibility:
+      - "Pre-seed Web3 startup"
+      - "Founded within last 5 years"
+      - "Hasn’t received Google Cloud credits beyond free trial"
+    effort: []
+    effort_level: 1
+    steps_to_apply:
+      - name: "Prepare Google Cloud Billing Account"
+        description: "Have the 18-character Google Cloud billing account ID ready"
+        action: "Sign Up"
+        action_url: "https://cloud.google.com"
+      - name: "Ensure Matching Business Email"
+        description: "Use a Workspace domain matching your startup’s website"
+        action: "Create Domain Email"
+        action_url: "https://workspace.google.com"
+      - name: "Complete Online Application Form"
+        description: "Submit essential details about your startup and funding stage"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startup/web3"
+
+  - name: "Scale Tier"
+    intro: "For Web3 startups with verified funding (equity, tokens, blockchain foundation grant) up to and including series A, raised within the last 12 months."
+    max_value: 200000
+    url: "https://cloud.google.com/startup/web3"
+    benefits:
+      - "Up to $200,000 in Google Cloud credits over 2 years"
+      - "$12,000 in Google Cloud Enhanced Support credits"
+      - "12 months of free Google Workspace Business Plus for new sign-ups"
+      - "VIP access to Google Cloud events at global Web3 conferences"
+      - "Invite-only Discord channel for advanced networking and product insights"
+    benefits_level: 4
+    duration:
+      - "2 years of credits"
+      - "12 months of Workspace"
+    eligibility:
+      - "Funded Web3 startup up to series A"
+      - "Founded within last 10 years"
+      - "Has not received more than $4,000 in Google Cloud credits"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Prepare Google Cloud Billing Account"
+        description: "Have the 18-character Google Cloud billing account ID ready"
+        action: "Sign Up / Retrieve ID"
+        action_url: "https://cloud.google.com"
+      - name: "Ensure Matching Business Email"
+        description: "Use a Workspace domain matching your startup’s website"
+        action: "Create Domain Email"
+        action_url: "https://workspace.google.com"
+      - name: "Complete Online Application Form"
+        description: "Provide details on your funding stage, team, and product roadmap"
+        action: "Apply Now"
+        action_url: "https://cloud.google.com/startup/web3"
+
+faq: []

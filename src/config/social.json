@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "name": "x",
+      "icon": "FaX",
+      "link": "https://x.com/"
+    },
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://www.github.com/DUALSTACKS/cloudcredits.io"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/dualstacks"
+    }
+  ]
+}

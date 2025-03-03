@@ -1,0 +1,28 @@
+---
+interface Props {
+  status: "Active" | "Beta" | "Upcoming" | "Inactive" | "Discontinued";
+  text: string;
+  className?: string;
+}
+
+const { status, text, className = "" } = Astro.props;
+
+const getStatusColor = (status: Props["status"]) => {
+  switch (status) {
+    case "Active":
+      return "bg-green-400";
+    case "Beta":
+      return "bg-blue-400";
+    case "Upcoming":
+      return "bg-yellow-400";
+    case "Discontinued":
+    case "Inactive":
+      return "bg-red-400";
+  }
+};
+---
+
+<div class={`flex items-center gap-2 ${className}`}>
+  <div class={`w-2 h-2 rounded-full ${getStatusColor(status)}`}></div>
+  <span class="text-sm text-gray-300">{text}</span>
+</div>

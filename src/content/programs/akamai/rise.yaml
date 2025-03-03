@@ -1,0 +1,91 @@
+provider_slug: "akamai"
+title: "Akamai Cloud Rise Startup Program"
+meta_title: "Startup Cloud Credit Program"
+intro: "Get up to $120,000 in cloud infrastructure credits for virtual machines, GPU instances, and storage, plus expert support to help your startup scale affordably."
+description: "Rise is a three-year startup program from Akamai (formerly Linode) that provides between $500 and $120,000 in cloud credits during the first year, along with guidance from solutions engineers, community networking, and dedicated account management. In the second and third years, participants continue to receive discounted cloud services, ensuring affordable scalability for early-stage businesses."
+status: "Active"
+tags:
+  - "cloud"
+  - "infrastructure"
+  - "gpu"
+url: "https://www.linode.com/linode-for-startups/"
+value_type: "credits"
+currency: "USD"
+min_value: 500
+max_value: 120000
+
+community_notes:
+  - title: "Linode Rebrand to Akamai"
+    body: "In February 2022, Linode was acquired and rebranded under Akamai, integrating Linode's developer-friendly infrastructure with Akamai's edge platform."
+    source_url: "https://www.akamai.com/blog/news/linode-rebrand"
+
+tiers:
+  - name: "Rise Membership"
+    intro: "Qualify for anywhere from $500 to $120,000 of credits in your first year, then enjoy discounts in years two and three."
+    max_value: 120000
+    url: "https://www.linode.com/linode-for-startups/"
+    benefits:
+      - "Infrastructure credits up to $120,000 during the first year"
+      - "24/7 priority customer support"
+      - "One-on-one cloud consulting and migration assistance"
+      - "Dedicated account manager and solution engineers"
+      - "Access to a community of startups, alumni, and experts"
+    benefits_level: 3
+    duration:
+      - "3 years total"
+    eligibility:
+      - "Established less than 7 years"
+      - "Has a company website and corporate email"
+      - "At least one: paid employees (beyond founders), active non-friends/family users, or generating revenue"
+      - "Plans to use Akamai as a primary infrastructure provider"
+      - "Current business has not previously been a part of Rise"
+    effort:
+      - "Online application and account creation"
+      - "Brief interview with the program team"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Create Akamai (Linode) Account"
+        description: "Use your corporate email and valid credit card. Be sure to designate the account as commercial by including a corporate entity in the Company field."
+        action: "Register"
+        action_url: "https://www.linode.com/signup"
+      - name: "Review Qualifications & Apply"
+        description: "Confirm your business meets the Rise Membership Qualifications, then submit the application."
+        action: "Apply"
+        action_url: "https://www.linode.com/rise"
+      - name: "Interview with Rise Team"
+        description: "If your application is accepted for review, a program representative will schedule an interview."
+      - name: "Receive Credits & Next Steps"
+        description: "Upon acceptance, credits are added to your account, and your program coordinator will help you get started."
+
+faq:
+  - question: "What is Rise?"
+    answer: "Rise is an early-stage program offering $500–$120,000 in credits during the first year to help startups build and scale on affordable cloud infrastructure."
+  - question: "Who is eligible for Rise? How do you determine eligibility?"
+    answer: "Eligible companies are less than seven years old, have a corporate email and functional website, and demonstrate a plan for growth using Akamai as a primary provider. Company size, revenue, and usage plans are also taken into consideration."
+  - question: "I am an existing customer. Do I qualify for Rise?"
+    answer: "Existing customers may be eligible if they plan to expand their workloads on Akamai. The Rise team will review your existing usage and future goals."
+  - question: "What happens if I go over the monthly credit?"
+    answer: "You will be charged for any usage that exceeds the monthly credit limit."
+  - question: "Do I need to have a Linode account to sign up for Rise?"
+    answer: "Yes. You must create or have a corporate Linode account with a valid credit card and matching corporate email domain before applying."
+  - question: "Will there be any help with migrating my workload from other cloud providers?"
+    answer: "Absolutely. Akamai's technical experts provide guidance and planning to ensure your migration process is smooth and efficient."
+  - question: "What types of companies are a good fit for Rise?"
+    answer: "Any startup can apply, with a focus on SaaS, media, and gaming. Managed hosting providers, MSPs, system integrators, and other resellers are not eligible and should explore Akamai's partner programs instead."
+  - question: "What happens to my credits after the first year?"
+    answer: "Credits do not roll over. Rise is a three-year program, and after the first year, discounted cloud services are offered for the remaining duration."
+  - question: "Are there any limitations on how I use the Rise credits?"
+    answer: "Yes. Credits cannot be applied to bandwidth overages, and standard account usage policies apply."
+  - question: "Are there additional benefits beyond cloud credits?"
+    answer: "Yes. Participants receive priority support, a dedicated account manager, and access to a global community of startups and alumni."
+
+success_stories:
+  - title: "Macrometa"
+    summary: "Macrometa received hands-on support from the Akamai (Linode) team, enabling a solid infrastructure foundation for market launch."
+    link: "#"
+  - title: "SimSage"
+    summary: "SimSage migrated its entire infrastructure to Linode, seamlessly leveraging Linux environments and reducing hosting costs."
+    link: "#"
+  - title: "Curriki"
+    summary: "Curriki built an open-source digital learning tool on Linode's cloud, matching or surpassing commercial offerings for online education."
+    link: "#"

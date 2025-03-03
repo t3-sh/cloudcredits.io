@@ -1,0 +1,11 @@
+active: true
+name: "Amazon Web Services"
+short_name: "AWS"
+slug: "aws"
+color: "#FF9900"
+url: "https://aws.amazon.com/startups"
+intro: "World's leading cloud platform offering comprehensive services, global reach, and advanced technologies."
+best_deal: "Up to $100,000 during the first year"
+video: ""
+tags:
+  - "cloud"

@@ -1,0 +1,32 @@
+---
+import config from "@/config/config.json";
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+const { colors, gradients } = config.theme;
+---
+
+<div
+  class={`backdrop-blur-xl bg-white/10 dark:bg-black/20 rounded-2xl
+  border border-white/5 dark:border-white/10
+  shadow-[0_8px_32px_rgba(0,0,0,0.03),inset_0_0_0_1px_rgba(255,255,255,0.1)]
+  dark:shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_0_0_1px_rgba(255,255,255,0.05)]
+  transition-all duration-300 
+  relative
+  before:absolute before:content-[''] before:top-0 before:left-0 before:right-0 before:h-[1px]
+  before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent
+  after:absolute after:content-[''] after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-gradient-to-b 
+  after:from-white/5 after:to-transparent after:rounded-2xl after:-z-10
+  hover:shadow-[0_8px_32px_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(255,255,255,0.2)]
+  dark:hover:shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_0_0_1px_rgba(255,255,255,0.1)]
+  ${className}`}
+>
+  <div
+    class="grid auto-cols-fr grid-flow-col divide-x divide-white/[0.06] dark:divide-white/[0.06]"
+  >
+    <slot />
+  </div>
+</div>

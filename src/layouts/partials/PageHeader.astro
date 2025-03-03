@@ -1,0 +1,22 @@
+---
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { humanize } from "@/lib/utils/textConverter";
+
+const { title = "", color = "" }: { title?: string; color?: string } =
+  Astro.props;
+---
+
+<section class="transform-gpu">
+  <div class="container text-center">
+    <div
+      class="rounded-2xl backdrop-blur-xl bg-white/10 dark:bg-black/20 border border-white/10 dark:border-white/5 px-8 py-14 shadow-lg transform-gpu transition-all duration-300 hover:bg-white/15 dark:hover:bg-black/25"
+    >
+      <h1
+        class="text-3xl md:text-4xl font-bold mb-4 transform-gpu transition-transform duration-300 text-gray-800 dark:text-white"
+        set:text={humanize(title)}
+        style={color ? `color: ${color};` : ""}
+      />
+      <Breadcrumbs className="mt-6" />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+---
+import Base from "@/layouts/Base.astro";
+import HeroSection from "@/layouts/components/HeroSection";
+import AmbientLight from "@/layouts/components/AmbientLight.astro";
+---
+
+<Base>
+  <div class="relative">
+    <AmbientLight />
+    <HeroSection client:load />
+  </div>
+</Base>

@@ -1,0 +1,55 @@
+---
+import { getCollection } from "astro:content";
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import ProviderCard from "@/components/ProviderCard.astro";
+import StatGroup from "@/components/StatGroup.astro";
+import Stat from "@/components/Stat.astro";
+
+const providers = await getCollection("providers");
+const activeProviders = providers.filter((provider) => provider.data.active);
+
+// Get all programs and count active ones
+const allPrograms = await getCollection("programs");
+const activePrograms = allPrograms.filter((program) => program.data.status === "Active");
+---
+
+<Base title="Providers - CloudCredits.io">
+  <PageHeader title="Providers" />
+  <div class="container mt-8">
+    <StatGroup>
+      <Stat
+        title="Total Providers"
+        metric={activeProviders.length}
+        icon="FaCloud"
+        iconColor="text-white"
+      />
+      <Stat
+        title="Active Programs"
+        metric={activePrograms.length}
+        icon="FaRocket"
+        iconColor="text-white"
+      />
+      <Stat
+        title="Potential Savings"
+        metric="$1m+"
+        icon="GiReceiveMoney"
+        iconColor="text-white"
+      />
+    </StatGroup>
+  </div>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        {
+          activeProviders.map((provider) => (
+            <div class="mb-12 md:col-6 lg:col-4">
+              <ProviderCard data={provider} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

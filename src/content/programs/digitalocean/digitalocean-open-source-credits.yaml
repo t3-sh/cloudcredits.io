@@ -1,0 +1,101 @@
+provider_slug: "digitalocean"
+title: "DigitalOcean Open Source Credits"
+meta_title: "Credits for Projects | Open Source | DigitalOcean"
+intro: "DigitalOcean offers grants of credits to open source projects to help with their development, infrastructure, and testing needs."
+description: "A sponsorship program providing $60 to $20,000 annually in cloud credits for FOSS projects. Eligible applicants must use an OSI-approved license, demonstrate community engagement, and ideally have a formal Code of Conduct. Projects receive direct access to the DigitalOcean Open Source team, co-marketing opportunities, and more."
+status: "Active"
+url: "https://www.digitalocean.com/open-source/credits-for-projects"
+tags:
+  - "cloud"
+  - "open source"
+value_type: "credits"
+currency: "USD"
+min_value: 60
+max_value: 20000
+
+tiers:
+  - name: "Testing"
+    intro: "Tier for projects with 100+ GitHub stars"
+    max_value: 60
+    url: "https://www.digitalocean.com/open-source/credits-for-projects"
+    benefits:
+      - "$60/year DigitalOcean credit"
+      - "Direct access to DigitalOcean’s Open Source team"
+      - "Promotion via DigitalOcean social channels"
+    benefits_level: 1
+    duration:
+      - "1 year"
+    eligibility:
+      - "Open source with OSI-approved license"
+      - "100+ stars on GitHub"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Complete the Online Form"
+        description: "Provide project details and licensing info"
+        action: "Apply Now"
+        action_url: "https://sammydigitalocean.typeform.com/to/E4aNEx48"
+
+  - name: "Staging"
+    intro: "Tier for projects with 500+ GitHub stars"
+    max_value: 250
+    url: "https://www.digitalocean.com/open-source/credits-for-projects"
+    benefits:
+      - "$250/year DigitalOcean credit"
+      - "Co-marketing opportunities"
+      - "Promotion via DigitalOcean social channels"
+    benefits_level: 2
+    duration:
+      - "1 year"
+    eligibility:
+      - "Open source with OSI-approved license"
+      - "500+ stars on GitHub"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Complete the Online Form"
+        description: "Provide project details and licensing info"
+        action: "Apply Now"
+        action_url: "https://sammydigitalocean.typeform.com/to/E4aNEx48"
+
+  - name: "Production"
+    intro: "Tier for projects with 10,000+ GitHub stars"
+    max_value: 20000
+    url: "https://www.digitalocean.com/open-source/credits-for-projects"
+    benefits:
+      - "Up to $20,000/year in DigitalOcean credit"
+      - "Promotion via DigitalOcean social channels"
+      - "Case studies, user stories, and event participation"
+      - "Direct access to DigitalOcean’s Open Source team"
+    benefits_level: 3
+    duration:
+      - "1 year"
+    eligibility:
+      - "Open source with OSI-approved license"
+      - "10,000+ stars on GitHub"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Complete the Online Form"
+        description: "Provide project details and licensing info"
+        action: "Apply Now"
+        action_url: "https://sammydigitalocean.typeform.com/to/E4aNEx48"
+
+faq:
+  - question: "What are DigitalOcean Credits for Open Source?"
+    answer: "DigitalOcean offers grants of credits to open source projects to help with their development, infrastructure, and testing needs."
+  - question: "Why does DigitalOcean offer open source credits?"
+    answer: "We want to give back to the open source ecosystem we participate in and depend on."
+  - question: "What are the grants for and how long do they last?"
+    answer: "Grants are for credit toward DigitalOcean services such as VMs, storage, databases, App Platform, etc. Each grant is based on the project’s needs, lasts one year, and can be renewed by reapplying."
+  - question: "What open source projects are eligible to apply?"
+    answer: "Any project with an OSI-approved license that meets the star criteria and demonstrates community engagement can apply."
+  - question: "What if my project doesn't have an OSI-approved license?"
+    answer: "You may not be ready for sponsorship. Explore available OSI-approved licenses to ensure your project qualifies."
+  - question: "What if my project doesn't have a Code of Conduct?"
+    answer: "We still consider projects without one, but highly encourage adopting a Code of Conduct to foster a healthy, inclusive community."
+  - question: "How do I apply?"
+    answer: "Fill out and submit the online application form. We typically review and notify applicants within 7-10 business days."
+  - question: "When will I be notified of the decision on my application?"
+    answer: "We strive to notify all applicants of our decision within 7-10 business days."
+  - question: "Will I be notified when it's time to renew?"
+    answer: "Yes. You will receive reminder emails starting 65 days before your current credit grant expires."
+  - question: "Am I guaranteed renewal if I've received support in the past?"
+    answer: "No. Each renewal is reviewed on a case-by-case basis; you must reapply to continue receiving credits."

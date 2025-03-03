@@ -1,0 +1,69 @@
+{
+  "site": {
+    "title": "CloudCredits.io",
+    "base_url": "https://cloudcredits.io",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_darkmode": "/images/logo-darkmode.svg",
+    "logo_width": "60",
+    "logo_height": "40",
+    "logo_text": "CloudCredits.io"
+  },
+
+  "theme": {
+    "colors": {
+      "primary": {
+        "teal": "#1AE8D9",
+        "purple": "#C37BFF"
+      },
+      "secondary": {
+        "yellow": "#FAD55E",
+        "orange": "#F76D1D"
+      },
+      "dark": {
+        "card": "#1a1b1f",
+        "border": "rgba(255,255,255,0.1)"
+      }
+    },
+    "gradients": {
+      "brand": {
+        "from": "#1AE8D9",
+        "to": "#C37BFF"
+      },
+      "accent": {
+        "from": "#FAD55E",
+        "to": "#F76D1D"
+      }
+    }
+  },
+
+  "settings": {
+    "search": true,
+    "sticky_header": true,
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 2,
+    "summary_length": 200,
+    "programs_folder": "programs",
+    "providers_folder": "providers"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "Handpicked and brought to you by DUALSTACKS and our amazing community 🌃"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Explore",
+    "link": "/tags"
+  },
+
+  "metadata": {
+    "meta_author": "dualstacks.com",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Find and secure the best cloud credits to boost your projects!"
+  }
+}

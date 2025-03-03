@@ -1,0 +1,12 @@
+active: true
+name: "Akamai Connected Cloud (formerly Linode)"
+short_name: "Akamai"
+slug: "akamai"
+color: "#009cde"
+url: "https://www.linode.com"
+intro: "A distributed cloud platform combining edge computing, security, and content delivery across 130+ countries"
+best_deal: "Up to $120,000 during the first year"
+video: ""
+tags:
+  - "cloud"
+  - "edge"

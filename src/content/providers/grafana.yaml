@@ -1,0 +1,13 @@
+active: true
+name: "Grafana Labs"
+short_name: "Grafana"
+slug: "grafana"
+color: "#FDC616"
+url: "https://grafana.com/blog/2024/09/24/grafana-labs-startup-program/#why-were-launching-the-startup-program"
+intro: "Grafana Labs is the company behind Grafana, the leading open-source analytics and monitoring solution."
+best_deal: "Up to €100,000 credits for 1 year"
+video: ""
+tags:
+  - "monitoring"
+  - "analytics"
+  - "kubernetes"

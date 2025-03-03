@@ -1,0 +1,41 @@
+provider_slug: "aws"
+title: "AWS Rapid Ramp Credits"
+intro: "Small businesses can apply for $300 in AWS credits to quickly test and validate their cloud workloads."
+description: "The AWS Rapid Ramp Credit Program provides a one-time $300 promotional credit to help businesses test AWS services for their specific IT requirements by subsidizing a proof of concept. Participants must have a valid AWS account with complete billing information, no linked accounts, and must not have previously received more than $300 of AWS promotional credit. Credits expire 6 months from issuance. For more details and to apply, complete the official application form."
+status: "Active"
+tags:
+  - "cloud"
+url: "https://pages.awscloud.com/GLOBAL_NCA_LN_ARRC-program-A300-2023.html?trk=bd743fc6-751e-4c80-bdc7-bc85ecb94d72&sc_channel=el&p=free&c=offers&z=2"
+value_type: "credits"
+currency: "USD"
+max_value: 300
+tiers:
+  - name: "AWS Rapid Ramp"
+    intro: "Receive $300 in promotional credits for a proof of concept on AWS."
+    max_value: 300
+    url: "https://pages.awscloud.com/GLOBAL_NCA_LN_ARRC-program-A300-2023.html?trk=bd743fc6-751e-4c80-bdc7-bc85ecb94d72&sc_channel=el&p=free&c=offers&z=2"
+    benefits:
+      - "$300 promotional credit"
+      - "Subsidize proof of concept on AWS"
+      - "Leverage broad AWS product portfolio"
+      - "No upfront costs beyond credit coverage"
+    benefits_level: 1
+    duration:
+      - "6 months"
+    eligibility:
+      - "Valid AWS account with up-to-date billing information"
+      - "No previously received more than $300 in AWS promotional credits"
+      - "Sufficient business case for a proof of concept"
+      - "No linked AWS accounts"
+    effort:
+      - "Complete short application form"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create or Verify AWS Account"
+        description: "Have an active AWS account with updated billing information"
+        action: "Sign Up / Verify"
+        action_url: "https://aws.amazon.com/"
+      - name: "Complete Rapid Ramp Application"
+        description: "Fill in the official AWS Rapid Ramp form and submit required details"
+        action: "Apply Now"
+        action_url: "https://pages.awscloud.com/GLOBAL_NCA_LN_ARRC-program-A300-2023.html"

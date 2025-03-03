@@ -1,0 +1,93 @@
+---
+import config from "@/config/config.json";
+import ImageMod from "./ImageMod.astro";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FaTag } from "react-icons/fa6";
+import { AnimatedProviderCard } from "./AnimatedProviderCard";
+import { slugify } from "@/lib/utils/textConverter";
+
+const { data } = Astro.props;
+const {
+  name,
+  slug,
+  color = "#A66FFF",
+  intro,
+  tags,
+  short_name,
+  best_deal,
+} = data.data;
+const logo = `/images/providers/${slug}.svg`;
+const { colors, gradients } = config.theme;
+---
+
+<a href={`/providers/${slug}`} class="block transform-gpu">
+  <AnimatedProviderCard client:load color={color}>
+    <div
+      class="flex-1 p-6 flex flex-col justify-center items-center transform-gpu"
+    >
+      {
+        logo && (
+          <div class="mb-6 transition-transform duration-300 group-hover:scale-105 w-[180px] h-[80px] flex items-center justify-center transform-gpu">
+            <ImageMod
+              class="w-full h-full object-contain transform-gpu"
+              src={logo}
+              alt={name}
+              width={180}
+              height={80}
+              format="svg"
+            />
+          </div>
+        )
+      }
+
+      <p
+        class="text-lg mb-4 line-clamp-3 text-gray-600 dark:text-white/90 text-center transform-gpu"
+      >
+        {intro}
+      </p>
+
+      {
+        best_deal && (
+          <div class="mb-4 transform-gpu">
+            <p
+              class={`text-2xl font-bold transform-gpu`}
+              style={`color: ${color};`}
+            >
+              {best_deal}
+            </p>
+          </div>
+        )
+      }
+    </div>
+
+    <div
+      class="p-6 backdrop-blur-xl bg-white/5 dark:bg-black/20 border-t border-white/10 dark:border-white/5 transform-gpu"
+    >
+      <div class="flex flex-wrap gap-2 mb-6">
+        {
+          tags &&
+            tags.map((tag: string) => (
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full backdrop-blur-sm bg-white/10 dark:bg-white/5 text-gray-700 dark:text-gray-200 text-sm 
+              border border-white/10 dark:border-white/5 transform-gpu hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300"
+                onclick={`window.location.href='/tags/${slugify(tag)}'`}
+              >
+                <FaTag className="text-xs" style={{ color }} />
+                {tag}
+              </span>
+            ))
+        }
+      </div>
+
+      <div
+        class="group/link flex items-center text-xl font-medium transition-all duration-300 transform-gpu"
+        style={`color: ${color};`}
+      >
+        <MdOutlineKeyboardArrowRight
+          className="mr-1 transition-transform duration-300 group-hover/link:translate-x-1"
+        />
+        <span class="hover:underline transform-gpu">{short_name}</span>
+      </div>
+    </div>
+  </AnimatedProviderCard>
+</a>

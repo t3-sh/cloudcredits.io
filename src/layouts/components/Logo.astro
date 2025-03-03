@@ -1,0 +1,62 @@
+---
+import config from "@/config/config.json";
+import ImageMod from "./ImageMod.astro";
+import { AnimatedLogo } from "./AnimatedLogo";
+
+const { src, srcDarkmode }: { src?: string; srcDarkmode?: string } =
+  Astro.props;
+const {
+  logo,
+  logo_darkmode,
+  logo_width,
+  logo_height,
+  logo_text,
+  title,
+}: {
+  logo: string;
+  logo_darkmode: string;
+  logo_width: any;
+  logo_height: any;
+  logo_text: string;
+  title: string;
+} = config.site;
+
+const { theme_switcher }: { theme_switcher: boolean } = config.settings;
+const { gradients } = config.theme;
+---
+
+<a href="/" class="navbar-brand group inline-flex items-center">
+  {
+    src || srcDarkmode || logo || logo_darkmode ? (
+      <AnimatedLogo
+        client:load
+        src={src ? src : logo}
+        srcDarkmode={srcDarkmode ? srcDarkmode : logo_darkmode}
+        logoWidth={logo_width.replace("px", "")}
+        logoHeight={logo_height.replace("px", "")}
+        title={title}
+        themeSwitcher={theme_switcher}
+      />
+    ) : logo_text ? (
+      logo_text
+    ) : (
+      title
+    )
+  }
+</a>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap");
+
+  .navbar-brand {
+    @apply relative;
+  }
+  /* Remove the after pseudo-element since we're handling the underline animation in the React component */
+  /* .navbar-brand::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1AE8D9] to-[#C37BFF] transition-all duration-300 opacity-0;
+  }
+  .navbar-brand:hover::after {
+    @apply w-full opacity-100;
+  } */
+</style>

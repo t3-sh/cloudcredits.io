@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+.pnpm-store
+
+# build output
+dist/
+.output/
+.json/
+_site/
+.vercel
+.netlify
+.turbo/
+
+# logs and caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+yarn.lock
+package-lock.json
+.eslintcache
+*.tsbuildinfo
+
+# environment variables
+*.env
+
+# IDE and OS files
+.DS_Store
+.idea
+*.code-workspace
+
+# Astro specific
+.astro/
+env.d.ts
+
+# Test and benchmark files
+test-results/
+benchmark/projects/
+benchmark/results/
+scripts/smoke/*-main/
+scripts/memory/project/src/pages/
+packages/astro/src/**/*.prebuilt.ts
+packages/astro/src/**/*.prebuilt-dev.ts
+packages/astro/test/units/_temp-fixtures/*
+!packages/astro/test/units/_temp-fixtures/package.json
+packages/integrations/**/.netlify/
+packages/**/test/**/fixtures/**/.astro/
+packages/**/test/**/fixtures/**/env.d.ts
+packages/**/e2e/**/fixtures/**/.astro/
+packages/**/e2e/**/fixtures/**/env.d.ts
+examples/**/.astro/
+examples/**/env.d.ts

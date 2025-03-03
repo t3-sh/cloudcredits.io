@@ -1,0 +1,12 @@
+active: true
+name: "OVHcloud"
+short_name: "OVH"
+slug: "ovh"
+color: "#000F9C"
+url: "https://www.ovh.com"
+intro: "French cloud provider known for cost-effective hosting, dedicated servers, and European data sovereignty."
+best_deal: "Up to €100,000 credits for 1 year"
+video: ""
+tags:
+  - "cloud"
+  - "europe"

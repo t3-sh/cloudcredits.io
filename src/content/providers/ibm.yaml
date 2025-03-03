@@ -1,0 +1,11 @@
+active: true
+name: "IBM Cloud"
+short_name: "IBM"
+slug: "ibm"
+color: "#0E61FE"
+url: "https://developer.ibm.com/startups"
+intro: "Enterprise-grade cloud solutions blending robust hybrid integration, AI innovation, and advanced security for digital transformation."
+best_deal: "Up to $120,000 in credits"
+video: ""
+tags:
+  - "cloud"

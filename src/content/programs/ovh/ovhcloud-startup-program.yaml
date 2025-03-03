@@ -1,0 +1,179 @@
+provider_slug: "ovh"
+title: "OVHcloud Startup Program"
+meta_title: "Cloud Support for Startups & Scaleups"
+intro: "Accelerate development with up to €100,000 free cloud credits"
+description: "12-month program offering cloud credits, engineering support, and ecosystem access for tech startups at different growth stages. Provides a concierge journey onto OVHcloud with personalized technical and business support."
+status: "Active"
+url: "https://startup.ovhcloud.com/en/"
+min_value: 10000
+max_value: 100000
+tags:
+  - cloud
+  - europe
+  - gpu
+date: 2025-03-02
+
+tiers:
+  - name: "For Startups"
+    intro: "12-month foundational support for early-stage startups"
+    url: https://startup.ovhcloud.com/en/startups/
+    benefits_level: 2
+    effort_level: 2
+    max_value: 10000
+    benefits:
+      - "€10,000 free cloud credits"
+      - "6 hours of 1-on-1 time with an engineer (free)"
+      - "Visibility for your startup"
+      - "Access to market and funding"
+    duration: ["12 months"]
+    eligibility:
+      - "Registered tech startup"
+      - "MVP development stage"
+    steps_to_apply:
+      - name: "Create OVHcloud Account"
+        description: "Sign up for an OVHcloud account if you don't have one"
+        action: Sign Up
+        action_url: "https://ca.ovh.com/auth/?onsuccess=https%3A%2F%2Fca.ovh.com%2Fauth%2Fsso%2Ftoken%2F%3FovhSubsidiary%3DWE%26return_to%3Dhttps%253A%252F%252Fstartup.ovhcloud.com%252Fen%252Flogin%252F&ovhSubsidiary=WE"
+      - name: "Program Application"
+        description: "Submit startup details through program portal"
+        action: Apply Now
+        action_url: "https://startup.ovhcloud.com/en/"
+
+  - name: "For Scaleups"
+    intro: "Advanced support for growth-stage scaleups"
+    url: https://startup.ovhcloud.com/en/scaleups/
+    max_value: 100000
+    benefits_level: 3
+    effort_level: 3
+    benefits:
+      - "Up to €100,000 free cloud credits"
+      - "Up to 20 hours of 1-on-1 time with an engineer (free)"
+      - "Personal visibility for your scaleup"
+      - "Access to market and funding"
+    duration: ["12 months"]
+    eligibility:
+      - "Post-revenue tech company"
+      - "Demonstrated growth metrics"
+    steps_to_apply: 
+      - name: "Create OVHcloud Account"
+        description: "Sign up for an OVHcloud account if you don't have one"
+        action_url: "https://ca.ovh.com/auth/?onsuccess=https%3A%2F%2Fca.ovh.com%2Fauth%2Fsso%2Ftoken%2F%3FovhSubsidiary%3DWE%26return_to%3Dhttps%253A%252F%252Fstartup.ovhcloud.com%252Fen%252Flogin%252F&ovhSubsidiary=WE"
+      - name: "Scaleup Validation"
+        description: "Business review with program team"
+        action_url: "https://startup.ovhcloud.com/en/"
+
+  - name: "For Enablers"
+    intro: "Support for organizations that work with startups"
+    url: https://startup.ovhcloud.com/en/enablers/
+    benefits_level: 3
+    effort_level: 3
+    max_value: 100000
+    benefits:
+      - "Visibility for you and your members"
+      - "Up to €100,000 free cloud credits for your members"
+      - "Up to 20 hours of 1-on-1 support for your members"
+      - "Tech and access to market and funding events to collaborate on together"
+    steps_to_apply:
+      - name: "Create OVHcloud Account"
+        description: "Sign up for an OVHcloud account if you don't have one"
+        action_url: "https://ca.ovh.com/auth/?onsuccess=https%3A%2F%2Fca.ovh.com%2Fauth%2Fsso%2Ftoken%2F%3FovhSubsidiary%3DWE%26return_to%3Dhttps%253A%252F%252Fstartup.ovhcloud.com%252Fen%252Flogin%252F&ovhSubsidiary=WE"
+      - name: "Enabler Application"
+        description: "Submit organization details through program portal"
+        action_url: "https://startup.ovhcloud.com/en/"
+
+faq:
+  - question: "How do I submit an application?"
+    answer: "To submit an application, simply apply online by clicking the \"Apply\" button available on our homepage. Verify that you are on the right country website, based on your business address by selecting the correct country flag in the top right corner of the page, before clicking on \"Apply\". Next, enter the customer account you would like to link to the program or create a new one. Then answer some basic questions about your business. Once you have submitted your application, you will receive a response within 7 days."
+
+  - question: "Which OVHcloud account should I enter to sign up?"
+    answer: "The OVHcloud account that you choose will be the account with which your Startup Program vouchers will be associated. If you are an existing customer, this is the account that you use for the billing of your current services. Note that, once you associate an application with a customer account, you will not be able to switch to another OVHcloud account. For this reason, we strongly suggest that you do not enter your personal OVHcloud account under any circumstances."
+
+  - question: "I don't have an OVHcloud account, can I still sign up?"
+    answer: "If you do not have an OVHcloud account, you can create one via the sign-up form for the OVHcloud Startup Program. You will be prompted to do this in the first step."
+
+  - question: "The application form asks me to provide an 'event code'? How can I get one?"
+    answer: "This code is not mandatory and does not carry any specific advantages. It is used to identify your application when one of our employees or partners meets you at an event. However, it is necessary for startups with support structures managed by a Premium partner with the OVHcloud Startup Program. In this case, please contact the service in advance, or the person responsible for the partnership within your structure."
+
+  - question: "What are the advantages for startups when they join the OVHcloud Startup Program?"
+    answer: "If you join our Startup Program, we will provide you with Startup Program vouchers. These vouchers can be up to €100,000, depending on your stage of development and server requirements, and can be used to deploy a solution built on OVHcloud platforms. By taking part in this program, you will also receive up to 20 hours of free technical support, depending on your stage of development, from our expert engineers throughout your time in the Startup Program. Our objective is to respond to the needs of all startups with powerful solutions that can be used to set up a flexible, high-availability service. In addition to the vouchers and technical support, the Startup Program also offers personal visibility and access to the market and funding for our members. See the Startup Program homepage for more details on the specific offerings for startups and scaleups."
+
+  - question: "What are the advantages of choosing OVHcloud over other competitors?"
+    answer: "OVHcloud offers true data sovereignty to European customers and customers in other parts of the world as well. For example, OVHcloud implements technical and organizational measures that aim to protect the data hosted by its EU-based customers against interference from authorities outside of the European Union. We also have an excellent and very competitive price-to-performance ratio (according to reports by Cloud Spectator). This means you get the best hardware at an affordable price. We value transparency, so we will always indicate a monthly or hourly price on the hardware you are using. There are no hidden costs or over-charging for egress bandwidth. OVHcloud does not charge bandwidth costs in general which provides greater price transparency. OVHcloud takes open-source technology and interoperability very seriously with its services. This means that you are not locked in by our technology and can migrate your infrastructure at any time, should you choose to do so. However, by delivering a high-quality service, we trust that you will want to work with OVHcloud for the long term."
+
+  - question: "Is the OVHcloud Startup Program different from other startup support programs?"
+    answer: "Most major cloud players are too large to provide a personalized service that meets the individual needs and ambitions of all the startups in their programs. A personal touch is what makes us unique and is at the heart of what we offer. We offer 1-on-1 time with a manager in your region to help you maximize the benefits of the Startup Program and OVHcloud's secure, open standards-based, and data-sovereign cloud. OVHcloud goes further by offering support from our technical experts – including advice on creating and scaling your infrastructure. In this way, the program responds to your long-term goals and allows you more time to focus on business priorities. In addition, the Fast Forward Accelerator builds on the accompanied journey onto OVHcloud that is provided by the Startup Program with business acceleration support. This includes dedicated access to the market, funding events, visibility on social media, and 1-on-1 mentoring and access to our Content Hub."
+
+  - question: "Is the OVHcloud Startup Program voucher allocation lower than other startup programs?"
+    answer: "No, the sums provided are equivalent to most other startup programs. They take into account the value of the euro against the dollar, as well as the price-to-performance ratio of OVHcloud solutions, which is generally better than most on the cloud market (according to reports by Cloud Spectator). The technical support hours also help startups to better utilize their voucher usage by managing the scaling of their infrastructure. This helps startups avoid any unnecessary costs that may be unmanageable once the Startup Program is completed."
+
+  - question: "How can I improve our chances of admission?"
+    answer: "If you meet the following criteria, your application is more likely to be successful: The fields in the sign-up form are completed diligently and on-time; The project proposed has been launched; Support within a support structure e.g., incubator or accelerator; A functional website explaining the concept behind your solution; A detailed outline of the solution is provided in the form; A business model detailed in the form; A description of technical requirements provided in the form and the ways in which OVHcloud can help (solutions, quantity of resources, technologies, etc.); At least one successful fundraising."
+
+  - question: "I am already part of a support program with a competitor. Can I still join the OVHcloud Startup Program?"
+    answer: "Yes, the OVHcloud Startup Program does not impose any form of exclusivity to OVHcloud services. This is an opportunity to test and compare our solutions with other alternatives on the market."
+
+  - question: "Is my startup eligible for the €100,000 vouchers offered by the Scale level of the OVHcloud Startup Program?"
+    answer: "Scale level allows selected series-A (and beyond) funded startups and scaleups 12 months to activate their products or solutions on our cloud for free. Accepted startups and scaleups will be assessed to understand what their infrastructure spend will be over the 12 months and allocated vouchers up to €100,000 based on that assessment."
+
+  - question: "What are your eligibility criteria?"
+    answer: "We support any startup that proposes innovative, technical projects that have growth potential, as long as they at least have a Proof of Concept (POC) or Minimum Viable Product (MVP) that can be implemented on our cloud. These companies may or may not be OVHcloud customers; they could be a small team that wants to test a POC or MVP on the cloud; they might already be generating revenue. It is important that the startup requires cloud infrastructure soon. This is because the vouchers allocated following program admission must be used within the program's set time limit, or the vouchers will be lost. However, the OVHcloud Startup Program does not support: Projects that are not linked to a professional startup or activity (NGOs, associations, etc.); Companies that have already signed up to or taken part in an OVHcloud Startup Program (previously Digital Launch Pad); Projects with false, incomplete, or vague information included in the form; Any activity or behavior that is contentious such as traffic exchanges (Hitleap, Jingling, etc.), Black Hat SEO (Download, Re-upload of videos on online video platforms, etc.), cryptocurrency mining, video game bots, etc. Some applications may also be declined if they are a better match for the OVHcloud Partner Program. The OVHcloud Partner Program is better suited to the following profiles: Companies whose goal is to resell OVHcloud products as an integrator or white-label product; Companies offering digital services, consulting businesses, or competing services."
+
+  - question: "Does the Startup Program include any hidden, contractual obligations?"
+    answer: "No. The OVHcloud Startup Program is completely free for the companies it supports. We do not request any form of compensation and will not take any shares in your startup. We provide you with the means to succeed, so you can focus on achieving your goals."
+
+  - question: "Will I need to repay the Startup Program vouchers I use or do not use?"
+    answer: "No, the allocated Startup Program vouchers are completely at your disposal. OVHcloud will not request any compensation from you. You will only be charged for products and solutions that are not covered by the vouchers."
+
+  - question: "How long can I participate in the OVHcloud Startup Program and at what point does it start?"
+    answer: "Your participation will last for a maximum of 12 months for each of our levels, Start and Scale. It will start once the contracts are signed that you receive after your application is accepted. Immediately, you will have access to the benefits provided by the OVHcloud Startup Program."
+
+  - question: "Are the OVHcloud Startup Program vouchers valid for OVHcloud services that I already own?"
+    answer: "Yes. Once your Startup Program vouchers have been allocated, eligible OVHcloud solutions that you already use (and the ones you order) will be automatically debited using this credit (provided that there is a sufficient amount of credit)."
+
+  - question: "What pricing applies to the services I use during and after my participation in the program?"
+    answer: "Whether you are participating in the program or not, you are always billed as per the pricing on our website."
+
+  - question: "How much time will it take to process my application?"
+    answer: "Once your application has been sent, the team responsible for selecting startups will let you know whether it has been accepted or not within 7 days."
+
+  - question: "Why was my application declined?"
+    answer: "We receive a high volume of applications. In an effort to maintain the highest quality of service, a selection committee meets daily to determine which startups should be supported by OVHcloud. Priority is given to projects deemed to be the most innovative, and where it is clear that OVHcloud's expertise, infrastructure support, and financial support are necessary. If the OVHcloud Startup Program has declined your application, it may be for one of the following reasons: Your project is not linked to a professional startup or activity (NGOs, associations, etc.); Your company has already signed up for or taken part in an OVHcloud Startup Program (previously Digital Launch Pad); Your application contained false, incomplete, or vague information; Your project is linked to activity or behavior that is contentious such as traffic exchanges (Hitleap, Jingling, etc.), Black Hat SEO (Download, Reupload of videos on online video platforms, etc.), cryptocurrency mining, video game bots, etc. Some applications may be declined if we deem a project is better suited for the OVHcloud Partner Program. Entry to the OVHcloud Partner Program or our Marketplace is better suited for the following profiles: Companies looking to resell OVHcloud products as an integrator or white-label products; Companies offering digital services, consulting businesses, and companies looking to compete with OVHcloud. If you have further questions regarding your application, please contact us via email on startup@ovhcloud.com."
+
+  - question: "My application has been accepted. What are the next steps?"
+    answer: "Congratulations! A Startup Program Manager will contact you soon and you'll receive an acceptance email outlining the following steps:\n\nStep 1 (ESSENTIAL): Sign the contract. The link to the contract is included in the acceptance email or you can access the contract from your OVHcloud Control Panel:\n• Log in to the OVHcloud Manager;\n• Click on your name in the top right of the page;\n• On the next page click \"My services\" in the left menu;\n• Click on the \"Contracts\" tab in the middle of the screen near the top;\n• You should see the Startup Program contract there.\n\nStep 2: Wait for your Startup Program vouchers to be issued (available within 48 hours). To verify if your vouchers have been issued, follow these steps:\n• Log in to the OVHcloud Manager;\n• Click \"Payment method\" under your name in the top right of the page;\n• On the next page click \"My Startup Program vouchers\" in the second menu from the top.\n\nStep 3: Check out our FAQ and Guides, if necessary.\n• The Startup Program vouchers cover only Public Cloud and Hosted Private Cloud solutions (for example, Bare Metal Cloud products will not be paid by the vouchers);\n• As a new customer, you will quickly hit quota limits on Public Cloud products. Don't use the \"Increase My Quota\" button but rather create a Support ticket via the Manager, asking for a quota increase and indicate that you are part of the Startup Program.\n\nStep 4: Follow us on Twitter.\n\nStep 5: If you have performed these steps, you can start your tech development. Remember that you won't be alone. In fact, the Startup Program Manager for your region will personally contact you very soon and onboard you to explain our added benefits in detail. You can contact the Startup Program Manager in your region via the following email addresses:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"
+
+  - question: "Where can I find my OVHcloud Startup Program contract?"
+    answer: "The link to the contract is included in the acceptance email or you can also follow these steps to find your contract:\n• Log in to the OVHcloud Manager;\n• Click on your name in the top right of the page;\n• On the next page click \"My services\" in the left menu;\n• Click on the \"Contracts\" tab in the middle of the screen near the top;\n• You should see the Startup Program contract there."
+
+  - question: "How do I check if my Startup Program vouchers have been issued?"
+    answer: "To check whether your vouchers have been issued, follow these steps:\n• Log in to the OVHcloud Manager;\n• Click \"Payment method\" under your name in the top right of the page;\n• On the next page click \"My Startup Program vouchers\" in the second menu from the top.\n\nIf nothing appears, it may be that the OVHcloud Startup Program contracts sent by email have not been signed, or that the customer account used is not the one provided at the time of registration. If this is the case, please refer to the earlier question: \"Where can I view the welcome email for the OVHcloud Startup Program?\" or log in using the correct customer account."
+
+  - question: "How can I increase my infrastructure quotas as a Startup Program member?"
+    answer: "As a new customer, you will quickly reach quota limits on Public Cloud products. DO NOT use the \"Increase My Quota\" button! Create a Support ticket through your OVHcloud Control Panel and request that your quota be increased, stating that you are part of the Startup Program."
+
+  - question: "How are the Startup Program vouchers used with invoices?"
+    answer: "Invoices for eligible products will be automatically paid with Startup Program vouchers. If the invoice exceeds the remaining voucher balance, the invoice will not automatically be paid by vouchers. You can request a manual part-payment from the Startup Program manager in your region:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"
+
+  - question: "Where can I check my remaining Startup Program voucher balance?"
+    answer: "You can check your remaining Startup Program voucher balance at any time via the OVHcloud Control Panel. Simply click on \"My account\", then \"My payment methods\" and then \"My Startup Program vouchers\". If nothing appears, it may be that the OVHcloud Startup Program contracts sent by email have not been signed, or that the customer account used is not the one provided at the time of registration. If this is the case, please refer to the earlier question: \"Where can I view the welcome email for the OVHcloud Startup Program?\" or log in using the correct customer account."
+
+  - question: "What can I spend my Startup Program vouchers on?"
+    answer: "Startup Program vouchers are only redeemable for Public Cloud (excluding instances with A100, H100, L4 and L40s GPUs) and Hosted Private Cloud solutions. In general, Bare Metal Cloud and Web Cloud products cannot be paid with vouchers. Contact the Startup Program manager in your region to get more details on exactly what is covered by Startup Program vouchers:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"
+
+  - question: "I have a question about OVHcloud solutions, an order, or an ongoing incident affecting one of my services. Who should I contact?"
+    answer: "You can get in touch with our sales and technical support teams via https://help.ovhcloud.com/"
+
+  - question: "How can I request a meeting to discuss infrastructure challenges, or contact a member of the OVHcloud Startup Program team?"
+    answer: "Please follow the options available on the FAQs and Support page of the Startup Program website."
+
+  - question: "Does the OVHcloud Startup Program only offer cloud services?"
+    answer: "The Startup Program vouchers only cover Public Cloud and Hosted Private Cloud solutions. For example, Bare Metal Cloud products will not be paid with vouchers but can still be purchased. This program is focused on cloud-based solutions. The cloud offers the most innovative solutions for building scalable, high-availability infrastructure with backup and security options (like vRack). You can ensure that your users have a service capable of managing traffic spikes, without experiencing any hardware failures."
+
+  - question: "The level of support I have been given does not reflect the maturity of my business or project. Can I change it?"
+    answer: "If you join our Startup Program, we will provide you with Startup Program vouchers. These vouchers can total up to €100,000, depending on your stage of development and server requirements, and can be used to deploy a solution built on OVHcloud platforms. By taking part in this program, you will also receive up to 20 hours of free technical support from our expert engineers throughout your time in the Startup Program. You will also be eligible for a certain level of support from our support team based on your stage of development. See the Startup Program homepage for more details on the specific offerings for startups and scaleups. Startup Program members can contact the Startup Program Manager in their region at the following email addresses to ask about increasing their support level:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"
+
+  - question: "What is the duration of the OVHcloud Startup Program? What happens afterward?"
+    answer: "Your participation will last for a maximum of 12 months for each of our levels, Start and Scale. After this period, any remaining Startup Program vouchers will be invalid and you will be responsible for making full payment for all your OVHcloud solutions. However, as an OVHcloud customer, our sales team is always available to discuss your requirements. You can also get in touch with our support team regarding any technical issues or incidents. You will remain part of the Startup Program alumnus and will have access to the community platform and any events we host for alumni. Please follow the options available on the FAQs and Support page of the Startup Program website."
+
+  - question: "What is the OVHcloud Startup Program community platform?"
+    answer: "This community platform is hosted on Whaller. In this space, you can: View premium content (tips, technical training, webinars, etc.), get the latest news on our program, get access to a Startup Program member networking space, and subscribe to receive notifications about our events (meetups, webinars, etc.). You can access the community platform from the relevant link on the OVHcloud Startup Program website."

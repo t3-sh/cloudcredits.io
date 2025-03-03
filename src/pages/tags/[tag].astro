@@ -1,0 +1,105 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCombinedTags, getItemsByTag } from "@/lib/taxonomyParser.astro";
+import { humanize } from "@/lib/utils/textConverter";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import PageHeader from "@/partials/PageHeader.astro";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import ProviderCard from "@/layouts/components/ProviderCard.astro";
+import { FaTag } from "react-icons/fa6";
+
+export async function getStaticPaths() {
+  const tags = await getCombinedTags();
+
+  return tags.map((tag) => {
+    return {
+      params: { tag },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+
+// Get all programs and providers with this tag
+const { programs, providers } = await getItemsByTag(tag!);
+
+// Sort programs by date if available
+const sortedPrograms = sortByDate(programs);
+---
+
+<Base title={`${tag!} - Tag`}>
+  <div class="section pt-14">
+    <div class="container">
+      <div class="flex justify-center mb-10">
+        <div
+          class="inline-flex items-center gap-3 px-6 py-3 rounded-full backdrop-blur-xl bg-white/10 dark:bg-white/5
+        border border-white/10 dark:border-white/5 shadow-lg transform-gpu"
+        >
+          <FaTag className="text-primary dark:text-primary/80 text-xl" />
+          <h1
+            class="text-3xl font-bold text-gray-800 dark:text-white/90 lowercase"
+          >
+            {tag!}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section pt-0">
+    <div class="container">
+      {
+        programs.length > 0 && (
+          <div class="mb-10">
+            <h2 class="mb-6">
+              "
+              <span class="lowercase text-primary dark:text-primary/80">
+                {tag!}
+              </span>
+              " tagged programs
+            </h2>
+            <div class="row">
+              {sortedPrograms.map((program) => (
+                <div class="mb-8 md:col-6 lg:col-4">
+                  <ProgramCard program={program} />
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        providers.length > 0 && (
+          <div>
+            <h2 class="mb-6">
+              "
+              <span class="lowercase text-primary dark:text-primary/80">
+                {tag!}
+              </span>
+              " tagged providers
+            </h2>
+            <div class="row">
+              {providers.map((provider) => (
+                <div class="mb-8 md:col-6 lg:col-4">
+                  <ProviderCard data={provider} />
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        programs.length === 0 && providers.length === 0 && (
+          <div class="text-center py-10">
+            <h3>No items found with this tag</h3>
+            <a href="/tags" class="btn btn-primary mt-4">
+              Browse All Tags
+            </a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</Base>

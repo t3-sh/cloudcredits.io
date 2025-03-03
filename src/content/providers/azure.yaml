@@ -1,0 +1,11 @@
+active: true
+name: "Microsoft Azure"
+short_name: "Azure"
+slug: "azure"
+color: "#0089D6"
+url: "https://www.microsoft.com/en-us/startups"
+intro: "Microsoft's global cloud platform delivering unmatched hybrid integration, cutting-edge AI, and enterprise-grade scalability for modern innovation."
+best_deal: "Up to $150,000 in Azure credits"
+video: ""
+tags:
+  - "cloud"

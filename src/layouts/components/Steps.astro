@@ -1,0 +1,73 @@
+---
+import { FaArrowRight } from "react-icons/fa";
+
+interface Step {
+  name: string;
+  description: string;
+  action?: string;
+  action_url?: string;
+}
+
+interface Props {
+  steps: Step[];
+  color: string;
+}
+
+const { steps, color } = Astro.props;
+---
+
+<div class="relative space-y-8">
+  <!-- Vertical line -->
+  <div
+    class="absolute left-[13px] top-[26px] bottom-4 w-0.5 opacity-20"
+    style={`background-color: ${color};`}
+  >
+  </div>
+
+  <!-- Steps -->
+  {
+    steps.map((step: Step, index: number) => (
+      <div
+        class="relative flex gap-6 opacity-0 translate-y-4"
+        style={`animation: fadeSlideUp 0.6s ease-out ${index * 0.2}s forwards;`}
+      >
+        <div
+          class="w-7 h-7 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0 text-white"
+          style={`background-color: ${color};`}
+        >
+          {index + 1}
+        </div>
+        <div class="flex-1">
+          <h4 class="font-semibold mb-1">{step.name}</h4>
+          <p class="text-gray-600 dark:text-gray-400 mb-3">
+            {step.description}
+          </p>
+          {step.action && step.action_url && (
+            <a
+              href={step.action_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-sm font-medium transition-all duration-300 hover:gap-2.5"
+              style={`color: ${color};`}
+            >
+              {step.action} <FaArrowRight className="text-xs" />
+            </a>
+          )}
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

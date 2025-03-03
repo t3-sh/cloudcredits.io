@@ -1,0 +1,669 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getCollection } from "astro:content";
+import ImageMod from "@/components/ImageMod.astro";
+import { FaCheck, FaArrowRight, FaCalendar, FaTag } from "react-icons/fa";
+import { slugify } from "@/lib/utils/textConverter";
+import Steps from "@/layouts/components/Steps.astro";
+import Accordion from "@/components/Accordion.astro";
+import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
+import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
+import { Fragment } from "react";
+import fs from 'node:fs';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const programs = await getCollection("programs");
+  const providers = await getCollection("providers");
+
+  return programs.map((program) => {
+    const provider = providers.find((p) => p.data.slug === program.data.provider_slug);
+    if (!provider) {
+      throw new Error(`Provider not found for program: ${program.id}`);
+    }
+
+    return {
+      params: {
+        provider: provider.data.slug,
+        program: program.id.split("/").pop()?.replace(/\.yaml$/, ""),
+      },
+      props: { program, provider },
+    };
+  });
+}
+
+const { program, provider } = Astro.props;
+const {
+  title,
+  meta_title,
+  intro,
+  description,
+  status,
+  url,
+  tags,
+  max_value,
+  min_value,
+  value_type,
+  currency,
+  tiers,
+  faq,
+  date,
+  community_notes,
+} = program.data;
+
+const color = provider.data.color || "#232f3e";
+const currencySymbol = currency === "USD" ? "$" : "€";
+
+// Map benefits level to cosmic levels
+const benefitsLevelMap = {
+  1: { name: "Launchpad", icon: "/images/rocket.png", description: "Basic benefits to help you get started" },
+  2: { name: "Orbital", icon: "/images/orbit.png", description: "Enhanced benefits for growing projects" },
+  3: { name: "Stellar", icon: "/images/milkyway.png", description: "Premium benefits for established projects" },
+  4: { name: "Galactic", icon: "/images/galaxy.png", description: "Ultimate benefits package for industry leaders" },
+} as const;
+
+type BenefitsLevel = keyof typeof benefitsLevelMap;
+
+// Map effort level to gravity levels
+const effortLevelMap = {
+  1: { name: "Lunar Gravity", icon: "/images/moon.png", description: "Simple application process, usually just a quick form" },
+  2: { name: "Earth Gravity", icon: "/images/earth.png", description: "Moderate documentation like basic financials, pitch deck" },
+  3: { name: "Solar Gravity", icon: "/images/sun.png", description: "More intense: interview rounds, additional verification documents" },
+  4: { name: "Black Hole Gravity", icon: "/images/blackhole.png", description: "Most demanding (complex due diligence)" },
+} as const;
+
+type EffortLevel = keyof typeof effortLevelMap;
+
+// Helper function to render level indicators consistently
+function renderLevelIndicator(levelType: "benefits" | "complexity", level: number, color: string): string {
+  const map = levelType === "benefits" ? benefitsLevelMap : effortLevelMap;
+  const levelKey = level as 1 | 2 | 3 | 4;
+  const levelData = map[levelKey];
+  const label = levelType === "benefits" ? "Benefits Level" : "Application Complexity";
+  
+  return `
+    <div class="level-indicator-container p-4 rounded-lg bg-white/5 dark:bg-black/10 backdrop-blur-sm border border-white/10 dark:border-white/5">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+        <div>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">${label}</p>
+          <div class="flex items-center gap-2">
+            <div class="p-1.5 rounded-full" style="background-color: ${color}20;">
+              <img src="${levelData.icon}" alt="${levelData.name}" class="w-8 h-8" />
+            </div>
+            <span class="font-bold text-lg" style="color: ${color};">${levelData.name}</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400 max-w-xs">
+          ${levelData.description}
+        </p>
+      </div>
+      
+      <div class="relative w-full mt-2">
+        <!-- Progress bar background -->
+        <div class="absolute top-1/2 transform -translate-y-1/2 left-0 right-0 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+          <!-- Colored progress indicator -->
+          <div class="h-full rounded-full" style="width: ${levelKey * 25}%; background-color: ${color};"></div>
+        </div>
+        
+        <!-- Level markers with icons -->
+        <div class="relative flex justify-between items-center py-4">
+          ${Object.entries(map)
+            .sort((a, b) => Number(a[0]) - Number(b[0]))
+            .map(([key, data], index) => {
+              const isActive = Number(key) <= levelKey;
+              const isCurrentLevel = key === String(levelKey);
+              return `
+                <div class="flex flex-col items-center relative">
+                  <div class="level-marker-container ${isActive ? 'active' : ''} ${isCurrentLevel ? 'current' : ''}" 
+                       style="--marker-color: ${color};">
+                    <img src="${data.icon}" alt="${data.name}"
+                      class="transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-40'} 
+                      ${isCurrentLevel ? 'scale-125' : 'scale-100'}" 
+                      width="28" height="28" />
+                    ${isCurrentLevel ? 
+                      `<div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                        <span class="text-xs font-medium px-2 py-1 rounded-full" 
+                              style="background-color: ${color}; color: white;">
+                          Level ${key}
+                        </span>
+                      </div>` : 
+                      ''}
+                  </div>
+                </div>`;
+            }).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/* Replace renderCombinedLevels arrow function with a function declaration to fix implicit any errors */
+function renderCombinedLevels(benefitsLevel: number, effortLevel: number, color: string): string {
+  const bKey = benefitsLevel as 1 | 2 | 3 | 4;
+  const eKey = effortLevel as 1 | 2 | 3 | 4;
+  const bData = benefitsLevelMap[bKey];
+  const eData = effortLevelMap[eKey];
+  return `
+    <div class="combined-levels-container p-4 rounded-lg bg-white/5 dark:bg-black/10 backdrop-blur-sm border border-white/10 dark:border-white/5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Benefits Level -->
+        <div class="level-section">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="p-1.5 rounded-full" style="background-color: ${color}20;">
+              <img src="${bData.icon}" alt="${bData.name}" class="w-8 h-8" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Benefits Level</p>
+              <span class="font-bold text-lg" style="color: ${color};">${bData.name}</span>
+            </div>
+          </div>
+          
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">${bData.description}</p>
+          
+          <div class="relative w-full mt-4">
+            <!-- Progress bar background -->
+            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+              <!-- Colored progress indicator -->
+              <div class="h-full rounded-full" style="width: ${bKey * 25}%; background-color: ${color};"></div>
+            </div>
+            
+            <!-- Level indicators -->
+            <div class="flex justify-between mt-2">
+              ${[1,2,3,4].map((num: number) => {
+                const isActive = num <= bKey;
+                const isCurrentLevel = num === bKey;
+                return `
+                  <div class="flex flex-col items-center">
+                    <img src="${benefitsLevelMap[num as 1|2|3|4].icon}" alt="" 
+                         class="w-5 h-5 ${isActive ? 'opacity-100' : 'opacity-40'} ${isCurrentLevel ? 'scale-125' : 'scale-100'}" />
+                    ${isCurrentLevel ? 
+                      `<div class="mt-1">
+                        <span class="text-xs font-medium" style="color: ${color};">Level ${num}</span>
+                      </div>` : 
+                      ''}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        </div>
+        
+        <!-- Complexity Level -->
+        <div class="level-section">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="p-1.5 rounded-full" style="background-color: ${color}20;">
+              <img src="${eData.icon}" alt="${eData.name}" class="w-8 h-8" />
+            </div>
+            <div>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Application Complexity</p>
+              <span class="font-bold text-lg" style="color: ${color};">${eData.name}</span>
+            </div>
+          </div>
+          
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">${eData.description}</p>
+          
+          <div class="relative w-full mt-4">
+            <!-- Progress bar background -->
+            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+              <!-- Colored progress indicator -->
+              <div class="h-full rounded-full" style="width: ${eKey * 25}%; background-color: ${color};"></div>
+            </div>
+            
+            <!-- Level indicators -->
+            <div class="flex justify-between mt-2">
+              ${[1,2,3,4].map((num: number) => {
+                const isActive = num <= eKey;
+                const isCurrentLevel = num === eKey;
+                return `
+                  <div class="flex flex-col items-center">
+                    <img src="${effortLevelMap[num as 1|2|3|4].icon}" alt="" 
+                         class="w-5 h-5 ${isActive ? 'opacity-100' : 'opacity-40'} ${isCurrentLevel ? 'scale-125' : 'scale-100'}" />
+                    ${isCurrentLevel ? 
+                      `<div class="mt-1">
+                        <span class="text-xs font-medium" style="color: ${color};">Level ${num}</span>
+                      </div>` : 
+                      ''}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Check if mini version exists in the public directory
+const publicDir = path.join(process.cwd(), 'public');
+const miniPath = `/images/providers/${provider.data.slug}.mini.svg`;
+const regularPath = `/images/providers/${provider.data.slug}.svg`;
+const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));
+
+const logo = miniExists ? miniPath : regularPath;
+---
+<Base title={title} meta_title={meta_title || title} description={description} image={logo}>
+  <div class="relative min-h-screen">
+    <!-- Base gradient background -->
+    <div 
+      class="fixed inset-0"
+      style={`
+        background: radial-gradient(
+          circle at top,
+          ${color}15 0%,
+          ${color}10 30%,
+          ${color}05 60%,
+          transparent 100%
+        );
+        @media (prefers-color-scheme: dark) {
+          background: radial-gradient(
+            circle at top,
+            ${color}25 0%,
+            ${color}20 30%,
+            ${color}15 60%,
+            transparent 100%
+          );
+        }
+      `}
+    ></div>
+
+    <!-- Content -->
+    <div class="relative z-10">
+      <!-- Breadcrumbs -->
+      <div class="container pt-8">
+        <div class="flex justify-center">
+          <Breadcrumbs className="mb-8" />
+        </div>
+      </div>
+      
+      <!-- Header -->
+      <div class="text-center py-20">
+        <div class="container">
+          <div class="flex items-center justify-center gap-4 mb-8">
+            {logo && (
+              <ImageMod
+                src={logo}
+                class="h-12 w-auto provider-logo"
+                width={48}
+                height={48}
+                alt={provider.data.name || "Provider logo"}
+                format="svg"
+              />
+            )}
+            <div class="flex items-center gap-3">
+              <h1 class="text-4xl font-bold">{title}</h1>
+              <ProgramStatusIndicator status={status} text={status} />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 justify-center mb-8">
+            {tags.map((tag: string) => (
+              <span 
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-xl bg-white/10 dark:bg-black/20 
+                border border-white/10 dark:border-white/5 text-gray-700 dark:text-gray-200
+                hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 transform-gpu cursor-pointer"
+                onclick={`window.location.href='/tags/${slugify(tag)}'`}
+              >
+                <FaTag className="text-sm" style={{ color }} />
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <p class="text-xl mb-8 max-w-3xl mx-auto">{description}</p>
+
+          <div class="flex items-center justify-center gap-6">
+            <div class="text-center">
+              <p class="text-sm text-gray-600 dark:text-gray-400">Starting from</p>
+              <p class="text-2xl font-bold" style={`color: ${color};`}>
+                {value_type === "credits" ? (
+                  <>{currencySymbol}{min_value?.toLocaleString() || 0}</>
+                ) : (
+                  <>{min_value || 0}%</>
+                )}
+              </p>
+            </div>
+            <div class="text-4xl text-gray-300">→</div>
+            <div class="text-center">
+              <p class="text-sm text-gray-600 dark:text-gray-400">Up to</p>
+              <p class="text-2xl font-bold" style={`color: ${color};`}>
+                {value_type === "credits" ? (
+                  <>{currencySymbol}{max_value.toLocaleString()}</>
+                ) : (
+                  <>{max_value}%</>
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program Tiers -->
+      <div class="container py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Program Tiers</h2>
+
+        <div class="max-w-5xl mx-auto space-y-16 mb-16">
+          <!-- Tier Navigation -->
+          <div class="flex justify-center">
+            <div class="inline-flex p-1 rounded-full bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-white/10 dark:border-white/5">
+              {tiers.map((tier, index) => (
+                <button
+                  class="tier-nav-btn relative px-6 py-3 rounded-full text-center transition-all duration-300 focus:outline-none"
+                  data-tier-index={index}
+                  aria-selected={index === 0 ? "true" : "false"}
+                  style={`--tier-color: ${color};`}
+                >
+                  <div class="flex flex-col">
+                    <span class="text-lg font-medium">{tier.name}</span>
+                    <span class="text-xs mt-1" style={`color: ${color};`}>
+                      {value_type === "credits" ? (
+                        <>{currencySymbol}{tier.max_value.toLocaleString()}</>
+                      ) : (
+                        <>{tier.max_value}%</>
+                      )}
+                    </span>
+                  </div>
+                  <div class="tier-indicator absolute bottom-0 left-0 right-0 mx-auto h-1 rounded-full transition-all duration-300" style={`background-color: ${color}; width: ${index === 0 ? '80%' : '0%'};`}></div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <!-- Tier Cards Container -->
+          <div class="tier-cards-container">
+            {tiers.map((tier, index) => (
+              <div 
+                class={`tier-card transition-all duration-500 ${index === 0 ? 'block' : 'hidden'}`}
+                data-tier-index={index}
+              >
+                <div class="rounded-xl overflow-hidden backdrop-blur-xl bg-white/10 dark:bg-black/20 border border-white/10 dark:border-white/5 p-8">
+                  <div class="space-y-8">
+                    <!-- Tier Header -->
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                      <div>
+                        <h3 class="text-2xl font-bold mb-2">{tier.name}</h3>
+                        <p class="text-gray-600 dark:text-gray-400">{tier.intro}</p>
+                      </div>
+                    </div>
+
+                    <!-- Credit Value with Visual Indicator - Made more prominent -->
+                    <div class="relative p-6 rounded-lg border-2 border-white/20 dark:border-white/10 bg-white/5 dark:bg-black/10">
+                      <div class="absolute inset-0 bg-gradient-to-r rounded-lg" style={`background: linear-gradient(to right, ${color}20, transparent); width: ${(tier.max_value / max_value) * 100}%;`}></div>
+                      <div class="relative z-10 flex items-center justify-between">
+                        <div>
+                          <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                            {value_type === "credits" ? "Credit Value" : "Discount Value"}
+                          </p>
+                          <p class="text-4xl font-bold" style={`color: ${color};`}>
+                            {value_type === "credits" ? (
+                              <>{currencySymbol}{tier.max_value.toLocaleString()}</>
+                            ) : (
+                              <>{tier.max_value}%</>
+                            )}
+                          </p>
+                        </div>
+                        <div class="text-right">
+                          <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Duration</p>
+                          <p class="flex items-center gap-2 text-lg">
+                            <FaCalendar className="text-sm" style={{ color }} />
+                            {tier.duration.join(", ")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Two-column layout for Benefits and Eligibility -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                      <!-- Benefits -->
+                      <div class="bg-white/5 dark:bg-black/10 backdrop-blur-sm border border-white/10 dark:border-white/5 rounded-lg p-6">
+                        <h4 class="font-medium mb-4 text-xxl">Benefits</h4>
+                        
+                        <!-- Simplified Benefits Level Indicator -->
+                        <div class="mb-6">
+                          <div class="flex items-center gap-3 mb-2">
+                            <div class="p-1.5 rounded-full" style={`background-color: ${color}20;`}>
+                              <img src={benefitsLevelMap[tier.benefits_level as 1|2|3|4].icon} alt={benefitsLevelMap[tier.benefits_level as 1|2|3|4].name} class="w-8 h-8" />
+                            </div>
+                            <div>
+                              <span class="font-bold" style={`color: ${color};`}>{benefitsLevelMap[tier.benefits_level as 1|2|3|4].name}</span>
+                              <div class="text-sm text-gray-600 dark:text-gray-400">{benefitsLevelMap[tier.benefits_level as 1|2|3|4].description}</div>
+                            </div>
+                          </div>
+                          
+                          <!-- Progress bar -->
+                          <div class="relative w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mt-3 mb-2">
+                            <div class="h-full rounded-full" style={`width: ${tier.benefits_level * 25}%; background-color: ${color};`}></div>
+                          </div>
+                          
+                          <!-- Level indicators -->
+                          <div class="flex justify-between">
+                            {[1,2,3,4].map((num) => (
+                              <div class="flex flex-col items-center">
+                                <img 
+                                  src={benefitsLevelMap[num as 1|2|3|4].icon} 
+                                  alt="" 
+                                  class={`w-5 h-5 ${num <= tier.benefits_level ? 'opacity-100' : 'opacity-40'} ${num === tier.benefits_level ? 'scale-125' : 'scale-100'}`} 
+                                />
+                                {num === tier.benefits_level && (
+                                  <span class="text-xs font-medium mt-1" style={`color: ${color};`}>Level {num}</span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <!-- Benefits List -->
+                        <div class="space-y-3">
+                          {tier.benefits.map((benefit) => (
+                            <div class="flex items-start gap-2">
+                              <FaCheck className="text-green-500 mt-1 flex-shrink-0" />
+                              <span>{benefit}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <!-- Eligibility -->
+                      <div class="bg-white/5 dark:bg-black/10 backdrop-blur-sm border border-white/10 dark:border-white/5 rounded-lg p-6">
+                        <h4 class="font-medium mb-4 text-xxl">Eligibility</h4>
+                        
+                        <!-- Simplified Application Complexity Indicator -->
+                        <div class="mb-6">
+                          <div class="flex items-center gap-3 mb-2">
+                            <div class="p-1.5 rounded-full" style={`background-color: ${color}20;`}>
+                              <img src={effortLevelMap[tier.effort_level as 1|2|3|4].icon} alt={effortLevelMap[tier.effort_level as 1|2|3|4].name} class="w-8 h-8" />
+                            </div>
+                            <div>
+                              <span class="font-bold" style={`color: ${color};`}>{effortLevelMap[tier.effort_level as 1|2|3|4].name}</span>
+                              <div class="text-sm text-gray-600 dark:text-gray-400">{effortLevelMap[tier.effort_level as 1|2|3|4].description}</div>
+                            </div>
+                          </div>
+                          
+                          <!-- Progress bar -->
+                          <div class="relative w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mt-3 mb-2">
+                            <div class="h-full rounded-full" style={`width: ${tier.effort_level * 25}%; background-color: ${color};`}></div>
+                          </div>
+                          
+                          <!-- Level indicators -->
+                          <div class="flex justify-between">
+                            {[1,2,3,4].map((num) => (
+                              <div class="flex flex-col items-center">
+                                <img 
+                                  src={effortLevelMap[num as 1|2|3|4].icon} 
+                                  alt="" 
+                                  class={`w-5 h-5 ${num <= tier.effort_level ? 'opacity-100' : 'opacity-40'} ${num === tier.effort_level ? 'scale-125' : 'scale-100'}`} 
+                                />
+                                {num === tier.effort_level && (
+                                  <span class="text-xs font-medium mt-1" style={`color: ${color};`}>Level {num}</span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <!-- Eligibility List - Updated to match Benefits styling but with a different icon -->
+                        <div class="space-y-3">
+                          {tier.eligibility.map((item) => (
+                            <div class="flex items-start gap-2">
+                              <FaArrowRight className="text-blue-500 mt-1 flex-shrink-0" />
+                              <span>{item}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- How to Apply -->
+                    {tier.steps_to_apply && (
+                      <div class="mt-8 p-6 rounded-lg bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-white/10 dark:border-white/5">
+                        <h4 class="font-medium mb-6 text-3xl text-center">Apply Now</h4>
+                        <Steps steps={tier.steps_to_apply} color={color} />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Client-side JavaScript for tier navigation -->
+          <script>
+            function initTierNavigation() {
+              const buttons = document.querySelectorAll('.tier-nav-btn');
+              buttons.forEach(btn => {
+                const clone = btn.cloneNode(true);
+                if (btn.parentNode) {
+                  btn.parentNode.replaceChild(clone, btn);
+                }
+              });
+              
+              const tierNavBtns = Array.from(document.querySelectorAll('.tier-nav-btn')) as HTMLElement[];
+              const tierCards = Array.from(document.querySelectorAll('.tier-card')) as HTMLElement[];
+              
+              if (tierNavBtns.length <= 1) {
+                const navContainer = document.querySelector('.tier-nav-btn')?.closest('.flex.justify-center');
+                if (navContainer) {
+                  (navContainer as HTMLElement).style.display = 'none';
+                }
+                return;
+              }
+              
+              tierNavBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                  const targetIndex = btn.getAttribute('data-tier-index');
+                  
+                  tierNavBtns.forEach(navBtn => {
+                    const btnIndex = navBtn.getAttribute('data-tier-index');
+                    const isSelected = btnIndex === targetIndex;
+                    
+                    navBtn.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+                    
+                    const indicator = navBtn.querySelector('.tier-indicator') as HTMLElement;
+                    if (indicator) {
+                      indicator.style.width = isSelected ? '80%' : '0%';
+                    }
+                  });
+                  
+                  tierCards.forEach(card => {
+                    const cardIndex = card.getAttribute('data-tier-index');
+                    if (cardIndex === targetIndex) {
+                      card.classList.remove('hidden');
+                      card.classList.add('block');
+                    } else {
+                      card.classList.remove('block');
+                      card.classList.add('hidden');
+                    }
+                  });
+                });
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', initTierNavigation);
+            
+            initTierNavigation();
+            
+            document.addEventListener('astro:page-load', initTierNavigation);
+            document.addEventListener('astro:after-swap', initTierNavigation);
+          </script>
+
+          <!-- CSS for tier navigation -->
+          <style>
+            .tier-nav-btn[aria-selected="true"] {
+              color: var(--tier-color);
+              font-weight: 600;
+            }
+            
+            .tier-nav-btn {
+              min-width: 120px; /* Ensure enough space for the content */
+            }
+            
+            .tier-cards-container {
+              position: relative;
+              width: 100%;
+            }
+            
+            .level-indicator-container {
+              width: 100%;
+            }
+            
+            /* New styles for level indicators */
+            .level-marker-container {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease;
+            }
+            
+            .level-marker-container.active img {
+              filter: drop-shadow(0 0 3px var(--marker-color));
+            }
+            
+            .level-marker-container.current img {
+              filter: drop-shadow(0 0 5px var(--marker-color));
+              transform: scale(1.2);
+            }
+            
+            /* Progress bar animation */
+            .level-indicator-container .rounded-full,
+            .combined-levels-container .rounded-full {
+              transition: width 0.5s ease-out;
+            }
+            
+            /* Enhance container on hover */
+            .level-indicator-container:hover,
+            .combined-levels-container:hover {
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+              transform: translateY(-2px);
+              transition: all 0.3s ease;
+            }
+          </style>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      {faq && faq.length > 0 && (
+        <div class="container py-16">
+          <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <Accordion items={faq} color={color} />
+          </div>
+        </div>
+      )}
+
+      <!-- Apply Button - Made more prominent -->
+      <div class="container py-16 text-center">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-white text-xl font-medium transition-transform duration-300 hover:scale-105 shadow-lg"
+          style={`background-color: ${color}; box-shadow: 0 4px 20px ${color}40;`}
+        >
+          Apply Now
+          <FaArrowRight />
+        </a>
+      </div>
+    </div>
+  </div>
+</Base> 

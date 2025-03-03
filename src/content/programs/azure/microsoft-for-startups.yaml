@@ -1,0 +1,128 @@
+provider_slug: "azure"
+title: "Microsoft for Startups (Founders Hub)"
+meta_title: "Up to $150,000 Azure Credits and AI Enablement for Startups"
+intro: "Build your AI-enabled startup with up to $150,000 in Azure credits, expert 1:1 guidance, and a network of business and technical resources through Microsoft for Startups."
+description: >
+  Microsoft for Startups (Founders Hub) helps companies build and scale on Azure 
+  with credits ranging from $1,000 to $150,000 USD across four levels. The program 
+  provides development tools like GitHub Enterprise and Visual Studio, unlimited 
+  1:1 technical advisory, and AI capabilities including Azure OpenAI Service. 
+  Eligible startups must be privately held, for-profit, building software products, 
+  pre-Series D, and have used less than $10,000 in prior Azure credits. Credits 
+  expire after 12 months or when consumed. The program aims to accelerate startup 
+  innovation while reducing costs through Azure's enterprise infrastructure.
+status: "Active"
+tags: ["cloud", "ai", "startup"]
+url: "https://foundershub.startups.microsoft.com/"
+value_type: "credits"
+currency: "USD"
+max_value: 150000
+
+community_notes:
+  - title: "Reddit Discussion - Microsoft Startups $150k Funding"
+    body: >
+      Reddit discussion confirms Microsoft for Startups eligibility: pre-Series D, 
+      software-focused startups with under $10k prior Azure usage. Four credit 
+      tiers available ($1k-$150k), valid for 12 months. Upgrade to next tier 
+      possible at 50% usage. Program includes technical support, Office 365, 
+      and GitHub Enterprise benefits. Most report easy approval process.
+    source_url: "https://www.reddit.com/r/AZURE/comments/1e2fiz9/microsoft_startups_150k_funding_everything_you/"
+
+tiers:
+  - name: "Level 1 (L1)"
+    intro: "Entry-level tier granting $1,000 in Azure credits to help founders launch quickly."
+    max_value: 1000
+    url: "https://foundershub.startups.microsoft.com/"
+    benefits:
+      - "$1,000 Azure credits for up to 12 months"
+      - "Unlimited 1:1 sessions with Azure engineers and mentors"
+      - "Free access to Microsoft Teams, GitHub Enterprise, and more"
+      - "No external funding requirements"
+    benefits_level: 1
+    duration:
+      - "Up to 12 months"
+    eligibility:
+      - "Privately held, for-profit, software-based product"
+      - "No prior usage of more than $10k in Azure credits"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Sign up on Founders Hub"
+        description: "Create a Microsoft for Startups account, provide basic startup details, and register an FEIN if applicable."
+        action: "Apply"
+        action_url: "https://foundershub.startups.microsoft.com/"
+  - name: "Level 2 (L2)"
+    intro: "For early-stage startups that have begun validating their idea and have used part of L1."
+    max_value: 5000
+    url: "https://foundershub.startups.microsoft.com/"
+    benefits:
+      - "$5,000 Azure credits for up to 12 months"
+      - "Technical support and best practices for AI integration"
+      - "Broadening access to partner offers (e.g., LinkedIn Premium, Stripe Atlas)"
+      - "Continued advisory from Azure engineers"
+    benefits_level: 2
+    duration:
+      - "Up to 12 months"
+    eligibility:
+      - "Has already enrolled in L1"
+      - "Has used ~50% of L1 credits"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Request Level 2 Upgrade"
+        description: "Demonstrate ongoing project progress and usage of L1 credits. Provide any requested business verification."
+        action: "Apply for L2"
+        action_url: "https://foundershub.startups.microsoft.com/"
+  - name: "Level 3 (L3)"
+    intro: "For startups with product traction seeking more substantial Azure credits."
+    max_value: 25000
+    url: "https://foundershub.startups.microsoft.com/"
+    benefits:
+      - "$25,000 Azure credits for up to 12 months"
+      - "Deeper engagement with Microsoft’s AI and cloud experts"
+      - "Demo opportunities and co-selling support"
+      - "Potential GPU VM access, subject to quota"
+    benefits_level: 3
+    duration:
+      - "Up to 12 months"
+    eligibility:
+      - "Has substantially used L2 credits"
+      - "Able to demonstrate a functional MVP or solution demo"
+    effort: []
+    effort_level: 3
+    steps_to_apply:
+      - name: "Request Level 3 Upgrade"
+        description: "Submit a short demo of your solution, discuss resource needs, and pass business verification."
+        action: "Apply for L3"
+        action_url: "https://foundershub.startups.microsoft.com/"
+  - name: "Level 4 (L4)"
+    intro: "For scaling AI startups looking for enterprise-grade support with up to $150k in credits."
+    max_value: 150000
+    url: "https://foundershub.startups.microsoft.com/"
+    benefits:
+      - "$150,000 Azure credits for up to 12 months"
+      - "Priority access to advanced AI models"
+      - "Comprehensive technical and business advisory"
+      - "Co-selling, marketplace exposure, and deeper partnership opportunities"
+    benefits_level: 4
+    duration:
+      - "Up to 12 months"
+    eligibility:
+      - "Has reached usage milestones in L3"
+      - "Able to show a legitimate business with scaling customer demand"
+    effort_level: 4
+    steps_to_apply:
+      - name: "Request Level 4 Upgrade"
+        description: "Demonstrate higher usage of Azure resources and a strong go-to-market trajectory. Provide updated business verification if requested."
+        action: "Apply for L4"
+        action_url: "https://foundershub.startups.microsoft.com/"
+
+faq:
+  - question: "What are the general requirements for Microsoft for Startups Founders Hub?"
+    answer: "Applicants must be privately held, for-profit, building a software-based product or service, and have not reached Series D funding or used more than $10k in Azure credits previously."
+  - question: "Do I need external funding or a specific stage to qualify?"
+    answer: "No. Microsoft for Startups accepts startups at all stages, even if they have no external funding. You simply move through levels as your usage and business grow."
+  - question: "How long do the credits last?"
+    answer: "Azure credits expire 12 months after you are granted a tier’s credits or once you fully consume them, whichever comes first. Upgrading tiers typically resets the 12-month clock."
+  - question: "Can I use the credits for GPU-based AI workloads?"
+    answer: "Yes. GPU quotas may require a separate request or approval, especially for high-demand regions, but many participants have successfully obtained them through support tickets."
+  - question: "Are there vendor lock-in penalties or fees for the program?"
+    answer: "No. There are no fees or explicit lock-in requirements. However, once your sponsorship credits expire, you become responsible for any ongoing usage costs."

@@ -1,0 +1,12 @@
+name: Content Update Request (adding/updating/removing credits programs/providers)
+description: Suggest a new listing or update an existing one on CloudCredits.io
+labels: kind/content
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Which program would you like to see listed/updated on CloudCredits.io?
+      description: |
+        Please provide the name of the program, the provider, and the program URL.
+    validations:
+      required: true

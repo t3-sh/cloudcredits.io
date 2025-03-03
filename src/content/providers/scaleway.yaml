@@ -1,0 +1,12 @@
+active: true
+name: "Scaleway"
+short_name: "Scaleway"
+slug: "scaleway"
+url: "https://www.scaleway.com"
+color: "#8C3FED"
+best_deal: "Up to €36,000 credits for 1 year"
+intro: "European cloud provider offering bare metal, compute, and storage with focus on developer experience."
+video: ""
+tags:
+  - "cloud"
+  - "europe"

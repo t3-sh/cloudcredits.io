@@ -1,0 +1,51 @@
+provider_slug: "grafana"
+title: "Grafana Labs Startup Program"
+meta_title: "Observability Support for Startups"
+intro: "Get up to $100,000 in Grafana Cloud credits for 12 months with enterprise plugins and 24/7 support"
+description: "Observability program offering cloud credits and technical resources to help startups scale without infrastructure lock-in. Includes post-program discounts and integration support."
+status: "Active"
+url: "https://grafana.com/blog/2024/09/24/grafana-labs-startup-program/"
+min_value: 0
+max_value: 100000
+tags: ["monitoring", "analytics", "kubernetes", "observability"]
+date: 2025-02-25
+
+tiers:
+  - name: "Startup Program"
+    intro: "12-month observability support package with guaranteed post-program discounts"
+    max_value: 100000
+    url: "https://grafana.com/blog/2024/09/24/grafana-labs-startup-program/"
+    benefits:
+      - "$100,000 in Grafana Cloud credits for 12 months"
+      - "All Enterprise data source plugins"
+      - "24x7 Grafana support"
+      - "Guaranteed 20% discount after program completion"
+      - "Additional consumption-based discounts available"
+    benefits_level: 2
+    duration: ["12 months or until next funding round"]
+    eligibility:
+      - "<$10M funding raised (ideal)"
+      - "<25 employees (ideal)"
+      - "New Grafana Cloud customers (including Free tier)"
+      - "Existing Grafana OSS users moving to managed solution"
+    effort_level: 2
+    timeline_indication: "Immediate activation upon approval"
+    steps_to_apply:
+      - name: "Complete Application"
+        description: "Four-question form takes <2 minutes"
+        action: "Apply Now"
+        action_url: "https://grafana-labs.typeform.com/to/cSI7ohks/?pg=blog&plcmt=body-txt"
+
+faq:
+  - question: "What does the Grafana program include?"
+    answer: "$100K credits for logs, traces, metrics, performance testing, profiling, incident management, and synthetic monitoring solutions"
+  - question: "Can existing Grafana users apply?"
+    answer: "Yes - open to Free tier users and Grafana OSS adopters moving to managed solutions"
+  - question: "What are post-program benefits?"
+    answer: "Guaranteed 20% discount with additional consumption-based discounts available"
+  - question: "Is there vendor lock-in?"
+    answer: "No - program emphasizes open standards and easy transition capabilities"
+  - question: "What marketing commitments exist?"
+    answer: "Participants agree to be reference customers and may be asked to participate in marketing activities like guest blogs or speaking events"
+  - question: "How to access integration support?"
+    answer: "Dedicated integrations team helps strategize creation of plugins/solutions for Grafana ecosystem"

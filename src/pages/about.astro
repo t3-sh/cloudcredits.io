@@ -1,0 +1,180 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import Accordion from "@/layouts/components/Accordion.astro";
+import StatGroup from "@/layouts/components/StatGroup.astro";
+import Stat from "@/layouts/components/Stat.astro";
+import Social from "@/layouts/components/Social.astro";
+---
+
+<Base title="CloudCredits.io | About">
+  <PageHeader title="About" />
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8">
+          <div class="content">
+            <p class="text-xl mb-8">
+              CloudCredits.io is a <strong
+                >community-driven, fully open source</strong
+              > platform. We help startups, small businesses, solo developers, and
+              open source projects discover <strong
+                >cloud infrastructure and SaaS credits</strong
+              >—so you can scale without wasting precious funds.
+            </p>
+
+            <h2 class="h3 mt-10 mb-6">Mission</h2>
+            <p>
+              As a community-driven project, we want to build the <strong
+                >most comprehensive directory</strong
+              > of <strong>every</strong> credits program, discount, or grant out
+              there - with <strong>zero affiliations</strong>, <strong
+                >no ads</strong
+              >, and <strong>no agenda</strong>—just a pure focus on helping you
+              find the resources you need.
+            </p>
+
+            <h2 class="h3 mt-10 mb-6">Things you'll find here:</h2>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Extensive Listings</strong> – The most up-to-date directory
+                for all kinds of startup credits, discounts, and grants.
+              </li>
+              <li>
+                <strong>No Tracking, No Ads</strong> – We respect your privacy and
+                won't track anything you do.
+              </li>
+              <li>
+                <strong>Community+AI Powered</strong> – Contributions from users
+                around the world together with AI agents to keep our data fresh and
+                relevant at all times.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8">
+          <h2 class="h2 mb-8 text-center">Frequently Asked Questions</h2>
+          <Accordion
+            items={[
+              {
+                question: "How do you make money?",
+                answer:
+                  "We don't! CloudCredits.io is a community resource with no profit motive.",
+              },
+              {
+                question: "I'm a credit provider. How can I get listed?",
+                answer:
+                  "It's all community-powered. Just open a Pull Request (PR) on our GitHub with your program details. After the community approves it, your program appears in the directory.",
+              },
+              {
+                question:
+                  "Do you collect data on which programs I'm checking out?",
+                answer:
+                  "Not at all. We <strong>never</strong> track or collect user data. There are <strong>no ads</strong> or analytics scripts here.",
+              },
+              {
+                question: "How do you ensure information stays current?",
+                answer:
+                  "We combine community contributions with AI agents that scrape for new information—ensuring our listings are always current.",
+              },
+              {
+                question: "How are decisions made about the platform?",
+                answer:
+                  "We follow an <strong>RFC-based process</strong>. Major changes include open discussions in the community, then we reach consensus before implementing.",
+              },
+              {
+                question: "Can I contribute if I'm not a developer?",
+                answer:
+                  "Absolutely! Everyone can contribute regardless of technical skill. Contribute with translations, content, ideas, feedback, etc.",
+              },
+              {
+                question: "What tech stack does CloudCredits.io use?",
+                answer:
+                  "Currently, we're using a simple static stack with Astro, React, and Tailwind CSS. The PNG images used on the site are attributed to https://www.vecteezy.com/",
+              },
+            ]}
+            color="primary"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8 text-center">
+          <h2 class="h2 mb-8">Join the CloudCredits.io Community</h2>
+          <div class="flex justify-center gap-6 mb-8">
+            <a
+              href="https://github.com/DUALSTACKS/cloudcredits.io"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github mr-2"></i> GitHub Repository
+            </a>
+            <a
+              href="https://discord.gg/h5FYzCb6aa"
+              class="btn btn-outline-primary disabled"
+              aria-disabled="true"
+            >
+              <i class="fab fa-discord mr-2"></i> Discord Community
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-primary disabled"
+              aria-disabled="true"
+            >
+              <i class="fab fa-twitter mr-2"></i> X (soon)
+            </a>
+          </div>
+          <p class="text-xl font-medium mt-10">
+            Remember: Great products don't have to come with great expenses. <br
+            />
+            <span class="text-gradient"
+              >Build smarter with CloudCredits.io.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <StatGroup>
+            <Stat
+              title="Cloud Credits Programs"
+              metric="10+"
+              icon="FaRegCreditCard"
+              comparison="and 0 affiliations"
+            />
+            <Stat
+              title="Community Contributors"
+              metric="2"
+              icon="FaUsers"
+              comparison="across the globe"
+            />
+            <Stat
+              title="Stars on GitHub"
+              metric="0+"
+              icon="FaGithub"
+              comparison="...and growing"
+            />
+          </StatGroup>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

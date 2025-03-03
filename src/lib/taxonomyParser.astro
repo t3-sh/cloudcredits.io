@@ -1,0 +1,81 @@
+---
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { slugify } from "@/lib/utils/textConverter";
+
+export const getTaxonomy = async (collection: any, name: string) => {
+  const singlePages = await getSinglePage(collection);
+  const taxonomyPages = singlePages.map((page: any) => page.data[name]);
+  let taxonomies: string[] = [];
+  for (let i = 0; i < taxonomyPages.length; i++) {
+    const categoryArray = taxonomyPages[i];
+    for (let j = 0; j < categoryArray.length; j++) {
+      taxonomies.push(slugify(categoryArray[j]));
+    }
+  }
+  const taxonomy = [...new Set(taxonomies)];
+  return taxonomy;
+};
+
+export const getTaxonomyDisplay = async (collection: any, name: string) => {
+  const singlePages = await getSinglePage(collection);
+  const taxonomyPages = singlePages.map((page: any) => page.data[name]);
+  let taxonomies: Map<string, string> = new Map();
+  for (let i = 0; i < taxonomyPages.length; i++) {
+    const categoryArray = taxonomyPages[i];
+    for (let j = 0; j < categoryArray.length; j++) {
+      const taxonomyValue = categoryArray[j];
+      const taxonomyKey = slugify(taxonomyValue);
+      taxonomies.set(taxonomyKey, taxonomyValue);
+    }
+  }
+  return taxonomies;
+};
+
+export const getAllTaxonomy = async (collection: any, name: string) => {
+  const singlePages = await getSinglePage(collection);
+  const taxonomyPages = singlePages.map((page: any) => page.data[name]);
+  let taxonomies: string[] = [];
+  for (let i = 0; i < taxonomyPages.length; i++) {
+    const categoryArray = taxonomyPages[i];
+    for (let j = 0; j < categoryArray.length; j++) {
+      taxonomies.push(slugify(categoryArray[j]));
+    }
+  }
+  return taxonomies;
+};
+
+export const getCombinedTags = async () => {
+  const programTags = await getTaxonomy("programs", "tags");
+  const providerTags = await getTaxonomy("providers", "tags");
+
+  // Combine and deduplicate tags
+  const allTags = [...new Set([...programTags, ...providerTags])];
+  return allTags;
+};
+
+export const getAllCombinedTags = async () => {
+  const programTags = await getAllTaxonomy("programs", "tags");
+  const providerTags = await getAllTaxonomy("providers", "tags");
+
+  // Combine all tags (including duplicates for counting)
+  return [...programTags, ...providerTags];
+};
+
+export const getItemsByTag = async (tag: string) => {
+  const programs = await getSinglePage("programs");
+  const providers = await getSinglePage("providers");
+
+  const filteredPrograms = programs.filter((program) =>
+    program.data.tags.map((t: string) => slugify(t)).includes(tag),
+  );
+
+  const filteredProviders = providers.filter((provider) =>
+    provider.data.tags.map((t: string) => slugify(t)).includes(tag),
+  );
+
+  return {
+    programs: filteredPrograms,
+    providers: filteredProviders,
+  };
+};
+---

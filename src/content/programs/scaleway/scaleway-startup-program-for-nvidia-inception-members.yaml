@@ -1,0 +1,47 @@
+provider_slug: "scaleway"
+title: "Scaleway Startup Program for NVIDIA Inception Members"
+meta_title: "AI Cloud Support for NVIDIA Inception Startups"
+intro: "Exclusive partnership offering up to €42,000 in cloud credits with NVIDIA-optimized infrastructure"
+description: "Collaborative program providing enhanced GPU cloud resources and business development opportunities for AI startups in the NVIDIA Inception ecosystem"
+status: "Active"
+url: "https://www.scaleway.com/en/scaleway-startup-program-for-nvidia-inception-members/"
+min_value: 700 # Silver support value
+max_value: 42000
+tags: ["europe", "ai", "gpu", "ml"]
+date: 2025-02-25
+
+tiers:
+  - name: "NVIDIA Inception Tier"
+    intro: "Enhanced benefits for AI startups in NVIDIA's ecosystem"
+    max_value: 42000
+    url: "https://www.scaleway.com/en/scaleway-startup-program-for-nvidia-inception-members/"
+    benefits:
+      - "€42,000 cloud credits (36k€ base + 6k€ NVIDIA bonus)"
+      - "Silver Support (€700/year value)"
+      - "VIP networking events in Paris"
+      - "Startup showcase booth"
+      - "Foundation certification"
+    benefits_level: 3
+    duration: ["12 months"]
+    eligibility:
+      - "Active NVIDIA Inception member"
+      - "EU-based AI/ML startup"
+    effort_level: 4
+    steps_to_apply:
+      - name: "Dual Validation"
+        description: "Verify NVIDIA Inception membership"
+        action: "Email verification"
+        action_url: "mailto:startup-program@scaleway.com"
+
+faq:
+  - question: "Can I combine this with regular Startup Program benefits?"
+    answer: "Yes, compliance with both programs grants access to combined benefits[1]"
+  - question: "What constitutes Silver Level Support?"
+    answer: "24/7 technical assistance with <4hr response time for critical issues[1]"
+  - question: "How are cloud credits allocated?"
+    answer: "Credits split between compute/storage services with GPU priority[1]"
+
+community_notes:
+  - title: "Program Exclusivity"
+    body: "Benefits apply only to new members joining through NVIDIA partnership"
+    source_url: "https://www.scaleway.com/en/scaleway-startup-program-for-nvidia-inception-members/"

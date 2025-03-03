@@ -1,0 +1,165 @@
+---
+import config from "@/config/config.json";
+import { humanize, slugify } from "@/lib/utils/textConverter";
+import ImageMod from "./ImageMod.astro";
+import type { CollectionEntry } from "astro:content";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FaTag } from "react-icons/fa6";
+import { getCollection } from "astro:content";
+import { AnimatedProgramCard } from "./AnimatedProgramCard";
+import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
+import fs from 'node:fs';
+import path from 'node:path';
+
+interface Props {
+  program: CollectionEntry<"programs">;
+}
+
+type EffortLevel = 1 | 2 | 3 | 4;
+type EffortInfo = { label: string };
+
+const { program } = Astro.props;
+const {
+  title,
+  intro,
+  max_value,
+  value_type,
+  currency,
+  status,
+  tags,
+  url,
+  provider_slug,
+  tiers,
+} = program.data;
+
+const providers = await getCollection("providers");
+const provider = providers.find(
+  (p: CollectionEntry<"providers">) => p.data.slug === provider_slug,
+);
+const color = provider?.data.color || "#232f3e";
+
+const effortLevelMap: Record<EffortLevel, EffortInfo> = {
+  4: { label: "Simple" },
+  3: { label: "Moderate" },
+  2: { label: "Complex" },
+  1: { label: "Very Complex" },
+} as const;
+
+const lowestEffortLevel = Math.max(
+  ...tiers.map((tier: { effort_level: number }) => tier.effort_level),
+);
+const effort = effortLevelMap[lowestEffortLevel as EffortLevel];
+
+// Check if mini version exists in the public directory
+const publicDir = path.join(process.cwd(), 'public');
+const miniPath = `/images/providers/${provider_slug}.mini.svg`;
+const regularPath = `/images/providers/${provider_slug}.svg`;
+const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));
+
+const logo = miniExists ? miniPath : regularPath;
+
+const programSlug = program.id
+  .split("/")
+  .pop()
+  ?.replace(/\.yaml$/, "");
+---
+
+<a
+  href={`/providers/${provider_slug}/programs/${programSlug}`}
+  class="block transform-gpu"
+>
+  <AnimatedProgramCard client:load color={color} status={status}>
+    <div class="flex-1 p-6 flex flex-col justify-between h-full transform-gpu">
+      <div class="flex flex-col h-full">
+        {/* Header with logo and title */}
+        <div class="mb-5 transform-gpu">
+          <div class="flex items-center gap-4">
+            <div class="w-8 h-8 flex-shrink-0 transform-gpu">
+              <ImageMod
+                class="w-full h-full object-contain transform-gpu provider-logo"
+                src={logo}
+                alt={title}
+                width={32}
+                height={32}
+                format="svg"
+              />
+            </div>
+            <h4
+              class="text-xl font-semibold text-gray-800 dark:text-white/90 transform-gpu"
+            >
+              {title}
+            </h4>
+          </div>
+          <div class="mt-2 ml-12">
+            <ProgramStatusIndicator status={status} text={status} />
+          </div>
+        </div>
+
+        {/* Program intro */}
+        <div class="flex-grow mb-5">
+          <p
+            class="text-lg line-clamp-3 text-gray-600 dark:text-white/80 transform-gpu min-h-[4.5rem]"
+          >
+            {intro}
+          </p>
+        </div>
+
+        {/* Credit value */}
+        <div class="mb-5 transform-gpu">
+          <p
+            class="text-3xl font-bold transform-gpu"
+            style={`color: ${color};`}
+          >
+            {
+              value_type === "credits" ? (
+                <>
+                  {currency === "USD" ? "$" : "€"}
+                  {max_value.toLocaleString()}
+                </>
+              ) : (
+                <>{max_value}%</>
+              )
+            }
+          </p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 transform-gpu">
+            {value_type === "credits" ? "in credits" : "discount"}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Footer section */}
+    <div
+      class="p-6 backdrop-blur-xl bg-white/5 dark:bg-black/20 border-t border-white/10 dark:border-white/5 transform-gpu"
+    >
+      {/* Tags */}
+      <div class="flex flex-wrap gap-2 mb-5 min-h-[2.5rem] items-start">
+        {
+          tags.map((tag: string) => (
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full backdrop-blur-sm bg-white/10 dark:bg-white/5 text-gray-700 dark:text-gray-200 text-sm 
+            border border-white/10 dark:border-white/5 transform-gpu hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300"
+              onclick={`window.location.href='/tags/${slugify(tag)}'`}
+            >
+              <FaTag className="text-xs" style={{ color }} />
+              {tag}
+            </span>
+          ))
+        }
+      </div>
+
+      {/* View Details link */}
+      <div class="group/link flex items-center justify-between transform-gpu">
+        <div
+          class="flex items-center text-lg font-medium transition-all duration-300 transform-gpu"
+          style={`color: ${color};`}
+        >
+          View Details
+          <MdOutlineKeyboardArrowRight
+            className="ml-1 transition-transform duration-300 group-hover/link:translate-x-1"
+          />
+        </div>
+      </div>
+    </div>
+  </AnimatedProgramCard>
+</a>

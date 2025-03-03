@@ -1,0 +1,19 @@
+name: Site Feature/Enhancement Request (code or functionality)
+description: Suggest a functional change or new feature on CloudCredits.io (do not use for new provider listings)
+labels: kind/feature
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+      description: |
+        Please consider contributing or proposing detailed design/implementation specifications to help advance this feature request.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true

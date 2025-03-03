@@ -1,0 +1,42 @@
+provider_slug: "gcp"
+title: "Google Cloud $300 Trial"
+meta_title: "Get free hands-on experience with Google Cloud"
+intro: "New GCP customers can receive $300 in credit to explore and deploy a range of Google Cloud products, plus additional perks for verified business accounts."
+description: "Google Cloud offers new customers $300 in free credits to experiment with Compute Engine, BigQuery, AI APIs, and other products. Users won’t be charged until they upgrade to a paid account. Over 20 popular GCP services provide free monthly usage tiers, including the option to deploy pre-built solutions (e.g., dynamic websites or load-balanced VMs). Customers who use GCP for business may also be eligible for a few extra credits by verifying their business email in the Billing console."
+status: "Active"
+tags:
+  - "cloud"
+  - "free trial"
+url: "https://cloud.google.com/free"
+value_type: "credits"
+currency: "USD"
+max_value: 300
+community_notes:
+  - title: "Extra Credits for Verified Business Accounts"
+    body: "For business use, verifying your business email in the GCP Billing console can unlock additional free credits beyond the standard $300 trial."
+    source_url: "https://cloud.google.com/free"
+tiers:
+  - name: "Free Trial"
+    intro: "For new GCP customers—includes $300 credits for 90 days, plus access to a free usage tier on 20+ GCP products."
+    max_value: 300
+    url: "https://cloud.google.com/free"
+    benefits:
+      - "$300 free trial credit for new customers"
+      - "Monthly free usage limits on 20+ products"
+      - "Pre-built solution templates to rapidly deploy apps"
+      - "No charges until upgrading to a paid account"
+    benefits_level: 1
+    duration:
+      - "90 days"
+    eligibility:
+      - "New GCP customers"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Sign up for Free Trial"
+        description: "Create or sign in with a Google account, add billing details, and activate the $300 free trial."
+        action: "Register"
+        action_url: "https://cloud.google.com/free"
+      - name: "Verify Business Email"
+        description: "If using GCP for business, verify your domain for potential extra credits."
+        action: "Verify Domain"
+        action_url: "https://cloud.google.com/free"

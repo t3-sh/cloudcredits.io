@@ -1,0 +1,11 @@
+active: true
+name: "MongoDB"
+short_name: "MongoDB"
+slug: "mongodb"
+color: "#00EC64"
+url: "https://www.mongodb.com"
+intro: "A modern document database that empowers agile development with flexible schema design and global scalability."
+best_deal: "$500 credits for MongoDB Atlas"
+video: ""
+tags:
+  - "database"

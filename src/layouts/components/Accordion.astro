@@ -1,0 +1,80 @@
+---
+import { AnimatedAccordion } from "./AnimatedAccordion";
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FAQ[];
+  color: string;
+}
+
+const { items, color } = Astro.props;
+---
+
+<div class="space-y-6">
+  {
+    items.map((item, index) => (
+      <AnimatedAccordion
+        client:load
+        question={item.question}
+        answer={item.answer}
+        color={color}
+        index={index}
+      />
+    ))
+  }
+</div>
+
+<style>
+  /* Add some basic prose styles for the answer content */
+  .prose {
+    line-height: 1.75;
+  }
+
+  .prose p {
+    margin-bottom: 1em;
+  }
+
+  .prose p:last-child {
+    margin-bottom: 0;
+  }
+
+  .prose a {
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  .prose ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin: 1em 0;
+  }
+
+  .prose ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+    margin: 1em 0;
+  }
+
+  .prose li {
+    margin: 0.5em 0;
+  }
+
+  .prose code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    font-size: 0.9em;
+  }
+
+  .prose pre {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+    margin: 1em 0;
+  }
+</style>

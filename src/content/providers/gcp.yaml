@@ -1,0 +1,11 @@
+active: true
+name: "Google Cloud Platform"
+short_name: "GCP"
+slug: "gcp"
+color: "#0F9D58"
+url: "https://cloud.google.com/startups"
+intro: "Third-largest cloud provider offering 150+ services across 40 regions, known for AI/ML capabilities and Google-grade infrastructure."
+best_deal: "Up to $200,000 ($350,000 for AI startups)"
+video: ""
+tags:
+  - "cloud"

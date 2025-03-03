@@ -1,0 +1,11 @@
+active: true
+name: "DigitalOcean"
+short_name: "DigitalOcean"
+slug: "digitalocean"
+url: "https://www.digitalocean.com/hatch"
+color: "#0168FF"
+best_deal: "$5k+ credits, perks from partners like Stripe"
+intro: "Developer-focused cloud platform offering simple, scalable compute, storage, and networking solutions that empower startups to build and grow fast."
+video: ""
+tags:
+  - "cloud"

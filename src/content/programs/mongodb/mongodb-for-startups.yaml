@@ -1,0 +1,92 @@
+provider_slug: "mongodb"
+title: "MongoDB for Startups"
+meta_title: "Scale from Ideation to Growth with MongoDB"
+intro: "Scale your startup from ideation to growth with free MongoDB Atlas credits, one-on-one technical guidance, co-marketing opportunities, and more."
+description: "MongoDB for Startups helps early-stage companies build faster and scale further with their developer data platform. Eligible startups receive up to $5,000 in credits for MongoDB Atlas Database and data services, personal onboarding support, technical consultations, hands-on training via MongoDB University, and a variety of go-to-market opportunities."
+status: "Active"
+tags:
+  - "database"
+url: "https://www.mongodb.com/solutions/startups"
+value_type: "credits"
+currency: "USD"
+max_value: 5000
+
+community_notes: []
+
+tiers:
+  - name: "General Track"
+    intro: "Offers up to $5,000 in credits for MongoDB Atlas and related data services, with technical support and co-marketing opportunities."
+    max_value: 5000
+    url: "https://www.mongodb.com/solutions/startups"
+    benefits:
+      - "Up to $5,000 credits for MongoDB Atlas Database and extended data services"
+      - "Hands-on training with unlimited MongoDB University access"
+      - "One-on-one technical advice and professional service credits"
+      - "Co-marketing and event opportunities with MongoDB's startup community"
+      - "Flexible multi-cloud deployment with Atlas to scale globally"
+    benefits_level: 2
+    duration:
+      - "12 months to use credits once activated"
+    eligibility:
+      - "Early-stage startups (Series A or earlier)"
+      - "Building a product or service (not dev shops, consultants, or agencies)"
+      - "First-time participants who haven't joined before"
+      - "Must have a live website and company LinkedIn"
+    effort: 
+      - "Complete the application form"
+      - "Await acceptance email"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Visit MongoDB for Startups Page"
+        description: "Learn more about the program and its offerings"
+        action: "Open Link"
+        action_url: "https://www.mongodb.com/solutions/startups"
+      - name: "Complete Online Application"
+        description: "Provide company info and confirm eligibility"
+        action: "Apply"
+        action_url: "https://www.mongodb.com/solutions/startups"
+  - name: "AI Startups Track"
+    intro: "Additional credits for AI-focused startups, plus entry into MongoDB's partner and co-sell program to help land pilot customers."
+    max_value: 5000
+    url: "https://www.mongodb.com/solutions/startups"
+    benefits:
+      - "Extra Atlas credits tailored to AI companies"
+      - "Opportunity to connect with MongoDB's 45,000+ customers"
+      - "Hands-on training with unlimited MongoDB University access"
+      - "Technical consultations specific to AI data workflows"
+      - "Potential for MongoDB Ventures investment consideration"
+    benefits_level: 3
+    duration:
+      - "12 months to use credits once activated"
+    eligibility:
+      - "Meets all General Track requirements"
+      - "Must have an AI use case or product focus"
+    effort:
+      - "Complete AI track application and details"
+      - "Coordinate with MongoDB team on technical requirements"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Indicate AI Use Case"
+        description: "Specify AI product details in the startup application"
+        action: "Apply"
+        action_url: "https://www.mongodb.com/solutions/startups"
+      - name: "Schedule Technical Consultation"
+        description: "Work with MongoDB experts to plan for scale and pilot customers"
+        action: "Book Session"
+        action_url: "https://www.mongodb.com/solutions/startups"
+
+faq:
+  - question: "What are the eligibility requirements for MongoDB for Startups?"
+    answer: "Eligible startups must be early-stage (Series A or earlier), building a product or service (not dev shops, consultants, or agencies), first-time participants in the program, have a live website, and a valid company LinkedIn profile with direct association to the applicant."
+  - question: "How do I apply to MongoDB for Startups?"
+    answer: "You can apply directly through the MongoDB for Startups webpage. If you're associated with a VC, accelerator, or incubator that partners with MongoDB, you can ask them for a referral."
+  - question: "Can I apply if I'm already using MongoDB?"
+    answer: "Yes, both new and existing MongoDB Atlas users are eligible to apply for the program."
+  - question: "When and how do I receive my promo code?"
+    answer: "Once accepted into the program, you'll receive a unique promo code in your welcome email."
+  - question: "How long do I have to use my credits?"
+    answer: "You have 12 months to activate your promo code, and once activated, you have 12 months to use your Atlas credits."
+  - question: "Where can I get technical support?"
+    answer: "MongoDB recommends signing up for the Developer Support plan, which provides 24/7 support, in-app chat, and support portal access. The first 30 days are free, and you can use your Atlas credits to pay beyond that period. The program also includes exclusive access to a one-on-one session with a MongoDB expert."
+
+success_stories: []

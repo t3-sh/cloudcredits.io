@@ -1,0 +1,54 @@
+provider_slug: "digitalocean"
+title: "DigitalOcean $200 Free Trial"
+intro: "Start your free trial with a $200 credit for 60 days. A valid credit card is required, but you won’t be charged unless you exceed the free credit or continue after the trial."
+description: "DigitalOcean’s trial offers new users $200 in credits, usable within 60 days, to explore and deploy various services including Droplets (virtual machines), Kubernetes clusters, managed databases, load balancers, storage solutions, and more. Users gain access to 3,000 tutorials, an active developer community forum, and 24/7 technical support."
+status: "Active"
+tags:
+  - "cloud"
+  - "free trial"
+url: "https://www.digitalocean.com"
+value_type: "credits"
+currency: "USD"
+max_value: 200
+
+tiers:
+  - name: "Free Trial"
+    intro: "Try DigitalOcean with $200 credits for 60 days."
+    max_value: 200
+    url: "https://www.digitalocean.com"
+    benefits:
+      - "$200 credit for new customers"
+      - "Round-the-clock technical support"
+      - "Access to 3,000 developer tutorials"
+      - "Container-based Kubernetes deployments"
+      - "Simple monthly pricing with predictable costs"
+    benefits_level: 1
+    duration:
+      - "60 days"
+    eligibility:
+      - "New customers only"
+      - "Valid credit card required"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create DigitalOcean account"
+        description: "Enter your email address and password, or sign up via Google/GitHub."
+        action: "Sign up"
+        action_url: "https://cloud.digitalocean.com/registrations/new"
+      - name: "Add a valid credit card"
+        description: "Required for identity verification. You won't be charged unless your usage exceeds $200 or continues after 60 days."
+        action: "Verify payment method"
+        action_url: "https://cloud.digitalocean.com/account/billing"
+
+faq:
+  - question: "How do I sign up for the free trial?"
+    answer: "Sign up at DigitalOcean’s website using your email address. A valid credit card is required for identity verification, but you won’t be charged during the trial unless you exceed $200 in usage."
+  - question: "Who is eligible for the free trial?"
+    answer: "New customers who have never paid for DigitalOcean services and have not previously used the free trial are eligible."
+  - question: "What can I use the free trial for?"
+    answer: "Any DigitalOcean infrastructure services, including Droplets, Spaces object storage, Load Balancers, and Managed Databases."
+  - question: "What are the terms of service for the free trial?"
+    answer: "You must adhere to the DigitalOcean Terms of Service, which you agree to upon sign-up. Usage beyond $200 or after 60 days is charged at standard rates."
+  - question: "Are there any limitations with the free trial?"
+    answer: "The $200 credit must be used within 60 days. Going over $200 during that period or running services after the trial ends will incur charges."
+  - question: "What forms of payment are accepted?"
+    answer: "DigitalOcean accepts major credit cards, PayPal, and Google Pay. Additional options like wire transfer and purchase orders are available upon request."

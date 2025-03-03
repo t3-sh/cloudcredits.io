@@ -1,0 +1,182 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import GrainBackground from "@/layouts/components/GrainBackground.astro";
+import config from "@/config/config.json";
+import { AnimatedRoadmap } from "@/layouts/components/AnimatedRoadmap";
+
+// Define roadmap items with categories and dates
+const functionalityItems = [
+  {
+    name: "Full-text Search",
+    description: "Working full-text search of providers/programs with Pagefind for better discovery experience.",
+    date: "03-2025",
+    displayDate: "March 2025",
+    category: "functionality" as const,
+    action: "Learn more",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io/discussions/8",
+  },
+  {
+    name: "ETL Pipeline",
+    description: "Continuous ETL pipeline for content collection and enrichment to keep the platform up-to-date.",
+    date: "03-2025",
+    displayDate: "March-April 2025",
+    category: "functionality" as const,
+    action: "Learn more",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io/discussions/9",
+  },
+  {
+    name: "Community Notes",
+    description: "Similar to X's community notes, get real perspectives from users on programs and tips from people who successfully secured credits.",
+    date: "03-2025",
+    displayDate: "March-April 2025",
+    category: "functionality" as const,
+    action: "Learn more",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io/discussions/10",
+  },
+  {
+    name: "Advanced Filtering",
+    description: "Advanced filtering system by value, eligibility, and other criteria to help you find the perfect credits program based on your specific needs.",
+    date: "05-2025",
+    displayDate: "May 2025",
+    category: "functionality" as const,
+    action: "Learn more",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io/discussions/11",
+  },
+  {
+    name: "AI Chat with RAG",
+    description: "Intelligent chat assistant with Retrieval Augmented Generation to analyze your case and find the best options for your specific situation.",
+    date: "05-2025",
+    displayDate: "May 2025",
+    category: "functionality" as const,
+    action: "Learn more",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io/discussions/12",
+  },
+];
+
+const contentItems = [
+  {
+    name: "50+ Listings",
+    description: "Expanding our database to include at least 50 cloud credit programs and offers.",
+    date: "03-2025",
+    displayDate: "March 2025",
+    category: "content" as const,
+    action: "Contribute",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io",
+  },
+  {
+    name: "Exit Terms",
+    description: "Post-program costs/restrictions analysis to help you understand the long-term implications of each program.",
+    date: "04-2025",
+    displayDate: "April 2025",
+    category: "content" as const,
+    action: "Contribute",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io",
+  },
+  {
+    name: "Success Stories",
+    description: "Real-world examples and case studies of how startups and developers have successfully leveraged cloud credits.",
+    date: "04-2025",
+    displayDate: "April 2025",
+    category: "content" as const,
+    action: "Contribute",
+    action_url: "https://github.com/DUALSTACKS/cloudcredits.io",
+  },
+];
+
+// Sort all items chronologically
+const roadmapItems = [...functionalityItems, ...contentItems].sort((a, b) => {
+  // First compare by date
+  if (a.date !== b.date) {
+    return a.date.localeCompare(b.date);
+  }
+  
+  // If dates are the same, alternate between content and functionality
+  if (a.category !== b.category) {
+    // This will place content before functionality when dates are the same
+    return a.category === "content" ? -1 : 1;
+  }
+  
+  // If both dates and categories are the same, maintain original order
+  return 0;
+});
+
+// Use the teal color from the primary color palette for primary and a complementary color for secondary
+const primaryColor = config.theme.colors.primary.teal;
+const secondaryColor = config.theme.colors.primary.purple;
+---
+
+<Base title="CloudCredits.io | Roadmap">
+  <PageHeader title="Roadmap" />
+
+  <section class="section-sm pt-8">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8 text-center">
+          <div class="relative mb-6">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-xl rounded-3xl"></div>
+            <div class="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 dark:border-gray-800/50 shadow-xl">
+              <p class="text-lg mb-4">
+                We're building CloudCredits.io to be the most comprehensive, community-powered platform for discovering cloud credits and deals.
+              </p>
+              <div class="flex flex-wrap justify-center gap-3 mt-4">
+                <div class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium">
+                  <span class="text-secondary">2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-center">
+        <div class="lg:col-12">
+          <div class="relative">
+            <GrainBackground />
+            <div class="relative z-10 p-6 md:p-8">
+              <AnimatedRoadmap 
+                items={roadmapItems} 
+                primaryColor={primaryColor} 
+                secondaryColor={secondaryColor}
+                client:visible
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8 text-center">
+          <h2 class="h3 mb-6">Help Shape Our Roadmap</h2>
+          <p class="mb-8">
+            CloudCredits.io is a community-driven project. Have ideas for
+            features that would make the platform more useful? We'd love to hear
+            from you!
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://github.com/DUALSTACKS/cloudcredits.io/issues/new"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github mr-2"></i> Suggest a Feature
+            </a>
+            <a
+              href="https://github.com/DUALSTACKS/cloudcredits.io"
+              class="btn btn-outline-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-code-branch mr-2"></i> Contribute
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
