@@ -54,7 +54,7 @@ tiers:
     eligibility:
       - "Post-revenue tech company"
       - "Demonstrated growth metrics"
-    steps_to_apply: 
+    steps_to_apply:
       - name: "Create OVHcloud Account"
         description: "Sign up for an OVHcloud account if you don't have one"
         action_url: "https://ca.ovh.com/auth/?onsuccess=https%3A%2F%2Fca.ovh.com%2Fauth%2Fsso%2Ftoken%2F%3FovhSubsidiary%3DWE%26return_to%3Dhttps%253A%252F%252Fstartup.ovhcloud.com%252Fen%252Flogin%252F&ovhSubsidiary=WE"
@@ -83,7 +83,7 @@ tiers:
 
 faq:
   - question: "How do I submit an application?"
-    answer: "To submit an application, simply apply online by clicking the \"Apply\" button available on our homepage. Verify that you are on the right country website, based on your business address by selecting the correct country flag in the top right corner of the page, before clicking on \"Apply\". Next, enter the customer account you would like to link to the program or create a new one. Then answer some basic questions about your business. Once you have submitted your application, you will receive a response within 7 days."
+    answer: 'To submit an application, simply apply online by clicking the "Apply" button available on our homepage. Verify that you are on the right country website, based on your business address by selecting the correct country flag in the top right corner of the page, before clicking on "Apply". Next, enter the customer account you would like to link to the program or create a new one. Then answer some basic questions about your business. Once you have submitted your application, you will receive a response within 7 days.'
 
   - question: "Which OVHcloud account should I enter to sign up?"
     answer: "The OVHcloud account that you choose will be the account with which your Startup Program vouchers will be associated. If you are an existing customer, this is the account that you use for the billing of your current services. Note that, once you associate an application with a customer account, you will not be able to switch to another OVHcloud account. For this reason, we strongly suggest that you do not enter your personal OVHcloud account under any circumstances."
@@ -149,13 +149,13 @@ faq:
     answer: "To check whether your vouchers have been issued, follow these steps:\n• Log in to the OVHcloud Manager;\n• Click \"Payment method\" under your name in the top right of the page;\n• On the next page click \"My Startup Program vouchers\" in the second menu from the top.\n\nIf nothing appears, it may be that the OVHcloud Startup Program contracts sent by email have not been signed, or that the customer account used is not the one provided at the time of registration. If this is the case, please refer to the earlier question: \"Where can I view the welcome email for the OVHcloud Startup Program?\" or log in using the correct customer account."
 
   - question: "How can I increase my infrastructure quotas as a Startup Program member?"
-    answer: "As a new customer, you will quickly reach quota limits on Public Cloud products. DO NOT use the \"Increase My Quota\" button! Create a Support ticket through your OVHcloud Control Panel and request that your quota be increased, stating that you are part of the Startup Program."
+    answer: 'As a new customer, you will quickly reach quota limits on Public Cloud products. DO NOT use the "Increase My Quota" button! Create a Support ticket through your OVHcloud Control Panel and request that your quota be increased, stating that you are part of the Startup Program.'
 
   - question: "How are the Startup Program vouchers used with invoices?"
     answer: "Invoices for eligible products will be automatically paid with Startup Program vouchers. If the invoice exceeds the remaining voucher balance, the invoice will not automatically be paid by vouchers. You can request a manual part-payment from the Startup Program manager in your region:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"
 
   - question: "Where can I check my remaining Startup Program voucher balance?"
-    answer: "You can check your remaining Startup Program voucher balance at any time via the OVHcloud Control Panel. Simply click on \"My account\", then \"My payment methods\" and then \"My Startup Program vouchers\". If nothing appears, it may be that the OVHcloud Startup Program contracts sent by email have not been signed, or that the customer account used is not the one provided at the time of registration. If this is the case, please refer to the earlier question: \"Where can I view the welcome email for the OVHcloud Startup Program?\" or log in using the correct customer account."
+    answer: 'You can check your remaining Startup Program voucher balance at any time via the OVHcloud Control Panel. Simply click on "My account", then "My payment methods" and then "My Startup Program vouchers". If nothing appears, it may be that the OVHcloud Startup Program contracts sent by email have not been signed, or that the customer account used is not the one provided at the time of registration. If this is the case, please refer to the earlier question: "Where can I view the welcome email for the OVHcloud Startup Program?" or log in using the correct customer account.'
 
   - question: "What can I spend my Startup Program vouchers on?"
     answer: "Startup Program vouchers are only redeemable for Public Cloud (excluding instances with A100, H100, L4 and L40s GPUs) and Hosted Private Cloud solutions. In general, Bare Metal Cloud and Web Cloud products cannot be paid with vouchers. Contact the Startup Program manager in your region to get more details on exactly what is covered by Startup Program vouchers:\n• Africa & Middle East: africa-me-startup@ovh.com\n• Americas excluding Brazil & USA: america-startup@ovh.com\n• APAC: apac-startup@ovh.com\n• Central & Eastern Europe: cee-startup@ovh.com\n• DACH: dach-startup@ovh.com\n• France & Benelux: frbenelux-startup@ovh.com\n• Southern Europe & Brazil: se-startup@ovh.com\n• UK, Ireland & Northern Europe: ne-startup@ovh.com"

@@ -8,7 +8,7 @@ import Header from "@/partials/Header.astro";
 import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
-import SearchModal from "./helpers/SearchModal";
+import Search from "@/layouts/components/Search.astro";
 
 const pf = theme.fonts.font_family.primary;
 const sf = theme.fonts.font_family.secondary;
@@ -36,12 +36,22 @@ export interface Props {
   meta_title?: string;
   description?: string;
   image?: string;
+  searchable?: boolean;
+  search_collection?: string;
   noindex?: boolean;
   canonical?: string;
 }
 
-const { title, meta_title, description, image, noindex, canonical } =
-  Astro.props;
+const {
+  title,
+  meta_title,
+  description,
+  image,
+  searchable,
+  search_collection,
+  noindex,
+  canonical,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -185,8 +195,14 @@ const { title, meta_title, description, image, noindex, canonical } =
   <body>
     <TwSizeIndicator />
     <Header />
-    <SearchModal client:load />
-    <main id="main-content">
+    <Search />
+    <main
+      id="main-content"
+      {...searchable ? { "data-pagefind-body": "" } : {}}
+      {...search_collection
+        ? { "data-pagefind-meta": `collection:${search_collection}` }
+        : {}}
+    >
       <slot />
     </main>
     <Footer />

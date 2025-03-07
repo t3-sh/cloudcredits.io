@@ -69,8 +69,15 @@ const currencySymbol = currency === "USD" ? "$" : "€";
 const logo = `/images/providers/${slug}.svg`;
 ---
 
-<Base title={short_name} meta_title={name} description={intro} image={logo}>
-  <section class="relative min-h-screen">
+<Base
+  title={short_name}
+  meta_title={name}
+  description={intro}
+  image={logo}
+  searchable
+  search_collection="providers"
+>
+  <section class="relative min-h-screen" data-pagefind-meta={`image:${logo}`}>
     <!-- Base gradient background -->
     <div
       class="fixed inset-0"
@@ -169,7 +176,9 @@ const logo = `/images/providers/${slug}.svg`;
                 </div>
               </div>
             ) : (
-              providerPrograms.map((program) => <ProgramCard program={program} />)
+              providerPrograms.map((program) => (
+                <ProgramCard program={program} />
+              ))
             )
           }
         </div>

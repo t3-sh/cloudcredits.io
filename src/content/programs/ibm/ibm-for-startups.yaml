@@ -39,7 +39,7 @@ tiers:
         description: "Create your profile on the IBM for Startups portal"
         action: "Register"
         action_url: "https://www.ibm.com/startups"
-        
+
 faq:
   - question: "Who can apply for the program?"
     answer: "IBM for Startups is open to all—from students with an idea to established startups with software-based solutions. Specific eligibility criteria include revenue under USD 15 million, private ownership for under 10 years, and no prior paid IBM Cloud usage."

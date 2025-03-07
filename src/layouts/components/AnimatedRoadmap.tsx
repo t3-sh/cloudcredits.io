@@ -41,10 +41,10 @@ export function AnimatedRoadmap({
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    
+
     return () => {
       window.removeEventListener("resize", checkMobile);
     };
@@ -64,61 +64,65 @@ export function AnimatedRoadmap({
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         type: "spring",
         stiffness: 100,
-        damping: 15
-      }
+        damping: 15,
+      },
     },
   };
 
   const titleVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         type: "spring",
         stiffness: 100,
         damping: 15,
-        delay: 0.1
-      }
-    }
+        delay: 0.1,
+      },
+    },
   };
 
   const lineVariants = {
     hidden: { height: "0%" },
-    visible: { 
+    visible: {
       height: "100%",
-      transition: { 
+      transition: {
         duration: 1.2,
-        ease: "easeInOut" 
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
     <div className="relative" ref={containerRef}>
       {/* Legend for categories */}
-      <motion.div 
+      <motion.div
         className="flex flex-wrap justify-center mb-10 gap-4"
         initial={{ opacity: 0, y: -20 }}
-        animate={isInView || hasAnimated ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        animate={
+          isInView || hasAnimated
+            ? { opacity: 1, y: 0 }
+            : { opacity: 0, y: -20 }
+        }
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <div className="flex items-center gap-2">
-          <div 
-            className="w-4 h-4 rounded-full" 
+          <div
+            className="w-4 h-4 rounded-full"
             style={{ backgroundColor: primaryColor }}
           ></div>
           <span className="text-sm font-medium">Functionality</span>
         </div>
         <div className="flex items-center gap-2">
-          <div 
-            className="w-4 h-4 rounded-full" 
+          <div
+            className="w-4 h-4 rounded-full"
             style={{ backgroundColor: secondaryColor }}
           ></div>
           <span className="text-sm font-medium">Content</span>
@@ -134,7 +138,9 @@ export function AnimatedRoadmap({
             initial="hidden"
             animate={isInView || hasAnimated ? "visible" : "hidden"}
             className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full z-0 hidden md:block"
-            style={{ background: `linear-gradient(to bottom, ${primaryColor}, ${secondaryColor})` }}
+            style={{
+              background: `linear-gradient(to bottom, ${primaryColor}, ${secondaryColor})`,
+            }}
           />
         )}
 
@@ -146,17 +152,21 @@ export function AnimatedRoadmap({
         >
           {items.map((item, index) => {
             const itemRef = useRef(null);
-            const isItemInView = useInView(itemRef, { once: true, amount: 0.1 });
-            const itemColor = item.category === "functionality" ? primaryColor : secondaryColor;
-            
+            const isItemInView = useInView(itemRef, {
+              once: true,
+              amount: 0.1,
+            });
+            const itemColor =
+              item.category === "functionality" ? primaryColor : secondaryColor;
+
             return (
               <motion.div
                 key={`${item.name}-${index}`}
                 ref={itemRef}
                 variants={itemVariants}
                 className={`mb-12 md:mb-16 ${
-                  isMobile 
-                    ? "flex flex-col" 
+                  isMobile
+                    ? "flex flex-col"
                     : `flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`
                 }`}
                 onMouseEnter={() => setHoveredItem(index)}
@@ -164,7 +174,7 @@ export function AnimatedRoadmap({
               >
                 {/* Mobile timeline dot and line */}
                 {isMobile && (
-                  <motion.div 
+                  <motion.div
                     className="flex items-center mb-4"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -172,7 +182,7 @@ export function AnimatedRoadmap({
                   >
                     <motion.div
                       className="w-6 h-6 rounded-full border-4 z-10 flex items-center justify-center mr-4"
-                      style={{ 
+                      style={{
                         borderColor: itemColor,
                         backgroundColor: "white",
                       }}
@@ -181,22 +191,22 @@ export function AnimatedRoadmap({
                       <motion.div
                         className="w-3 h-3 rounded-full"
                         style={{ backgroundColor: itemColor }}
-                        animate={{ 
-                          scale: hoveredItem === index ? 1.5 : 1
+                        animate={{
+                          scale: hoveredItem === index ? 1.5 : 1,
                         }}
                       />
                     </motion.div>
                     <div className="flex items-center gap-2">
-                      <span 
-                        className="text-sm font-medium px-3 py-1 rounded-full" 
-                        style={{ 
+                      <span
+                        className="text-sm font-medium px-3 py-1 rounded-full"
+                        style={{
                           backgroundColor: itemColor,
-                          color: "white"
+                          color: "white",
                         }}
                       >
                         {item.displayDate || item.date}
                       </span>
-                      <span 
+                      <span
                         className="text-xs font-medium px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-800"
                         style={{ color: itemColor }}
                       >
@@ -209,37 +219,38 @@ export function AnimatedRoadmap({
                 {/* Content box */}
                 <motion.div
                   className={`${
-                    isMobile 
-                      ? "w-full" 
+                    isMobile
+                      ? "w-full"
                       : `w-5/12 ${index % 2 === 0 ? "pr-8" : "pl-8"}`
                   }`}
-                  initial={{ 
-                    opacity: 0, 
-                    x: isMobile ? 0 : (index % 2 === 0 ? -30 : 30) 
+                  initial={{
+                    opacity: 0,
+                    x: isMobile ? 0 : index % 2 === 0 ? -30 : 30,
                   }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ 
-                    duration: 0.5, 
-                    delay: 0.1 + (index * 0.1),
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.1 + index * 0.1,
                     type: "spring",
                     stiffness: 100,
-                    damping: 15
+                    damping: 15,
                   }}
                   whileHover={{ scale: 1.02 }}
                 >
                   <motion.div
                     className="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700"
                     initial={{ opacity: 0.8 }}
-                    whileHover={{ 
+                    whileHover={{
                       opacity: 1,
-                      boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                      boxShadow:
+                        "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                       borderColor: itemColor,
                     }}
                   >
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2 flex-1">
                         <h3 className="text-xl font-bold">{item.name}</h3>
-                        <span 
+                        <span
                           className="text-xs font-medium px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-800 hidden md:inline-block ml-2"
                           style={{ color: itemColor }}
                         >
@@ -247,18 +258,20 @@ export function AnimatedRoadmap({
                         </span>
                       </div>
                       {!isMobile && (
-                        <span 
-                          className="text-sm font-medium px-3 py-1 rounded-full ml-2 flex-shrink-0" 
-                          style={{ 
+                        <span
+                          className="text-sm font-medium px-3 py-1 rounded-full ml-2 flex-shrink-0"
+                          style={{
                             backgroundColor: itemColor,
-                            color: "white"
+                            color: "white",
                           }}
                         >
                           {item.displayDate || item.date}
                         </span>
                       )}
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">{item.description}</p>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      {item.description}
+                    </p>
                     {item.action && item.action_url && (
                       <a
                         href={item.action_url}
@@ -294,32 +307,32 @@ export function AnimatedRoadmap({
                     className="w-2/12 flex justify-center items-center"
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ 
-                      duration: 0.5, 
-                      delay: 0.2 + (index * 0.1),
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.2 + index * 0.1,
                       type: "spring",
                       stiffness: 300,
-                      damping: 10
+                      damping: 10,
                     }}
                   >
                     <motion.div
                       className="w-6 h-6 rounded-full border-4 z-10 flex items-center justify-center"
-                      style={{ 
+                      style={{
                         borderColor: itemColor,
                         backgroundColor: "white",
                       }}
                       whileHover={{ scale: 1.2 }}
-                      animate={{ 
+                      animate={{
                         scale: hoveredItem === index ? 1.2 : 1,
-                        transition: { duration: 0.3 }
+                        transition: { duration: 0.3 },
                       }}
                     >
                       <motion.div
                         className="w-3 h-3 rounded-full"
                         style={{ backgroundColor: itemColor }}
-                        animate={{ 
+                        animate={{
                           scale: hoveredItem === index ? 1.5 : 1,
-                          transition: { duration: 0.3 }
+                          transition: { duration: 0.3 },
                         }}
                       />
                     </motion.div>
@@ -335,4 +348,4 @@ export function AnimatedRoadmap({
       </div>
     </div>
   );
-} 
+}
