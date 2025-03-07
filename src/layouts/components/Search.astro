@@ -1,5 +1,4 @@
 ---
-// Import necessary utilities
 import { plainify } from "@/lib/utils/textConverter";
 ---
 
@@ -92,16 +91,6 @@ import { plainify } from "@/lib/utils/textConverter";
 </div>
 
 <script is:inline>
-  // Define a simple debounce function
-  function debounce(func, delay) {
-    let timer;
-    return (...args) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => func(...args), delay);
-    };
-  }
-
-  // DOM elements
   const searchModal = document.getElementById("searchModal");
   const searchModalOverlay = document.getElementById("searchModalOverlay");
   const searchInput = document.getElementById("searchInput");
@@ -116,7 +105,6 @@ import { plainify } from "@/lib/utils/textConverter";
   let selectedIndex = -1;
   let searchResultItems = [];
 
-  // Initialize Pagefind
   async function initializePagefind() {
     if (!pagefind) {
       pagefind = await import("/pagefind/pagefind.js");
@@ -124,7 +112,6 @@ import { plainify } from "@/lib/utils/textConverter";
     }
   }
 
-  // Toggle search modal
   function toggleSearchModal(show) {
     if (show) {
       searchModal.classList.add("show");
@@ -135,7 +122,6 @@ import { plainify } from "@/lib/utils/textConverter";
     }
   }
 
-  // Clear search input
   function clearSearch() {
     searchInput.value = "";
     searchIcon.classList.remove("hidden");
@@ -146,7 +132,6 @@ import { plainify } from "@/lib/utils/textConverter";
     selectedIndex = -1;
   }
 
-  // Match marker for highlighting search terms
   function matchMarker(text, substring) {
     if (!text) return "";
     if (!substring) return text;
@@ -155,7 +140,6 @@ import { plainify } from "@/lib/utils/textConverter";
     return text.replace(regex, "<mark>$1</mark>");
   }
 
-  // Extract content snippet with highlighted search term
   function extractContentSnippet(content, searchString) {
     if (!content || !searchString) return "";
 
@@ -166,7 +150,6 @@ import { plainify } from "@/lib/utils/textConverter";
     const position = lowerContent.indexOf(lowerSearchString);
     if (position === -1) return plainContent.substring(0, 100) + "...";
 
-    // Find the start of the word containing the substring
     let wordStart = Math.max(0, position - 40);
     while (
       wordStart > 0 &&
@@ -189,7 +172,6 @@ import { plainify } from "@/lib/utils/textConverter";
     return matchMarker(snippet, searchString);
   }
 
-  // Get icon for content type
   function getContentIcon(type, slug = "") {
     if (type === "providers") {
       return `/images/providers/${slug}.png`;
@@ -199,7 +181,6 @@ import { plainify } from "@/lib/utils/textConverter";
     return "/images/image-placeholder.png";
   }
 
-  // Format currency value
   function formatCurrency(value, currency = "USD") {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -208,24 +189,19 @@ import { plainify } from "@/lib/utils/textConverter";
     }).format(value);
   }
 
-  // Group search results by content type with custom order
   function groupSearchResults(results) {
-    // Define the order of content types
     const contentOrder = ["programs", "providers"];
     const groups = {};
 
-    // Initialize groups with the defined order
     contentOrder.forEach((type) => {
       groups[type] = [];
     });
 
-    // Group results by content type
     results.forEach((result) => {
       const type = result.meta.collection || "page";
       if (groups[type] !== undefined) {
         groups[type].push(result);
       } else {
-        // For any content types not in our predefined order
         if (!groups[type]) {
           groups[type] = [];
         }
@@ -236,11 +212,9 @@ import { plainify } from "@/lib/utils/textConverter";
     return groups;
   }
 
-  // Render search results
   async function renderResults(query) {
     const startTime = performance.now();
 
-    // Clear previous results
     searchResults.innerHTML = "";
     if (!query) {
       searchResults.innerHTML =
@@ -250,10 +224,14 @@ import { plainify } from "@/lib/utils/textConverter";
     }
 
     try {
-      const search = await pagefind.search(query);
+      const search = await pagefind.debouncedSearch(query);
+      
+      if (search === null) {
+        return;
+      }
+      
       const results = await Promise.all(search.results.map((r) => r.data()));
 
-      // Log the search results to console for debugging
       console.log("Pagefind search results:", {
         query,
         totalResults: results.length,
@@ -264,7 +242,6 @@ import { plainify } from "@/lib/utils/textConverter";
       const endTime = performance.now();
       const totalTime = ((endTime - startTime) / 1000).toFixed(3);
 
-      // Update stats
       resultCount.textContent = results.length;
       searchTime.textContent = totalTime;
       searchStats.classList.remove("hidden");
@@ -282,12 +259,10 @@ import { plainify } from "@/lib/utils/textConverter";
         return;
       }
 
-      // Group results by content type with custom order
       const groupedResults = groupSearchResults(results);
 
-      // Render each group in the specified order
       Object.entries(groupedResults).forEach(([group, items]) => {
-        if (items.length === 0) return; // Skip empty groups
+        if (items.length === 0) return;
 
         const groupTitle =
           group === "programs"
@@ -300,20 +275,17 @@ import { plainify } from "@/lib/utils/textConverter";
         groupElement.className = "search-result-group";
         groupElement.innerHTML = `<p class="search-result-group-title">${groupTitle}</p>`;
 
-        // Render each item in the group
         items.forEach((item) => {
           const resultItem = document.createElement("div");
           resultItem.id = "searchItem";
           resultItem.className = "search-result-item";
           resultItem.setAttribute("tabindex", "0");
 
-          // Get the appropriate icon
           const iconPath = getContentIcon(
             group,
             item.meta.slug || item.meta.provider_slug,
           );
 
-          // Get the value display (best deal for providers, max value for programs)
           let valueDisplay = "";
           if (group === "providers" && item.meta.best_deal) {
             valueDisplay = `<div class="search-result-item-value">${item.meta.best_deal}</div>`;
@@ -325,7 +297,6 @@ import { plainify } from "@/lib/utils/textConverter";
             }
           }
 
-          // Build the item HTML
           let itemHTML = `
             <div class="search-result-item-image">
               <img src="${item.meta.image}" alt="${item.meta.title || item.meta.name}" onerror="this.src='/images/image-placeholder.png'">
@@ -337,7 +308,6 @@ import { plainify } from "@/lib/utils/textConverter";
               ${valueDisplay}
           `;
 
-          // Add excerpt/intro if available
           const description = item.meta.intro || item.excerpt || "";
           if (description) {
             itemHTML += `
@@ -347,15 +317,12 @@ import { plainify } from "@/lib/utils/textConverter";
             `;
           }
 
-          // Add tags if available
           const tagsString = item.meta.tags || "";
-          // First try splitting by comma, if there's only one result, try splitting by space
           let tags = tagsString.split(",");
           if (tags.length === 1 && tags[0].includes(" ")) {
             tags = tagsString.split(" ");
           }
 
-          // Filter out empty tags and trim whitespace
           tags = tags.filter((tag) => tag.trim()).map((tag) => tag.trim());
 
           if (tags.length > 0) {
@@ -386,7 +353,6 @@ import { plainify } from "@/lib/utils/textConverter";
         searchResults.appendChild(groupElement);
       });
 
-      // Update searchResultItems for keyboard navigation
       searchResultItems = document.querySelectorAll("#searchItem");
       selectedIndex = -1;
     } catch (error) {
@@ -399,7 +365,6 @@ import { plainify } from "@/lib/utils/textConverter";
     }
   }
 
-  // Update the active selection
   function updateSelection() {
     searchResultItems.forEach((item, index) => {
       if (index === selectedIndex) {
@@ -411,37 +376,32 @@ import { plainify } from "@/lib/utils/textConverter";
     });
   }
 
-  // Event Listeners
   document.addEventListener("DOMContentLoaded", () => {
-    // Search input event
-    searchInput.addEventListener(
-      "input",
-      debounce((e) => {
-        const query = e.target.value.trim();
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.trim();
 
-        // Toggle icons based on input
-        if (query) {
-          searchIcon.classList.add("hidden");
-          closeIcon.classList.remove("hidden");
-        } else {
-          searchIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-          searchStats.classList.add("hidden");
-        }
+      if (query) {
+        searchIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      } else {
+        searchIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        searchStats.classList.add("hidden");
+      }
 
-        renderResults(query);
-      }, 300),
-    );
+      if (pagefind && query) {
+        pagefind.preload(query);
+      }
 
-    // Clear search when clicking the close icon
+      renderResults(query);
+    });
+
     closeIcon.addEventListener("click", clearSearch);
 
-    // Close modal when clicking overlay
     searchModalOverlay.addEventListener("click", () =>
       toggleSearchModal(false),
     );
 
-    // Add search trigger listeners
     document.querySelectorAll("[data-search-trigger]").forEach((button) => {
       button.addEventListener("click", () => {
         initializePagefind();
@@ -449,34 +409,27 @@ import { plainify } from "@/lib/utils/textConverter";
       });
     });
 
-    // Keyboard navigation
     document.addEventListener("keydown", (event) => {
-      // Open search with Ctrl/Cmd + K
       if ((event.metaKey || event.ctrlKey) && event.key === "k") {
         event.preventDefault();
         initializePagefind();
         toggleSearchModal(true);
       }
 
-      // Only handle other keys if search modal is open
       if (!searchModal.classList.contains("show")) return;
 
-      // Prevent default for arrow keys
       if (event.key === "ArrowUp" || event.key === "ArrowDown") {
         event.preventDefault();
       }
 
-      // Close with Escape
       if (event.key === "Escape") {
         toggleSearchModal(false);
       }
 
-      // Navigate up
       if (event.key === "ArrowUp" && selectedIndex > 0) {
         selectedIndex--;
         updateSelection();
       }
-      // Navigate down
       else if (
         event.key === "ArrowDown" &&
         selectedIndex < searchResultItems.length - 1
@@ -484,7 +437,6 @@ import { plainify } from "@/lib/utils/textConverter";
         selectedIndex++;
         updateSelection();
       }
-      // Select with Enter
       else if (event.key === "Enter" && selectedIndex >= 0) {
         const activeLink = document.querySelector(
           ".search-result-item-active a",
@@ -498,17 +450,16 @@ import { plainify } from "@/lib/utils/textConverter";
 </script>
 
 <style>
-  /* Additional styles for the enhanced search results */
   .search-result-item {
     @apply flex items-start py-2;
   }
 
   .search-result-item-image {
-    @apply flex-shrink-0 mr-4 w-16 h-16 flex items-center justify-center p-2;
+    @apply flex-shrink-0 mr-4 w-16 h-16 flex items-center justify-center p-2 overflow-hidden;
   }
 
   .search-result-item-image img {
-    @apply max-w-full max-h-full rounded-md object-contain;
+    @apply w-full h-full rounded-md object-contain !important;
   }
 
   .search-result-item-body {
