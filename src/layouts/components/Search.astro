@@ -92,7 +92,7 @@ import { plainify } from "@/lib/utils/textConverter";
 
 <script is:inline>
   // Create a self-executing function to avoid polluting the global scope
-  (function() {
+  (function () {
     // Store references to DOM elements
     let searchModal;
     let searchModalOverlay;
@@ -124,7 +124,9 @@ import { plainify } from "@/lib/utils/textConverter";
       searchTime = document.getElementById("searchTime");
 
       if (!searchModal) {
-        console.warn("Search modal not found in the DOM. Search functionality will not be available.");
+        console.warn(
+          "Search modal not found in the DOM. Search functionality will not be available.",
+        );
         return;
       }
 
@@ -133,7 +135,7 @@ import { plainify } from "@/lib/utils/textConverter";
 
       // Set up event listeners on every route change
       setupEventListeners();
-      
+
       console.debug("Search initialized with fresh DOM references");
     }
 
@@ -144,7 +146,7 @@ import { plainify } from "@/lib/utils/textConverter";
           if (!pagefind) {
             throw new Error("Failed to import Pagefind module");
           }
-          
+
           pagefind.init();
           pagefindLoaded = true;
           console.debug("Pagefind initialized successfully");
@@ -165,21 +167,23 @@ import { plainify } from "@/lib/utils/textConverter";
     function setupEventListeners() {
       // Only set up event listeners if all required elements exist
       if (!searchInput || !closeIcon || !searchModalOverlay) {
-        console.warn("Required search elements not found. Event listeners not attached.");
+        console.warn(
+          "Required search elements not found. Event listeners not attached.",
+        );
         return;
       }
-      
+
       // Remove existing event listeners to prevent duplicates
       searchInput.removeEventListener("input", handleSearchInput);
       closeIcon.removeEventListener("click", clearSearch);
       searchModalOverlay.removeEventListener("click", handleOverlayClick);
       document.removeEventListener("keydown", handleKeyboardShortcuts);
-      
+
       // Re-add event listeners
       searchInput.addEventListener("input", handleSearchInput);
       closeIcon.addEventListener("click", clearSearch);
       searchModalOverlay.addEventListener("click", handleOverlayClick);
-      
+
       // Search trigger buttons - remove old listeners and add new ones
       document.querySelectorAll("[data-search-trigger]").forEach((button) => {
         button.removeEventListener("click", handleSearchTrigger);
@@ -189,7 +193,7 @@ import { plainify } from "@/lib/utils/textConverter";
       // Global keyboard shortcuts
       document.addEventListener("keydown", handleKeyboardShortcuts);
     }
-    
+
     // Handler functions to make event listener removal possible
     function handleSearchInput(e) {
       const query = e.target.value.trim();
@@ -212,11 +216,11 @@ import { plainify } from "@/lib/utils/textConverter";
         renderResults(query);
       }, 300);
     }
-    
+
     function handleOverlayClick() {
       toggleSearchModal(false);
     }
-    
+
     function handleSearchTrigger() {
       toggleSearchModal(true);
     }
@@ -258,7 +262,7 @@ import { plainify } from "@/lib/utils/textConverter";
       // Select with Enter
       else if (event.key === "Enter" && selectedIndex >= 0) {
         const activeLink = document.querySelector(
-          ".search-result-item-active a"
+          ".search-result-item-active a",
         );
         if (activeLink) {
           activeLink.click();
@@ -268,7 +272,7 @@ import { plainify } from "@/lib/utils/textConverter";
 
     function toggleSearchModal(show) {
       if (!searchModal) return;
-      
+
       if (show) {
         searchModal.classList.add("show");
         searchInput.focus();
@@ -280,7 +284,7 @@ import { plainify } from "@/lib/utils/textConverter";
 
     function clearSearch() {
       if (!searchInput) return;
-      
+
       searchInput.value = "";
       searchIcon.classList.remove("hidden");
       closeIcon.classList.add("hidden");
@@ -320,7 +324,7 @@ import { plainify } from "@/lib/utils/textConverter";
       const start = Math.max(0, wordStart);
       const end = Math.min(
         plainContent.length,
-        position + searchString.length + 80
+        position + searchString.length + 80,
       );
 
       let snippet = plainContent.substring(start, end);
@@ -372,12 +376,12 @@ import { plainify } from "@/lib/utils/textConverter";
 
     // Function to strip trailing slashes from URLs
     function stripTrailingSlash(url) {
-      return url.replace(/(.)\/(#.*)?$/, '$1$2');
+      return url.replace(/(.)\/(#.*)?$/, "$1$2");
     }
 
     async function renderResults(query) {
       if (!searchResults) return;
-      
+
       const startTime = performance.now();
 
       searchResults.innerHTML = "";
@@ -393,14 +397,14 @@ import { plainify } from "@/lib/utils/textConverter";
         if (!pagefind) {
           console.warn("Pagefind not initialized yet. Trying to initialize...");
           await initializePagefind();
-          
+
           if (!pagefind) {
             throw new Error("Pagefind could not be initialized");
           }
         }
-        
+
         const search = await pagefind.debouncedSearch(query);
-        
+
         if (search === null) {
           searchResults.innerHTML = `
             <div class="search-result-empty">
@@ -409,13 +413,15 @@ import { plainify } from "@/lib/utils/textConverter";
           `;
           return;
         }
-        
-        const results = await Promise.all(search.results.map(async (r) => {
-          const data = await r.data();
-          // Strip trailing slashes from URLs
-          data.url = stripTrailingSlash(data.url);
-          return data;
-        }));
+
+        const results = await Promise.all(
+          search.results.map(async (r) => {
+            const data = await r.data();
+            // Strip trailing slashes from URLs
+            data.url = stripTrailingSlash(data.url);
+            return data;
+          }),
+        );
 
         console.log("Pagefind search results:", {
           query,
@@ -468,7 +474,7 @@ import { plainify } from "@/lib/utils/textConverter";
 
             const iconPath = getContentIcon(
               group,
-              item.meta.slug || item.meta.provider_slug
+              item.meta.slug || item.meta.provider_slug,
             );
 
             let valueDisplay = "";
@@ -523,7 +529,7 @@ import { plainify } from "@/lib/utils/textConverter";
                       </svg>
                       <span>${matchMarker(tag, query)}</span>
                     </div>
-                  `
+                  `,
                     )
                     .join("")}
                 </div>
@@ -568,21 +574,24 @@ import { plainify } from "@/lib/utils/textConverter";
     // This handles frameworks that use client-side routing
     document.addEventListener("astro:page-load", initializeSearch);
     document.addEventListener("astro:after-swap", initializeSearch);
-    
+
     // For other frameworks or vanilla JS SPAs
     window.addEventListener("popstate", initializeSearch);
-    
+
     // Make search functions available globally for potential external triggers
     window.searchFunctions = {
       openSearchModal: () => toggleSearchModal(true),
-      closeSearchModal: () => toggleSearchModal(false)
+      closeSearchModal: () => toggleSearchModal(false),
     };
-    
+
     // Initialize immediately if the DOM is already loaded
-    if (document.readyState === "interactive" || document.readyState === "complete") {
+    if (
+      document.readyState === "interactive" ||
+      document.readyState === "complete"
+    ) {
       initializeSearch();
     }
-    
+
     // Log initialization for debugging
     console.log("Search component script loaded and ready");
   })();
