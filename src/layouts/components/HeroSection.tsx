@@ -195,7 +195,9 @@ export default function HeroSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1.3 + index * 0.15, duration: 0.5 }}
               >
-                <span className={`text-${uvp.color}-500 text-xl font-bold leading-none`}>
+                <span
+                  className={`text-${uvp.color}-500 text-xl font-bold leading-none`}
+                >
                   {uvp.icon}
                 </span>
                 <span className="text-dark dark:text-white font-medium text-sm md:text-base whitespace-nowrap">
@@ -228,7 +230,7 @@ export default function HeroSection() {
             <span className="leading-none self-center">Star on GitHub</span>
           </a>
         </motion.div>
-        
+
         {/* Grid of frosted glass icons */}
         <motion.div
           className="mt-16 w-full max-w-4xl mx-auto"
@@ -238,19 +240,60 @@ export default function HeroSection() {
         >
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 md:gap-6 relative">
             {[
-              { src: "/images/hero/coin.png", alt: "Cloud Coin", offset: { x: 0, y: 0 } },
-              { src: "/images/hero/database.png", alt: "Database", offset: { x: -5, y: 8 } },
-              { src: "/images/hero/cloudsearch.png", alt: "Cloud Search", offset: { x: 10, y: -5 } },
-              { src: "/images/hero/server.png", alt: "Server", offset: { x: 5, y: 12 } },
-              { src: "/images/hero/saas.png", alt: "SaaS", offset: { x: 12, y: -8 } },
-              { src: "/images/hero/compute.png", alt: "Compute", offset: { x: -12, y: 5 } },
-              { src: "/images/hero/startup.png", alt: "Startup", offset: { x: 8, y: 10 } },
-              { src: "/images/hero/storage.png", alt: "Storage", offset: { x: -10, y: -5 } },
-              { src: "/images/hero/marketing.png", alt: "Marketing", offset: { x: 5, y: -12 } },
-              { src: "/images/hero/tools.png", alt: "Tools", offset: { x: -5, y: 10 } },
+              {
+                src: "/images/hero/coin.png",
+                alt: "Cloud Coin",
+                offset: { x: 0, y: 0 },
+              },
+              {
+                src: "/images/hero/database.png",
+                alt: "Database",
+                offset: { x: -5, y: 8 },
+              },
+              {
+                src: "/images/hero/cloudsearch.png",
+                alt: "Cloud Search",
+                offset: { x: 10, y: -5 },
+              },
+              {
+                src: "/images/hero/server.png",
+                alt: "Server",
+                offset: { x: 5, y: 12 },
+              },
+              {
+                src: "/images/hero/saas.png",
+                alt: "SaaS",
+                offset: { x: 12, y: -8 },
+              },
+              {
+                src: "/images/hero/compute.png",
+                alt: "Compute",
+                offset: { x: -12, y: 5 },
+              },
+              {
+                src: "/images/hero/startup.png",
+                alt: "Startup",
+                offset: { x: 8, y: 10 },
+              },
+              {
+                src: "/images/hero/storage.png",
+                alt: "Storage",
+                offset: { x: -10, y: -5 },
+              },
+              {
+                src: "/images/hero/marketing.png",
+                alt: "Marketing",
+                offset: { x: 5, y: -12 },
+              },
+              {
+                src: "/images/hero/tools.png",
+                alt: "Tools",
+                offset: { x: -5, y: 10 },
+              },
             ].map((card, index) => {
-              const isHighlighted = highlightedImage && card.src.includes(highlightedImage);
-              
+              const isHighlighted =
+                highlightedImage && card.src.includes(highlightedImage);
+
               return (
                 <motion.div
                   key={index}
@@ -266,8 +309,8 @@ export default function HeroSection() {
                     transform: `translate(${card.offset.x}px, ${card.offset.y}px)`,
                   }}
                   initial={{ opacity: 0, scale: 0.4 }}
-                  animate={{ 
-                    opacity: 1, 
+                  animate={{
+                    opacity: 1,
                     scale: isHighlighted ? 0.9 : 0.7,
                   }}
                   whileHover={{

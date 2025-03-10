@@ -11,7 +11,9 @@ const activeProviders = providers.filter((provider) => provider.data.active);
 
 // Get all programs and count active ones
 const allPrograms = await getCollection("programs");
-const activePrograms = allPrograms.filter((program) => program.data.status === "Active");
+const activePrograms = allPrograms.filter(
+  (program) => program.data.status === "Active",
+);
 ---
 
 <Base title="Providers - CloudCredits.io">

@@ -1,176 +1,628 @@
 ---
-// Search.astro
+import { plainify } from "@/lib/utils/textConverter";
 ---
 
-<div class="search-container">
-  <div class="search-input-wrapper">
-    <input
-      type="text"
-      id="search-input"
-      placeholder="Search providers and programs..."
-      class="search-input"
-    />
+<div id="searchModal" class="search-modal">
+  <div id="searchModalOverlay" class="search-modal-overlay"></div>
+  <div class="search-wrapper">
+    <div class="search-wrapper-header">
+      <label for="searchInput" class="absolute left-7 top-[calc(50%-7px)]">
+        <span class="sr-only">search icon</span>
+        <svg
+          id="searchIcon"
+          viewBox="0 0 512 512"
+          height="18"
+          width="18"
+          class="-mt-0.5"
+        >
+          <title>search icon</title>
+          <path
+            fill="currentcolor"
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8.0 45.3s-32.8 12.5-45.3.0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9.0 208S93.1.0 208 0 416 93.1 416 208zM208 352a144 144 0 100-288 144 144 0 100 288z"
+          ></path>
+        </svg>
+        <svg
+          id="closeIcon"
+          viewBox="0 0 512 512"
+          height="18"
+          width="18"
+          class="hover:text-red-500 cursor-pointer -mt-0.5 hidden"
+        >
+          <title>close icon</title>
+          <path
+            fill="currentcolor"
+            d="M256 512A256 256 0 10256 0a256 256 0 100 512zM175 175c9.4-9.4 24.6-9.4 33.9.0l47 47 47-47c9.4-9.4 24.6-9.4 33.9.0s9.4 24.6.0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6.0 33.9s-24.6 9.4-33.9.0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9.0s-9.4-24.6.0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6.0-33.9z"
+          ></path>
+        </svg>
+      </label>
+      <input
+        id="searchInput"
+        placeholder="Search..."
+        class="search-wrapper-header-input"
+        type="text"
+        name="search"
+        autocomplete="off"
+      />
+    </div>
+
+    <div id="searchResults" class="search-wrapper-body">
+      <div class="py-8 text-center">Type something to search...</div>
+    </div>
+
+    <div class="search-wrapper-footer">
+      <span class="flex items-center">
+        <kbd>
+          <svg width="14" height="14" fill="currentcolor" viewBox="0 0 16 16">
+            <path
+              d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 011.506.0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 01-.753-1.659z"
+            ></path>
+          </svg>
+        </kbd>
+        <kbd>
+          <svg width="14" height="14" fill="currentcolor" viewBox="0 0 16 16">
+            <path
+              d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 001.506.0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 00-.753 1.659z"
+            ></path>
+          </svg>
+        </kbd>
+        to navigate
+      </span>
+      <span class="flex items-center">
+        <kbd>
+          <svg width="12" height="12" fill="currentcolor" viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M14.5 1.5a.5.5.0 01.5.5v4.8a2.5 2.5.0 01-2.5 2.5H2.707l3.347 3.346a.5.5.0 01-.708.708l-4.2-4.2a.5.5.0 010-.708l4-4a.5.5.0 11.708.708L2.707 8.3H12.5A1.5 1.5.0 0014 6.8V2a.5.5.0 01.5-.5z"
+            ></path>
+          </svg>
+        </kbd>
+        to select
+      </span>
+      <span id="searchStats" class="hidden">
+        <strong id="resultCount">0</strong> results - in <strong id="searchTime"
+          >0.000</strong
+        > seconds
+      </span>
+      <span>
+        <kbd>ESC</kbd> to close
+      </span>
+    </div>
   </div>
-  <div id="search-results" class="search-results"></div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", async () => {
-    // Dynamically import Pagefind
-    const { search } = await import("/pagefind/pagefind.js");
+<script is:inline>
+  // Create a self-executing function to avoid polluting the global scope
+  (function () {
+    // Store references to DOM elements
+    let searchModal;
+    let searchModalOverlay;
+    let searchInput;
+    let searchResults;
+    let searchIcon;
+    let closeIcon;
+    let searchStats;
+    let resultCount;
+    let searchTime;
 
-    const searchInput = document.getElementById("search-input");
-    const searchResults = document.getElementById("search-results");
+    let pagefind;
+    let selectedIndex = -1;
+    let searchResultItems = [];
+    let pagefindLoaded = false;
+    let searchDebounceTimeout;
 
-    if (!searchInput || !searchResults) return;
+    // Initialize the search functionality
+    function initializeSearch() {
+      // Get DOM elements - do this every time to ensure we have the latest references
+      searchModal = document.getElementById("searchModal");
+      searchModalOverlay = document.getElementById("searchModalOverlay");
+      searchInput = document.getElementById("searchInput");
+      searchResults = document.getElementById("searchResults");
+      searchIcon = document.getElementById("searchIcon");
+      closeIcon = document.getElementById("closeIcon");
+      searchStats = document.getElementById("searchStats");
+      resultCount = document.getElementById("resultCount");
+      searchTime = document.getElementById("searchTime");
 
-    searchInput.addEventListener("input", async (e) => {
+      if (!searchModal) {
+        console.warn(
+          "Search modal not found in the DOM. Search functionality will not be available.",
+        );
+        return;
+      }
+
+      // Initialize pagefind only once
+      initializePagefind();
+
+      // Set up event listeners on every route change
+      setupEventListeners();
+
+      console.debug("Search initialized with fresh DOM references");
+    }
+
+    async function initializePagefind() {
+      if (!pagefindLoaded) {
+        try {
+          pagefind = await import("/pagefind/pagefind.js");
+          if (!pagefind) {
+            throw new Error("Failed to import Pagefind module");
+          }
+
+          pagefind.init();
+          pagefindLoaded = true;
+          console.debug("Pagefind initialized successfully");
+        } catch (error) {
+          console.error("Failed to initialize pagefind:", error);
+          // Show a user-friendly error in the search results if appropriate
+          if (searchResults) {
+            searchResults.innerHTML = `
+              <div class="search-result-empty">
+                <p>Search functionality is currently unavailable. Please try again later.</p>
+              </div>
+            `;
+          }
+        }
+      }
+    }
+
+    function setupEventListeners() {
+      // Only set up event listeners if all required elements exist
+      if (!searchInput || !closeIcon || !searchModalOverlay) {
+        console.warn(
+          "Required search elements not found. Event listeners not attached.",
+        );
+        return;
+      }
+
+      // Remove existing event listeners to prevent duplicates
+      searchInput.removeEventListener("input", handleSearchInput);
+      closeIcon.removeEventListener("click", clearSearch);
+      searchModalOverlay.removeEventListener("click", handleOverlayClick);
+      document.removeEventListener("keydown", handleKeyboardShortcuts);
+
+      // Re-add event listeners
+      searchInput.addEventListener("input", handleSearchInput);
+      closeIcon.addEventListener("click", clearSearch);
+      searchModalOverlay.addEventListener("click", handleOverlayClick);
+
+      // Search trigger buttons - remove old listeners and add new ones
+      document.querySelectorAll("[data-search-trigger]").forEach((button) => {
+        button.removeEventListener("click", handleSearchTrigger);
+        button.addEventListener("click", handleSearchTrigger);
+      });
+
+      // Global keyboard shortcuts
+      document.addEventListener("keydown", handleKeyboardShortcuts);
+    }
+
+    // Handler functions to make event listener removal possible
+    function handleSearchInput(e) {
       const query = e.target.value.trim();
 
+      if (query) {
+        searchIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      } else {
+        searchIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+        searchStats.classList.add("hidden");
+      }
+
+      // Debounce search to improve performance
+      clearTimeout(searchDebounceTimeout);
+      searchDebounceTimeout = setTimeout(() => {
+        if (pagefind && query) {
+          pagefind.preload(query);
+        }
+        renderResults(query);
+      }, 300);
+    }
+
+    function handleOverlayClick() {
+      toggleSearchModal(false);
+    }
+
+    function handleSearchTrigger() {
+      toggleSearchModal(true);
+    }
+
+    function handleKeyboardShortcuts(event) {
+      // Open search with Ctrl+K or Cmd+K
+      if ((event.metaKey || event.ctrlKey) && event.key === "k") {
+        event.preventDefault();
+        toggleSearchModal(true);
+        return;
+      }
+
+      // Only handle other shortcuts if modal is open
+      if (!searchModal || !searchModal.classList.contains("show")) return;
+
+      // Prevent default for arrow keys
+      if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+        event.preventDefault();
+      }
+
+      // Close with Escape
+      if (event.key === "Escape") {
+        toggleSearchModal(false);
+      }
+
+      // Navigate up
+      if (event.key === "ArrowUp" && selectedIndex > 0) {
+        selectedIndex--;
+        updateSelection();
+      }
+      // Navigate down
+      else if (
+        event.key === "ArrowDown" &&
+        selectedIndex < searchResultItems.length - 1
+      ) {
+        selectedIndex++;
+        updateSelection();
+      }
+      // Select with Enter
+      else if (event.key === "Enter" && selectedIndex >= 0) {
+        const activeLink = document.querySelector(
+          ".search-result-item-active a",
+        );
+        if (activeLink) {
+          activeLink.click();
+        }
+      }
+    }
+
+    function toggleSearchModal(show) {
+      if (!searchModal) return;
+
+      if (show) {
+        searchModal.classList.add("show");
+        searchInput.focus();
+      } else {
+        searchModal.classList.remove("show");
+        selectedIndex = -1;
+      }
+    }
+
+    function clearSearch() {
+      if (!searchInput) return;
+
+      searchInput.value = "";
+      searchIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+      searchStats.classList.add("hidden");
+      searchResults.innerHTML =
+        '<div class="py-8 text-center">Type something to search...</div>';
+      selectedIndex = -1;
+    }
+
+    function matchMarker(text, substring) {
+      if (!text) return "";
+      if (!substring) return text;
+
+      const regex = new RegExp(`(${substring})`, "gi");
+      return text.replace(regex, "<mark>$1</mark>");
+    }
+
+    function extractContentSnippet(content, searchString) {
+      if (!content || !searchString) return "";
+
+      const plainContent = content.replace(/<[^>]*>/g, "");
+      const lowerContent = plainContent.toLowerCase();
+      const lowerSearchString = searchString.toLowerCase();
+
+      const position = lowerContent.indexOf(lowerSearchString);
+      if (position === -1) return plainContent.substring(0, 100) + "...";
+
+      let wordStart = Math.max(0, position - 40);
+      while (
+        wordStart > 0 &&
+        plainContent[wordStart - 1] !== " " &&
+        wordStart < position
+      ) {
+        wordStart++;
+      }
+
+      const start = Math.max(0, wordStart);
+      const end = Math.min(
+        plainContent.length,
+        position + searchString.length + 80,
+      );
+
+      let snippet = plainContent.substring(start, end);
+      if (start > 0) snippet = "..." + snippet;
+      if (end < plainContent.length) snippet = snippet + "...";
+
+      return matchMarker(snippet, searchString);
+    }
+
+    function getContentIcon(type, slug = "") {
+      if (type === "providers") {
+        return `/images/providers/${slug}.png`;
+      } else if (type === "programs") {
+        return "/images/rocket.png";
+      }
+      return "/images/image-placeholder.png";
+    }
+
+    function formatCurrency(value, currency = "USD") {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: currency,
+        maximumFractionDigits: 0,
+      }).format(value);
+    }
+
+    function groupSearchResults(results) {
+      const contentOrder = ["programs", "providers"];
+      const groups = {};
+
+      contentOrder.forEach((type) => {
+        groups[type] = [];
+      });
+
+      results.forEach((result) => {
+        const type = result.meta.collection || "page";
+        if (groups[type] !== undefined) {
+          groups[type].push(result);
+        } else {
+          if (!groups[type]) {
+            groups[type] = [];
+          }
+          groups[type].push(result);
+        }
+      });
+
+      return groups;
+    }
+
+    // Function to strip trailing slashes from URLs
+    function stripTrailingSlash(url) {
+      return url.replace(/(.)\/(#.*)?$/, "$1$2");
+    }
+
+    async function renderResults(query) {
+      if (!searchResults) return;
+
+      const startTime = performance.now();
+
+      searchResults.innerHTML = "";
       if (!query) {
-        searchResults.innerHTML = "";
+        searchResults.innerHTML =
+          '<div class="py-8 text-center">Type something to search...</div>';
+        searchStats.classList.add("hidden");
         return;
       }
 
       try {
-        // Perform the search
-        const results = await search(query);
+        // Make sure pagefind is loaded
+        if (!pagefind) {
+          console.warn("Pagefind not initialized yet. Trying to initialize...");
+          await initializePagefind();
 
-        if (results.results.length === 0) {
-          searchResults.innerHTML =
-            '<p class="no-results">No results found</p>';
+          if (!pagefind) {
+            throw new Error("Pagefind could not be initialized");
+          }
+        }
+
+        const search = await pagefind.debouncedSearch(query);
+
+        if (search === null) {
+          searchResults.innerHTML = `
+            <div class="search-result-empty">
+              <p>Search is still initializing. Please try again in a moment.</p>
+            </div>
+          `;
           return;
         }
 
-        // Build results HTML
-        let resultsHTML = '<div class="results-list">';
+        const results = await Promise.all(
+          search.results.map(async (r) => {
+            const data = await r.data();
+            // Strip trailing slashes from URLs
+            data.url = stripTrailingSlash(data.url);
+            return data;
+          }),
+        );
 
-        for (const result of results.results) {
-          const data = await result.data();
+        console.log("Pagefind search results:", {
+          query,
+          totalResults: results.length,
+          rawSearch: search,
+          processedResults: results,
+        });
 
-          resultsHTML += `
-              <a href="${data.url}" class="result-item">
-                <h3 class="result-title">${data.meta.title || "Untitled"}</h3>
-                <p class="result-excerpt">${data.excerpt}</p>
-                <div class="result-meta">
-                  ${data.meta.provider ? `<span class="provider-tag">${data.meta.provider}</span>` : ""}
-                  ${
-                    data.meta.tags
-                      ? data.meta.tags
-                          .split(",")
-                          .map(
-                            (tag) => `<span class="tag">${tag.trim()}</span>`,
-                          )
-                          .join("")
-                      : ""
-                  }
-                </div>
-              </a>
-            `;
+        const endTime = performance.now();
+        const totalTime = ((endTime - startTime) / 1000).toFixed(3);
+
+        resultCount.textContent = results.length;
+        searchTime.textContent = totalTime;
+        searchStats.classList.remove("hidden");
+
+        if (results.length === 0) {
+          searchResults.innerHTML = `
+            <div class="search-result-empty">
+              <svg class="mx-auto" width="42" height="42" viewBox="0 0 47 47" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10368 33.9625C9.90104 36.2184 13.2988 37.6547 16.9158 38.0692C21.6958 38.617 26.5063 37.3401 30.3853 34.4939C30.4731 34.6109 30.5668 34.7221 30.6721 34.8304L41.9815 46.1397C42.5323 46.6909 43.2795 47.0007 44.0587 47.001C44.838 47.0013 45.5854 46.692 46.1366 46.1412C46.6878 45.5904 46.9976 44.8432 46.9979 44.064C46.9981 43.2847 46.6888 42.5373 46.138 41.9861L34.8287 30.6767C34.7236 30.5704 34.6107 30.4752 34.4909 30.3859C37.3352 26.5046 38.6092 21.6924 38.0579 16.912C37.6355 13.2498 36.1657 9.81322 33.8586 6.9977L31.7805 9.09214C34.0157 11.9274 35.2487 15.4472 35.2487 19.0942C35.2487 21.2158 34.8308 23.3167 34.0189 25.2769C33.207 27.2371 32.0169 29.0181 30.5167 30.5184C29.0164 32.0186 27.2354 33.2087 25.2752 34.0206C23.315 34.8325 21.2141 35.2504 19.0925 35.2504C16.9708 35.2504 14.8699 34.8325 12.9098 34.0206C11.5762 33.4682 10.3256 32.7409 9.18992 31.8599L7.10368 33.9625ZM28.9344 6.28152C26.1272 4.12516 22.671 2.93792 19.0925 2.93792C14.8076 2.93792 10.6982 4.64009 7.66829 7.66997C4.6384 10.6999 2.93623 14.8093 2.93623 19.0942C2.93623 21.2158 3.35413 23.3167 4.16605 25.2769C4.72475 26.6257 5.4625 27.8897 6.35716 29.0358L4.2702 31.1391C1.35261 27.548 -0.165546 23.0135 0.00974294 18.3781C0.19158 13.5695 2.18233 9.00695 5.58371 5.60313C8.98509 2.19932 13.5463 0.205307 18.3547 0.0200301C22.9447 -0.156832 27.4369 1.32691 31.0132 4.18636L28.9344 6.28152Z" fill="currentColor"></path>
+                <path d="M3.13672 39.1367L38.3537 3.64355" stroke="black" stroke-width="3" stroke-linecap="round"></path>
+              </svg>
+              <p class="mt-4">No results for "<strong>${query}</strong>"</p>
+            </div>
+          `;
+          return;
         }
 
-        resultsHTML += "</div>";
-        searchResults.innerHTML = resultsHTML;
+        const groupedResults = groupSearchResults(results);
+
+        Object.entries(groupedResults).forEach(([group, items]) => {
+          if (items.length === 0) return;
+
+          const groupTitle =
+            group === "programs"
+              ? "Programs"
+              : group === "providers"
+                ? "Providers"
+                : group.charAt(0).toUpperCase() + group.slice(1);
+
+          const groupElement = document.createElement("div");
+          groupElement.className = "search-result-group";
+          groupElement.innerHTML = `<p class="search-result-group-title">${groupTitle}</p>`;
+
+          items.forEach((item) => {
+            const resultItem = document.createElement("div");
+            resultItem.id = "searchItem";
+            resultItem.className = "search-result-item";
+            resultItem.setAttribute("tabindex", "0");
+
+            const iconPath = getContentIcon(
+              group,
+              item.meta.slug || item.meta.provider_slug,
+            );
+
+            let valueDisplay = "";
+            if (group === "providers" && item.meta.best_deal) {
+              valueDisplay = `<div class="search-result-item-value">${item.meta.best_deal}</div>`;
+            } else if (group === "programs") {
+              const maxValue = item.meta.program_max_value || "";
+              const valueType = item.meta.program_value_type || "";
+              if (maxValue) {
+                valueDisplay = `<div class="search-result-item-value">Up to ${maxValue} in ${valueType}</div>`;
+              }
+            }
+
+            let itemHTML = `
+              <div class="search-result-item-image">
+                <img src="${item.meta.image}" alt="${item.meta.title || item.meta.name}" onerror="this.src='/images/image-placeholder.png'">
+              </div>
+              <div class="search-result-item-body">
+                <a href="${item.url}" class="search-result-item-title search-result-item-link">
+                  ${matchMarker(item.meta.title || item.meta.name, query)}
+                </a>
+                ${valueDisplay}
+            `;
+
+            const description = item.meta.intro || item.excerpt || "";
+            if (description) {
+              itemHTML += `
+                <p class="search-result-item-content">
+                  ${extractContentSnippet(description, query)}
+                </p>
+              `;
+            }
+
+            const tagsString = item.meta.tags || "";
+            let tags = tagsString.split(",");
+            if (tags.length === 1 && tags[0].includes(" ")) {
+              tags = tagsString.split(" ");
+            }
+
+            tags = tags.filter((tag) => tag.trim()).map((tag) => tag.trim());
+
+            if (tags.length > 0) {
+              itemHTML += `
+                <div class="search-result-item-taxonomies flex flex-wrap gap-2">
+                  ${tags
+                    .map(
+                      (tag) => `
+                    <div class="search-result-item-tag flex items-center">
+                      <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="mr-1">
+                        <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"></path>
+                        <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                      </svg>
+                      <span>${matchMarker(tag, query)}</span>
+                    </div>
+                  `,
+                    )
+                    .join("")}
+                </div>
+              `;
+            }
+
+            itemHTML += `</div>`;
+            resultItem.innerHTML = itemHTML;
+            groupElement.appendChild(resultItem);
+          });
+
+          searchResults.appendChild(groupElement);
+        });
+
+        searchResultItems = document.querySelectorAll("#searchItem");
+        selectedIndex = -1;
       } catch (error) {
         console.error("Search error:", error);
-        searchResults.innerHTML =
-          '<p class="error">An error occurred while searching</p>';
+        searchResults.innerHTML = `
+          <div class="search-result-empty">
+            <p>An error occurred while searching. Please try again.</p>
+          </div>
+        `;
       }
-    });
-  });
+    }
+
+    function updateSelection() {
+      searchResultItems.forEach((item, index) => {
+        if (index === selectedIndex) {
+          item.classList.add("search-result-item-active");
+          item.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        } else {
+          item.classList.remove("search-result-item-active");
+        }
+      });
+    }
+
+    // Initialize on DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", initializeSearch);
+
+    // Re-initialize on route changes for SPA navigation
+    // This handles frameworks that use client-side routing
+    document.addEventListener("astro:page-load", initializeSearch);
+    document.addEventListener("astro:after-swap", initializeSearch);
+
+    // For other frameworks or vanilla JS SPAs
+    window.addEventListener("popstate", initializeSearch);
+
+    // Make search functions available globally for potential external triggers
+    window.searchFunctions = {
+      openSearchModal: () => toggleSearchModal(true),
+      closeSearchModal: () => toggleSearchModal(false),
+    };
+
+    // Initialize immediately if the DOM is already loaded
+    if (
+      document.readyState === "interactive" ||
+      document.readyState === "complete"
+    ) {
+      initializeSearch();
+    }
+
+    // Log initialization for debugging
+    console.log("Search component script loaded and ready");
+  })();
 </script>
 
 <style>
-  .search-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  .search-result-item {
+    @apply flex items-start py-2;
   }
 
-  .search-input-wrapper {
-    position: relative;
-    margin-bottom: 1rem;
+  .search-result-item-image {
+    @apply flex-shrink-0 mr-4 w-16 h-16 flex items-center justify-center p-2 overflow-hidden;
   }
 
-  .search-input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    transition: border-color 0.2s ease;
+  .search-result-item-image img {
+    @apply w-full h-full rounded-md object-contain !important;
   }
 
-  .search-input:focus {
-    outline: none;
-    border-color: #8c3fed;
+  .search-result-item-body {
+    @apply flex-grow;
   }
 
-  .search-results {
-    margin-top: 1rem;
+  .search-result-item-value {
+    @apply text-sm font-medium text-primary dark:text-darkmode-primary mt-1;
   }
 
-  .results-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  .search-result-item-taxonomies {
+    @apply mt-2 text-sm;
   }
 
-  .result-item {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #f8fafc;
-    text-decoration: none;
-    color: inherit;
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .result-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .result-title {
-    margin: 0 0 0.5rem;
-    color: #1e293b;
-  }
-
-  .result-excerpt {
-    margin: 0 0 0.5rem;
-    font-size: 0.875rem;
-    color: #64748b;
-  }
-
-  .result-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .provider-tag {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    background-color: #8c3fed;
-    color: white;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-  }
-
-  .tag {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    background-color: #e2e8f0;
-    color: #475569;
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-  }
-
-  .no-results,
-  .error {
-    text-align: center;
-    padding: 1rem;
-    color: #64748b;
+  .search-result-item-tag {
+    @apply text-xs bg-gray-100 dark:bg-darkmode-theme-light px-2 py-1 rounded-md;
   }
 </style>

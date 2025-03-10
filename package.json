@@ -7,11 +7,12 @@
   "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "astro dev",
+    "dev:search": "astro build && npx pagefind --site dist && npx shx cp -r dist/pagefind public/ && astro dev",
     "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
     "format": "prettier -w ./src",
-    "copy:pagefind:dev": "npx shx cp -r dist/pagefind public/"
+    "clean": "rm -rf dist/ node_modules/.vite public/pagefind"
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",

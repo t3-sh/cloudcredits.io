@@ -32,7 +32,7 @@ tiers:
       - "Building a product or service (not dev shops, consultants, or agencies)"
       - "First-time participants who haven't joined before"
       - "Must have a live website and company LinkedIn"
-    effort: 
+    effort:
       - "Complete the application form"
       - "Await acceptance email"
     effort_level: 2

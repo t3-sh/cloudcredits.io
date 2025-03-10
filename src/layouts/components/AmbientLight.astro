@@ -25,7 +25,11 @@
   .light-1 {
     width: 40vw;
     height: 40vw;
-    background: radial-gradient(circle, rgba(125, 39, 255, 0.4) 0%, rgba(125, 39, 255, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(125, 39, 255, 0.4) 0%,
+      rgba(125, 39, 255, 0) 70%
+    );
     top: 30%;
     left: 15%;
     animation-delay: 0s;
@@ -34,7 +38,11 @@
   .light-2 {
     width: 35vw;
     height: 35vw;
-    background: radial-gradient(circle, rgba(0, 183, 255, 0.4) 0%, rgba(0, 183, 255, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 183, 255, 0.4) 0%,
+      rgba(0, 183, 255, 0) 70%
+    );
     top: 40%;
     right: 15%;
     animation-delay: -5s;
@@ -43,7 +51,11 @@
   .light-3 {
     width: 30vw;
     height: 30vw;
-    background: radial-gradient(circle, rgba(255, 61, 245, 0.3) 0%, rgba(255, 61, 245, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 61, 245, 0.3) 0%,
+      rgba(255, 61, 245, 0) 70%
+    );
     bottom: 20%;
     left: 35%;
     animation-delay: -10s;
@@ -69,21 +81,35 @@
 
   /* Dark mode adjustments */
   :global(.dark) .light-1 {
-    background: radial-gradient(circle, rgba(125, 39, 255, 0.5) 0%, rgba(125, 39, 255, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(125, 39, 255, 0.5) 0%,
+      rgba(125, 39, 255, 0) 70%
+    );
   }
 
   :global(.dark) .light-2 {
-    background: radial-gradient(circle, rgba(0, 183, 255, 0.5) 0%, rgba(0, 183, 255, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 183, 255, 0.5) 0%,
+      rgba(0, 183, 255, 0) 70%
+    );
   }
 
   :global(.dark) .light-3 {
-    background: radial-gradient(circle, rgba(255, 61, 245, 0.4) 0%, rgba(255, 61, 245, 0) 70%);
+    background: radial-gradient(
+      circle,
+      rgba(255, 61, 245, 0.4) 0%,
+      rgba(255, 61, 245, 0) 70%
+    );
   }
 
   /* Media query for smaller screens */
   @media (max-width: 768px) {
-    .light-1, .light-2, .light-3 {
+    .light-1,
+    .light-2,
+    .light-3 {
       filter: blur(60px);
     }
   }
-</style> 
+</style>

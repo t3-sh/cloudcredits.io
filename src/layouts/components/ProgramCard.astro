@@ -8,8 +8,8 @@ import { FaTag } from "react-icons/fa6";
 import { getCollection } from "astro:content";
 import { AnimatedProgramCard } from "./AnimatedProgramCard";
 import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
-import fs from 'node:fs';
-import path from 'node:path';
+import fs from "node:fs";
+import path from "node:path";
 
 interface Props {
   program: CollectionEntry<"programs">;
@@ -51,7 +51,7 @@ const lowestEffortLevel = Math.max(
 const effort = effortLevelMap[lowestEffortLevel as EffortLevel];
 
 // Check if mini version exists in the public directory
-const publicDir = path.join(process.cwd(), 'public');
+const publicDir = path.join(process.cwd(), "public");
 const miniPath = `/images/providers/${provider_slug}.mini.svg`;
 const regularPath = `/images/providers/${provider_slug}.svg`;
 const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));

@@ -1,0 +1,1 @@
+- [ ] Scrape https://github.com/startupdeals/startupdeals
