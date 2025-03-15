@@ -10,6 +10,7 @@ import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
 import fs from "node:fs";
 import path from "node:path";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
 
 export async function getStaticPaths() {
   const programs = await getCollection("programs");
@@ -309,29 +310,8 @@ const logo = miniExists ? miniPath : regularPath;
   search_collection="programs"
 >
   <div class="relative min-h-screen" data-pagefind-meta={`image:${logo}`}>
-    <!-- Base gradient background -->
-    <div
-      class="fixed inset-0"
-      style={`
-        background: radial-gradient(
-          circle at top,
-          ${color}15 0%,
-          ${color}10 30%,
-          ${color}05 60%,
-          transparent 100%
-        );
-        @media (prefers-color-scheme: dark) {
-          background: radial-gradient(
-            circle at top,
-            ${color}25 0%,
-            ${color}20 30%,
-            ${color}15 60%,
-            transparent 100%
-          );
-        }
-      `}
-    >
-    </div>
+    <!-- Replace gradient background with AnimatedBackground -->
+    <AnimatedBackground client:load color={color} />
 
     <!-- Content -->
     <div class="relative z-10">

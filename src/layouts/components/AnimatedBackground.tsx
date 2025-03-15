@@ -1,13 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useTheme from "@/hooks/useTheme";
-import themeConfig from "@/config/theme.json";
 
-const AnimatedBackground: React.FC = () => {
+interface AnimatedBackgroundProps {
+  color?: string;
+}
+
+const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({ color }) => {
   const theme = useTheme();
-  const primaryColor = theme === "dark" 
-    ? themeConfig.colors.darkmode.theme_color.primary 
-    : themeConfig.colors.default.theme_color.primary;
+  // Use provided color or fall back to theme color
+  const primaryColor = color || "#2BDFDC";
 
   const lines = Array.from({ length: 6 });
 
@@ -58,7 +60,7 @@ const AnimatedBackground: React.FC = () => {
           }}
         />
       ))}
-      
+
       {/* Diagonal lines */}
       {lines.slice(0, 3).map((_, index) => (
         <motion.div
@@ -69,7 +71,7 @@ const AnimatedBackground: React.FC = () => {
             top: "50%",
             left: "0",
             width: "141.4%",
-            transform: `rotate(${45 + (index * 90 / 2)}deg)`,
+            transform: `rotate(${45 + (index * 90) / 2}deg)`,
             opacity: theme === "dark" ? 0.15 : 0.3,
             boxShadow: `0 0 10px ${primaryColor}`,
           }}
@@ -88,4 +90,4 @@ const AnimatedBackground: React.FC = () => {
   );
 };
 
-export default AnimatedBackground; 
+export default AnimatedBackground;
