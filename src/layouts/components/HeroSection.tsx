@@ -121,7 +121,7 @@ export default function HeroSection() {
   }, [allIconCards.length]);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-black relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       <motion.div
         className="text-center px-4 z-20 w-full max-w-5xl mx-auto flex flex-col items-center justify-center"
         initial={{ opacity: 0, y: 20 }}

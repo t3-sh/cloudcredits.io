@@ -1,9 +1,11 @@
 ---
 import Base from "@/layouts/Base.astro";
 import HeroSection from "@/layouts/components/HeroSection";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
 ---
 
 <Base>
+  <AnimatedBackground client:load />
   <div class="relative flex items-center justify-center min-h-screen">
     <HeroSection client:load />
   </div>
