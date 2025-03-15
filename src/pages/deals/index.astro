@@ -44,7 +44,10 @@ const allTags = [
     <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
       <div class="flex items-center gap-3">
         <h2 class="text-2xl font-bold">Tags</h2>
-        <span id="program-counter" class="text-sm text-gray-500 dark:text-gray-400">
+        <span
+          id="program-counter"
+          class="text-sm text-gray-500 dark:text-gray-400"
+        >
           Showing all {allPrograms.length} programs
         </span>
       </div>
@@ -52,9 +55,9 @@ const allTags = [
       <div class="flex flex-wrap items-center gap-3">
         <button
           id="clear-filter"
-          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full 
+          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full
               bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm
-              border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 
+              border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700
               transition-all duration-300 hidden"
           aria-label="Clear filter"
         >
@@ -89,26 +92,106 @@ const allTags = [
   </section>
 
   <script>
-    // Client-side filtering functionality
-    document.addEventListener("DOMContentLoaded", () => {
-      const tagButtons = document.querySelectorAll<HTMLElement>("[data-tag]");
-      const programCards = document.querySelectorAll<HTMLElement>(".program-card-container");
-      const programCounter = document.getElementById("program-counter");
-      const clearFilterButton = document.getElementById("clear-filter");
-      const totalPrograms = programCards.length;
+    // Create a self-executing function to avoid polluting the global scope
+    (function () {
+      // Store references to DOM elements
+      let tagButtons;
+      let programCards;
+      let programCounter;
+      let clearFilterButton;
+      let totalPrograms;
+      let activeTag = null;
 
-      let activeTag: string | null = null;
+      // Initialize the filtering functionality
+      function initializeFiltering() {
+        // Get DOM elements - do this every time to ensure we have the latest references
+        tagButtons = document.querySelectorAll("[data-tag]");
+        programCards = document.querySelectorAll(".program-card-container");
+        programCounter = document.getElementById("program-counter");
+        clearFilterButton = document.getElementById("clear-filter");
+        totalPrograms = programCards.length;
+
+        if (!tagButtons.length || !programCards.length) {
+          console.debug("Tag buttons or program cards not found in the DOM.");
+          return;
+        }
+
+        // Set up event listeners
+        setupEventListeners();
+
+        // If there was an active tag before page transition, restore it
+        if (sessionStorage.getItem("activeTag")) {
+          activeTag = sessionStorage.getItem("activeTag");
+          updateUI();
+        }
+
+        console.debug("Tag filtering initialized with fresh DOM references");
+      }
+
+      function setupEventListeners() {
+        // Remove existing event listeners to prevent duplicates
+        tagButtons.forEach((button) => {
+          button.removeEventListener("click", handleTagClick);
+          button.addEventListener("click", handleTagClick);
+        });
+
+        if (clearFilterButton) {
+          clearFilterButton.removeEventListener("click", handleClearFilter);
+          clearFilterButton.addEventListener("click", handleClearFilter);
+        }
+      }
+
+      // Handler functions to make event listener removal possible
+      function handleTagClick(e) {
+        e.preventDefault();
+        const tag = this.getAttribute("data-tag") || "";
+
+        // Toggle active state - if clicking the same tag, clear it
+        if (tag === activeTag) {
+          activeTag = null;
+        } else {
+          activeTag = tag;
+        }
+
+        // Store active tag in sessionStorage to persist across page transitions
+        if (activeTag) {
+          sessionStorage.setItem("activeTag", activeTag);
+        } else {
+          sessionStorage.removeItem("activeTag");
+        }
+
+        // Update UI
+        updateUI();
+      }
+
+      function handleClearFilter() {
+        activeTag = null;
+        sessionStorage.removeItem("activeTag");
+        updateUI();
+      }
 
       // Function to update the UI based on active tag
-      const updateUI = () => {
+      function updateUI() {
         // Update button styles
         tagButtons.forEach((button) => {
           const tag = button.getAttribute("data-tag") || "";
           if (tag === activeTag) {
-            button.classList.add("bg-primary/20", "border-primary/30", "font-semibold", "text-primary");
+            button.classList.add(
+              "bg-primary/20",
+              "border-primary/30",
+              "font-semibold",
+              "text-primary",
+              "dark:text-primary",
+            );
             button.setAttribute("aria-pressed", "true");
           } else {
-            button.classList.remove("bg-primary/20", "border-primary/30", "font-semibold", "text-primary");
+            button.classList.remove(
+              "bg-primary/20",
+              "border-primary/30",
+              "font-semibold",
+              "text-primary",
+              "dark:text-primary",
+            );
             button.setAttribute("aria-pressed", "false");
           }
         });
@@ -120,7 +203,7 @@ const allTags = [
 
         // Filter program cards
         let visibleCount = 0;
-        
+
         if (!activeTag) {
           // Show all programs if no tag is active
           programCards.forEach((card) => {
@@ -130,9 +213,14 @@ const allTags = [
         } else {
           // Filter based on active tag
           programCards.forEach((card) => {
-            const programTagsAttr = card.getAttribute("data-program-tags") || "";
-            const programTags = programTagsAttr.split(",").filter(tag => tag.trim() !== "");
-            const hasMatchingTag = activeTag ? programTags.includes(activeTag) : false;
+            const programTagsAttr =
+              card.getAttribute("data-program-tags") || "";
+            const programTags = programTagsAttr
+              .split(",")
+              .filter((tag) => tag.trim() !== "");
+            const hasMatchingTag = activeTag
+              ? programTags.includes(activeTag)
+              : false;
 
             card.style.display = hasMatchingTag ? "" : "none";
             if (hasMatchingTag) visibleCount++;
@@ -147,37 +235,22 @@ const allTags = [
             programCounter.textContent = `Showing ${visibleCount} of ${totalPrograms} programs with "${activeTag}" tag`;
           }
         }
-      };
-
-      // Add click event listeners to tag buttons
-      tagButtons.forEach((button) => {
-        // Initialize ARIA attributes
-        button.setAttribute("role", "button");
-        button.setAttribute("aria-pressed", "false");
-        
-        button.addEventListener("click", (e) => {
-          e.preventDefault(); // Prevent default behavior
-          const tag = button.getAttribute("data-tag") || "";
-
-          // Toggle active state - if clicking the same tag, clear it
-          if (tag === activeTag) {
-            activeTag = null;
-          } else {
-            activeTag = tag;
-          }
-
-          // Update UI
-          updateUI();
-        });
-      });
-
-      // Add click event listener to clear filter button
-      if (clearFilterButton) {
-        clearFilterButton.addEventListener("click", () => {
-          activeTag = null;
-          updateUI();
-        });
       }
-    });
+
+      // Initialize on DOMContentLoaded
+      document.addEventListener("DOMContentLoaded", initializeFiltering);
+
+      // Re-initialize on route changes for SPA navigation
+      document.addEventListener("astro:page-load", initializeFiltering);
+      document.addEventListener("astro:after-swap", initializeFiltering);
+
+      // Initialize immediately if the DOM is already loaded
+      if (
+        document.readyState === "interactive" ||
+        document.readyState === "complete"
+      ) {
+        initializeFiltering();
+      }
+    })();
   </script>
 </Base>
