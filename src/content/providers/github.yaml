@@ -1,0 +1,12 @@
+active: true
+name: "GitHub"
+short_name: "GitHub"
+slug: "github"
+color: "#d0d7de"
+url: "https://github.com/startups"
+intro: "World’s leading code hosting platform providing version control, collaboration, and a vast ecosystem for developers and enterprises"
+best_deal: "20 free seats of GitHub Enterprise"
+video: ""
+tags:
+  - "dev tools"
+  - "collaboration"
