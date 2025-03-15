@@ -1,7 +1,7 @@
 ---
 import config from "@/config/config.json";
 import ImageMod from "./ImageMod.astro";
-import { AnimatedLogo } from "./AnimatedLogo";
+import { Logo } from "./Logo";
 
 const { src, srcDarkmode }: { src?: string; srcDarkmode?: string } =
   Astro.props;
@@ -22,13 +22,12 @@ const {
 } = config.site;
 
 const { theme_switcher }: { theme_switcher: boolean } = config.settings;
-const { gradients } = config.theme;
 ---
 
 <a href="/" class="navbar-brand group inline-flex items-center">
   {
     src || srcDarkmode || logo || logo_darkmode ? (
-      <AnimatedLogo
+      <Logo
         client:load
         src={src ? src : logo}
         srcDarkmode={srcDarkmode ? srcDarkmode : logo_darkmode}
@@ -51,7 +50,7 @@ const { gradients } = config.theme;
   .navbar-brand {
     @apply relative;
   }
-  /* Remove the after pseudo-element since we're handling the underline animation in the React component */
+  /* Removed gradient styles */
   /* .navbar-brand::after {
     content: '';
     @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#1AE8D9] to-[#C37BFF] transition-all duration-300 opacity-0;

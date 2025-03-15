@@ -1,12 +1,10 @@
 ---
 import Base from "@/layouts/Base.astro";
 import HeroSection from "@/layouts/components/HeroSection";
-import AmbientLight from "@/layouts/components/AmbientLight.astro";
 ---
 
 <Base>
-  <div class="relative">
-    <AmbientLight />
+  <div class="relative flex items-center justify-center min-h-screen">
     <HeroSection client:load />
   </div>
 </Base>

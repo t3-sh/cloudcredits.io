@@ -23,22 +23,45 @@ const activePrograms = allPrograms.filter(
       <Stat
         title="Total Providers"
         metric={activeProviders.length}
-        icon="FaCloud"
+        icon="BsCloudHazeFill"
         iconColor="text-white"
       />
       <Stat
         title="Active Programs"
         metric={activePrograms.length}
-        icon="FaRocket"
+        icon="MdDiscount"
         iconColor="text-white"
       />
       <Stat
         title="Potential Savings"
         metric="$1m+"
-        icon="GiReceiveMoney"
+        icon="MdSavings"
         iconColor="text-white"
       />
     </StatGroup>
+  </div>
+
+  <div class="container mt-8 text-center">
+    <a
+      href="/deals"
+      class="inline-flex items-center gap-2 px-6 py-3 rounded-full
+             bg-primary/10 hover:bg-primary/20 text-primary
+             border border-primary/20 hover:border-primary/30
+             transition-all duration-300 font-medium"
+    >
+      All Deals
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </a>
   </div>
 
   <section class="section-sm">

@@ -1,0 +1,128 @@
+---
+import { getCollection } from "astro:content";
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import StatGroup from "@/components/StatGroup.astro";
+import Stat from "@/components/Stat.astro";
+import { FaFilter } from "react-icons/fa";
+
+// Get all programs and providers
+const allPrograms = await getCollection("programs");
+const providers = await getCollection("providers");
+const activeProviders = providers.filter((provider) => provider.data.active);
+
+// Filter active programs
+const activePrograms = allPrograms.filter(
+  (program) => program.data.status === "Active",
+);
+
+// Calculate stats
+const totalPrograms = allPrograms.length;
+const totalActivePrograms = activePrograms.length;
+
+// Calculate total value of credits across all programs
+const creditPrograms = allPrograms.filter(
+  (p) => p.data.value_type === "credits",
+);
+const totalCreditValue = creditPrograms.reduce(
+  (sum, program) => sum + program.data.max_value,
+  0,
+);
+
+// Get unique tags across all programs
+const allTags = [
+  ...new Set(allPrograms.flatMap((program) => program.data.tags)),
+];
+---
+
+<Base title="Deals - CloudCredits.io">
+  <PageHeader title="Deals" />
+
+  <!-- Filter Section -->
+  <div class="container mt-3">
+    <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+      <h2 class="text-2xl font-bold">Tags</h2>
+
+      <div class="flex flex-wrap gap-3">
+        {
+          allTags.map((tag) => (
+            <button
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full 
+                  bg-white/10 dark:bg-white/5 text-gray-700 dark:text-gray-200 text-sm
+                  border border-white/10 dark:border-white/5 hover:bg-white/20 dark:hover:bg-white/10 
+                  transition-all duration-300"
+              data-tag={tag}
+            >
+              {tag}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Programs Grid -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+        {allPrograms.map((program) => <ProgramCard program={program} />)}
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Client-side filtering functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const tagButtons = document.querySelectorAll("[data-tag]");
+      const programCards = document.querySelectorAll("[data-program-tags]");
+
+      let activeFilters = new Set<string>();
+
+      tagButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const tag = button.getAttribute("data-tag") || "";
+
+          // Toggle active state
+          if (activeFilters.has(tag)) {
+            activeFilters.delete(tag);
+            button.classList.remove("bg-primary/20", "border-primary/30");
+          } else {
+            activeFilters.add(tag);
+            button.classList.add("bg-primary/20", "border-primary/30");
+          }
+
+          // Filter programs
+          if (activeFilters.size === 0) {
+            // Show all programs if no filters active
+            programCards.forEach((card) => {
+              const container = card.closest(
+                ".program-card-container",
+              ) as HTMLElement;
+              if (container) {
+                container.style.display = "block";
+              }
+            });
+          } else {
+            // Filter based on active tags
+            programCards.forEach((card) => {
+              const programTagsAttr =
+                card.getAttribute("data-program-tags") || "";
+              const programTags = programTagsAttr.split(",");
+              const hasMatchingTag = [...activeFilters].some((filter) =>
+                programTags.includes(filter),
+              );
+
+              const container = card.closest(
+                ".program-card-container",
+              ) as HTMLElement;
+              if (container) {
+                container.style.display = hasMatchingTag ? "block" : "none";
+              }
+            });
+          }
+        });
+      });
+    });
+  </script>
+</Base>

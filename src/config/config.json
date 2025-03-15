@@ -58,7 +58,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Explore",
-    "link": "/tags"
+    "link": "/deals"
   },
 
   "metadata": {
