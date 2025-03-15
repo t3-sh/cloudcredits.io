@@ -42,9 +42,24 @@ const allTags = [
   <!-- Filter Section -->
   <div class="container mt-3">
     <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
-      <h2 class="text-2xl font-bold">Tags</h2>
+      <div class="flex items-center gap-3">
+        <h2 class="text-2xl font-bold">Tags</h2>
+        <span id="program-counter" class="text-sm text-gray-500 dark:text-gray-400">
+          Showing all {allPrograms.length} programs
+        </span>
+      </div>
 
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap items-center gap-3">
+        <button
+          id="clear-filter"
+          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full 
+              bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm
+              border border-gray-200 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 
+              transition-all duration-300 hidden"
+          aria-label="Clear filter"
+        >
+          Clear filter
+        </button>
         {
           allTags.map((tag) => (
             <button
@@ -53,6 +68,8 @@ const allTags = [
                   border border-white/10 dark:border-white/5 hover:bg-white/20 dark:hover:bg-white/10 
                   transition-all duration-300"
               data-tag={tag}
+              role="button"
+              aria-pressed="false"
             >
               {tag}
             </button>
@@ -74,55 +91,93 @@ const allTags = [
   <script>
     // Client-side filtering functionality
     document.addEventListener("DOMContentLoaded", () => {
-      const tagButtons = document.querySelectorAll("[data-tag]");
-      const programCards = document.querySelectorAll("[data-program-tags]");
+      const tagButtons = document.querySelectorAll<HTMLElement>("[data-tag]");
+      const programCards = document.querySelectorAll<HTMLElement>(".program-card-container");
+      const programCounter = document.getElementById("program-counter");
+      const clearFilterButton = document.getElementById("clear-filter");
+      const totalPrograms = programCards.length;
 
-      let activeFilters = new Set<string>();
+      let activeTag: string | null = null;
 
-      tagButtons.forEach((button) => {
-        button.addEventListener("click", () => {
+      // Function to update the UI based on active tag
+      const updateUI = () => {
+        // Update button styles
+        tagButtons.forEach((button) => {
           const tag = button.getAttribute("data-tag") || "";
-
-          // Toggle active state
-          if (activeFilters.has(tag)) {
-            activeFilters.delete(tag);
-            button.classList.remove("bg-primary/20", "border-primary/30");
+          if (tag === activeTag) {
+            button.classList.add("bg-primary/20", "border-primary/30", "font-semibold", "text-primary");
+            button.setAttribute("aria-pressed", "true");
           } else {
-            activeFilters.add(tag);
-            button.classList.add("bg-primary/20", "border-primary/30");
-          }
-
-          // Filter programs
-          if (activeFilters.size === 0) {
-            // Show all programs if no filters active
-            programCards.forEach((card) => {
-              const container = card.closest(
-                ".program-card-container",
-              ) as HTMLElement;
-              if (container) {
-                container.style.display = "block";
-              }
-            });
-          } else {
-            // Filter based on active tags
-            programCards.forEach((card) => {
-              const programTagsAttr =
-                card.getAttribute("data-program-tags") || "";
-              const programTags = programTagsAttr.split(",");
-              const hasMatchingTag = [...activeFilters].some((filter) =>
-                programTags.includes(filter),
-              );
-
-              const container = card.closest(
-                ".program-card-container",
-              ) as HTMLElement;
-              if (container) {
-                container.style.display = hasMatchingTag ? "block" : "none";
-              }
-            });
+            button.classList.remove("bg-primary/20", "border-primary/30", "font-semibold", "text-primary");
+            button.setAttribute("aria-pressed", "false");
           }
         });
+
+        // Show/hide clear button
+        if (clearFilterButton) {
+          clearFilterButton.classList.toggle("hidden", !activeTag);
+        }
+
+        // Filter program cards
+        let visibleCount = 0;
+        
+        if (!activeTag) {
+          // Show all programs if no tag is active
+          programCards.forEach((card) => {
+            card.style.display = "";
+          });
+          visibleCount = totalPrograms;
+        } else {
+          // Filter based on active tag
+          programCards.forEach((card) => {
+            const programTagsAttr = card.getAttribute("data-program-tags") || "";
+            const programTags = programTagsAttr.split(",").filter(tag => tag.trim() !== "");
+            const hasMatchingTag = activeTag ? programTags.includes(activeTag) : false;
+
+            card.style.display = hasMatchingTag ? "" : "none";
+            if (hasMatchingTag) visibleCount++;
+          });
+        }
+
+        // Update counter text
+        if (programCounter) {
+          if (!activeTag) {
+            programCounter.textContent = `Showing all ${totalPrograms} programs`;
+          } else {
+            programCounter.textContent = `Showing ${visibleCount} of ${totalPrograms} programs with "${activeTag}" tag`;
+          }
+        }
+      };
+
+      // Add click event listeners to tag buttons
+      tagButtons.forEach((button) => {
+        // Initialize ARIA attributes
+        button.setAttribute("role", "button");
+        button.setAttribute("aria-pressed", "false");
+        
+        button.addEventListener("click", (e) => {
+          e.preventDefault(); // Prevent default behavior
+          const tag = button.getAttribute("data-tag") || "";
+
+          // Toggle active state - if clicking the same tag, clear it
+          if (tag === activeTag) {
+            activeTag = null;
+          } else {
+            activeTag = tag;
+          }
+
+          // Update UI
+          updateUI();
+        });
       });
+
+      // Add click event listener to clear filter button
+      if (clearFilterButton) {
+        clearFilterButton.addEventListener("click", () => {
+          activeTag = null;
+          updateUI();
+        });
+      }
     });
   </script>
 </Base>

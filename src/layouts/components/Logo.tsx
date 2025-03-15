@@ -101,7 +101,7 @@ export function Logo({
           variants={textVariants}
           style={{ fontFamily: "'Inconsolata', sans-serif" }}
           className={`text-base leading-none transition-all duration-300 ${
-            isHovered ? "text-[#F76D1D]" : "text-[#1AE8D9] dark:text-[#1AE8D9]"
+            isHovered ? "text-[#F9C454]" : "text-[#1AE8D9] dark:text-[#1AE8D9]"
           }`}
         >
           Cloud
@@ -111,7 +111,7 @@ export function Logo({
           variants={textVariants}
           style={{ fontFamily: "'Inconsolata', sans-serif" }}
           className={`text-base leading-none mx-1 transition-all duration-300 ${
-            isHovered ? "text-[#1AE8D9]" : "text-[#F76D1D] dark:text-[#F76D1D]"
+            isHovered ? "text-[#1AE8D9]" : "text-[#F9C454] dark:text-[#F9C454]"
           }`}
         >
           Credits
@@ -121,7 +121,7 @@ export function Logo({
           variants={textVariants}
           style={{ fontFamily: "'Inconsolata', sans-serif" }}
           className={`text-base leading-none transition-all duration-300 ${
-            isHovered ? "text-[#F76D1D]" : "text-[#1AE8D9] dark:text-[#1AE8D9]"
+            isHovered ? "text-[#F9C454]" : "text-[#1AE8D9] dark:text-[#1AE8D9]"
           }`}
         >
           .io
@@ -129,7 +129,7 @@ export function Logo({
 
         <motion.div
           className={`absolute -bottom-1 left-0 h-0.5 ${
-            isHovered ? "bg-[#F76D1D]" : "bg-[#1AE8D9]"
+            isHovered ? "bg-[#F9C454]" : "bg-[#1AE8D9]"
           }`}
           variants={underlineVariants}
         />

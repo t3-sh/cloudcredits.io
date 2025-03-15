@@ -73,7 +73,7 @@ export function AnimatedProgramCard({
             ),
             radial-gradient(
               circle at 100% 0%,
-              ${statusColor}20 0%,
+              ${color}20 0%,
               transparent 40%
             ),
             radial-gradient(
@@ -83,7 +83,7 @@ export function AnimatedProgramCard({
             ),
             radial-gradient(
               circle at 0% 100%,
-              ${statusColor}15 0%,
+              ${color}15 0%,
               transparent 50%
             )
           `,
@@ -182,8 +182,8 @@ export function AnimatedProgramCard({
           background: `linear-gradient(
             135deg,
             transparent 40%,
-            ${statusColor}20 70%,
-            ${statusColor}40 100%
+            ${color}20 70%,
+            ${color}40 100%
           )`,
         }}
       />

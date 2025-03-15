@@ -67,6 +67,7 @@ const programSlug = program.id
 <a
   href={`/providers/${provider_slug}/programs/${programSlug}`}
   class="block transform-gpu program-card-container"
+  data-program-tags={tags.join(",")}
 >
   <AnimatedProgramCard client:load color={color} status={status}>
     <div
