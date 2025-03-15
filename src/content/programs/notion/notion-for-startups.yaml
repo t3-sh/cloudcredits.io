@@ -1,0 +1,82 @@
+provider_slug: "notion"
+title: "Notion for Startups"
+meta_title: "Up to 6 months free with unlimited AI - Over $6,000 in savings"
+intro: "Notion helps startups stay organized and scale faster by offering up to 6 months of free usage, including unlimited AI features, for eligible teams under 50 employees with under $10M in funding."
+description: "Notion for Startups gives early-stage companies a powerful workspace to manage knowledge, docs, projects, and more. Qualified startups can access an extended free period on Notion’s Plus plan with unlimited AI, valued at up to $6,600 for 50 employees. Additional benefits include exclusive software discounts, the Notion Champions Community, video-based learning via Notion Academy, and curated template libraries to support every phase of a startup’s journey. Eligibility requires being a non-paying Notion customer with fewer than 50 employees and under $10M in funding from an accredited investor."
+status: "Active"
+tags:
+  - "collaboration"
+  - "productivity"
+  - "docs"
+  - "project management"
+  - "saas"
+url: "https://www.notion.so/startups-apply"
+value_type: "credits"
+currency: "USD"
+min_value: 3300
+max_value: 6600
+community_notes: []
+
+tiers:
+  - name: "6 Months Free with Unlimited AI"
+    intro: "For affiliated early-stage startups with fewer than 50 employees and under $10 million in accredited funding."
+    max_value: 6600
+    url: "https://www.notion.so/startups-apply"
+    benefits:
+      - "Free Notion usage for up to 6 months"
+      - "Unlimited Notion AI add-on"
+      - "Up to $6,600 in value"
+      - "Access to exclusive software discounts"
+      - "Invitation to the Champions Community"
+    benefits_level: 2
+    duration:
+      - "6 months"
+    eligibility:
+      - "Affiliated with a Notion partner"
+      - "Under 50 employees"
+      - "Non-paying Notion customer"
+      - "Raised under $10M in funding"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Complete Application"
+        description: "Fill out the online form verifying your eligibility and partner affiliation"
+        action: "Apply Now"
+        action_url: "https://www.notion.so/startups-apply"
+
+  - name: "3 Months Free with Unlimited AI"
+    intro: "For early-stage startups with fewer than 50 employees and under $10 million in accredited funding, but no partner affiliation."
+    max_value: 3300
+    url: "https://www.notion.so/startups-apply"
+    benefits:
+      - "Free Notion usage for up to 3 months"
+      - "Unlimited Notion AI add-on"
+      - "Up to $3,300 in value"
+      - "Access to exclusive software discounts"
+      - "Invitation to the Champions Community"
+    benefits_level: 1
+    duration:
+      - "3 months"
+    eligibility:
+      - "Under 50 employees"
+      - "Non-paying Notion customer"
+      - "Raised under $10M in funding"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Complete Application"
+        description: "Fill out the online form verifying your eligibility"
+        action: "Apply Now"
+        action_url: "https://www.notion.so/startups-apply"
+
+faq:
+  - question: "Who is eligible?"
+    answer: "You must be a non-paying Notion customer with fewer than 50 employees and under $10M in funding from an accredited investor. Additional criteria apply if you wish to receive 6 months free through a Notion partner."
+  - question: "Why is Notion offering a discount for startups?"
+    answer: "Notion has seen thousands of early-stage companies use their workspace to streamline operations from day one. They want to help more teams lay a strong foundation that can expand as they grow."
+  - question: "How do I apply to receive the discount?"
+    answer: "Complete the application form on the Notion for Startups page. Once approved, you’ll receive an email with instructions on how to redeem the free period."
+  - question: "What is the offer worth?"
+    answer: "The combined value of Notion Plus Plan and AI add-on for 50 employees over 6 months can total up to $6,600."
+  - question: "How do I suggest a partner that Notion should work with?"
+    answer: "You can submit partner suggestions via the application form or by emailing startups-help@makenotion.com. Tag them on social media using #NotionForStartups to encourage them to join."
+  - question: "How can VCs or accelerators become partners?"
+    answer: "They can apply to become a partner and offer this discount to their startup portfolios by filling out the partner application. Notion is especially interested in expanding globally."

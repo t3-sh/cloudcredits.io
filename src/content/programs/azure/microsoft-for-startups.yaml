@@ -12,7 +12,7 @@ description: >
   expire after 12 months or when consumed. The program aims to accelerate startup 
   innovation while reducing costs through Azure's enterprise infrastructure.
 status: "Active"
-tags: ["cloud", "ai", "startup"]
+tags: ["cloud", "ai"]
 url: "https://foundershub.startups.microsoft.com/"
 value_type: "credits"
 currency: "USD"

@@ -1,0 +1,53 @@
+provider_slug: github
+title: GitHub for Startups
+intro: Receive up to 20 seats of GitHub Enterprise free for 12 months, along with tailored guidance and DevOps best practices.
+description: GitHub for Startups supports early-stage companies by providing free GitHub Enterprise seats for a year, personalized onboarding, extensive DevOps automation, and access to the world's largest open source community. Eligible startups can accelerate their software development, manage projects, automate CI/CD workflows, and keep code secure on GitHub's trusted platform.
+status: Active
+tags:
+  - dev tools
+  - collaboration
+url: https://github.com/enterprise/startups#get-started
+value_type: discount
+max_value: 100
+
+tiers:
+  - name: GitHub for Startups
+    intro: Eligible startups get 20 seats of GitHub Enterprise free for 12 months.
+    max_value: 100
+    url: https://github.com/enterprise/startups#get-started
+    benefits:
+      - Up to 20 seats of GitHub Enterprise
+      - Tailored product guidance and onboarding
+      - Built-in CI/CD and security automation
+      - Unlimited private repositories
+      - Largest open source community registry
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Outside funding (up to Series A)
+      - New to GitHub Enterprise
+      - Haven't previously received GitHub Enterprise credits
+    effort:
+      - Complete online application
+      - Undergo eligibility review
+    effort_level: 2
+    steps_to_apply:
+      - name: Check eligibility
+        description: Ensure your startup meets all requirements (outside funding up to Series A, new to GitHub Enterprise).
+        action: Review criteria
+        action_url: https://github.com/enterprise/startups#get-started
+      - name: Submit application
+        description: Fill out the GitHub for Startups application form to get started.
+        action: Apply now
+        action_url: https://github.com/enterprise/startups#get-started
+
+faq:
+  - question: What's included in the GitHub for Startups offer?
+    answer: All participants receive up to 20 seats of GitHub Enterprise free for 12 months. Startups affiliated with a GitHub for Startups VC or accelerator partner may be eligible for additional discounts and benefits.
+  - question: Who is eligible to apply?
+    answer: Any early-stage startup with outside funding up to Series A, new to GitHub Enterprise, and without prior GitHub Enterprise credits may apply.
+  - question: What if my startup is not eligible for GitHub for Startups?
+    answer: Startups not currently eligible can still explore GitHub Enterprise by signing up for a trial version.
+  - question: How can my organization become a GitHub for Startups partner?
+    answer: Any investor, accelerator, or startup support organization can apply for GitHub for Startups partner status using GitHub's partner application page.

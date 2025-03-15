@@ -1,0 +1,14 @@
+active: true
+name: "Notion"
+short_name: "Notion"
+slug: "notion"
+color: "#A7A7A7"
+url: "https://notion.so"
+intro: "An all-in-one workspace blending notes, docs, databases, and collaboration for teams and individuals."
+best_deal: "6 months free (worth $6,600)"
+video: ""
+tags:
+  - "productivity"
+  - "collaboration"
+  - "docs"
+  - "project management"
