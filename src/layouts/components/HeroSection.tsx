@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import useTheme from "@/hooks/useTheme";
 
 export default function HeroSection() {
   const theme = useTheme();
+  const [activeIconIndex, setActiveIconIndex] = useState(0);
+  const carouselIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const glassCardStyle = {
     background:
@@ -21,23 +23,6 @@ export default function HeroSection() {
         )`,
     backdropFilter: "blur(8px)",
   };
-
-  const words = [
-    "Cloud", // cloudsearch.png
-    "Startup", // startup.png
-    "SaaS", // saas.png
-    "Compute", // server.png
-    "AI", // compute.png
-    "Database", // database.png
-    "Storage", // storage.png
-    "Software", // saas.png
-    "Tools", // tools.png
-    "Monitoring", // saas.png
-    "Analytics", // startup.png
-    "Marketing", // marketing.png
-    "Ads", // marketing.png
-    "Sales", // saas.png
-  ];
 
   const wordToImageMap: Record<string, string> = {
     Cloud: "cloudsearch.png",
@@ -56,88 +41,89 @@ export default function HeroSection() {
     Sales: "cloudsearch.png",
   };
 
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentText, setCurrentText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [typingSpeed, setTypingSpeed] = useState(150);
   const [highlightedImage, setHighlightedImage] = useState("");
 
+  // All icon cards data with labels
+  const allIconCards = [
+    {
+      src: "/images/hero/coin.png",
+      alt: "Cloud Coin",
+      label: "Cost Optimization",
+      offset: { x: 0, y: 0 },
+    },
+    {
+      src: "/images/hero/compute.png",
+      alt: "Compute",
+      label: "AI & GPU",
+      offset: { x: -12, y: 5 },
+    },
+    {
+      src: "/images/hero/database.png",
+      alt: "Database",
+      label: "Database",
+      offset: { x: -5, y: 8 },
+    },
+    {
+      src: "/images/hero/cloudsearch.png",
+      alt: "Cloud Search",
+      label: "Monitoring",
+      offset: { x: 10, y: -5 },
+    },
+    {
+      src: "/images/hero/server.png",
+      alt: "Server",
+      label: "Compute",
+      offset: { x: 5, y: 12 },
+    },
+    {
+      src: "/images/hero/saas.png",
+      alt: "SaaS",
+      label: "SaaS",
+      offset: { x: 12, y: -8 },
+    },
+    {
+      src: "/images/hero/startup.png",
+      alt: "Startup",
+      label: "Startup",
+      offset: { x: 8, y: 10 },
+    },
+    {
+      src: "/images/hero/storage.png",
+      alt: "Storage",
+      label: "Storage",
+      offset: { x: -10, y: -5 },
+    },
+    {
+      src: "/images/hero/marketing.png",
+      alt: "Marketing",
+      label: "Marketing",
+      offset: { x: 5, y: -12 },
+    },
+    {
+      src: "/images/hero/tools.png",
+      alt: "Tools",
+      label: "Tools",
+      offset: { x: -5, y: 10 },
+    },
+  ];
+
+  // Auto-switch carousel every 2 seconds
   useEffect(() => {
-    const word = words[currentWordIndex];
+    carouselIntervalRef.current = setInterval(() => {
+      setActiveIconIndex((prevIndex) => (prevIndex + 1) % allIconCards.length);
+    }, 2000);
 
-    const timer = setTimeout(() => {
-      if (!isDeleting) {
-        setCurrentText(word.substring(0, currentText.length + 1));
-
-        if (currentText.length === word.length) {
-          setTypingSpeed(1500);
-          setIsDeleting(true);
-        } else {
-          setTypingSpeed(80 + Math.random() * 50);
-          if (currentText.length === 0) {
-            setHighlightedImage(wordToImageMap[word] || "");
-          }
-        }
-      } else {
-        setCurrentText(word.substring(0, currentText.length - 1));
-
-        if (currentText.length === 0) {
-          setIsDeleting(false);
-          setCurrentWordIndex((currentWordIndex + 1) % words.length);
-          setHighlightedImage("");
-          setTypingSpeed(500);
-        } else {
-          setTypingSpeed(40 + Math.random() * 30);
-        }
+    return () => {
+      if (carouselIntervalRef.current) {
+        clearInterval(carouselIntervalRef.current);
       }
-    }, typingSpeed);
-
-    return () => clearTimeout(timer);
-  }, [
-    currentText,
-    currentWordIndex,
-    isDeleting,
-    typingSpeed,
-    words,
-    wordToImageMap,
-  ]);
+    };
+  }, [allIconCards.length]);
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-black relative overflow-hidden">
       <motion.div
-        className="absolute inset-0 opacity-40"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ duration: 1.5 }}
-      >
-        {/* <img
-          src="/images/hero/bits.png"
-          alt="Background Pattern"
-          className="w-full h-full object-cover"
-        /> */}
-      </motion.div>
-
-      <motion.div
-        className="absolute inset-0 opacity-30"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.3 }}
-        transition={{ duration: 2 }}
-        style={{
-          background:
-            theme === "dark"
-              ? `
-              radial-gradient(circle at 20% 20%, rgba(76, 29, 149, 0.4) 0%, transparent 40%),
-              radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.4) 0%, transparent 40%)
-            `
-              : `
-              radial-gradient(circle at 20% 20%, rgba(76, 29, 149, 0.2) 0%, transparent 40%),
-              radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.2) 0%, transparent 40%)
-            `,
-        }}
-      />
-
-      <motion.div
-        className="text-center px-4 z-20 w-full max-w-5xl absolute top-8 md:top-12 left-0 right-0 mx-auto"
+        className="text-center px-4 z-20 w-full max-w-5xl mx-auto flex flex-col items-center justify-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -147,33 +133,19 @@ export default function HeroSection() {
         }}
       >
         <div className="flex flex-col items-center">
-          <motion.p
-            className="text-2xl md:text-3xl font-medium text-dark dark:text-white mb-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.0, duration: 0.6 }}
-          >
-            Find and Secure
-          </motion.p>
-
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark dark:text-white flex flex-wrap justify-center items-center"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-dark dark:text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.6 }}
           >
-            <span className="mr-3">Best</span>
-            <span className="inline-block min-w-[140px] md:min-w-[220px]">
-              <span className="text-gradient">{currentText}</span>
-            </span>
-            <span className="ml-3">Credits</span>
+            Community collection of best Cloud/SaaS deals
           </motion.h1>
         </div>
 
         <div className="mb-10 max-w-2xl mx-auto flex flex-col items-center text-center gap-4">
-          <span className="font-semibold text-lg text-gradient inline-block">
-            The most comprehensive discount collection to accelerate your
-            projects
+          <span className="text-lg inline-block text-gray-700 dark:text-gray-300">
+            Discover, compare, and secure cloud credits to build without limits
           </span>
 
           <motion.div
@@ -183,8 +155,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             {[
-              { color: "purple", text: "Fully Open Source", icon: "•" },
-              { color: "blue", text: "Community Driven", icon: "•" },
+              { color: "blue", text: "Fully Open Source", icon: "•" },
               { color: "green", text: "Zero Affiliations", icon: "•" },
               { color: "yellow", text: "Zero Ads", icon: "•" },
             ].map((uvp, index) => (
@@ -212,13 +183,13 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.6 }}
-          className="mb-0 flex items-center justify-center"
+          className="mb-8 flex items-center justify-center"
         >
           <a
             href="/providers"
             className="btn bg-primary text-white px-8 py-3 rounded-md mr-4 inline-flex items-center gap-2 hover:bg-opacity-90"
           >
-            <span className="leading-none self-center">Explore Credits</span>
+            <span className="leading-none self-center">Explore Deals</span>
             <span className="leading-none self-center ml-1">→</span>
           </a>
           <a
@@ -231,127 +202,87 @@ export default function HeroSection() {
           </a>
         </motion.div>
 
-        {/* Grid of frosted glass icons */}
+        {/* Single icon carousel with labels */}
         <motion.div
-          className="mt-16 w-full max-w-4xl mx-auto"
+          className="mt-4 w-full max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.0, duration: 0.8 }}
         >
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 md:gap-6 relative">
-            {[
-              {
-                src: "/images/hero/coin.png",
-                alt: "Cloud Coin",
-                offset: { x: 0, y: 0 },
-              },
-              {
-                src: "/images/hero/database.png",
-                alt: "Database",
-                offset: { x: -5, y: 8 },
-              },
-              {
-                src: "/images/hero/cloudsearch.png",
-                alt: "Cloud Search",
-                offset: { x: 10, y: -5 },
-              },
-              {
-                src: "/images/hero/server.png",
-                alt: "Server",
-                offset: { x: 5, y: 12 },
-              },
-              {
-                src: "/images/hero/saas.png",
-                alt: "SaaS",
-                offset: { x: 12, y: -8 },
-              },
-              {
-                src: "/images/hero/compute.png",
-                alt: "Compute",
-                offset: { x: -12, y: 5 },
-              },
-              {
-                src: "/images/hero/startup.png",
-                alt: "Startup",
-                offset: { x: 8, y: 10 },
-              },
-              {
-                src: "/images/hero/storage.png",
-                alt: "Storage",
-                offset: { x: -10, y: -5 },
-              },
-              {
-                src: "/images/hero/marketing.png",
-                alt: "Marketing",
-                offset: { x: 5, y: -12 },
-              },
-              {
-                src: "/images/hero/tools.png",
-                alt: "Tools",
-                offset: { x: -5, y: 10 },
-              },
-            ].map((card, index) => {
-              const isHighlighted =
-                highlightedImage && card.src.includes(highlightedImage);
-
-              return (
+          <div className="relative h-24 md:h-28">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeIconIndex}
+                className="absolute inset-0 flex flex-col justify-center items-center"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.5 }}
+              >
                 <motion.div
-                  key={index}
-                  className="rounded-xl border border-white/10 shadow-md flex items-center justify-center cursor-pointer aspect-square"
+                  className="rounded-xl border border-white/10 shadow-md flex items-center justify-center cursor-pointer mb-2"
                   style={{
                     ...glassCardStyle,
-                    boxShadow: isHighlighted
-                      ? "0 0 15px rgba(255, 255, 255, 0.4)"
-                      : undefined,
-                    border: isHighlighted
-                      ? "1px solid rgba(255, 255, 255, 0.4)"
-                      : "1px solid rgba(255, 255, 255, 0.1)",
-                    transform: `translate(${card.offset.x}px, ${card.offset.y}px)`,
+                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.2)",
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                    width: "60px",
+                    height: "60px",
                   }}
                   initial={{ opacity: 0, scale: 0.4 }}
                   animate={{
                     opacity: 1,
-                    scale: isHighlighted ? 0.9 : 0.7,
-                  }}
-                  whileHover={{
-                    scale: 0.85,
-                    boxShadow: "0 0 15px rgba(255, 255, 255, 0.3)",
-                    border: "1px solid rgba(255, 255, 255, 0.3)",
-                    transition: { duration: 0.2 },
+                    scale: 1,
+                    rotate: [0, 5, 0],
                   }}
                   transition={{
-                    opacity: { duration: 0.5, delay: 2.0 + index * 0.08 },
-                    scale: { duration: 0.3 },
+                    opacity: { duration: 0.3 },
+                    scale: { duration: 0.5 },
+                    rotate: {
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    },
                   }}
                 >
                   <motion.img
-                    src={card.src}
-                    alt={card.alt}
-                    className="object-contain p-1"
+                    src={allIconCards[activeIconIndex].src}
+                    alt={allIconCards[activeIconIndex].alt}
+                    className="object-contain p-2"
                     style={{
                       width: "100%",
                       height: "100%",
-                      maxHeight: "none",
-                    }}
-                    animate={{
-                      scale: isHighlighted ? 1.1 : 1,
-                      rotate: isHighlighted ? 10 : 0,
-                    }}
-                    transition={{ duration: 0.3 }}
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 10,
-                      transition: { duration: 0.2 },
                     }}
                   />
                 </motion.div>
-              );
-            })}
+                <motion.span
+                  className="text-dark dark:text-white font-medium text-sm md:text-base"
+                  initial={{ opacity: 0, y: 5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                >
+                  {allIconCards[activeIconIndex].label}
+                </motion.span>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Carousel indicators */}
+          <div className="flex justify-center mt-2 gap-1 flex-wrap max-w-xs mx-auto">
+            {allIconCards.map((_, index) => (
+              <button
+                key={index}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === activeIconIndex
+                    ? "bg-primary w-4"
+                    : "bg-gray-300 dark:bg-gray-600"
+                }`}
+                onClick={() => setActiveIconIndex(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
         </motion.div>
       </motion.div>
-
-      <div className="h-24 md:h-32"></div>
     </section>
   );
 }

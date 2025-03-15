@@ -9,12 +9,23 @@
       "url": "/about"
     },
     {
-      "name": "Providers",
-      "url": "/providers"
-    },
-    {
-      "name": "Categories",
-      "url": "/tags"
+      "name": "Deals",
+      "url": "/deals",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "All",
+          "url": "/deals"
+        },
+        {
+          "name": "Providers",
+          "url": "/providers"
+        },
+        {
+          "name": "Categories",
+          "url": "/tags"
+        }
+      ]
     },
     {
       "name": "Roadmap",

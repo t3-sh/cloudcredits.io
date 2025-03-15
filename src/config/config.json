@@ -7,8 +7,8 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.svg",
     "logo_darkmode": "/images/logo-darkmode.svg",
-    "logo_width": "60",
-    "logo_height": "40",
+    "logo_width": "80",
+    "logo_height": "80",
     "logo_text": "CloudCredits.io"
   },
 
@@ -58,7 +58,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Explore",
-    "link": "/tags"
+    "link": "/deals"
   },
 
   "metadata": {

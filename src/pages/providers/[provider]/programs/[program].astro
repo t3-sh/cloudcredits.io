@@ -385,6 +385,19 @@ const logo = miniExists ? miniPath : regularPath;
 
           <p class="text-xl mb-8 max-w-3xl mx-auto">{description}</p>
 
+          <div class="mb-8">
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-lg font-medium transition-all duration-300 hover:underline"
+              style={`color: ${color};`}
+            >
+              Visit Official Website
+              <FaArrowRight className="text-sm" />
+            </a>
+          </div>
+
           <div class="flex items-center justify-center gap-6">
             <div class="text-center">
               <p class="text-sm text-gray-600 dark:text-gray-400">
