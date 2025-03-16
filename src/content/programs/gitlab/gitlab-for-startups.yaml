@@ -1,0 +1,70 @@
+provider_slug: "gitlab"
+title: "GitLab for Startups"
+meta_title: "Scale your Startup with GitLab"
+intro: "Build your startup’s future on GitLab, a platform unifying development, security, and operations from day one. Qualifying companies can receive up to 20 free GitLab Ultimate seats for a year, plus discounts in year two."
+description: "GitLab for Startups helps early-stage companies accelerate software delivery with AI-driven DevSecOps. Eligible startups get free or discounted GitLab Ultimate seats, enabling them to focus on building and scaling without the overhead of patching toolchains. GitLab also offers collaboration, security automation, and next-step support to ensure smooth growth beyond the initial program year."
+status: "Active"
+tags:
+  - "dev tools"
+  - "collaboration"
+url: "https://about.gitlab.com/solutions/startups/"
+value_type: "discount"
+currency: "USD"
+min_value: 0
+max_value: 100
+tiers:
+  - name: "Seed Stage Startup"
+    intro: "Pre-Seed or Seed stage with up to $5M in external funding, new customers only"
+    max_value: 100
+    url: "https://about.gitlab.com/solutions/startups/"
+    benefits:
+      - "Free GitLab Ultimate license (up to 20 seats) for 1 year"
+      - "No paid support included (self-service resources only)"
+      - "Year 2: 50% discount on any tier, up to 20 seats"
+    benefits_level: 2
+    duration:
+      - "2 years total"
+      - "Year 1 free, Year 2 at 50% discount"
+    eligibility:
+      - "Pre-Seed or Seed funding (≤ $5M external)"
+      - "New GitLab customers only"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Submit your details, funding proof, and seat requirements"
+        action: "Apply Now"
+        action_url: "https://about.gitlab.com/solutions/startups/"
+  - name: "Early Stage Startup"
+    intro: "Series A or Series B with up to $20M in external funding, new customers only"
+    max_value: 50
+    url: "https://about.gitlab.com/solutions/startups/"
+    benefits:
+      - "Year 1: 50% discount on any tier, up to 20 seats"
+      - "Year 2: 25% discount on any tier, up to 20 seats"
+      - "Access to GitLab Duo Pro"
+    benefits_level: 1
+    duration:
+      - "2 years total"
+      - "Year 1 at 50% discount, Year 2 at 25% discount"
+    eligibility:
+      - "Series A or B (≤ $20M external)"
+      - "New GitLab customers only"
+    effort_level: 3
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Submit your details, funding proof, and seat requirements"
+        action: "Apply Now"
+        action_url: "https://about.gitlab.com/solutions/startups/"
+faq:
+  - question: "Can self-funded startups apply?"
+    answer: "Currently, only externally funded companies that meet the specified parameters are eligible. Future iterations may include additional funding profiles."
+  - question: "How is the external funding validated?"
+    answer: "Applicants must provide a Crunchbase, Pitchbook, or similar profile. If you do not have a public funding link, proof of Accelerator or VC association referencing your current funding is required."
+  - question: "What happens after year one?"
+    answer: "GitLab will contact you before your first year ends to guide your renewal options and next steps. Seed Stage Startups receive a 50% discount in the second year, and Early Stage Startups receive a 25% discount."
+  - question: "What happens after year two?"
+    answer: "After two years, you may choose from GitLab’s offerings to fit your needs. Many graduates stay with GitLab and continue scaling their business with the platform."
+  - question: "Who gets counted in the subscription?"
+    answer: "All active users on your GitLab instance require a license seat. See GitLab’s licensing and subscription FAQ for more details."
+  - question: "Are we allowed to increase the number of seats in the future?"
+    answer: "Yes. Contact startups@gitlab.com if you need additional seats, and GitLab will prepare an add-on quote."

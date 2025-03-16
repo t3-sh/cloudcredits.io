@@ -1,0 +1,11 @@
+active: true
+name: "Temporal"
+short_name: "Temporal"
+slug: "temporal"
+color: "#444CE7"
+url: "https://temporal.io"
+intro: "Durable execution platform for building reliable, scalable, and resilient applications with workflow automation."
+best_deal: "$6,000 in free Temporal Cloud credits"
+video: ""
+tags:
+  - "dev tools"
