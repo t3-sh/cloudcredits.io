@@ -1,0 +1,12 @@
+active: true
+name: "GitLab"
+short_name: "GitLab"
+slug: "gitlab"
+color: "#E24328"
+url: "https://about.gitlab.com/solutions/startups/"
+intro: "An all-in-one DevOps platform unifying source code management, CI/CD, and collaboration for streamlined software delivery."
+best_deal: "20 GitLab Ultimate licenses for 1 year"
+video: ""
+tags:
+  - "dev tools"
+  - "collaboration"

@@ -1,0 +1,64 @@
+provider_slug: "temporal"
+title: "Temporal Cloud for Startups"
+meta_title: "Durable execution platform for startups"
+intro: "This startup program offers $6,000 in free Temporal Cloud credits to startups with less than $30M in funding."
+description: "Temporal provides a reliable and code-centric platform for building and running distributed applications. Startups in the program receive $6,000 in credits, dedicated onboarding and design review assistance, plus ongoing support for production readiness and performance tuning. By offloading complex error-handling logic to Temporal, teams can focus on delivering core business value and ship faster with peace of mind."
+status: "Active"
+tags:
+  - "dev tools"
+url: "https://www.temporal.io/startups"
+value_type: "credits"
+currency: "USD"
+min_value: 0
+max_value: 6000
+community_notes: []
+
+tiers:
+  - name: "Startup Program"
+    intro: "Single-tier program providing $6,000 in free credits for startups with less than $30M in funding."
+    max_value: 6000
+    url: "https://www.temporal.io/startups"
+    benefits:
+      - "$6,000 in free Temporal Cloud credits"
+      - "Full access to the Temporal Cloud platform"
+      - "Expert onboarding & design reviews"
+      - "Production readiness & worker tuning guidance"
+      - "Best practices from distributed systems experts"
+    benefits_level: 2
+    duration:
+      - "Up to 10-12 months usage (typical)"
+    eligibility:
+      - "Raised $30M or less in funding"
+      - "Not currently using Temporal Cloud"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create Temporal Cloud Account"
+        description: "Sign up for a free account to get started"
+        action: "Sign Up"
+        action_url: "https://cloud.temporal.io"
+      - name: "Submit Startup Program Application"
+        description: "Complete the form to request your $6,000 credits"
+        action: "Apply Now"
+        action_url: "https://www.temporal.io/startups"
+
+faq:
+  - question: "Who is eligible for Temporal Cloud for Startups?"
+    answer: "Startups that have raised $30M or less in funding and are not currently using Temporal Cloud."
+  - question: "How do I apply for the program?"
+    answer: "Apply to join the Startup Program via the provided link and set up your Temporal Cloud account."
+  - question: "What happens when I get approved for the program?"
+    answer: "Temporal will credit your account with $6,000 and reach out to set up an onboarding and welcome call."
+  - question: "How much usage will $6,000 provide for my application?"
+    answer: "It depends on your use case, but $6,000 of credits could provide up to 10-12 months of usage."
+  - question: "What happens when I use all my credits?"
+    answer: "Once you consume all your credits, Temporal will begin billing for your monthly usage and services."
+  - question: "Can I migrate if I'm already using Temporal (self-hosted)?"
+    answer: "Absolutely! Just mention it in your initial call, and the team will assist with migration."
+  - question: "Can I transfer these credits to another company?"
+    answer: "No, credits are non-transferable. Other companies should apply directly for their own credits."
+  - question: "I'm part of an educational institution. Can I apply for the program?"
+    answer: "Yes. Temporal supports educators, faculty, and researchers at accredited institutions. Reach out at incubator@temporal.io."
+  - question: "Am I eligible if I'm already using Temporal Cloud?"
+    answer: "No, the program is only open to new Temporal Cloud users who meet the funding requirement."
+  - question: "I have more questions; who should I talk to?"
+    answer: "Send any additional questions to incubator@temporal.io."
