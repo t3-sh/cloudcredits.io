@@ -1,0 +1,149 @@
+draft: false
+provider_slug: intercom
+title: Intercom Early Stage Program for Startups
+meta_title: Intercom Early Stage Program for Startups
+intro: >-
+  Startups receive a 90% discount on Intercom's AI-first customer service
+  platform, enabling businesses to maximize efficiency and savings, and start
+  more valuable conversations with customers.
+description: >-
+  Intercom's Early Stage Program offers substantial benefits for qualifying
+  startups by providing tiered discounts on its Advanced customer service plan.
+  In Year 1, startups receive a 90% discount, in Year 2 a 50% discount, and in
+  Year 3 a 25% discount. The program includes access to powerful features such
+  as an AI-enhanced Inbox with integrated ticketing, a Fin AI Agent that
+  provides 10 free resolutions per month (with additional resolutions at $0.99
+  each), and Proactive Support Plus for automated messaging. Additional
+  resources include the Early Stage Academy, a Startup Dealbook with over $100K
+  in credits, and access to a vibrant Intercom community. This initiative is
+  tailored for early-stage startups with up to $10M in funding, fewer than 15
+  employees, and who are new to using Intercom.
+status: Active
+tags:
+  - customer service
+  - AI
+  - startups
+  - discount
+url: https://www.intercom.com/early-stage
+value_type: discount
+currency: USD
+min_value: 25
+max_value: 90
+community_notes:
+  - title: G2 Recognition
+    body: >-
+      Intercom's Fin AI is rated highest in user satisfaction for customer
+      service, showcasing its excellence in AI-driven support solutions.
+    source_url: https://www.g2.com
+tiers:
+  - name: Year 1 Discount
+    intro: >-
+      90% discount on Intercom's Advanced plan for the first year, including
+      access to AI-enhanced Inbox, Fin AI Agent, and Proactive Support Plus.
+    max_value: 90
+    url: https://www.intercom.com/early-stage
+    benefits:
+      - 90% discount on Advanced plan base fee
+      - Access to AI-enhanced Inbox and integrated ticketing
+      - 10 Fin AI Agent resolutions per month
+      - Proactive Support Plus with 500 messages/month
+      - 'Bundled seats: 6 Full, 6 Copilot, and 20 Lite'
+    benefits_level: 4
+    duration:
+      - 1 year
+    eligibility:
+      - Up to $10M in funding
+      - Fewer than 15 employees
+      - New Intercom customer
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply Online
+        description: Submit your application through Intercom's Early Stage portal.
+        action: Apply Now
+        action_url: https://www.intercom.com/early-stage
+  - name: Year 2 Discount
+    intro: >-
+      50% discount on Intercom's Advanced plan for the second year, maintaining
+      core features and support.
+    max_value: 50
+    url: https://www.intercom.com/early-stage
+    benefits:
+      - 50% discount on Advanced plan base fee
+      - Access to AI-enhanced Inbox
+      - Continuation of Fin AI Agent resolutions
+      - Proactive Support Plus included
+    benefits_level: 3
+    duration:
+      - 1 year
+    eligibility:
+      - Up to $10M in funding
+      - Fewer than 15 employees
+      - New Intercom customer
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply Online
+        description: Submit your application through Intercom's Early Stage portal.
+        action: Apply Now
+        action_url: https://www.intercom.com/early-stage
+  - name: Year 3 Discount
+    intro: >-
+      25% discount on Intercom's Advanced plan for the third year, ensuring
+      continued service with standard pricing on usage-based channels.
+    max_value: 25
+    url: https://www.intercom.com/early-stage
+    benefits:
+      - 25% discount on Advanced plan base fee
+      - Ongoing access to core features such as AI-enhanced Inbox
+      - 10 Fin AI Agent resolutions per month remain included
+      - Access to Proactive Support Plus
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Up to $10M in funding
+      - Fewer than 15 employees
+      - New Intercom customer
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply Online
+        description: Submit your application through Intercom's Early Stage portal.
+        action: Apply Now
+        action_url: https://www.intercom.com/early-stage
+faq:
+  - question: What does the program cover?
+    answer: >-
+      The program covers access to advanced Intercom features with tiered
+      discounts—90% off in Year 1, 50% in Year 2, and 25% in Year 3—along with
+      bundled seat allocations and support tools.
+  - question: Fin AI Agent pricing?
+    answer: >-
+      Participants receive 10 Fin AI resolutions per month for free, with
+      additional resolutions available at $0.99 each.
+  - question: What happens after the first year?
+    answer: >-
+      In Year 2, the discount reduces to 50%, and in Year 3, to 25%.
+      Alternatively, startups may switch to the Essential plan starting at
+      $39/month.
+  - question: Are companies with more than 15 employees eligible?
+    answer: >-
+      No, the program is designed for startups with fewer than 15 employees.
+      Larger companies should consider other options or contact Sales.
+  - question: How can I become a partner?
+    answer: >-
+      Interested companies can apply via the partner application link:
+      https://airtable.com/appd4joJjSv2FiadY/pagJTjpvc6xkeWCrq/form.
+  - question: Can I switch to a cheaper plan later?
+    answer: Yes, after Year 1, startups can downgrade to the Essential plan.
+  - question: What if my team grows beyond 15 employees?
+    answer: >-
+      Discounts remain active for the 3-year term, but additional hires beyond
+      15 will be charged at standard rates.
+  - question: How is the discount calculated for usage-based services?
+    answer: >-
+      Discounts apply to base plan fees and certain usage-based services (e.g.,
+      Email and Messages Sent over a threshold), while services like Fin AI,
+      SMS, WhatsApp, and Phone are charged at list price.
+  - question: Does the program include phone support?
+    answer: >-
+      Yes, phone support is available, though calls are billed at standard list
+      prices.
