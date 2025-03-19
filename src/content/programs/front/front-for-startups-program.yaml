@@ -1,0 +1,97 @@
+draft: false
+provider_slug: front
+title: Front for Startups Program
+meta_title: Front for Startups - Free Access to the Growth Plan
+intro: >-
+  Qualifying startups receive 6 months of free access to Front's Growth plan for
+  up to 15 users, along with an AI add-on offering up to 1,000 automated
+  resolutions per month, delivering a combined value of up to $7,200.
+description: >-
+  The Front for Startups Program is designed to help early-stage companies scale
+  their customer support operations without upfront costs. Through this program,
+  new Front customers—who have fewer than 50 employees and have raised up to
+  $10M in external funding—gain complimentary access to the Growth plan, which
+  consolidates various communication channels (email, social media, SMS, voice)
+  into a centralized platform. The program also provides AI-powered automation
+  to streamline workflows and enhance response efficiency. After the 6-month
+  free period, startups are prompted to upgrade to a paid plan to maintain
+  service continuity.
+status: Active
+tags:
+  - customer support
+  - startups
+  - automation
+  - AI
+  - collaboration
+url: https://front.com/startups
+value_type: credits
+currency: USD
+max_value: 7200
+community_notes:
+  - title: New Customer Exclusive
+    body: >-
+      This offer is available exclusively for new Front customers who have not
+      used the platform before.
+    source_url: https://front.com/startups
+  - title: Partnership Inquiries
+    body: >-
+      Startups whose Accelerator or VC is not listed should contact Front for
+      potential partner inclusion.
+    source_url: mailto:partners@front.com
+tiers:
+  - name: Front for Startups
+    intro: >-
+      Qualifying startups get free access to Front's Growth plan for 6 months,
+      including up to 15 user licenses and an AI add-on with up to 1,000
+      automated resolutions per month.
+    max_value: 7200
+    url: https://front.com/startups
+    benefits:
+      - Free access to the Growth plan (valued at up to $7,200)
+      - Access to Front’s AI add-on for up to 1,000 resolutions per month
+      - Centralized communication across email, social media, SMS, and voice
+      - Enhanced efficiency with no-code automation workflows
+      - Customer insights for improved support operations
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - New Front customers only
+      - Less than 50 employees
+      - Raised external funding up to $10M (Angel, Pre-Seed, Seed, or Series A)
+    effort_level: 2
+    steps_to_apply:
+      - name: Review Eligibility
+        description: >-
+          Ensure that the startup is a new Front customer with fewer than 50
+          employees and has raised up to $10M in external funding. Verify
+          eligibility using documentation such as a Crunchbase profile or
+          accelerator credentials.
+      - name: Submit Application
+        description: >-
+          Complete the application by providing company details including work
+          email, company size, industry, and funding received.
+        action: Apply Now
+        action_url: https://front.com/startups
+faq:
+  - question: What does the Front for Startups Program cover?
+    answer: >-
+      It offers free access to Front's Growth plan for 6 months and an AI add-on
+      with up to 1,000 resolutions per month, valued at up to $7,200.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligibility is limited to new Front customers with fewer than 50 employees
+      who have raised up to $10M in external funding (Angel, Pre-Seed, Seed, or
+      Series A).
+  - question: How is eligibility verified?
+    answer: >-
+      Applicants must provide proof of funding through public profiles like
+      Crunchbase or accelerator documentation.
+  - question: What happens after the 6-month free period?
+    answer: >-
+      Startups will be prompted to upgrade to a paid Front plan to continue
+      accessing the platform’s features.
+  - question: What if my Accelerator/VC isn’t listed?
+    answer: >-
+      They should contact Front to inquire about potential partner program
+      inclusion.
