@@ -1,0 +1,16 @@
+active: true
+name: Aiven
+short_name: Aiven
+slug: aiven
+url: https://aiven.io
+color: '#FF6F61'
+best_deal: Up to $100,000 in credits for 1 year
+intro: >-
+  Aiven provides managed open-source data infrastructure services, enabling
+  startups to build and scale their data platforms efficiently.
+video: ''
+tags:
+  - cloud
+  - database
+  - infrastructure
+  - startup
