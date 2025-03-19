@@ -1,0 +1,16 @@
+active: true
+name: Auth0
+short_name: Auth0
+slug: auth0
+url: https://auth0.com
+color: '#16214D'
+best_deal: Free one-year B2B Professional plan for eligible startups
+intro: >-
+  Auth0 provides a comprehensive identity and access management platform,
+  offering secure authentication and authorization services for applications.
+video: ''
+tags:
+  - identity management
+  - authentication
+  - authorization
+  - startups
