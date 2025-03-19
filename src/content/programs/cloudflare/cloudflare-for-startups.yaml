@@ -1,0 +1,59 @@
+draft: false
+provider_slug: cloudflare
+title: Cloudflare for Startups
+meta_title: Cloudflare Startup Program
+intro: >-
+  Helps startups connect, protect, and build Internet and SaaS applications.
+  Costs should not be a burden when starting out.
+description: >-
+  To qualify, organizations must meet one of the following criteria: Building a
+  software-based product or service, Founded within the last 5 years, Have a
+  valid website and email address.
+status: Active
+tags:
+  - startups
+  - cloud
+  - SaaS
+  - credits
+  - benefits
+url: https://www.cloudflare.com/startups/
+value_type: credits
+currency: USD
+max_value: 250000
+community_notes: []
+tiers:
+  - name: Startup Program
+    intro: >-
+      Fast, secure customer experiences. Automatic, near-infinite scale.
+      Streamlined AI adoption. Faster development.
+    max_value: 250000
+    url: https://www.cloudflare.com/startups/
+    benefits: []
+    benefits_level: 4
+    duration:
+      - 1 year
+    eligibility:
+      - Building a software-based product or service
+      - Founded within the last 5 years
+      - Have a valid website and email address
+    effort_level: 2
+    steps_to_apply:
+      - name: Create a free account
+        description: Sign up for a Cloudflare account.
+      - name: Fill out the form
+        description: Complete the application form to qualify for the program.
+      - name: Check your inbox
+        description: Look for an email from Cloudflare regarding your application status.
+faq:
+  - question: What happens if I don’t use my credits within 1 year?
+    answer: A representative will help you transition out of the program.
+  - question: >-
+      I’ve used all my credits and I’m still using variable products. What
+      happens next?
+    answer: >-
+      A representative from the Cloudflare team will reach out to help you
+      decide what plan type makes most sense for your business.
+  - question: I have multiple startups. Can all of them be on the program?
+    answer: Credits can only be allocated to one account per applicant.
+  - question: I would like to request more credits. How can I do so?
+    answer: Requests for additional credits may be considered on a case-by-case basis.
