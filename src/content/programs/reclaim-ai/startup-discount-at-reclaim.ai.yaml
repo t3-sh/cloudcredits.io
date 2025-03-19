@@ -1,0 +1,63 @@
+draft: false
+provider_slug: reclaim-ai
+title: Startup Discount at Reclaim.ai
+meta_title: Reclaim.ai Startup Discount Program
+intro: Reclaim offers a startup discount for 20% off any plan for 3 years.
+description: >-
+  Reclaim offers a startup discount for 20% off any plan for 3 years. This may
+  be applied to month-to-month plans or annual commitments. Eligibility requires
+  a minimum of 2 user seats, under 100 employees, raised less than $10m, and
+  founded less than 5 years ago. Startups must allow Reclaim to enable domain
+  capture on their account.
+status: Active
+tags:
+  - startup
+  - discount
+  - scheduling
+  - early-stage
+url: https://help.reclaim.ai/en/articles/4765978-startup-discount-at-reclaim-ai
+value_type: discount
+currency: USD
+min_value: 20
+max_value: 20
+community_notes: []
+tiers:
+  - name: Startup Discount
+    intro: 20% discount for 3 years for eligible startups.
+    max_value: 20
+    url: https://help.reclaim.ai/en/articles/4765978-startup-discount-at-reclaim-ai
+    benefits:
+      - 20% discount on any plan
+      - Applicable for 3 years
+      - Can be applied to month-to-month or annual plans
+    benefits_level: 4
+    duration:
+      - 3 years
+    eligibility:
+      - Minimum of 2 user seats
+      - Under 100 employees
+      - Raised less than $10m
+      - Founded less than 5 years ago
+      - Allow domain capture on Reclaim account
+    effort_level: 2
+    steps_to_apply:
+      - name: Visit the Startup Program application page
+        description: Go to the application page to start the process.
+        action: Apply Now
+        action_url: >-
+          https://help.reclaim.ai/en/articles/4765978-startup-discount-at-reclaim-ai
+      - name: Fill out the form
+        description: Provide links to verify your eligibility criteria.
+        action: Submit Form
+      - name: Submit your application
+        description: Send in your application for review.
+faq:
+  - question: Do I have to be a new user to be eligible for the discount?
+    answer: No, you do NOT have to be a new user to be eligible for this discount.
+  - question: >-
+      What happens if I surpass the eligibility limits during my 3-year discount
+      period?
+    answer: >-
+      You will not become ineligible for the discount if you surpass the
+      employee, fundraising, and founded eligibility limits during your 3-year
+      discount period.
