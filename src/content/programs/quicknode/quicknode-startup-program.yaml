@@ -1,0 +1,101 @@
+draft: false
+provider_slug: quicknode
+title: QuickNode Startup Program
+meta_title: QuickNode Startup Program for Blockchain Startups
+intro: >-
+  QuickNode's Startup Program empowers blockchain startups with exclusive
+  product credits, discounts, technical support, and community networking to
+  accelerate Web3 innovation.
+description: >-
+  The QuickNode Startup Program is designed for early-stage blockchain ventures
+  seeking comprehensive support in building and scaling their Web3 applications.
+  It offers up to $200K in RaaS credits for API usage across 24+ blockchains,
+  along with free tiers providing 10M–80M API credits, and partner discounts
+  such as $200K AWS credits and $150K Dune Analytics access. In addition to
+  infrastructure credits, participants benefit from dedicated technical support
+  including one-on-one architecture reviews, priority troubleshooting via Slack,
+  and workshops on tokenomics and Web3 security. The program also provides
+  growth resources like investor introductions, co-marketing opportunities, and
+  networking events. Eligibility is limited to pre-seed to Series A companies
+  with less than $5M in funding and building on QuickNode-supported chains, with
+  exclusions for existing enterprise customers and startups beyond Series A.
+status: Active
+tags:
+  - blockchain
+  - web3
+  - startup
+  - infrastructure
+  - credits
+url: https://www.quicknode.com/startup
+value_type: credits
+currency: USD
+min_value: 50000
+max_value: 200000
+community_notes:
+  - title: Testimonial from CUBE3 AI
+    body: >-
+      QuickNode has been instrumental in helping CUBE3.AI's mission to secure
+      Web3 builders.
+    source_url: https://www.quicknode.com/startup
+  - title: Testimonial from Oamo
+    body: >-
+      QuickNode enabled us to handle major traffic during our launch, providing
+      one of the most stable layers at a reasonable cost.
+    source_url: https://www.quicknode.com/startup
+  - title: Testimonial from Lore
+    body: >-
+      QuickNode has been a phenomenal partner by offering reliable RPC
+      infrastructure to keep indexers in sync.
+    source_url: https://www.quicknode.com/startup
+tiers:
+  - name: QuickNode Startup Tier
+    intro: >-
+      Provides blockchain startups with comprehensive credits, technical
+      support, and growth resources, including RaaS credits and partner
+      discounts.
+    max_value: 200000
+    url: https://www.quicknode.com/startup
+    benefits:
+      - Up to $200K in RaaS credits for API usage across 24+ blockchains
+      - 10M–80M API credits through free QuickNode tiers
+      - >-
+        Partner discounts including $200K AWS credits and $150K Dune Analytics
+        access
+      - >-
+        1:1 architecture reviews and priority troubleshooting via dedicated
+        Slack channels
+      - >-
+        Access to investor introductions, workshops, and co-marketing
+        opportunities
+    benefits_level: 3
+    duration:
+      - Flexible usage period until credits are fully utilized
+    eligibility:
+      - Pre-seed to Series A companies with less than $5M in funding
+      - Teams building on one or more QuickNode-supported chains
+      - >-
+        New startups; previous credit users and existing enterprise customers
+        are not eligible
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply through the QuickNode Startup Portal with your pitch deck and
+          technical roadmap.
+        action: Apply Now
+        action_url: https://www.quicknode.com/startup
+faq:
+  - question: Who is eligible for the QuickNode Startup Program?
+    answer: >-
+      It is designed for pre-seed to Series A blockchain startups with less than
+      $5M in funding and building on QuickNode-supported chains. Existing
+      enterprise customers and post-Series A startups are not eligible.
+  - question: What benefits does the program offer?
+    answer: >-
+      Participants receive up to $200K in RaaS credits, free tiers with 10M–80M
+      API credits, partner discounts, dedicated technical support, and growth
+      resources such as investor introductions and co-marketing opportunities.
+  - question: How quickly can approved startups begin using their credits?
+    answer: >-
+      Approved teams typically get activated within 72 hours after applying
+      through the QuickNode Startup Portal.
