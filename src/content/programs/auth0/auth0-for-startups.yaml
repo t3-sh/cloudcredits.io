@@ -1,0 +1,63 @@
+draft: false
+provider_slug: auth0
+title: Auth0 for Startups
+meta_title: Auth0 for Startups - Free One-Year Plan
+intro: >-
+  Auth0 offers a free one-year plan for startups to leverage its authentication
+  and authorization services.
+description: >-
+  The Auth0 for Startups program provides emerging companies with a free
+  one-year plan to utilize Auth0's comprehensive identity and access management
+  solutions. This includes universal login, various authentication methods, and
+  integration with multiple technologies and platforms. Startups can benefit
+  from Auth0's security features, professional services, and resources for
+  digital transformation and app modernization.
+status: Active
+tags:
+  - startups
+  - free plan
+  - authentication
+  - authorization
+  - identity management
+url: https://auth0.com/startups
+value_type: credits
+currency: USD
+min_value: 0
+max_value: 0
+community_notes: []
+tiers:
+  - name: Free One-Year Plan
+    intro: A free one-year plan for startups to use Auth0's services.
+    max_value: 0
+    url: https://auth0.com/startups
+    benefits: []
+    benefits_level: 4
+    duration:
+      - 12 months
+    eligibility:
+      - Startups meeting certain criteria can apply for this plan.
+    effort_level: 1
+    steps_to_apply:
+      - name: Visit the Auth0 for Startups Page
+        description: >-
+          Go to the Auth0 for Startups page to learn more about the program and
+          eligibility requirements.
+        action: Learn More
+        action_url: https://auth0.com/startups
+      - name: Apply for the Program
+        description: Fill out the application form to apply for the free one-year plan.
+        action: Apply Now
+        action_url: https://auth0.com/startups/apply
+faq:
+  - question: What is the Auth0 for Startups program?
+    answer: >-
+      The Auth0 for Startups program offers a free one-year plan for startups to
+      use Auth0's authentication and authorization services.
+  - question: How can a startup apply for the free plan?
+    answer: >-
+      Startups can apply for the free plan by visiting the Auth0 for Startups
+      page and filling out the application form.
+  - question: What are the benefits of using Auth0 for Startups?
+    answer: >-
+      Benefits include access to Auth0's universal login, various authentication
+      methods, and integration with multiple technologies and platforms.
