@@ -1,0 +1,68 @@
+draft: false
+provider_slug: phospho
+title: Phospho AI SaaS Startup Program
+meta_title: Claim Your $2000 Free AI Builder Credits
+intro: >-
+  Phospho’s startup program offers early-stage AI SaaS developers $2000 in AI
+  builder credits, supporting innovation through affordable experimentation and
+  reduced financial risk.
+description: >-
+  Phospho provides a free program for startups that grants $2000 in AI builder
+  credits. These credits can be used with other AI providers and on Phospho’s
+  analytics platform. The program is designed to help early-stage AI SaaS
+  startups and developers accelerate their product development journey by
+  reducing financial barriers to innovation and allowing for more
+  experimentation. The promotion is offered on a first-come, first-serve basis.
+status: Active
+tags:
+  - AI
+  - Startup
+  - Credits
+  - Innovation
+  - Experimentation
+url: https://www.phospho.com/startup-program
+value_type: credits
+currency: USD
+max_value: 2000
+community_notes: []
+tiers:
+  - name: Startup Tier
+    intro: >-
+      Early-stage AI SaaS developers receive $2000 in AI builder credits to
+      support innovation and reduce financial risk.
+    max_value: 2000
+    url: https://www.phospho.com/startup-program
+    benefits:
+      - Reduced financial barriers to innovation
+      - Affordable experimentation
+      - Access to Phospho’s analytics platform
+      - Freedom to test different AI models and providers
+    benefits_level: 4
+    duration:
+      - Limited-time offer
+    eligibility:
+      - Early-stage AI SaaS startups
+      - Developers looking to accelerate product development
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign Up
+        description: Visit the Phospho startup program page and sign up for the program.
+        action: Sign Up
+        action_url: https://www.phospho.com/startup-program
+faq:
+  - question: What is the value of the AI builder credits?
+    answer: The AI builder credits are worth $2000.
+  - question: Can I use the credits with other AI providers?
+    answer: >-
+      Yes, you can use the credits with other AI providers as well as on
+      Phospho’s analytics platform.
+  - question: How do I apply for the program?
+    answer: >-
+      You can apply by visiting the Phospho startup program page and signing up
+      for the program.
+  - question: Is there a cost associated with the program?
+    answer: No, the program is free for eligible startups and developers.
+  - question: How long does the offer last?
+    answer: >-
+      The offer is available on a first-come, first-serve basis and is a
+      limited-time promotion.
