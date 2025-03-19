@@ -1,0 +1,107 @@
+draft: false
+provider_slug: aiven
+title: Aiven Cluster Startup Program
+meta_title: Aiven Cluster Startup Program | Kickstart your data journey
+intro: >-
+  Aiven offers a startup program providing up to $100,000 in credits to help
+  innovative technology companies build modern data infrastructure.
+description: >-
+  Aiven launched the Cluster startup program to support startups in their
+  journey, helping them to scale up and grow. Aiven simplifies setting up cloud
+  databases and infrastructure on major cloud platforms (Google, AWS, or Azure).
+  The program provides credits that can be used over 12 months to purchase
+  services, cloud data plans, and additional support. The amount of credits
+  depends on affiliation with Aiven partners and fundraising status.
+status: Active
+tags:
+  - cloud databases
+  - startup
+  - credits
+  - open source
+  - data infrastructure
+url: https://aiven.io/startup-program
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes: []
+tiers:
+  - name: Partner Affiliated
+    intro: >-
+      For startups affiliated with Aiven's network partners (VCs, accelerators,
+      incubators, or co-working spaces).
+    max_value: 100000
+    url: https://aiven.io/startup-program
+    benefits:
+      - Access to up to $100,000 in credits
+      - Use credits for 12 months
+      - Build modern data infrastructure
+    benefits_level: 4
+    duration:
+      - 12 months
+    eligibility:
+      - Proof of affiliation with an approved network partner
+      - 'Maximum startup age: 7 years'
+      - Startup funding no greater than Series B
+      - A company website and associated email address
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply
+        description: Complete the application form.
+        action: Apply
+        action_url: https://aiven.io/startup-program
+  - name: Non-Partner Affiliated
+    intro: For startups not affiliated with Aiven's partners.
+    max_value: 12000
+    url: https://aiven.io/startup-program
+    benefits:
+      - Access to $12,000 in credits
+      - Use credits for 12 months
+      - Build modern data infrastructure
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Startup funding required
+      - 'Maximum startup age: 7 years'
+      - A company website and associated email address
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply
+        description: Complete the application form.
+        action: Apply
+        action_url: https://aiven.io/startup-program
+faq:
+  - question: What are the eligibility criteria for startups?
+    answer: >-
+      To be eligible to apply to Aiven Cluster startup program, you need: Proof
+      of affiliation with an approved network partner (VC, accelerator,
+      incubator, or co-working space); Maximum startup age: 7 years; Startup
+      funding no greater than Series B; A company website and associated email
+      address. If not affiliated with a partner, you can still apply and qualify
+      for $12,000 in credits, but proof of fundraising is required. The program
+      is not open to agencies, consulting companies, NGOs or educational
+      institutions.
+  - question: How many credits can I get?
+    answer: >-
+      The credit value depends on which partner you are affiliated with and can
+      be as high as $100,000. If you are not affiliated with a Cluster partner,
+      you can qualify for $12,000. Once you fill out the application form, Aiven
+      will let you know how many credits you are eligible for.
+  - question: What is the application process and timeline?
+    answer: >-
+      Applications are accepted and considered continually, with new
+      participants selected each month. Allow 14 days for review. Newly accepted
+      startups join the program on the first Monday of every month. Joint
+      kick-off calls for new participants are held quarterly. Aiven reserves the
+      right to change the schedule as necessary.
+  - question: Can existing Aiven customers apply to the Cluster startup program?
+    answer: Yes - providing you meet the eligibility criteria.
+  - question: What technical support does Aiven offer & how do I access it?
+    answer: >-
+      Aiven operates 24/7/365 monitoring on the Cloud Services and Aiven's
+      personnel will be automatically alerted on any service anomalies. For
+      Cluster program participants, Aiven provides Basic level support without
+      separate charge through email regarding problems related to using and
+      accessing the Aiven Cloud Services. Responses are provided on a
+      best-effort basis during the same or next business day. To access support,
+      you will need to log a support ticket through the Aiven console.
