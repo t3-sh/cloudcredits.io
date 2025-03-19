@@ -1,0 +1,92 @@
+draft: false
+provider_slug: zendesk
+title: Zendesk for Startups Program
+meta_title: Zendesk for Startups - Free 6 Months Access
+intro: >-
+  Qualifying early-stage startups get Zendesk free for six months, gaining full
+  access to its suite of customer support, sales, and engagement tools powered
+  by advanced AI capabilities.
+description: >-
+  Zendesk's cloud-based customer support platform offers a comprehensive set of
+  tools including AI-powered chatbots, automation, and integration with over
+  1,000 apps. The program provides new Zendesk customers with 6 months of free
+  access for up to 50 agents, along with online training, implementation support
+  through the CX Academy, and a vibrant community of founders and CX leaders.
+  After the free period, startups can choose from flexible pricing plans
+  starting at $55/month.
+status: Active
+tags:
+  - customer support
+  - CRM
+  - AI
+  - startups
+url: https://www.zendesk.com/startups/
+value_type: credits
+currency: USD
+max_value: 16500
+community_notes:
+  - title: Freshly - 96% CSAT and $1.5B Acquisition
+    body: >-
+      Freshly achieved a 96% Customer Satisfaction rating and was acquired by
+      Nestlé, demonstrating the effectiveness of Zendesk's platform in enhancing
+      customer experiences.
+    source_url: https://www.zendesk.com/startups/
+  - title: Impossible Foods - 50% Tickets Deflected
+    body: >-
+      Impossible Foods deflected 50% of tickets and leveraged Zendesk's
+      analytics to improve their customer service strategies.
+    source_url: https://www.zendesk.com/startups/
+  - title: PayJoy - 1 Minute WhatsApp SLA
+    body: >-
+      PayJoy slashed response times to just 1 minute, illustrating how Zendesk's
+      free access program supports rapid scaling of customer support.
+    source_url: https://www.zendesk.com/startups/
+tiers:
+  - name: Zendesk for Startups
+    intro: >-
+      Qualifying startups receive 6 months of free access to Zendesk’s suite for
+      up to 50 agents, providing powerful customer support tools and AI-driven
+      automation.
+    max_value: 16500
+    url: https://www.zendesk.com/startups/
+    benefits:
+      - >-
+        6 months free access to Zendesk Suite, Sell, Talk, Chat, Guide, and
+        Explore
+      - Access for up to 50 agents
+      - AI-powered chatbots and workflow automation
+      - Online training and implementation support via CX Academy
+      - Access to a Slack community of CX leaders and peers
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - New Zendesk customers
+      - Fewer than 50 employees
+      - Raised up to Series A funding
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply using your startup email to get approved for 6 months free
+          access to Zendesk.
+        action: Apply now
+        action_url: https://www.zendesk.com/startups/
+faq:
+  - question: What’s included in the free credits?
+    answer: >-
+      Qualifying startups receive monthly credits covering access for up to 50
+      agents across Zendesk’s products, including Support, Chat, Talk, Guide,
+      Explore, and Sell, excluding add-ons and consulting services.
+  - question: How long does the free access last?
+    answer: >-
+      The program offers 6 months of free access, after which startups can
+      choose from flexible pricing plans starting at $55 per month.
+  - question: What are the eligibility criteria for the program?
+    answer: >-
+      Startups must be new Zendesk customers, have fewer than 50 employees, and
+      have raised funding up to Series A.
+  - question: How do I activate the program?
+    answer: >-
+      After applying with a startup email, Zendesk will review the application
+      and contact you via email with further instructions.
