@@ -1,0 +1,75 @@
+draft: false
+provider_slug: datadog
+title: Datadog for Startups Program
+meta_title: Datadog for Startups - Cost-Effective Monitoring & Support
+intro: >-
+  Real-time performance monitoring at startup-friendly cost. Datadog offers a
+  comprehensive Startup Program with dedicated support, technical training, and
+  access to extensive integrations.
+description: >-
+  Datadog for Startups Program supports early-stage companies by providing
+  access to an enterprise-grade observability platform, dedicated program and
+  success managers, technical training resources, and quarterly progress
+  reviews. With pre-configured monitoring solutions, security capabilities, and
+  over 850 turnkey integrations across cloud platforms, containers, databases,
+  and more, the program enables startups to optimize performance while receiving
+  expert guidance. Eligibility requires a referral through an approved startup
+  ecosystem partner and that the company is not an existing Datadog customer.
+status: Active
+tags:
+  - startups
+  - monitoring
+  - observability
+  - support
+url: https://www.datadoghq.com/partner/datadog-for-startups/
+value_type: discount
+currency: USD
+max_value: 20
+community_notes: []
+tiers:
+  - name: Datadog for Startups
+    intro: >-
+      Provides cost-effective enterprise-grade monitoring with dedicated
+      support, tailored onboarding, and training, exclusively for startups
+      referred by approved ecosystem partners.
+    max_value: 20
+    url: https://www.datadoghq.com/partner/datadog-for-startups/
+    benefits:
+      - Access to Datadog technical training
+      - Dedicated program manager
+      - Quarterly progress check-ins
+      - Dedicated success manager
+    benefits_level: 2
+    duration:
+      - Ongoing until graduation
+    eligibility:
+      - Must be referred through an approved startup ecosystem partner
+      - Funding limit dictated by referred partner
+      - Not a current Datadog Customer
+    effort_level: 2
+    steps_to_apply:
+      - name: Contact Program
+        description: >-
+          Reach out to startups@datadoghq.com to express interest and begin the
+          referral process
+        action: Email
+        action_url: mailto:startups@datadoghq.com
+faq:
+  - question: What does the Datadog for Startups Program include?
+    answer: >-
+      It provides access to enterprise-grade observability tools, dedicated
+      technical support, onboarding guidance, training resources, and
+      integration support across 850+ turnkey integrations.
+  - question: Who is eligible to apply?
+    answer: >-
+      Early-stage startups referred by approved ecosystem partners and not
+      currently Datadog customers are eligible for the program.
+  - question: What is the process to join the program?
+    answer: >-
+      The process involves a partner referral submission, technical needs
+      assessment, a customized onboarding plan, and ongoing quarterly success
+      reviews.
+  - question: How can I get more information about the program?
+    answer: >-
+      Interested startups should apply through authorized partners or email
+      startups@datadoghq.com for more details.
