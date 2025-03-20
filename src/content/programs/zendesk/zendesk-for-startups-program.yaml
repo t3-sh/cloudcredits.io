@@ -17,13 +17,11 @@ description: >-
 status: Active
 tags:
   - customer support
-  - CRM
-  - AI
-  - startups
+  - crm
 url: https://www.zendesk.com/startups/
-value_type: credits
+value_type: discount
 currency: USD
-max_value: 16500
+max_value: 100
 community_notes:
   - title: Freshly - 96% CSAT and $1.5B Acquisition
     body: >-
@@ -47,7 +45,7 @@ tiers:
       Qualifying startups receive 6 months of free access to Zendesk’s suite for
       up to 50 agents, providing powerful customer support tools and AI-driven
       automation.
-    max_value: 16500
+    max_value: 100
     url: https://www.zendesk.com/startups/
     benefits:
       - >-
