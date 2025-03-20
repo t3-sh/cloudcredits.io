@@ -1,0 +1,16 @@
+active: true
+name: PostHog
+short_name: PostHog
+slug: posthog
+color: '#FF9F00'
+url: https://posthog.com
+intro: >-
+  Analytics platform empowering startups with open-source, product analytics
+  tailored for rapid growth and development.
+best_deal: $50K Credits for Startups
+video: ''
+tags:
+  - analytics
+  - startups
+  - open source
+  - credits
