@@ -1,0 +1,107 @@
+draft: false
+provider_slug: webflow
+title: Webflow for Startups Program
+meta_title: Webflow for Startups - Accelerate Your Growth
+intro: >-
+  Access a free CMS site plan for 12 months and exclusive benefits to power your
+  startup's online presence using Webflow's no-code design platform.
+description: >-
+  Webflow offers a targeted discount program for startups to leverage its
+  innovative no-code website design and CMS platform. Eligible startups receive
+  a 100% discount on the CMS Site Plan (normally $29/month) for 12 months, plus
+  a $100 credit for premium templates for Y Combinator affiliates and full
+  access to advanced design and hosting tools. Applicants must be new Webflow
+  customers, have raised fewer than $15M, employ fewer than 50 people, and be
+  affiliated with approved startup partners. This program helps early-stage
+  companies build professional online presences more quickly and
+  cost-effectively.
+status: Active
+tags:
+  - no-code
+  - web design
+  - CMS
+  - startups
+url: http://www.webflow.com/startups/startups-application
+value_type: discount
+currency: USD
+max_value: 100
+community_notes:
+  - title: AngelList Venture Success
+    body: >-
+      Webflow enables faster page deployment, reducing turnaround time from 4-6
+      weeks to 1-2 weeks as shared by AngelList Venture.
+    source_url: https://webflow.com/startups
+  - title: Grubhub Efficiency
+    body: >-
+      Grubhub praises Webflow for its design flexibility and rapid deployment,
+      aiding Wondersauce in launching new pages quickly.
+    source_url: https://webflow.com/startups
+  - title: Petal's Creative Edge
+    body: >-
+      Petal highlights Webflow as a tool that transforms their website into a
+      marketing asset, allowing the design team complete control.
+    source_url: https://webflow.com/startups
+tiers:
+  - name: Startup Discount
+    intro: >-
+      Eligible startups can receive a free CMS site plan for 12 months, enjoying
+      a 100% discount off the regular CMS pricing along with premium benefits.
+    max_value: 100
+    url: http://www.webflow.com/startups/startups-application
+    benefits:
+      - 100% discount on CMS Site Plan for 12 months
+      - $100 credit for premium templates (for Y Combinator affiliates)
+      - Full access to no-code design tools and AWS-powered hosting
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Startup has raised fewer than $15M USD in funding
+      - New Webflow customer
+      - Fewer than 50 employees
+      - Affiliated with approved startup partners
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply for Startup Discount
+        description: >-
+          Submit the online application form with your company credentials using
+          a company email domain.
+        action: Apply Now
+        action_url: http://www.webflow.com/startups/startups-application
+  - name: Startup Partner Program
+    intro: >-
+      For accelerators, incubators, angel networks, and VC firms to unlock
+      exclusive discounts and opportunities for startups in their portfolio.
+    max_value: 0
+    url: http://webflow.com/startups/partner-application
+    benefits:
+      - Unlock exclusive startup discounts and opportunities
+      - Access to partnership support and resources
+      - Leverage connections with leading VCs and accelerators
+    benefits_level: 1
+    duration: []
+    eligibility:
+      - Accelerators, incubators, angel networks, or VC firms
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply to Become a Partner
+        description: >-
+          Submit the partner application form to join Webflow's Startup Partner
+          Program.
+        action: Apply Now
+        action_url: http://webflow.com/startups/partner-application
+faq:
+  - question: Can existing customers apply?
+    answer: No – the program is exclusive to new Webflow customers.
+  - question: How long does approval take?
+    answer: >-
+      Typically, approval is received within 3-4 business days after submitting
+      the application form.
+  - question: What does the CMS plan include?
+    answer: >-
+      The CMS plan includes 2,000 CMS items, 200GB bandwidth, and access for 3
+      content editors, with full pricing resuming after 12 months.
+  - question: What is the renewal process?
+    answer: >-
+      After 12 months, the discount ends and standard pricing applies without
+      auto-renewal of benefits.
