@@ -1,0 +1,85 @@
+draft: false
+provider_slug: postmark
+title: Postmark Bootstrapper Offer
+meta_title: Reliable Email Delivery for Bootstrapped Startups
+intro: >-
+  Get $75 to help offset email costs with Postmark's reliable transactional
+  email delivery, designed specifically for bootstrapped startups.
+description: >-
+  Postmark's Bootstrapper Offer provides tailored financial assistance for
+  self-funded startups. The program includes a $75 account credit to cover email
+  costs, high-speed transactional email delivery, developer-first integration
+  via API and SMTP, as well as 45 days of email history (extendable to 365 days)
+  and a rich library of email templates. Eligible startups must have launched a
+  product, be actively charging customers, and operate without external
+  investment. Additional technical features include dedicated SMTP endpoints
+  across 6 AWS regions, message streams, real-time webhooks, and
+  enterprise-grade security with TLS encryption and GDPR compliance.
+status: Active
+tags:
+  - email
+  - startups
+  - bootstrapped
+  - transactional
+  - integration
+url: https://postmarkapp.com/
+value_type: credits
+currency: USD
+min_value: 75
+max_value: 75
+community_notes:
+  - title: Improved Email Metrics
+    body: >-
+      Bootstrapped startups report 11% higher open rates and fewer support
+      tickets compared to other providers.
+    source_url: https://postmarkapp.com/status
+tiers:
+  - name: Bootstrapper Tier
+    intro: >-
+      Eligible bootstrapped startups receive a one-time $75 account credit to
+      lower email costs along with access to Postmark’s premium transactional
+      email features.
+    max_value: 75
+    url: https://postmarkapp.com/start-free
+    benefits:
+      - $75 account credit
+      - High-speed transactional email delivery
+      - Developer-first API and SMTP integration
+      - 45 days of email history (extendable to 365 days)
+      - Access to a library of email templates
+    benefits_level: 2
+    duration:
+      - One-time credit
+    eligibility:
+      - Launched product or service
+      - Actively charging customers
+      - No external funding
+    effort_level: 2
+    steps_to_apply:
+      - name: Contact Support
+        description: >-
+          Reach out to Postmark with proof of product traction to verify
+          eligibility.
+        action: Contact Support
+        action_url: https://postmarkapp.com/contact
+      - name: Apply for Credit
+        description: >-
+          Complete the application process to receive API credentials and the
+          $75 credit.
+        action: Apply Now
+        action_url: https://postmarkapp.com/start-free
+faq:
+  - question: What is the Postmark Bootstrapper Offer?
+    answer: >-
+      It provides a $75 account credit and access to reliable, high-speed
+      transactional email services to help bootstrapped startups lower their
+      operational costs.
+  - question: Who is eligible for this offer?
+    answer: >-
+      Startups must have a launched product, be actively charging customers, and
+      operate without external funding.
+  - question: How do I apply for the credit?
+    answer: >-
+      Start by contacting Postmark support with proof of your product's traction
+      and then complete the application to receive API credentials and the $75
+      credit.

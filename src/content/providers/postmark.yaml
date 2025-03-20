@@ -1,0 +1,17 @@
+active: true
+name: Postmark
+short_name: Postmark
+slug: postmark
+color: '#00a5e0'
+url: https://postmarkapp.com/
+intro: >-
+  Get $75 to help offset email costs with Postmark's reliable transactional
+  email delivery, designed specifically for bootstrapped startups.
+best_deal: $75 account credit
+video: ''
+tags:
+  - email
+  - startups
+  - bootstrapped
+  - transactional
+  - integration
