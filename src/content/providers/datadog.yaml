@@ -1,0 +1,15 @@
+active: true
+name: Datadog
+short_name: Datadog
+slug: datadog
+color: '#1E80FF'
+url: https://www.datadoghq.com
+intro: >-
+  Comprehensive observability and security platform designed for seamless
+  integration and real-time data analysis with tailored support for startups.
+best_deal: $800 annually for eligible startups
+video: ''
+tags:
+  - observability
+  - monitoring
+  - startups
