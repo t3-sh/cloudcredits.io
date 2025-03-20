@@ -1,0 +1,80 @@
+draft: false
+provider_slug: asana
+title: Asana for Startups
+meta_title: Asana for Startups - Streamline Work and Scale Efficiently
+intro: >-
+  Asana for Startups offers emerging companies a centralized platform to manage
+  work, enhance collaboration, and drive efficiency from project management to
+  investor reporting.
+description: >-
+  Asana's Startup Program provides tailored solutions to help startups
+  streamline operations, automate workflows, and scale effectively. The program
+  delivers unified task management, real-time reporting, customizable templates,
+  and robust investor relations support that can boost team efficiency by up to
+  45%. Supported by a network of partners including 500 Global, Brex, and
+  others, startups receive discounted access to Asana's Advanced plan—enabling
+  seamless project management and smart workflow automation.
+status: Active
+tags:
+  - project management
+  - collaboration
+  - productivity
+  - startups
+url: https://form-beta.asana.com/?k=L-EQFC_i67nOy7oZLzOEAA&d=15793206719
+value_type: discount
+currency: USD
+max_value: 100
+community_notes: []
+tiers:
+  - name: Advanced Plan (Discounted)
+    intro: >-
+      Eligible startups receive 12-month access to Asana's Advanced plan,
+      featuring centralized project management, workflow automation, and
+      enhanced reporting.
+    max_value: 100
+    url: https://form-beta.asana.com/?k=L-EQFC_i67nOy7oZLzOEAA&d=15793206719
+    benefits:
+      - 12-month free Advanced plan access
+      - Centralized project and task management
+      - Workflow automation with custom templates
+      - Real-time reporting and goal tracking
+      - Enhanced investor relations dashboards
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Startups with less than 500 employees
+      - Pre-Series E funding stage
+      - Only for Asana Advanced plan
+    effort_level: 2
+    steps_to_apply:
+      - name: Redeem Discount Code
+        description: >-
+          If already in possession of a discount code, use it to activate free
+          Advanced plan access.
+        action: Redeem
+        action_url: https://asa.na/offer
+      - name: Submit Application
+        description: >-
+          Fill out the startup application form to qualify for the discounted
+          Advanced plan access.
+        action: Apply Now
+        action_url: https://form-beta.asana.com/?k=L-EQFC_i67nOy7oZLzOEAA&d=15793206719
+faq:
+  - question: Which Asana plans are eligible for the startup discount?
+    answer: >-
+      Only startups on the Asana Advanced plan are eligible for the discount
+      offer.
+  - question: How long does the discount period last?
+    answer: >-
+      The program provides free Advanced plan access for 12 months, beginning on
+      the date of redemption.
+  - question: What are the eligibility criteria for the program?
+    answer: >-
+      The discount is intended for startups with less than 500 employees and a
+      pre-Series E funding stage. Companies exceeding these criteria are not
+      eligible.
+  - question: How can I apply for the discount?
+    answer: >-
+      Startups can either redeem an existing discount code at asa.na/offer or
+      submit an application via the provided form.
