@@ -1,0 +1,134 @@
+draft: false
+provider_slug: tiktok
+title: TikTok Ads Manager Welcome Gift
+meta_title: TikTok Ads Manager Welcome Gift - Unlock Matching Ad Credits
+intro: >-
+  New advertisers using TikTok Ads Manager can receive a matching ad credit
+  welcome gift of up to $1,500 by spending the corresponding amount on their
+  first ad campaign within a 30-day window.
+description: >-
+  TikTok's Ads Manager Welcome Gift program offers new advertisers a lucrative
+  opportunity to kickstart their campaigns with dollar-for-dollar matched
+  credits. Unlock benefits through tiered spending thresholds: spend $100 to
+  receive $100, $500 to receive $500, and $1,500 to receive $1,500. After a new
+  account registration, participants have a 30-day redemption period to reach
+  their desired tier, with credits applied 1-7 days after meeting spending
+  requirements. The program integrates organic and paid strategies, such as
+  Spark Ads, to maximize campaign impact. Eligibility is limited to new TikTok
+  Ads Manager accounts in selected regions, and all credits expire on February
+  28, 2025.
+status: Active
+tags:
+  - ads
+  - credit
+  - social
+  - marketing
+url: https://ads.tiktok.com
+value_type: credits
+currency: USD
+min_value: 100
+max_value: 1500
+community_notes:
+  - title: Geo Availability
+    body: >-
+      The welcome gift is available in over 40 countries including the US,
+      Canada, Australia, Japan, and EU nations for new TikTok Ads Manager users.
+    source_url: https://www.tiktok.com/business/en
+tiers:
+  - name: Starter Tier
+    intro: Get $100 ad credit match by spending $100 on your first campaign.
+    max_value: 100
+    url: https://ads.tiktok.com
+    benefits:
+      - $100 ad credit match
+      - Boost your initial campaign with bonus ad credit
+      - Access to creative tools
+    benefits_level: 1
+    duration:
+      - 30 days redemption period
+    eligibility:
+      - New TikTok Ads Manager account
+      - Minimum spend of $100
+    effort_level: 1
+    steps_to_apply:
+      - name: Register for TikTok Ads Manager
+        description: >-
+          Sign up for a new TikTok Ads Manager account to be eligible for the
+          welcome gift.
+        action: Sign Up
+        action_url: https://ads.tiktok.com
+      - name: Launch Ad Campaign
+        description: >-
+          Create and run your first ad campaign spending at least $100 to unlock
+          the credit.
+        action: Start Campaign
+        action_url: https://ads.tiktok.com
+  - name: Growth Tier
+    intro: Unlock $500 ad credit match by spending $500 on TikTok Ads.
+    max_value: 500
+    url: https://ads.tiktok.com
+    benefits:
+      - $500 ad credit match
+      - Access to advanced targeting
+      - Optimized ad performance insights
+    benefits_level: 2
+    duration:
+      - 30 days redemption period
+    eligibility:
+      - New TikTok Ads Manager account
+      - Minimum spend of $500
+    effort_level: 2
+    steps_to_apply:
+      - name: Register for TikTok Ads Manager
+        description: >-
+          Sign up for a new TikTok Ads Manager account to access the welcome
+          gift.
+        action: Sign Up
+        action_url: https://ads.tiktok.com
+      - name: Launch Ad Campaign
+        description: >-
+          Create and run your first campaign spending at least $500 to unlock
+          the credit.
+        action: Start Campaign
+        action_url: https://ads.tiktok.com
+  - name: Premium Tier
+    intro: >-
+      Maximize your impact by spending $1,500 to receive a matching $1,500 ad
+      credit.
+    max_value: 1500
+    url: https://ads.tiktok.com
+    benefits:
+      - $1,500 ad credit match
+      - Premium ad optimization support
+      - Dedicated account assistance
+    benefits_level: 3
+    duration:
+      - 30 days redemption period
+    eligibility:
+      - New TikTok Ads Manager account
+      - Minimum spend of $1,500
+    effort_level: 3
+    steps_to_apply:
+      - name: Register for TikTok Ads Manager
+        description: >-
+          Sign up for a new TikTok Ads Manager account to become eligible for
+          premium benefits.
+        action: Sign Up
+        action_url: https://ads.tiktok.com
+      - name: Launch Ad Campaign
+        description: >-
+          Run a campaign spending at least $1,500 to unlock the full matching
+          credit.
+        action: Start Campaign
+        action_url: https://ads.tiktok.com
+faq:
+  - question: Can I combine this welcome gift with other offers?
+    answer: >-
+      No, this is a standalone welcome offer exclusively for new TikTok Ads
+      Manager accounts.
+  - question: What happens if I don’t use all the credits?
+    answer: >-
+      Unused credits expire on February 28, 2025, regardless of account
+      activity.
+  - question: Is there a minimum spend requirement after claiming the credits?
+    answer: Yes, you must maintain an active campaign to retain the ad credits.
