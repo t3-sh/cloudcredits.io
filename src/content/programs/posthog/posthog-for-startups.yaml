@@ -1,0 +1,90 @@
+draft: false
+provider_slug: posthog
+title: PostHog for Startups
+meta_title: PostHog for Startups - $50K Credits & Exclusive Benefits
+intro: >-
+  Access $50,000 in platform credits for 12 months, plus additional DigitalOcean
+  credits, exclusive startup merchandise, and growth opportunities to help you
+  reach product-market fit.
+description: >-
+  PostHog for Startups is designed for early-stage companies to scale their
+  analytics infrastructure without heavy upfront costs. Eligible startups must
+  be less than 2 years old and have raised under $5 million, with sign-ups after
+  January 1, 2023. The program provides $50,000 in platform credits valid for
+  one year, a $25,000 DigitalOcean credit through the Hatch program, exclusive
+  merchandise, and opportunities such as startup spotlights and office hours.
+  After the credit period, startups transition to standard plans while
+  continuing to enjoy community benefits.
+status: Active
+tags:
+  - analytics
+  - startups
+  - open source
+  - credits
+url: https://posthog.com/startups
+value_type: credits
+currency: USD
+max_value: 50000
+community_notes:
+  - title: YC Endorsement
+    body: >-
+      Cat Li, Product & Engineering Lead at Y Combinator, highlights how PostHog
+      is central to making data-driven product improvements.
+    source_url: https://posthog.com/startups
+  - title: Concept Ventures Praise
+    body: >-
+      Oliver Kicks from Concept Ventures emphasizes the value of PostHog for
+      optimizing product analytics for startups.
+    source_url: https://posthog.com/startups
+tiers:
+  - name: PostHog Startup Tier
+    intro: >-
+      Receive $50,000 in platform credits, $25,000 DigitalOcean credit, and
+      exclusive startup merchandise for a 12-month period.
+    max_value: 50000
+    url: https://posthog.com/startups
+    benefits:
+      - $50K platform credits valid for 12 months
+      - $25K DigitalOcean Hatch credit
+      - Exclusive startup merchandise
+      - Access to startup spotlights and office hours
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Company age <2 years
+      - Funding < $5M
+      - Sign-up after January 1, 2023
+      - Separate program for YC-affiliated startups
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign up for a paid plan
+        description: >-
+          Register for a PostHog paid plan on a pay-as-you-go basis to qualify
+          for the program.
+        action: Sign Up
+        action_url: https://posthog.com/pricing
+      - name: Complete startup application
+        description: >-
+          Fill out the startup application form to apply for the program credits
+          and benefits.
+        action: Apply Now
+        action_url: https://posthog.com/startups
+faq:
+  - question: Who is eligible for PostHog for Startups?
+    answer: >-
+      Startups must be less than 2 years old with under $5 million in funding,
+      and must sign up after January 1, 2023. Accounts created before this date
+      may receive other program benefits but not the credits.
+  - question: What does the $50K platform credit cover?
+    answer: >-
+      The credit can be used for events, session replays, API calls, and survey
+      responses over a 12-month period on PostHog's analytics platform.
+  - question: How do I claim the DigitalOcean credit?
+    answer: >-
+      After enrolling in the program, startups can join the DigitalOcean Hatch
+      program and cite PostHog as their partner to receive a $25K credit.
+  - question: What happens after the 12-month credit period?
+    answer: >-
+      Startups will transition to standard PostHog plans with continued access
+      to community events and support, ensuring a smooth transition.
