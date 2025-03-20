@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/program.schema.json",
+  "title": "Program",
+  "description": "A schema describing startup, cloud credit, or similar programs.",
+  "type": "object",
+  "properties": {
+    "draft": {
+      "type": "boolean",
+      "description": "When true, indicates that this program entry is in draft mode and not yet published.",
+      "default": false,
+      "examples": [true, false]
+    },
+    "provider_slug": {
+      "type": "string",
+      "description": "A short lowercase slug for the program's provider, e.g. aws, digitalocean, etc.",
+      "examples": ["scaleway", "github", "notion"]
+    },
+    "title": {
+      "type": "string",
+      "description": "The official name or title of the program.",
+      "examples": ["Scaleway Startup Program", "GitHub for Startups", "Notion for Startups"]
+    },
+    "meta_title": {
+      "type": "string",
+      "description": "An optional meta title for SEO or marketing purposes.",
+      "examples": ["Cloud Support for Startups", "Up to 6 months free with unlimited AI - Over $6,000 in savings"]
+    },
+    "intro": {
+      "type": "string",
+      "description": "A concise introduction or summary highlighting the main offer and value of the program.",
+      "examples": [
+        "Get up to €36,000 cost-coverage for cloud services with free consulting support from solution architects and access to a 800+ startup community",
+        "Receive up to 20 seats of GitHub Enterprise free for 12 months, along with tailored guidance and DevOps best practices.",
+        "Notion helps startups stay organized and scale faster by offering up to 6 months of free usage, including unlimited AI features, for eligible teams under 50 employees with under $10M in funding."
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "A more detailed description of the program, covering its purpose, benefits, and scope.",
+      "examples": [
+        "Time-limited cloud partnership program offering infrastructure credits, technical guidance, and community benefits for European startups at different growth stages. Participants gain access to Scaleway's partner ecosystem with over €250,000 in value.",
+        "GitHub for Startups supports early-stage companies by providing free GitHub Enterprise seats for a year, personalized onboarding, extensive DevOps automation, and access to the world's largest open source community. Eligible startups can accelerate their software development, manage projects, automate CI/CD workflows, and keep code secure on GitHub's trusted platform."
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Discontinued",
+        "Beta",
+        "Upcoming"
+      ],
+      "default": "Active",
+      "description": "Indicates whether the program is currently Active, has been Discontinued, is in Beta, or is Upcoming.",
+      "examples": ["Active"]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Up to five descriptive tags or keywords for the program.",
+      "maxItems": 5,
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        ["cloud", "europe"],
+        ["dev tools", "collaboration"],
+        ["collaboration", "productivity", "docs", "project management", "saas"]
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The primary URL where users can learn more about or apply to the program.",
+      "examples": [
+        "https://www.scaleway.com/en/startup-program/",
+        "https://github.com/enterprise/startups#get-started",
+        "https://www.notion.so/startups-apply"
+      ]
+    },
+    "value_type": {
+      "type": "string",
+      "enum": [
+        "credits",
+        "discount"
+      ],
+      "default": "credits",
+      "description": "Specifies whether this program provides credits (monetary value) or a discount percentage.",
+      "examples": ["credits", "discount"]
+    },
+    "currency": {
+      "type": "string",
+      "enum": [
+        "USD",
+        "EUR"
+      ],
+      "default": "USD",
+      "description": "Currency code used if the program provides monetary credits or discounts (e.g., USD or EUR).",
+      "examples": ["USD", "EUR"]
+    },
+    "min_value": {
+      "type": "number",
+      "description": "Optional minimum credits or discount level. Useful when the program range starts at a certain value.",
+      "examples": [1000, 3300]
+    },
+    "max_value": {
+      "type": "number",
+      "description": "Maximum credits or discount value available through the program.",
+      "examples": [36000, 100, 6600]
+    },
+    "community_notes": {
+      "type": "array",
+      "description": "Optional short collection of up to three community-provided notes or references.",
+      "maxItems": 3,
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "A title summarizing the community note or reference."
+          },
+          "body": {
+            "type": "string",
+            "description": "The detailed body or explanation of the note."
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "An external link or source reference for further reading."
+          }
+        },
+        "required": [
+          "title",
+          "body",
+          "source_url"
+        ]
+      },
+      "examples": [
+        []
+      ]
+    },
+    "tiers": {
+      "type": "array",
+      "description": "A list of tiers within the program, each describing a unique level of benefits, eligibility, and steps to apply.",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The official or descriptive name of this tier.",
+            "examples": ["Founders Program", "GitHub for Startups", "6 Months Free with Unlimited AI"]
+          },
+          "intro": {
+            "type": "string",
+            "description": "A short description of what this tier offers or requires.",
+            "examples": [
+              "For youngest projects launching in startup-friendly environment with initial cloud cost coverage",
+              "Eligible startups get 20 seats of GitHub Enterprise free for 12 months.",
+              "For affiliated early-stage startups with fewer than 50 employees and under $10 million in accredited funding."
+            ]
+          },
+          "max_value": {
+            "type": "number",
+            "description": "The maximum credits or discount percentage available at this tier.",
+            "examples": [1000, 9000, 36000, 100, 6600, 3300]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URL leading to more information or an application page for this tier.",
+            "examples": [
+              "https://www.scaleway.com/en/startup-program/",
+              "https://github.com/enterprise/startups#get-started",
+              "https://www.notion.so/startups-apply"
+            ]
+          },
+          "benefits": {
+            "type": "array",
+            "description": "List of key benefits for this specific tier, up to five items.",
+            "maxItems": 5,
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "examples": [
+              [
+                "€1,000 cloud credits over 1 year",
+                "Technical content library and scaling resources",
+                "Multi-cloud product access",
+                "Dedicated Program Lead onboarding",
+                "Access to Scaleway community Slack channel (800+ members)"
+              ],
+              [
+                "Up to 20 seats of GitHub Enterprise",
+                "Tailored product guidance and onboarding",
+                "Built-in CI/CD and security automation",
+                "Unlimited private repositories",
+                "Largest open source community registry"
+              ],
+              [
+                "Free Notion usage for up to 6 months",
+                "Unlimited Notion AI add-on",
+                "Up to $6,600 in value",
+                "Access to exclusive software discounts",
+                "Invitation to the Champions Community"
+              ]
+            ]
+          },
+          "benefits_level": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 4,
+            "description": "A rating from 1 to 4 indicating the relative depth or significance of the tier's benefits.",
+            "examples": [1, 2, 3]
+          },
+          "duration": {
+            "type": "array",
+            "description": "One or more statements about how long the tier's benefits last (e.g., '12 months'). Maximum of five items.",
+            "maxItems": 5,
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "examples": [
+              ["1 year"],
+              ["6 months"],
+              ["12 months"],
+              ["3 months"]
+            ]
+          },
+          "eligibility": {
+            "type": "array",
+            "description": "Up to five bullet points explaining who qualifies for this tier.",
+            "maxItems": 5,
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "examples": [
+              [
+                "Early-stage startups",
+                "Pre-revenue projects"
+              ],
+              [
+                "Outside funding (up to Series A)",
+                "New to GitHub Enterprise",
+                "Haven't previously received GitHub Enterprise credits"
+              ],
+              [
+                "Affiliated with a Notion partner",
+                "Under 50 employees",
+                "Non-paying Notion customer",
+                "Raised under $10M in funding"
+              ]
+            ]
+          },
+          "effort_level": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 4,
+            "description": "A rating from 1 to 4 reflecting how much work or complexity is required for this tier.",
+            "examples": [1, 2]
+          },
+          "steps_to_apply": {
+            "type": "array",
+            "description": "A step-by-step guide on how to apply for this tier, if applicable.",
+            "default": [],
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name or short label for the step."
+                },
+                "description": {
+                  "type": "string",
+                  "description": "A detailed explanation of what the applicant must do in this step."
+                },
+                "action": {
+                  "type": "string",
+                  "description": "Optional call to action label or a short imperative describing the step (e.g., 'Sign Up')."
+                },
+                "action_url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Optional URL to complete the step (e.g., a form or signup page)."
+                }
+              },
+              "required": [
+                "name",
+                "description"
+              ]
+            },
+            "examples": [
+              [
+                {
+                  "name": "Create Scaleway Account",
+                  "description": "Scaleway can't process your application without an account",
+                  "action": "Register",
+                  "action_url": "https://account.scaleway.com/register"
+                },
+                {
+                  "name": "Complete Application Form",
+                  "description": "Fill out the application form (~15 minutes)",
+                  "action": "Apply Now",
+                  "action_url": "https://www.scaleway.com/en/startup-program/"
+                }
+              ],
+              [
+                {
+                  "name": "Check eligibility",
+                  "description": "Ensure your startup meets all requirements (outside funding up to Series A, new to GitHub Enterprise).",
+                  "action": "Review criteria",
+                  "action_url": "https://github.com/enterprise/startups#get-started"
+                },
+                {
+                  "name": "Submit application",
+                  "description": "Fill out the GitHub for Startups application form to get started.",
+                  "action": "Apply now",
+                  "action_url": "https://github.com/enterprise/startups#get-started"
+                }
+              ],
+              [
+                {
+                  "name": "Complete Application",
+                  "description": "Fill out the online form verifying your eligibility and partner affiliation",
+                  "action": "Apply Now",
+                  "action_url": "https://www.notion.so/startups-apply"
+                }
+              ]
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "intro",
+          "max_value",
+          "url",
+          "benefits_level",
+          "effort_level"
+        ]
+      }
+    },
+    "faq": {
+      "type": "array",
+      "description": "A list of frequently asked questions with corresponding answers regarding the program.",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "A question commonly asked by potential participants or users."
+          },
+          "answer": {
+            "type": "string",
+            "description": "The official or recommended answer to the question."
+          }
+        },
+        "required": [
+          "question",
+          "answer"
+        ]
+      },
+      "examples": [
+        [
+          {
+            "question": "What is the Scaleway Startup Program?",
+            "answer": "A time-limited cloud partnership program providing infrastructure credits and technical assistance. Participants leverage Scaleway's public cloud infrastructure along with advisory resources and community support."
+          },
+          {
+            "question": "Who can apply to the program?",
+            "answer": "Scaleway accepts applications from startups at any stage. The admission committee prioritizes projects demonstrating innovative use of cloud infrastructure."
+          }
+        ]
+      ]
+    }
+  },
+  "required": [
+    "provider_slug",
+    "title",
+    "intro",
+    "description",
+    "url",
+    "max_value"
+  ]
+}

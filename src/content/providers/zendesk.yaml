@@ -1,0 +1,15 @@
+active: true
+name: Zendesk
+short_name: Zendesk
+slug: zendesk
+color: '#03363D'
+url: https://www.zendesk.com
+intro: >-
+  Zendesk offers a comprehensive customer service and engagement platform,
+  providing scalable solutions for businesses to manage customer interactions
+  effectively.
+best_deal: 6 months free access for qualifying startups
+video: ''
+tags:
+  - customer support
+  - crm
