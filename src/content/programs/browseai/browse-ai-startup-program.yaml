@@ -16,11 +16,9 @@ description: >-
   such as competitor analysis, lead generation, and market research.
 status: Active
 tags:
-  - web data
+  - ai
   - no-code
   - scraping
-  - API
-  - startups
 url: https://www.browse.ai/startup-program
 value_type: discount
 currency: USD
@@ -46,7 +44,7 @@ tiers:
       - Enterprise-grade security (SOC II certified)
       - AI-powered change detection
       - Access to 7,000+ integrations
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
@@ -55,7 +53,7 @@ tiers:
       - >-
         Clear data needs with at least 6 target websites and 10k+ monthly data
         rows
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Submit Application
         description: >-
