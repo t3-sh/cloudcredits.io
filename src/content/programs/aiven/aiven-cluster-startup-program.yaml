@@ -1,0 +1,89 @@
+draft: false
+provider_slug: aiven
+title: Aiven Cluster Startup Program
+meta_title: Cloud Credits and Technical Support for Startups
+intro: >-
+  The Aiven Cluster Startup Program offers up to $100,000 in credits to help
+  startups build scalable data infrastructure using Aiven's fully managed
+  services, expert technical support, and a vibrant community.
+description: >-
+  Aiven's Cluster Startup Program provides eligible early-stage startups with
+  between $12,000 and $100,000 in cloud credits over a 12-month period. In
+  addition to credits, the program includes 24/7 expert technical support,
+  access to private community channels (such as the Cluster Slack and Aiven
+  Community Forums), promotional opportunities via the Aiven blog and social
+  media, and virtual events and workshops on data infrastructure and scaling.
+  Startups must be 7 years old or younger, have raised funds between pre-seed
+  and Series B, and apply using a business email address. Priority is given to
+  those referred by approved investors and accelerators.
+status: Active
+tags:
+  - cloud
+  - data
+  - startups
+  - open-source
+url: https://aiven.io/cluster
+value_type: credits
+currency: USD
+min_value: 12000
+max_value: 100000
+community_notes:
+  - title: Doccla Testimonial
+    body: >-
+      The credits we got by joining the Aiven Cluster program helped us to get
+      started very quickly.
+    source_url: https://aiven.io/cluster#doccla
+  - title: workOrb Testimonial
+    body: >-
+      Aiven has been a great partner, providing performant scalable vector and
+      hybrid search powered by OpenSearch.
+    source_url: https://aiven.io/cluster#workorb
+  - title: 4 Screen Testimonial
+    body: >-
+      Joining the Aiven Cluster program gives you room to explore different
+      technologies without committing yourself to any plans or buying it right
+      away.
+    source_url: https://aiven.io/cluster#4screen
+tiers:
+  - name: Cluster Startup Credits
+    intro: >-
+      Unlock between $12,000 and $100,000 in credits for Aiven managed data
+      services over 12 months, along with technical support and community
+      benefits.
+    max_value: 100000
+    url: https://aiven.io/cluster
+    benefits:
+      - Up to $100,000 in cloud credits for Aiven services
+      - 24/7 expert technical support
+      - Access to private Slack community and forums
+      - Promotional opportunities via Aiven blog and social media
+      - Virtual workshops on data infrastructure and scaling
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Startup must be 7 years old or younger
+      - Must have raised funds between pre-seed and Series B
+      - Application must be submitted with a business email address
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the online application form with your startup details and a
+          verified business email.
+        action: Apply Now
+        action_url: https://aiven.io/cluster
+faq:
+  - question: Can non-partnered startups apply?
+    answer: >-
+      Yes – the program offers a $12K credit tier available even for startups
+      without a partner affiliation.
+  - question: What services do credits cover?
+    answer: >-
+      Credits can be used for all Aiven-managed open-source technologies
+      including databases (PostgreSQL, MySQL), analytics (ClickHouse, Flink),
+      search (OpenSearch), and event streaming (Apache Kafka).
+  - question: How long does credit approval take?
+    answer: >-
+      The review process typically takes 2-4 weeks after a complete application
+      is submitted.

@@ -1,0 +1,17 @@
+active: true
+name: Heroku
+short_name: Heroku
+slug: heroku
+color: '#43538F'
+url: https://www.heroku.com
+intro: >-
+  A cloud platform as a service supporting several programming languages located
+  in the United States with worldwide availability.
+best_deal: Monthly platform credits for open source projects
+video: ''
+tags:
+  - open source
+  - cloud
+  - credits
+  - platform
+  - heroku
