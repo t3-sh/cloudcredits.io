@@ -1,0 +1,17 @@
+active: true
+name: Civo
+short_name: Civo
+slug: civo
+color: '#B71C1C'
+url: https://www.civo.com
+intro: >-
+  Civo offers cloud-native solutions designed to grow with innovative companies,
+  featuring rapid 90-second cloud deployments and cost savings of up to 75%.
+best_deal: $250 free credit for 1 month
+video: ''
+tags:
+  - cloud
+  - startup
+  - kubernetes
+  - event
+  - dev tools
