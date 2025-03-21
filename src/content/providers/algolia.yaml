@@ -1,0 +1,16 @@
+active: true
+name: Algolia
+short_name: Algolia
+slug: algolia
+color: '#0064D6'
+url: https://www.algolia.com
+intro: >-
+  A powerful search API designed for modern ecommerce and applications, offering
+  fast and relevant search results with a flexible API.
+best_deal: $10,000 credits for 12 months for startups
+video: ''
+tags:
+  - search
+  - discovery
+  - startup
+  - SaaS
