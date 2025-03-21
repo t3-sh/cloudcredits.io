@@ -1,0 +1,72 @@
+draft: false
+provider_slug: clickup
+title: ClickUp for Startups
+meta_title: Boost Your Startup Productivity with ClickUp
+intro: >-
+  Kickstart your startup’s productivity journey with ClickUp for Startups.
+  Qualifying companies receive $3,000 in ClickUp credits along with an upgraded
+  Enterprise workspace designed to scale rapidly.
+description: >-
+  ClickUp for Startups offers a comprehensive productivity boost for early-stage
+  companies by providing $3,000 in platform credits. The program includes access
+  to an Enterprise workspace featuring unlimited storage, custom roles, advanced
+  automation, and premium features. Dedicated onboarding support helps teams set
+  up their workspace and learn the tools needed to scale efficiently. Overall,
+  this initiative delivers a total value of $3,300 by combining credits with
+  additional implementation services, positioning ClickUp as a strategic growth
+  partner.
+status: Active
+tags:
+  - productivity
+  - enterprise
+  - startup
+  - project management
+url: https://clickup.com/startups
+value_type: credits
+currency: USD
+max_value: 3000
+community_notes: []
+tiers:
+  - name: ClickUp for Startups
+    intro: >-
+      Provides $3,000 in ClickUp credits, an Enterprise workspace, and
+      onboarding resources to accelerate your team's productivity.
+    max_value: 3000
+    url: https://clickup.com/startups
+    benefits:
+      - $3,000 ClickUp credits
+      - Enterprise workspace with unlimited storage and custom roles
+      - Dedicated onboarding support
+      - >-
+        Access to premium features such as AI tools, time tracking, and advanced
+        automation
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Affiliated with an approved accelerator, incubator, or VC firm
+      - Incorporated less than 5 years ago
+      - Raised no more than Series B funding
+      - New to ClickUp or on the Free Forever Plan
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply for the program via the approved funding partner's portal.
+        action: Apply Now
+        action_url: https://clickup.com/startups
+faq:
+  - question: How can ClickUp credits be used?
+    answer: >-
+      Approved startups can apply their ClickUp credits to any paid plan,
+      including Unlimited, Business, or Enterprise tiers; the credits roll over
+      for 12 months.
+  - question: What are the eligibility requirements?
+    answer: >-
+      Startups must be affiliated with an approved accelerator, incubator, or VC
+      firm, be incorporated for less than 5 years, have raised no more than
+      Series B funding, and be new to ClickUp or on the Free Forever Plan.
+  - question: What features are available with the Enterprise workspace?
+    answer: >-
+      The Enterprise workspace offers unlimited storage, custom roles, advanced
+      automation, AI-powered tools, detailed time tracking, and dedicated
+      onboarding support to ensure teams maximize productivity.
