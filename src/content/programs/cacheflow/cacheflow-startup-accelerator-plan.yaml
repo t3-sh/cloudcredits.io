@@ -20,8 +20,6 @@ status: Active
 tags:
   - saas
   - billing
-  - automation
-  - startup
 url: https://www.cacheflow.com/startup-accelerator
 value_type: discount
 currency: USD
@@ -47,12 +45,12 @@ tiers:
       - CRM integrations with HubSpot, Salesforce, and Close
       - Unlimited quotes, subscriptions, billing, and invoicing
       - Automated workflows for e-signature, payments, and contract management
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - Monthly subscription
     eligibility:
       - Early-stage SaaS startups with less than $1M ARR
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Claim Offer
         description: Sign up for a demo and claim the Startup Accelerator Plan.
