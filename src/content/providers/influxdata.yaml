@@ -2,7 +2,7 @@ active: true
 name: InfluxData
 short_name: InfluxData
 slug: influxdata
-color: '#8b69ec'
+color: '#D30971'
 url: https://www.influxdata.com
 intro: >-
   InfluxData provides InfluxDB Cloud Serverless, a versatile time-series

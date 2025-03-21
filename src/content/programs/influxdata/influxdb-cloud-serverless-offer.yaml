@@ -39,7 +39,7 @@ tiers:
       - Flexible, pay-as-you-go pricing
       - Fully-managed cloud service
       - No minimums or long-term commitments
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 30 days
     eligibility:
