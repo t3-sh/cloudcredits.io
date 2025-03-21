@@ -1,8 +1,8 @@
 active: true
 name: Google Ads
 short_name: Google Ads
-slug: google_ads
-color: '#FFFFFF'
+slug: googleads
+color: '#1F8E3E'
 url: https://ads.google.com
 intro: >-
   Google Ads offers new advertisers a selection of promotional offers to
@@ -12,6 +12,5 @@ best_deal: Up to $1,500 in ad credits for new advertisers
 video: ''
 tags:
   - ads
-  - promotion
   - google
   - marketing

@@ -1,5 +1,5 @@
 draft: false
-provider_slug: google_ads
+provider_slug: googleads
 title: Google Ads New Advertiser Promotion
 meta_title: Google Ads Promotional Offers for New Advertisers
 intro: >-
@@ -18,7 +18,6 @@ description: >-
 status: Active
 tags:
   - ads
-  - promotion
   - google
   - marketing
 url: https://ads.google.com
