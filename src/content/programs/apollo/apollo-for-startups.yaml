@@ -20,12 +20,9 @@ status: Active
 tags:
   - sales
   - marketing
-  - startup
-  - B2B
-  - growth
+  - b2b
 url: https://apollo.io/startups
 value_type: discount
-currency: USD
 min_value: 50
 max_value: 50
 community_notes:
@@ -48,7 +45,7 @@ tiers:
       - Educational webinars and Apollo Academy training
       - Dedicated partnership manager support
       - Exclusive access to a SaaS tool marketplace
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 1 year
     eligibility:
@@ -58,7 +55,7 @@ tiers:
         Affiliated with Apollo’s partner network (VCs, accelerators, or startup
         communities)
       - Discount applies to first 5 user seats
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Verify Eligibility
         description: >-

@@ -19,9 +19,8 @@ description: >-
 status: Active
 tags:
   - project management
-  - startups
-  - credits
   - collaboration
+  - productivity
 url: https://www.ganttpro.com/startup-program/
 value_type: credits
 currency: USD
@@ -44,7 +43,7 @@ tiers:
       - Advanced collaboration and task management tools
       - Risk management and budget control
       - Secure cloud storage with daily backups
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 6 months
     eligibility:
@@ -53,7 +52,7 @@ tiers:
       - 30 or fewer employees
       - No prior paid GanttPRO subscription
       - Not undergone recent funding rounds or change of control
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Verify Eligibility
         description: >-

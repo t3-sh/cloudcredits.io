@@ -17,21 +17,20 @@ description: >-
 status: Active
 tags:
   - automation
-  - startups
   - no-code
   - workflow
 url: https://www.make.com/startup-program
 value_type: credits
 currency: USD
-min_value: 600
-max_value: 1100
+min_value: 500
+max_value: 1000
 community_notes: []
 tiers:
   - name: Partnered Startups
     intro: >-
       For startups affiliated with an approved accelerator, incubator, or VC,
       offering enhanced operational credits.
-    max_value: 1100
+    max_value: 1000
     url: https://www.make.com/startup-program/apply
     benefits:
       - 480,000 operations on Make Teams plan
@@ -39,7 +38,7 @@ tiers:
       - Priority technical support
       - Access to Make’s network of investors and mentors
       - Collaboration and team management tools
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - Until credits are exhausted
     eligibility:
@@ -56,7 +55,7 @@ tiers:
     intro: >-
       For self-funded startups, offering essential operational credits with
       access to core automation capabilities.
-    max_value: 600
+    max_value: 500
     url: https://www.make.com/startup-program/apply
     benefits:
       - 240,000 operations on Make Teams plan
