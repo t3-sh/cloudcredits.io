@@ -2,14 +2,14 @@ active: true
 name: InfluxData
 short_name: InfluxData
 slug: influxdata
-color: '#D30971'
+color: "#D30971"
 url: https://www.influxdata.com
 intro: >-
   InfluxData provides InfluxDB Cloud Serverless, a versatile time-series
   database solution designed for startups and SMBs, offering flexible scaling,
   real-time analytics, and usage-based pricing.
 best_deal: $250 credit for 30 Days
-video: ''
+video: ""
 tags:
   - cloud
   - database

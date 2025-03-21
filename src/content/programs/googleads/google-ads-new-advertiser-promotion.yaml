@@ -33,7 +33,7 @@ community_notes:
       account-specific variations.
     source_url: https://ads.google.com
 tiers:
-  - name: 'Offer A: Starter Tier'
+  - name: "Offer A: Starter Tier"
     intro: Receive $500 in ad credit when spending $500 within the first 60 days.
     max_value: 500
     url: https://ads.google.com
@@ -62,7 +62,7 @@ tiers:
           setup.
         action: Apply Offer
         action_url: https://ads.google.com
-  - name: 'Offer B: Growth Tier'
+  - name: "Offer B: Growth Tier"
     intro: Receive $750 in ad credit when spending $1,000 within the first 60 days.
     max_value: 750
     url: https://ads.google.com
@@ -87,7 +87,7 @@ tiers:
         description: Provide valid payment details and promo code to unlock the offer.
         action: Apply Offer
         action_url: https://ads.google.com
-  - name: 'Offer C: Premium Tier'
+  - name: "Offer C: Premium Tier"
     intro: Receive $1,000 in ad credit when spending $1,500 within the first 60 days.
     max_value: 1000
     url: https://ads.google.com
