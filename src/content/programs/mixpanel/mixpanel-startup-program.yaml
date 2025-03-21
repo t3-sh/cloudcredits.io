@@ -16,13 +16,9 @@ description: >-
 status: Active
 tags:
   - analytics
-  - startups
-  - data
-  - growth
 url: https://mixpanel.com/startups-apply
-value_type: credits
-currency: USD
-max_value: 150000
+value_type: discount
+max_value: 100
 community_notes:
   - title: Extended Runway
     body: >-
@@ -44,7 +40,7 @@ tiers:
     intro: >-
       Get one year of free access to the full Mixpanel analytics suite,
       including premium add-ons and world-class support.
-    max_value: 150000
+    max_value: 100
     url: https://mixpanel.com/startups-apply
     benefits:
       - Free access for one year up to 1 billion events
@@ -54,7 +50,7 @@ tiers:
       - Fast, easy setup with Autocapture and pre-built templates
       - VIP treatment with premium add-ons
       - World-class support and access to a community of 11k+ peers
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 1 year
     eligibility:
