@@ -1,0 +1,88 @@
+draft: false
+provider_slug: vultr
+title: VIP Digital Startup Program
+meta_title: VIP Digital Startup Program - Cloud Innovation for Startups
+intro: >-
+  Receive up to $100,000 in free credits for your Vultr migration and enjoy up
+  to 35% long-term discounts on cloud services, complemented by exclusive
+  executive sponsorship and dedicated technical support.
+description: >-
+  Vultr's VIP Digital Startup Program offers robust support for tech innovators
+  developing cloud-native and AI-driven solutions. Designed for startups that
+  have secured Series A through E funding, the program provides up to $100,000
+  in free credits for migration, long-term service discounts, executive
+  sponsorship, technical architecture reviews, and dedicated account management.
+  It also features events like the 'Cloud As You Are' series in Mexico City,
+  uniting the tech startup community to discuss cloud and AI trends.
+status: Active
+tags:
+  - cloud
+  - startup
+  - AI
+  - migration
+  - Latin America
+url: https://www.vultr.com/digital-startup-program
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes:
+  - title: Cloud As You Are Event
+    body: >-
+      An event featuring discussions with tech startup experts on current cloud
+      and AI trends in Mexico City.
+    source_url: https://www.vultr.com/events/cloud-as-you-are
+tiers:
+  - name: VIP Digital Advantage
+    intro: >-
+      Access up to $100,000 in free credits for migration and benefit from up to
+      35% long-term discounts alongside exclusive technical and executive
+      support.
+    max_value: 100000
+    url: https://www.vultr.com/digital-startup-program
+    benefits:
+      - $100,000 free credits for cloud migration
+      - Up to 35% long-term discounts on services
+      - Exclusive Vultr executive sponsorship
+      - Technical architecture review and consultation
+      - Dedicated account management and prioritized support
+    benefits_level: 3
+    duration:
+      - Free credits valid for 12 months
+      - Discounts apply long-term
+    eligibility:
+      - Secured Series A, B, C, D, or E financing
+      - >-
+        Provide contact details for senior technical executives (CTO or
+        equivalent)
+      - Provide contact details for cloud infrastructure lead
+      - Submit last 6 months of cloud compute invoices
+      - Agree to be publicly referenceable
+    effort_level: 3
+    steps_to_apply:
+      - name: Contact Sales Team
+        description: >-
+          Submit an application with the required documents and contact details
+          via Vultr’s sales channel or partnered startup events.
+        action: Apply Now
+        action_url: https://www.vultr.com/digital-startup-program
+faq:
+  - question: How do I apply?
+    answer: >-
+      Interested startups should contact Vultr’s sales team or engage through
+      partnered startup events and complete the required verification process.
+  - question: Can credits be used across all services?
+    answer: >-
+      Yes, the free credits apply to Cloud Compute, GPU instances, storage, and
+      managed Kubernetes.
+  - question: Is technical expertise required for migration?
+    answer: >-
+      No, the program includes technical architecture consultations to simplify
+      your migration process.
+  - question: Are non-Latin American startups eligible?
+    answer: >-
+      Yes, while emphasizing Latin America, the program is available globally
+      with access to all 32 Vultr data centers.
+  - question: What post-credit options exist?
+    answer: >-
+      Participants retain up to 35% long-term discounts and can access
+      additional ecosystem partnerships for sustained growth.
