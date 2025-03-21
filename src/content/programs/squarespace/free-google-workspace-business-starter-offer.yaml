@@ -22,7 +22,6 @@ tags:
   - email
   - productivity
   - collaboration
-  - cloud
 url: >-
   https://support.squarespace.com/hc/en-us/articles/206537337-Free-Google-Workspace-offer
 value_type: credits
@@ -42,7 +41,7 @@ tiers:
       - Access to professional email and collaboration tools
       - Includes 30 GB cloud storage and spam protection
       - Admin controls via Google Admin Console
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
@@ -53,7 +52,7 @@ tiers:
       - >-
         Not eligible if previously linked to Google Workspace or on
         Mobile/Personal plans
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Check Eligibility
         description: >-
