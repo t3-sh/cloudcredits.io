@@ -2,13 +2,13 @@ active: true
 name: Webflow
 short_name: Webflow
 slug: webflow
-color: '#333333'
+color: "#333333"
 url: http://www.webflow.com
 intro: >-
   A no-code design tool that lets users create professional websites with a CMS
   integrated, aimed at startups and developers.
 best_deal: Free CMS site plan for 12 months for startups
-video: ''
+video: ""
 tags:
   - no-code
   - web design

@@ -20,13 +20,11 @@ description: >-
   employees, and who are new to using Intercom.
 status: Active
 tags:
-  - customer service
-  - AI
-  - startups
-  - discount
+  - customer support
+  - ai
+  - agents
 url: https://www.intercom.com/early-stage
 value_type: discount
-currency: USD
 min_value: 25
 max_value: 90
 community_notes:
@@ -47,8 +45,8 @@ tiers:
       - Access to AI-enhanced Inbox and integrated ticketing
       - 10 Fin AI Agent resolutions per month
       - Proactive Support Plus with 500 messages/month
-      - 'Bundled seats: 6 Full, 6 Copilot, and 20 Lite'
-    benefits_level: 4
+      - "Bundled seats: 6 Full, 6 Copilot, and 20 Lite"
+    benefits_level: 2
     duration:
       - 1 year
     eligibility:
@@ -72,7 +70,7 @@ tiers:
       - Access to AI-enhanced Inbox
       - Continuation of Fin AI Agent resolutions
       - Proactive Support Plus included
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 1 year
     eligibility:
@@ -96,7 +94,7 @@ tiers:
       - Ongoing access to core features such as AI-enhanced Inbox
       - 10 Fin AI Agent resolutions per month remain included
       - Access to Proactive Support Plus
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 1 year
     eligibility:

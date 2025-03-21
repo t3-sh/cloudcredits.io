@@ -2,14 +2,14 @@ active: true
 name: ElevenLabs
 short_name: ElevenLabs
 slug: elevenlabs
-color: '#F6AD00'
+color: "#F6AD00"
 url: https://www.elevenlabs.io/grants
 intro: >-
   Build human-like voices into your new product or startup with a 3-month grant
   offering Business-tier subscription access. Get 11 million text characters per
   month, high-scale capacity, and early access to innovative features.
 best_deal: 3 months free Business-tier subscription
-video: ''
+video: ""
 tags:
   - ai
   - voice

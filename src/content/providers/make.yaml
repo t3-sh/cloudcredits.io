@@ -2,13 +2,13 @@ active: true
 name: Make
 short_name: Make
 slug: make
-color: '#FF5733'
+color: "#FF5733"
 url: https://www.make.com
 intro: >-
   A visual no-code automation platform empowering startups to streamline
   operations and scale efficiently.
 best_deal: Up to $1,100 in operational credits for startups
-video: ''
+video: ""
 tags:
   - automation
   - workflow

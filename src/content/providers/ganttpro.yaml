@@ -2,14 +2,14 @@ active: true
 name: GanttPRO
 short_name: GanttPRO
 slug: ganttpro
-color: '#347870'
+color: "#347870"
 url: https://www.ganttpro.com
 intro: >-
   An online project management tool offering interactive Gantt charts,
   collaborative workspaces, and resource management to streamline project
   planning and execution.
 best_deal: Up to $3,000 in credits for 6 months
-video: ''
+video: ""
 tags:
   - project management
   - collaboration

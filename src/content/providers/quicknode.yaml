@@ -2,13 +2,13 @@ active: true
 name: QuickNode
 short_name: QuickNode
 slug: quicknode
-color: '#00AEEF'
+color: "#00AEEF"
 url: https://www.quicknode.com
 intro: >-
   QuickNode is a blockchain development platform offering a wide range of APIs
   and tools, making it as easy as possible to build in Web3.
 best_deal: Up to $200K in RaaS credits for API usage
-video: ''
+video: ""
 tags:
   - blockchain
   - web3

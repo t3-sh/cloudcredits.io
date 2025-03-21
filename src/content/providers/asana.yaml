@@ -2,14 +2,14 @@ active: true
 name: Asana
 short_name: Asana
 slug: asana
-color: '#FC636B'
+color: "#FC636B"
 url: https://asana.com
 intro: >-
   Asana provides a centralized platform for startups to manage work, enhance
   collaboration, and drive efficiency from project management to investor
   reporting.
 best_deal: 12-month free Advanced plan access
-video: ''
+video: ""
 tags:
   - project management
   - collaboration

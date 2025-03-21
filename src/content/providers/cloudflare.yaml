@@ -2,13 +2,13 @@ active: true
 name: Cloudflare
 short_name: Cloudflare
 slug: cloudflare
-color: '#F38020'
+color: "#F38020"
 url: https://www.cloudflare.com
 intro: >-
   Cloudflare provides security, performance, and reliability services to help
   build a better Internet.
 best_deal: Up to $250,000 in credits for startups
-video: ''
+video: ""
 tags:
   - cloud
   - cybersecurity

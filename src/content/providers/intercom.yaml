@@ -2,15 +2,14 @@ active: true
 name: Intercom
 short_name: Intercom
 slug: intercom
-color: '#1F8DED'
+color: "#A4A4A9"
 url: https://www.intercom.com
 intro: >-
   Intercom offers an AI-first customer service platform designed to enhance
   customer interactions and support efficiency.
 best_deal: 90% discount for the first year
-video: ''
+video: ""
 tags:
-  - customer service
-  - AI
-  - startups
-  - discount
+  - customer support
+  - ai
+  - agents
