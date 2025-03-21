@@ -2,14 +2,12 @@ active: true
 name: Vultr
 short_name: Vultr
 slug: vultr
-color: '#007EC7'
+color: '#245CAD'
 url: https://www.vultr.com
 intro: >-
-  Global cloud infrastructure provider with advanced GPU capabilities and
-  flexible compute options.
-best_deal: $250 Free Credits for New Users
+  Global cloud computing provider offering high performance and cost-effective
+  infrastructure services.
+best_deal: Up to $100,000 credits for cloud migration
 video: ''
 tags:
   - cloud
-  - gpu
-  - global
