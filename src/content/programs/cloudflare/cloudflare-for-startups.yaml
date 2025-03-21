@@ -20,11 +20,12 @@ description: >-
   or alumni status from Cloudflare partner programs.
 status: Active
 tags:
-  - startups
   - cloud
-  - security
-  - scalability
-  - performance
+  - cybersecurity
+  - networking
+  - analytics
+  - cdn
+  - hosting
 url: https://www.cloudflare.com/forstartups/
 value_type: credits
 currency: USD
@@ -54,7 +55,7 @@ tiers:
       - Building a software-based product or service
       - Founded within the last 5 years
       - Valid website and email address
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Create Account
         description: Create a free Cloudflare account and add a valid credit card.
@@ -87,31 +88,6 @@ tiers:
         description: >-
           Apply for the R2 storage credits via the Cloudflare for Startups
           portal.
-        action: Apply Now
-        action_url: https://www.cloudflare.com/forstartups/
-  - name: Workers Launchpad Funding Program
-    intro: >-
-      Leverage Cloudflare Workers with access to funding opportunities, tools,
-      and community support.
-    max_value: 2000000000
-    url: https://www.cloudflare.com/forstartups/
-    benefits:
-      - Access to VC funding partnerships (up to $2B)
-      - Tools and community support
-      - Early access to beta products
-      - Priority email support
-    benefits_level: 3
-    duration:
-      - 1 year
-    eligibility:
-      - Active use of Cloudflare Workers
-      - Meeting general startup criteria
-    effort_level: 2
-    steps_to_apply:
-      - name: Submit Application
-        description: >-
-          Apply for the Workers Launchpad Funding Program through the Cloudflare
-          for Startups portal.
         action: Apply Now
         action_url: https://www.cloudflare.com/forstartups/
 faq:
