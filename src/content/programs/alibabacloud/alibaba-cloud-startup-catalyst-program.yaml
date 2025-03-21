@@ -23,10 +23,8 @@ description: >-
 status: Active
 tags:
   - cloud
-  - startup
   - infrastructure
   - asia
-  - credits
 url: https://www.alibabacloud.com/startup-catalyst
 value_type: credits
 currency: USD
@@ -50,7 +48,7 @@ tiers:
       - Dedicated cloud architect guidance
       - 1-year Academy membership with lab access
       - Featured placement on Alibaba Cloud Marketplace
-    benefits_level: 4
+    benefits_level: 3
     duration:
       - 1 year
     eligibility:
@@ -58,7 +56,7 @@ tiers:
       - Funded with a functioning website and company email
       - Working prototype required (ideation-stage excluded)
       - Scalable business model with international growth potential
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Apply for the Program
         description: Register and complete the form to apply via the program website.
