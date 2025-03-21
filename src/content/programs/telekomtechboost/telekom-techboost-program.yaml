@@ -1,0 +1,107 @@
+draft: false
+provider_slug: telekomtechboost
+title: Telekom TechBoost Program
+meta_title: Accelerate Growth with Telekom TechBoost
+intro: >-
+  Accelerate your cloud-based startup with Deutsche Telekom's TechBoost program,
+  offering up to €100,000 in Open Telekom Cloud credits, access to a vast B2B
+  network, and strategic support for sustained growth.
+description: >-
+  Telekom TechBoost is a comprehensive startup initiative by Deutsche Telekom
+  that supports cloud-based startups with market-ready solutions. The program
+  provides up to €100,000 in free credits for the GDPR-compliant Open Telekom
+  Cloud, ensuring secure and sustainable scalability. Startups gain access to a
+  large customer network, dedicated partnership managers, and the TechBoost
+  Connect matchmaking platform to connect with corporate challenges and
+  partners. Designed for both early-stage and scaling startups, the program
+  features dedicated tracks offering tailored benefits, mentorship, and
+  technical guidance.
+status: Active
+tags:
+  - cloud
+  - startup
+  - GDPR
+  - network
+  - sustainability
+url: https://techboost.telekom.com/?lang=en
+value_type: credits
+currency: EUR
+min_value: 0
+max_value: 100000
+community_notes:
+  - title: Sustainable Infrastructure
+    body: >-
+      The Open Telekom Cloud operates from energy-efficient, geo-redundant data
+      centers that reduce energy usage by 30% and are powered by 100% renewable
+      energy.
+    source_url: https://techboost.telekom.com/?lang=en
+  - title: GDPR Compliance
+    body: >-
+      TechBoost leverages the GDPR-compliant Open Telekom Cloud to ensure high
+      standards of data protection and privacy.
+    source_url: >-
+      https://www.telekom.de/ueber-das-unternehmen/datenschutz#fragen-und-antworten
+tiers:
+  - name: Seed Track
+    intro: >-
+      For early-stage cloud startups seeking initial infrastructure support and
+      market readiness.
+    max_value: 50000
+    url: https://techboost.telekom.com/?lang=en
+    benefits:
+      - Access to free Open Telekom Cloud credits
+      - Connectivity to Deutsche Telekom’s B2B customer network
+      - Tailored mentorship and technical support
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Early-stage cloud startups
+      - Market-ready product with initial traction
+      - Commit to collaborating on customer lead initiatives
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out the application form on the TechBoost portal to get started.
+        action: Apply Now
+        action_url: https://techboost.telekom.com/?lang=en
+  - name: Grow Track
+    intro: >-
+      For later-stage startups aiming to scale with enhanced sales support and
+      advanced cloud infrastructure benefits.
+    max_value: 100000
+    url: https://techboost.telekom.com/?lang=en
+    benefits:
+      - Up to €100,000 in Open Telekom Cloud credits
+      - Direct access to Deutsche Telekom’s expansive B2B network
+      - Dedicated partnership manager support
+      - Participation in TechBoost Connect matchmaking
+      - Opportunities for long-term strategic collaboration
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Scaling cloud startups with proven market success
+      - Established revenue and customer base
+      - Willing to collaborate on sales and customer lead initiatives
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply Online
+        description: >-
+          Complete the application on the TechBoost portal to join the Grow
+          Track.
+        action: Apply Now
+        action_url: https://techboost.telekom.com/?lang=en
+faq:
+  - question: How long is the program duration?
+    answer: >-
+      The program runs for 12 months, with potential extensions based on project
+      success.
+  - question: Can startups continue partnerships post-program?
+    answer: >-
+      Yes, successful collaborations may lead to ongoing mentorship and extended
+      customer engagements.
+  - question: How does data security work?
+    answer: >-
+      All data is hosted on the GDPR-compliant Open Telekom Cloud, ensuring high
+      standards of security and privacy.
