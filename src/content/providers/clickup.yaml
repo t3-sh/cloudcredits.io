@@ -2,13 +2,13 @@ active: true
 name: ClickUp
 short_name: ClickUp
 slug: clickup
-color: '#D95634'
+color: "#D95634"
 url: https://clickup.com
 intro: >-
   A productivity platform designed to help teams work smarter and achieve more
   with a range of tools and integrations.
 best_deal: $3,000 in ClickUp credits for startups
-video: ''
+video: ""
 tags:
   - productivity
   - enterprise

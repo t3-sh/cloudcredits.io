@@ -2,13 +2,13 @@ active: true
 name: Miro
 short_name: Miro
 slug: miro
-color: '#19AA9F'
+color: "#19AA9F"
 url: https://miro.com
 intro: >-
   Miro's Startup Program offers early-stage companies a comprehensive suite of
   collaboration and innovation tools to scale and succeed at speed.
 best_deal: $1,000-$1,500 credits for startups
-video: ''
+video: ""
 tags:
   - collaboration
   - design

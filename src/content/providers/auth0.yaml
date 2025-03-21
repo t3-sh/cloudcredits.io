@@ -2,13 +2,13 @@ active: true
 name: Auth0
 short_name: Auth0
 slug: auth0
-color: '#FFE25D'
+color: "#FFE25D"
 url: https://auth0.com
 intro: >-
   Provides authentication and authorization services for web, mobile, and legacy
   applications.
 best_deal: 1-year free access to the B2B Professional Plan
-video: ''
+video: ""
 tags:
   - authentication
   - cybersecurity
