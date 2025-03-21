@@ -1,0 +1,95 @@
+draft: false
+provider_slug: make
+title: Make Startup Program
+meta_title: Empower Your Startup with Automation Credits
+intro: >-
+  Unlock your startup's potential with free access to Make's visual no-code
+  automation engine and operational credits tailored to your growth stage.
+description: >-
+  The Make Startup Program offers tailored support for early-stage startups to
+  scale their operations through automation. Participants gain free access to
+  Make’s powerful visual automation platform to build and automate business
+  processes. The program provides two tiers: one offering 480,000 operations for
+  startups affiliated with approved accelerators, incubators, or VCs, and
+  another with 240,000 operations for bootstrapped startups. Additionally, it
+  includes priority technical support, collaboration tools, and integration into
+  Make’s network of mentors and investors.
+status: Active
+tags:
+  - automation
+  - no-code
+  - workflow
+url: https://www.make.com/startup-program
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 1000
+community_notes: []
+tiers:
+  - name: Partnered Startups
+    intro: >-
+      For startups affiliated with an approved accelerator, incubator, or VC,
+      offering enhanced operational credits.
+    max_value: 1000
+    url: https://www.make.com/startup-program/apply
+    benefits:
+      - 480,000 operations on Make Teams plan
+      - Free access to the no-code visual automation platform
+      - Priority technical support
+      - Access to Make’s network of investors and mentors
+      - Collaboration and team management tools
+    benefits_level: 2
+    duration:
+      - Until credits are exhausted
+    eligibility:
+      - Affiliated with an approved accelerator, incubator, or VC
+    effort_level: 2
+    steps_to_apply:
+      - name: Verify Investor Affiliation
+        description: >-
+          Provide details of your investor to confirm affiliation with Make's
+          approved partners.
+        action: Verify
+        action_url: https://www.make.com/startup-program/apply
+  - name: Bootstrapped Startups
+    intro: >-
+      For self-funded startups, offering essential operational credits with
+      access to core automation capabilities.
+    max_value: 500
+    url: https://www.make.com/startup-program/apply
+    benefits:
+      - 240,000 operations on Make Teams plan
+      - Free access to the no-code visual automation platform
+      - Priority technical support
+      - Basic collaboration tools
+    benefits_level: 2
+    duration:
+      - Until credits are exhausted
+    eligibility:
+      - Self-funded or bootstrapped startups
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the short eligibility form to qualify for operational
+          credits.
+        action: Apply Now
+        action_url: https://www.make.com/startup-program/apply
+faq:
+  - question: What if my investor isn’t part of Make’s network?
+    answer: >-
+      Bootstrapped startups still qualify for the 240k operations tier.
+      Additionally, startups affiliated with non-network investors may request
+      their investor to join Make’s network.
+  - question: How long do the credits last?
+    answer: >-
+      Credits are tied to the Teams plan and can be used until they are
+      exhausted.
+  - question: Is there ongoing support after application?
+    answer: >-
+      Yes, the program provides priority technical support and access to partner
+      resources throughout the startup’s journey.
+  - question: Can I upgrade my plan later?
+    answer: >-
+      Yes, startups can transition to higher-tier plans (Pro, Teams, or
+      Enterprise) as their automation needs grow.

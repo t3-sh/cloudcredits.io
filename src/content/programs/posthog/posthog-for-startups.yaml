@@ -18,9 +18,7 @@ description: >-
 status: Active
 tags:
   - analytics
-  - startups
-  - open source
-  - credits
+  - dev tools
 url: https://posthog.com/startups
 value_type: credits
 currency: USD

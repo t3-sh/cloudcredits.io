@@ -1,0 +1,15 @@
+active: true
+name: Squarespace
+short_name: Squarespace
+slug: squarespace
+color: "#008bff"
+url: https://www.squarespace.com
+intro: >-
+  Squarespace provides website building and hosting services with integrated
+  tools for commerce, marketing, and professional-grade website templates.
+best_deal: Free Year of Google Workspace Business Starter
+video: ""
+tags:
+  - website builder
+  - hosting
+  - commerce

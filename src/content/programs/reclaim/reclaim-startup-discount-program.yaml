@@ -1,0 +1,80 @@
+draft: false
+provider_slug: reclaim
+title: Reclaim Startup Discount Program
+meta_title: 20% Off Reclaim Plans for Startups
+intro: >-
+  Eligible startups receive 20% off any paid Reclaim plan (Starter and Business)
+  for 3 years, providing long-term cost savings and enhanced team scheduling.
+description: >-
+  Reclaim.ai offers a startup discount program that provides a 20% discount on
+  paid Reclaim plans for 3 consecutive years. This offer applies to both monthly
+  and annual subscriptions for Starter and Business plans, while Enterprise
+  plans are excluded and require separate negotiation. Eligible startups must
+  have a minimum of 2 user seats, be under 100 employees, have raised less than
+  $10M, and be founded within the last 5 years. Additionally, startups must
+  enable domain capture so that all employees auto-join their Reclaim team. The
+  application process involves submitting eligibility documentation via the
+  Startup Program application page, with responses typically provided within 2
+  business days.
+status: Active
+tags:
+  - scheduling
+  - productivity
+  - collaboration
+  - project management
+  - ai
+url: https://reclaim.ai/pricing/startup-discount
+value_type: discount
+max_value: 20
+community_notes: []
+tiers:
+  - name: Startup Discount Tier
+    intro: >-
+      Provides a flat 20% discount on Reclaim's Starter and Business plans for 3
+      years.
+    max_value: 20
+    url: https://reclaim.ai/pricing/startup-discount
+    benefits:
+      - 20% off on paid plans for 3 years
+      - Applies to both monthly and annual subscriptions
+      - Discount extends to all current and new team members
+      - Long-term cost savings
+    benefits_level: 1
+    duration:
+      - 3 years
+    eligibility:
+      - Minimum 2 user seats
+      - Under 100 employees
+      - Raised less than $10M
+      - Founded within last 5 years
+      - Must enable domain capture for automatic team enrollment
+    effort_level: 2
+    steps_to_apply:
+      - name: Visit Application Page
+        description: >-
+          Navigate to the Reclaim Startup Program application page to begin your
+          application.
+        action: Visit
+        action_url: https://reclaim.ai/pricing/startup-discount
+      - name: Submit Application
+        description: >-
+          Fill out the application form with documentation verifying eligibility
+          criteria and submit it.
+        action: Apply Now
+        action_url: https://reclaim.ai/pricing/startup-discount
+faq:
+  - question: What are the eligibility requirements?
+    answer: >-
+      Eligible startups must have at least 2 user seats, be under 100 employees,
+      have raised less than $10M, and be founded within the last 5 years.
+      Additionally, domain capture must be enabled to auto-add team members.
+  - question: How do I apply for the discount program?
+    answer: >-
+      Startups can apply by visiting the Startup Program application page,
+      submitting the required eligibility documentation, and waiting for the
+      review response, which is typically provided within 2 business days.
+  - question: Does the discount apply to existing subscriptions?
+    answer: >-
+      Yes, both new and existing Reclaim users are eligible. Once the discount
+      code is applied, it covers all current and future team members on the
+      account for 3 years.

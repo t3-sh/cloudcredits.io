@@ -3,15 +3,14 @@ name: Front
 short_name: Front
 slug: front
 url: https://front.com
-color: '#FF6F61'
+color: "#FF6F61"
 best_deal: 6 months free access to Growth plan
 intro: >-
   A customer operations platform that streamlines communication across channels,
   combining the efficiency of a help desk with the familiarity of email.
-video: ''
+video: ""
 tags:
   - customer support
-  - startups
   - automation
-  - AI
   - collaboration
+  - email

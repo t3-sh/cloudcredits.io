@@ -19,12 +19,19 @@
     "title": {
       "type": "string",
       "description": "The official name or title of the program.",
-      "examples": ["Scaleway Startup Program", "GitHub for Startups", "Notion for Startups"]
+      "examples": [
+        "Scaleway Startup Program",
+        "GitHub for Startups",
+        "Notion for Startups"
+      ]
     },
     "meta_title": {
       "type": "string",
       "description": "An optional meta title for SEO or marketing purposes.",
-      "examples": ["Cloud Support for Startups", "Up to 6 months free with unlimited AI - Over $6,000 in savings"]
+      "examples": [
+        "Cloud Support for Startups",
+        "Up to 6 months free with unlimited AI - Over $6,000 in savings"
+      ]
     },
     "intro": {
       "type": "string",
@@ -45,12 +52,7 @@
     },
     "status": {
       "type": "string",
-      "enum": [
-        "Active",
-        "Discontinued",
-        "Beta",
-        "Upcoming"
-      ],
+      "enum": ["Active", "Discontinued", "Beta", "Upcoming"],
       "default": "Active",
       "description": "Indicates whether the program is currently Active, has been Discontinued, is in Beta, or is Upcoming.",
       "examples": ["Active"]
@@ -81,20 +83,14 @@
     },
     "value_type": {
       "type": "string",
-      "enum": [
-        "credits",
-        "discount"
-      ],
+      "enum": ["credits", "discount"],
       "default": "credits",
       "description": "Specifies whether this program provides credits (monetary value) or a discount percentage.",
       "examples": ["credits", "discount"]
     },
     "currency": {
       "type": "string",
-      "enum": [
-        "USD",
-        "EUR"
-      ],
+      "enum": ["USD", "EUR"],
       "default": "USD",
       "description": "Currency code used if the program provides monetary credits or discounts (e.g., USD or EUR).",
       "examples": ["USD", "EUR"]
@@ -131,15 +127,9 @@
             "description": "An external link or source reference for further reading."
           }
         },
-        "required": [
-          "title",
-          "body",
-          "source_url"
-        ]
+        "required": ["title", "body", "source_url"]
       },
-      "examples": [
-        []
-      ]
+      "examples": [[]]
     },
     "tiers": {
       "type": "array",
@@ -151,7 +141,11 @@
           "name": {
             "type": "string",
             "description": "The official or descriptive name of this tier.",
-            "examples": ["Founders Program", "GitHub for Startups", "6 Months Free with Unlimited AI"]
+            "examples": [
+              "Founders Program",
+              "GitHub for Startups",
+              "6 Months Free with Unlimited AI"
+            ]
           },
           "intro": {
             "type": "string",
@@ -224,12 +218,7 @@
             "items": {
               "type": "string"
             },
-            "examples": [
-              ["1 year"],
-              ["6 months"],
-              ["12 months"],
-              ["3 months"]
-            ]
+            "examples": [["1 year"], ["6 months"], ["12 months"], ["3 months"]]
           },
           "eligibility": {
             "type": "array",
@@ -240,10 +229,7 @@
               "type": "string"
             },
             "examples": [
-              [
-                "Early-stage startups",
-                "Pre-revenue projects"
-              ],
+              ["Early-stage startups", "Pre-revenue projects"],
               [
                 "Outside funding (up to Series A)",
                 "New to GitHub Enterprise",
@@ -289,10 +275,7 @@
                   "description": "Optional URL to complete the step (e.g., a form or signup page)."
                 }
               },
-              "required": [
-                "name",
-                "description"
-              ]
+              "required": ["name", "description"]
             },
             "examples": [
               [
@@ -360,10 +343,7 @@
             "description": "The official or recommended answer to the question."
           }
         },
-        "required": [
-          "question",
-          "answer"
-        ]
+        "required": ["question", "answer"]
       },
       "examples": [
         [

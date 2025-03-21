@@ -1,0 +1,89 @@
+draft: false
+provider_slug: apollo
+title: Apollo for Startups
+meta_title: Apollo for Startups - Accelerate Your Growth
+intro: >-
+  Join Apollo for Startups to access discounted sales intelligence tools,
+  exclusive B2B data, and tailored growth resources designed for emerging
+  companies.
+description: >-
+  Apollo for Startups provides emerging companies with discounted access to
+  Apollo's advanced sales and marketing platform, including a 50% discount on
+  annual Basic/Professional plans for first-year subscribers. Participants gain
+  access to over 210M B2B contacts with 65+ filters, automated email campaigns,
+  CRM integrations, and robust analytics. The program also offers educational
+  webinars, Apollo Academy training, and dedicated support from a partnership
+  manager. Eligibility requires new Apollo customers with a valid corporate
+  email, affiliation with Apollo’s partner network, and 20 or fewer employees,
+  with the discount applicable to the first 5 user seats.
+status: Active
+tags:
+  - sales
+  - marketing
+  - b2b
+url: https://apollo.io/startups
+value_type: discount
+min_value: 50
+max_value: 50
+community_notes:
+  - title: Startup Community Impact
+    body: >-
+      Over 3,000 startups leverage Apollo for rapid growth and efficient
+      customer acquisition through exclusive resources and unmatched B2B data
+      access.
+    source_url: https://apollo.io/startups
+tiers:
+  - name: Apollo for Startups
+    intro: >-
+      Receive a 50% discount on annual Basic/Professional plans and gain access
+      to Apollo's comprehensive suite of go-to-market tools.
+    max_value: 50
+    url: https://apollo.io/startups
+    benefits:
+      - 50% discount on annual Basic/Professional plans
+      - Access to 210M+ B2B contacts and 65+ filters
+      - Educational webinars and Apollo Academy training
+      - Dedicated partnership manager support
+      - Exclusive access to a SaaS tool marketplace
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Startups with 20 or fewer employees
+      - New Apollo customers with a valid corporate email
+      - >-
+        Affiliated with Apollo’s partner network (VCs, accelerators, or startup
+        communities)
+      - Discount applies to first 5 user seats
+    effort_level: 3
+    steps_to_apply:
+      - name: Verify Eligibility
+        description: >-
+          Ensure your startup meets the criteria including employee count, valid
+          corporate domain, and approved partner affiliation.
+        action: Learn More
+        action_url: https://apollo.io/startups
+      - name: Submit Application
+        description: >-
+          Apply via Apollo's startup portal to claim your discount and access
+          growth resources.
+        action: Apply Now
+        action_url: https://apollo.io/startups
+faq:
+  - question: Who is eligible for the exclusive discount?
+    answer: >-
+      Eligible startups must be new Apollo customers with a valid corporate
+      email, have 20 or fewer employees, and be affiliated with an approved
+      startup ecosystem partner.
+  - question: What if my startup is not affiliated with a startup ecosystem partner?
+    answer: >-
+      Startups not currently affiliated can join a waitlist or encourage their
+      accelerator, VC, or community to become an Apollo partner.
+  - question: How can my startup community access this discount?
+    answer: >-
+      Startup communities can apply to become an Apollo partner, enabling them
+      to extend the exclusive discount to their members.
+  - question: Who can I contact for further assistance?
+    answer: >-
+      For additional support or inquiries, startups can reach out to Apollo's
+      team at startups@apollo.io.

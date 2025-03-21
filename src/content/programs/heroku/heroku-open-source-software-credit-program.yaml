@@ -1,0 +1,90 @@
+draft: false
+provider_slug: heroku
+title: Heroku Open Source Software Credit Program
+meta_title: Infrastructure Credits for Open Source Projects
+intro: >-
+  Receive monthly platform credits for 12 months designed to support open source
+  software projects hosted on Heroku.
+description: >-
+  The Heroku Open Source Software Credit Program is designed to support open
+  source projects by providing monthly platform credits over a 12-month period.
+  Credits, typically ranging from $25 to $500 USD per month, can be applied
+  exclusively to core Heroku services such as Dynos, Postgres, and Key-Value
+  Store. Any usage beyond the allocated credits is billed at standard rates to
+  the verified credit/debit card on file. Projects can reapply annually to
+  continue receiving support, ensuring that maintainers can focus on community
+  contributions rather than infrastructure concerns.
+status: Active
+tags:
+  - open source
+  - cloud
+  - hosting
+url: https://www.heroku.com/open-source-credit-program
+value_type: credits
+currency: USD
+min_value: 25
+max_value: 500
+community_notes:
+  - title: Annual Renewal
+    body: >-
+      Projects can reapply after completing the 12-month program to continue
+      receiving monthly credits.
+    source_url: https://www.heroku.com/open-source-credit-program
+  - title: Usage Limitation
+    body: >-
+      Credits can only be used for core Heroku services and do not extend to
+      paid third-party add-ons.
+    source_url: https://www.heroku.com/open-source-credit-program
+tiers:
+  - name: Heroku Open Source Software Credit
+    intro: >-
+      Approved open source projects receive a predetermined monthly credit
+      allocation on Heroku for 12 months.
+    max_value: 500
+    url: https://www.heroku.com/open-source-credit-program
+    benefits:
+      - Monthly platform credits for 12 months
+      - >-
+        Applicable on core Heroku services such as Dynos, Postgres, and
+        Key-Value Store
+      - Excess usage billed at standard rates
+      - Renewable annual program based on project needs
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Maintainer of an open source software project
+      - Project must run or intend to run on Heroku
+      - Active Heroku account with a valid credit/debit card
+      - Adherence to a Code of Conduct and standard open source license
+    effort_level: 2
+    steps_to_apply:
+      - name: Review Eligibility
+        description: >-
+          Ensure your project meets all eligibility criteria, including open
+          source maintenance, hosting on Heroku, and account verification.
+        action: Review
+        action_url: https://www.heroku.com/open-source-credit-program
+      - name: Submit Application
+        description: Complete the application form to receive your monthly credits.
+        action: Apply Now
+        action_url: https://www.heroku.com/open-source-credit-program
+faq:
+  - question: How do I qualify for the Heroku Open Source Software Credit Program?
+    answer: >-
+      You must be the maintainer of an open source project that runs or intends
+      to run on Heroku, and hold an active Heroku account verified with a valid
+      credit/debit card. Salesforce employees and government officials are not
+      eligible.
+  - question: When are applications reviewed?
+    answer: >-
+      Applications are reviewed on a monthly basis. For submissions after the
+      15th (March to December 2023), reviews will occur the following month.
+  - question: What happens if I exceed my monthly credit allocation?
+    answer: >-
+      Any usage exceeding the allocated credits will be charged at standard
+      rates to the credit card on file.
+  - question: Can I use the credits on a Heroku Teams account?
+    answer: Yes, credits can be applied to either personal or team Heroku accounts.
+  - question: Do unused credits roll over to the next month?
+    answer: No, any unused credits expire at the end of each month.

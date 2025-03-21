@@ -1,0 +1,108 @@
+draft: false
+provider_slug: cloudflare
+title: Cloudflare for Startups
+meta_title: Cloudflare for Startups - Scalable Cloud Credits and Support
+intro: >-
+  Cloudflare for Startups helps early-stage companies connect, protect, and
+  build scalable Internet and SaaS applications without the burden of high
+  costs.
+description: >-
+  Cloudflare's Startup Program offers substantial resources including up to
+  $250,000 in Flex Usage credits on advanced services such as Workers, Pages,
+  Queues, D1, and R2 storage (capped at $10,000). This enables startups to
+  leverage Cloudflare's global network, zero egress fees, and performance and
+  security tools. Participants also gain exclusive perks like early access to
+  beta products, priority email support, and the Workers Launchpad Funding
+  Program which connects them with funding opportunities through VC
+  partnerships. Eligibility requires building software/SaaS products, being
+  founded within the last 5 years, and having a valid website and email address.
+  Additional bonus eligibility includes participation in approved accelerators
+  or alumni status from Cloudflare partner programs.
+status: Active
+tags:
+  - cloud
+  - cybersecurity
+  - networking
+  - cdn
+  - hosting
+url: https://www.cloudflare.com/forstartups/
+value_type: credits
+currency: USD
+max_value: 250000
+community_notes:
+  - title: Global Reach
+    body: >-
+      Startups can deploy applications in over 275 cities worldwide with
+      state-of-the-art security and performance.
+    source_url: https://www.cloudflare.com/forstartups/
+tiers:
+  - name: Flex Usage
+    intro: >-
+      Scale with your needs. Account receives up to $250,000 in service credits
+      for advanced services, valid for 1 year.
+    max_value: 250000
+    url: https://www.cloudflare.com/forstartups/
+    benefits:
+      - Fast, secure customer experiences
+      - Automatic, near-infinite global scale
+      - Streamlined AI adoption
+      - Automated optimizations for faster development
+    benefits_level: 3
+    duration:
+      - 1 year
+    eligibility:
+      - Building a software-based product or service
+      - Founded within the last 5 years
+      - Valid website and email address
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Account
+        description: Create a free Cloudflare account and add a valid credit card.
+        action: Register
+        action_url: https://dash.cloudflare.com/sign-up
+      - name: Submit Application
+        description: >-
+          Fill out the startup application form with details about your product
+          and team.
+        action: Apply Now
+        action_url: https://www.cloudflare.com/forstartups/
+  - name: R2 Storage Credits
+    intro: >-
+      Access up to $10,000 in usage credits specifically for R2 storage during
+      the program period.
+    max_value: 10000
+    url: https://www.cloudflare.com/forstartups/
+    benefits:
+      - R2 storage credits
+      - Zero egress fees on stored data
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Building a software-based product or service
+      - Valid website and email address
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply for the R2 storage credits via the Cloudflare for Startups
+          portal.
+        action: Apply Now
+        action_url: https://www.cloudflare.com/forstartups/
+faq:
+  - question: What happens if my credits are not used within one year?
+    answer: >-
+      A representative will help transition out of the program if credits remain
+      unused after 1 year.
+  - question: What happens if my credits are exhausted before one year?
+    answer: >-
+      A representative will assist in deciding the next plan in case credits are
+      used up early.
+  - question: Are credits transferable or refundable?
+    answer: >-
+      Credits are non-transferable, non-refundable, and cannot be redeemed for
+      cash.
+  - question: How do I apply for the program?
+    answer: >-
+      Create a free Cloudflare account, complete the application form, and check
+      your inbox for account activation.

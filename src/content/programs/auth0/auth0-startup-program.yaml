@@ -1,7 +1,7 @@
 draft: false
 provider_slug: auth0
 title: Auth0 Startup Program
-meta_title: ''
+meta_title: ""
 intro: >-
   Provides a robust one-year free access to the B2B Professional Plan with
   advanced security measures and extensive integrations, enabling eligible
@@ -18,9 +18,8 @@ description: >-
 status: Active
 tags:
   - authentication
-  - security
-  - startup
-  - B2B
+  - cybersecurity
+  - b2b
 url: https://auth0.com/startup-program
 value_type: credits
 currency: USD

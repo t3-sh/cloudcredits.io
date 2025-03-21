@@ -1,0 +1,91 @@
+draft: false
+provider_slug: ganttpro
+title: GanttPRO Startup Program
+meta_title: Scale Your Startup with GanttPRO Credits
+intro: >-
+  The GanttPRO Startup Program offers eligible startups up to $3,000 in credits
+  for accessing its Business Plan and advanced project management tools,
+  enabling seamless team collaboration and efficient planning.
+description: >-
+  GanttPRO's Startup Program provides up to $3,000 in credits which can cover 6
+  months of the Business Plan subscription (valued at $19.99 per user per month
+  for a team of 25). The program helps startups leverage advanced features such
+  as workload management, risk and budget control, real-time collaboration, and
+  secure cloud storage. Eligibility criteria include being incorporated within 3
+  years, having a public website with a unique email domain, employing 30 or
+  fewer team members, and having no prior paid subscription or discounts with
+  GanttPRO. The application process involves verifying eligibility, submitting
+  the startup application form, and receiving credit upon approval.
+status: Active
+tags:
+  - project management
+  - collaboration
+  - productivity
+url: https://www.ganttpro.com/startup-program/
+value_type: credits
+currency: USD
+max_value: 3000
+community_notes:
+  - title: Trusted by Leading Companies
+    body: >-
+      GanttPRO is used by industry leaders such as SONY, Salesforce,
+      Booking.com, Vodafone, InVision, NASA, and Amway.
+    source_url: https://www.ganttpro.com/
+tiers:
+  - name: GanttPRO Startup Tier
+    intro: >-
+      Access up to $3,000 in credits for a 6-month subscription to GanttPRO's
+      Business Plan, unlocking advanced project management features.
+    max_value: 3000
+    url: https://www.ganttpro.com/startup-program/
+    benefits:
+      - Up to 6 months of free access to the Business Plan
+      - Advanced collaboration and task management tools
+      - Risk management and budget control
+      - Secure cloud storage with daily backups
+    benefits_level: 1
+    duration:
+      - 6 months
+    eligibility:
+      - Incorporated 3 years or less
+      - Public website with a unique email domain
+      - 30 or fewer employees
+      - No prior paid GanttPRO subscription
+      - Not undergone recent funding rounds or change of control
+    effort_level: 2
+    steps_to_apply:
+      - name: Verify Eligibility
+        description: >-
+          Confirm that your startup meets all eligibility criteria including
+          incorporation date, team size, and website requirements.
+        action: Review Criteria
+        action_url: https://www.ganttpro.com/startup-program/eligibility
+      - name: Submit Application
+        description: >-
+          Fill out the startup application form with your company details and
+          team information.
+        action: Apply Now
+        action_url: https://www.ganttpro.com/startup-program/application
+      - name: Receive Credits
+        description: >-
+          Upon approval, credits will be applied to your account for a 6-month
+          subscription.
+        action: Get Started
+        action_url: https://www.ganttpro.com/startup-program/
+faq:
+  - question: Who is eligible?
+    answer: >-
+      Eligible startups must be incorporated within the last 3 years, have a
+      public website with a unique email domain, employ 30 or fewer team
+      members, have raised no more than Series B funding, and have no prior paid
+      subscription to GanttPRO.
+  - question: What is $3,000 in credits worth?
+    answer: >-
+      It can cover 6 months of GanttPRO's Business Plan for a team of 25 at
+      $19.99 per user per month.
+  - question: Can credits be combined with other offers?
+    answer: >-
+      No, the credits cannot be combined with any other offers, discount codes,
+      or shared with third parties.
+  - question: How long are the credits valid?
+    answer: Credits are valid for 6 months from the date of activation.

@@ -1,0 +1,127 @@
+draft: false
+provider_slug: googleads
+title: Google Ads New Advertiser Promotion
+meta_title: Google Ads Promotional Offers for New Advertisers
+intro: >-
+  Google Ads offers new advertisers a selection of promotional offers to
+  jumpstart their first campaign with free ad credits tailored to their initial
+  spend.
+description: >-
+  Google Ads currently presents three promotional tiers that provide new
+  advertisers with free ad credits upon meeting the required spending within the
+  first 60 days. Depending on the selected offer, advertisers can receive $500,
+  $750, or $1,000 in ad credit. Credits appear in accounts within 35 days after
+  the qualifying spend and expire 60 days after issuance. Eligibility requires a
+  new Google Ads account with complete billing setup and adherence to Google Ads
+  policies. Note that some users have reported regional variations, with certain
+  accounts potentially receiving up to $1,500 in ad credits.
+status: Active
+tags:
+  - ads
+  - google
+  - marketing
+url: https://ads.google.com
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 1500
+community_notes:
+  - title: Regional Variations in Credit Tiers
+    body: >-
+      While standard tiers offer $500, $750, and $1,000 in ad credits, some
+      users have reported receiving up to $1,500 based on regional and
+      account-specific variations.
+    source_url: https://ads.google.com
+tiers:
+  - name: "Offer A: Starter Tier"
+    intro: Receive $500 in ad credit when spending $500 within the first 60 days.
+    max_value: 500
+    url: https://ads.google.com
+    benefits:
+      - Receive $500 in ad credits
+      - >-
+        Access to multiple ad formats including Search, Display, Video,
+        Shopping, and App
+      - Jumpstart your online marketing efforts
+    benefits_level: 1
+    duration:
+      - Credits expire 60 days after issuance
+    eligibility:
+      - New advertiser accounts only
+      - Complete payment setup
+      - Meet minimum spend of $500 within 60 days
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Google Ads Account
+        description: Sign up for a new Google Ads account to access the promotional offer.
+        action: Register
+        action_url: https://ads.google.com
+      - name: Complete Billing Setup
+        description: >-
+          Enter payment information and apply the promo code during billing
+          setup.
+        action: Apply Offer
+        action_url: https://ads.google.com
+  - name: "Offer B: Growth Tier"
+    intro: Receive $750 in ad credit when spending $1,000 within the first 60 days.
+    max_value: 750
+    url: https://ads.google.com
+    benefits:
+      - Receive $750 in ad credits
+      - Enhanced access to ad formats and targeting options
+      - Boost your campaign’s reach and performance
+    benefits_level: 2
+    duration:
+      - Credits expire 60 days after issuance
+    eligibility:
+      - New advertiser accounts only
+      - Complete payment setup
+      - Meet minimum spend of $1,000 within 60 days
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign up for Google Ads
+        description: Register to receive the promotional offer and set up your account.
+        action: Register
+        action_url: https://ads.google.com
+      - name: Enter Billing Info
+        description: Provide valid payment details and promo code to unlock the offer.
+        action: Apply Offer
+        action_url: https://ads.google.com
+  - name: "Offer C: Premium Tier"
+    intro: Receive $1,000 in ad credit when spending $1,500 within the first 60 days.
+    max_value: 1000
+    url: https://ads.google.com
+    benefits:
+      - Receive $1,000 in ad credits
+      - Priority support from Google Ads Experts
+      - Access advanced targeting and analytics tools
+    benefits_level: 3
+    duration:
+      - Credits expire 60 days after issuance
+    eligibility:
+      - New advertiser accounts only
+      - Complete payment setup
+      - Meet minimum spend of $1,500 within 60 days
+    effort_level: 3
+    steps_to_apply:
+      - name: Create Google Ads Account
+        description: Sign up for a new Google Ads account to claim the promotional offer.
+        action: Register
+        action_url: https://ads.google.com
+      - name: Complete Payment Setup
+        description: Enter billing details and redeem the promo code to activate the offer.
+        action: Apply Offer
+        action_url: https://ads.google.com
+faq:
+  - question: Who is eligible for the Google Ads promotion?
+    answer: >-
+      Only new advertiser accounts with no recent ad activity (last 14 days) and
+      a valid billing setup are eligible.
+  - question: How do I claim my promotional credit?
+    answer: >-
+      Sign up for a new Google Ads account, complete your billing setup, and
+      meet the minimum spend requirement within 60 days to claim your ad credit.
+  - question: When do the credits appear and expire?
+    answer: >-
+      Credits typically appear within 35 days after meeting the spending
+      requirements and expire 60 days after issuance.

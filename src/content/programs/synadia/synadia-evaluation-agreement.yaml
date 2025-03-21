@@ -1,0 +1,81 @@
+draft: false
+provider_slug: synadia
+title: Synadia Free Trial
+meta_title: 60-Day Free Trial of Synadia Platform
+intro: >-
+  The Synadia Evaluation Agreement provides a 60-day trial of the Synadia
+  Platform for internal evaluation purposes.
+description: >-
+  This evaluation program offers free access to the Synadia Platform, enabling
+  organizations to test enterprise messaging capabilities including high
+  availability, extended protocol support, and pre-release features.
+  Participants can evaluate the platform without any financial commitment while
+  providing direct feedback that helps shape its future development. The trial
+  is governed by strict confidentiality and usage restrictions as detailed in
+  the evaluation agreement.
+status: Active
+tags:
+  - free trial
+  - kubernetes
+  - dev tools
+url: https://synadia.com/evaluation
+value_type: discount
+max_value: 100
+community_notes:
+  - title: Rapid Adoption
+    body: >-
+      Historical data indicates 200% YoY adoption growth among trial
+      participants converting to paid services.
+    source_url: https://synadia.com/press
+tiers:
+  - name: Free Trial
+    intro: >-
+      Gain 60-day access to the full Synadia Platform for internal evaluation
+      with enterprise-grade messaging capabilities.
+    max_value: 100
+    url: https://synadia.com/evaluation
+    benefits:
+      - >-
+        Enterprise Features Access including high availability and extended
+        protocol support
+      - No financial commitment with a free trial period
+      - Direct product feedback opportunities to shape future development
+      - >-
+        Strict confidentiality and usage restrictions to protect intellectual
+        property
+    benefits_level: 1
+    duration:
+      - 60 days
+    eligibility:
+      - Must be an authorized organizational representative
+      - For internal evaluation purposes only
+      - Must comply with U.S. export control and anti-corruption laws
+    effort_level: 1
+    steps_to_apply:
+      - name: Accept Evaluation Agreement
+        description: >-
+          Review and consent to the evaluation agreement terms to activate the
+          trial.
+        action: I Accept
+        action_url: https://synadia.com/evaluation
+      - name: Start Free Trial
+        description: Click the free trial button to begin your 60-day evaluation period.
+        action: Start Trial
+        action_url: https://synadia.com/evaluation
+faq:
+  - question: Can trial configurations migrate to production?
+    answer: >-
+      No, trial configurations cannot be migrated to production; a separate
+      commercial agreement is required.
+  - question: Is benchmarking data shareable?
+    answer: >-
+      All performance data during the trial is considered Confidential
+      Information and must not be shared without written consent.
+  - question: Are third-party integrations permitted?
+    answer: >-
+      Third-party integrations require prior authorization from Synadia, and
+      unauthorized integrations may void liability protections.
+  - question: What happens to custom developments during the trial?
+    answer: >-
+      All intellectual property rights for any custom developments created
+      during the trial automatically vest in Synadia.

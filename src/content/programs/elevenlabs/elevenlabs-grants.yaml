@@ -1,0 +1,123 @@
+draft: false
+provider_slug: elevenlabs
+title: ElevenLabs Grants
+meta_title: ElevenLabs Grants - Build with Human-Like Voices
+intro: >-
+  Build human-like voices into your new product or startup with a 3-month grant
+  offering Business-tier subscription access. Get 11 million text characters per
+  month, high-scale capacity, and early access to innovative features.
+description: >-
+  The ElevenLabs Grants program provides comprehensive support for early-stage
+  companies integrating AI voice technology. Participants receive 3 months free
+  access to the Business-tier subscription, which includes 11,000,000 text
+  characters per month (totaling 33,000,000 characters) and over 200 hours of
+  AI-generated audio monthly. The program offers high-scale infrastructure,
+  enterprise-level capacity, and early access to new features such as
+  multilingual support and dubbing tools. It is designed for startups with ≤25
+  employees in early stages (pre-seed to Series A) and welcomes global
+  applicants. After the grant period, startups can migrate to an enterprise plan
+  with special pricing, continue with standard paid plans, or cancel without
+  penalty.
+status: Active
+tags:
+  - ai
+  - voice
+  - agents
+  - customer support
+url: https://www.elevenlabs.io/grants
+value_type: discount
+max_value: 100
+community_notes: []
+tiers:
+  - name: ElevenLabs Grants Tier
+    intro: >-
+      Receive 3 months free access to the Business-tier subscription with 11
+      million text characters per month, high-scale capacity, and early access
+      to new features.
+    max_value: 100
+    url: https://www.elevenlabs.io/grants
+    benefits:
+      - 3 months free Business-tier subscription
+      - 11 million text characters per month
+      - High-scale infrastructure for testing and launch
+      - Early access to new features
+      - Enterprise-level support
+    benefits_level: 2
+    duration:
+      - 3 months
+    eligibility:
+      - Startups with ≤25 employees
+      - Early-stage companies (pre-seed to Series A)
+      - Projects integrating human-like AI voices
+      - Global applicants accepted
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the online form with details about your product, team, and
+          growth expectations.
+        action: Apply now
+        action_url: https://www.elevenlabs.io/grants
+      - name: Notification of Acceptance
+        description: Receive notification within one week if your application is approved.
+      - name: Start Building
+        description: >-
+          Once approved, the grant credits are applied to your account to begin
+          integrating ElevenLabs voice technology.
+faq:
+  - question: What are the eligibility requirements for grants?
+    answer: >-
+      Applicants must be startups with ≤25 employees, in early stages (pre-seed
+      to Series A), and integrating human-like AI voices into their core product
+      features.
+  - question: What are ElevenLabs Grants?
+    answer: >-
+      They are non-cash credits offering 3 months free access to ElevenLabs'
+      Business-tier subscription for building, testing, and launching
+      voice-enabled products.
+  - question: What are the specific requirements to qualify for the grants?
+    answer: >-
+      Startups must focus on integrating human-like AI voices, have a small team
+      (≤25 employees), and be in an early stage of development. There are no
+      geographic restrictions.
+  - question: Is there any specific deadline to apply?
+    answer: No, applications are accepted on a rolling basis with no fixed deadline.
+  - question: What happens after the three month duration of my grant?
+    answer: >-
+      After 3 months, participants may transition to an enterprise plan with
+      special pricing, continue with standard paid plans, or cancel without
+      penalty.
+  - question: How do I apply for the grants?
+    answer: >-
+      Submit an online application providing product details, team information,
+      and growth expectations.
+  - question: What happens if I get a grant?
+    answer: >-
+      If accepted, the grant credits are applied to your account and you receive
+      technical onboarding support to integrate the service.
+  - question: Can I organize a call to discuss my product or project?
+    answer: >-
+      Yes, you can request a call to discuss your product or project through
+      ElevenLabs' support channels.
+  - question: Do you sign NDAs before an application is submitted?
+    answer: >-
+      Typically, NDAs are not signed prior to the application submission
+      process.
+  - question: What happens if I need more text characters?
+    answer: >-
+      Additional usage beyond the grant allotment is available through standard
+      paid plans or by transitioning to an enterprise plan.
+  - question: >-
+      Can I upgrade to another plan if I use more content than the grant
+      includes?
+    answer: >-
+      Yes, startups have the option to upgrade to another plan after the grant
+      period ends.
+  - question: Why do you offer text character grants instead of cash grants?
+    answer: >-
+      The program is designed to provide direct access to ElevenLabs' platform,
+      ensuring startups experience and integrate the technology firsthand.
+  - question: Can I exchange or resell my text characters for cash?
+    answer: >-
+      No, the text character credits are non-transferable and cannot be
+      exchanged or resold.

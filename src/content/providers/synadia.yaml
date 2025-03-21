@@ -1,0 +1,15 @@
+active: true
+name: Synadia
+short_name: Synadia
+slug: synadia
+color: "#FF9900"
+url: https://synadia.com
+intro: >-
+  Provider of NATS, a high-performance messaging system for cloud native
+  applications.
+best_deal: 60-Day Free Trial of Synadia Platform
+video: ""
+tags:
+  - free trial
+  - kubernetes
+  - dev tools

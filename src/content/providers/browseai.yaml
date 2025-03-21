@@ -1,0 +1,15 @@
+active: true
+name: Browse AI
+short_name: Browse AI
+slug: browseai
+color: "#4A90E2"
+url: https://www.browse.ai/startup-program
+intro: >-
+  Empowering startups with 20% off annual plans, enterprise-grade security, and
+  AI-driven web data extraction tools.
+best_deal: 20% off annual plans
+video: ""
+tags:
+  - no-code
+  - scraping
+  - ai

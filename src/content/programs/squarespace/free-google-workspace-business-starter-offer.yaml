@@ -1,0 +1,85 @@
+draft: false
+provider_slug: squarespace
+title: Free Google Workspace Business Starter Offer
+meta_title: Free Year of Google Workspace Business Starter Plan – Squarespace
+intro: >-
+  Squarespace offers a free year of the Google Workspace Business Starter plan
+  for eligible users, providing professional email, collaboration tools, and
+  cloud storage.
+description: >-
+  This program provides eligible Squarespace users with one free custom email
+  address under the Google Workspace Business Starter plan for 12 months. The
+  offer is available to users on eligible Squarespace plans (Core, Plus,
+  Advanced, Business, Commerce Basic, or Commerce Advanced) and excludes Mobile
+  start and Personal website plans. Eligibility is confirmed via the Google
+  Workspace panel where a 'Free Google Workspace Inbox' indicator appears. After
+  the free year, the plan renews at standard rates ($6/month for annual billing
+  or $8.40/month for monthly billing) unless auto-renew is disabled. Additional
+  users may be added at full price. Users should follow the guided steps in
+  their Squarespace dashboard to upgrade their plan and sign up for the offer.
+status: Active
+tags:
+  - email
+  - productivity
+  - collaboration
+url: >-
+  https://support.squarespace.com/hc/en-us/articles/206537337-Free-Google-Workspace-offer
+value_type: credits
+currency: USD
+max_value: 72
+community_notes: []
+tiers:
+  - name: Business Starter
+    intro: >-
+      Receive one free custom email address with Google Workspace Business
+      Starter features for 12 months.
+    max_value: 72
+    url: >-
+      https://support.squarespace.com/hc/en-us/articles/206537337-Free-Google-Workspace-offer
+    benefits:
+      - One free custom email address
+      - Access to professional email and collaboration tools
+      - Includes 30 GB cloud storage and spam protection
+      - Admin controls via Google Admin Console
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - >-
+        Squarespace plans: Core, Plus, Advanced, Business, Commerce Basic, or
+        Commerce Advanced
+      - Domain must be hosted or connected via Squarespace
+      - >-
+        Not eligible if previously linked to Google Workspace or on
+        Mobile/Personal plans
+    effort_level: 2
+    steps_to_apply:
+      - name: Check Eligibility
+        description: >-
+          Confirm your website is on an eligible Squarespace plan and verify the
+          'Free Google Workspace Inbox' appears in the checkout.
+        action: Review Requirements
+        action_url: >-
+          https://support.squarespace.com/hc/en-us/articles/206537337-Free-Google-Workspace-offer
+      - name: Sign Up
+        description: >-
+          Navigate to Settings → Google Workspace, select the Business Starter
+          plan with your preferred billing cycle, and complete the signup
+          process.
+        action: Sign Up
+        action_url: >-
+          https://support.squarespace.com/hc/en-us/articles/206537337-Free-Google-Workspace-offer
+faq:
+  - question: What happens after the free year?
+    answer: >-
+      After the first year, the account renews at standard rates ($6/month for
+      annual billing or $8.40/month for monthly billing) unless auto-renew is
+      disabled.
+  - question: How do I check if I'm eligible?
+    answer: >-
+      Eligibility can be confirmed in the Squarespace dashboard by checking the
+      Google Workspace panel for the 'Free Google Workspace Inbox' indicator.
+  - question: Can additional users be added?
+    answer: >-
+      The offer includes one free email address per website; additional users
+      are charged at the full price.

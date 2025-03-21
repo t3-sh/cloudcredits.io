@@ -1,0 +1,95 @@
+draft: false
+provider_slug: jetbrains
+title: JetBrains Startup Program
+meta_title: >-
+  JetBrains Startup Program - Empowering Startups with Discounted Developer
+  Tools
+intro: >-
+  JetBrains offers startups an exclusive 50% discount on its suite of developer
+  tools, providing long-term access and support to accelerate innovation.
+description: >-
+  JetBrains supports startups through two primary programs. The Startup Program
+  provides a 50% discount on JetBrains IDEs, team tools, and AI Assistant Pro
+  licenses for up to 10 users over 5 years, available to privately held
+  companies founded within the last 5 years with a verifiable online presence.
+  Additionally, the Incubators and Accelerators Program offers incubator-led
+  startups 6 months of free access to JetBrains tools and Space paid plan
+  upgrades, followed by the standard 50% discount, along with 24/7 priority
+  support.
+status: Active
+tags:
+  - dev tools
+url: https://www.jetbrains.com/startups/
+value_type: discount
+currency: USD
+min_value: 50
+max_value: 100
+community_notes: []
+tiers:
+  - name: JetBrains Startup Program
+    intro: >-
+      Provides a 50% discount on JetBrains IDEs, team tools, and AI Assistant
+      Pro licenses for up to 10 users over 5 years.
+    max_value: 50
+    url: https://www.jetbrains.com/startups/
+    benefits:
+      - 50% discount on JetBrains IDEs and team tools
+      - Access for up to 10 users
+      - Long-term discount available for 5 years
+      - Global availability in 113 countries
+      - Dedicated technical support and networking events
+    benefits_level: 2
+    duration:
+      - 5 years
+    eligibility:
+      - Privately held company
+      - Founded within the last 5 years
+      - Verifiable online presence
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply via the JetBrains Startup page using the online application
+          form.
+        action: Apply Now
+        action_url: https://www.jetbrains.com/startups/
+  - name: Incubators and Accelerators Program
+    intro: >-
+      Offers incubator-led startups 6 months of free access to JetBrains tools
+      and Space plan upgrades, followed by a standard 50% discount.
+    max_value: 100
+    url: https://www.jetbrains.com/company/incubators/apply/
+    benefits:
+      - 6 months free access to JetBrains tools
+      - Free upgrades to Space paid plans
+      - 24/7 priority technical support
+      - Standard 50% discount after free period
+    benefits_level: 2
+    duration:
+      - 6 months free, then 5 years discount
+    eligibility:
+      - Affiliated with a partnering incubator or accelerator
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply via Partner Portal
+        description: >-
+          Incubators or accelerators can submit their application using the
+          JetBrains partner portal.
+        action: Apply Now
+        action_url: https://www.jetbrains.com/company/incubators/apply/
+faq:
+  - question: What is the JetBrains Startup Program?
+    answer: >-
+      It provides eligible startups with a 50% discount on JetBrains IDEs, team
+      tools, and AI Assistant Pro licenses for up to 10 users over 5 years along
+      with dedicated support.
+  - question: Who qualifies for the program?
+    answer: >-
+      Startups must be privately held, founded within the last 5 years, and have
+      a verifiable online presence.
+  - question: How do incubator-affiliated startups benefit?
+    answer: >-
+      They receive 6 months of free access to JetBrains tools and Space plan
+      upgrades, after which they enjoy the standard 50% discount.
+  - question: How long does the application process take?
+    answer: Applications typically process within 2-3 business days.

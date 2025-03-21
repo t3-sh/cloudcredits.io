@@ -1,0 +1,13 @@
+active: true
+name: JetBrains
+short_name: JetBrains
+slug: jetbrains
+color: "#0088CC"
+url: https://www.jetbrains.com
+intro: >-
+  JetBrains offers developer tools and IDEs designed to enhance productivity and
+  streamline development workflows.
+best_deal: 6 months free, then 50% discount
+video: ""
+tags:
+  - dev tools

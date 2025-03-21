@@ -1,0 +1,65 @@
+draft: false
+provider_slug: neon
+title: Neon YC Startup Deal
+meta_title: Neon Credits for YC Startups
+intro: >-
+  Y Combinator startups can claim $100k worth of Neon credits for their first
+  year with a competitor match guarantee.
+description: >-
+  Neon offers a special credit program exclusively for Y Combinator startups,
+  providing $100k in cloud credits for the first year. The program also includes
+  a guarantee to match any competing offer, ensuring that startups always
+  receive the best deal. Leveraging its serverless database platform, Neon
+  delivers rapid provisioning, effortless branch management, and integrated
+  CI/CD support for testing schema migrations—features that help startups
+  accelerate development velocity. Success stories like Topo.io (W24)
+  demonstrate the platform’s potential to drive innovation and efficiency.
+status: Active
+tags:
+  - database
+  - serverless
+  - cloud
+url: https://neon.tech/startups
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes: []
+tiers:
+  - name: YC Startup Tier
+    intro: >-
+      Claim up to $100k Neon credits for the first year with a guarantee to
+      match any competitor's offer.
+    max_value: 100000
+    url: https://neon.tech/startups
+    benefits:
+      - Up to $100k in cloud credits for the first year
+      - Competitor offer matching guarantee
+      - Rapid provisioning of serverless databases
+      - Isolated development branches for efficient onboarding
+      - Integrated CI/CD support for schema migration testing
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Y Combinator startups
+    effort_level: 4
+    steps_to_apply:
+      - name: Submit Email
+        description: >-
+          Provide your contact information by submitting your email via the
+          application form.
+        action: Submit
+        action_url: https://neon.tech/apply
+faq:
+  - question: Who is eligible for the Neon YC Startup Deal?
+    answer: >-
+      Only Y Combinator startups are eligible to claim $100k worth of Neon
+      credits for the first year.
+  - question: What happens if I find a better offer?
+    answer: >-
+      Neon will match any competitor's offer to ensure the best deal for
+      eligible startups.
+  - question: How do I apply for the program?
+    answer: >-
+      Simply submit your email via the application form available on the Neon
+      website.

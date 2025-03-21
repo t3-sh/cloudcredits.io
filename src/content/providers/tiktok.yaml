@@ -2,14 +2,14 @@ active: true
 name: TikTok
 short_name: TikTok
 slug: tiktok
-color: '#000000'
+color: "#000000"
 url: https://www.tiktok.com
 intro: >-
   A leading social media platform for short-form mobile videos, offering
   innovative advertising solutions for businesses.
 best_deal: Up to $1,500 in matching ad credits
-video: ''
+video: ""
 tags:
-  - social media
-  - advertising
+  - social
   - marketing
+  - ads
