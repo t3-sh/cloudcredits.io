@@ -20,8 +20,7 @@ status: Active
 tags:
   - search
   - discovery
-  - startup
-  - SaaS
+  - dev tools
 url: https://www.algolia.com/startup-program/
 value_type: credits
 currency: USD
@@ -47,7 +46,7 @@ tiers:
       - Less than 3 years old
       - Less than $5M in funding
       - New Algolia customers only
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Submit Application Email
         description: >-
