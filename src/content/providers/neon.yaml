@@ -1,0 +1,16 @@
+active: true
+name: Neon
+short_name: Neon
+slug: neon
+url: https://neon.tech
+color: '#00FF00'
+best_deal: $100k in Neon credits for YC startups
+intro: >-
+  Neon offers serverless PostgreSQL databases with features like rapid
+  provisioning, branching, and integrated CI/CD support.
+video: ''
+tags:
+  - database
+  - serverless
+  - cloud
+  - startup
