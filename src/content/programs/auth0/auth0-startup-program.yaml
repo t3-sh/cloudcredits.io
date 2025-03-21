@@ -1,0 +1,101 @@
+draft: false
+provider_slug: auth0
+title: Auth0 Startup Program
+meta_title: ''
+intro: >-
+  Provides a robust one-year free access to the B2B Professional Plan with
+  advanced security measures and extensive integrations, enabling eligible
+  startups to build enterprise-grade authentication systems without upfront
+  costs.
+description: >-
+  Auth0's Startup Program offers startups the opportunity to leverage the full
+  B2B Professional Plan for 12 months, featuring 100,000 monthly active users,
+  enterprise multi-factor authentication, breached password detection, and over
+  50 integrations. It supports growth with pre-built login flows, customizable
+  interfaces, and priority email support, saving an estimated $9,000 per year in
+  infrastructure costs. After the program, accounts downgrade to a Free Plan
+  with limited features.
+status: Active
+tags:
+  - authentication
+  - security
+  - startup
+  - B2B
+url: https://auth0.com/startup-program
+value_type: credits
+currency: USD
+min_value: 0
+max_value: 9000
+community_notes: []
+tiers:
+  - name: Startup Program Tier
+    intro: >-
+      Provides one-year free access to the B2B Professional Plan with full
+      features including 100,000 MAUs, advanced security, and extensive
+      integrations.
+    max_value: 9000
+    url: https://auth0.com/startup-program
+    benefits:
+      - 100,000 monthly active users
+      - Enterprise MFA and advanced security features
+      - 50+ social/identity provider integrations
+      - Unlimited organizations and admins
+      - Priority email support during the free year
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Venture-backed with ≤$5M total funding
+      - Annual recurring revenue < $1M
+      - Incorporated ≤2 years ago
+      - Not an existing Auth0 or Okta paying customer
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply through Auth0’s portal with required funding and revenue
+          documentation.
+        action: Apply Now
+        action_url: https://auth0.com/startup-program/apply
+  - name: Free Tier
+    intro: >-
+      For startups not qualifying for the Startup Program, provides a free tier
+      with 25,000 monthly active users and basic authentication features.
+    max_value: 0
+    url: https://auth0.com/startup-program
+    benefits:
+      - 25,000 monthly active users
+      - Basic authentication features
+      - Standard support
+    benefits_level: 1
+    duration:
+      - Ongoing
+    eligibility:
+      - Does not meet Startup Program eligibility criteria
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: Create an Auth0 account to access the free tier.
+        action: Sign Up
+        action_url: https://auth0.com/signup
+faq:
+  - question: What happens after the 1-year period?
+    answer: >-
+      Accounts automatically downgrade to the Free Plan (limited to 25k MAUs and
+      basic features). Paid plans from $35/month retain premium features.
+  - question: Can I extend the free period?
+    answer: >-
+      No, there are no extensions. Companies must upgrade to a paid or free tier
+      after 12 months.
+  - question: How does program acceptance work?
+    answer: >-
+      Applications are reviewed within 5-7 business days, with onboarding
+      support provided to approved companies.
+  - question: Is technical help included?
+    answer: >-
+      Technical support is limited to email during the free year;
+      enterprise-level support is available with paid plans.
+  - question: What if my startup grows mid-program?
+    answer: >-
+      If your growth leads to exceeding the eligibility thresholds, an early
+      re-evaluation may occur.
