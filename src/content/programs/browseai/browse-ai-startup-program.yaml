@@ -1,0 +1,85 @@
+draft: false
+provider_slug: browseai
+title: Browse AI Startup Program
+meta_title: Browse AI Startup Program - Scale Your Web Data Pipelines
+intro: >-
+  Join the Browse AI startup program to save 20% on annual plans and build
+  scalable, no-code web data pipelines in minutes. The program empowers startups
+  to extract data from any website with enterprise-grade security and AI-powered
+  monitoring.
+description: >-
+  Browse AI's startup program offers tailored solutions for early-stage
+  companies that need to transform websites into structured data pipelines
+  without coding. The program delivers a 20% discount on annual plans, along
+  with enterprise-level benefits including SOC II certified security, AI-powered
+  monitoring, bulk data extraction, and prebuilt templates for common use cases
+  such as competitor analysis, lead generation, and market research.
+status: Active
+tags:
+  - web data
+  - no-code
+  - scraping
+  - API
+  - startups
+url: https://www.browse.ai/startup-program
+value_type: discount
+currency: USD
+min_value: 20
+max_value: 20
+community_notes:
+  - title: Trusted by 500,000+ Users
+    body: >-
+      Browse AI is trusted by over 500,000 individuals and teams worldwide for
+      reliable web data extraction.
+    source_url: https://www.browse.ai
+tiers:
+  - name: Startup Discount Tier
+    intro: >-
+      Eligible startups receive a 20% discount on annual plans along with
+      enterprise-grade security, AI-powered monitoring, and no-code data
+      extraction tools.
+    max_value: 20
+    url: https://www.browse.ai/startup-program
+    benefits:
+      - 20% discount on annual plans
+      - No-code data extraction from any website
+      - Enterprise-grade security (SOC II certified)
+      - AI-powered change detection
+      - Access to 7,000+ integrations
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Active development status
+      - Minimum $500K funding
+      - >-
+        Clear data needs with at least 6 target websites and 10k+ monthly data
+        rows
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the online application form with your company details and
+          data requirements.
+        action: Apply Now
+        action_url: https://www.browse.ai/startup-program/apply
+      - name: Attend Onboarding
+        description: >-
+          Participate in a dedicated onboarding session to set up your web data
+          pipelines.
+        action: Schedule Onboarding
+        action_url: https://www.browse.ai/startup-program/onboarding
+faq:
+  - question: What does the Browse AI Startup Program offer?
+    answer: >-
+      The program offers a 20% discount on annual plans, enabling startups to
+      build scalable, no-code web data pipelines with enterprise-grade security
+      and AI-powered monitoring.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligible startups must demonstrate active development, have a minimum of
+      $500K in funding, and possess clear data extraction requirements.
+  - question: How long does the onboarding process take?
+    answer: >-
+      The onboarding process is typically completed within 2-3 business days
+      after application submission.
