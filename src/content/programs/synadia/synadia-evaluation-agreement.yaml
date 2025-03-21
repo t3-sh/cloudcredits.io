@@ -1,6 +1,6 @@
 draft: false
 provider_slug: synadia
-title: Synadia Evaluation Agreement
+title: Synadia Free Trial
 meta_title: 60-Day Free Trial of Synadia Platform
 intro: >-
   The Synadia Evaluation Agreement provides a 60-day trial of the Synadia
@@ -15,16 +15,12 @@ description: >-
   the evaluation agreement.
 status: Active
 tags:
-  - trial
-  - evaluation
-  - messaging
-  - enterprise
-  - nats
+  - free trial
+  - kubernetes
+  - dev tools
 url: https://synadia.com/evaluation
-value_type: credits
-currency: USD
-min_value: 0
-max_value: 0
+value_type: discount
+max_value: 100
 community_notes:
   - title: Rapid Adoption
     body: >-
@@ -36,7 +32,7 @@ tiers:
     intro: >-
       Gain 60-day access to the full Synadia Platform for internal evaluation
       with enterprise-grade messaging capabilities.
-    max_value: 0
+    max_value: 100
     url: https://synadia.com/evaluation
     benefits:
       - >-
@@ -47,14 +43,14 @@ tiers:
       - >-
         Strict confidentiality and usage restrictions to protect intellectual
         property
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 60 days
     eligibility:
       - Must be an authorized organizational representative
       - For internal evaluation purposes only
       - Must comply with U.S. export control and anti-corruption laws
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Accept Evaluation Agreement
         description: >-

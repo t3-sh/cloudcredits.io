@@ -16,10 +16,9 @@ description: >-
   before initiating any Miro trial subscription.
 status: Active
 tags:
-  - startup
   - collaboration
   - design
-  - innovation
+  - project management
 url: https://miro.com/startups
 value_type: credits
 currency: USD
@@ -38,7 +37,7 @@ tiers:
       - Advanced collaboration and design tools
       - Training resources via Miro Academy
       - Exclusive community networking events
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 6 months
     eligibility:
@@ -47,7 +46,7 @@ tiers:
       - Employee count ≤ 30
       - Not a service/consulting firm
       - Apply before starting a Miro trial
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Confirm Eligibility
         description: >-
@@ -70,7 +69,7 @@ tiers:
       - Access to premium templates and integrations
       - Priority support and onboarding
       - Exclusive events with industry experts
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 6 months
     eligibility:
@@ -79,7 +78,7 @@ tiers:
       - Total funding ≤ $10M
       - Employee count ≤ 30
       - Apply before starting a Miro trial
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Confirm Eligibility
         description: >-
