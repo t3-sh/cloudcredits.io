@@ -1,0 +1,15 @@
+active: true
+name: Apollo
+short_name: Apollo
+slug: apollo
+color: '#3751FF'
+url: https://apollo.io
+intro: >-
+  Advanced sales and marketing platform offering B2B data, CRM integrations, and
+  automated campaigns.
+best_deal: 50% discount on annual Basic/Professional plans
+video: ''
+tags:
+  - sales
+  - marketing
+  - B2B
