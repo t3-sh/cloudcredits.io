@@ -18,13 +18,13 @@ description: >-
   business days.
 status: Active
 tags:
-  - startup
-  - discount
   - scheduling
   - productivity
+  - collaboration
+  - project management
+  - ai
 url: https://reclaim.ai/pricing/startup-discount
 value_type: discount
-currency: USD
 max_value: 20
 community_notes: []
 tiers:
