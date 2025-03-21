@@ -16,15 +16,14 @@ description: >-
   flexible platform, saving eligible startups approximately $1,000.
 status: Active
 tags:
-  - startup
   - productivity
   - collaboration
   - no-code
-  - automation
+  - docs
+  - project management
 url: https://coda.io/startups
-value_type: credits
-currency: USD
-max_value: 1000
+value_type: discount
+max_value: 100
 community_notes:
   - title: Testimonial from Jamie Shostak
     body: >-
@@ -42,7 +41,7 @@ tiers:
       Provides startups with a free Team plan for 6 months, normally priced at
       $36/user/month, featuring unlimited AI capabilities and premium features
       to streamline operations.
-    max_value: 1000
+    max_value: 100
     url: https://coda.io/startups
     benefits:
       - 6-month free access to the Team plan
@@ -50,7 +49,7 @@ tiers:
       - Access to over 50,000 pre-built templates
       - Integration with various tools via Packs and Zapier
       - All-in-one customizable workspace
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 6 months
     eligibility:
