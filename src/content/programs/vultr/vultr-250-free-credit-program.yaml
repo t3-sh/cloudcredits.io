@@ -20,9 +20,6 @@ description: >-
 status: Active
 tags:
   - cloud
-  - credits
-  - gpu
-  - global
 url: https://www.vultr.com
 value_type: credits
 currency: USD
@@ -52,21 +49,17 @@ tiers:
       - >-
         Enterprise-grade features like backups, snapshots, firewalls, and DDoS
         protection
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 365 days
     eligibility:
       - New customers only
       - Valid email and phone number required
-      - >-
-        Password must be at least 10 characters with 1 uppercase, 1 lowercase,
-        and 1 number
     effort_level: 1
     steps_to_apply:
       - name: Create Free Account
         description: >-
-          Register a new Vultr account to claim the $250 free credits. Ensure
-          you meet the password criteria.
+          Register a new Vultr account to claim the $250 free credits.
         action: Sign Up
         action_url: https://www.vultr.com
 faq:
