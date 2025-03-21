@@ -1,0 +1,116 @@
+draft: false
+provider_slug: civo
+title: Civo Startup Program & Navigate Austin 2025
+meta_title: Empowering Tech Innovation Through Cloud-Native Solutions
+intro: >-
+  Civo Startups offer cloud native solutions designed to grow with innovative
+  companies. Their program features rapid 90-second cloud deployments and cost
+  savings of up to 75%, combined with the Navigate Austin 2025 event that brings
+  hands-on workshops, keynotes, and networking opportunities.
+description: >-
+  Civo combines its startup program with the Navigate Austin 2025 event to
+  deliver a powerful ecosystem for tech innovators. Participants can benefit
+  from a $250 free credit trial for 1 month, enabling rapid Kubernetes cluster
+  launches, 80+ one-click app installations, and a transparent cloud native
+  billing model. Additionally, the event offers keynote insights, live
+  Kubernetes deployment competitions, and extensive networking opportunities to
+  accelerate cloud-native development.
+status: Upcoming
+tags:
+  - cloud
+  - startup
+  - kubernetes
+  - event
+  - dev tools
+url: https://www.civo.com/startups
+value_type: credits
+currency: USD
+min_value: 200
+max_value: 250
+community_notes:
+  - title: Rapid Deployment
+    body: >-
+      Civo delivers industry-leading 90-second Kubernetes cluster launches and
+      over 80 one-click app installations.
+    source_url: https://www.civo.com/technology
+  - title: Cost Efficiency
+    body: >-
+      Providing up to 75% cost savings compared to major cloud providers, Civo
+      ensures lower operational costs.
+    source_url: https://www.civo.com/pricing
+  - title: Compliance and Security
+    body: >-
+      Civo is certified with ISO27001, SOC2, and other standards, underpinning
+      its commitment to secure cloud services.
+    source_url: https://www.civo.com/security
+tiers:
+  - name: Civo Free Trial
+    intro: >-
+      Startups can explore Civo's cloud-native platform with a $250 free credit
+      valid for 1 month, enabling rapid Kubernetes deployments and efficient
+      developer tooling.
+    max_value: 250
+    url: https://www.civo.com/startups
+    benefits:
+      - Get $250 free credit for 1 month
+      - Launch Kubernetes clusters in 90 seconds
+      - Access 80+ one-click app installs
+      - Experience transparent, cloud-native billing
+      - Utilize powerful developer tooling with API, CLI, and web UI
+    benefits_level: 2
+    duration:
+      - 1 month
+    eligibility:
+      - Early-stage, tech-focused startups
+      - Active development projects
+      - Companies with cloud-native needs
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: Create an account on the Civo website to access the free trial.
+        action: Register
+        action_url: https://www.civo.com/signup
+  - name: Navigate Austin 2025 Tickets
+    intro: >-
+      Attend the Navigate Austin 2025 event for exclusive workshops, keynotes,
+      and networking opportunities with over 500 tech professionals.
+    max_value: 200
+    url: https://www.civo.com/navigate-austin-2025
+    benefits:
+      - Access to full conference sessions
+      - Priority workshop participation
+      - Networking opportunities with industry leaders
+      - Live Kubernetes deployment competitions
+      - Keynote insights from tech experts
+    benefits_level: 2
+    duration:
+      - May 14, 2025
+      - 1 day
+    eligibility:
+      - Open to all tech professionals
+      - Startup founders and developers
+      - Industry enthusiasts
+    effort_level: 2
+    steps_to_apply:
+      - name: Register for Event
+        description: Complete the event registration to secure your ticket.
+        action: Buy Ticket
+        action_url: https://www.civo.com/navigate-austin-2025
+faq:
+  - question: How does Civo ensure cost predictability?
+    answer: >-
+      Civo follows a cloud native billing model with simple, flat-rate pricing
+      and transparent invoices, eliminating unexpected costs.
+  - question: What makes Navigate Austin 2025 unique?
+    answer: >-
+      The event features in-person workshops, live Kubernetes deployment
+      competitions, keynotes by tech experts, and a streamlined 20-minute
+      transit from the airport to the venue.
+  - question: What are the requirements for the Civo Startup Program?
+    answer: >-
+      Eligible startups should be tech-focused with active cloud-native
+      development needs and a commitment to innovation.
+  - question: Will event recordings be available?
+    answer: >-
+      The Navigate Austin 2025 event is exclusively in-person, but post-event
+      resources will be accessible through a dedicated portal.
