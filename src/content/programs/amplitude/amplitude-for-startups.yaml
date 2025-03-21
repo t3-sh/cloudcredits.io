@@ -20,13 +20,10 @@ description: >-
 status: Active
 tags:
   - analytics
-  - startup
-  - scholarship
-  - CDP
+  - cdp
 url: https://amplitude.com/startups
-value_type: credits
-currency: USD
-max_value: 40000
+value_type: discount
+max_value: 100
 community_notes:
   - title: Amplitude Cohort
     body: >-
@@ -39,13 +36,13 @@ tiers:
       One year of free access to the Amplitude Growth plan including Analytics,
       Experimentation, Session Replay, and CDP, plus lifetime competitive
       discounts.
-    max_value: 40000
+    max_value: 100
     url: https://amplitude.com/startups
     benefits:
       - Free access to the Growth plan for 12 months
       - Comprehensive analytics tools
       - Competitive lifetime discounts
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
@@ -63,20 +60,20 @@ tiers:
     intro: >-
       Provides free and unlimited access to the Amplitude Growth plan for
       eligible U.S.-based startups, along with lifetime discounts.
-    max_value: 40000
+    max_value: 100
     url: https://amplitude.com/startups
     benefits:
       - Unlimited access to the Growth plan
       - Premium analytics features
       - Competitive lifetime discounts
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - Unlimited while eligible
     eligibility:
       - Less than $30M in funding raised
       - Fewer than 150 employees
       - Based in the United States
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Submit Application
         description: Apply via the Amplitude startup portal to verify eligibility.
@@ -99,7 +96,7 @@ tiers:
       - Less than $25M in funding raised
       - Partnered with Y Combinator, AWS, or Sequoia
       - Not currently an Amplitude customer
-    effort_level: 1
+    effort_level: 3
     steps_to_apply:
       - name: Submit Application
         description: Apply via the Amplitude startup portal to claim the discount.
