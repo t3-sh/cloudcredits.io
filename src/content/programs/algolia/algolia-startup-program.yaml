@@ -1,0 +1,95 @@
+draft: false
+provider_slug: algolia
+title: Algolia Startup Program
+meta_title: Algolia Startup Program - Accelerate Your Growth with Search Technology
+intro: >-
+  The Algolia Startup Program helps startups differentiate and scale by offering
+  $10,000 in platform credits valid for 12 months alongside world-class support
+  and a range of additional perks.
+description: >-
+  The Algolia Startup Program provides emerging companies with powerful search
+  infrastructure to enhance user experiences and reduce initial costs. Startups
+  receive $10,000 in Algolia credits valid for 12 months, access to partner SaaS
+  credits, comprehensive educational resources through Algolia Academy, and
+  opportunities for increased visibility via marketing materials. The program is
+  exclusively for new Algolia customers, specifically those that are less than 3
+  years old and have raised under $5M in funding. Upon credit consumption,
+  startups automatically transition to a pay-as-you-go plan or may opt for
+  committed plans with a 20% discount.
+status: Active
+tags:
+  - search
+  - discovery
+  - startup
+  - SaaS
+url: https://www.algolia.com/startup-program/
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes: []
+tiers:
+  - name: Algolia Startup Credits
+    intro: >-
+      Eligible startups receive $10,000 in Algolia credits valid for 12 months,
+      along with world-class technical support and additional perks.
+    max_value: 10000
+    url: https://www.algolia.com/startup-program/
+    benefits:
+      - $10,000 in Algolia credits valid for 12 months
+      - World-class technical support
+      - Access to partner SaaS credits (e.g., Segment, Notion)
+      - Full access to Algolia Academy resources
+      - Opportunity to be featured in Algolia's marketing materials
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Less than 3 years old
+      - Less than $5M in funding
+      - New Algolia customers only
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application Email
+        description: >-
+          Send an email to startups@algolia.com with your company details and
+          product description to apply for the program.
+        action: Email Now
+        action_url: mailto:startups@algolia.com
+faq:
+  - question: Who is eligible for the Algolia startup program?
+    answer: >-
+      Startups that are less than three years old and have raised less than $5M
+      in funding are eligible for the program.
+  - question: What do we get if we get approved in the program?
+    answer: >-
+      If approved, startups receive $10,000 in Algolia credits that can be used
+      in the first 12 months.
+  - question: >-
+      I am not able to use all my credits in the 12 months, can I use them
+      later?
+    answer: All unused credits will expire after 12 months.
+  - question: What happens if I end up using all the credits before 12 months?
+    answer: >-
+      Once the $10,000 credits are exhausted, startups will be automatically
+      moved to a pay-as-you-go plan, with an option to contact the sales team
+      for committed plans with a 20% discount.
+  - question: >-
+      I am already a paying Algolia customer, can I still apply and get
+      approved?
+    answer: >-
+      No, the program is only for new and free users; paying customers are not
+      eligible.
+  - question: I am a free user of Algolia, can I apply and get approved?
+    answer: >-
+      Yes, free users who meet the eligibility criteria can apply and get
+      approved.
+  - question: Can I redeem more than one code?
+    answer: >-
+      No, startups that have used any other coupon code in the past are not
+      eligible for the Algolia Startup Program.
+  - question: Can I transfer my Algolia credits?
+    answer: >-
+      No, the credits are non-transferable and any unused credits will expire
+      after 12 months.
+  - question: What if I still have questions which are not answered here?
+    answer: Send an email to startups@algolia.com for further inquiries.
