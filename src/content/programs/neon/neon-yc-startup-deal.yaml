@@ -16,11 +16,9 @@ description: >-
   demonstrate the platform’s potential to drive innovation and efficiency.
 status: Active
 tags:
-  - yc
-  - startup
-  - cloud
+  - database
   - serverless
-  - credits
+  - cloud
 url: https://neon.tech/startups
 value_type: credits
 currency: USD
@@ -44,7 +42,7 @@ tiers:
       - 1 year
     eligibility:
       - Y Combinator startups
-    effort_level: 1
+    effort_level: 4
     steps_to_apply:
       - name: Submit Email
         description: >-
