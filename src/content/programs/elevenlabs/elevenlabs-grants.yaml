@@ -22,13 +22,11 @@ status: Active
 tags:
   - ai
   - voice
-  - startup
-  - grant
-  - technology
+  - agents
+  - customer support
 url: https://www.elevenlabs.io/grants
-value_type: credits
-currency: USD
-max_value: 33000000
+value_type: discount
+max_value: 100
 community_notes: []
 tiers:
   - name: ElevenLabs Grants Tier
@@ -36,7 +34,7 @@ tiers:
       Receive 3 months free access to the Business-tier subscription with 11
       million text characters per month, high-scale capacity, and early access
       to new features.
-    max_value: 33000000
+    max_value: 100
     url: https://www.elevenlabs.io/grants
     benefits:
       - 3 months free Business-tier subscription
