@@ -1,0 +1,18 @@
+active: true
+name: Alibaba Cloud
+short_name: Alibaba Cloud
+slug: alibabacloud
+color: '#FF7A00'
+url: https://www.alibabacloud.com
+intro: >-
+  Alibaba Cloud offers a comprehensive cloud computing platform for global
+  businesses, providing flexible compute, storage, network, and database
+  services.
+best_deal: Up to $120,000 in cloud credits for startups
+video: ''
+tags:
+  - cloud
+  - startup
+  - infrastructure
+  - asia
+  - credits
