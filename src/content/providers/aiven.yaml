@@ -1,0 +1,17 @@
+active: true
+name: Aiven
+short_name: Aiven
+slug: aiven
+color: '#555555'
+url: https://aiven.io
+intro: >-
+  Aiven provides fully managed open-source data infrastructure services,
+  including databases, analytics, and event streams, offering scalability,
+  reliability, and security.
+best_deal: Up to $100,000 credits for Aiven services
+video: ''
+tags:
+  - cloud
+  - data
+  - startups
+  - open-source
