@@ -1,0 +1,111 @@
+draft: false
+provider_slug: mixpanel
+title: Mixpanel Startup Program
+meta_title: Mixpanel Startup Program - Free Analytics for Startups
+intro: >-
+  Startups get their first year of Mixpanel for free. Find product-market fit
+  faster with a full analytics suite, Session Replay, and more.
+description: >-
+  Mixpanel's Startup Program offers early-stage companies a comprehensive
+  analytics platform to accelerate growth and achieve product-market fit.
+  Participants receive free, full-feature access for one year, including Product
+  Analytics, Web Analytics, Session Replay, and premium add-ons. The program
+  also features fast setup via Autocapture and pre-built templates, world-class
+  support, and access to a community of over 11k peers. Valued at over $150,000,
+  it includes a 90-day activation window to start data integration.
+status: Active
+tags:
+  - analytics
+  - startups
+  - data
+  - growth
+url: https://mixpanel.com/startups-apply
+value_type: credits
+currency: USD
+max_value: 150000
+community_notes:
+  - title: Extended Runway
+    body: >-
+      Using Mixpanel, we reduced user dropoff and extended our runway by 3
+      months.
+    source_url: https://mixpanel.com/testimonials
+  - title: Game Changer
+    body: >-
+      Having free access to a tool like Mixpanel has been a game changer for our
+      team, enabling smarter and faster decision-making.
+    source_url: https://mixpanel.com/testimonials
+  - title: Clear User Insights
+    body: >-
+      Mixpanel wasn't just a tool; it was a partner that helped us see our users
+      clearly, accelerating our growth in days instead of months.
+    source_url: https://mixpanel.com/testimonials
+tiers:
+  - name: Mixpanel Startup Tier
+    intro: >-
+      Get one year of free access to the full Mixpanel analytics suite,
+      including premium add-ons and world-class support.
+    max_value: 150000
+    url: https://mixpanel.com/startups-apply
+    benefits:
+      - Free access for one year up to 1 billion events
+      - >-
+        Comprehensive analytics suite: Product Analytics, Web Analytics, and
+        Session Replay
+      - Fast, easy setup with Autocapture and pre-built templates
+      - VIP treatment with premium add-ons
+      - World-class support and access to a community of 11k+ peers
+    benefits_level: 3
+    duration:
+      - 1 year
+    eligibility:
+      - Incorporated less than 5 years ago
+      - Total funding ≤ $8M USD
+      - Never used Mixpanel paid plans
+      - No prior Mixpanel offer redemption
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the application form on Mixpanel's startup page for instant
+          eligibility verification.
+        action: Apply Now
+        action_url: https://mixpanel.com/startups-apply
+faq:
+  - question: What are the eligibility requirements?
+    answer: >-
+      Startups must be incorporated for less than 5 years, have total funding of
+      $8M USD or less, have never used Mixpanel paid plans, and must not have
+      previously redeemed a Mixpanel offer.
+  - question: How do I join?
+    answer: >-
+      Apply directly through the Mixpanel startup application page at
+      https://mixpanel.com/startups-apply for instant eligibility verification.
+  - question: Do I need to be associated with a VC or accelerator to join?
+    answer: >-
+      No, the program eligibility is based solely on the company's age, funding,
+      and prior usage of Mixpanel.
+  - question: What’s included in the Startup Plan?
+    answer: >-
+      The plan includes full access to Mixpanel’s analytics suite, premium
+      add-ons, free event ingestion up to 1 billion events for one year, and
+      world-class support.
+  - question: What is the implementation requirement?
+    answer: >-
+      Accepted startups must begin sending data within a 90-day activation
+      window.
+  - question: Will I receive help getting started with Mixpanel?
+    answer: >-
+      Yes, the program offers dedicated support with expert guidance, pre-built
+      templates, and access to a large community for peer support.
+  - question: What happens if my usage exceeds 1 billion events?
+    answer: >-
+      Additional events will be charged at a rate of $0.00028 per event without
+      overage penalties.
+  - question: What happens after my year in the startup program?
+    answer: >-
+      After the first year, companies can continue on the Free Plan, upgrade to
+      a Growth or Enterprise Plan, or downgrade based on their usage.
+  - question: What happens if I misrepresent my eligibility status?
+    answer: >-
+      Mixpanel reserves the right to permanently remove a startup from the
+      program if eligibility requirements are misrepresented.
