@@ -1,0 +1,14 @@
+active: true
+name: ScaleGrid
+short_name: ScaleGrid
+slug: scalegrid
+color: '#007bff'
+url: https://scalegrid.com
+intro: Scalable managed database hosting for PostgreSQL, MySQL, Redis, and MongoDB.
+best_deal: 50% Off Managed Database Hosting for Startups
+video: ''
+tags:
+  - cloud
+  - startups
+  - database
+  - hosting
