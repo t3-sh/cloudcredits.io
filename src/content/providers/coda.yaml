@@ -1,0 +1,17 @@
+active: true
+name: Coda
+short_name: Coda
+slug: coda
+color: '#0079bf'
+url: https://coda.io/startups
+intro: >-
+  Coda offers a scalable, all-in-one workspace that powers your startup with
+  unlimited AI capabilities and premium features.
+best_deal: 6-month free Team plan worth up to $1,000
+video: ''
+tags:
+  - startup
+  - productivity
+  - collaboration
+  - no-code
+  - automation
