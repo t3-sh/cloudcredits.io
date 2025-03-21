@@ -1,0 +1,78 @@
+draft: false
+provider_slug: phospho
+title: >-
+  Phospho Startup Program: Get $2000 AI Builder Credits for Free (Find PMF with
+  Your AI SaaS Faster)
+meta_title: Accelerate AI SaaS Growth with Free $2000 AI Builder Credits
+intro: >-
+  Early-stage AI SaaS developers can get $2000 in free AI builder credits from
+  Phospho, reducing financial risk and enabling rapid experimentation to achieve
+  product-market fit.
+description: >-
+  Phospho’s Startup Program offers early-stage AI SaaS startups and developers
+  $2000 in AI builder credits to accelerate product development and
+  experimentation. The credits are split into $1000 for Phospho's analytics
+  platform—providing real-time monitoring, automated insights, and integration
+  support with common data pipelines—and $1000 applicable towards leading LLM
+  providers like OpenAI, Mistral, Anthropic, and Gemini. Participants also
+  receive direct access to Phospho's technical team for product optimization,
+  enabling data-driven iteration for faster time-to-market.
+status: Active
+tags:
+  - ai
+  - saas
+  - startup
+  - credits
+  - analytics
+url: https://www.phospho.com/startup-program
+value_type: credits
+currency: USD
+min_value: 2000
+max_value: 2000
+community_notes: []
+tiers:
+  - name: Phospho Startup Program
+    intro: >-
+      Designed for early-stage AI SaaS startups and developers to experiment
+      with AI models and gain dual credit benefits for platform analytics and
+      leading LLM providers.
+    max_value: 2000
+    url: https://www.phospho.com/startup-program
+    benefits:
+      - $1000 Phospho Credits for analytics and monitoring
+      - >-
+        $1000 Credits usable with top LLM providers (OpenAI, Mistral, Anthropic,
+        Gemini)
+      - Direct access to Phospho's technical team
+      - Integration support for common data pipelines (Python, JavaScript, CSV)
+    benefits_level: 3
+    duration:
+      - Limited time offer
+    eligibility:
+      - Early-stage AI SaaS startups
+      - Startups less than 2 years old
+      - Raised less than $5M
+      - Focused on AI SaaS development
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply Online
+        description: Submit your application through Phospho's startup program form.
+        action: Sign Up
+        action_url: https://www.phospho.com/startup-program
+faq:
+  - question: What is the Phospho Startup Program?
+    answer: >-
+      It is a free program offering $2000 in AI builder credits to early-stage
+      AI SaaS startups and developers, helping reduce financial risk and
+      accelerate product development.
+  - question: How can the AI builder credits be used?
+    answer: >-
+      The credits are divided into $1000 for Phospho's analytics platform and
+      $1000 for use with leading LLM providers like OpenAI, Mistral, Anthropic,
+      and Gemini, enabling comprehensive model experimentation and performance
+      tracking.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligible applicants include early-stage AI SaaS startups less than 2 years
+      old with under $5M in funding, focused on advancing AI product
+      development.
