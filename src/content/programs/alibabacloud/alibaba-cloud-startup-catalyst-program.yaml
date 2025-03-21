@@ -1,0 +1,117 @@
+draft: false
+provider_slug: alibabacloud
+title: Alibaba Cloud Startup Catalyst Program
+meta_title: Cloud Credits, Technical Support & Market Entry for Startups
+intro: >-
+  The Alibaba Cloud Startup Catalyst Program provides comprehensive support for
+  startups to build and scale their cloud infrastructure, offering up to
+  $120,000 in cloud credits along with technical, educational, and networking
+  benefits.
+description: >-
+  This program offers startups up to $120,000 in cloud credits to deploy
+  scalable infrastructure. It includes a 3-month Global Technology Services
+  package at the price of 1 month, dedicated cloud architect guidance, a 1-year
+  Alibaba Cloud Academy membership with hands-on labs and certification
+  opportunities, and exposure through featured placement on Alibaba Cloud
+  Marketplace. Additional benefits include invitations to regional demo days,
+  investor pitch sessions, and co-marketing campaigns to aid market entry,
+  especially into China. Eligibility requires startups founded within the last
+  10 years, funded with a functioning website and company email, a working
+  prototype (ideation-stage excluded), and a scalable business model with
+  international growth potential. A non-refundable registration fee of $64.20
+  (GST included) applies for shortlisted applicants.
+status: Active
+tags:
+  - cloud
+  - startup
+  - infrastructure
+  - asia
+  - credits
+url: https://www.alibabacloud.com/startup-catalyst
+value_type: credits
+currency: USD
+max_value: 120000
+community_notes:
+  - title: Global Adoption
+    body: >-
+      Thousands of startups globally leverage the program to reduce cloud costs
+      and accelerate growth.
+    source_url: https://www.alibabacloud.com/startup-catalyst
+tiers:
+  - name: Catalyst Core Tier
+    intro: >-
+      Access comprehensive cloud support including up to $120,000 in credits,
+      technical guidance, and educational resources.
+    max_value: 120000
+    url: https://www.alibabacloud.com/startup-catalyst
+    benefits:
+      - Up to $120,000 in cloud credits
+      - 3-month Global Technology Services package for 1-month cost
+      - Dedicated cloud architect guidance
+      - 1-year Academy membership with lab access
+      - Featured placement on Alibaba Cloud Marketplace
+    benefits_level: 4
+    duration:
+      - 1 year
+    eligibility:
+      - Startup founded within the last 10 years
+      - Funded with a functioning website and company email
+      - Working prototype required (ideation-stage excluded)
+      - Scalable business model with international growth potential
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply for the Program
+        description: Register and complete the form to apply via the program website.
+        action: Register
+        action_url: https://www.alibabacloud.com/startup-catalyst
+      - name: Application Review
+        description: Your application will be reviewed in 5-7 business days.
+      - name: Notification
+        description: >-
+          Successful applicants will receive an email with credit redemption
+          details.
+      - name: Redeem Credits
+        description: Redeem cloud credits and enjoy the exclusive program benefits.
+  - name: Malaysia Demo Day
+    intro: >-
+      Regional opportunity offering a base of $1,000 in cloud credits with
+      potential rewards up to $20,000, plus marketplace exposure and event
+      sponsorship.
+    max_value: 20000
+    url: https://www.alibabacloud.com/startup-catalyst
+    benefits:
+      - Guaranteed $1,000 in cloud credits
+      - Opportunity to win up to $20,000 in additional credits
+      - Exposure on Alibaba Cloud Marketplace
+      - Sponsored attendance at the Global Summit
+    benefits_level: 2
+    duration:
+      - One-time event
+    eligibility:
+      - Regional participation in Malaysia Demo Day
+      - Must register through the program website
+    effort_level: 2
+    steps_to_apply:
+      - name: Register for Demo Day
+        description: Sign up for the Malaysia Demo Day via the program website.
+        action: Register
+        action_url: https://www.alibabacloud.com/startup-catalyst
+faq:
+  - question: Is equity taken by Alibaba Cloud?
+    answer: >-
+      No, Alibaba Cloud and its partners do not take any equity from
+      participating startups.
+  - question: What is the team size limit?
+    answer: The program allows a maximum of 4 registered members per team.
+  - question: Is there a registration fee?
+    answer: >-
+      Yes, a non-refundable registration fee of $64.20 (GST included) is
+      required for shortlisted applicants after the pitch.
+  - question: Do non-tech startups qualify?
+    answer: >-
+      Yes, non-tech startups are accepted provided they demonstrate scalability
+      and complete the required cloud computing/AI coursework.
+  - question: Can startups participate in multiple programs?
+    answer: >-
+      Yes, startups can participate in this program alongside other incubator or
+      accelerator initiatives.
