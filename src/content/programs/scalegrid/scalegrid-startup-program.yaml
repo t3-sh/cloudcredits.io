@@ -18,12 +18,11 @@ description: >-
 status: Active
 tags:
   - cloud
-  - startups
   - database
   - hosting
+  - serverless
 url: https://scalegrid.com/startup-program
 value_type: discount
-currency: USD
 min_value: 50
 max_value: 50
 community_notes:
