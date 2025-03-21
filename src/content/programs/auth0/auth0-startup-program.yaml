@@ -18,9 +18,8 @@ description: >-
 status: Active
 tags:
   - authentication
-  - security
-  - startup
-  - B2B
+  - cybersecurity
+  - b2b
 url: https://auth0.com/startup-program
 value_type: credits
 currency: USD
