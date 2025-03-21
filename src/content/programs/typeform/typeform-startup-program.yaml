@@ -18,13 +18,11 @@ description: >-
 status: Active
 tags:
   - forms
-  - startup
-  - discount
-  - data
-  - customer insights
+  - collaboration
+  - no-code
+  - customer support
 url: https://www.typeform.com/typeform-startups
 value_type: discount
-currency: USD
 max_value: 75
 community_notes: []
 tiers:
@@ -40,7 +38,7 @@ tiers:
       - Customizable brand kits
       - Advanced automations with popular integrations
       - Video-enhanced forms for higher engagement
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 1 year
     eligibility:
@@ -48,7 +46,7 @@ tiers:
       - Less than $5M in funding
       - Fewer than 50 employees
       - Under 5 years old
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Verify Eligibility
         description: Review the eligibility criteria on the Typeform Startup page.
