@@ -1,0 +1,69 @@
+draft: false
+provider_slug: influxdata
+title: InfluxDB Cloud Serverless Offer
+meta_title: InfluxDB Cloud Serverless - Get $250 Credit for 30 Days
+intro: >-
+  Enjoy a $250 credit for 30 days to explore InfluxDB Cloud Serverless, a
+  fully-managed, elastic, and pay-as-you-go time-series database optimized for
+  smaller workloads.
+description: >-
+  InfluxData provides InfluxDB Cloud Serverless, a versatile time-series
+  database solution designed for startups and SMBs. This plan offers a free
+  30-day trial with a $250 credit, allowing users to experience flexible
+  scaling, real-time analytics, and usage-based pricing without long-term
+  commitments. With efficient data ingestion at $0.0025/MB written and
+  competitive rates for data out, organizations can benefit from a
+  high-performance architecture while controlling costs.
+status: Active
+tags:
+  - cloud
+  - database
+  - serverless
+  - time-series
+url: https://www.influxdata.com/products/influxdb-cloud-serverless/
+value_type: credits
+currency: USD
+min_value: 250
+max_value: 250
+community_notes: []
+tiers:
+  - name: InfluxDB Cloud Serverless
+    intro: >-
+      Designed for startups and SMBs, this tier offers a $250 credit for 30 days
+      to explore a fully-managed, elastic, multi-tenant time-series database
+      with pay-as-you-go pricing.
+    max_value: 250
+    url: https://www.influxdata.com/products/influxdb-cloud-serverless/
+    benefits:
+      - $250 credit for 30 days
+      - Flexible, pay-as-you-go pricing
+      - Fully-managed cloud service
+      - No minimums or long-term commitments
+    benefits_level: 2
+    duration:
+      - 30 days
+    eligibility:
+      - New users
+      - Startups
+      - SMBs
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register on the InfluxData website to start your free trial and
+          receive a $250 credit upon upgrade.
+        action: Start for Free
+        action_url: https://www.influxdata.com/products/influxdb-cloud-serverless/
+faq:
+  - question: What does the $250 credit cover?
+    answer: >-
+      The credit can be used towards data ingestion, query execution, and
+      storage costs during the first 30 days on the Usage-Based Plan.
+  - question: Is there a commitment required to use this offer?
+    answer: >-
+      No long-term commitment is required. The Cloud Serverless tier allows
+      users to start for free and only pay for what they use after the trial.
+  - question: How do I get started?
+    answer: >-
+      Simply sign up on the InfluxData website, begin your free 30-day trial,
+      and the $250 credit will be applied upon upgrade.
