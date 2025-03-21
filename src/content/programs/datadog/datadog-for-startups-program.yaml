@@ -17,10 +17,9 @@ description: >-
   ecosystem partner and that the company is not an existing Datadog customer.
 status: Active
 tags:
-  - startups
   - monitoring
   - observability
-  - support
+  - kubernetes
 url: https://www.datadoghq.com/partner/datadog-for-startups/
 value_type: discount
 currency: USD
