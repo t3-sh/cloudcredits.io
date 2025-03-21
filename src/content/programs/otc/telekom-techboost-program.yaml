@@ -1,7 +1,7 @@
 draft: false
-provider_slug: telekomtechboost
-title: Telekom TechBoost Program
-meta_title: Accelerate Growth with Telekom TechBoost
+provider_slug: otc
+title: Open Telekom Cloud TechBoost Program
+meta_title: Get up to €100,000 in Open Telekom Cloud credits
 intro: >-
   Accelerate your cloud-based startup with Deutsche Telekom's TechBoost program,
   offering up to €100,000 in Open Telekom Cloud credits, access to a vast B2B
@@ -19,10 +19,8 @@ description: >-
 status: Active
 tags:
   - cloud
-  - startup
-  - GDPR
-  - network
-  - sustainability
+  - networking
+  - europe
 url: https://techboost.telekom.com/?lang=en
 value_type: credits
 currency: EUR

@@ -1,7 +1,7 @@
 active: true
-name: Telekom TechBoost
-short_name: TechBoost
-slug: telekomtechboost
+name: Open Telekom Cloud
+short_name: Open Telekom Cloud
+slug: otc
 color: '#0072BC'
 url: https://techboost.telekom.com/?lang=en
 intro: >-
@@ -12,7 +12,5 @@ best_deal: Up to €100,000 in Open Telekom Cloud credits
 video: ''
 tags:
   - cloud
-  - startup
-  - GDPR
   - network
-  - sustainability
+  - europe
