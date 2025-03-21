@@ -2,8 +2,8 @@ active: true
 name: Phospho
 short_name: Phospho
 slug: phospho
-color: '#FFC107'
-url: https://www.phospho.com
+color: '#00E001'
+url: https://phospho.ai/
 intro: >-
   Phospho is a provider that specializes in accelerating AI SaaS growth,
   particularly for startups.
@@ -11,7 +11,7 @@ best_deal: $2000 in free AI builder credits
 video: ''
 tags:
   - ai
-  - saas
-  - startup
-  - credits
+  - llm
+  - openai
+  - anthropic
   - analytics

@@ -20,9 +20,9 @@ description: >-
 status: Active
 tags:
   - ai
-  - saas
-  - startup
-  - credits
+  - llm
+  - openai
+  - anthropic
   - analytics
 url: https://www.phospho.com/startup-program
 value_type: credits
