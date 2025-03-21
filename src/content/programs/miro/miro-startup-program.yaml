@@ -1,0 +1,108 @@
+draft: false
+provider_slug: miro
+title: Miro Startup Program
+meta_title: Miro Startup Program – Accelerate Your Startup's Growth
+intro: >-
+  Miro's Startup Program offers early-stage companies a comprehensive suite of
+  collaboration and innovation tools to scale and succeed at speed.
+description: >-
+  Miro's Startup Program provides startups with $1,000–$1,500 in credits to
+  access paid plans along with 2,000+ pre-built templates, advanced design and
+  collaboration tools, and exclusive community events. The program also features
+  training resources via Miro Academy and integrations with tools like Jira,
+  Slack, and Figma. Eligible startups must be incorporated within the last 7
+  years, have raised no more than $10M, employ 30 or fewer people, and not
+  operate primarily as a service or consulting firm. Applicants must apply
+  before initiating any Miro trial subscription.
+status: Active
+tags:
+  - startup
+  - collaboration
+  - design
+  - innovation
+url: https://miro.com/startups
+value_type: credits
+currency: USD
+min_value: 1000
+max_value: 1500
+community_notes: []
+tiers:
+  - name: Independent Startups
+    intro: >-
+      For startups not affiliated with an accelerator, offering $1,000 in
+      credits for Miro's paid plans such as Starter or Business.
+    max_value: 1000
+    url: https://miro.com/startups
+    benefits:
+      - Access to 2,000+ pre-built templates
+      - Advanced collaboration and design tools
+      - Training resources via Miro Academy
+      - Exclusive community networking events
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - Incorporated within the last 7 years
+      - Total funding ≤ $10M
+      - Employee count ≤ 30
+      - Not a service/consulting firm
+      - Apply before starting a Miro trial
+    effort_level: 2
+    steps_to_apply:
+      - name: Confirm Eligibility
+        description: >-
+          Verify your startup meets the incorporation, funding, and team size
+          criteria.
+        action: Review Criteria
+        action_url: https://miro.com/startups
+      - name: Submit Application
+        description: Complete the online application form through Miro's partner portal.
+        action: Apply Now
+        action_url: https://miro.com/startups
+  - name: Partner Startups
+    intro: >-
+      For startups affiliated with accelerators like Techstars or Microsoft
+      Founders Hub, offering $1,500 in credits.
+    max_value: 1500
+    url: https://miro.com/startups
+    benefits:
+      - Higher credit allocation
+      - Access to premium templates and integrations
+      - Priority support and onboarding
+      - Exclusive events with industry experts
+    benefits_level: 3
+    duration:
+      - 6 months
+    eligibility:
+      - Affiliated with an approved accelerator or incubator
+      - Incorporated within the last 7 years
+      - Total funding ≤ $10M
+      - Employee count ≤ 30
+      - Apply before starting a Miro trial
+    effort_level: 2
+    steps_to_apply:
+      - name: Confirm Eligibility
+        description: >-
+          Verify your startup meets the partner affiliation and eligibility
+          criteria.
+        action: Review Requirements
+        action_url: https://miro.com/startups
+      - name: Submit Application
+        description: >-
+          Apply via Miro's partner portal to access higher credits and priority
+          review.
+        action: Apply Now
+        action_url: https://miro.com/startups
+faq:
+  - question: How long are the credits valid?
+    answer: >-
+      Unused credits expire after 6 months; additional charges apply if
+      subscription costs exceed the allotted credits.
+  - question: How many users can benefit from the credits?
+    answer: >-
+      The credits cover up to 20 users initially, with scalable options
+      available for growing teams.
+  - question: What happens after the credits are used?
+    answer: >-
+      Startups can transition to free-tier features or negotiate extended
+      startup rates with Miro.
