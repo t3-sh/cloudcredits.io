@@ -1,0 +1,114 @@
+draft: false
+provider_slug: retool
+title: Retool for Startups
+meta_title: Retool for Startups Program
+intro: >-
+  Retool for Startups offers early-stage companies free access to Retool’s
+  platform for 12 months, empowering them to automate manual tasks, build custom
+  internal tools, and create customer portals while unlocking over $200,000 in
+  partner deals.
+description: >-
+  Retool’s Startup Program provides a comprehensive package for early-stage
+  startups by offering a 100% off coupon for one year on monthly Team or
+  Business plans. Eligible startups—those bootstrapped, angel-funded,
+  debt-funded, pre-seed, seed, or Series A with less than $10M raised and
+  founded within the last 10 years—must upgrade their plan and apply. Upon
+  approval, the discount is automatically applied to the first invoice. In
+  addition to free access, participants gain access to significant partner deals
+  including credits and discounts from AWS, Brex, Twilio Segment, Zendesk, and
+  DigitalOcean. After the free period, a 25% discount is offered for continued
+  access.
+status: Active
+tags:
+  - startup
+  - automation
+  - developer tools
+  - partner deals
+url: https://retool.com/startups
+value_type: discount
+currency: USD
+min_value: 25
+max_value: 100
+community_notes:
+  - title: Partner Deals Highlight
+    body: >-
+      The program offers over $200,000 in partner deals, including benefits from
+      AWS, Brex, Twilio Segment, Zendesk, and DigitalOcean.
+    source_url: https://retool.com/startups
+tiers:
+  - name: Free Access
+    intro: >-
+      Eligible startups receive a 100% off coupon for one year on Retool's
+      monthly Team or Business plan, enabling them to automate processes and
+      build custom tools.
+    max_value: 100
+    url: https://retool.com/startups
+    benefits:
+      - 100% off for 12 months
+      - Automate manual tasks with custom internal tools
+      - Build customer portals
+      - Access to over $200,000 in partner deals
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Bootstrapped, angel-funded, debt-funded, pre-seed, seed, or Series A
+      - Raised less than $10M in total funding
+      - Founded within the last 10 years
+      - New customers on the monthly Team or Business plan
+      - Offer cannot be combined with other discounts
+    effort_level: 2
+    steps_to_apply:
+      - name: Upgrade Account
+        description: >-
+          Upgrade to the appropriate monthly Team or Business plan with a valid
+          payment method.
+        action: Upgrade
+        action_url: https://retool.com/startups
+      - name: Submit Application
+        description: >-
+          Fill out the Startup Program Application form to claim the free access
+          offer.
+        action: Apply Now
+        action_url: https://retool.typeform.com/to/qGcaOOHW
+  - name: Extended Discount
+    intro: >-
+      After the free period, startups receive a 25% discount on the subscription
+      to continue accessing Retool’s platform.
+    max_value: 25
+    url: https://retool.com/startups
+    benefits:
+      - 25% discount on second-year subscription
+      - Continued access to Retool's platform
+      - Ongoing support
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Must have participated in the initial free access program
+    effort_level: 1
+    steps_to_apply: []
+faq:
+  - question: Who is eligible?
+    answer: >-
+      Eligible startups include those that are bootstrapped, angel-funded,
+      debt-funded, pre-seed, seed, or Series A, having raised less than $10M in
+      total funding, founded within the last 10 years, and who are new customers
+      on the monthly Team or Business plan.
+  - question: How does it work?
+    answer: >-
+      Startups receive a 100% off coupon for one year after upgrading their plan
+      and submitting an application. Upon approval, the discount is applied to
+      the first invoice, and a 25% discount is offered the following year.
+  - question: Will the offer expire?
+    answer: >-
+      Yes, the 100% off discount expires after one year, though a 25% discount
+      is available for the subsequent year.
+  - question: Am I eligible if I'm already a Retool customer?
+    answer: >-
+      No, the program is exclusively for new customers on the monthly Team or
+      Business plan.
+  - question: How do I become a Retool for Startups partner?
+    answer: >-
+      Interested partners should contact startups@retool.com to inquire about
+      adding Retool to their deal book.
