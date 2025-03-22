@@ -19,8 +19,10 @@ description: >-
 status: Active
 tags:
   - no-code
-  - startup
-  - credits
+  - forms
+  - workflow
+  - docs
+  - e-signature
 url: https://formaloo.formaloo.me/startups-apply
 value_type: credits
 currency: USD
@@ -54,7 +56,7 @@ tiers:
       - Independently owned and operated
       - Fewer than 50 employees
       - New to Formaloo’s Free plan
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Sign Up for Free Plan
         description: Register on Formaloo’s Free plan to qualify for the startup program.

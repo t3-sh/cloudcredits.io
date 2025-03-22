@@ -2,14 +2,15 @@ active: true
 name: Formaloo
 short_name: Formaloo
 slug: formaloo
-color: '#71b5c1'
+color: '#F76014'
 url: https://formaloo.formaloo.me/startups-apply
 intro: >-
-  Formaloo offers $1,000 in platform credits to early-stage startups, enabling
-  them to access advanced no-code features and premium tools for growth.
+  Formaloo offers $1,000 in platform credits to early-stage startups: AI-powered forms, smart docs, e‑signatures, and powerful workflows.
 best_deal: $1,000 platform credit for startups
 video: ''
 tags:
   - no-code
-  - startup
-  - credits
+  - forms
+  - workflow
+  - docs
+  - e-signature
