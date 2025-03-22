@@ -2,7 +2,7 @@ active: true
 name: Retool
 short_name: Retool
 slug: retool
-color: '#366CF6'
+color: '#E8765F'
 url: https://retool.com
 intro: >-
   Empowering early-stage startups with free access to Retool's platform for 12
@@ -11,7 +11,8 @@ intro: >-
 best_deal: Free access to Retool for 12 months
 video: ''
 tags:
-  - startup
-  - automation
-  - developer tools
-  - partner deals
+  - dev tools
+  - database
+  - ai
+  - workflow
+  - low-code

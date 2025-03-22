@@ -20,13 +20,13 @@ description: >-
   access.
 status: Active
 tags:
-  - startup
-  - automation
-  - developer tools
-  - partner deals
+  - dev tools
+  - database
+  - ai
+  - workflow
+  - low-code
 url: https://retool.com/startups
 value_type: discount
-currency: USD
 min_value: 25
 max_value: 100
 community_notes:
