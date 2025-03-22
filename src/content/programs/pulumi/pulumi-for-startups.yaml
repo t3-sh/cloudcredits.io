@@ -17,10 +17,9 @@ description: >-
   pre-Series A startups with under $1M in annual revenue.
 status: Active
 tags:
-  - cloud
-  - startup
+  - dev tools
+  - devops
   - infrastructure
-  - IaC
 url: https://www.pulumi.com/pulumi-for-startups/
 value_type: credits
 currency: USD
@@ -48,7 +47,7 @@ tiers:
       - Exclusive office hours and workshops with Pulumi engineers
       - Access to pre-built 'Startup in a Box' templates
       - CI/CD automation and enterprise-grade features
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 12 months
     eligibility:
