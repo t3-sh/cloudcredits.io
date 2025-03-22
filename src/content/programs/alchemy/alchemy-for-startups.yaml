@@ -1,0 +1,113 @@
+draft: false
+provider_slug: alchemy
+title: Alchemy for Startups
+meta_title: Alchemy Startup Program - Accelerate Web3 Innovation
+intro: >-
+  Get 3 months FREE credits for startups switching from other infrastructure
+  providers, along with dedicated technical support, discount opportunities, and
+  access to a vast partner network.
+description: >-
+  Alchemy for Startups provides critical infrastructure and support for web3
+  developers. The program offers 3 months free credits for teams transitioning
+  from other platforms, annual plan discounts, and custom credit packages
+  through partnerships such as Google Cloud. Additional benefits include 24/7
+  engineering support via Telegram, priority debugging sessions, early access to
+  innovative APIs and SDKs, and exclusive co-marketing opportunities with a
+  network of over 14,000 enterprise contacts. Open to pre-seed through Series A
+  projects, the program is designed to reduce infrastructure costs and
+  accelerate blockchain innovation.
+status: Active
+tags:
+  - web3
+  - blockchain
+  - startup
+  - credits
+  - support
+url: https://alchemyapi.typeform.com/to/Ll9GdIEa
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes:
+  - title: Cost Efficiency
+    body: >-
+      Working with Alchemy has helped save the equivalent of 3 full-time
+      engineers, according to industry leaders.
+    source_url: https://www.alchemy.com/case-studies
+tiers:
+  - name: Switch & Save Offer
+    intro: >-
+      For startups currently paying for infrastructure elsewhere, receive 3
+      months of free credits to jumpstart development.
+    max_value: 3
+    url: https://bit.ly/3DH098s
+    benefits:
+      - 3 months free credits
+      - Quick eligibility check
+      - Immediate activation upon application
+    benefits_level: 1
+    duration:
+      - 3 months
+    eligibility:
+      - Startups paying for infrastructure with other providers
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply Now
+        description: Submit your application to claim 3 months of free credits.
+        action: Apply now
+        action_url: https://bit.ly/3DH098s
+  - name: General Startup Support
+    intro: >-
+      Join Alchemy for Startups to access complementary credits, 24/7 technical
+      support, product consultations, and co-marketing opportunities.
+    max_value: 10000
+    url: https://alchemyapi.typeform.com/to/Ll9GdIEa
+    benefits:
+      - Complementary infrastructure credits and annual plan discounts
+      - 24/7 engineering support via Telegram
+      - Priority debugging and technical consultations
+      - Exclusive co-marketing opportunities
+      - Early access to innovative APIs and tools
+    benefits_level: 3
+    duration:
+      - Variable
+    eligibility:
+      - Pre-seed through Series A web3 projects
+      - Active development or MVP stage
+      - Must demonstrate technical capability
+    effort_level: 2
+    steps_to_apply:
+      - name: Complete Application
+        description: >-
+          Fill out a 10-minute application form detailing your project's stage
+          and needs.
+        action: Apply now
+        action_url: https://alchemyapi.typeform.com/to/Ll9GdIEa
+faq:
+  - question: Who can join the Alchemy Startup Program?
+    answer: >-
+      The program is designed for web3 startups from pre-seed to Series A,
+      whether they are affiliated with a registered partner or just starting
+      out.
+  - question: What are the benefits of the program?
+    answer: >-
+      Qualified startups receive free credits, 24/7 technical support, annual
+      plan discounts, co-marketing opportunities, and access to extensive
+      educational and technical resources.
+  - question: How do I apply?
+    answer: >-
+      Applications can be completed in less than 10 minutes via the online form,
+      followed by an onboarding call with the team.
+  - question: How do I get approved for credits?
+    answer: >-
+      Applicants provide details about their project and any partner
+      affiliations, then undergo a brief technical review before benefits are
+      activated.
+  - question: Are current Alchemy customers eligible?
+    answer: >-
+      Current customers affiliated with a partner can access the benefits,
+      though those who have already received credits are not eligible for
+      additional credits.
+  - question: How can I use my credits?
+    answer: >-
+      Credits can be applied towards annual plans and used to offset
+      infrastructure costs.
