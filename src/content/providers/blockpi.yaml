@@ -2,7 +2,7 @@ active: true
 name: BlockPI
 short_name: BlockPI
 slug: blockpi
-color: '#3ab3e5'
+color: '#25BA9E'
 url: https://blockpi.io/startup
 intro: >-
   BlockPI Network offers a support program for blockchain startups, providing up
@@ -13,5 +13,3 @@ video: ''
 tags:
   - web3
   - blockchain
-  - api
-  - startup

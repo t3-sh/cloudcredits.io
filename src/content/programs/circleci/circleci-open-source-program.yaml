@@ -17,15 +17,12 @@ description: >-
 status: Active
 tags:
   - open source
-  - CI/CD
-  - docker
-  - build credits
-  - automation
+  - ci/cd
+  - devops
+  - dev tools
 url: https://circleci.com/open-source
-value_type: credits
-currency: USD
-min_value: 30000
-max_value: 400000
+value_type: discount
+max_value: 100
 community_notes:
   - title: Community Impact
     body: >-
@@ -43,7 +40,7 @@ tiers:
       For open source projects leveraging Linux, Docker, or Arm environments;
       receive up to 400,000 monthly credits, enabling approximately 80,000 build
       minutes on a small Docker instance.
-    max_value: 400000
+    max_value: 100
     url: https://circleci.com/open-source
     benefits:
       - 400,000 monthly credits for Linux, Docker, and Arm builds
@@ -53,7 +50,7 @@ tiers:
         debugging, and flaky test detection
       - Access to various resource classes and self-hosted runners
       - Monthly credit refresh with no rollover
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - Monthly
     eligibility:
@@ -71,7 +68,7 @@ tiers:
     intro: >-
       Designed for open source projects requiring macOS or Windows environments;
       receive up to 30,000 monthly credits with essential CI/CD functionalities.
-    max_value: 30000
+    max_value: 100
     url: https://circleci.com/open-source
     benefits:
       - 30,000 monthly credits for macOS and Windows builds

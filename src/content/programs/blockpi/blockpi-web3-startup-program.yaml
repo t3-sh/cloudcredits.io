@@ -23,8 +23,6 @@ status: Active
 tags:
   - web3
   - blockchain
-  - api
-  - startup
 url: https://blockpi.io/startup
 value_type: credits
 currency: USD
@@ -50,7 +48,7 @@ tiers:
       - Priority access to new features and product updates
       - Marketing enablement through BlockPI media channels
       - Co-marketing opportunities with ecosystem partners
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 12 months
     eligibility:
