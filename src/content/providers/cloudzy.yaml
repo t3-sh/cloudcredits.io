@@ -2,7 +2,7 @@ active: true
 name: Cloudzy
 short_name: Cloudzy
 slug: cloudzy
-color: '#0088ff'
+color: '#FF7F5C'
 url: https://cloudzy.com
 intro: >-
   Cloudzy is a cloud service provider offering affordable and high-performance
@@ -12,7 +12,5 @@ best_deal: Up to $8,000 in cloud VPS credits for startups
 video: ''
 tags:
   - cloud
-  - startup
-  - credits
   - devops
-  - infrastructure
+  - hosting

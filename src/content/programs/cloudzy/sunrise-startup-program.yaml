@@ -20,11 +20,9 @@ description: >-
   apply with a defined business plan or pitch deck.
 status: Active
 tags:
-  - cloud
-  - startup
-  - credits
+  - hosting
   - devops
-  - infrastructure
+  - cloud
 url: https://cloudzy.com/startup-program
 value_type: credits
 currency: USD
@@ -51,7 +49,7 @@ tiers:
       - 24 Hours of Free DevOps Consulting
       - Free 24/7/365 Business Level Customer Support
       - Save up to 20% on every Cloud VPS plan starting at $3.96
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 'Year 1: $8,000 credit & consulting'
       - 'Year 2: 30% rebate on VPS purchases'
@@ -60,7 +58,7 @@ tiers:
       - Founded within the last 5 years
       - Verification of affiliation with an accelerator, incubator, or VC firm
       - Bootstrapped startups should have a defined business plan or pitch deck
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Apply to Sunrise
         description: >-
