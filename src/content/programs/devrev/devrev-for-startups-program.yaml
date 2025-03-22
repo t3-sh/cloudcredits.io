@@ -18,10 +18,11 @@ description: >-
   comprehensive ecosystem access.
 status: Active
 tags:
-  - AI
-  - startups
-  - cloud
-  - integration
+  - ai
+  - agents
+  - customer support
+  - project management
+  - analytics
 url: https://devrev.ai/startups
 value_type: credits
 currency: USD
@@ -62,7 +63,7 @@ tiers:
       - Funded startups up to Series A or incubator/accelerator backed
       - Affiliation with DevRev’s VC ecosystem partners
       - Must be a new customer of DevRev
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Submit Application
         description: >-

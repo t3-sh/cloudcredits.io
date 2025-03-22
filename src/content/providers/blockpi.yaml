@@ -2,14 +2,14 @@ active: true
 name: BlockPI
 short_name: BlockPI
 slug: blockpi
-color: '#25BA9E'
+color: "#25BA9E"
 url: https://blockpi.io/startup
 intro: >-
   BlockPI Network offers a support program for blockchain startups, providing up
   to $1000 in API credits, technical support, and access to marketing and
   network opportunities.
 best_deal: $1000 API credits + dedicated support
-video: ''
+video: ""
 tags:
   - web3
   - blockchain

@@ -2,13 +2,13 @@ active: true
 name: CircleCI
 short_name: CircleCI
 slug: circleci
-color: '#00DB75'
+color: "#00DB75"
 url: https://circleci.com
 intro: >-
   CI/CD platform providing free build and test automation for open source
   projects with robust features.
 best_deal: Up to 400,000 monthly credits for CI/CD builds
-video: ''
+video: ""
 tags:
   - devops
   - ci/cd

@@ -2,7 +2,7 @@ active: true
 name: DevRev
 short_name: DevRev
 slug: devrev
-color: '#4A90E2'
+color: '#0040FF'
 url: https://devrev.ai
 intro: >-
   AI-powered platform designed to help early-stage startups enhance customer
@@ -10,7 +10,8 @@ intro: >-
 best_deal: Up to $10K in credits for startups
 video: ''
 tags:
-  - AI
-  - startups
-  - cloud
-  - integration
+  - ai
+  - agents
+  - customer support
+  - project management
+  - analytics
