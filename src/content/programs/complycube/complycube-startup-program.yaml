@@ -17,10 +17,9 @@ description: >-
 status: Active
 tags:
   - compliance
-  - verification
-  - KYC
-  - AML
-  - startup
+  - kyc
+  - cybersecurity
+  - fintech
 url: https://complycube.com/startup
 value_type: credits
 currency: USD
@@ -41,7 +40,7 @@ tiers:
       - Expert technical advice on AML/KYC implementation
       - Global coverage in over 220 countries
       - Standard integration support
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
