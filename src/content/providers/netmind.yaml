@@ -1,0 +1,17 @@
+active: true
+name: NetMind
+short_name: NetMind
+slug: netmind
+color: '#00AECC'
+url: https://netmind.ai
+intro: >-
+  A provider offering AI and ML solutions with high-performance GPU clusters,
+  rapid model deployment, and expert consulting.
+best_deal: Up to $100,000 in inference credits
+video: ''
+tags:
+  - ai
+  - gpu
+  - inference
+  - deployment
+  - consulting
