@@ -1,0 +1,86 @@
+draft: false
+provider_slug: brevo
+title: Brevo Startups & VCs Program
+meta_title: Tailored Marketing & CRM Solutions for Startups and VCs
+intro: >-
+  Brevo's Startups & VCs Program delivers exclusive discounts, tailored
+  marketing and CRM solutions, and advanced integrations to help startups and
+  VC-backed companies scale efficiently.
+description: >-
+  Brevo's Startups & VCs Program provides tailored marketing and CRM solutions
+  to help emerging businesses scale efficiently. The program offers
+  cost-effective access to enterprise tools including exclusive discounts on
+  Brevo's marketing suite, multi-platform integration for email, SMS, sales
+  pipeline management, and customer data. With over 150 pre-built integrations,
+  API access for custom workflows, and priority onboarding with a dedicated
+  support team, participating organizations receive strategic guidance to
+  optimize their CRM and marketing operations. Custom discount tier negotiations
+  based on portfolio size ensure that venture capital firms, startup
+  accelerators, incubators, and angel investor networks can maximize their
+  growth potential.
+status: Active
+tags:
+  - marketing
+  - crm
+  - startups
+  - vcs
+  - integrations
+url: https://www.brevo.com/startups-vcs
+value_type: discount
+currency: USD
+min_value: 10
+max_value: 50
+community_notes:
+  - title: 'Customer Success Story: AI Camp'
+    body: >-
+      Kevin Yen, Head of Growth at AI Camp, mentions that Brevo provides the
+      functionality and flexibility needed to manage marketing engagement and
+      sales pipeline, delivering significant annual savings compared to
+      competitors.
+    source_url: https://www.brevo.com/startups-vcs
+tiers:
+  - name: Exclusive Discount Tier
+    intro: >-
+      This tier offers negotiated exclusive discounts on Brevo's comprehensive
+      marketing suite along with advanced integrations and dedicated support.
+    max_value: 50
+    url: https://www.brevo.com/startups-vcs
+    benefits:
+      - Exclusive discounts on Brevo's marketing suite
+      - 150+ pre-built integrations
+      - Priority onboarding with dedicated support
+      - Automated campaign templates
+      - Custom discount tier negotiation based on portfolio size
+    benefits_level: 2
+    duration:
+      - Ongoing
+    eligibility:
+      - Venture capital firms
+      - Startup accelerators
+      - Incubators
+      - Angel investor networks
+    effort_level: 2
+    steps_to_apply:
+      - name: Enroll as a Partner
+        description: >-
+          Register through Brevo's partnership portal to initiate the
+          application process.
+        action: Enroll Now
+        action_url: https://www.brevo.com/partners
+      - name: Negotiate Discount Tier
+        description: >-
+          Discuss and finalize the discount tier based on portfolio size with
+          Brevo's growth team.
+        action: Schedule Consultation
+        action_url: https://www.brevo.com/partners/consultation
+faq:
+  - question: Who is eligible to apply?
+    answer: >-
+      The program is open to venture capital firms, startup accelerators,
+      incubators, and angel investor networks, along with their portfolio
+      companies via partner organizations.
+  - question: How can partners get started?
+    answer: >-
+      Interested partners can enroll through Brevo's partnership portal,
+      negotiate custom discount tiers, and receive dedicated support along with
+      comprehensive marketing solutions.
