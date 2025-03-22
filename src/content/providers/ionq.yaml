@@ -1,0 +1,16 @@
+active: true
+name: IonQ
+short_name: IonQ
+slug: ionq
+color: '#00A8E8'
+url: https://ionq.com
+intro: >-
+  IonQ provides quantum computing solutions and offers academic credits for
+  quantum research.
+best_deal: Up to $10,000 in research credits
+video: ''
+tags:
+  - quantum
+  - research
+  - academia
+  - credits
