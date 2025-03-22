@@ -1,0 +1,16 @@
+active: true
+name: Civo
+short_name: Civo
+slug: civo
+color: '#3BB1E0'
+url: https://www.civo.com
+intro: >-
+  A cloud provider offering managed Kubernetes and cloud services tailored for
+  tech startups.
+best_deal: $250 free Civo credit for 1 month
+video: ''
+tags:
+  - kubernetes
+  - startup
+  - cloud
+  - credits
