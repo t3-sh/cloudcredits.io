@@ -1,0 +1,140 @@
+draft: false
+provider_slug: zoho
+title: Zoho for Startups Program
+meta_title: Zoho for Startups - Accelerate Your Growth
+intro: >-
+  Access a full range of Zoho software solutions with flexible credit benefits
+  and expert support, tailored for new startups aiming to streamline operations
+  and scale efficiently.
+description: >-
+  Zoho for Startups Program offers startups up to ₹1,00,000 in Zoho Wallet
+  Credits to explore 55+ integrated applications including CRM, accounting, and
+  project management tools. Eligible startups can also earn additional credits
+  by hosting their domain with Zoho within 15 days, and DPIIT-recognized
+  startups may qualify for special benefits totaling up to ₹3,00,000 credits.
+  The program includes free weekday email support, expert consultations, and
+  access to partner-led training sessions, providing a comprehensive foundation
+  for business growth.
+status: Active
+tags:
+  - startups
+  - saas
+  - software
+  - credits
+  - growth
+url: https://www.zoho.com/startups/
+value_type: credits
+currency: USD
+min_value: 100000
+max_value: 300000
+community_notes:
+  - title: Founder's Insight
+    body: >-
+      Sridhar Vembu, Co-founder and Chief Scientist, emphasizes the importance
+      of building a strong foundation with Zoho's scalable software solutions
+      for sustainable startup growth.
+    source_url: https://www.zoho.com/startups/
+  - title: Startup Success Stories
+    body: >-
+      Entrepreneurs like Ayush Jain and Aastha Grover have praised the program
+      for its effective blend of financial credits and operational support.
+    source_url: https://www.zoho.com/startups/
+tiers:
+  - name: Zoho Base Credits
+    intro: >-
+      Receive Stage 1 Zoho Wallet Credits of up to ₹1,00,000 to explore Zoho's
+      comprehensive suite of apps.
+    max_value: 100000
+    url: https://www.zoho.com/startups/
+    benefits:
+      - Access to 55+ integrated Zoho applications
+      - Valid for 360 days
+      - Use credits for subscriptions, upgrades, and add-ons
+      - Streamline operations from setup to scale
+    benefits_level: 1
+    duration:
+      - 360 days
+    eligibility:
+      - Must be a new user of Zoho
+      - Registered with an approved ecosystem enabler
+      - Aligned with Startup India definition
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Zoho Account
+        description: Register using your organization's primary email on Zoho.
+        action: Register
+        action_url: https://www.zoho.com/signup/
+      - name: Apply via Enabler
+        description: Submit your application through your startup enabler or collaborator.
+        action: Apply Now
+        action_url: https://www.zoho.com/startups/
+  - name: Zoho Additional Credits
+    intro: >-
+      Earn additional credits by hosting your domain with Zoho within 15 days of
+      receiving Stage 1 credits.
+    max_value: 86000
+    url: https://www.zoho.com/startups/
+    benefits:
+      - Additional credits for domain hosting
+      - Boosts early operational capacity
+      - Supplementary benefit to Stage 1 credits
+    benefits_level: 1
+    duration:
+      - 15 days
+    eligibility:
+      - Domain hosting must be set up within 15 days
+      - Applicable only after Stage 1 validation
+    effort_level: 2
+    steps_to_apply:
+      - name: Link Domain
+        description: >-
+          Set up and verify your domain hosting with Zoho to qualify for extra
+          credits.
+        action: Verify Now
+        action_url: https://www.zoho.com/startups/
+  - name: Zoho DPIIT Special Credits
+    intro: >-
+      For DPIIT-recognized or tax-exempt startups, receive up to ₹3,00,000
+      credits combining base and promotional benefits.
+    max_value: 300000
+    url: https://www.zoho.com/startups/
+    benefits:
+      - Higher credit allocation up to ₹3,00,000
+      - Promotional credits based on usage
+      - Full access to Zoho's suite of applications
+    benefits_level: 3
+    duration:
+      - 360 days
+    eligibility:
+      - Proof of DPIIT recognition or tax exemption required
+      - Must be a new user with no prior paid subscriptions
+      - Registered with an approved ecosystem enabler
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit DPIIT Certificate
+        description: Upload the required documentation to verify your DPIIT status.
+        action: Submit
+        action_url: https://www.zoho.com/startups/
+faq:
+  - question: How can I apply for the Zoho for Startups program?
+    answer: >-
+      Create a Zoho account using your organization’s primary email and then
+      apply for credits via your approved startup enabler or directly through
+      the Zoho for Startups portal.
+  - question: Am I eligible if I have previously used Zoho One benefits?
+    answer: >-
+      No, the program is only available to new or free users with no active or
+      previous paid subscriptions or credit benefits from Zoho.
+  - question: Which countries are accepted for the program?
+    answer: >-
+      The program is currently live in select regions including India,
+      Indonesia, Brazil, the UK, and several other countries, with plans for
+      further expansion.
+  - question: How can I receive additional credits?
+    answer: >-
+      After Stage 1 approval, host your domain with Zoho within 15 days to
+      qualify for additional credits.
+  - question: What happens if I delete my Zoho account?
+    answer: >-
+      Deleting your account will reset your Zoho Wallet balance to zero, and
+      credits cannot be transferred or recovered.

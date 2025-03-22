@@ -1,0 +1,17 @@
+active: true
+name: Zoho
+short_name: Zoho
+slug: zoho
+color: '#17A2FF'
+url: https://www.zoho.com
+intro: >-
+  A comprehensive suite of software solutions tailored for startups, offering a
+  range of applications from CRM to project management.
+best_deal: Up to ₹3,00,000 Zoho Wallet Credits for startups
+video: ''
+tags:
+  - startups
+  - saas
+  - software
+  - credits
+  - growth
