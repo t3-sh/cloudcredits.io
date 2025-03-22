@@ -20,10 +20,8 @@ description: >-
 status: Active
 tags:
   - ai
+  - ml
   - gpu
-  - inference
-  - deployment
-  - consulting
 url: https://netmind.ai/elevate-program
 value_type: credits
 currency: USD
