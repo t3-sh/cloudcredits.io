@@ -1,0 +1,88 @@
+draft: false
+provider_slug: pulumi
+title: Pulumi for Startups
+meta_title: Pulumi for Startups - Accelerate Your Cloud Innovation
+intro: >-
+  Pulumi for Startups offers up to $10,000 in Pulumi Credits and exclusive
+  technical support to help pre-Series A companies scale their cloud
+  infrastructure efficiently.
+description: >-
+  Pulumi for Startups provides a comprehensive package designed to help
+  early-stage companies streamline cloud infrastructure management while
+  minimizing costs. It offers up to $10,000 in Pulumi Credits valid for 12
+  months on any Pulumi Cloud plan, multi-language Infrastructure as Code (IaC)
+  support using JavaScript, TypeScript, Python, .NET, Java, and Go, and
+  exclusive technical support including office hours, guided workshops, and
+  pre-built 'Startup in a Box' templates. This program is tailored for
+  pre-Series A startups with under $1M in annual revenue.
+status: Active
+tags:
+  - dev tools
+  - devops
+  - infrastructure
+url: https://www.pulumi.com/pulumi-for-startups/
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes:
+  - title: Testimonial from Igor Shapiro
+    body: >-
+      Pulumi supercharged our whole organization and empowered developer teams
+      to self-provision resources and ship new capabilities faster without
+      waiting for infrastructure deployment.
+    source_url: https://www.pulumi.com/pulumi-for-startups/
+tiers:
+  - name: Pulumi for Startups
+    intro: >-
+      Pre-Series A startups can leverage up to $10,000 in Pulumi Credits valid
+      for 12 months, along with exclusive office hours, workshops, and technical
+      support to scale cloud infrastructure.
+    max_value: 10000
+    url: https://www.pulumi.com/pulumi-for-startups/
+    benefits:
+      - Up to $10,000 in Pulumi Credits for 12 months
+      - >-
+        Multi-language Infrastructure as Code (IaC) support (JavaScript,
+        TypeScript, Python, .NET, Java, Go)
+      - Exclusive office hours and workshops with Pulumi engineers
+      - Access to pre-built 'Startup in a Box' templates
+      - CI/CD automation and enterprise-grade features
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Pre-Series A startups
+      - Under $1M annual revenue
+      - Team size 1-10
+    effort_level: 2
+    steps_to_apply:
+      - name: Visit Pulumi for Startups
+        description: Navigate to the Pulumi for Startups page to begin your application.
+        action: Apply Now
+        action_url: https://www.pulumi.com/pulumi-for-startups/
+      - name: Create Pulumi Organization
+        description: >-
+          Register or create your Pulumi organization to proceed with the
+          verification.
+        action: Register
+        action_url: https://www.pulumi.com/pulumi-for-startups/
+      - name: Submit Verification Details
+        description: >-
+          Provide your startup information and verification details to complete
+          the application.
+        action: Submit
+        action_url: https://www.pulumi.com/pulumi-for-startups/
+faq:
+  - question: What is the Pulumi for Startups program?
+    answer: >-
+      It is a comprehensive program offering up to $10,000 in Pulumi Credits,
+      multi-language IaC support, and exclusive technical resources for
+      early-stage startups.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligibility is limited to pre-Series A startups with under $1M in annual
+      revenue and teams of 1-10 members.
+  - question: How long are the Pulumi Credits valid?
+    answer: >-
+      Credits are valid for 12 months, allowing startups to optimize their cloud
+      infrastructure over a one-year period.

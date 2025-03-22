@@ -1,0 +1,92 @@
+draft: false
+provider_slug: typeform
+title: Typeform Startup Program
+meta_title: Scale Your Startup with Typeform
+intro: >-
+  Up to 75% discount on the annual Business plan empowers early-stage startups
+  to leverage advanced data collection and customer intelligence tools while
+  capturing deeper audience insights.
+description: >-
+  Typeform's Startup Program offers eligible startups a remarkable 75% discount
+  on the annual Business plan for one year, unlocking premium features such as
+  AI-powered analysis, customizable brand kits, advanced automations, and
+  video-enhanced forms. Designed for startups that are not yet Typeform
+  customers, with less than $5M in funding, fewer than 50 employees, and under 5
+  years old, this program helps founders make data-driven decisions.
+  Additionally, Typeform supports the startup ecosystem with a dedicated partner
+  program for accelerators, incubators, and VC funds.
+status: Active
+tags:
+  - forms
+  - collaboration
+  - no-code
+  - customer support
+url: https://www.typeform.com/typeform-startups
+value_type: discount
+max_value: 75
+community_notes: []
+tiers:
+  - name: Business Plan Discount
+    intro: >-
+      Receive up to 75% off the annual Business plan featuring AI-powered
+      insights, branded forms, and advanced automations.
+    max_value: 75
+    url: https://www.typeform.com/typeform-startups
+    benefits:
+      - 75% off annual Business plan
+      - AI-powered analysis for actionable insights
+      - Customizable brand kits
+      - Advanced automations with popular integrations
+      - Video-enhanced forms for higher engagement
+    benefits_level: 1
+    duration:
+      - 1 year
+    eligibility:
+      - Not an existing Typeform customer
+      - Less than $5M in funding
+      - Fewer than 50 employees
+      - Under 5 years old
+    effort_level: 1
+    steps_to_apply:
+      - name: Verify Eligibility
+        description: Review the eligibility criteria on the Typeform Startup page.
+      - name: Submit Application
+        description: >-
+          Complete and submit the online application form to receive the
+          discount.
+        action: Apply Now
+        action_url: https://www.typeform.com/typeform-startups
+  - name: Startup Partner Program
+    intro: >-
+      A dedicated track for accelerators, incubators, and VC funds to offer
+      Typeform’s advanced tools to their portfolio companies.
+    max_value: 0
+    url: https://www.typeform.com/typeform-startups
+    benefits:
+      - Access to discounted Typeform products for portfolio companies
+      - Tools for market validation and customer feedback
+      - Support for startup ecosystems
+    benefits_level: 2
+    duration:
+      - Ongoing
+    eligibility:
+      - Accelerators, incubators, or VC funds
+    effort_level: 2
+    steps_to_apply:
+      - name: Contact Partner Team
+        description: >-
+          Reach out through the partner program page to inquire about joining
+          the program.
+        action: Find out more
+        action_url: https://www.typeform.com/typeform-startups
+faq:
+  - question: Can the discount be used on monthly plans?
+    answer: No—it’s exclusive to annual Business plans.
+  - question: What if my startup doesn’t qualify?
+    answer: >-
+      Typeform offers alternative plans and third-party discounts, such as 15%
+      lifetime savings or 6 months free through select partners.
+  - question: Is the discount renewable after one year?
+    answer: >-
+      The offer applies to the first year only; standard pricing resumes
+      afterward.

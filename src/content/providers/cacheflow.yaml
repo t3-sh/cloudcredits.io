@@ -1,0 +1,15 @@
+active: true
+name: Cacheflow
+short_name: Cacheflow
+slug: cacheflow
+color: "#3498db"
+url: https://www.cacheflow.com
+intro: >-
+  A platform providing tools for closing deals faster and managing revenue
+  operations efficiently, with a specific accelerator plan for early-stage SaaS
+  startups.
+best_deal: 50% discount on Startup Accelerator Plan
+video: ""
+tags:
+  - saas
+  - billing

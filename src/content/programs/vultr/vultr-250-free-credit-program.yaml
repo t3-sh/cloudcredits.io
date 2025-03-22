@@ -1,0 +1,80 @@
+draft: false
+provider_slug: vultr
+title: Vultr $250 Free Credit Program
+meta_title: Experience Vultr's Global Cloud Infrastructure with $250 Free Credits
+intro: >-
+  New users can access $250 in free credits to explore Vultr's extensive cloud
+  infrastructure, including advanced GPU capabilities and flexible compute
+  options.
+description: >-
+  Vultr offers a $250 free credit program targeting new users, including
+  developers, startups, and enterprises. This program enables participants to
+  test a full range of cloud compute services across 32 data centers worldwide.
+  Benefits include advanced GPU instances powered by the NVIDIA GH200 Grace
+  Hopper Superchip optimized for AI, ML, and HPC workloads, as well as flexible
+  compute options such as High Frequency Cloud Compute, Optimized Compute, Bare
+  Metal, and Cloud GPU. Additional enterprise-grade features such as automated
+  backups, snapshots, firewalls, flexible networking, and DDoS protection
+  further enhance the offering. Credits expire 365 days after account creation,
+  and post-credit usage is billed on an hourly basis.
+status: Active
+tags:
+  - cloud
+url: https://www.vultr.com
+value_type: credits
+currency: USD
+min_value: 250
+max_value: 250
+community_notes:
+  - title: Competitive Global Presence
+    body: >-
+      Vultr's extensive network of 32 data center regions ensures low-latency
+      access and regulatory compliance across multiple regions.
+    source_url: https://www.vultr.com
+tiers:
+  - name: Vultr $250 Free Credit Offer
+    intro: >-
+      New users receive $250 in free credits to explore Vultr's cloud computing
+      services, including advanced GPU and flexible compute options.
+    max_value: 250
+    url: https://www.vultr.com
+    benefits:
+      - Access to 32 global cloud data center regions
+      - >-
+        Advanced GPU instances powered by NVIDIA GH200 Grace Hopper Superchip
+        for AI/ML
+      - >-
+        Flexible compute options: High Frequency, Optimized, Bare Metal, and
+        Cloud GPU
+      - >-
+        Enterprise-grade features like backups, snapshots, firewalls, and DDoS
+        protection
+    benefits_level: 1
+    duration:
+      - 365 days
+    eligibility:
+      - New customers only
+      - Valid email and phone number required
+    effort_level: 1
+    steps_to_apply:
+      - name: Create Free Account
+        description: >-
+          Register a new Vultr account to claim the $250 free credits.
+        action: Sign Up
+        action_url: https://www.vultr.com
+faq:
+  - question: What is the credit validity period?
+    answer: Credits expire after 365 days from account creation.
+  - question: What services are covered by the credits?
+    answer: >-
+      The credits can be applied to most services including Compute, GPU,
+      Storage, and Databases, but exclude Windows licenses and certain
+      third-party add-ons.
+  - question: What happens after the credits are depleted?
+    answer: >-
+      Users must add a payment method and any usage beyond the allocated credits
+      will be billed on an hourly basis.
+  - question: What compliance standards does Vultr support?
+    answer: >-
+      Vultr supports HIPAA, GDPR, and SOC2 compliance, making it suitable for
+      regulated industries.

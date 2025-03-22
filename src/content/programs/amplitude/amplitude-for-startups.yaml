@@ -1,0 +1,123 @@
+draft: false
+provider_slug: amplitude
+title: Amplitude for Startups
+meta_title: Free Analytics & Web Insights for Startups
+intro: >-
+  Offers free access to the Amplitude Growth plan for 12 months, enabling
+  startups to leverage advanced analytics, experimentation, session replay, and
+  a Customer Data Platform (CDP) with a generous data limit of 200,000 MTUs.
+description: >-
+  Amplitude for Startups provides early-stage companies with a suite of advanced
+  analytics tools for one year, including Analytics, Feature and Web
+  Experimentation, Session Replay, and CDP. Delivered through three tracks – the
+  Startup Scholarship for startups with less than $10M in funding and under 20
+  employees; the Tech for Black Founders Scholarship for eligible U.S.-based
+  startups with less than $30M funding and fewer than 150 employees; and the
+  Portfolio Company Discount for select portfolio companies – it offers premium
+  support, scalable data limits (~100M events/month), and access to the
+  Amplitude Cohort of over 2,400 peers. After the free period, participants can
+  transition to a paid Growth plan with continued competitive discounts.
+status: Active
+tags:
+  - analytics
+  - cdp
+url: https://amplitude.com/startups
+value_type: discount
+max_value: 100
+community_notes:
+  - title: Amplitude Cohort
+    body: >-
+      Offers access to a community of over 2,400 peers for collaboration and
+      networking.
+    source_url: https://amplitude.com/cohort
+tiers:
+  - name: Startup Scholarship
+    intro: >-
+      One year of free access to the Amplitude Growth plan including Analytics,
+      Experimentation, Session Replay, and CDP, plus lifetime competitive
+      discounts.
+    max_value: 100
+    url: https://amplitude.com/startups
+    benefits:
+      - Free access to the Growth plan for 12 months
+      - Comprehensive analytics tools
+      - Competitive lifetime discounts
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Less than $10M in funding raised
+      - Fewer than 20 employees
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply via the Amplitude startup portal. The application is reviewed
+          within two business days.
+        action: Apply Now
+        action_url: https://amplitude.com/startups
+  - name: Tech for Black Founders Scholarship
+    intro: >-
+      Provides free and unlimited access to the Amplitude Growth plan for
+      eligible U.S.-based startups, along with lifetime discounts.
+    max_value: 100
+    url: https://amplitude.com/startups
+    benefits:
+      - Unlimited access to the Growth plan
+      - Premium analytics features
+      - Competitive lifetime discounts
+    benefits_level: 2
+    duration:
+      - Unlimited while eligible
+    eligibility:
+      - Less than $30M in funding raised
+      - Fewer than 150 employees
+      - Based in the United States
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply via the Amplitude startup portal to verify eligibility.
+        action: Apply Now
+        action_url: https://amplitude.com/startups
+  - name: Portfolio Company Discount
+    intro: >-
+      Offers a discount of at least 25% on the Amplitude Growth plan for one
+      year to select portfolio companies not currently using Amplitude.
+    max_value: 25
+    url: https://amplitude.com/startups
+    benefits:
+      - At least 25% discount on the Growth plan
+      - Exclusive portfolio company pricing
+      - Simple application process
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Less than $25M in funding raised
+      - Partnered with Y Combinator, AWS, or Sequoia
+      - Not currently an Amplitude customer
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply via the Amplitude startup portal to claim the discount.
+        action: Apply Now
+        action_url: https://amplitude.com/startups
+faq:
+  - question: How can I access support for Amplitude for Startups?
+    answer: >-
+      Participants can access technical support, implementation assistance, and
+      feature guidance via the Customer Help Center, and join the Amplitude
+      Cohort for non-technical queries.
+  - question: What is the approval timeline for the scholarships?
+    answer: >-
+      Applications are reviewed within two business days, with over 96% approval
+      rate for scholarship applicants.
+  - question: What are the data limits for the Growth plan?
+    answer: >-
+      The Growth plan includes a data limit of 200,000 monthly tracked users or
+      around 100 million events per month.
+  - question: What options are available after the free period?
+    answer: >-
+      After the initial 12-month period, startups can continue with the Growth
+      plan on a paid basis, upgrade to the Plus plan, or switch to the free
+      Starter plan.
