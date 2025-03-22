@@ -2,7 +2,7 @@ active: true
 name: Cloudways
 short_name: Cloudways
 slug: cloudways
-color: '#FFC107'
+color: '#07ebad'
 url: https://www.cloudways.com
 intro: >-
   Managed cloud hosting platform offering flexible, scalable hosting solutions
@@ -12,6 +12,4 @@ video: ''
 tags:
   - cloud
   - hosting
-  - startups
-  - mentorship
-  - growth
+  - dev tools

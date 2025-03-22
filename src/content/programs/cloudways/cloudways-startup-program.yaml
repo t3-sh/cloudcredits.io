@@ -13,13 +13,11 @@ description: >-
   mentorship. Designed for both bootstrapped and funded startups, the program
   enables businesses to build, grow, and expand with expert guidance and
   strategic resources.
-status: Active
+status: Upcoming
 tags:
   - cloud
-  - startups
   - hosting
-  - mentorship
-  - growth
+  - dev tools
 url: https://www.cloudways.com/en/startup-program.php
 value_type: credits
 currency: USD
