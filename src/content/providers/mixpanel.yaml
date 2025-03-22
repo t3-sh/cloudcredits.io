@@ -2,12 +2,12 @@ active: true
 name: Mixpanel
 short_name: Mixpanel
 slug: mixpanel
-color: '#7CD9E2'
+color: "#7CD9E2"
 url: https://mixpanel.com
 intro: >-
   A comprehensive analytics platform for product analytics, web analytics,
   session replay, and more.
 best_deal: Free access for one year up to $150,000 value
-video: ''
+video: ""
 tags:
   - analytics

@@ -1,0 +1,117 @@
+draft: false
+provider_slug: brevo
+title: Brevo Startup Program
+meta_title: Tailored Marketing & CRM Solutions for Startups and VCs
+intro: >-
+  Brevo's Startups & VCs Program empowers startups with essential tools and resources
+  to unlock their full growth potential. The program partners with global VC firms,
+  boutique accelerators, and other startup supporters to drive success for innovative businesses.
+description: >-
+  Brevo's Startups & VCs Program provides tailored marketing and CRM solutions
+  to help emerging businesses scale efficiently. The program offers
+  cost-effective access to enterprise tools including exclusive discounts on
+  Brevo's marketing suite, multi-platform integration for email, SMS, sales
+  pipeline management, and customer data. With over 150 pre-built integrations,
+  API access for custom workflows, and priority onboarding with a dedicated
+  support team, participating organizations receive strategic guidance to
+  optimize their CRM and marketing operations. Partners include venture capital firms, 
+  startup accelerators, incubators, and angel investor networks, with custom discount 
+  tiers based on funding stage to maximize growth potential.
+status: Active
+tags:
+  - marketing
+  - crm
+  - email
+  - sms
+url: https://www.brevo.com/startups
+value_type: discount
+min_value: 20
+max_value: 75
+community_notes:
+  - title: "Customer Success Story: AI Camp"
+    body: >-
+      Kevin Yen, Head of Growth at AI Camp, mentions that Brevo provides the
+      functionality and flexibility needed to manage marketing engagement and
+      sales pipeline, delivering significant annual savings compared to
+      competitors.
+    source_url: https://www.brevo.com/startups-vcs
+tiers:
+  - name: First Round Funding Tier
+    intro: >-
+      This tier offers significant discounts for startups that have completed their
+      first round of funding, along with comprehensive platform access.
+    max_value: 75
+    url: https://www.brevo.com/startups
+    benefits:
+      - Up to 75% off in first year, 50% off in second year
+      - 150+ pre-built integrations
+      - Access to Brevo Academy for accelerated growth
+      - Dedicated customer support team
+      - Complete marketing, sales, and conversation tools
+    benefits_level: 1
+    duration:
+      - 2 years
+    eligibility:
+      - Current participant or alumni of Brevo's partners
+      - Completed first round of funding
+    effort_level: 3
+    steps_to_apply:
+      - name: Check Partner Eligibility
+        description: >-
+          Verify that you are a current participant or alumni of one of Brevo's partners.
+        action: Check Eligibility
+        action_url: https://www.brevo.com/startups
+      - name: Apply for the Program
+        description: >-
+          Complete the application process with proof of your funding status.
+        action: Apply Now
+        action_url: https://www.brevo.com/startups
+  - name: Advanced Funding Tier
+    intro: >-
+      This tier caters to startups with significant funding of over $4 million,
+      offering tailored discounts and enterprise-level solutions.
+    max_value: 40
+    url: https://www.brevo.com/startups
+    benefits:
+      - Up to 40% off in first year, 20% off in second year
+      - Access to BrevoPlus enterprise solutions
+      - Custom dashboards and multi-account solutions
+      - Robust data privacy and dedicated support
+      - Unified customer data and custom events tracking
+    benefits_level: 4
+    duration:
+      - 2 years
+    eligibility:
+      - Current participant or alumni of Brevo's partners
+      - Over $4 million in funding
+    effort_level: 2
+    steps_to_apply:
+      - name: Verify Partner Status
+        description: >-
+          Confirm your status as a participant or alumni of one of Brevo's partners.
+        action: Verify Status
+        action_url: https://www.brevo.com/startups
+      - name: Submit Funding Documentation
+        description: >-
+          Provide documentation confirming your company has received over $4 million in funding.
+        action: Submit Application
+        action_url: https://www.brevo.com/startups
+faq:
+  - question: Who is eligible to apply?
+    answer: >-
+      The program is open to startups that are current participants or alumni of Brevo's
+      partners, including venture capital firms, startup accelerators, incubators, and angel 
+      investor networks. Startups must also meet funding criteria - either having completed a
+      first round of funding or having received over $4 million in funding.
+  - question: What tools are included in the program?
+    answer: >-
+      The program includes access to Brevo's comprehensive suite of tools including a Marketing
+      Platform (email, SMS, landing pages, ads), Sales Platform (deal tracking, pipeline management),
+      Conversations tools (live chat, chatbot, WhatsApp), Messaging API for transactional messages,
+      and for qualifying startups, access to BrevoPlus enterprise solutions.
+  - question: How long do the discounts last?
+    answer: >-
+      Discounts are structured over a two-year period. For startups with first round funding,
+      this includes up to 75% off in the first year and 50% off in the second year. For startups
+      with over $4 million in funding, discounts are up to 40% off in the first year and 20% off
+      in the second year.

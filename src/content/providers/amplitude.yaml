@@ -2,13 +2,13 @@ active: true
 name: Amplitude
 short_name: Amplitude
 slug: amplitude
-color: '#1E61F0'
+color: "#1E61F0"
 url: https://amplitude.com
 intro: >-
   Amplitude offers advanced analytics and web insights, empowering startups with
   tools for growth and experimentation.
 best_deal: Free access to Growth plan for 12 months
-video: ''
+video: ""
 tags:
   - analytics
   - cdp

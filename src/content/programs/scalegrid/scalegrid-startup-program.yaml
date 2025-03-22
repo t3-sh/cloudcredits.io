@@ -53,7 +53,7 @@ tiers:
       - Must be new to ScaleGrid
       - Generated less than $1.5M in revenue
       - Raised less than $1.5M in investment
-      - 'Eligible plan size: Medium or larger'
+      - "Eligible plan size: Medium or larger"
     effort_level: 2
     steps_to_apply:
       - name: Start Free Trial
