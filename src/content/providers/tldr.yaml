@@ -1,0 +1,17 @@
+active: true
+name: TL;DR
+short_name: TL;DR
+slug: tldr
+color: '#6489c8'
+url: https://tldr.io
+intro: >-
+  AI-powered Pro Plan delivering advanced summarization, transcription, and
+  content conversion tools to boost productivity.
+best_deal: Six months at a discounted rate, save $120
+video: ''
+tags:
+  - ai
+  - productivity
+  - content
+  - discount
+  - partnership
