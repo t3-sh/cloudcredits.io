@@ -1,0 +1,70 @@
+draft: false
+provider_slug: koyeb
+title: >-
+  Koyeb Startup Program: Accelerate with Credits for High-Performance
+  Infrastructure
+meta_title: Koyeb Startup Program - Accelerate with High-Performance Cloud Credits
+intro: >-
+  Get up to $30k of compute credits and specialized support to accelerate
+  go-to-market for early-stage startups. The program offers high-performance
+  cloud infrastructure with a seamless developer experience.
+description: >-
+  The Koyeb Startup Program provides early-stage startups with up to $30,000 in
+  compute credits applicable to both Standard and GPU instances. It features
+  dedicated onboarding with a solutions engineer, white-glove migration
+  assistance, and priority 24/7 support via a dedicated Slack channel.
+  Additionally, participants gain early access to beta features and exclusive
+  platform resources, enabling them to deploy full-stack applications, AI
+  workloads, APIs, and databases on a globally scalable infrastructure.
+status: Active
+tags:
+  - cloud
+  - startup
+  - credits
+  - infrastructure
+  - high-performance
+url: https://tally.so/r/w4kzad
+value_type: credits
+currency: USD
+max_value: 30000
+community_notes: []
+tiers:
+  - name: Koyeb Startup Tier
+    intro: >-
+      Early-stage startups receive up to $30k in compute credits, dedicated
+      onboarding, and premium support to deploy and scale applications.
+    max_value: 30000
+    url: https://tally.so/r/w4kzad
+    benefits:
+      - Up to $30k compute credits for Standard and GPU instances
+      - Dedicated solutions engineer for onboarding
+      - White-glove migration assistance
+      - Priority support via a dedicated Slack channel
+      - Early access to beta features and exclusive resources
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - Seed-stage startups
+      - Raised between $1M and $5M in funding
+      - Part of an approved partner accelerator
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the online application form. The program team will review
+          your application within one week.
+        action: Apply Now
+        action_url: https://tally.so/r/w4kzad
+faq:
+  - question: Who is eligible for the Koyeb Startup Program?
+    answer: >-
+      The program is designed for seed-stage startups that have raised between
+      $1M and $5M from VCs or are part of a partner accelerator. Promising
+      bootstrapped startups may also qualify on a case-by-case basis.
+  - question: What benefits does the program offer?
+    answer: >-
+      It offers up to $30k in compute credits for Standard and GPU instances,
+      along with dedicated onboarding, white-glove migration assistance,
+      priority support, and early access to new features.
+  - question: How long does it take to receive a response after applying?
+    answer: Koyeb’s team typically reviews applications and responds within one week.
