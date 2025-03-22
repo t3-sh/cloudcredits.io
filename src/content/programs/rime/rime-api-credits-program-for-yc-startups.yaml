@@ -16,11 +16,11 @@ description: >-
   upon approval, helping startups overcome early-stage infrastructure costs.
 status: Active
 tags:
-  - tts
-  - startups
+  - ai
   - voice
-  - API
-  - YC
+  - agents
+  - customer support
+  - text-to-speech
 url: https://tally.so/r/31JO8Q
 value_type: credits
 currency: USD
@@ -51,7 +51,7 @@ tiers:
     eligibility:
       - YC accelerator (W24 cohort or later)
       - Planning to integrate text-to-speech in products
-    effort_level: 1
+    effort_level: 4
     steps_to_apply:
       - name: Apply for the Program
         description: Submit the form to confirm YC affiliation and provide project details.
