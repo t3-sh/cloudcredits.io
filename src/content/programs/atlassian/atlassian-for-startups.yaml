@@ -1,0 +1,87 @@
+draft: false
+provider_slug: atlassian
+title: Atlassian for Startups
+meta_title: Premium Atlassian Tools for Startups
+intro: >-
+  Early-stage companies receive premium access to Atlassian's suite of tools at
+  no cost for 12 months for up to 50 users, enabling them to plan, track, and
+  collaborate seamlessly.
+description: >-
+  The Atlassian for Startups program offers eligible startups free premium
+  access to Atlassian's cloud products including Jira, Jira Product Discovery,
+  Confluence, Loom, Compass, and Bitbucket. Startups benefit from pre-built
+  templates, AI-powered features, and integrated collaboration tools to
+  kickstart projects and scale operations. Eligibility requires that the startup
+  is not an existing Atlassian paid customer, is VC-backed or affiliated with an
+  accelerator/incubator, and has raised no more than US$10 million in external
+  funding. After the 12-month period, startups can renew, cancel, or downgrade
+  their plans.
+status: Active
+tags:
+  - startups
+  - collaboration
+  - productivity
+  - cloud
+  - tools
+url: https://www.atlassian.com/software/startups
+value_type: discount
+currency: USD
+max_value: 100
+community_notes:
+  - title: Over $15,000 Value
+    body: >-
+      The offer provides premium access to Atlassian products worth over
+      $15,000, available free for 12 months for up to 50 users.
+    source_url: https://www.atlassian.com/software/startups
+tiers:
+  - name: Atlassian for Startups
+    intro: >-
+      Receive free premium access to Atlassian products for 12 months for up to
+      50 users.
+    max_value: 100
+    url: https://www.atlassian.com/software/startups
+    benefits:
+      - >-
+        Kickstart your project with pre-built templates for business planning
+        and competitive analysis.
+      - >-
+        Capture, prioritize, and align ideas with Jira Product Discovery and
+        Confluence.
+      - >-
+        Collaborate effectively with AI-powered tools and integrated video
+        messaging (Loom).
+      - Manage code repositories and automate CI/CD with Bitbucket.
+      - Monitor software health and enhance developer experience with Compass.
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Not an existing Atlassian paid customer
+      - VC-backed or affiliated with an accelerator/incubator
+      - Have raised no more than US$10 million in external funding
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply Online
+        description: >-
+          Visit the Atlassian for Startups website to check eligibility and
+          apply.
+        action: Apply Now
+        action_url: https://www.atlassian.com/software/startups
+faq:
+  - question: How long does the Atlassian for Startups program last?
+    answer: >-
+      The free access lasts for 12 months, after which startups can choose to
+      renew, cancel, or downgrade to free plans.
+  - question: What if my team exceeds 50 users?
+    answer: >-
+      If more than 50 users require access, startups must upgrade to a paid
+      version for additional seats.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligibility requires that the startup is not an existing Atlassian paid
+      customer, is VC-backed or affiliated with an accelerator/incubator, and
+      has raised no more than US$10 million in external funding.
+  - question: What happens after the 12-month period?
+    answer: >-
+      After 12 months, startups can renew the free offer, opt for standard
+      pricing, or switch to a lower-tier free plan.
