@@ -1,0 +1,17 @@
+active: true
+name: Brevo
+short_name: Brevo
+slug: brevo
+color: "#D7FEC8"
+url: https://www.brevo.com/startups-vcs
+intro: >-
+  Brevo's Startups & VCs Program delivers exclusive discounts, tailored
+  marketing and CRM solutions, and advanced integrations to help startups and
+  VC-backed companies scale efficiently.
+best_deal: Exclusive discounts on Brevo's marketing suite
+video: ""
+tags:
+  - marketing
+  - crm
+  - email
+  - sms

@@ -1,0 +1,13 @@
+active: true
+name: Vultr
+short_name: Vultr
+slug: vultr
+color: "#245CAD"
+url: https://www.vultr.com
+intro: >-
+  Global cloud computing provider offering high performance and cost-effective
+  infrastructure services.
+best_deal: Up to $100,000 credits for cloud migration
+video: ""
+tags:
+  - cloud

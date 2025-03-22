@@ -1,0 +1,101 @@
+draft: false
+provider_slug: cloudzy
+title: Sunrise Startup Program
+meta_title: Sunrise Startup Program – Cloud Credits & DevOps Support
+intro: >-
+  Cloudzy's Sunrise startup program empowers early-stage startups with up to
+  $8,000 in cloud VPS credits in the first year, a 30% rebate on VPS purchases
+  in the second year, 24 hours of free DevOps consulting, and round-the-clock
+  customer support.
+description: >-
+  Sunrise by Cloudzy is designed to help seed and early-stage startups
+  accelerate their growth by providing a comprehensive cloud infrastructure
+  package. The program offers $8,000 in cloud VPS credits distributed on a
+  monthly basis in the first year (approximately $660 per month), a 30% rebate
+  on cloud VPS purchases in the second year, 24 hours of free DevOps consulting
+  to optimize infrastructure setup and deployment, and free 24/7/365
+  business-level customer support. Eligibility criteria include having a company
+  website, being founded within the last 5 years, and demonstrating affiliation
+  with an accelerator, incubator, or VC firm. Bootstrapped startups may also
+  apply with a defined business plan or pitch deck.
+status: Active
+tags:
+  - hosting
+  - devops
+  - cloud
+url: https://cloudzy.com/startup-program
+value_type: credits
+currency: USD
+min_value: 8000
+max_value: 10000
+community_notes:
+  - title: Why Startups Love Sunrise
+    body: >-
+      Startups appreciate Sunrise for offering scalable cloud credits,
+      dependable DevOps consulting, and comprehensive support that drives growth
+      and operational efficiency.
+    source_url: https://cloudzy.com/startup-program
+tiers:
+  - name: Sunrise Tier
+    intro: >-
+      Provides a comprehensive package including $8,000 in first-year cloud VPS
+      credits, a 30% rebate for second-year VPS purchases, 24 hours of free
+      DevOps consulting, and round-the-clock support.
+    max_value: 10000
+    url: https://cloudzy.com/startup-program
+    benefits:
+      - $8,000 One-Year Cloud VPS Credit
+      - 30% Rebate on Cloud VPS Purchases in the Second Year
+      - 24 Hours of Free DevOps Consulting
+      - Free 24/7/365 Business Level Customer Support
+      - Save up to 20% on every Cloud VPS plan starting at $3.96
+    benefits_level: 2
+    duration:
+      - 'Year 1: $8,000 credit & consulting'
+      - 'Year 2: 30% rebate on VPS purchases'
+    eligibility:
+      - Must have a company website and a domain-associated email
+      - Founded within the last 5 years
+      - Verification of affiliation with an accelerator, incubator, or VC firm
+      - Bootstrapped startups should have a defined business plan or pitch deck
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply to Sunrise
+        description: >-
+          Visit Cloudzy's startup program page and complete the application
+          form.
+        action: Apply Now
+        action_url: https://cloudzy.com/startup-program/apply
+      - name: Application Review
+        description: Cloudzy reviews the submitted application to verify eligibility.
+      - name: Results Notification
+        description: >-
+          Selected startups receive notification and details of their credit
+          allocation.
+      - name: Issue Credits
+        description: Approved applicants begin receiving monthly cloud VPS credits.
+faq:
+  - question: What is The SUNRISE (Cloudzy startup program), and who is it designed for?
+    answer: >-
+      It is designed to support seed and early-stage startups by providing cloud
+      VPS credits, expert DevOps consulting, and comprehensive support, enabling
+      them to succeed in their cloud journey.
+  - question: What do I get with the $8,000 cloud VPS credit in the first year?
+    answer: >-
+      Startups receive up to $8,000 in credit distributed monthly (approximately
+      $660 per month), which can be used to create and manage Cloud VPS
+      instances.
+  - question: How does the 30% rebate for Cloud VPS purchases in the second year work?
+    answer: >-
+      In the second year, eligible startups receive a 30% rebate on the total
+      amount spent on cloud VPS, helping lower ongoing operational costs.
+  - question: What is included in the 24 Hours Free DevOps Consulting Services?
+    answer: >-
+      It includes expert guidance on infrastructure setup, migration, CI/CD
+      deployment, automation, monitoring, and best practices to ensure an
+      efficient and secure cloud environment.
+  - question: How can I apply for the program?
+    answer: >-
+      Applicants can visit Cloudzy's startup program page, complete the
+      application form, and await further review and notification regarding
+      their eligibility and credit allocation.

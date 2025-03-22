@@ -1,0 +1,14 @@
+active: true
+name: Alchemy
+short_name: Alchemy
+slug: alchemy
+color: "#363FF9"
+url: https://alchemy.com
+intro: >-
+  A critical infrastructure provider for web3 developers, offering startups
+  credits, support, and network access.
+best_deal: 3 months FREE credits for startups
+video: ""
+tags:
+  - web3
+  - blockchain

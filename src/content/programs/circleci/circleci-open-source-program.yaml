@@ -1,0 +1,110 @@
+draft: false
+provider_slug: circleci
+title: CircleCI Open Source Program
+meta_title: CircleCI Open Source Free CI/CD for Open Source Projects
+intro: >-
+  Build open source projects for free with CircleCI's robust CI/CD platform,
+  offering generous monthly credits and enterprise-grade features.
+description: >-
+  CircleCI supports open source projects with one of the most robust free CI/CD
+  plans available. It provides up to 400,000 monthly credits for Linux, Docker,
+  and Arm builds (equivalent to ~80,000 build minutes on a small Docker
+  instance), and 30,000 credits for macOS and Windows builds. The program
+  includes features like Docker layer caching, SSH debugging, flaky test
+  detection, and advanced orchestration capabilities to accelerate build and
+  test pipelines. Eligible projects hosted on GitHub, GitLab, or Bitbucket can
+  access essential CI/CD tools at no cost.
+status: Active
+tags:
+  - open source
+  - ci/cd
+  - devops
+  - dev tools
+url: https://circleci.com/open-source
+value_type: discount
+max_value: 100
+community_notes:
+  - title: Community Impact
+    body: >-
+      Over 3.6 million monthly open source builds highlight the program's
+      extensive adoption and reliability.
+    source_url: https://circleci.com/blog
+  - title: Trusted by Leading Projects
+    body: >-
+      Renowned projects like Pandas, React, and Apollo GraphQL rely on CircleCI
+      for their build and test workflows.
+    source_url: https://circleci.com/customers
+tiers:
+  - name: Linux, Docker, & Arm Builds
+    intro: >-
+      For open source projects leveraging Linux, Docker, or Arm environments;
+      receive up to 400,000 monthly credits, enabling approximately 80,000 build
+      minutes on a small Docker instance.
+    max_value: 100
+    url: https://circleci.com/open-source
+    benefits:
+      - 400,000 monthly credits for Linux, Docker, and Arm builds
+      - 30x concurrent build capacity
+      - >-
+        Enterprise-grade CI/CD features including Docker layer caching, SSH
+        debugging, and flaky test detection
+      - Access to various resource classes and self-hosted runners
+      - Monthly credit refresh with no rollover
+    benefits_level: 2
+    duration:
+      - Monthly
+    eligibility:
+      - Public repository on GitHub, GitLab, or Bitbucket
+      - Meets open source licensing criteria
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register on CircleCI to activate the open source plan and start
+          building.
+        action: Get Started
+        action_url: https://circleci.com/open-source
+  - name: macOS & Windows Builds
+    intro: >-
+      Designed for open source projects requiring macOS or Windows environments;
+      receive up to 30,000 monthly credits with essential CI/CD functionalities.
+    max_value: 100
+    url: https://circleci.com/open-source
+    benefits:
+      - 30,000 monthly credits for macOS and Windows builds
+      - Essential CI/CD features with enterprise support
+      - 5x concurrent build capacity
+      - Access to private repositories under the free plan
+    benefits_level: 2
+    duration:
+      - Monthly
+    eligibility:
+      - Public repository on GitHub, GitLab, or Bitbucket
+      - Meets open source licensing criteria
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register on CircleCI's platform to access macOS and Windows build
+          credits.
+        action: Get Started
+        action_url: https://circleci.com/open-source
+faq:
+  - question: How are credits converted to build minutes?
+    answer: >-
+      On a Linux Medium resource class, 1 credit is approximately 0.2 minutes,
+      so 400,000 credits equate to about 80,000 build minutes on a small Docker
+      instance.
+  - question: Do credits roll over to the next month?
+    answer: >-
+      No, credits on the free plan expire at the end of each month and do not
+      roll over.
+  - question: Can I use macOS and Windows builds for my open source project?
+    answer: >-
+      Yes, open source projects can access up to 30,000 monthly credits for
+      macOS and Windows builds with essential CI/CD functionalities.
+  - question: What support options are available?
+    answer: >-
+      CircleCI offers community forums, detailed open source documentation, and
+      optional direct assistance from their Developer Relations team for larger
+      projects.

@@ -1,0 +1,79 @@
+draft: false
+provider_slug: formaloo
+title: Formaloo for Startups
+meta_title: Empowering Early-Stage Startups with Formaloo Credits
+intro: >-
+  Formaloo offers $1,000 in platform credits to early-stage startups, enabling
+  them to access advanced no-code features and premium tools for growth.
+description: >-
+  Formaloo's startup program provides eligible early-stage companies with a
+  $1,000 credit to use towards its Pro or Team plans. The program unlocks
+  premium features including advanced integrations (with Google Sheets, Zapier,
+  and Slack), customizable templates for forms, CRMs, quizzes, and client
+  portals, real-time analytics, collaborative workspaces, and access to
+  relational databases and AI-powered tools. It is designed for startups that
+  have raised no more than $5 million, launched less than 5 years ago, are
+  independently owned with fewer than 50 employees, and are new to Formaloo’s
+  Free plan. Startups can also benefit from priority approval if they work with
+  Formaloo’s global partners.
+status: Active
+tags:
+  - no-code
+  - forms
+  - workflow
+  - docs
+  - e-signature
+url: https://formaloo.formaloo.me/startups-apply
+value_type: credits
+currency: USD
+min_value: 1000
+max_value: 1000
+community_notes:
+  - title: Official Startup Program Page
+    body: >-
+      Learn more about Formaloo's startup program, its eligibility requirements,
+      and the application process by visiting the official page.
+    source_url: https://formaloo.formaloo.me/startups-apply
+tiers:
+  - name: Formaloo for Startups
+    intro: >-
+      Provides eligible early-stage startups with a $1,000 platform credit along
+      with access to premium no-code features.
+    max_value: 1000
+    url: https://formaloo.formaloo.me/startups-apply
+    benefits:
+      - $1,000 platform credit
+      - Advanced integrations with Google Sheets, Zapier, and Slack
+      - Customizable templates for forms, CRMs, quizzes, and client portals
+      - Real-time analytics and collaborative workspaces
+      - Access to relational databases and AI-powered tools
+    benefits_level: 2
+    duration:
+      - One-time credit
+    eligibility:
+      - Raised no more than $5 million in total funding
+      - Launched less than 5 years ago
+      - Independently owned and operated
+      - Fewer than 50 employees
+      - New to Formaloo’s Free plan
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up for Free Plan
+        description: Register on Formaloo’s Free plan to qualify for the startup program.
+        action: Sign Up
+        action_url: https://formaloo.com
+      - name: Submit Application
+        description: Apply via Formaloo’s startup portal to receive the $1,000 credit.
+        action: Apply Now
+        action_url: https://formaloo.formaloo.me/startups-apply
+faq:
+  - question: What are the eligibility requirements for Formaloo for Startups?
+    answer: >-
+      Eligible startups must have raised no more than $5 million, launched less
+      than 5 years ago, be independently owned with fewer than 50 employees, and
+      be new to Formaloo’s Free plan.
+  - question: How do startups apply for the program?
+    answer: >-
+      Startups can sign up for Formaloo’s Free plan and then submit an
+      application through the startup portal. Partner affiliation may also
+      provide priority approval.

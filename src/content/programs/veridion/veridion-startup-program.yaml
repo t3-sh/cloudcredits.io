@@ -1,0 +1,96 @@
+draft: false
+provider_slug: veridion
+title: Veridion Startup Program
+meta_title: Veridion Startup Program - Data-Driven Business Intelligence
+intro: >-
+  Empower emerging businesses with enterprise-grade business intelligence tools
+  and valuable data insights through the Veridion Startup Program.
+description: >-
+  The Veridion Startup Program offers startups access to enterprise-grade
+  business intelligence tools and rich datasets, including AI-curated global
+  data with over 80M company profiles. Participants benefit from €30K in free
+  API credits for three months of testing and integration, paired with
+  personalized pricing starting at just a couple of dollars per month. Designed
+  for early-stage ventures in sectors such as fintech, e-commerce, and SaaS, the
+  program features a rolling application process, rapid onboarding (under 3
+  weeks), and dedicated technical support to ensure seamless API integration and
+  data-driven decision-making.
+status: Active
+tags:
+  - ai
+  - analytics
+  - business intelligence
+url: https://veridion.com/startup-program
+value_type: credits
+currency: EUR
+max_value: 30000
+community_notes:
+  - title: Comparable Enterprise Value
+    body: >-
+      The program offers startups data access similar to that used by top-tier
+      firms like McKinsey and Bain, potentially saving over €50K per year in
+      data costs.
+    source_url: https://veridion.com/case-studies
+tiers:
+  - name: Startup Tier
+    intro: >-
+      Provides up to €30K in free API credits for three months along with
+      personalized pricing tailored to the startup’s stage and needs.
+    max_value: 30000
+    url: https://veridion.com/startup-program
+    benefits:
+      - €30K free API credits for 3 months
+      - Personalized pricing starting at a couple dollars per month
+      - Access to AI-curated global company data
+      - REST APIs for search, matching, and enrichment
+      - Dedicated technical support
+    benefits_level: 2
+    duration:
+      - 3 months
+    eligibility:
+      - Incorporated within the last 5 years
+      - Annual revenue below €1M
+      - Team size under 20
+      - Non-competing with Veridion
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit Your Details
+        description: Fill out the application form to share your startup details.
+        action: Apply Now
+        action_url: https://veridion.com/startup-program/apply
+      - name: Get Reviewed
+        description: Have your application evaluated by Veridion's team.
+      - name: Initial Meeting
+        description: Attend a personalized session to discuss your startup’s needs.
+      - name: Tailored Onboarding
+        description: Receive a customized data plan and contract.
+      - name: Integrate
+        description: Integrate Veridion's APIs and start leveraging data insights.
+faq:
+  - question: What is the Veridion Startup Program?
+    answer: >-
+      It offers startups access to rich datasets and APIs that enable
+      data-driven decision-making through enterprise-grade business intelligence
+      tools.
+  - question: Who is eligible to join the program?
+    answer: >-
+      Eligible startups are those incorporated within the last 5 years, with
+      annual revenue under €1M, and a team size of less than 20, operating in
+      sectors like fintech, e-commerce, and SaaS.
+  - question: How can startups benefit from Veridion's data?
+    answer: >-
+      Startups can leverage Veridion’s data for customer profiling, market trend
+      analysis, supplier vetting, and to gain competitive insights for informed
+      decision-making.
+  - question: How do I integrate Veridion's APIs into my platform?
+    answer: >-
+      Detailed documentation and dedicated support are provided to ensure
+      seamless integration of the APIs into your business processes.
+  - question: Is the data provided by Veridion GDPR compliant?
+    answer: >-
+      Yes, Veridion adheres to GDPR and other data protection standards,
+      ensuring secure and compliant access to data.
+  - question: What sectors does Veridion's data cover?
+    answer: >-
+      It covers a wide range of sectors including fintech, e-commerce, SaaS,
+      healthcare, education, and more, along with specialized verticals.

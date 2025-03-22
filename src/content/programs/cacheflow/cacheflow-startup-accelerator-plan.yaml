@@ -1,0 +1,75 @@
+draft: false
+provider_slug: cacheflow
+title: Cacheflow Startup Accelerator Plan
+meta_title: Accelerate SaaS Deals with Cacheflow's Startup Accelerator Plan
+intro: >-
+  Early-stage SaaS startups with less than $1M ARR can access Cacheflow's
+  Startup Accelerator Plan, offering a 50% discount on a comprehensive CPQ and
+  billing platform to streamline quote-to-cash operations.
+description: >-
+  Cacheflow's Startup Accelerator Plan provides early-stage SaaS companies with
+  a full suite of tools to close deals faster and manage revenue operations
+  efficiently. At a 50% discount, the plan reduces the monthly subscription from
+  $1,998 to $999 and includes 5 sales admin seats (with additional seats
+  available at $99 per user), CRM integrations with HubSpot, Salesforce, and
+  Close, unlimited quotes, subscriptions, billing, invoicing and usage-based
+  billing, along with automated workflows for e-signatures, payments, and
+  contract management. Implementation takes less than 5 hours and the system can
+  be live within 1-2 days.
+status: Active
+tags:
+  - saas
+  - billing
+url: https://www.cacheflow.com/startup-accelerator
+value_type: discount
+currency: USD
+min_value: 50
+max_value: 50
+community_notes:
+  - title: Positive Customer Feedback
+    body: >-
+      Cacheflow's accelerator plan has been praised for its ease-of-use and
+      effective integration with major CRMs, significantly accelerating deal
+      closures.
+    source_url: https://www.cacheflow.com/case-studies
+tiers:
+  - name: Startup Accelerator
+    intro: >-
+      Accelerate your SaaS growth with a 50% discount on a CPQ and billing
+      solution designed for early-stage startups.
+    max_value: 50
+    url: https://www.cacheflow.com/startup-accelerator
+    benefits:
+      - 50% discount on monthly subscription
+      - 5 included sales admin seats (additional seats at $99/user)
+      - CRM integrations with HubSpot, Salesforce, and Close
+      - Unlimited quotes, subscriptions, billing, and invoicing
+      - Automated workflows for e-signature, payments, and contract management
+    benefits_level: 1
+    duration:
+      - Monthly subscription
+    eligibility:
+      - Early-stage SaaS startups with less than $1M ARR
+    effort_level: 1
+    steps_to_apply:
+      - name: Claim Offer
+        description: Sign up for a demo and claim the Startup Accelerator Plan.
+        action: Claim Offer
+        action_url: https://www.cacheflow.com/startup-accelerator
+faq:
+  - question: Do you integrate with my CRM?
+    answer: >-
+      Cacheflow integrates natively with HubSpot, Salesforce, and Close, with
+      additional connectivity available via Zapier and APIs.
+  - question: Can Cacheflow manage subscriptions?
+    answer: >-
+      Yes, Cacheflow can manage SaaS subscriptions directly or integrate with
+      third-party subscription management tools.
+  - question: Is Cacheflow a CPQ?
+    answer: >-
+      Cacheflow is a CPQ alternative offering similar outcomes with a simpler,
+      more efficient platform, faster deployment, and a better buyer experience.
+  - question: How long does implementation take?
+    answer: >-
+      Implementation typically takes 1-2 days with under 5 hours of setup for
+      integrations and proposal branding.

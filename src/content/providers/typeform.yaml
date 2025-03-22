@@ -1,0 +1,16 @@
+active: true
+name: Typeform
+short_name: Typeform
+slug: typeform
+color: "#1F83FF"
+url: https://www.typeform.com
+intro: >-
+  A user-friendly online form builder that transforms tedious tasks into
+  engaging conversations.
+best_deal: Up to 75% discount on annual Business plan
+video: ""
+tags:
+  - forms
+  - collaboration
+  - no-code
+  - customer support

@@ -18,11 +18,10 @@ description: >-
   their plans.
 status: Active
 tags:
-  - startups
   - collaboration
   - productivity
-  - cloud
-  - tools
+  - dev tools
+  - project management
 url: https://www.atlassian.com/software/startups
 value_type: discount
 currency: USD
@@ -59,7 +58,7 @@ tiers:
       - Not an existing Atlassian paid customer
       - VC-backed or affiliated with an accelerator/incubator
       - Have raised no more than US$10 million in external funding
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Apply Online
         description: >-

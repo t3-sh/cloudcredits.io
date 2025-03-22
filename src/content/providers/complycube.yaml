@@ -1,0 +1,16 @@
+active: true
+name: ComplyCube
+short_name: ComplyCube
+slug: complycube
+color: "#1583FB"
+url: https://complycube.com
+intro: >-
+  ComplyCube offers KYC, AML, and identity verification tools for startups,
+  providing free and paid tiers to streamline onboarding and compliance.
+best_deal: Up to $50,000 in credits for identity verification
+video: ""
+tags:
+  - compliance
+  - kyc
+  - cybersecurity
+  - fintech

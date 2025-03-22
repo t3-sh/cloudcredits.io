@@ -1,0 +1,84 @@
+draft: false
+provider_slug: blockpi
+title: BlockPI Web3 Startup Program
+meta_title: BlockPI Web3 Startup Program - Empowering Web3 Innovation
+intro: >-
+  BlockPI Network is launching a support program for blockchain startups
+  designed to lower entry barriers and fuel growth. It offers up to $1000 in API
+  credits, dedicated technical support via Telegram, and access to marketing and
+  network opportunities.
+description: >-
+  The BlockPI Web3 Startup Program provides comprehensive support for blockchain
+  projects through financial credits, technical assistance, and ecosystem
+  partnerships. Benefits include API service credits, priority access to new
+  features, marketing enablement, and network access to prominent venture
+  capital firms and blockchain partners. The program is open to developers with
+  funding, hackathon winners, grant recipients, projects building non-profit
+  tools or public goods, and Exchange Launchpad/IEO/IDO initiatives.
+  Applications are reviewed within 5 business days and accepted credits are
+  valid for 12 months. Special features include enterprise-grade services,
+  archive node access, customizable API endpoints, MEV protection, and
+  transaction bundling without equity or KYC requirements.
+status: Active
+tags:
+  - web3
+  - blockchain
+url: https://blockpi.io/startup
+value_type: credits
+currency: USD
+max_value: 1000
+community_notes:
+  - title: Ecosystem Partners
+    body: >-
+      The program is supported by reputable organizations including NGC
+      Ventures, Hashkey Capital, Continue Capital, SNZ Holding, Shima Capital,
+      CMS Holdings, Old Fashion Research, LD Capital, Math Wallet, StaFi
+      Protocol, and LucidBlue Ventures.
+    source_url: https://blockpi.io/startup
+tiers:
+  - name: Startup Credits & Support Tier
+    intro: >-
+      Offers up to $1000 in API credits along with dedicated technical support,
+      marketing enablement, and network access.
+    max_value: 1000
+    url: https://blockpi.io/startup
+    benefits:
+      - Up to $1000 in BlockPI API service credits
+      - Dedicated technical support via Telegram
+      - Priority access to new features and product updates
+      - Marketing enablement through BlockPI media channels
+      - Co-marketing opportunities with ecosystem partners
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Developers with funding, hackathon wins, or grants
+      - Projects building non-profit tools or public goods
+      - Exchange Launchpad/IEO/IDO projects
+      - Projects with a verifiable demo or website
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the online application form at the BlockPI Startup Program
+          page.
+        action: Apply now
+        action_url: https://blockpi.io/startup
+      - name: Application Review
+        description: >-
+          BlockPI reviews applications within 5 business days and notifies
+          successful applicants.
+faq:
+  - question: What is the BlockPI Web3 Startup Program?
+    answer: >-
+      It is a comprehensive support program for blockchain startups offering up
+      to $1000 in API credits, dedicated technical support, marketing
+      enablement, and network access.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligibility includes developers who have received funding, won hackathons,
+      or obtained grants; projects building non-profit tools or public goods;
+      Exchange Launchpad/IEO/IDO projects; and startups with a verifiable demo
+      or website.
+  - question: How long are the credits valid?
+    answer: Successful applicants receive credits valid for 12 months after approval.

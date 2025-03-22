@@ -1,0 +1,93 @@
+draft: false
+provider_slug: coda
+title: Coda Startup Program
+meta_title: Coda for Startups - Streamline Your Business Operations
+intro: >-
+  Get a 6-month free Team plan on Coda and experience a scalable, all-in-one
+  workspace that powers your startup with unlimited AI capabilities and premium
+  features.
+description: >-
+  Coda offers startups a robust package designed to streamline operations while
+  minimizing costs. The program provides a 6-month free Team plan (normally
+  $36/user/month) with unlimited AI capabilities, access to over 50,000
+  pre-built templates, and seamless integrations with essential tools like
+  Shopify and Gmail via Zapier. This initiative helps early-stage companies
+  centralize workflows, manage projects, and consolidate documentation in one
+  flexible platform, saving eligible startups approximately $1,000.
+status: Active
+tags:
+  - productivity
+  - collaboration
+  - no-code
+  - docs
+  - project management
+url: https://coda.io/startups
+value_type: discount
+max_value: 100
+community_notes:
+  - title: Testimonial from Jamie Shostak
+    body: >-
+      Coda allowed us to meet the challenges of a growing company and
+      ever-expanding team head-on.
+    source_url: https://coda.io
+  - title: Testimonial from Kerry Wang
+    body: >-
+      Coda scales with our team and reinforces the culture we want by delivering
+      reliable performance that grows with us.
+    source_url: https://coda.io
+tiers:
+  - name: 6-month Free Team Plan
+    intro: >-
+      Provides startups with a free Team plan for 6 months, normally priced at
+      $36/user/month, featuring unlimited AI capabilities and premium features
+      to streamline operations.
+    max_value: 100
+    url: https://coda.io/startups
+    benefits:
+      - 6-month free access to the Team plan
+      - Unlimited AI capabilities
+      - Access to over 50,000 pre-built templates
+      - Integration with various tools via Packs and Zapier
+      - All-in-one customizable workspace
+    benefits_level: 1
+    duration:
+      - 6 months
+    eligibility:
+      - Startups less than 5 years old
+      - Less than $10M in funding
+      - Business domain email required
+      - A live website must be maintained
+      - No prior Coda subscriptions in the last 30 days
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register using a partner-specific link to initiate the application
+          process.
+        action: Sign Up
+        action_url: https://coda.io/startups
+      - name: Complete Application
+        description: Fill out the form with company details and eligibility proof.
+        action: Submit
+        action_url: https://coda.io/startups
+      - name: Activation
+        description: >-
+          Wait up to 14 days for the free plan benefits to be activated on your
+          dashboard.
+        action: Wait
+        action_url: https://coda.io/startups
+faq:
+  - question: What is the Coda Startup Program?
+    answer: >-
+      It offers startups a 6-month free Team plan with unlimited AI
+      capabilities, premium templates, and robust integrations to streamline
+      operations.
+  - question: Who is eligible to apply?
+    answer: >-
+      Startups less than 5 years old, with less than $10M in funding, using a
+      business domain email, maintaining a live website, and with no recent Coda
+      subscriptions are eligible.
+  - question: How long does the activation process take?
+    answer: >-
+      The free plan benefits are activated within 14 days after completing the
+      application process.

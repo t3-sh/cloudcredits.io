@@ -1,0 +1,74 @@
+draft: false
+provider_slug: rime
+title: Rime API Credits Program for YC Startups
+meta_title: Exclusive $5K API Credits for YC Startups
+intro: >-
+  Rime provides $5,000 in API credits to YC startups for seamless integration of
+  their advanced text-to-speech API, complete with priority support and early
+  access to new features.
+description: >-
+  Rime, a leading voice AI company specializing in ultra-low latency
+  text-to-speech solutions, has launched an exclusive $5K API credits program
+  for Y Combinator startups. This program enables early-stage companies to
+  integrate high-quality TTS capabilities into their products, featuring
+  hyper-realistic voices, sub-100ms latency, custom pronunciation controls, and
+  flexible deployment options. Credits are valid for 12 months and delivered
+  upon approval, helping startups overcome early-stage infrastructure costs.
+status: Active
+tags:
+  - ai
+  - voice
+  - agents
+  - customer support
+  - text-to-speech
+url: https://tally.so/r/31JO8Q
+value_type: credits
+currency: USD
+min_value: 5000
+max_value: 5000
+community_notes:
+  - title: Performance Edge
+    body: >-
+      Rime's API delivers ultra-low latency (<300ms) and hyper-realistic voices,
+      providing a competitive edge over traditional TTS services.
+    source_url: https://rime.ai/technology
+tiers:
+  - name: YC Startup Tier
+    intro: >-
+      Provides $5,000 in API credits over 12 months, enabling integration of
+      advanced TTS features.
+    max_value: 5000
+    url: https://tally.so/r/31JO8Q
+    benefits:
+      - $5,000 API credits for full TTS features
+      - Priority technical support
+      - Early access to new voice models
+      - Hyper-realistic voices with sub-100ms latency
+      - Custom pronunciation controls
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - YC accelerator (W24 cohort or later)
+      - Planning to integrate text-to-speech in products
+    effort_level: 4
+    steps_to_apply:
+      - name: Apply for the Program
+        description: Submit the form to confirm YC affiliation and provide project details.
+        action: Apply Now
+        action_url: https://tally.so/r/31JO8Q
+faq:
+  - question: What is the Rime $5K Credits Program?
+    answer: >-
+      It is a program offering $5,000 in API credits for YC startups to access
+      Rime’s advanced text-to-speech capabilities, along with priority support
+      and early feature access.
+  - question: Who is eligible for the program?
+    answer: >-
+      Any startup in Y Combinator's accelerator program (W24 cohort or later)
+      and planning to integrate text-to-speech technology can apply.
+  - question: How can startups apply?
+    answer: >-
+      Applicants can fill out the provided application form to verify their YC
+      affiliation and describe their TTS use case. Credits are applied within 5
+      business days upon approval.

@@ -1,0 +1,76 @@
+draft: false
+provider_slug: civo
+title: Civo Free Trial $250
+meta_title: Civo Free Trial $250
+intro: >-
+  Get $250 free Civo credit for 1 month to explore managed Kubernetes, cloud
+  services, and more. Enjoy blazing fast cluster deployment, expert mentorship,
+  and free educational resources designed for tech startups.
+description: >-
+  Civo offers a comprehensive Startup Program designed to support tech startups
+  developing cloud-native applications. The program provides $250 in free credit
+  valid for 1 month, along with access to managed Kubernetes with sub-90 second
+  deployment, mentorship from cloud native experts, and extensive educational
+  resources via Civo Academy. Eligible startups must sign up for a Civo account
+  and add a valid credit/debit card within 3 months. The free credit expires at
+  the end of the month following issuance, allowing startups to experience
+  enterprise-grade infrastructure with transparent pricing starting at
+  $5.43/month.
+status: Active
+tags:
+  - kubernetes
+  - startup
+  - cloud
+url: https://www.civo.com/signup
+value_type: credits
+currency: USD
+min_value: 250
+max_value: 250
+community_notes: []
+tiers:
+  - name: Startup Credit Tier
+    intro: >-
+      Receive $250 free Civo credit valid for 1 month to explore managed
+      Kubernetes and a range of cloud services.
+    max_value: 250
+    url: https://www.civo.com/signup
+    benefits:
+      - $250 free credit for 1 month
+      - Managed Kubernetes with sub-90 second deployment
+      - Access to cloud native expert mentorship
+      - Free Kubernetes courses via Civo Academy
+      - Transparent pricing starting at $5.43/month
+    benefits_level: 1
+    duration:
+      - 1 month
+    eligibility:
+      - Tech startups developing cloud-native applications
+      - Must sign up for a Civo account
+      - Add a valid credit/debit card within 3 months of signup
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up for Civo
+        description: >-
+          Create a Civo account by providing your personal details and agreeing
+          to the terms and offer conditions.
+        action: Sign Up
+        action_url: https://www.civo.com/signup
+faq:
+  - question: How do I claim the $250 credit?
+    answer: >-
+      Add a payment card within 21 days of signup. The credit is applied to your
+      usage first, with any remaining charges billed to your card.
+  - question: Can I extend my credit validity?
+    answer: >-
+      No – unused credit expires at the end of the month following issuance. It
+      is recommended to monitor your usage and set billing alerts.
+  - question: What payment methods are accepted?
+    answer: >-
+      Visa, MasterCard, and American Express are accepted. Prepaid or virtual
+      cards are not supported.
+  - question: How quickly can my resources scale?
+    answer: >-
+      Civo's managed Kubernetes clusters launch in under 90 seconds, and nodes
+      can be resized within 60 seconds.
+  - question: Is data transfer limited?
+    answer: No – Civo offers unlimited free egress and ingress.

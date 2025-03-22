@@ -1,0 +1,79 @@
+draft: false
+provider_slug: netmind
+title: NetMind Elevate Program
+meta_title: NetMind Elevate Program - Accelerate Your AI Projects
+intro: >-
+  Claim up to $100,000 in free inference credits to accelerate AI projects with
+  cutting-edge model APIs, scalable GPU clusters, rapid model deployment, and
+  tailored consulting.
+description: >-
+  NetMind.AI's Elevate Program provides substantial support for AI and ML
+  projects by offering immediate trial credits and the opportunity to unlock up
+  to $100,000 in inference credits. The program features cost-efficient access
+  to high-performance GPU clusters (ranging from 16 to over 100K GPUs), rapid
+  deployment of both private and pre-trained models through dedicated endpoints,
+  and expert consulting to deliver industry-specific AI solutions such as
+  insurance speech analysis, bank document processing, and social media
+  monitoring. With auto-scaling infrastructure and a pay-as-you-go billing
+  model, participants benefit from accelerated training and inference
+  performance while optimizing operational costs.
+status: Active
+tags:
+  - ai
+  - ml
+  - gpu
+url: https://netmind.ai/elevate-program
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes: []
+tiers:
+  - name: NetMind Elevate
+    intro: >-
+      Access up to $100,000 in inference credits along with scalable GPU
+      clusters, rapid model deployment, and enterprise AI consulting to
+      accelerate AI initiatives.
+    max_value: 100000
+    url: https://netmind.ai/elevate-program
+    benefits:
+      - Up to $100K in inference credits
+      - High-performance GPU clusters with 16 to 100K+ GPUs
+      - Rapid deployment of private and pre-trained models
+      - Auto-scaling infrastructure to optimize costs
+      - Expert AI consulting for industry-specific solutions
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Startups and enterprises in the AI/ML space
+      - Successful completion of initial trial credits evaluation
+      - Business verification required for enterprise benefits
+    effort_level: 3
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register on NetMind's platform to instantly unlock trial credits and
+          explore AI services.
+        action: Register
+        action_url: https://netmind.ai/signup
+      - name: Apply for Elevate
+        description: >-
+          Submit project details through the Elevate Program portal to access up
+          to $100K in credits.
+        action: Apply Now
+        action_url: https://netmind.ai/elevate-program
+faq:
+  - question: How long are credits valid?
+    answer: Credits expire 12 months after issuance.
+  - question: Can I deploy proprietary models?
+    answer: >-
+      Yes, proprietary models can be deployed on dedicated endpoints and
+      monetized based on token usage.
+  - question: Is technical support included?
+    answer: >-
+      Enterprise clients receive dedicated engineering assistance as part of the
+      program.
+  - question: What industries do you prioritize?
+    answer: >-
+      The program currently focuses on fintech, healthcare, and IoT, but is
+      adaptable to any sector.

@@ -1,0 +1,105 @@
+draft: false
+provider_slug: scalegrid
+title: ScaleGrid Startup Program
+meta_title: 50% Off Managed Database Hosting for Startups
+intro: >-
+  Get started with the ScaleGrid Startup Program and enjoy a 50% discount on
+  fully managed, BYOC hosting plans for PostgreSQL, MySQL, Redis™, and MongoDB
+  for 12 months.
+description: >-
+  ScaleGrid's Startup Program delivers substantial cost-saving benefits for
+  early-stage companies by offering a 50% discount on Bring Your Own Cloud
+  (BYOC) hosting plans. Designed for startups new to ScaleGrid with revenue and
+  funding below $1.5M, the program supports major databases across multiple
+  cloud providers, including AWS, Azure, GCP, Digital Ocean, OCI, and Linode.
+  Start with a free 7-day trial, set up your cloud account, create your BYOC
+  database cluster, and activate your discount, allowing you to focus on growth
+  and innovation without the burden of managing database infrastructure.
+status: Active
+tags:
+  - cloud
+  - database
+  - hosting
+  - serverless
+url: https://scalegrid.com/startup-program
+value_type: discount
+min_value: 50
+max_value: 50
+community_notes:
+  - title: Potential Cost Savings
+    body: >-
+      Eligible startups can save up to $50,000 over 12 months by leveraging a
+      50% discount on ScaleGrid's managed hosting BYOC plans.
+    source_url: https://scalegrid.com/startup-program
+tiers:
+  - name: ScaleGrid Startup Tier
+    intro: >-
+      Startups receive a 50% discount on medium or larger BYOC hosting plans
+      applicable for PostgreSQL, MySQL, Redis™, and MongoDB.
+    max_value: 50
+    url: https://scalegrid.com/startup-program
+    benefits:
+      - 50% discount on managed BYOC hosting plans
+      - Applicable for PostgreSQL, MySQL, Redis™, and MongoDB
+      - Includes a free 7-day trial
+      - >-
+        Eligibility for startups new to ScaleGrid with revenue and funding under
+        $1.5M
+      - Utilize existing cloud credits with multiple providers
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Must be new to ScaleGrid
+      - Generated less than $1.5M in revenue
+      - Raised less than $1.5M in investment
+      - "Eligible plan size: Medium or larger"
+    effort_level: 2
+    steps_to_apply:
+      - name: Start Free Trial
+        description: Begin with a free 7-day trial to evaluate the service.
+        action: Start Trial
+        action_url: https://scalegrid.com/startup-program
+      - name: Create Cloud Profile
+        description: >-
+          Connect your cloud account via AWS, Azure, GCP, OCI, Digital Ocean, or
+          Linode.
+        action: Setup Cloud
+        action_url: https://scalegrid.com/startup-program
+      - name: Create Database Cluster
+        description: Set up your BYOC cluster for PostgreSQL, MySQL, Redis™, or MongoDB.
+        action: Create Cluster
+        action_url: https://scalegrid.com/startup-program
+      - name: Activate Discount
+        description: >-
+          Click 'Activate' and enter your credit card details to secure the 50%
+          discount for 12 months.
+        action: Activate
+        action_url: https://scalegrid.com/startup-program
+faq:
+  - question: Why should I use ScaleGrid vs. managing my databases internally?
+    answer: >-
+      ScaleGrid allows startups to keep their development teams focused on
+      product by automating time-consuming database management tasks and
+      eliminating the need for costly database experts.
+  - question: Can I use my free startup hosting credits?
+    answer: >-
+      Yes, startups can utilize their free AWS, Azure, GCP, or OCI credits when
+      using ScaleGrid's BYOC plans.
+  - question: Can I get a discount on more than one database type?
+    answer: >-
+      Yes, the 50% discount applies to all eligible BYOC clusters, provided they
+      are set up under the Startup Program.
+  - question: Do I have to be a part of an accelerator or incubator program to apply?
+    answer: >-
+      No, the only eligibility requirements are being new to ScaleGrid and
+      having generated less than $1.5M in revenue and raised less than $1.5M in
+      investment.
+  - question: How much will ScaleGrid cost?
+    answer: >-
+      The cost is based on your selected plan's data size and replica setup,
+      with a 50% discount applied on eligible BYOC plans.
+  - question: How do I get started with the Startup Program?
+    answer: >-
+      Apply on the Startup Program page and follow the steps to begin the free
+      trial, connect your cloud account, and create your database cluster.
