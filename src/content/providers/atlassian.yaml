@@ -1,0 +1,17 @@
+active: true
+name: Atlassian
+short_name: Atlassian
+slug: atlassian
+color: '#0052CC'
+url: https://www.atlassian.com
+intro: >-
+  Atlassian offers a suite of tools designed to enhance planning, tracking, and
+  collaboration for teams.
+best_deal: Premium Atlassian Tools for Startups
+video: ''
+tags:
+  - startups
+  - collaboration
+  - productivity
+  - cloud
+  - tools
