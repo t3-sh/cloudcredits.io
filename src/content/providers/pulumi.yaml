@@ -2,14 +2,14 @@ active: true
 name: Pulumi
 short_name: Pulumi
 slug: pulumi
-color: '#007acc'
+color: "#007acc"
 url: https://www.pulumi.com
 intro: >-
   Pulumi for Startups offers up to $10,000 in Pulumi Credits and exclusive
   technical support to help pre-Series A companies scale their cloud
   infrastructure efficiently.
 best_deal: Up to $10,000 in Pulumi Credits for 12 months
-video: ''
+video: ""
 tags:
   - dev tools
   - infrastructure

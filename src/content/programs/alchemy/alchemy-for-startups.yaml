@@ -20,13 +20,9 @@ status: Active
 tags:
   - web3
   - blockchain
-  - startup
-  - credits
-  - support
 url: https://alchemyapi.typeform.com/to/Ll9GdIEa
-value_type: credits
-currency: USD
-max_value: 10000
+value_type: discount
+max_value: 100
 community_notes:
   - title: Cost Efficiency
     body: >-
@@ -38,13 +34,13 @@ tiers:
     intro: >-
       For startups currently paying for infrastructure elsewhere, receive 3
       months of free credits to jumpstart development.
-    max_value: 3
+    max_value: 100
     url: https://bit.ly/3DH098s
     benefits:
       - 3 months free credits
       - Quick eligibility check
       - Immediate activation upon application
-    benefits_level: 1
+    benefits_level: 2
     duration:
       - 3 months
     eligibility:
@@ -55,33 +51,6 @@ tiers:
         description: Submit your application to claim 3 months of free credits.
         action: Apply now
         action_url: https://bit.ly/3DH098s
-  - name: General Startup Support
-    intro: >-
-      Join Alchemy for Startups to access complementary credits, 24/7 technical
-      support, product consultations, and co-marketing opportunities.
-    max_value: 10000
-    url: https://alchemyapi.typeform.com/to/Ll9GdIEa
-    benefits:
-      - Complementary infrastructure credits and annual plan discounts
-      - 24/7 engineering support via Telegram
-      - Priority debugging and technical consultations
-      - Exclusive co-marketing opportunities
-      - Early access to innovative APIs and tools
-    benefits_level: 3
-    duration:
-      - Variable
-    eligibility:
-      - Pre-seed through Series A web3 projects
-      - Active development or MVP stage
-      - Must demonstrate technical capability
-    effort_level: 2
-    steps_to_apply:
-      - name: Complete Application
-        description: >-
-          Fill out a 10-minute application form detailing your project's stage
-          and needs.
-        action: Apply now
-        action_url: https://alchemyapi.typeform.com/to/Ll9GdIEa
 faq:
   - question: Who can join the Alchemy Startup Program?
     answer: >-
