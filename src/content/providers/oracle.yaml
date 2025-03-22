@@ -1,0 +1,16 @@
+active: true
+name: Oracle
+short_name: Oracle
+slug: oracle
+color: '#004b9a'
+url: https://www.oracle.com/cloud/free/
+intro: >-
+  Oracle Cloud Free Tier enables users to build, test, and deploy applications
+  on Oracle Cloud for free, starting with a US$300 free trial and continuing
+  with a suite of Always Free services.
+best_deal: US$300 Free Trial & Always Free Cloud Services
+video: ''
+tags:
+  - cloud
+  - free tier
+  - trial
