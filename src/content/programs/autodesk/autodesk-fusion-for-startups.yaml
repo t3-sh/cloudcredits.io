@@ -1,0 +1,89 @@
+draft: false
+provider_slug: autodesk
+title: Autodesk Fusion for Startups
+meta_title: Autodesk Fusion for Startups - Discounted Cloud-Based Design Solutions
+intro: >-
+  Autodesk Fusion for Startups offers integrated cloud-based CAD, CAM, CAE, and
+  PCB software to accelerate innovation by providing entrepreneurs free access
+  to advanced design and engineering tools.
+description: >-
+  Autodesk Fusion for Startups provides entrepreneurs and early-stage companies
+  with access to advanced product development tools under tailored licensing
+  terms. The program integrates CAD, CAM, CAE, and PCB design within a cloud
+  platform that streamlines product development from concept to manufacturing.
+  It offers advanced manufacturing capabilities including 5-axis machining,
+  additive manufacturing, and AI-powered CNC programming, as well as
+  cost-efficient access with a 3-year subscription at $150 per user (for up to
+  10 users) compared to the standard $680 per year commercial pricing.
+  Participants benefit from real-time project collaboration tools and are
+  required to undergo annual recertification along with mandatory participation
+  in customer success stories, transitioning to commercial subscriptions upon
+  program completion.
+status: Active
+tags:
+  - CAD
+  - CAM
+  - CAE
+  - PCB
+  - manufacturing
+url: https://www.autodesk.com/fusion-for-startups
+value_type: discount
+currency: USD
+min_value: 78
+max_value: 78
+community_notes:
+  - title: Key Limitations
+    body: >-
+      The program is non-renewable with a 3-year term, imposes commercial
+      restrictions if eligibility criteria are exceeded, and limits
+      installations to 3 devices per license with single concurrent use.
+    source_url: https://www.autodesk.com/fusion-for-startups
+tiers:
+  - name: Startup License
+    intro: >-
+      Access advanced Autodesk Fusion tools at a discounted rate designed for
+      early-stage companies.
+    max_value: 78
+    url: https://www.autodesk.com/fusion-for-startups
+    benefits:
+      - Integrated cloud platform with CAD, CAM, CAE, and PCB design
+      - >-
+        Advanced manufacturing capabilities including 5-axis machining and
+        additive manufacturing
+      - AI-powered CNC programming workflows
+      - Cost-efficient 3-year subscription at $150/user for up to 10 users
+      - Real-time project collaboration with version control
+    benefits_level: 2
+    duration:
+      - 3 years
+    eligibility:
+      - Business age of ≤3 years
+      - Annual gross revenue below $100k
+      - Team size of ≤10 employees
+      - Must design or manufacture physical products
+      - Requires active website or social media presence
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply for the Program
+        description: >-
+          Visit the Autodesk Fusion for Startups page and complete the online
+          application form.
+        action: Apply Now
+        action_url: https://www.autodesk.com/fusion-for-startups
+faq:
+  - question: What does the Autodesk Fusion for Startups program include?
+    answer: >-
+      It offers a 3-year discounted subscription to advanced cloud-based CAD,
+      CAM, CAE, and PCB software along with advanced manufacturing capabilities
+      and collaboration tools.
+  - question: Who is eligible for the program?
+    answer: >-
+      The program is designed for early-stage companies that are 3 years old or
+      less, with annual gross revenue under $100k, a team of 10 or fewer
+      employees, and a focus on designing or manufacturing physical products
+      with an active digital presence.
+  - question: What happens after the 3-year term?
+    answer: >-
+      After the 3-year term, participants must purchase commercial subscriptions
+      at prevailing rates and undergo annual recertification to maintain
+      eligibility.
