@@ -21,16 +21,13 @@ description: >-
   program completion.
 status: Active
 tags:
-  - CAD
-  - CAM
-  - CAE
-  - PCB
   - manufacturing
+  - engineering
+  - design
+  - 3d
 url: https://www.autodesk.com/fusion-for-startups
 value_type: discount
-currency: USD
-min_value: 78
-max_value: 78
+max_value: 100
 community_notes:
   - title: Key Limitations
     body: >-
@@ -43,7 +40,7 @@ tiers:
     intro: >-
       Access advanced Autodesk Fusion tools at a discounted rate designed for
       early-stage companies.
-    max_value: 78
+    max_value: 100
     url: https://www.autodesk.com/fusion-for-startups
     benefits:
       - Integrated cloud platform with CAD, CAM, CAE, and PCB design
