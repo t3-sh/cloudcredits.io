@@ -1,0 +1,17 @@
+active: true
+name: Cloudways
+short_name: Cloudways
+slug: cloudways
+color: '#FFC107'
+url: https://www.cloudways.com
+intro: >-
+  Managed cloud hosting platform offering flexible, scalable hosting solutions
+  with managed services for popular applications and databases.
+best_deal: Up to $50,000 credits for cloud hosting
+video: ''
+tags:
+  - cloud
+  - hosting
+  - startups
+  - mentorship
+  - growth
