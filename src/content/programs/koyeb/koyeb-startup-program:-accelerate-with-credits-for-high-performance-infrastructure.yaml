@@ -19,10 +19,8 @@ description: >-
 status: Active
 tags:
   - cloud
-  - startup
-  - credits
-  - infrastructure
-  - high-performance
+  - ai
+  - gpu
 url: https://tally.so/r/w4kzad
 value_type: credits
 currency: USD
@@ -47,7 +45,7 @@ tiers:
       - Seed-stage startups
       - Raised between $1M and $5M in funding
       - Part of an approved partner accelerator
-    effort_level: 2
+    effort_level: 4
     steps_to_apply:
       - name: Submit Application
         description: >-

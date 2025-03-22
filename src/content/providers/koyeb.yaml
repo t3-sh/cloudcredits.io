@@ -2,7 +2,7 @@ active: true
 name: Koyeb
 short_name: Koyeb
 slug: koyeb
-color: '#383E99'
+color: '#30FF9B'
 url: https://tally.so/r/w4kzad
 intro: >-
   High-performance cloud infrastructure provider offering seamless developer
@@ -11,7 +11,5 @@ best_deal: Up to $30k compute credits for startups
 video: ''
 tags:
   - cloud
-  - startup
-  - credits
-  - infrastructure
-  - high-performance
+  - ai
+  - gpu
