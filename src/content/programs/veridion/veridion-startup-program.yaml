@@ -17,11 +17,9 @@ description: >-
   data-driven decision-making.
 status: Active
 tags:
-  - data
-  - startups
-  - API
+  - ai
+  - analytics
   - business intelligence
-  - GDPR
 url: https://veridion.com/startup-program
 value_type: credits
 currency: EUR
@@ -46,7 +44,7 @@ tiers:
       - Access to AI-curated global company data
       - REST APIs for search, matching, and enrichment
       - Dedicated technical support
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 3 months
     eligibility:
@@ -54,7 +52,7 @@ tiers:
       - Annual revenue below €1M
       - Team size under 20
       - Non-competing with Veridion
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Submit Your Details
         description: Fill out the application form to share your startup details.

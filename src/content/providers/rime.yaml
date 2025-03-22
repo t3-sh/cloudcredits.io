@@ -2,13 +2,13 @@ active: true
 name: Rime
 short_name: Rime
 slug: rime
-color: '#CC191A'
+color: "#CC191A"
 url: https://rime.ai
 intro: >-
   A leading voice AI company specializing in ultra-low latency text-to-speech
   solutions offering exclusive $5K API credits for YC startups.
 best_deal: $5,000 in API credits for YC startups
-video: ''
+video: ""
 tags:
   - ai
   - voice
