@@ -1,0 +1,95 @@
+draft: false
+provider_slug: devrev
+title: DevRev for Startups Program
+meta_title: DevRev for Startups - AI-Powered Platform for Early-Stage Companies
+intro: >-
+  DevRev for Startups provides 12 months of free Pro-tier access with up to $10K
+  in credits for early-stage startups, along with follow-on discounts and
+  enablement support. The program leverages an AI-native platform to enhance
+  customer support, product development, and team collaboration.
+description: >-
+  DevRev’s Startup Program offers 12 months of free Pro-level access and up to
+  $10,000 in credits for AI-powered tools, custom integrations, and advanced
+  analytics. In addition, startups enjoy 50% off on follow-on commitments after
+  credit expiry, and receive technical and business enablement through expert
+  support, training modules, and learning guides. The program is designed for
+  early-stage startups backed by accelerators or seed/Series A funding and aims
+  to accelerate their AI-first journey by integrating cloud-based workflows and
+  comprehensive ecosystem access.
+status: Active
+tags:
+  - AI
+  - startups
+  - cloud
+  - integration
+url: https://devrev.ai/startups
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes:
+  - title: Kshitij Gupta, Co-Founder/CEO @ 100ms
+    body: >-
+      DevRev uniquely addresses the needs of API-first companies, offering
+      tailored support that stands out from other tools.
+    source_url: https://devrev.ai/startups
+  - title: Alok Mishra, Goodmeetings
+    body: >-
+      DevRev streamlines the tracking of customer tickets by integrating diverse
+      tools like Jira and Zendesk into one cohesive platform.
+    source_url: https://devrev.ai/startups
+  - title: Dhruv Agrawal, COO & Co-founder, Shipsy
+    body: >-
+      DevRev ensures that all team members have clear visibility into customer
+      feedback, eliminating silos and promoting collaboration.
+    source_url: https://devrev.ai/startups
+tiers:
+  - name: Early Stage
+    intro: >-
+      Exclusive offer for early-stage startups providing 12 months free Pro-tier
+      access with up to $10K in credits, plus follow-on discounts.
+    max_value: 10000
+    url: https://devrev.ai/startups/apply
+    benefits:
+      - 12 months free Pro-tier access
+      - Up to $10K in credits for AI-powered tools and analytics
+      - 50% off on follow-on commitments after credit expiry
+      - Custom integrations tailored to startup needs
+      - Access to technical experts, training modules, and learning guides
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Funded startups up to Series A or incubator/accelerator backed
+      - Affiliation with DevRev’s VC ecosystem partners
+      - Must be a new customer of DevRev
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the form on the DevRev startups portal to apply for the
+          program.
+        action: Apply Now
+        action_url: https://devrev.ai/startups/apply
+faq:
+  - question: How do credits work?
+    answer: >-
+      Credits cover Pro-tier usage for AI-powered tools (valued at $24.99 per
+      user/month) and scale with your team's usage and integrations.
+  - question: What happens after 12 months?
+    answer: >-
+      Once the 12-month credit period ends, startups transition to paying 50% of
+      the standard rates for follow-on commitments without any tenure
+      restrictions.
+  - question: How to apply?
+    answer: >-
+      Applications can be submitted via the DevRev startups portal at
+      https://devrev.ai/startups/apply, where startups can also schedule a demo
+      with a specialist.
+  - question: Are bootstrapped startups eligible?
+    answer: >-
+      The program is exclusively available to funded or accelerator-backed
+      startups up to Series A and does not cater to bootstrapped companies.
+  - question: What is the timeline for approval?
+    answer: >-
+      While a specific timeline is not provided, applicants can contact
+      startups@devrev.ai for further updates on the review process.
