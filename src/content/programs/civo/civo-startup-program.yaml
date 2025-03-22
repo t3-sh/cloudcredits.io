@@ -1,7 +1,7 @@
 draft: false
 provider_slug: civo
-title: Civo Startup Program
-meta_title: Civo Startup Program
+title: Civo Free Trial $250
+meta_title: Civo Free Trial $250
 intro: >-
   Get $250 free Civo credit for 1 month to explore managed Kubernetes, cloud
   services, and more. Enjoy blazing fast cluster deployment, expert mentorship,
@@ -21,7 +21,6 @@ tags:
   - kubernetes
   - startup
   - cloud
-  - credits
 url: https://www.civo.com/signup
 value_type: credits
 currency: USD
@@ -41,7 +40,7 @@ tiers:
       - Access to cloud native expert mentorship
       - Free Kubernetes courses via Civo Academy
       - Transparent pricing starting at $5.43/month
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 1 month
     eligibility:
