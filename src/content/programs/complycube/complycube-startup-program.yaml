@@ -1,0 +1,108 @@
+draft: false
+provider_slug: complycube
+title: ComplyCube Startup Program
+meta_title: ComplyCube Startup Program - Verification & Compliance Tools
+intro: >-
+  ComplyCube's Startup Program offers early-stage and growing businesses free
+  KYC API, AML tools, identity verification checks, and other resources to
+  streamline customer onboarding and compliance.
+description: >-
+  The program provides startups with robust identity verification and compliance
+  tools, including an initial allocation of 1,000 verification credits valid for
+  12 months. Participants can also qualify for up to $50,000 in additional
+  credits with VC/accelerator backing, receive expert technical and compliance
+  guidance, and benefit from preferential rates on premium services once credits
+  expire. It is designed to support companies that are compliant by design, with
+  global coverage and enterprise-grade security.
+status: Active
+tags:
+  - compliance
+  - verification
+  - KYC
+  - AML
+  - startup
+url: https://complycube.com/startup
+value_type: credits
+currency: USD
+min_value: 1000
+max_value: 50000
+community_notes: []
+tiers:
+  - name: Basic Tier
+    intro: >-
+      For early-stage startups, offering an initial 1,000 verification credits
+      valid for 12 months along with core AML/KYC tools and basic technical
+      support.
+    max_value: 1000
+    url: https://complycube.com/startup
+    benefits:
+      - 1,000 free verification credits valid for 12 months
+      - Access to ComplyCube's award-winning verification platform
+      - Expert technical advice on AML/KYC implementation
+      - Global coverage in over 220 countries
+      - Standard integration support
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Incorporated within the last 3 years
+      - Total funding ≤ $5M
+      - Publicly available company website
+      - Committed to a FATF-aligned AML/KYC framework
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out the application form on ComplyCube's website.
+        action: Apply Now
+        action_url: https://complycube.com/startup
+  - name: Enhanced Tier
+    intro: >-
+      For startups with VC/accelerator backing and strong ID verification
+      capabilities, offering up to $50,000 in additional credits and premium
+      support.
+    max_value: 50000
+    url: https://complycube.com/startup
+    benefits:
+      - Up to $50,000 in additional verification credits
+      - Exclusive preview access to unreleased features
+      - Complimentary AML/KYC training and consultancy
+      - Priority technical support with dedicated account management
+      - 30% discount on Premium Plan services post credits
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - VC/accelerator backing required
+      - Demonstrated ID verification implementation
+      - Meets standard eligibility criteria
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit Enhanced Application
+        description: >-
+          Provide proof of funding and demonstrate your ID verification
+          capabilities via the application form.
+        action: Apply Now
+        action_url: https://complycube.com/startup
+faq:
+  - question: What are the eligibility requirements?
+    answer: >-
+      Startups must be incorporated within the last 3 years, have raised no more
+      than $5M in total funding, operate a public company website, and be
+      committed to a FATF-aligned, risk-based AML/KYC framework. Exclusions
+      include educational institutions, government bodies, non-profits,
+      consultancies, agencies, and crypto-mining companies.
+  - question: What does the ComplyCube Startup Program offer?
+    answer: >-
+      The program provides free access to ComplyCube’s verification platform
+      with an initial allocation of 1,000 credits, opportunities for up to
+      $50,000 in additional credits, comprehensive AML/KYC training, expert
+      technical guidance, and preferential rates on premium services once
+      credits are exhausted.
+  - question: How long are the initial credits valid?
+    answer: The initial 1,000 credits are valid for 12 months from issuance.
+  - question: How do I apply for the program?
+    answer: >-
+      Submit the online application form on ComplyCube's website with your
+      company details and compliance commitments to get started.
+  - question: Who can I contact for more information?
+    answer: For any additional questions, please email startups@complycube.com.
