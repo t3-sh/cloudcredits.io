@@ -21,7 +21,6 @@ tags:
   - quantum
   - research
   - academia
-  - credits
 url: https://ionq.com/programs/research-credits
 value_type: credits
 currency: USD
@@ -53,7 +52,7 @@ tiers:
       - Faculty members
       - Academic researchers
       - Undergraduates with faculty supervision
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Submit Proposal
         description: >-
