@@ -1,0 +1,81 @@
+draft: false
+provider_slug: ionq
+title: IonQ Research Credits Program
+meta_title: IonQ Research Credits Program for Academic Innovation
+intro: >-
+  The IonQ Research Credits Program offers up to $10,000 in free credits for
+  time on their quantum computers to qualified academics, supporting the future
+  of quantum information science.
+description: >-
+  IonQ's Research Credits Program supports academic and research institutions by
+  providing access to up to $10,000 in quantum computing credits. These credits
+  help defray the cost of accessing IonQ's advanced quantum systems—including
+  Harmony, Aria, Forte, and upcoming models—and come with technical support and
+  direct feedback from IonQ's experts. With a fast review process (typically
+  within three business days) and flexible usage for research and educational
+  projects, the program is ideal for initiatives in quantum computing research,
+  algorithm development, curriculum design, and open-source tool creation.
+  Credits cannot be used for commercial or personal projects.
+status: Active
+tags:
+  - quantum
+  - research
+  - academia
+  - credits
+url: https://ionq.com/programs/research-credits
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes:
+  - title: Credit Validity
+    body: Compute credits are valid for 12 months after activation.
+    source_url: https://ionq.com/docs
+  - title: Activation Deadline
+    body: Credits must be activated within 60 days from the project start date.
+    source_url: https://ionq.com/docs
+tiers:
+  - name: Research Credits Tier
+    intro: >-
+      Provides up to $10,000 in compute credits for approved proposals from
+      qualified academic researchers.
+    max_value: 10000
+    url: https://ionq.com/programs/research-credits/application
+    benefits:
+      - Up to $10,000 in compute credits for quantum computing research
+      - Technical support and feedback from IonQ experts
+      - Access to advanced quantum systems including Harmony, Aria, and Forte
+      - Fast review process with decisions typically within three business days
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Graduate students
+      - Faculty members
+      - Academic researchers
+      - Undergraduates with faculty supervision
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Proposal
+        description: >-
+          Complete the online application form with project details including
+          research goals, required resources, and team qualifications.
+        action: Apply Now
+        action_url: https://ionq.com/programs/research-credits/application
+faq:
+  - question: What projects qualify for the program?
+    answer: >-
+      Eligible projects include quantum computing research, algorithm
+      development, curriculum design, and open-source tool creation.
+  - question: What are the credit limitations?
+    answer: >-
+      Credits cannot be transferred, sold, or used for commercial or personal
+      projects, and must align with the approved proposal.
+  - question: Who is eligible to apply?
+    answer: >-
+      Graduate students, faculty members, and academic researchers from
+      accredited institutions are eligible; undergraduates may participate under
+      faculty supervision.
+  - question: How long are the credits valid?
+    answer: >-
+      Compute credits remain valid for 12 months after activation and must be
+      activated within 60 days of the project start date.
