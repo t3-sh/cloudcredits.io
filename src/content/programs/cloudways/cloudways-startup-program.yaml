@@ -1,0 +1,138 @@
+draft: false
+provider_slug: cloudways
+title: Cloudways Startup Program
+meta_title: Cloudways Startup Program - Managed SMB Hosting & Growth Support
+intro: >-
+  Empowering startups with managed hosting discounts, exclusive growth tools,
+  and personalized mentorship for sustained business success.
+description: >-
+  The Cloudways Startup Program offers tailored support for startups through a
+  three-tiered approach: Build, Grow, and Expand. It provides Cloudways platform
+  credits (up to $50,000), hosting discounts (15-20% off monthly invoices), 24/7
+  priority technical support, exclusive support add-ons, and personalized
+  mentorship. Designed for both bootstrapped and funded startups, the program
+  enables businesses to build, grow, and expand with expert guidance and
+  strategic resources.
+status: Active
+tags:
+  - cloud
+  - startups
+  - hosting
+  - mentorship
+  - growth
+url: https://www.cloudways.com/en/startup-program.php
+value_type: credits
+currency: USD
+min_value: 15000
+max_value: 50000
+community_notes: []
+tiers:
+  - name: Build Tier
+    intro: >-
+      For early-stage startups, offering up to $15,000 in Cloudways platform
+      credits, a 15% discount on monthly invoices, 24/7 technical support, free
+      Advanced Support Add-on, and personalized mentorship via the Build
+      Toolkit.
+    max_value: 15000
+    url: https://www.cloudways.com/en/startup-program.php
+    benefits:
+      - Up to $15,000 Cloudways platform credit
+      - 15% off monthly hosting invoice
+      - 24/7 Priority Technical Support
+      - Free Advanced Support Add-on ($1,200/year)
+      - Personalized mentorship via Build Toolkit
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Business website with domain email
+      - Active Cloudways trial account
+      - Less than $1M in funding
+      - Not an agency
+    effort_level: 1
+    steps_to_apply:
+      - name: Join Waitlist
+        description: >-
+          Submit your details on the Cloudways Startup Program page to join the
+          waitlist and get evaluated.
+        action: Join Now
+        action_url: https://www.cloudways.com/en/startup-program.php
+  - name: Grow Tier
+    intro: >-
+      Targeted at startups with product-market fit, offering up to $25,000 in
+      Cloudways platform credits, a 20% discount on monthly invoices, free
+      Premium Support Add-on, and enhanced visibility through founder interviews
+      and case studies.
+    max_value: 25000
+    url: https://www.cloudways.com/en/startup-program.php
+    benefits:
+      - Up to $25,000 Cloudways platform credit
+      - 20% off monthly hosting invoice
+      - 24/7 Priority Technical Support
+      - Free Premium Support Add-on ($6,000/year)
+      - Founder interviews and case study promotion
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Business website with domain email
+      - Active Cloudways trial account
+      - Series-A funding or achieved product-market fit
+      - Not an agency
+    effort_level: 2
+    steps_to_apply:
+      - name: Join Waitlist
+        description: >-
+          Submit your details on the Cloudways Startup Program page to join the
+          waitlist and get evaluated.
+        action: Join Now
+        action_url: https://www.cloudways.com/en/startup-program.php
+  - name: Expand Tier
+    intro: >-
+      Designed for startups poised for market expansion, offering up to $50,000
+      in Cloudways platform credits, a 20% discount on monthly invoices,
+      advanced mentorship, product spotlight features, and enterprise-level
+      growth resources.
+    max_value: 50000
+    url: https://www.cloudways.com/en/startup-program.php
+    benefits:
+      - Up to $50,000 Cloudways platform credit
+      - 20% off monthly hosting invoice
+      - 24/7 Priority Technical Support
+      - Free Premium Support Add-on ($6,000/year)
+      - Product spotlight and advanced mentorship
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Business website with domain email
+      - Active Cloudways trial account
+      - Series-B funding or seeking market expansion
+      - Not an agency
+    effort_level: 3
+    steps_to_apply:
+      - name: Join Waitlist
+        description: >-
+          Submit your details on the Cloudways Startup Program page to join the
+          waitlist and get evaluated.
+        action: Join Now
+        action_url: https://www.cloudways.com/en/startup-program.php
+faq:
+  - question: What benefits does the Cloudways Startup Program provide?
+    answer: >-
+      It offers startups Cloudways platform credits up to $50,000, hosting
+      discounts ranging from 15% to 20% off monthly invoices, 24/7 priority
+      technical support, exclusive support add-ons, and tailored mentorship
+      through distinct Build, Grow, and Expand tiers.
+  - question: Who is eligible to apply for the program?
+    answer: >-
+      Eligible startups must have a business website with a domain email and an
+      active Cloudways trial account. Eligibility criteria vary by tier: less
+      than $1M in funding for Build, Series-A funding or product-market fit for
+      Grow, and Series-B funding or a market expansion strategy for Expand.
+      Agencies are not eligible.
+  - question: How can startups join the Cloudways Startup Program?
+    answer: >-
+      Startups can join the waitlist by submitting their details on the
+      Cloudways Startup Program page, after which Cloudways will review
+      eligibility and onboard approved candidates.
