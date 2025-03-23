@@ -1,0 +1,132 @@
+draft: false
+provider_slug: customerio
+title: Customer.io Startup Program
+meta_title: Customer.io Startup Program - Marketing Automation for Startups
+intro: >-
+  Get up to 12 months of access to Customer.io’s powerful customer engagement
+  platform, designed to scale startup marketing efforts with essential
+  automation and communication tools.
+description: >-
+  Customer.io's Startup Program empowers early-stage startups with subsidized
+  access to a sophisticated customer engagement platform. The program offers two
+  tailored plans – Startup Basic and Startup +Plus – providing options for free
+  access or subsidized pricing at $100/month. Eligible startups must have raised
+  less than $10M, use organically acquired contacts, and be new to Customer.io's
+  paid services. Key features include multi-channel messaging (email, SMS, push
+  notifications), behavioral tracking, segmentation, A/B testing, API access,
+  and integrations. Additionally, startups benefit from a robust partner network
+  offering extended credits, cross-platform discounts, and priority reviews,
+  with partners like Y Combinator, Techstars, Mercury Banking, and AWS Activate.
+  After the 12-month period, startups transition to paid plans.
+status: Active
+tags:
+  - marketing
+  - startup
+  - automation
+  - customer engagement
+url: https://customer.io/startup-program
+value_type: credits
+currency: USD
+min_value: 1800
+max_value: 12000
+community_notes:
+  - title: Partner Ecosystem Strength
+    body: >-
+      Startups benefit from a robust partner network including Y Combinator,
+      Techstars, AWS Activate, and more, offering additional credits and
+      discounts.
+    source_url: https://customer.io/startup-program
+  - title: Scalable & Compliant Platform
+    body: >-
+      Designed to handle high volumes of messaging and ensure compliance with
+      regulations, Customer.io supports growth-stage companies with integrated
+      CDP and robust automation.
+    source_url: https://customer.io/startup-program
+tiers:
+  - name: Startup Basic
+    intro: >-
+      Free access for up to 12 months with essential features including 30k
+      profiles and community forum support.
+    max_value: 1800
+    url: https://customer.io/startup-program
+    benefits:
+      - Free for 12 months
+      - Supports up to 12,000 users
+      - Includes Essentials features
+      - 30k profiles included
+      - Community forum support
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Less than $10M total funding
+      - Organically acquired contact lists
+      - No previous paid Customer.io usage
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply
+        description: Submit your application through Customer.io's startup program portal.
+        action: Apply Now
+        action_url: https://customer.io/startup-program
+  - name: Startup +Plus
+    intro: >-
+      Enhanced plan with advanced support, including technical onboarding and
+      premium features for scaling startups.
+    max_value: 12000
+    url: https://customer.io/startup-program
+    benefits:
+      - Priority technical support
+      - Onboarding call with experts
+      - Higher user limit up to 100,000
+      - Lower overage fees
+      - Access to advanced features
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Less than $10M total funding
+      - Organically acquired contact lists
+      - No previous paid Customer.io usage
+      - Membership in an approved partner organization
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply
+        description: >-
+          Submit your application and provide partner affiliation details via
+          Customer.io's startup program portal.
+        action: Apply Now
+        action_url: https://customer.io/startup-program
+faq:
+  - question: HOW MUCH TIME AM I ELIGIBLE FOR IN THE STARTUP PROGRAM?
+    answer: >-
+      Based on your application eligibility, you may qualify for up to 12 months
+      in the Startup Program. Please note that the duration granted is subject
+      to review and approval.
+  - question: DO I NEED A CREDIT CARD TO SIGN UP?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: CAN I CHANGE PLANS AFTER I START?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: I’M NOT SURE IF I QUALIFY FOR THE STARTUP PROGRAM—WHAT SHOULD I DO?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: I DIDN’T GET ACCEPTED INTO THE STARTUP PROGRAM. NOW WHAT?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: HOW OFTEN ARE APPLICATIONS REVIEWED?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: WHAT TYPE OF SUPPORT DO I HAVE ACCESS TO?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: WHAT ARE OVERAGES? HOW AND WHEN WILL I BE CHARGED FOR THEM?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: I’M LOOKING FOR A HIGHER LEVEL OF SUPPORT–WHAT SHOULD I DO?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: WE ARE A BOOTSTRAPPED COMPANY, CAN WE APPLY TO THE STARTUP PROGRAM?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: >-
+      CAN I CONTINUE WITH THE STARTUP PLAN AFTER MY ENROLLMENT ENDS AND RECEIVE
+      ADDITIONAL TIME WITH THE DISCOUNTED PRICING?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: WHAT HAPPENS IF I FALSELY MISREPRESENT MY COMPANY AS A STARTUP?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: DO YOU EVER CHANGE YOUR PRICES?
+    answer: Information not provided. Please contact Customer.io for details.
+  - question: WHO CAN I CONTACT IF I HAVE ADDITIONAL QUESTIONS?
+    answer: Information not provided. Please contact Customer.io for details.
