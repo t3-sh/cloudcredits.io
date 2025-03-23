@@ -1,0 +1,135 @@
+draft: false
+provider_slug: mathworks
+title: MATLAB and Simulink for Startups Program
+meta_title: MathWorks Startup Program - Affordable Licensing for Startups
+intro: >-
+  Provides early-stage companies with affordable access to MATLAB, Simulink, and
+  specialized toolboxes, enabling rapid prototyping and production development
+  with technical support and training benefits.
+description: >-
+  The MathWorks Startup Program offers early-stage companies access to MATLAB
+  and Simulink solutions at competitive startup pricing. The program features
+  two main licensing options: the MATLAB Suite with 40+ add-on products and the
+  comprehensive MATLAB & Simulink Suite with 90+ add-ons. Benefits include free
+  access to an online training suite, technical mentorship from application
+  engineers, 50% off training credits, and co-marketing opportunities.
+  Additionally, startups affiliated with one of over 500 accelerators can
+  receive 12 months of free licensing for up to 10 users, with renewal available
+  upon requalification. Eligibility requires being founded within the last 5
+  years, having fewer than 15 engineers, and generating less than $1M in annual
+  revenue, with no restrictions on funding stage.
+status: Active
+tags:
+  - MATLAB
+  - Simulink
+  - startups
+  - engineering
+  - prototyping
+url: https://www.mathworks.com/products/startups.html
+value_type: credits
+currency: USD
+max_value: 3650
+community_notes:
+  - title: Accelerator Licensing Benefit
+    body: >-
+      Startups affiliated with over 500 accelerators, such as Y Combinator and
+      Greentown Labs, can enjoy 12 months of free licensing for up to 10 users.
+    source_url: https://www.mathworks.com/products/startups.html
+  - title: Training and Support
+    body: >-
+      Participants receive free access to an online training suite, 50% off
+      training credits, and technical support from application engineers.
+    source_url: https://www.mathworks.com/products/startups.html
+tiers:
+  - name: Accelerator Licensing
+    intro: >-
+      For startups affiliated with partnered accelerators, offering 12 months of
+      free licensing for up to 10 users along with online training and support.
+    max_value: 3650
+    url: https://www.mathworks.com/products/startups.html
+    benefits:
+      - 12 months of free licensing for up to 10 users
+      - Free Online Training Suite Subscription
+      - Technical support from application engineers
+      - Co-marketing opportunities
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Affiliated with one of 500+ accelerators
+      - Founded within the last 5 years
+      - Fewer than 15 engineers
+      - Annual revenue under $1M USD
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply via Accelerator
+        description: >-
+          Submit your application through your accelerator partner or directly
+          via the MathWorks Startup portal.
+        action: Apply Now
+        action_url: https://www.mathworks.com/products/startups.html
+  - name: Standard Licensing - MATLAB Suite
+    intro: >-
+      Gain access to MATLAB Suite with 40+ add-on products at competitive
+      startup pricing, including free online training for license holders.
+    max_value: 1500
+    url: https://www.mathworks.com/products/startups.html
+    benefits:
+      - Access to MATLAB with 40+ add-on products
+      - Free Online Training Suite Subscription
+      - Technical support and application engineering guidance
+      - 50% off training credits
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Founded within the last 5 years
+      - Fewer than 15 engineers
+      - Annual revenue under $1M USD
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply via the MathWorks Startup portal to explore MATLAB Suite
+          licensing options.
+        action: Apply Now
+        action_url: https://www.mathworks.com/products/startups.html
+  - name: Standard Licensing - MATLAB & Simulink Suite
+    intro: >-
+      Access the comprehensive MATLAB & Simulink Suite with 90+ add-on products
+      and free online training, available at $3,650 per year.
+    max_value: 3650
+    url: https://www.mathworks.com/products/startups.html
+    benefits:
+      - Access to MATLAB & Simulink with 90+ add-on products
+      - Free Online Training Suite Subscription
+      - Technical support and cloud integration tools
+      - Co-marketing opportunities
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Founded within the last 5 years
+      - Fewer than 15 engineers
+      - Annual revenue under $1M USD
+      - Open to all funding stages
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply Now
+        description: Fill out the application form on the MathWorks startups page.
+        action: Apply
+        action_url: https://www.mathworks.com/products/startups.html
+faq:
+  - question: What is the duration of the license?
+    answer: >-
+      Licenses are provided for 12 months. Accelerator-affiliated startups
+      receive 12 months of free licensing, renewable upon requalification.
+  - question: How do I apply for the program?
+    answer: >-
+      Startups can apply directly via the MathWorks website or through an
+      affiliated accelerator. Eligibility is based on founding year, team size,
+      and annual revenue.
+  - question: What training resources are included?
+    answer: >-
+      The program offers free access to an Online Training Suite with on-demand
+      courses and 50% off additional training credits.
