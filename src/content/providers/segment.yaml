@@ -2,7 +2,7 @@ active: true
 name: Twilio Segment
 short_name: Segment
 slug: segment
-color: '#000000'
+color: '#6ADDB2'
 url: https://segment.com
 intro: >-
   Early-stage startups gain free access to Segment for up to two years,
@@ -12,7 +12,3 @@ best_deal: Up to $50,000 in credits for 2 years
 video: ''
 tags:
   - analytics
-  - startups
-  - data
-  - credits
-  - integration

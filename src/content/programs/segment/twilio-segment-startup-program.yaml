@@ -20,10 +20,6 @@ description: >-
 status: Active
 tags:
   - analytics
-  - startups
-  - data
-  - credits
-  - integration
 url: https://segment.com/startups
 value_type: credits
 currency: USD
@@ -56,7 +52,7 @@ tiers:
       - Access to Segment University and Analytics Academy
       - Priority technical support
       - Additional software deals exceeding $1M in credits
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 2 years
     eligibility:

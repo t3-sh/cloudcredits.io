@@ -19,10 +19,8 @@ description: >-
 status: Active
 tags:
   - video
-  - startup
-  - api
-  - discount
-  - credits
+  - media
+  - ai
 url: https://shotstack.io/startup
 value_type: discount
 currency: USD
@@ -44,7 +42,7 @@ tiers:
         Extensive developer support including documentation, tutorials, and
         sample code
       - Join a community of 10,000+ developers and 20,000+ businesses
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 12 months
     eligibility:

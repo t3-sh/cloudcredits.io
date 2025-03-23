@@ -2,7 +2,7 @@ active: true
 name: Shotstack
 short_name: Shotstack
 slug: shotstack
-color: '#FFC500'
+color: '#24D3D0'
 url: https://shotstack.io
 intro: >-
   Empower your startup with Shotstack’s advanced video editing API and enjoy
@@ -11,7 +11,5 @@ best_deal: 80% discount + $5,000 credits
 video: ''
 tags:
   - video
-  - startup
-  - api
-  - discount
-  - credits
+  - media
+  - ai
