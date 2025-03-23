@@ -17,16 +17,11 @@ description: >-
   offers are subject to change. This comprehensive program empowers startups
   with the tools needed to scale without incurring upfront equity costs.
 status: Active
-tags:
-  - founders
-  - startup
-  - perks
-  - atlas
-  - discounts
+tags: []
 url: https://stripe.com/atlas
 value_type: credits
 currency: USD
-max_value: 100000
+max_value: 3000
 community_notes:
   - title: Dashboard Access
     body: >-
@@ -44,7 +39,7 @@ tiers:
     benefits:
       - Free processing on US card payments
       - Waived fees up to first $100k revenue
-    benefits_level: 2
+    benefits_level: 1
     duration: []
     eligibility:
       - Approved Atlas incorporation
@@ -95,7 +90,7 @@ tiers:
       - 'Pilot: Free cash-basis bookkeeping for 1 year or 20% off paid plans'
       - 'QuickBooks: 30% off for 12 months'
       - 'Xero: 100% off for 6 months'
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - First 12 months
     eligibility:
@@ -107,33 +102,6 @@ tiers:
         description: >-
           Log in to the Atlas Dashboard and navigate to the Perks tab to review
           Finance & Equity offers.
-        action: Review Offers
-        action_url: https://stripe.com/atlas
-  - name: Engineering
-    intro: >-
-      Provides cloud infrastructure credits and developer tools from major
-      providers to boost operational scalability.
-    max_value: 150000
-    url: https://stripe.com/atlas
-    benefits:
-      - 'AWS: $5,000 Activate Credits and $1,500 Business support'
-      - 'Google Cloud: $300 credits for new users'
-      - >-
-        Microsoft for Startups Founders Hub: Up to $150K free credits toward
-        Azure and GitHub
-      - 'Linear: 100% off 6 months of a paid plan'
-    benefits_level: 3
-    duration:
-      - 6-12 months
-    eligibility:
-      - Approved Atlas incorporation
-      - New user account for cloud providers
-    effort_level: 2
-    steps_to_apply:
-      - name: Check Perks
-        description: >-
-          Log in to the Atlas Dashboard and navigate to the Perks tab to review
-          Engineering offers.
         action: Review Offers
         action_url: https://stripe.com/atlas
   - name: Operations
@@ -148,7 +116,7 @@ tiers:
       - 'Intercom: 100% off first year (up to Series A or 25 employees)'
       - 'Dropbox: 50% off first year'
       - 'HelloSign: 50% off for 12 months'
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - First 12 months
     eligibility:
@@ -166,7 +134,7 @@ tiers:
     intro: >-
       Provides valuable discounts and credits for productivity and collaboration
       tools essential for startup growth.
-    max_value: 100
+    max_value: 2000
     url: https://stripe.com/atlas
     benefits:
       - 'Slack: 25% off first 12 months'
@@ -174,7 +142,7 @@ tiers:
       - 'Airtable: $2,000 platform credits'
       - '1Password: 25% off first 12 months'
       - 'Whimsical: 100% off for 12 months'
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - First 12 months
     eligibility:
