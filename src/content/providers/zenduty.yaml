@@ -1,0 +1,15 @@
+active: true
+name: Zenduty
+short_name: Zenduty
+slug: zenduty
+color: '#00AAFF'
+url: https://www.zenduty.com
+intro: >-
+  A robust incident management platform designed for enhancing incident response
+  and uptime, offering discounted plans for early-stage startups.
+best_deal: Up to 60% off first-year subscription
+video: ''
+tags:
+  - incident management
+  - startup
+  - discount

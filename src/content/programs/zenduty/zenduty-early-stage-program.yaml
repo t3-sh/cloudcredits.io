@@ -1,0 +1,100 @@
+draft: false
+provider_slug: zenduty
+title: Zenduty Early Stage Program
+meta_title: Discounted Incident Management for Early Stage Startups
+intro: >-
+  Receive up to 60% off your first-year subscription and 30% off your
+  second-year subscription on Growth and Enterprise plans to enhance incident
+  response and uptime.
+description: >-
+  Zenduty's Early Stage Program offers early-stage startups discounted access to
+  its robust incident management platform. Designed for startups under 3 years
+  old with up to $2M in funding and 20 or fewer employees, the program delivers
+  up to 60% off in Year 1 and 30% off in Year 2 on Growth and Enterprise plans.
+  Participants gain full access to 60+ premium features including unlimited
+  SMS/Phone call alerts, advanced alert routing, on-call scheduling, mobile app,
+  API access, and over 100 integrations. This comprehensive solution helps
+  reduce MTTA and MTTR, ensuring higher system reliability during critical
+  growth phases.
+status: Active
+tags:
+  - incident management
+  - startup
+  - discount
+url: https://www.zenduty.com/early-stage-program
+value_type: discount
+currency: USD
+min_value: 30
+max_value: 60
+community_notes:
+  - title: IndiaMart Success Story
+    body: >-
+      IndiaMart leverages Zenduty to maintain website uptime, which is critical
+      for its 152,000+ subscribers and 95% revenue dependency.
+    source_url: https://www.zenduty.com/customers
+tiers:
+  - name: 60% Off - Year One
+    intro: >-
+      Eligible startups get a 60% discount on their first-year subscription for
+      Growth and Enterprise plans.
+    max_value: 60
+    url: https://www.zenduty.com/early-stage-program
+    benefits:
+      - 60% discount on first-year subscription
+      - Access to 60+ premium incident management features
+      - Unlimited SMS and phone alerts
+      - Advanced alert routing and on-call scheduling
+      - 100+ integrations with monitoring tools
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Must be a new Zenduty customer
+      - Startup under 3 years old with ≤$2M in funding
+      - Team of 20 employees or less
+    effort_level: 1
+    steps_to_apply:
+      - name: Register for the Program
+        description: >-
+          Complete the online registration form on Zenduty's website to verify
+          eligibility and get started.
+        action: Sign Up
+        action_url: https://www.zenduty.com/early-stage-program
+  - name: 30% Off - Year Two
+    intro: >-
+      After the first year, eligible startups benefit from a 30% discount on the
+      second-year subscription for Growth and Enterprise plans.
+    max_value: 30
+    url: https://www.zenduty.com/early-stage-program
+    benefits:
+      - 30% discount on second-year subscription
+      - Continued access to premium incident management tools
+    benefits_level: 1
+    duration:
+      - 1 year
+    eligibility:
+      - Must be a new Zenduty customer
+      - Startup under 3 years old with ≤$2M in funding
+      - Team of 20 employees or less
+    effort_level: 1
+    steps_to_apply:
+      - name: Renewal Process
+        description: >-
+          Eligible startups will be transitioned to the second-year discount
+          upon renewal.
+        action: Confirm Renewal
+        action_url: https://www.zenduty.com/early-stage-program
+faq:
+  - question: What happens after Year 2?
+    answer: >-
+      After Year 2, startups transition to standard pricing (e.g.,
+      $24/user/month for Growth plans or custom pricing for Enterprise plans).
+  - question: How can I apply for the Zenduty Early Stage Program?
+    answer: >-
+      Applications can be submitted through Zenduty's website by completing the
+      online registration form and verifying eligibility requirements.
+  - question: What support is provided as part of the program?
+    answer: >-
+      The program includes 24-hour response support for Enterprise plans and
+      48-hour support for Growth plans, along with comprehensive incident
+      management features.
