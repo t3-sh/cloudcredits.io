@@ -1,0 +1,16 @@
+active: true
+name: n8n
+short_name: n8n
+slug: n8n
+url: https://n8n.io
+color: "#EA4B70"
+best_deal: Startup Discount
+intro: >-
+  Workflow automation platform providing powerful integrations, extensibility, and self-hosting for seamless data flow across various services and applications.
+video: ""
+tags:
+  - automation
+  - dev tools
+  - no-code
+  - low-code
+  - workflow

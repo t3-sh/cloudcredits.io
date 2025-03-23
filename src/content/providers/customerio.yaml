@@ -2,13 +2,13 @@ active: true
 name: Customer.io
 short_name: Customer.io
 slug: customerio
-color: '#37BC95'
+color: "#37BC95"
 url: https://customer.io
 intro: >-
   Full-stack customer engagement platform designed to help startups scale their
   marketing efforts with automated messaging and workflow tools.
 best_deal: Up to 12 months free access for startups
-video: ''
+video: ""
 tags:
   - marketing
   - crm
