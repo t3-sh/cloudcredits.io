@@ -1,35 +1,31 @@
 draft: false
 provider_slug: shopify
-title: Shopify Free Trial & Pricing Options
-meta_title: Explore Shopify's Free Trial and Flexible Pricing Plans
+title: Shopify 3 Month Trial
+meta_title: Try Shopify for Just $1/Month for 3 Months
 intro: >-
-  Experience Shopify with a 3-day free trial and explore flexible post-trial
-  pricing options designed to grow your online store.
+  Experience Shopify with an exclusive offer of $1/month for three months on select plans,
+  designed to help you start and grow your online store.
 description: >-
-  Shopify's free trial offers a risk-free opportunity to test its cloud-hosted
-  e-commerce platform with customizable templates, multi-channel selling
-  capabilities, and comprehensive inventory management. After a 3-day trial with
-  no credit card required, eligible users can access an extended trial promotion
-  at $1/month for three months on select plans and seamlessly upgrade to plans
-  tailored to their business size, including Basic Shopify, Shopify, Advanced
-  Shopify, and Shopify Plus. The platform is trusted globally for managing
-  everything from marketing and payments to secure checkout and shipping.
+  Shopify's promotional offer gives you access to its cloud-hosted e-commerce platform
+  for just $1/month for three months. This includes customizable templates, multi-channel
+  selling capabilities, and comprehensive inventory management. The platform is trusted
+  globally for managing everything from marketing and payments to secure checkout and shipping,
+  allowing you to build your online business with minimal initial investment.
 status: Active
 tags:
   - e-commerce
-  - trial
-  - subscription
-  - cloud-hosted
+  - promotional offer
+  - sales
 url: https://www.shopify.com/free-trial
 value_type: discount
 currency: USD
 min_value: 0
-max_value: 100
+max_value: 99
 community_notes:
   - title: Startup Friendly
     body: >-
-      Shopify provides an intuitive, risk-free entry point with a free trial and
-      promotional pricing that scales with business needs.
+      Shopify provides an intuitive, risk-free entry point with promotional pricing
+      that scales with business needs.
     source_url: https://www.shopify.com/free-trial
   - title: Global Accessibility
     body: >-
@@ -37,149 +33,44 @@ community_notes:
       and a cloud-hosted infrastructure.
     source_url: https://www.shopify.com
 tiers:
-  - name: Free Trial
-    intro: Try Shopify for free with a 3-day trial, no credit card required.
-    max_value: 100
-    url: https://www.shopify.com/free-trial
-    benefits:
-      - 3-day free trial access
-      - Full access to customizable templates
-      - Multi-channel selling capabilities
-      - Inventory and payment management
-      - 24/7 support
-    benefits_level: 1
-    duration:
-      - 3 days
-    eligibility:
-      - Valid email required
-      - Available to all business sizes
-    effort_level: 1
-    steps_to_apply:
-      - name: Sign Up
-        description: Visit the Shopify free trial page and register your account.
-        action: Start Free Trial
-        action_url: https://www.shopify.com/free-trial
   - name: Extended Trial Promotion
     intro: >-
-      Eligible users can access an extended trial at $1/month for the first
-      three months on select plans.
-    max_value: 97
+      Access Shopify at $1/month for the first three months on select plans.
+    max_value: 99
     url: https://www.shopify.com/free-trial
     benefits:
       - Extended trial at $1/month
       - Access to full platform features during extended period
-      - Risk-free exploration of additional Shopify tools
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 3 months
     eligibility:
       - Must qualify based on select plan criteria
       - Valid email required
-    effort_level: 2
+      - Available to new users
+    effort_level: 1
     steps_to_apply:
-      - name: Check Eligibility
-        description: Review the eligibility criteria for the extended trial promotion.
-        action: Review
+      - name: Sign Up
+        description: Visit the Shopify promotional page and register your account.
+        action: Get Started
         action_url: https://www.shopify.com/free-trial
-      - name: Apply for Extended Trial
-        description: Submit your application to access the extended trial pricing.
-        action: Apply Now
+      - name: Select a Plan
+        description: Choose a qualifying plan to access the $1/month for 3 months offer.
+        action: Select Plan
         action_url: https://www.shopify.com/free-trial
-  - name: Basic Shopify Plan
-    intro: >-
-      Ideal for new online stores with essential features including 2.9% + 30¢
-      transaction fees, 10 inventory locations, and POS Lite.
-    max_value: 25
-    url: https://www.shopify.com/pricing
-    benefits:
-      - 2.9% + 30¢ transaction fees
-      - 10 inventory locations
-      - POS Lite
-      - Customizable online store
-      - Secure checkout and shipping
-    benefits_level: 2
-    duration:
-      - Ongoing subscription
-    eligibility:
-      - Startups and small businesses
-      - Must upgrade after trial
-    effort_level: 2
-    steps_to_apply: []
-  - name: Shopify Plan
-    intro: >-
-      For growing businesses, offering enhanced features with 2.7% + 30¢ fees, 5
-      staff accounts, and advanced analytics.
-    max_value: 25
-    url: https://www.shopify.com/pricing
-    benefits:
-      - 2.7% + 30¢ transaction fees
-      - 5 staff accounts
-      - Advanced analytics
-      - Marketing and SEO tools
-      - Customizable store features
-    benefits_level: 3
-    duration:
-      - Ongoing subscription
-    eligibility:
-      - Growing businesses
-      - After trial upgrade required
-    effort_level: 2
-    steps_to_apply: []
-  - name: Advanced Shopify Plan
-    intro: >-
-      Delivers comprehensive tools with 2.5% + 30¢ fees, custom reports, and
-      support for 15 staff accounts.
-    max_value: 25
-    url: https://www.shopify.com/pricing
-    benefits:
-      - 2.5% + 30¢ transaction fees
-      - Custom reports
-      - 15 staff accounts
-      - Advanced inventory management
-      - Priority support
-    benefits_level: 3
-    duration:
-      - Ongoing subscription
-    eligibility:
-      - Growing or scaling businesses
-    effort_level: 3
-    steps_to_apply: []
-  - name: Shopify Plus
-    intro: >-
-      Enterprise-level solution offering unlimited staff, 40x checkout capacity,
-      and dedicated support. Pricing starts at $2,300+ monthly.
-    max_value: 25
-    url: https://www.shopify.com/plus
-    benefits:
-      - Enterprise-level tools
-      - Unlimited staff accounts
-      - 40x checkout capacity
-      - Dedicated support
-      - Custom integrations
-    benefits_level: 4
-    duration:
-      - Ongoing subscription
-    eligibility:
-      - Enterprises and high-volume businesses
-    effort_level: 4
-    steps_to_apply:
-      - name: Contact Sales
-        description: Reach out to Shopify's sales team to discuss Shopify Plus options.
-        action: Contact
-        action_url: https://www.shopify.com/plus
 faq:
-  - question: How long is the free trial?
+  - question: What does the $1/month offer include?
     answer: >-
-      Shopify offers a 3-day free trial followed by $1/month for three months on
-      select plans.
-  - question: Can I sell products during the trial?
+      For just $1/month for three months, you get full access to Shopify's platform including
+      store setup, customizable templates, inventory management, and multi-channel selling tools.
+  - question: Can I sell products during the promotional period?
     answer: >-
-      During the trial, you can set up your store but cannot process orders
-      until you upgrade to a paid plan.
-  - question: How do I cancel the trial?
+      Yes, unlike the free trial, the $1/month offer allows you to fully set up your store
+      and process orders right away.
+  - question: How do I cancel after the promotional period?
     answer: >-
-      Navigate to Settings > Plan and permissions > Cancel trial before the
-      trial ends to avoid charges. Data is retained for 90 days
+      Navigate to Settings > Plan and permissions > Cancel subscription before the
+      promotional period ends to avoid full-price charges. Data is retained for 90 days
       post-cancellation.
   - question: Can I use my own domain name?
     answer: Yes, users can connect an existing domain or purchase one through Shopify.
