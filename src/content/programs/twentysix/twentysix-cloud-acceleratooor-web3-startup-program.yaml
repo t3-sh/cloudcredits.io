@@ -1,5 +1,5 @@
 draft: false
-provider_slug: twentysix-cloud
+provider_slug: twentysix
 title: Twentysix Cloud Acceleratooor Web3 Startup Program
 meta_title: Twentysix Cloud Acceleratooor - Decentralized Cloud Credits for Web3 Startups
 intro: >-
@@ -20,8 +20,6 @@ tags:
   - web3
   - decentralized
   - blockchain
-  - startup
-  - cloud
 url: https://twentysix.aleph.im
 value_type: credits
 currency: USD

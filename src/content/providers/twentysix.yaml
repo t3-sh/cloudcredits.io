@@ -1,7 +1,7 @@
 active: true
 name: Twentysix Cloud
 short_name: Twentysix Cloud
-slug: twentysix-cloud
+slug: twentysix
 color: '#007bff'
 url: https://twentysix.aleph.im
 intro: >-
@@ -12,7 +12,4 @@ best_deal: Up to $1M ALEPH credits for 1 year
 video: ''
 tags:
   - web3
-  - decentralized
   - blockchain
-  - startup
-  - cloud
