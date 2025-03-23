@@ -51,8 +51,8 @@ tiers:
       - Save up to 20% on every Cloud VPS plan starting at $3.96
     benefits_level: 2
     duration:
-      - 'Year 1: $8,000 credit & consulting'
-      - 'Year 2: 30% rebate on VPS purchases'
+      - "Year 1: $8,000 credit & consulting"
+      - "Year 2: 30% rebate on VPS purchases"
     eligibility:
       - Must have a company website and a domain-associated email
       - Founded within the last 5 years

@@ -2,14 +2,14 @@ active: true
 name: Autodesk
 short_name: Autodesk
 slug: autodesk
-color: '#5F60FF'
+color: "#5F60FF"
 url: https://www.autodesk.com
 intro: >-
   Autodesk Fusion for Startups offers integrated cloud-based CAD, CAM, CAE, and
   PCB software to accelerate innovation by providing entrepreneurs free access
   to advanced design and engineering tools.
 best_deal: $150/user for 3-year subscription (up to 10 users)
-video: ''
+video: ""
 tags:
   - manufacturing
   - engineering

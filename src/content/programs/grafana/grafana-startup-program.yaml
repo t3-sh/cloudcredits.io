@@ -7,7 +7,7 @@ status: "Active"
 url: "https://grafana.com/blog/2024/09/24/grafana-labs-startup-program/"
 min_value: 0
 max_value: 100000
-tags: ["monitoring", "analytics", "kubernetes", "observability"]
+tags: ["monitoring", "analytics", "kubernetes", "observability", "time-series"]
 date: 2025-02-25
 
 tiers:

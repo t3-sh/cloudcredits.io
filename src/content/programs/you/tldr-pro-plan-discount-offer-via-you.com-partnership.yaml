@@ -1,13 +1,13 @@
 draft: false
-provider_slug: tldr
-title: TL;DR Pro Plan Discount Offer via You.com Partnership
-meta_title: Six Months Discount on TL;DR Pro Plan
+provider_slug: you
+title: You.com Pro Plan Discount Offer via You.com Partnership
+meta_title: Six Months Discount on You.com Pro Plan
 intro: >-
-  TL;DR, in partnership with You.com, offers six months of discounted access to
+  You.com, in partnership with TL;DR, offers six months of discounted access to
   its AI-powered Pro Plan, delivering advanced summarization, transcription, and
   content conversion tools to boost productivity.
 description: >-
-  TL;DR (YouTLDR) provides an AI-powered Pro Plan designed to enhance
+  You.com provides an AI-powered Pro Plan designed to enhance
   productivity by summarizing YouTube content, generating transcripts, and
   converting videos into shareable formats. Through a limited-time promotional
   partnership with You.com, new users can enjoy six months at a discounted rate,
@@ -18,10 +18,9 @@ status: Active
 tags:
   - ai
   - productivity
-  - discount
-  - content
-  - partnership
-url: https://tldr.io
+  - llm
+  - agents
+url: https://you.com/tldr
 value_type: discount
 currency: USD
 max_value: 120
@@ -32,13 +31,13 @@ tiers:
       Receive six months of discounted access to TL;DR's AI-powered Pro Plan,
       saving $120.
     max_value: 120
-    url: https://tldr.io/pro
+    url: https://you.com/tldr
     benefits:
       - Advanced Summarization
       - Multilingual Transcription
       - Content Conversion into Blogs and Social Media
       - AI-Powered Interactive Tools
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 6 months
     eligibility:
@@ -47,21 +46,7 @@ tiers:
     steps_to_apply:
       - name: Sign Up
         description: >-
-          Create a TL;DR account and enter promo code SAVE25 at checkout to
-          access the discounted Pro Plan.
+          Apply
         action: Register
-        action_url: https://tldr.io/signup
-faq:
-  - question: What features are included in the TL;DR Pro Plan?
-    answer: >-
-      The plan includes unlimited transcriptions, priority support, an ad-free
-      experience, and access to TLDR Academy for converting playlists into study
-      materials.
-  - question: What is the cancellation policy?
-    answer: >-
-      Subscriptions can be canceled anytime and come with a 30-day money-back
-      guarantee.
-  - question: What platforms is the TL;DR Pro Plan compatible with?
-    answer: >-
-      It is accessible via a Chrome extension, web app, or Android app, ensuring
-      seamless cross-platform compatibility.
+        action_url: https://you.com/tldr
+faq: []
