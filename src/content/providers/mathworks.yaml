@@ -2,7 +2,7 @@ active: true
 name: MathWorks
 short_name: MathWorks
 slug: mathworks
-color: '#00A1D7'
+color: '#0A5F9D'
 url: https://www.mathworks.com
 intro: >-
   Provides early-stage companies with affordable access to MATLAB, Simulink, and
@@ -11,8 +11,7 @@ intro: >-
 best_deal: 12 months of free licensing for up to 10 users
 video: ''
 tags:
-  - MATLAB
-  - Simulink
-  - startups
   - engineering
-  - prototyping
+  - design
+  - manufacturing
+  - research

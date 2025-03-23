@@ -20,11 +20,10 @@ description: >-
   revenue, with no restrictions on funding stage.
 status: Active
 tags:
-  - MATLAB
-  - Simulink
-  - startups
   - engineering
-  - prototyping
+  - design
+  - manufacturing
+  - research
 url: https://www.mathworks.com/products/startups.html
 value_type: credits
 currency: USD
@@ -52,7 +51,7 @@ tiers:
       - Free Online Training Suite Subscription
       - Technical support from application engineers
       - Co-marketing opportunities
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 12 months
     eligibility:
@@ -105,7 +104,7 @@ tiers:
       - Free Online Training Suite Subscription
       - Technical support and cloud integration tools
       - Co-marketing opportunities
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 12 months
     eligibility:
