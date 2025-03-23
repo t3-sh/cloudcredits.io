@@ -21,9 +21,10 @@ description: >-
 status: Active
 tags:
   - marketing
-  - startup
-  - automation
-  - customer engagement
+  - crm
+  - email
+  - sms
+  - workflows
 url: https://customer.io/startup-program
 value_type: credits
 currency: USD
@@ -55,7 +56,7 @@ tiers:
       - Includes Essentials features
       - 30k profiles included
       - Community forum support
-    benefits_level: 1
+    benefits_level: 3
     duration:
       - 12 months
     eligibility:

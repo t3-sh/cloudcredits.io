@@ -2,13 +2,13 @@ active: true
 name: 0x
 short_name: 0x
 slug: 0x
-color: '#70707B'
+color: "#70707B"
 url: https://0x.org/jumpstart
 intro: >-
   Accelerate your Web3 startup with free API credits, mentorship, and ecosystem
   integration through the 0x JumpStart Program.
 best_deal: Up to $5,000 in credits for Web3 startups.
-video: ''
+video: ""
 tags:
   - web3
   - crypto

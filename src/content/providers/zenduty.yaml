@@ -2,13 +2,13 @@ active: true
 name: Zenduty
 short_name: Zenduty
 slug: zenduty
-color: '#FC9A00'
+color: "#FC9A00"
 url: https://www.zenduty.com
 intro: >-
   A robust incident management platform designed for enhancing incident response
   and uptime, offering discounted plans for early-stage startups.
 best_deal: Up to 60% off first-year subscription
-video: ''
+video: ""
 tags:
   - incident management
   - monitoring

@@ -2,11 +2,11 @@ active: true
 name: Remote
 short_name: Remote
 slug: remote
-color: '#4299E1'
+color: "#4299E1"
 url: https://remote.com/for-startups
 intro: Global HR & Payroll Solutions for Startups
 best_deal: Discount up to 20% on Remote services
-video: ''
+video: ""
 tags:
   - hr
   - compliance

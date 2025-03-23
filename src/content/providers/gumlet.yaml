@@ -2,14 +2,14 @@ active: true
 name: Gumlet
 short_name: Gumlet
 slug: gumlet
-color: '#007acc'
+color: "#007acc"
 url: https://gumlet.com/startup-credits
 intro: >-
   Gumlet’s Startup Credits Program (SCP) offers startups optimized media
   delivery at half the cost, including advanced video and image optimization
   features.
 best_deal: 50% off first year on all Gumlet services
-video: ''
+video: ""
 tags:
   - media
   - video

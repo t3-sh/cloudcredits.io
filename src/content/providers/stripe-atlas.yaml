@@ -2,11 +2,11 @@ active: true
 name: Stripe Atlas
 short_name: Stripe Atlas
 slug: stripe-atlas
-color: '#6772E5'
+color: "#6772E5"
 url: https://stripe.com/atlas
 intro: >-
   Stripe Atlas provides founders with access to over $100,000 in combined
   discounts and credits through its network of partner offers.
 best_deal: Various perks from partners
-video: ''
+video: ""
 tags: []

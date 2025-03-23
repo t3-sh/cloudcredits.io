@@ -60,9 +60,9 @@ tiers:
     max_value: 1000
     url: https://stripe.com/atlas
     benefits:
-      - 'Mercury: $1K back for C-Corps or $500 for LLCs'
-      - 'Novo: $500 back upon $10K deposit'
-      - 'Brex: $1K back for C-Corps depositing $20K'
+      - "Mercury: $1K back for C-Corps or $500 for LLCs"
+      - "Novo: $500 back upon $10K deposit"
+      - "Brex: $1K back for C-Corps depositing $20K"
     benefits_level: 2
     duration:
       - Within 60 days of incorporation
@@ -85,11 +85,11 @@ tiers:
     max_value: 100
     url: https://stripe.com/atlas
     benefits:
-      - 'Carta: Free cap table management and 20% off first 12 months'
-      - 'AngelList: Free up to $1M capital raised then 25% off'
-      - 'Pilot: Free cash-basis bookkeeping for 1 year or 20% off paid plans'
-      - 'QuickBooks: 30% off for 12 months'
-      - 'Xero: 100% off for 6 months'
+      - "Carta: Free cap table management and 20% off first 12 months"
+      - "AngelList: Free up to $1M capital raised then 25% off"
+      - "Pilot: Free cash-basis bookkeeping for 1 year or 20% off paid plans"
+      - "QuickBooks: 30% off for 12 months"
+      - "Xero: 100% off for 6 months"
     benefits_level: 1
     duration:
       - First 12 months
@@ -111,11 +111,11 @@ tiers:
     max_value: 100
     url: https://stripe.com/atlas
     benefits:
-      - 'Deel: $1,500 HR credits'
-      - 'Gusto: 50% off for 12 months'
-      - 'Intercom: 100% off first year (up to Series A or 25 employees)'
-      - 'Dropbox: 50% off first year'
-      - 'HelloSign: 50% off for 12 months'
+      - "Deel: $1,500 HR credits"
+      - "Gusto: 50% off for 12 months"
+      - "Intercom: 100% off first year (up to Series A or 25 employees)"
+      - "Dropbox: 50% off first year"
+      - "HelloSign: 50% off for 12 months"
     benefits_level: 1
     duration:
       - First 12 months
@@ -137,11 +137,11 @@ tiers:
     max_value: 2000
     url: https://stripe.com/atlas
     benefits:
-      - 'Slack: 25% off first 12 months'
-      - 'Notion: 3 months free toward Notion Plus with Unlimited AI'
-      - 'Airtable: $2,000 platform credits'
-      - '1Password: 25% off first 12 months'
-      - 'Whimsical: 100% off for 12 months'
+      - "Slack: 25% off first 12 months"
+      - "Notion: 3 months free toward Notion Plus with Unlimited AI"
+      - "Airtable: $2,000 platform credits"
+      - "1Password: 25% off first 12 months"
+      - "Whimsical: 100% off for 12 months"
     benefits_level: 1
     duration:
       - First 12 months

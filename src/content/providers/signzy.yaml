@@ -2,14 +2,14 @@ active: true
 name: Signzy
 short_name: Signzy
 slug: signzy
-color: '#04009A'
+color: "#04009A"
 url: https://www.signzy.com
 intro: >-
   Empower your startup with the Signzy for Startups Program offering over 240
   plug-and-play APIs and a no-code AI platform to streamline customer onboarding
   and KYC processes.
 best_deal: 5,000 INR API sandbox credits
-video: ''
+video: ""
 tags:
   - fintech
   - kyc
