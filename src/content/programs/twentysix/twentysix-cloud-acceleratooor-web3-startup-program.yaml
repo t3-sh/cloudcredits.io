@@ -21,9 +21,9 @@ tags:
   - decentralized
   - blockchain
 url: https://twentysix.aleph.im
-value_type: credits
+value_type: discount
 currency: USD
-max_value: 1000000
+max_value: 100
 community_notes:
   - title: Decentralized Advantage
     body: >-
@@ -37,7 +37,7 @@ tiers:
       For projects on supported blockchains, this tier offers ALEPH credits for
       1 year, on-demand compute instances, decentralized storage, and dedicated
       mentorship.
-    max_value: 1000000
+    max_value: 100
     url: https://twentysix.aleph.im/apply
     benefits:
       - $1M ALEPH credits valid for 1 year
