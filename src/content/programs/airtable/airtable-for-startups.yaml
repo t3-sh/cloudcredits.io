@@ -1,0 +1,44 @@
+provider_slug: "airtable"
+title: "Airtable for Startups"
+intro: "Get $500 in free Airtable credit along with exclusive startup-focused content and educational materials."
+description: "This program provides startups with an opportunity to leverage Airtable’s platform through a one-time credit of $500. Applicants must first create an Airtable account, then submit an application providing basic personal and company information, including the specific workspace ID where credits will be applied. Airtable typically reviews applications within 3–5 days."
+status: "Active"
+url: "https://airtable.com/signup"
+value_type: "credits"
+currency: "USD"
+min_value: 500
+max_value: 500
+tags:
+  - collaboration
+  - productivity
+  - low-code
+  - workflow
+  - database
+
+tiers:
+  - name: "Airtable for Startups"
+    intro: "One-time credit for early-stage teams"
+    max_value: 500
+    url: "https://airtable.com/signup"
+    benefits:
+      - "$500 in Airtable credit"
+      - "Exclusive startup content"
+      - "Educational materials"
+    benefits_level: 1
+    duration: []
+    eligibility:
+      - "Must be a startup"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Create an Airtable Account"
+        description: "Sign up for Airtable if you do not already have an account"
+        action: "Sign Up"
+        action_url: "https://airtable.com/signup"
+      - name: "Complete Application Form"
+        description: "Fill in your personal and company details, including workspace ID"
+        action: "Apply"
+        action_url: "https://airtable.com/startups"
+
+faq: []
+success_stories: []
+community_notes: []

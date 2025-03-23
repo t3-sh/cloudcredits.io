@@ -1,0 +1,175 @@
+draft: false
+provider_slug: stripe-atlas
+title: Stripe Atlas Founder Perks
+meta_title: Stripe Atlas Founder Perks Program
+intro: >-
+  Stripe Atlas provides founders with access to over $100,000 in combined
+  discounts and credits through its network of partner offers. Benefits span
+  payments, banking, finance & equity, cloud infrastructure, operations, and
+  productivity tools, enabling startups to streamline operations and accelerate
+  growth.
+description: >-
+  Stripe Atlas offers a curated collection of perks and discounts available to
+  approved founders through the Perks tab on the Atlas Dashboard. The program
+  aggregates offers from industry-leading providers, including free processing,
+  cashback bonuses, cloud credits, and discounted productivity tools. Each
+  partner may have its own eligibility criteria or compliance requirements, and
+  offers are subject to change. This comprehensive program empowers startups
+  with the tools needed to scale without incurring upfront equity costs.
+status: Active
+tags: []
+url: https://stripe.com/atlas
+value_type: credits
+currency: USD
+max_value: 3000
+community_notes:
+  - title: Dashboard Access
+    body: >-
+      Founders can access the latest list of partner offers through the Atlas
+      Dashboard after approved incorporation.
+    source_url: https://stripe.com/atlas
+tiers:
+  - name: Payments
+    intro: >-
+      Offers free payment processing via Stripe Payments, providing waived fees
+      on US card transactions up to the first $100k in revenue, estimated at a
+      value of $3000.
+    max_value: 3000
+    url: https://stripe.com/payments
+    benefits:
+      - Free processing on US card payments
+      - Waived fees up to first $100k revenue
+    benefits_level: 1
+    duration: []
+    eligibility:
+      - Approved Atlas incorporation
+      - Applicable to US-based transactions
+    effort_level: 1
+    steps_to_apply:
+      - name: Check Perks
+        description: >-
+          Log in to the Atlas Dashboard and navigate to the Perks tab to review
+          Stripe Payments offer details.
+        action: Review Offers
+        action_url: https://stripe.com/atlas
+  - name: Banking
+    intro: >-
+      Provides cashback bonuses from partner banking services such as Mercury,
+      Novo, and Brex when qualifying deposits are made within 60 days of
+      incorporation.
+    max_value: 1000
+    url: https://stripe.com/atlas
+    benefits:
+      - "Mercury: $1K back for C-Corps or $500 for LLCs"
+      - "Novo: $500 back upon $10K deposit"
+      - "Brex: $1K back for C-Corps depositing $20K"
+    benefits_level: 2
+    duration:
+      - Within 60 days of incorporation
+    eligibility:
+      - Approved Atlas incorporation
+      - Qualifying deposit as per partner requirements
+    effort_level: 2
+    steps_to_apply:
+      - name: Check Perks
+        description: >-
+          Log in to the Atlas Dashboard and navigate to the Perks tab to review
+          banking offers details.
+        action: Review Offers
+        action_url: https://stripe.com/atlas
+  - name: Finance & Equity
+    intro: >-
+      Offers discounts and incentives for financial and equity management tools,
+      including discounted cap table services, bookkeeping, and accounting
+      software.
+    max_value: 100
+    url: https://stripe.com/atlas
+    benefits:
+      - "Carta: Free cap table management and 20% off first 12 months"
+      - "AngelList: Free up to $1M capital raised then 25% off"
+      - "Pilot: Free cash-basis bookkeeping for 1 year or 20% off paid plans"
+      - "QuickBooks: 30% off for 12 months"
+      - "Xero: 100% off for 6 months"
+    benefits_level: 1
+    duration:
+      - First 12 months
+    eligibility:
+      - Approved Atlas incorporation
+      - Meet partner-specific requirements
+    effort_level: 2
+    steps_to_apply:
+      - name: Check Perks
+        description: >-
+          Log in to the Atlas Dashboard and navigate to the Perks tab to review
+          Finance & Equity offers.
+        action: Review Offers
+        action_url: https://stripe.com/atlas
+  - name: Operations
+    intro: >-
+      Offers operational efficiency bonuses and discounts for services ranging
+      from HR and payroll to legal, marketing, and communication tools.
+    max_value: 100
+    url: https://stripe.com/atlas
+    benefits:
+      - "Deel: $1,500 HR credits"
+      - "Gusto: 50% off for 12 months"
+      - "Intercom: 100% off first year (up to Series A or 25 employees)"
+      - "Dropbox: 50% off first year"
+      - "HelloSign: 50% off for 12 months"
+    benefits_level: 1
+    duration:
+      - First 12 months
+    eligibility:
+      - Approved Atlas incorporation
+      - Subject to partner-specific requirements
+    effort_level: 2
+    steps_to_apply:
+      - name: Check Perks
+        description: >-
+          Log in to the Atlas Dashboard and navigate to the Perks tab to review
+          Operations offers.
+        action: Review Offers
+        action_url: https://stripe.com/atlas
+  - name: Productivity
+    intro: >-
+      Provides valuable discounts and credits for productivity and collaboration
+      tools essential for startup growth.
+    max_value: 2000
+    url: https://stripe.com/atlas
+    benefits:
+      - "Slack: 25% off first 12 months"
+      - "Notion: 3 months free toward Notion Plus with Unlimited AI"
+      - "Airtable: $2,000 platform credits"
+      - "1Password: 25% off first 12 months"
+      - "Whimsical: 100% off for 12 months"
+    benefits_level: 1
+    duration:
+      - First 12 months
+    eligibility:
+      - Approved Atlas incorporation
+      - Availability subject to partner terms
+    effort_level: 1
+    steps_to_apply:
+      - name: Check Perks
+        description: >-
+          Log in to the Atlas Dashboard and navigate to the Perks tab to review
+          Productivity offers.
+        action: Review Offers
+        action_url: https://stripe.com/atlas
+faq:
+  - question: How do I access perks?
+    answer: >-
+      All approved founders can access partner offers through the Perks tab on
+      the Atlas Dashboard once their Atlas application is approved.
+  - question: Are offers guaranteed?
+    answer: >-
+      Offers are subject to partner compliance checks and may vary, as each
+      partner has its own eligibility or compliance requirements.
+  - question: Do credits or discounts expire?
+    answer: >-
+      Many offers have specific activation periods and expiration windows,
+      typically ranging from 12 to 24 months from the activation date.
+  - question: Can I combine these offers with other discounts?
+    answer: >-
+      Offer terms vary by partner, so founders should review individual offer
+      details available on the Atlas Dashboard.

@@ -1,0 +1,75 @@
+draft: false
+provider_slug: signzy
+title: Signzy for Startups Program
+meta_title: Signzy for Startups - Automate KYC & Onboarding
+intro: >-
+  Empower your startup with the Signzy for Startups Program offering over 240
+  plug-and-play APIs and a no-code AI platform to streamline customer onboarding
+  and KYC processes.
+description: >-
+  Signzy for Startups is a comprehensive program that empowers emerging
+  businesses with advanced digital onboarding and KYC solutions. The program
+  offers access to over 240 plug-and-play APIs covering lending, onboarding,
+  KYC, payments, and banking. With a no-code AI platform, startups can automate
+  back-office decision-making in real-time, reduce customer acquisition costs,
+  and achieve faster compliance. Additionally, startups receive 5,000 INR in
+  free credits for API sandbox testing along with additional offers, access to a
+  stellar network of BFSIs, and mentoring from industry experts. Trusted by over
+  140 leading brands, Signzy for Startups propels scalable, secure growth for
+  tech-enabled companies.
+status: Active
+tags:
+  - fintech
+  - kyc
+  - onboarding
+url: https://www.signzy.com/startups
+value_type: credits
+currency: USD
+max_value: 50
+community_notes:
+  - title: Redefining Innovation in Digital Trust
+    body: >-
+      Ashith Kampani praises Signzy for redefining innovation in building online
+      trust, highlighting its role in modern customer onboarding.
+    source_url: https://www.signzy.com/testimonials
+  - title: Tech-Enabled Disruption
+    body: >-
+      Rajan Anandan commends Signzy as a standout example of tech-enabled
+      disruption in the fintech space.
+    source_url: https://www.signzy.com/testimonials
+tiers:
+  - name: API Sandbox Access
+    intro: >-
+      Gain free access to a comprehensive API sandbox with 5,000 credits and
+      additional startup benefits.
+    max_value: 5000
+    url: https://www.signzy.com/startups
+    benefits:
+      - 5,000 INR API sandbox credits
+      - Access to an extensive partner network of BFSIs
+      - Additional offers worth 5,000 INR
+      - Affordable startup pricing
+      - Mentorship from seasoned industry experts
+    benefits_level: 1
+    duration: []
+    eligibility:
+      - Global startups in fintech, banking, insurtech, and gig economy
+      - Businesses needing automated KYC or identity verification
+      - Early-stage tech-enabled companies
+    effort_level: 1
+    steps_to_apply: []
+faq:
+  - question: What is the integration time?
+    answer: Most workflows go live in 3–4 weeks.
+  - question: What kind of support is provided?
+    answer: >-
+      The program offers dedicated mentorship, technical assistance, and access
+      to a partner portal.
+  - question: How does Signzy ensure regulatory compliance?
+    answer: >-
+      It comes pre-configured for global regulations, including RBI’s Video KYC
+      norms and GDPR, with ISO 27001 and SOC 2 certifications.
+  - question: How is data security maintained?
+    answer: >-
+      End-to-end encryption and intrusion detection systems safeguard the
+      platform and user data.

@@ -1,0 +1,127 @@
+draft: false
+provider_slug: 0x
+title: 0x JumpStart Program
+meta_title: Accelerate Your Web3 Startup with 0x JumpStart Program
+intro: >-
+  Fuel your startup journey with free API credits, technical mentorship, and
+  ecosystem integration through the 0x JumpStart Program, designed to reduce
+  costs and accelerate time to market.
+description: >-
+  0x JumpStart Program provides critical infrastructure and growth support for
+  Web3 and crypto startups through API credits, mentorship, and ecosystem
+  integration. The program offers two tiers: Start Tier and Scale Tier. The
+  Start Tier provides 2M API calls per month (valued at $1,000) with 20 requests
+  per second capacity, monthly mentorship sessions, and access to a vibrant
+  community. The Scale Tier offers 10M API calls per month (valued at $5,000), a
+  higher request capacity of 40 requests per second, and customized solutions
+  for advanced needs, along with enhanced access to the partner ecosystem
+  (including Coinbase Wallet, Matcha, and Zerion). The process involves
+  application submission, technical interviews, tailored offers, hands-on
+  onboarding, and ongoing monthly syncs, ensuring startups receive personalized
+  support to drive sustainable growth.
+status: Active
+tags:
+  - web3
+  - crypto
+  - blockchain
+url: https://0x.org/jumpstart
+value_type: credits
+currency: USD
+min_value: 1000
+max_value: 5000
+community_notes:
+  - title: Coinbase Endorsement
+    body: >-
+      0x is recognized for its extensive and reliable DEX API services, aiding
+      Coinbase Wallet in launching innovative DEX features.
+    source_url: https://www.coinbase.com
+  - title: Zerion Endorsement
+    body: >-
+      Zerion values 0x for its dedicated support as a partner, leveraging its
+      swap API to optimize trading routes.
+    source_url: https://www.zerion.io
+tiers:
+  - name: Start Tier
+    intro: >-
+      Receive 2M API calls/month (valued at $1,000) with 20 requests per second,
+      monthly mentorship sessions, and community access.
+    max_value: 1000
+    url: https://0x.org/jumpstart
+    benefits:
+      - 2M API calls/month
+      - 20 requests per second capacity
+      - Access to 0x DEX liquidity aggregator across 12+ chains
+      - Monthly 1:1 mentorship sessions
+      - Access to a vibrant community
+    benefits_level: 1
+    duration:
+      - 6 months
+    eligibility:
+      - Self-funded or Pre-Series B
+      - Live, fully functional company website
+      - Founded within the past 3 years
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply now
+        description: >-
+          Submit your application to join the Start Tier of the 0x JumpStart
+          Program.
+        action: Apply Now
+        action_url: https://0x.org/jumpstart
+  - name: Scale Tier
+    intro: >-
+      Receive 10M API calls/month (valued at $5,000) with 40 requests per
+      second, customized solutions, and enhanced ecosystem integration.
+    max_value: 5000
+    url: https://0x.org/jumpstart
+    benefits:
+      - 10M API calls/month
+      - 40 requests per second capacity
+      - Customized solutions for advanced needs
+      - Access to partner network (Coinbase Wallet, Matcha, Zerion)
+      - Access to a vibrant community
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - Self-funded or Pre-Series B
+      - Founded within the past 3 years
+      - Must be part of the 0x partner ecosystem
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply now
+        description: >-
+          Submit your application to join the Scale Tier of the 0x JumpStart
+          Program.
+        action: Apply Now
+        action_url: https://0x.org/jumpstart
+faq:
+  - question: What is 0x JumpStart?
+    answer: >-
+      0x JumpStart is a flagship program offering API credits, technical
+      mentorship, and ecosystem integration to support emerging Web3 and crypto
+      startups.
+  - question: Who can join 0x JumpStart?
+    answer: >-
+      The program is open to global Web3 and crypto startups that are
+      self-funded or in a pre-Series B stage, have a live website, and are
+      founded within the past 3 years. The Scale Tier additionally requires
+      affiliation with the 0x partner ecosystem.
+  - question: What benefits does the program offer?
+    answer: >-
+      Participants receive API credits, monthly mentorship, technical
+      onboarding, and access to a vibrant community and partner network, along
+      with tailored solutions to accelerate growth.
+  - question: How does the application process work?
+    answer: >-
+      Applicants must submit an application, complete a technical interview,
+      receive a tailored offer, and undergo hands-on onboarding with ongoing
+      monthly mentorship sessions.
+  - question: How is success measured in the program?
+    answer: >-
+      Success is tracked through API utilization, startup growth, and market
+      impact, with periodic evaluations to adjust support as needed.
+  - question: How does monetization work post-integration?
+    answer: >-
+      Startups retain 100% of swap fees generated through their implementation,
+      providing a built-in monetization model.

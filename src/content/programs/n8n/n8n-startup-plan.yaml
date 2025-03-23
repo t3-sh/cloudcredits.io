@@ -1,0 +1,51 @@
+provider_slug: "n8n"
+title: "n8n Startup Plan"
+intro: "Give smaller companies access to enterprise-level workflow automation features at an affordable monthly price."
+description: "The n8n Startup Plan is designed for companies with fewer than 20 employees and under 3 years old. It offers enterprise plan features, including the option to self-host, a usage limit of 200 active workflows, and unrestricted workflow executions. Priced at $400 per month, the plan also comes with a 14-day free trial and monthly billing via credit card. Startups can cancel anytime if they no longer need it or no longer meet the eligibility criteria."
+status: "Active"
+tags:
+  - automation
+  - dev tools
+  - no-code
+  - low-code
+  - workflow
+url: "https://n8n.io/pricing/"
+value_type: "discount"
+currency: "USD"
+max_value: 50
+
+tiers:
+  - name: "n8n Startup Plan"
+    intro: "Affordable self-hosted plan granting full enterprise features to eligible early-stage startups"
+    max_value: 50
+    url: "https://n8n.io/pricing/"
+    benefits:
+      - "All features of the n8n Enterprise plan"
+      - "Self-hosting option for full control"
+      - "Up to 200 active workflows with unlimited executions"
+      - "Monthly pricing starting at $400"
+      - "14-day free trial"
+    benefits_level: 2
+    duration:
+      - "Minimum 1 year or until eligibility no longer applies"
+    eligibility:
+      - "Fewer than 20 employees"
+      - "Less than 3 years old"
+    effort_level: 1
+    steps_to_apply:
+      - name: "Sign up for Startup Plan"
+        description: "Begin a 14-day trial of the startup plan for full enterprise features"
+        action: "Sign Up"
+        action_url: "https://plans.n8n.io/"
+      - name: "Activate License"
+        description: "Obtain and enter your license key from the Settings menu in your self-hosted n8n instance"
+        action: "Activate Plan"
+        action_url: "https://docs.n8n.io/enterprise-key/"
+
+faq:
+  - question: "How do I activate my startup plan?"
+    answer: "Startup plans are only available on the self-hosted version of n8n. After signing up for the 14-day trial, you receive a license key. Enter your license key through the Settings in your n8n instance to activate enterprise features. For more details, refer to the self-hosting docs."
+  - question: "How do I cancel my startup plan?"
+    answer: "In your self-hosted n8n instance, go to Settings > Usage and plan. Enter your license key if you haven’t yet. Then click on Manage Plan and follow the link at the bottom of the page to cancel."
+  - question: "I can’t activate my license with an error 'Activation Failed: Activation key has already been used on this instance'"
+    answer: "Try clearing your existing license by running 'n8n license:clear' before activating. If issues persist, contact support at help@n8n.io with the information from running 'n8n license:info'."

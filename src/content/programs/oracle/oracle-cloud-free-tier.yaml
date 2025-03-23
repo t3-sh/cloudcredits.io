@@ -1,0 +1,95 @@
+draft: false
+provider_slug: oracle
+title: Oracle Cloud Free Tier
+meta_title: Oracle Cloud Free Tier - US$300 Free Trial & Always Free Cloud Services
+intro: >-
+  Oracle Cloud Free Tier enables users to build, test, and deploy applications
+  on Oracle Cloud for free, starting with a US$300 free trial and continuing
+  with a suite of Always Free services.
+description: >-
+  Oracle Cloud Free Tier combines a 30-day trial with US$300 cloud credits and a
+  range of Always Free services. It offers access to comprehensive OCI services
+  including compute, storage, databases, networking, and more. After the trial,
+  users can seamlessly switch to a Pay As You Go model, only paying for usage
+  beyond the free tier limits. This program is designed for developers and
+  businesses looking to explore Oracle's robust cloud platform.
+status: Active
+tags:
+  - cloud
+  - free trial
+url: https://www.oracle.com/cloud/free/
+value_type: credits
+currency: USD
+min_value: 300
+max_value: 300
+community_notes:
+  - title: Developer and Architecture Resources
+    body: >-
+      Oracle provides extensive documentation, training, and reference
+      architectures through its Developer Resource Center and Oracle
+      Architecture Center.
+    source_url: https://www.oracle.com/cloud/free/
+  - title: Seamless Transition
+    body: >-
+      After the free trial, users can easily switch to a Pay As You Go model,
+      ensuring continuous access to cloud services.
+    source_url: https://www.oracle.com/cloud/free/
+tiers:
+  - name: Free Trial
+    intro: >-
+      Receive US$300 cloud credits valid for 30 days to access all eligible
+      Oracle Cloud Infrastructure services and explore Oracle's cloud platform.
+    max_value: 300
+    url: https://www.oracle.com/cloud/free/
+    benefits:
+      - US$300 cloud credits
+      - Access to all OCI services
+      - 30-day trial period
+      - Build, test, and deploy applications
+    benefits_level: 1
+    duration:
+      - 30 days
+    eligibility:
+      - One account per individual
+      - Valid credit/debit card required
+      - Mobile phone verification for 2FA
+    effort_level: 1
+    steps_to_apply:
+      - name: Create Oracle Cloud Account
+        description: >-
+          Sign up using your email, valid credit/debit card, and mobile phone at
+          Oracle Cloud Free Tier page.
+        action: Sign Up
+        action_url: https://www.oracle.com/cloud/free/
+      - name: Verify Account
+        description: >-
+          Complete the identity verification process by verifying your
+          credit/debit card and mobile phone.
+        action: Verify
+        action_url: https://www.oracle.com/cloud/free/
+faq:
+  - question: What is Oracle Cloud Free Tier?
+    answer: >-
+      It provides a free trial with US$300 in cloud credits for 30 days along
+      with a suite of Always Free services to build, test, and deploy
+      applications on Oracle Cloud.
+  - question: What are Always Free Services?
+    answer: >-
+      These are a set of Oracle Cloud services available indefinitely at no
+      charge, even after the trial expires, with some usage limitations.
+  - question: Who is eligible for the Free Tier?
+    answer: >-
+      Only one Oracle Cloud Free Tier account is permitted per person, and a
+      valid credit/debit card along with mobile phone verification is required.
+  - question: Why is payment information required?
+    answer: >-
+      Payment information is needed for identity verification and account setup
+      to ensure legitimate usage of the free trial.
+  - question: What happens after the trial period?
+    answer: >-
+      After the 30-day trial, users can switch to a Pay As You Go account and
+      will only be charged for usage that exceeds the free Always Free limits.
+  - question: How can usage be monitored?
+    answer: >-
+      Usage and potential charges can be monitored via Oracle Cloud Console and
+      through cost estimator tools available on Oracle's website.

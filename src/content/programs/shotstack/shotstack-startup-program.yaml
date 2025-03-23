@@ -1,0 +1,87 @@
+draft: false
+provider_slug: shotstack
+title: Shotstack Startup Program
+meta_title: Build Your Startup with Shotstack
+intro: >-
+  Empower your startup with Shotstack’s advanced video editing API. Qualifying
+  startups receive an 80% discount on Professional plans and $5,000 in credits
+  for 12 months, along with robust developer support and access to a global
+  community.
+description: >-
+  The Shotstack Startup Program helps early-stage startups integrate scalable,
+  cloud-based video editing capabilities into their applications. Using
+  Shotstack Studio—a full-featured browser-based video editor—and a powerful API
+  that supports dynamic merge fields and JSON-based workflows, startups can
+  create, launch, and scale innovative video products rapidly. The program
+  offers an 80% discount on Professional plans and adds $5,000 in credits to
+  offset monthly usage, valid for 12 months. Eligibility requires startups to be
+  incorporated for less than 3 years and to have raised up to Series A funding.
+status: Active
+tags:
+  - video
+  - media
+  - ai
+url: https://shotstack.io/startup
+value_type: discount
+currency: USD
+max_value: 80
+community_notes: []
+tiers:
+  - name: Shotstack Startup Offer
+    intro: >-
+      Qualifying early-stage startups receive an 80% discount on Professional
+      plans and $5,000 in credits for 12 months, with full developer support and
+      community access.
+    max_value: 80
+    url: https://shotstack.io/startup
+    benefits:
+      - 80% discount on Professional plans for 12 months
+      - $5,000 in Shotstack credits applied to monthly bills
+      - Access to a full-featured browser-based video editor (Shotstack Studio)
+      - >-
+        Extensive developer support including documentation, tutorials, and
+        sample code
+      - Join a community of 10,000+ developers and 20,000+ businesses
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Incorporated less than 3 years ago
+      - Up to Series A funding
+      - Not direct competitors of Shotstack
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the Shotstack Startup Program application form to receive the
+          discount and credits.
+        action: Apply Now
+        action_url: https://shotstack.io/startup
+faq:
+  - question: How do I redeem the Shotstack credits?
+    answer: >-
+      Eligible startups can apply for the program by submitting the application
+      form. Once approved, $5,000 in Shotstack credits will be added to the
+      fixed plan account.
+  - question: How are the Shotstack credits applied?
+    answer: >-
+      The credits are applied to the monthly bill, covering up to $5,000 in
+      total usage.
+  - question: Where can I see my credits applied?
+    answer: The credits will appear on the monthly billing statement.
+  - question: When do my Shotstack credits expire?
+    answer: Credits are valid for one year from the activation date.
+  - question: What happens if I go over my credit limit?
+    answer: Any usage beyond the $5,000 credit limit will be billed at standard rates.
+  - question: >-
+      How do I know if my accelerator/incubator/VC firm is already partnered
+      with Shotstack?
+    answer: >-
+      Check with your investor or accelerator for partnership status. They can
+      also apply to become a partner if not already affiliated.
+  - question: How does doubling your Shotstack credits work?
+    answer: >-
+      If your partner (VC/accelerator) gets approved as a Shotstack partner, you
+      can email the team to receive an additional $5,000 in credits.
+  - question: Is this program only for new Shotstack customers?
+    answer: Yes, the program is exclusively for new Shotstack customers.

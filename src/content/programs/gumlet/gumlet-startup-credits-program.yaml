@@ -1,0 +1,85 @@
+draft: false
+provider_slug: gumlet
+title: Gumlet Startup Credits Program
+meta_title: Gumlet Startup Credits Program - Optimize Your Media Delivery
+intro: >-
+  Gumlet’s SCP enables startups to deliver optimized video and image content
+  across platforms at half the cost.
+description: >-
+  Gumlet's Startup Credits Program (SCP) provides emerging companies with
+  advanced media infrastructure at significantly reduced costs. The program
+  helps startups optimize video and image delivery with features such as
+  state-of-the-art video transcoding, image optimization, video insights, and
+  DRM protection. Participants benefit from unmatched bandwidth optimization,
+  personalized onboarding and migration support, and a developer-friendly setup
+  with comprehensive API and webhook integrations. It is designed for startups
+  registered within the last 4 years, with less than $10M in funding, and not
+  currently using Gumlet’s paid services, including those from partner VC
+  portfolios.
+status: Active
+tags:
+  - media
+  - video
+  - drm
+  - ai
+url: https://gumlet.com/startup-credits
+value_type: discount
+currency: USD
+min_value: 50
+max_value: 50
+community_notes: []
+tiers:
+  - name: Gumlet Startup Credits Program
+    intro: >-
+      Receive 50% off on all Gumlet services for the first year with unlimited
+      usage, complete platform access, and dedicated onboarding support.
+    max_value: 50
+    url: https://gumlet.com/startup-credits
+    benefits:
+      - 50% off first year on all services
+      - >-
+        Access to video transcoding, image optimization, video insights, and DRM
+        protection
+      - Personalized onboarding and migration support
+      - Enhanced security with geo-blocking and signed URLs
+      - Comprehensive API and webhook integrations
+    benefits_level: 1
+    duration:
+      - 1 year
+    eligibility:
+      - Business registered within the last 4 years
+      - Total funding under $10M
+      - Not a current paying customer of Gumlet
+      - Available to partner VC portfolio companies
+    effort_level: 3
+    steps_to_apply:
+      - name: Apply Online
+        description: Complete the online application form on Gumlet’s startup portal.
+        action: Apply Now
+        action_url: https://gumlet.com/startup-credits
+      - name: Submit Documents
+        description: >-
+          Provide the necessary funding and incorporation documents for
+          eligibility verification.
+        action: Upload Documents
+        action_url: https://gumlet.com/startup-credits
+faq:
+  - question: What is Gumlet’s Startup Credits Program?
+    answer: >-
+      It is a program that offers startups a 50% discount on all Gumlet media
+      services for the first year, along with full platform access and dedicated
+      support.
+  - question: Who is eligible for the program?
+    answer: >-
+      Startups registered within the last 4 years, with less than $10M in
+      funding, not currently using Gumlet’s paid services, and those within
+      partner VC portfolios are eligible.
+  - question: How do I apply?
+    answer: >-
+      Applicants must complete the online application form, provide the
+      necessary documents, and choose an integration method on Gumlet’s startup
+      portal.
+  - question: What support is provided?
+    answer: >-
+      Participants receive personalized onboarding, migration assistance, and
+      dedicated technical support via email and chat.

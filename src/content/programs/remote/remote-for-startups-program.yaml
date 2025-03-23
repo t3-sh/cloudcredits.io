@@ -1,0 +1,107 @@
+draft: false
+provider_slug: remote
+title: Remote For Startups Program
+meta_title: Global HR & Payroll Solutions for Startups
+intro: >-
+  Remote enables startups to streamline international hiring, compliance, and
+  payroll management through its tailored Remote For Startups Program, allowing
+  them to focus on growth and innovation.
+description: >-
+  Remote’s For Startups program offers comprehensive global HR solutions
+  designed to simplify international hiring, legal compliance, and payroll
+  management. The program provides a 15% discount on all Remote services for
+  eligible startups, with an additional 5% discount available for those whose
+  investors or partners join Remote’s partner network, bringing the total
+  discount up to 20%. It features full legal compliance in over 85 countries,
+  automated tax withholding and benefits administration, expert guidance on
+  equity and stock options, and scalable tools for contract management and
+  employee onboarding.
+status: Active
+tags:
+  - hr
+  - compliance
+  - payroll
+url: https://remote.com/for-startups
+value_type: discount
+currency: USD
+min_value: 15
+max_value: 20
+community_notes:
+  - title: Official Remote For Startups Website
+    body: >-
+      Detailed information on program benefits, eligibility, and the application
+      process is available on Remote's official website.
+    source_url: https://remote.com/for-startups
+tiers:
+  - name: 15% Discount Tier
+    intro: >-
+      Eligible startups with pre-seed, seed, or Series A funding receive a 15%
+      discount on all Remote services for 12 months using promo code RFS15OFF.
+    max_value: 15
+    url: https://remote.com/for-startups
+    benefits:
+      - 15% discount on Remote services
+      - Access to a comprehensive global HR platform
+      - Streamlined international hiring and compliance support
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Startups with pre-seed, seed, or Series A funding
+      - Companies must be pre-Series C
+      - Must meet Remote’s partnership criteria
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply via Remote’s website with proof of funding.
+        action: Apply Now
+        action_url: https://remote.com/for-startups
+      - name: Enter Promo Code
+        description: >-
+          Use the promo code RFS15OFF during the application to receive the
+          discount.
+        action: Apply Promo Code
+        action_url: https://remote.com/for-startups
+  - name: Partner Discount Tier
+    intro: >-
+      For startups whose investors or partners join Remote's partner network, an
+      additional 5% discount is applied, totaling up to 20% off on Remote
+      services.
+    max_value: 20
+    url: https://remote.com/for-startups
+    benefits:
+      - Up to 20% total discount on Remote services
+      - Enhanced global HR support
+      - Access to premium partner network benefits
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Startups with pre-seed, seed, or Series A funding
+      - Companies must be pre-Series C
+      - Investors or partners must join Remote’s partner network
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply via Remote’s website with proof of funding and partner
+          affiliation.
+        action: Apply Now
+        action_url: https://remote.com/for-startups
+faq:
+  - question: How long is the discount valid?
+    answer: >-
+      The 15% discount applies for 12 months and is available on both monthly
+      and annual payment plans.
+  - question: Does company location affect eligibility?
+    answer: >-
+      No, startups worldwide can join provided they meet the funding
+      requirements.
+  - question: Can post-Series A startups qualify?
+    answer: >-
+      Yes, though discounts beyond Series A depend on partnership status. Remote
+      offers custom pricing for later-stage companies.
+  - question: How can I apply?
+    answer: >-
+      Submit an application via Remote’s website with proof of funding and use
+      the promo code RFS15OFF to secure your discount.

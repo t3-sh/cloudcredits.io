@@ -1,0 +1,80 @@
+draft: false
+provider_slug: shopify
+title: Shopify 3 Month Trial
+meta_title: Try Shopify for Just $1/Month for 3 Months
+intro: >-
+  Experience Shopify with an exclusive offer of $1/month for three months on select plans,
+  designed to help you start and grow your online store.
+description: >-
+  Shopify's promotional offer gives you access to its cloud-hosted e-commerce platform
+  for just $1/month for three months. This includes customizable templates, multi-channel
+  selling capabilities, and comprehensive inventory management. The platform is trusted
+  globally for managing everything from marketing and payments to secure checkout and shipping,
+  allowing you to build your online business with minimal initial investment.
+status: Active
+tags:
+  - e-commerce
+  - promotional offer
+  - sales
+url: https://www.shopify.com/free-trial
+value_type: discount
+currency: USD
+min_value: 0
+max_value: 99
+community_notes:
+  - title: Startup Friendly
+    body: >-
+      Shopify provides an intuitive, risk-free entry point with promotional pricing
+      that scales with business needs.
+    source_url: https://www.shopify.com/free-trial
+  - title: Global Accessibility
+    body: >-
+      The platform supports businesses worldwide with localized selling tools
+      and a cloud-hosted infrastructure.
+    source_url: https://www.shopify.com
+tiers:
+  - name: Extended Trial Promotion
+    intro: >-
+      Access Shopify at $1/month for the first three months on select plans.
+    max_value: 99
+    url: https://www.shopify.com/free-trial
+    benefits:
+      - Extended trial at $1/month
+      - Access to full platform features during extended period
+    benefits_level: 1
+    duration:
+      - 3 months
+    eligibility:
+      - Must qualify based on select plan criteria
+      - Valid email required
+      - Available to new users
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: Visit the Shopify promotional page and register your account.
+        action: Get Started
+        action_url: https://www.shopify.com/free-trial
+      - name: Select a Plan
+        description: Choose a qualifying plan to access the $1/month for 3 months offer.
+        action: Select Plan
+        action_url: https://www.shopify.com/free-trial
+faq:
+  - question: What does the $1/month offer include?
+    answer: >-
+      For just $1/month for three months, you get full access to Shopify's platform including
+      store setup, customizable templates, inventory management, and multi-channel selling tools.
+  - question: Can I sell products during the promotional period?
+    answer: >-
+      Yes, unlike the free trial, the $1/month offer allows you to fully set up your store
+      and process orders right away.
+  - question: How do I cancel after the promotional period?
+    answer: >-
+      Navigate to Settings > Plan and permissions > Cancel subscription before the
+      promotional period ends to avoid full-price charges. Data is retained for 90 days
+      post-cancellation.
+  - question: Can I use my own domain name?
+    answer: Yes, users can connect an existing domain or purchase one through Shopify.
+  - question: Do I need technical skills?
+    answer: >-
+      No, Shopify's prebuilt themes and drag-and-drop builder require no coding
+      or design expertise.

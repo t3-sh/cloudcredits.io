@@ -1,0 +1,16 @@
+active: true
+name: Airtable
+short_name: Airtable
+slug: airtable
+color: "#F82A60"
+url: https://www.airtable.com
+intro: >-
+  Flexible cloud-based platform blending spreadsheets with databases to power collaborative apps and workflows.
+best_deal: $500 in credits
+video: ""
+tags:
+  - collaboration
+  - productivity
+  - low-code
+  - workflow
+  - database

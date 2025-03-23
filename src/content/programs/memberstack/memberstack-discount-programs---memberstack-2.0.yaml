@@ -1,0 +1,166 @@
+draft: false
+provider_slug: memberstack
+title: Memberstack Discount Programs – Memberstack 2.0
+meta_title: Memberstack Discount Programs
+intro: >-
+  Memberstack supports innovative startups, non-profits, young professionals,
+  and community projects with exclusive discount programs that reduce upfront
+  costs on their membership-management platform.
+description: >-
+  Memberstack offers several official discount programs designed to support
+  startups, non-profits, young professionals, and community-focused projects.
+  The offerings include a 100% discount on the Basic Plan for young
+  professionals, 50% off for non-profits, discounted pricing for startups with
+  0% transaction fees and 10,000 included members, a free Basic Plan for Webflow
+  community projects, and a special 200 Customer Plan for high-ticket/low-volume
+  businesses. Each program requires an application process with proper
+  documentation and periodic renewal.
+status: Active
+tags:
+  - dev tools
+  - web
+  - no-code
+  - web design
+  - cms
+url: https://www.memberstack.com/discount-programs
+value_type: discount
+currency: USD
+max_value: 100
+community_notes:
+  - title: Application Process Details
+    body: >-
+      Each discount program requires submission of an application form along
+      with the necessary documentation for verification. Once approved, the
+      discounts are manually applied, typically within a few business days.
+    source_url: https://www.memberstack.com/discount-programs
+tiers:
+  - name: Young Professionals (18–22 years)
+    intro: >-
+      100% off the Basic Plan for 12 months for young professionals. Applicants
+      must provide proof of age for personal or educational projects.
+    max_value: 100
+    url: https://www.memberstack.com/discount-programs
+    benefits:
+      - 100% discount on the Basic Plan for 12 months
+      - Access for personal or educational projects
+      - Renewal requires reapplication after 12 months
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Proof of age (e.g., government ID)
+      - Age between 18 and 22
+      - Personal or educational project use
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out the application form with proof of age
+        action: Apply Now
+        action_url: https://www.memberstack.com/discount-programs
+  - name: Non-Profits
+    intro: >-
+      50% off all plans for 12 months exclusively for registered non-profits
+      with the required documentation.
+    max_value: 50
+    url: https://www.memberstack.com/discount-programs
+    benefits:
+      - 50% discount on all plans for 12 months
+      - Accessible to registered non-profits globally
+      - Annual reapplication with updated non-profit tax documentation
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Recent non-profit tax documentation
+      - Registered non-profit organization
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Provide recent non-profit tax documentation with the application form
+        action: Apply Now
+        action_url: https://www.memberstack.com/discount-programs
+  - name: Startups
+    intro: >-
+      Discounted pricing for startups: $249/month ($199 if paid yearly) with 0%
+      transaction fees and 10,000 included members.
+    max_value: 249
+    url: https://www.memberstack.com/discount-programs
+    benefits:
+      - Discounted rate of $249/month, or $199/month if paid yearly
+      - 0% transaction fees on membership transactions
+      - 10,000 included members
+      - Priority onboarding support
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - >-
+        Participation in startup programs such as Y Combinator, 500 Startups, or
+        Launch
+      - Less than $1 million in funding
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out the form with startup proof and relevant documentation
+        action: Apply Now
+        action_url: https://www.memberstack.com/discount-programs
+  - name: Webflow Community Projects
+    intro: >-
+      Free Basic Plan ($0/month) for projects specifically serving the Webflow
+      community, subject to approval.
+    max_value: 100
+    url: https://www.memberstack.com/discount-programs
+    benefits:
+      - Access to the Basic Plan at no cost
+      - Designed for projects serving the Webflow community
+      - Supports both free and paid membership models
+    benefits_level: 1
+    duration:
+      - Varies
+    eligibility:
+      - Project must serve the Webflow community
+      - Approval required via application
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply with project details and proof of serving the Webflow community
+        action: Apply Now
+        action_url: https://www.memberstack.com/discount-programs
+  - name: 200 Customer Plan
+    intro: >-
+      Special pricing at $99/month with 0% transaction fees for businesses with
+      up to 200 members, ideal for high-ticket/low-volume models like coaching
+      or agencies.
+    max_value: 99
+    url: https://www.memberstack.com/discount-programs
+    benefits:
+      - Special rate of $99/month
+      - 0% transaction fees
+      - Tailored for high-ticket/low-volume businesses
+    benefits_level: 1
+    duration:
+      - Monthly
+    eligibility:
+      - Businesses expecting up to 200 members
+      - High-ticket/low-volume business models such as coaching or agencies
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out the application form with your business details
+        action: Apply Now
+        action_url: https://www.memberstack.com/discount-programs
+faq:
+  - question: What happens when my discount expires?
+    answer: >-
+      Applicants must reapply for eligibility once the discount period ends as
+      plans revert to standard pricing.
+  - question: Can discounts be combined?
+    answer: No, discounts are mutually exclusive and cannot be combined.
+  - question: Do discounts apply to transaction fees?
+    answer: >-
+      For startups, the discount includes 0% transaction fees, while other plans
+      follow the standard fee structure.
+  - question: Can I switch plans mid-term?
+    answer: >-
+      Plan upgrades or downgrades are prorated, and refunds are available within
+      30–45 days of payment.

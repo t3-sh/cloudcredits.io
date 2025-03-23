@@ -1,0 +1,114 @@
+draft: false
+provider_slug: segment
+title: Twilio Segment Startup Program
+meta_title: Twilio Segment Startup Program - Free Analytics Credits & Resources
+intro: >-
+  Early-stage startups gain free access to Segment for up to two years,
+  including up to $50,000 in credits, additional partner software deals, and
+  comprehensive educational resources.
+description: >-
+  The Twilio Segment Startup Program equips early-stage startups with a robust
+  analytics platform to accelerate growth and achieve product-market fit. The
+  program offers up to $50,000 in credits on Segment's Team Plan for two years,
+  over $1 million in additional partner credits for integrations with tools like
+  AWS, Google Analytics, Amplitude, and Intercom, as well as access to Segment
+  University, Analytics Academy, and priority support. Eligibility requires
+  startups to be less than 24 months old, with under $5 million in total funding
+  and not currently under a Segment sales contract. After the initial two-year
+  period, qualifying startups can benefit from a 50% discount in the third year
+  and a 25% discount in the fourth year.
+status: Active
+tags:
+  - analytics
+url: https://segment.com/startups
+value_type: credits
+currency: USD
+max_value: 50000
+community_notes:
+  - title: Frame.io Case Study
+    body: >-
+      Segment helped Frame.io unify diverse data sources, reducing support
+      ticket handle time by 80%.
+    source_url: https://segment.com/startups/frameio
+  - title: Earnest Case Study
+    body: >-
+      Segment provided Earnest with consistent, granular customer data, driving
+      10x loan volume growth and saving borrowers over $100M.
+    source_url: https://segment.com/startups/earnest
+  - title: Retool Case Study
+    body: >-
+      Retool saved over 1,000 engineering hours through streamlined integrations
+      using Segment.
+    source_url: https://segment.com/startups/retool
+tiers:
+  - name: Startup Credits
+    intro: >-
+      Receive up to $50,000 in free credits on Segment's Team Plan for two
+      years, along with access to educational and partner resources.
+    max_value: 50000
+    url: https://segment.com/startups
+    benefits:
+      - Up to $50,000 in credits for two years
+      - Access to Segment University and Analytics Academy
+      - Priority technical support
+      - Additional software deals exceeding $1M in credits
+    benefits_level: 2
+    duration:
+      - 2 years
+    eligibility:
+      - Incorporated less than 24 months ago
+      - Raised less than $5 million in total funding
+      - Not under an existing Segment sales contract
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Apply via the Segment website or partner platforms like Gust Launch,
+          Blockchain Founders Group, or Inc42.
+        action: Apply Now
+        action_url: https://segment.com/startups
+  - name: Extended Discounts
+    intro: >-
+      After the initial two-year credits period, qualifying startups receive 50%
+      off in the third year and 25% off in the fourth year on Segment's
+      services.
+    max_value: 50
+    url: https://segment.com/startups
+    benefits:
+      - 50% discount in the third year
+      - 25% discount in the fourth year
+    benefits_level: 2
+    duration:
+      - Third year
+      - Fourth year
+    eligibility:
+      - Must be approved and active in the Startup Program
+    effort_level: 1
+    steps_to_apply:
+      - name: Contact Support
+        description: >-
+          Reach out to Segment support to confirm eligibility for extended
+          discount benefits.
+        action: Contact
+        action_url: https://segment.com/support
+faq:
+  - question: What is the Twilio Segment Startup Program?
+    answer: >-
+      It is a program that offers early-stage startups free access to Segment
+      for up to two years, including up to $50,000 in credits, additional
+      partner credits, and comprehensive educational resources to drive
+      product-market fit.
+  - question: Who is eligible to apply?
+    answer: >-
+      Startups must be incorporated less than 24 months ago, have raised less
+      than $5 million in total funding, and not be under an existing Segment
+      sales contract or using competing discounts.
+  - question: How do I apply?
+    answer: >-
+      Applications can be submitted through the Segment website or partner
+      platforms like Gust Launch, Blockchain Founders Group, or Inc42. Approval
+      typically takes 1–2 weeks.
+  - question: What benefits are available after the initial two years?
+    answer: >-
+      Qualifying startups receive a 50% discount in the third year and 25% off
+      in the fourth year on Segment's services.
