@@ -2,7 +2,7 @@ active: true
 name: Sentry
 short_name: Sentry
 slug: sentry
-color: '#ff4444'
+color: '#372D59'
 url: https://sentry.io
 intro: >-
   Sentry offers discounted plans and sponsorships tailored for startups,
@@ -13,6 +13,5 @@ video: ''
 tags:
   - monitoring
   - apm
-  - startup
-  - discount
-  - sponsorship
+  - devops
+  - dev tools

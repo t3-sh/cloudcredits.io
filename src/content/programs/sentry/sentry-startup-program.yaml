@@ -20,9 +20,8 @@ status: Active
 tags:
   - monitoring
   - apm
-  - startup
-  - discount
-  - sponsorship
+  - devops
+  - dev tools
 url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
 value_type: discount
 currency: USD
@@ -46,7 +45,7 @@ tiers:
       - Custom pricing based on usage
       - Priority consideration for extended partnerships
       - 10% annual discount on paid plans
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 6 months
       - 1 year
