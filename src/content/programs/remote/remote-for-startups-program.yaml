@@ -18,11 +18,9 @@ description: >-
   employee onboarding.
 status: Active
 tags:
-  - global HR
-  - international hiring
+  - hr
   - compliance
   - payroll
-  - startups
 url: https://remote.com/for-startups
 value_type: discount
 currency: USD
@@ -45,7 +43,7 @@ tiers:
       - 15% discount on Remote services
       - Access to a comprehensive global HR platform
       - Streamlined international hiring and compliance support
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
@@ -75,14 +73,14 @@ tiers:
       - Up to 20% total discount on Remote services
       - Enhanced global HR support
       - Access to premium partner network benefits
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 12 months
     eligibility:
       - Startups with pre-seed, seed, or Series A funding
       - Companies must be pre-Series C
       - Investors or partners must join Remote’s partner network
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Submit Application
         description: >-
