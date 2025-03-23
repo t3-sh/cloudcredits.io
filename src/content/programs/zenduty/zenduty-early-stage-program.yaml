@@ -19,8 +19,8 @@ description: >-
 status: Active
 tags:
   - incident management
-  - startup
-  - discount
+  - monitoring
+  - project management
 url: https://www.zenduty.com/early-stage-program
 value_type: discount
 currency: USD
@@ -45,14 +45,14 @@ tiers:
       - Unlimited SMS and phone alerts
       - Advanced alert routing and on-call scheduling
       - 100+ integrations with monitoring tools
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 1 year
     eligibility:
       - Must be a new Zenduty customer
       - Startup under 3 years old with ≤$2M in funding
       - Team of 20 employees or less
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Register for the Program
         description: >-
@@ -76,7 +76,7 @@ tiers:
       - Must be a new Zenduty customer
       - Startup under 3 years old with ≤$2M in funding
       - Team of 20 employees or less
-    effort_level: 1
+    effort_level: 2
     steps_to_apply:
       - name: Renewal Process
         description: >-
