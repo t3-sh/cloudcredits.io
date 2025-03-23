@@ -1,0 +1,80 @@
+draft: false
+provider_slug: sentry
+title: Sentry Startup Program
+meta_title: Sentry Startup Discounts and Sponsorships
+intro: >-
+  Sentry offers discounted plans and sponsorships tailored for startups,
+  providing benefits such as free access periods, custom pricing, and annual
+  discounts for eligible companies.
+description: >-
+  Sentry's Startup Program supports early-stage companies by offering discounted
+  plans and sponsorships. Eligible startups qualify if they are not using
+  Sentry, are using Sentry's open-source/self-hosted product, or are on a
+  free/developer plan without previous paid usage. Benefits may include up to 6
+  months free access on the Teams plan (valued at $29/user/month), custom
+  pricing based on usage needs, and priority consideration for extended
+  partnerships. For startups requiring advanced monitoring, paid plans starting
+  at $26/month come with a 10% annual discount. All participants must adhere to
+  Sentry’s terms of service, and approval is granted at Sentry’s discretion.
+status: Active
+tags:
+  - monitoring
+  - apm
+  - startup
+  - discount
+  - sponsorship
+url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
+value_type: discount
+currency: USD
+max_value: 10
+community_notes:
+  - title: Industry Recognition
+    body: >-
+      Sentry is recognized for its commitment to supporting startups with
+      flexible discount and sponsorship offers.
+    source_url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
+tiers:
+  - name: Startup Discount and Sponsorship Tier
+    intro: >-
+      For eligible startups, Sentry offers a combination of discounted pricing
+      and sponsorship benefits, including up to 6 months free access on the
+      Teams plan and a 10% annual discount on paid plans.
+    max_value: 10
+    url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
+    benefits:
+      - 6 months free on the Teams plan ($29/user/month value)
+      - Custom pricing based on usage
+      - Priority consideration for extended partnerships
+      - 10% annual discount on paid plans
+    benefits_level: 2
+    duration:
+      - 6 months
+      - 1 year
+    eligibility:
+      - Company is not yet using Sentry
+      - Using Sentry's open-source/self-hosted product
+      - On a free/developer plan without prior paid usage
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the online sponsorship application and select 'Startup' as
+          the company type.
+        action: Apply Now
+        action_url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
+faq:
+  - question: What are the eligibility criteria for the Sentry Startup Program?
+    answer: >-
+      Eligible startups must either not be using Sentry, use the
+      open-source/self-hosted version, or be on a free/developer plan without
+      previous paid usage. Applicants must also comply with Sentry’s terms of
+      service.
+  - question: Are the discount percentages publicly disclosed?
+    answer: >-
+      No, the exact discount rates are not publicly disclosed. However, eligible
+      startups may receive benefits such as 6 months free access and a 10%
+      annual discount on paid plans.
+  - question: How do I apply for the Sentry Startup Program?
+    answer: >-
+      Startups can apply by completing the online sponsorship application and
+      selecting 'Startup' as the company type at the provided URL.
