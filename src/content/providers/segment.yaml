@@ -1,0 +1,18 @@
+active: true
+name: Twilio Segment
+short_name: Segment
+slug: segment
+color: '#000000'
+url: https://segment.com
+intro: >-
+  Early-stage startups gain free access to Segment for up to two years,
+  including up to $50,000 in credits, additional partner software deals, and
+  comprehensive educational resources.
+best_deal: Up to $50,000 in credits for 2 years
+video: ''
+tags:
+  - analytics
+  - startups
+  - data
+  - credits
+  - integration
