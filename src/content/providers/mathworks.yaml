@@ -1,0 +1,18 @@
+active: true
+name: MathWorks
+short_name: MathWorks
+slug: mathworks
+color: '#00A1D7'
+url: https://www.mathworks.com
+intro: >-
+  Provides early-stage companies with affordable access to MATLAB, Simulink, and
+  specialized toolboxes, enabling rapid prototyping and production development
+  with technical support and training benefits.
+best_deal: 12 months of free licensing for up to 10 users
+video: ''
+tags:
+  - MATLAB
+  - Simulink
+  - startups
+  - engineering
+  - prototyping
