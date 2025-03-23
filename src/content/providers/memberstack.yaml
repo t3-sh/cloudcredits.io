@@ -1,0 +1,18 @@
+active: true
+name: Memberstack
+short_name: Memberstack
+slug: memberstack
+color: '#1D81D3'
+url: https://www.memberstack.com
+intro: >-
+  Memberstack supports innovative startups, non-profits, young professionals,
+  and community projects with exclusive discount programs that reduce upfront
+  costs on their membership-management platform.
+best_deal: $249/month for discounted startup plan
+video: ''
+tags:
+  - discount
+  - membership
+  - startups
+  - nonprofits
+  - community
