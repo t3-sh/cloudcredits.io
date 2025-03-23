@@ -16,10 +16,7 @@ description: >-
 status: Active
 tags:
   - cloud
-  - free tier
-  - trial
-  - oracle
-  - infrastructure
+  - free trial
 url: https://www.oracle.com/cloud/free/
 value_type: credits
 currency: USD
@@ -49,7 +46,7 @@ tiers:
       - Access to all OCI services
       - 30-day trial period
       - Build, test, and deploy applications
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 30 days
     eligibility:
@@ -70,24 +67,6 @@ tiers:
           credit/debit card and mobile phone.
         action: Verify
         action_url: https://www.oracle.com/cloud/free/
-  - name: Always Free Services
-    intro: >-
-      Enjoy a suite of Always Free services, including compute, storage,
-      databases, and networking resources, available indefinitely.
-    max_value: 0
-    url: https://www.oracle.com/cloud/free/
-    benefits:
-      - Unlimited access to Always Free services
-      - Access to AMD-based Compute and ARM Ampere A1 instances
-      - Free Autonomous Databases and Object Storage
-      - No expiration on free services
-    benefits_level: 1
-    duration:
-      - Unlimited
-    eligibility:
-      - Must have an Oracle Cloud Free Tier account
-    effort_level: 1
-    steps_to_apply: []
 faq:
   - question: What is Oracle Cloud Free Tier?
     answer: >-
