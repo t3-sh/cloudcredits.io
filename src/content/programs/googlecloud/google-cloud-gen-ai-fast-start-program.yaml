@@ -1,0 +1,103 @@
+draft: false
+provider_slug: googlecloud
+title: Google Cloud Gen AI Fast-Start Program
+meta_title: Accelerate Generative AI Adoption with Google Cloud
+intro: >-
+  Google Cloud's Gen AI fast-start program offers a streamlined path for
+  enterprises to harness generative AI through $1,000 trial credits, customized
+  workshops, and 1:1 technical support, regardless of their current AI adoption
+  stage.
+description: >-
+  Designed for enterprises exploring generative AI, this program provides $1,000
+  trial credits for Vertex AI Agent Builder usage along with personalized
+  workshops and technical consultations. Participants benefit from expert
+  guidance on use-case prioritization, architecture design, and deployment
+  planning. The initiative is part of Google Cloud’s broader AI investments and
+  complements other offers like cloud credits for startups and certification
+  discounts. Additionally, there is an exclusive early bird offer providing 50%
+  off on an annual subscription with comprehensive features, 24/7 customer
+  support, regular updates, and community access – valid until December 31,
+  2023.
+status: Active
+tags:
+  - ai
+  - cloud
+  - generative ai
+  - workshops
+  - startup
+url: https://cloud.google.com/gen-ai-faststart
+value_type: credits
+currency: USD
+min_value: 1000
+max_value: 1000
+community_notes:
+  - title: Early Bird Discount Offer
+    body: >-
+      In addition to the Gen AI benefits, there is an exclusive early bird offer
+      providing a 50% discount on an annual subscription. This offer includes
+      premium features, 24/7 customer support, regular updates, and community
+      access. To redeem, visit the provider's website and apply the promo code
+      EARLYBIRD50 before December 31, 2023.
+    source_url: https://www.example.com/earlybird
+tiers:
+  - name: Gen AI Fast-Start Tier
+    intro: >-
+      Receive $1,000 trial credits for Vertex AI Agent Builder usage along with
+      personalized workshops and 1:1 consultations.
+    max_value: 1000
+    url: https://cloud.google.com/gen-ai-faststart
+    benefits:
+      - $1,000 trial credits for Vertex AI Agent Builder usage
+      - Customized workshops with Google Cloud AI experts
+      - 1:1 technical support and consultations
+      - Access to training resources for AI implementation
+      - Guidance on use-case prioritization and deployment planning
+    benefits_level: 3
+    duration:
+      - According to activation guidelines
+    eligibility:
+      - Enterprises exploring generative AI adoption
+      - Companies identifying first-use AI cases
+      - Organizations scaling existing AI implementations
+      - Teams requiring technical validation for AI projects
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Contact Form
+        description: >-
+          Complete the contact form on Google Cloud's Gen AI page to express
+          interest.
+        action: Apply Now
+        action_url: https://cloud.google.com/gen-ai-faststart
+      - name: Await Consultation
+        description: >-
+          Wait for a consultation with a Google Cloud account team for
+          eligibility review and next steps.
+      - name: Activate Credits
+        description: >-
+          Follow the provided guidance to activate the $1,000 trial credits and
+          schedule a workshop.
+      - name: Schedule Workshop
+        description: >-
+          Arrange a technical workshop to kickstart AI implementation as part of
+          the program.
+faq:
+  - question: What is the Google Cloud Gen AI Fast-Start Program?
+    answer: >-
+      It is a program designed to help enterprises adopt generative AI by
+      offering $1,000 trial credits, personalized workshops, and 1:1 technical
+      consultations.
+  - question: Who is eligible to apply?
+    answer: >-
+      The program is open to enterprises exploring generative AI adoption,
+      including those identifying first-use AI cases, scaling existing AI
+      implementations, or needing technical validation for AI projects.
+  - question: How can I activate the benefits?
+    answer: >-
+      Applicants should submit the contact form on the program page, await a
+      consultation, and then follow the guidance to activate credits and
+      schedule a workshop.
+  - question: Is there an additional discount offer available?
+    answer: >-
+      Yes, an early bird discount offering 50% off on an annual subscription is
+      available. Interested users should visit the provider's website and apply
+      the promo code EARLYBIRD50 before December 31, 2023.
