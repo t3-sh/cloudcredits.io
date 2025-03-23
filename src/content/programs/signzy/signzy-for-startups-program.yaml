@@ -22,12 +22,10 @@ tags:
   - fintech
   - kyc
   - onboarding
-  - apis
-  - ai
 url: https://www.signzy.com/startups
 value_type: credits
 currency: USD
-max_value: 5000
+max_value: 50
 community_notes:
   - title: Redefining Innovation in Digital Trust
     body: >-
@@ -52,7 +50,7 @@ tiers:
       - Additional offers worth 5,000 INR
       - Affordable startup pricing
       - Mentorship from seasoned industry experts
-    benefits_level: 2
+    benefits_level: 1
     duration: []
     eligibility:
       - Global startups in fintech, banking, insurtech, and gig economy
