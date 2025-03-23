@@ -20,14 +20,16 @@ tags:
   - web3
   - decentralized
   - blockchain
-url: https://twentysix.aleph.im
+  - crypto
+  - gpu
+url: https://www.twentysix.cloud/acceleratooor/
 value_type: discount
 currency: USD
 max_value: 100
 community_notes:
   - title: Decentralized Advantage
     body: >-
-      The program leverages aleph.im’s decentralized cloud network to deliver
+      The program leverages aleph.im's decentralized cloud network to deliver
       compute and storage solutions that enhance data sovereignty and resilience
       compared to centralized providers.
     source_url: https://aleph.im
@@ -38,7 +40,7 @@ tiers:
       1 year, on-demand compute instances, decentralized storage, and dedicated
       mentorship.
     max_value: 100
-    url: https://twentysix.aleph.im/apply
+    url: https://www.twentysix.cloud/acceleratooor/
     benefits:
       - $1M ALEPH credits valid for 1 year
       - On-demand compute instances for backend operations
@@ -60,13 +62,13 @@ tiers:
       - name: Complete Application Form
         description: Fill out the short 5–10 minute application form to join the program.
         action: Apply now
-        action_url: https://twentysix.aleph.im/apply
+        action_url: https://www.twentysix.cloud/acceleratooor/
       - name: Await Approval
         description: >-
           Wait for the program team to review your application and send an
           approval email.
         action: Check email
-        action_url: https://twentysix.aleph.im/status
+        action_url: https://www.twentysix.cloud/acceleratooor/
 faq:
   - question: What's included in the $1M grant?
     answer: >-

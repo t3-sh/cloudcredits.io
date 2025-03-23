@@ -2,8 +2,8 @@ active: true
 name: Twentysix Cloud
 short_name: Twentysix Cloud
 slug: twentysix
-color: "#007bff"
-url: https://twentysix.aleph.im
+color: "#D7F704"
+url: https://www.twentysix.cloud/acceleratooor/
 intro: >-
   Develop your project, launch it on aleph.im, and benefit from community
   recognition. Access up to $1M ALEPH credits for 1 year to deploy decentralized
@@ -13,3 +13,6 @@ video: ""
 tags:
   - web3
   - blockchain
+  - crypto
+  - gpu
+  - decentralized
