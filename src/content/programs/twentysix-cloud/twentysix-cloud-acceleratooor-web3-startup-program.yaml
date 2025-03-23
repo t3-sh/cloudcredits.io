@@ -1,0 +1,84 @@
+draft: false
+provider_slug: twentysix-cloud
+title: Twentysix Cloud Acceleratooor Web3 Startup Program
+meta_title: Twentysix Cloud Acceleratooor - Decentralized Cloud Credits for Web3 Startups
+intro: >-
+  Develop your project, launch it on aleph.im, and benefit from community
+  recognition. Access up to $1M ALEPH credits for 1 year to deploy decentralized
+  VMs, storage, and websites on a resilient, decentralized cloud.
+description: >-
+  The Twentysix Cloud Acceleratooor Web3 Startup Program offers a $1M grant in
+  ALEPH credits and infrastructure support for blockchain projects building
+  decentralized applications (dApps). It provides decentralized compute
+  instances, IPFS-based storage, cross-chain interoperability (support for
+  Avalanche, Base, BNB Chain, Mode, Solana, Ethereum, and OP Superchain), and
+  dedicated mentorship. This program is designed for early-stage projects with
+  an MVP or POC, without requiring VC or institutional funding, and operates
+  with a manual application review process without KYC/KYB.
+status: Active
+tags:
+  - web3
+  - decentralized
+  - blockchain
+  - startup
+  - cloud
+url: https://twentysix.aleph.im
+value_type: credits
+currency: USD
+max_value: 1000000
+community_notes:
+  - title: Decentralized Advantage
+    body: >-
+      The program leverages aleph.im’s decentralized cloud network to deliver
+      compute and storage solutions that enhance data sovereignty and resilience
+      compared to centralized providers.
+    source_url: https://aleph.im
+tiers:
+  - name: Acceleratooor Tier
+    intro: >-
+      For projects on supported blockchains, this tier offers ALEPH credits for
+      1 year, on-demand compute instances, decentralized storage, and dedicated
+      mentorship.
+    max_value: 1000000
+    url: https://twentysix.aleph.im/apply
+    benefits:
+      - $1M ALEPH credits valid for 1 year
+      - On-demand compute instances for backend operations
+      - Decentralized storage with IPFS integration
+      - Technical mentorship from experienced developers
+      - Opportunities to pitch at global Web3 events
+    benefits_level: 3
+    duration:
+      - 1 year
+    eligibility:
+      - Requires MVP or Proof-of-Concept
+      - >-
+        Must build on Avalanche, Base, BNB Chain, Mode, Solana, Ethereum, or OP
+        Superchain
+      - No prior VC, institutional, or foundation funding needed
+      - Manual application review without KYC/KYB
+    effort_level: 2
+    steps_to_apply:
+      - name: Complete Application Form
+        description: Fill out the short 5–10 minute application form to join the program.
+        action: Apply now
+        action_url: https://twentysix.aleph.im/apply
+      - name: Await Approval
+        description: >-
+          Wait for the program team to review your application and send an
+          approval email.
+        action: Check email
+        action_url: https://twentysix.aleph.im/status
+faq:
+  - question: What's included in the $1M grant?
+    answer: >-
+      It provides ALEPH credits for 1 year to deploy decentralized compute
+      instances, storage, and custom domains on a decentralized cloud platform.
+  - question: Why choose a decentralized cloud solution?
+    answer: >-
+      It avoids single points of failure, ensures data sovereignty, and offers
+      cost-effective scalability compared to centralized cloud providers.
+  - question: Who is behind the program?
+    answer: >-
+      The program is powered by aleph.im, a leading decentralized infrastructure
+      network trusted by major blockchain projects.
