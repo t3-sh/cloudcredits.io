@@ -18,11 +18,10 @@ description: >-
   portfolios.
 status: Active
 tags:
-  - video
-  - image
   - media
-  - optimization
-  - startup
+  - video
+  - drm
+  - ai
 url: https://gumlet.com/startup-credits
 value_type: discount
 currency: USD
@@ -44,7 +43,7 @@ tiers:
       - Personalized onboarding and migration support
       - Enhanced security with geo-blocking and signed URLs
       - Comprehensive API and webhook integrations
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - 1 year
     eligibility:
@@ -52,7 +51,7 @@ tiers:
       - Total funding under $10M
       - Not a current paying customer of Gumlet
       - Available to partner VC portfolio companies
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Apply Online
         description: Complete the online application form on Gumlet’s startup portal.
