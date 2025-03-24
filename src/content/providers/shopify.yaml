@@ -2,13 +2,13 @@ active: true
 name: Shopify
 short_name: Shopify
 slug: shopify
-color: '#96BF47'
+color: "#96BF47"
 url: https://www.shopify.com
 intro: >-
   A comprehensive cloud-hosted e-commerce platform that offers customizable
   templates, multi-channel selling, and comprehensive inventory management.
 best_deal: 3-day free trial, no credit card required.
-video: ''
+video: ""
 tags:
   - e-commerce
   - free trial

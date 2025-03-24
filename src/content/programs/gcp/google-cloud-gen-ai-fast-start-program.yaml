@@ -1,6 +1,6 @@
 draft: false
-provider_slug: googlecloud
-title: Google Cloud Gen AI Fast-Start Program
+provider_slug: gcp
+title: Google Cloud Gen AI $1000 Fast-Start Program
 meta_title: Accelerate Generative AI Adoption with Google Cloud
 intro: >-
   Google Cloud's Gen AI fast-start program offers a streamlined path for
@@ -21,10 +21,7 @@ description: >-
 status: Active
 tags:
   - ai
-  - cloud
-  - generative ai
-  - workshops
-  - startup
+  - llm
 url: https://cloud.google.com/gen-ai-faststart
 value_type: credits
 currency: USD
@@ -52,7 +49,7 @@ tiers:
       - 1:1 technical support and consultations
       - Access to training resources for AI implementation
       - Guidance on use-case prioritization and deployment planning
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - According to activation guidelines
     eligibility:
@@ -60,7 +57,7 @@ tiers:
       - Companies identifying first-use AI cases
       - Organizations scaling existing AI implementations
       - Teams requiring technical validation for AI projects
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Submit Contact Form
         description: >-
@@ -72,14 +69,6 @@ tiers:
         description: >-
           Wait for a consultation with a Google Cloud account team for
           eligibility review and next steps.
-      - name: Activate Credits
-        description: >-
-          Follow the provided guidance to activate the $1,000 trial credits and
-          schedule a workshop.
-      - name: Schedule Workshop
-        description: >-
-          Arrange a technical workshop to kickstart AI implementation as part of
-          the program.
 faq:
   - question: What is the Google Cloud Gen AI Fast-Start Program?
     answer: >-

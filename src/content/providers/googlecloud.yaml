@@ -2,7 +2,7 @@ active: true
 name: Google Cloud
 short_name: Google Cloud
 slug: googlecloud
-color: '#1A73E8'
+color: "#1A73E8"
 url: https://cloud.google.com
 intro: >-
   Google Cloud offers a comprehensive suite of cloud computing services that
@@ -10,7 +10,7 @@ intro: >-
   solutions. It is designed to help enterprises scale efficiently, innovate
   rapidly, and enhance customer experiences.
 best_deal: Best Deal $$$
-video: ''
+video: ""
 tags:
   - ai
   - cloud
