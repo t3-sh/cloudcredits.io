@@ -1,0 +1,100 @@
+draft: false
+provider_slug: assemblyai
+title: AssemblyAI Startup Program
+meta_title: Build Voice-Powered AI with AssemblyAI
+intro: >-
+  The AssemblyAI Startup Program provides early-stage startups with up to
+  $150,000 in free API credits to build voice-powered applications using
+  industry-leading speech-to-text technology.
+description: >-
+  Designed for early-stage startups, the AssemblyAI Startup Program enables
+  innovators to create powerful voice-enabled AI applications. The program
+  offers up to $150,000 in free API credits, granting full access to
+  AssemblyAI’s latest features such as real-time transcription, speaker
+  diarization, sentiment analysis, and large language model integrations for
+  summarization and Q&A generation. In addition, participants receive 24/7 Slack
+  technical support, one-to-one sessions with solutions architects, exclusive
+  co-marketing opportunities, and invitations to events like hackathons and
+  founder dinners. Eligible startups—from bootstrapped to Series B—that leverage
+  voice data in industries such as brand safety, telehealth, and conversation
+  intelligence can apply. Credits are valid for 12 months post-approval, with
+  additional conditions for premium feature usage.
+status: Active
+tags:
+  - voice
+  - speech
+  - ai
+  - startup
+  - api
+url: https://www.assemblyai.com/startup-program
+value_type: credits
+currency: USD
+max_value: 150000
+community_notes:
+  - title: Jiminny Success Story
+    body: >-
+      Jiminny increased customer win rates by 15% using AssemblyAI’s
+      conversation intelligence capabilities.
+    source_url: https://www.assemblyai.com/startup-program
+  - title: CallRail Success Story
+    body: >-
+      CallRail doubled conversation intelligence adoption through AssemblyAI’s
+      real-time transcription services.
+    source_url: https://www.assemblyai.com/startup-program
+tiers:
+  - name: AssemblyAI Startup Program Tier
+    intro: >-
+      Early-stage startups can receive up to $150,000 in free API credits along
+      with technical support, exclusive co-marketing opportunities, and
+      community networking.
+    max_value: 150000
+    url: https://www.assemblyai.com/startup-program
+    benefits:
+      - Up to $150,000 in free API credits
+      - >-
+        Access to advanced features including real-time transcription, speaker
+        diarization, and sentiment analysis
+      - 24/7 Slack support and 1:1 sessions with solutions architects
+      - Exclusive co-marketing opportunities and event invitations
+      - Networking with a global community of AI innovators
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Bootstrapped to Series B startups
+      - >-
+        Must leverage voice data in domains like brand safety, telehealth, and
+        conversation intelligence
+      - Ability to integrate AssemblyAI’s API
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the online application form with your personal, company, and
+          funding details.
+        action: Apply Now
+        action_url: https://www.assemblyai.com/startup-program
+faq:
+  - question: How do I apply to the AssemblyAI Startup Program?
+    answer: >-
+      Applicants should complete the online application form via AssemblyAI’s
+      startup portal and provide the required company and funding details.
+  - question: What are the eligibility requirements?
+    answer: >-
+      The program is open to early-stage startups from bootstrapped to Series B
+      that leverage voice data in areas such as brand safety, telehealth,
+      conversation intelligence, and more.
+  - question: Will my AssemblyAI credits expire?
+    answer: Yes, the credits are valid for 12 months post-approval.
+  - question: Can existing AssemblyAI customers apply?
+    answer: >-
+      The program is specifically designed for early-stage startups; existing
+      customers who do not fit the startup criteria may not be eligible.
+  - question: Are there any usage limits or additional costs?
+    answer: >-
+      While the program provides up to $150,000 in free credits, additional
+      costs may apply for premium features like PII redaction and summarization.
+  - question: What technical support is provided?
+    answer: >-
+      Participants receive 24/7 Slack support along with 1:1 sessions with
+      AssemblyAI’s solutions architects.
