@@ -1,0 +1,19 @@
+active: true
+name: Huawei Cloud
+short_name: Huawei Cloud
+slug: huaweicloud
+color: '#268BC3'
+url: https://www.huaweicloud.com
+intro: >-
+  Huawei Cloud offers comprehensive cloud resources and support for startups,
+  providing up to $150,000 in cloud credits, dedicated migration support,
+  entrepreneurial coaching, and business development opportunities to accelerate
+  growth.
+best_deal: Up to $150,000 in cloud credits for startups
+video: ''
+tags:
+  - cloud
+  - startups
+  - migration
+  - entrepreneurship
+  - global
