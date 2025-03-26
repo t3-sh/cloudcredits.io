@@ -1,0 +1,127 @@
+draft: false
+provider_slug: huaweicloud
+title: Huawei Cloud Startup Program
+meta_title: Huawei Cloud Startup Program - Global Cloud Credits and Ecosystem Enablement
+intro: >-
+  Huawei Cloud offers startups up to $150,000 in cloud credits, dedicated
+  migration support, entrepreneurial coaching, and business development
+  opportunities to accelerate growth.
+description: >-
+  The Huawei Cloud Startup Program is a global initiative designed to accelerate
+  startup growth by providing comprehensive cloud resources. It offers up to
+  $150,000 in credits for cloud infrastructure, dedicated technical support for
+  smooth migration, mentorship and coaching from industry experts, and access to
+  co-marketing and ecosystem partnerships. Eligible startups (≤ 5 years old)
+  from selected regions benefit from a streamlined application process and
+  Huawei Cloud’s 30+ years of ICT expertise with advanced technologies such as
+  AI, IoT, and big data.
+status: Active
+tags:
+  - cloud
+  - startups
+  - migration
+  - entrepreneurship
+  - global
+url: https://startup.huaweicloud.com/intl/center
+value_type: credits
+currency: USD
+max_value: 150000
+community_notes:
+  - title: Lu Weicheng, CTO of FeiLiu Tech
+    body: >-
+      As a CTO, cost control had always been a top priority, especially during
+      the early stages of the startup journey. The Huawei Cloud Startup Program
+      helped bring cloud costs down to an acceptable scope, offering stable
+      cloud services and dedicated technical support to resolve issues promptly.
+    source_url: https://startup.huaweicloud.com/intl/center
+  - title: Wang Ze, CEO of Lingcai Tech
+    body: >-
+      Huawei Cloud's team engaged with the startup personally, leveraging their
+      strengths in security and stability. Their professional approach provided
+      a reliable SaaS solution for a smart finance project, meeting critical
+      needs effectively.
+    source_url: https://startup.huaweicloud.com/intl/center
+  - title: Liu Yixin, CEO of ARCTIC DATA
+    body: >-
+      With over 30 years of ICT experience, Huawei Cloud supported a smooth
+      cloud migration and continuous growth through technology assistance,
+      marketing resources, and joint development initiatives that exceeded
+      expectations.
+    source_url: https://startup.huaweicloud.com/intl/center
+tiers:
+  - name: Agile Cloud Migration
+    intro: >-
+      Provides up to $150,000 in cloud credits and dedicated migration support
+      to help startups transition smoothly to Huawei Cloud.
+    max_value: 150000
+    url: https://startup.huaweicloud.com/intl/center
+    benefits:
+      - Up to $150,000 Huawei Cloud cash credits voucher
+      - Smooth cloud migration with dedicated teams support
+    benefits_level: 3
+    duration: []
+    eligibility: []
+    effort_level: 2
+    steps_to_apply:
+      - name: Create an account
+        description: Register on Huawei Cloud’s startup portal.
+        action: Register
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Complete registration and authentication
+        description: Submit company details and verify your account.
+        action: Submit Details
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Auditing
+        description: Your application will be reviewed and audited.
+      - name: Application Processed
+        description: Your application is processed and under final review.
+      - name: Success
+        description: Receive approval to access program resources.
+      - name: Access Startup Resources
+        description: >-
+          Once approved, access all program resources including credits and
+          support.
+  - name: Entrepreneurial Enablement
+    intro: Offers mentorship, coaching, and industry expertise to empower startups.
+    max_value: 0
+    url: https://startup.huaweicloud.com/intl/center
+    benefits:
+      - Entrepreneurial coaching
+      - Best practices and advanced industry experience sharing
+      - Global industry and innovation policy coordination
+      - Entrepreneurial globalization consulting and collaboration
+    benefits_level: 2
+    duration: []
+    eligibility: []
+    effort_level: 1
+    steps_to_apply: []
+  - name: Business Resources
+    intro: >-
+      Provides access to co-selling, joint development, and co-marketing
+      opportunities to boost business growth.
+    max_value: 0
+    url: https://startup.huaweicloud.com/intl/center
+    benefits:
+      - >-
+        Prioritized Co-selling opportunities in Huawei Cloud marketplace
+        (KooGallery)
+      - Huawei global eco resources collaboration
+      - More business joint development & joint GTM opportunities
+      - Co-Marketing opportunities with Huawei
+    benefits_level: 2
+    duration: []
+    eligibility: []
+    effort_level: 1
+    steps_to_apply: []
+faq:
+  - question: How long does the approval take?
+    answer: The typical review time is 10 working days.
+  - question: What services are covered by the credits?
+    answer: >-
+      Credits apply to Huawei Cloud’s 200+ services including GPU-accelerated
+      servers, AI tools (ModelArts), and databases like GaussDB.
+  - question: Are there regional restrictions for the program?
+    answer: >-
+      Yes, eligibility depends on specific regions and local regulations, with
+      availability in regions like Singapore, South Africa, Europe, and the
+      Middle East.
