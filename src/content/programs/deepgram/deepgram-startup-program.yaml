@@ -1,0 +1,88 @@
+draft: false
+provider_slug: deepgram
+title: Deepgram Startup Program
+meta_title: Deepgram Startup Program - Empowering Voice-Enabled Innovation
+intro: >-
+  Deepgram Startup Program helps technical founders create, launch, and scale
+  voice-enabled experiences with speech recognition, offering up to $100,000 in
+  credits over 12 months.
+description: >-
+  The Deepgram Startup Program empowers technical founders and early-stage
+  startups to integrate advanced speech recognition into their products.
+  Participants receive up to $100K in credits for 12 months, direct
+  collaboration with AI experts, early access to innovative features, and
+  opportunities to network within a vibrant community. With advanced APIs and
+  SDKs, startups can enhance their products with cost-effective, high-accuracy
+  voice-enabled solutions.
+status: Active
+tags:
+  - speech recognition
+  - AI
+  - startup
+  - voice
+url: https://deepgram.com/startup-program
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes:
+  - title: Collective Impact
+    body: >-
+      Startups in the program have transcribed over 10M minutes, showcasing the
+      transformative impact of Deepgram's innovative speech recognition
+      technology.
+    source_url: https://deepgram.com/startup-program
+tiers:
+  - name: Deepgram Startup Program Tier
+    intro: >-
+      Receive up to $100K in Deepgram credits for 12 months, along with expert
+      technical support, community networking, and advanced speech recognition
+      features.
+    max_value: 100000
+    url: https://deepgram.com/startup-program
+    benefits:
+      - Access to AI experts for technical guidance
+      - Up to $100K in credits for speech recognition
+      - Community networking with startup leaders
+      - Advanced topic summarization for audio insights
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Must create a free Deepgram account
+      - Talented AI builder or early-stage startup (<$10M raised)
+      - In production or planning to launch within 6 months
+      - Committed to active community engagement
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Deepgram Account
+        description: Sign up for a free Deepgram account.
+        action: Register
+        action_url: https://deepgram.com/signup
+      - name: Submit Application
+        description: >-
+          Complete the application form to join the program and receive your
+          credits upon approval.
+        action: Apply Now
+        action_url: https://deepgram.com/startup-program
+faq:
+  - question: What if I’m an existing Deepgram customer?
+    answer: >-
+      Applications from existing customers are evaluated on a case-by-case
+      basis.
+  - question: Can I add others to my project?
+    answer: Yes, you can invite other users to collaborate on your project via email.
+  - question: Do startup credits expire?
+    answer: >-
+      Credits require monthly transcription usage to remain active within the
+      program.
+  - question: Are there requirements to apply?
+    answer: >-
+      Applicants must create a free Deepgram account, be an early-stage startup
+      or talented AI builder (<$10M raised), be in production or launching
+      within 6 months, and commit to active community engagement.
+  - question: What happens after I apply?
+    answer: >-
+      The community team will review applications and typically respond within
+      one week.
+  - question: How long until I receive my credits?
+    answer: After acceptance, credits are credited to your account within 24-48 hours.
