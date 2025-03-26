@@ -1,0 +1,17 @@
+active: true
+name: Nebius
+short_name: Nebius
+slug: nebius
+color: '#0033FF'
+url: https://www.nebius.ai/startups
+intro: >-
+  Nebius offers an AI-first cloud platform purpose-built for startups, providing
+  enterprise-grade resources at startup-friendly pricing.
+best_deal: Up to $150,000 in cloud credits
+video: ''
+tags:
+  - ai
+  - cloud
+  - startups
+  - nvidia
+  - ml
