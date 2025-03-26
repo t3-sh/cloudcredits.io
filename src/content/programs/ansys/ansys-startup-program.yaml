@@ -1,0 +1,85 @@
+draft: false
+provider_slug: ansys
+title: Ansys Startup Program
+meta_title: Discounted Engineering Software for Eligible Startups
+intro: >-
+  The Ansys Startup Program provides early-stage companies with discounted
+  access to world-class multiphysics simulation tools, enabling them to
+  accelerate product development and reduce prototyping costs.
+description: >-
+  Ansys Startup Program offers early-stage startups full access to an
+  industry-leading multiphysics simulation suite, including tools for
+  structures, fluids, electromagnetics, and semiconductor design. The program
+  enables companies to decrease design timelines, reduce development costs, and
+  improve product performance through advanced virtual testing that can cut
+  physical prototyping expenses by up to 85%. Eligibility requires that
+  companies be privately held for less than 10 years, generate less than $5M in
+  annual revenue, and operate in physical product development. Participants are
+  expected to provide customer testimonials, case studies, and quarterly social
+  media updates featuring Ansys partnership branding. With tailored software
+  bundles and dedicated technical support via the Ansys Learning Hub, the
+  initiative has empowered over 1,500 startups across 57 countries since 2016.
+status: Active
+tags:
+  - engineering
+  - simulation
+  - startups
+  - discount
+  - innovation
+url: https://www.ansys.com/startup-program
+value_type: discount
+currency: USD
+min_value: 0
+max_value: 50
+community_notes:
+  - title: Proven Impact
+    body: >-
+      Startups in the program have achieved an average 6:1 ROI and significant
+      cost savings by reducing prototyping expenses by up to 85%.
+    source_url: https://www.ansys.com/startup-program
+tiers:
+  - name: Startup Tier
+    intro: >-
+      Eligible early-stage startups receive discounted pricing on bundled
+      simulation software to accelerate product development and reduce
+      prototyping costs.
+    max_value: 50
+    url: https://www.ansys.com/startup-program
+    benefits:
+      - Full access to Ansys multiphysics simulation suite
+      - >-
+        Specialized software bundles for structures, electromagnetics, and
+        semiconductor design
+      - Dedicated technical support and access to Ansys Learning Hub
+      - Potential cost savings up to 85% on physical prototyping
+    benefits_level: 3
+    duration:
+      - Ongoing as long as eligibility is maintained
+    eligibility:
+      - Privately held and less than 10 years old
+      - Annual revenue under $5M
+      - Focused on physical product development
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the online application form with your company or school
+          details and product interest.
+        action: Contact Us
+        action_url: https://www.ansys.com/startup-program
+faq:
+  - question: What does the Ansys Startup Program offer?
+    answer: >-
+      It provides discounted access to a full suite of multiphysics simulation
+      tools, technical support, and specialized software bundles to help
+      startups accelerate product development and reduce prototyping costs.
+  - question: Who is eligible for the program?
+    answer: >-
+      Startups must be privately held for less than 10 years, generate under $5M
+      in annual revenue, and be involved in physical product development.
+  - question: What commitments are required from participants?
+    answer: >-
+      Participants are expected to provide customer testimonials, case studies,
+      quarterly social media updates (#ANSYSstartups), and display Ansys
+      partnership branding, with exceptions available for stealth-mode
+      companies.
