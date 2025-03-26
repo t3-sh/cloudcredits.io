@@ -1,0 +1,136 @@
+draft: false
+provider_slug: nebius
+title: Nebius for Startups
+meta_title: Accelerate Your AI Development with Nebius Cloud
+intro: >-
+  Nebius for Startups empowers AI companies to scale breakthrough innovations by
+  providing exclusive cloud credits, technical training, and access to a
+  thriving AI community.
+description: >-
+  The Nebius for Startups program offers AI-focused companies enterprise-grade
+  cloud credits alongside priority access to NVIDIA H100 GPUs, managed services,
+  and dedicated ML support. Designed for startups from bootstrapped ventures to
+  pre-Series B funded companies, the program is structured into three tiers – AI
+  Explorer, AI Builder, and AI Scaler – each tailored to different stages and
+  needs. Applicants benefit from a streamlined, single application process with
+  decisions within 7-10 business days and are expected to participate in
+  co-branding initiatives such as logo exchanges and case studies.
+status: Active
+tags:
+  - ai
+  - cloud
+  - startups
+  - gpu
+  - ml
+url: https://nebius.com/startups-program
+value_type: credits
+currency: USD
+min_value: 5000
+max_value: 150000
+community_notes:
+  - title: Robust AI Ecosystem
+    body: >-
+      Nebius offers exclusive access to cutting-edge GPU resources, technical
+      training, and community events that help startups accelerate their AI
+      innovations.
+    source_url: https://nebius.com/startups-program
+tiers:
+  - name: AI Explorer
+    intro: >-
+      Provides $5,000 in self-service cloud credits for pre-seed startups in the
+      AI space without requiring partner affiliation.
+    max_value: 5000
+    url: https://nebius.com/startups-program
+    benefits:
+      - $5,000 cloud credits
+      - Access to state-of-the-art AI platform
+      - Self-service onboarding
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Bootstrapped, Angel, or Pre-Seed stage
+      - Solo founder or team of fewer than 8 employees
+      - AI-first product beyond prototype
+      - Founded within the last five years
+      - No partner affiliation required
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Complete the online application form for Nebius for Startups.
+        action: Apply Now
+        action_url: https://nebius.com/startups-program
+  - name: AI Builder
+    intro: >-
+      Offers up to $100,000 in cloud credits and $6,000 in inference credits for
+      startups affiliated with approved partners.
+    max_value: 100000
+    url: https://nebius.com/startups-program
+    benefits:
+      - Up to $100,000 in cloud credits
+      - Up to $6,000 in inference credits
+      - Priority access to NVIDIA GPUs
+      - Technical training and workshops
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Pre-seed or Seed stage
+      - Solo founder or team of fewer than 8 employees
+      - AI-first product beyond prototype
+      - Founded within the last five years
+      - Affiliated with approved partners
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply Online
+        description: Fill out the application form and indicate partner affiliation.
+        action: Apply Now
+        action_url: https://nebius.com/startups-program
+  - name: AI Scaler
+    intro: >-
+      Delivers up to $150,000 in cloud credits and $10,000 in inference credits
+      for funded startups with substantial compute demands and premium partner
+      affiliation.
+    max_value: 150000
+    url: https://nebius.com/startups-program
+    benefits:
+      - Up to $150,000 in cloud credits
+      - Up to $10,000 in inference credits
+      - Dedicated global ML support
+      - Exclusive access to premium GPU options
+      - Co-branding and marketing support
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Seed to pre-Series B startups
+      - High compute demand
+      - Founded within the last seven years
+      - Premium partner affiliation required
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the combined application for both cloud and inference
+          credits.
+        action: Apply Now
+        action_url: https://nebius.com/startups-program
+      - name: Verification Process
+        description: >-
+          Provide additional information and participate in interviews if
+          necessary.
+faq:
+  - question: Who is eligible for the Nebius for Startups program?
+    answer: >-
+      Eligible startups include bootstrapped, angel, or early-funded companies
+      in the AI and ML space, from pre-seed to pre-Series B stages, based on
+      tier-specific criteria.
+  - question: How does the application process work?
+    answer: >-
+      Startups submit a single application for both cloud and inference credits,
+      with a verification process and a decision provided within 7-10 business
+      days.
+  - question: What are the co-marketing requirements?
+    answer: >-
+      Participants are expected to exchange logos and may be featured in case
+      studies or social media, although co-marketing is optional.
