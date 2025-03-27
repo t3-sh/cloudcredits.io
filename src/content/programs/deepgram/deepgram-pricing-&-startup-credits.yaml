@@ -1,0 +1,135 @@
+draft: false
+provider_slug: deepgram
+title: Deepgram Pricing & Startup Credits
+meta_title: Deepgram API Pricing and Startup Program
+intro: >-
+  Deepgram provides a transparent and scalable pricing structure featuring a
+  free $200 credit and flexible plans to suit individual developers, growing
+  businesses, and enterprises. Eligible startups can earn up to $100k in credits
+  with 12-month validity.
+description: >-
+  Deepgram's pricing offers a range of plans including a Pay As You Go option
+  with $200 free credit, a Growth Plan with prepaid credits at a discounted
+  rate, and an Enterprise Plan with custom pricing and premium features such as
+  custom-trained models and dedicated support. Additionally, their Startup
+  Program allows eligible startups to access up to $100k in credits, ensuring
+  cost efficiency and scalability across different user needs.
+status: Active
+tags:
+  - api
+  - speech
+  - ai
+  - free trial
+  - enterprise
+url: https://www.deepgram.com/pricing/
+value_type: credits
+currency: USD
+min_value: 200
+max_value: 100000
+community_notes:
+  - title: Transparent Billing
+    body: >-
+      Deepgram charges per second of audio processed, ensuring users pay only
+      for actual usage with no expiration on credits.
+    source_url: https://www.deepgram.com/pricing/
+  - title: Competitive Rates
+    body: >-
+      Offering models like Nova-2 at $0.0043/min and discounted rates in the
+      Growth Plan, Deepgram provides cost-effective solutions compared to
+      competitors.
+    source_url: https://www.deepgram.com/pricing/
+  - title: Startup Program
+    body: >-
+      Eligible startups can receive up to $100k in credits with a 12-month
+      validity upon maintaining monthly active usage.
+    source_url: https://www.deepgram.com/pricing/
+tiers:
+  - name: Pay As You Go Plan
+    intro: >-
+      Starts with $200 free credit and then moves to pay-as-you-go billing. No
+      minimums, expiration, or credit card required, with per-minute rates based
+      on model selection.
+    max_value: 200
+    url: https://www.deepgram.com/pricing/
+    benefits:
+      - $200 free credit for immediate use
+      - Flexible pay-as-you-go billing after free credits
+      - >-
+        Multiple pricing models: Nova-2 at $0.0043/min, Whisper Cloud at
+        $0.0048/min, and Enhanced model at $0.0145/min
+      - No expiration on credits
+      - Supports up to 100 concurrent speech-to-text requests and 36+ languages
+    benefits_level: 1
+    duration:
+      - No expiration
+    eligibility:
+      - Open to all users
+    effort_level: 1
+    steps_to_apply:
+      - name: Create Account
+        description: >-
+          Register for a Deepgram account to access the free $200 credit without
+          a credit card.
+        action: Sign Up
+        action_url: https://www.deepgram.com/pricing/
+  - name: Growth Plan
+    intro: >-
+      An annual commitment plan offering prepaid credits with up to 20% discount
+      on standard rates, tailored for users with consistent usage.
+    max_value: 10000
+    url: https://www.deepgram.com/pricing/
+    benefits:
+      - 20% discount on standard per-minute rates
+      - Nova-2 pricing at $0.0036/min (16% savings)
+      - Enhanced model at $0.0115/min
+      - Prepaid credits ranging from $4k to $10k annually
+      - Increased limit of 720 text-to-speech requests per minute
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Users with consistent annual usage
+      - Businesses seeking predictable billing
+    effort_level: 2
+    steps_to_apply: []
+  - name: Enterprise Plan
+    intro: >-
+      A custom-tailored plan for large organizations requiring premium features
+      such as custom-trained models, private deployment options, and dedicated
+      support.
+    max_value: 100000
+    url: https://www.deepgram.com/pricing/
+    benefits:
+      - Custom pricing based on volume and specific needs
+      - Access to custom-trained speech recognition models
+      - On-premise or private cloud deployment options
+      - Priority access to new models
+      - SLA-backed dedicated support
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - Large organizations
+      - High-volume users
+    effort_level: 3
+    steps_to_apply: []
+faq:
+  - question: What is included in the Deepgram Pay As You Go Plan?
+    answer: >-
+      It offers a free $200 credit with pay-as-you-go billing thereafter. Rates
+      vary by model, and users benefit from flexible, no-expiration credits
+      without needing a credit card.
+  - question: How does the Growth Plan differ from the Pay As You Go Plan?
+    answer: >-
+      The Growth Plan requires an annual commitment with prepaid credits,
+      providing up to a 20% discount on standard rates along with higher usage
+      limits compared to the Pay As You Go Plan.
+  - question: Who is eligible for the Enterprise Plan?
+    answer: >-
+      The Enterprise Plan is designed for large organizations and high-volume
+      users that require custom pricing, premium support, and advanced
+      deployment options.
+  - question: What are the benefits of the Deepgram Startup Program?
+    answer: >-
+      Eligible startups can receive up to $100k in credits with a 12-month
+      validity, provided they maintain monthly active usage, allowing them to
+      scale efficiently.
