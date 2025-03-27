@@ -72,46 +72,6 @@ tiers:
           a credit card.
         action: Sign Up
         action_url: https://www.deepgram.com/pricing/
-  - name: Growth Plan
-    intro: >-
-      An annual commitment plan offering prepaid credits with up to 20% discount
-      on standard rates, tailored for users with consistent usage.
-    max_value: 10000
-    url: https://www.deepgram.com/pricing/
-    benefits:
-      - 20% discount on standard per-minute rates
-      - Nova-2 pricing at $0.0036/min (16% savings)
-      - Enhanced model at $0.0115/min
-      - Prepaid credits ranging from $4k to $10k annually
-      - Increased limit of 720 text-to-speech requests per minute
-    benefits_level: 2
-    duration:
-      - 1 year
-    eligibility:
-      - Users with consistent annual usage
-      - Businesses seeking predictable billing
-    effort_level: 2
-    steps_to_apply: []
-  - name: Enterprise Plan
-    intro: >-
-      A custom-tailored plan for large organizations requiring premium features
-      such as custom-trained models, private deployment options, and dedicated
-      support.
-    max_value: 100000
-    url: https://www.deepgram.com/pricing/
-    benefits:
-      - Custom pricing based on volume and specific needs
-      - Access to custom-trained speech recognition models
-      - On-premise or private cloud deployment options
-      - Priority access to new models
-      - SLA-backed dedicated support
-    benefits_level: 3
-    duration: []
-    eligibility:
-      - Large organizations
-      - High-volume users
-    effort_level: 3
-    steps_to_apply: []
 faq:
   - question: What is included in the Deepgram Pay As You Go Plan?
     answer: >-
