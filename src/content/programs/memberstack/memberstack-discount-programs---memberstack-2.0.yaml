@@ -18,10 +18,9 @@ description: >-
 status: Active
 tags:
   - dev tools
-  - web
-  - no-code
   - web design
-  - cms
+  - no-code
+  - saas
 url: https://www.memberstack.com/discount-programs
 value_type: discount
 currency: USD

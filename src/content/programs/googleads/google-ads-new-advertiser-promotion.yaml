@@ -17,9 +17,9 @@ description: >-
   accounts potentially receiving up to $1,500 in ad credits.
 status: Active
 tags:
-  - ads
-  - google
+  - advertising
   - marketing
+  - b2b
 url: https://ads.google.com
 value_type: credits
 currency: USD
@@ -69,7 +69,7 @@ tiers:
     benefits:
       - Receive $750 in ad credits
       - Enhanced access to ad formats and targeting options
-      - Boost your campaign’s reach and performance
+      - Boost your campaign's reach and performance
     benefits_level: 2
     duration:
       - Credits expire 60 days after issuance

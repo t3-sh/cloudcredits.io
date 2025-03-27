@@ -2,15 +2,16 @@ active: true
 name: Nebius
 short_name: Nebius
 slug: nebius
-color: '#6C63FF'
+color: "#6C63FF"
 url: https://nebius.com
 intro: >-
   Nebius for Startups empowers AI companies to scale breakthrough innovations by
   providing exclusive cloud credits, technical training, and access to a
   thriving AI community.
 best_deal: Up to $150,000 in cloud credits
-video: ''
+video: ""
 tags:
   - ai
   - cloud
-  - startups
+  - enterprise
+  - ml

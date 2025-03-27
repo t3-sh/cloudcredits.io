@@ -10,6 +10,8 @@ intro: >-
 best_deal: $800 annually for eligible startups
 video: ""
 tags:
-  - observability
   - monitoring
   - kubernetes
+  - devops
+  - dev tools
+  - cybersecurity

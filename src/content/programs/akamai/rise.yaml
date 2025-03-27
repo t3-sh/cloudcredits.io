@@ -6,8 +6,10 @@ description: "Rise is a three-year startup program from Akamai (formerly Linode)
 status: "Active"
 tags:
   - "cloud"
-  - "infrastructure"
+  - "hosting"
   - "gpu"
+  - "enterprise"
+  - "edge computing"
 url: "https://www.linode.com/linode-for-startups/"
 value_type: "credits"
 currency: "USD"

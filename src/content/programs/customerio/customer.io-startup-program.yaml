@@ -21,10 +21,10 @@ description: >-
 status: Active
 tags:
   - marketing
-  - crm
+  - automation
   - email
-  - sms
-  - workflows
+  - saas
+  - api
 url: https://customer.io/startup-program
 value_type: credits
 currency: USD

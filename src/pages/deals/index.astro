@@ -34,6 +34,9 @@ const totalCreditValue = creditPrograms.reduce(
 const allTags = [
   ...new Set(allPrograms.flatMap((program) => program.data.tags)),
 ];
+
+// Sort tags alphabetically
+allTags.sort();
 ---
 
 <Base title="Deals - CloudCredits.io">
@@ -95,12 +98,12 @@ const allTags = [
     // Create a self-executing function to avoid polluting the global scope
     (function () {
       // Store references to DOM elements
-      let tagButtons;
-      let programCards;
-      let programCounter;
-      let clearFilterButton;
-      let totalPrograms;
-      let activeTag = null;
+      let tagButtons: NodeListOf<HTMLElement>;
+      let programCards: NodeListOf<HTMLElement>;
+      let programCounter: HTMLElement | null;
+      let clearFilterButton: HTMLElement | null;
+      let totalPrograms: number;
+      let activeTag: string | null = null;
 
       // Initialize the filtering functionality
       function initializeFiltering() {
@@ -130,7 +133,7 @@ const allTags = [
 
       function setupEventListeners() {
         // Remove existing event listeners to prevent duplicates
-        tagButtons.forEach((button) => {
+        tagButtons.forEach((button: HTMLElement) => {
           button.removeEventListener("click", handleTagClick);
           button.addEventListener("click", handleTagClick);
         });
@@ -142,7 +145,7 @@ const allTags = [
       }
 
       // Handler functions to make event listener removal possible
-      function handleTagClick(e) {
+      function handleTagClick(this: HTMLElement, e: Event) {
         e.preventDefault();
         const tag = this.getAttribute("data-tag") || "";
 
@@ -173,7 +176,7 @@ const allTags = [
       // Function to update the UI based on active tag
       function updateUI() {
         // Update button styles
-        tagButtons.forEach((button) => {
+        tagButtons.forEach((button: HTMLElement) => {
           const tag = button.getAttribute("data-tag") || "";
           if (tag === activeTag) {
             button.classList.add(
@@ -206,18 +209,18 @@ const allTags = [
 
         if (!activeTag) {
           // Show all programs if no tag is active
-          programCards.forEach((card) => {
+          programCards.forEach((card: HTMLElement) => {
             card.style.display = "";
           });
           visibleCount = totalPrograms;
         } else {
           // Filter based on active tag
-          programCards.forEach((card) => {
+          programCards.forEach((card: HTMLElement) => {
             const programTagsAttr =
               card.getAttribute("data-program-tags") || "";
             const programTags = programTagsAttr
               .split(",")
-              .filter((tag) => tag.trim() !== "");
+              .filter((tag: string) => tag.trim() !== "");
             const hasMatchingTag = activeTag
               ? programTags.includes(activeTag)
               : false;

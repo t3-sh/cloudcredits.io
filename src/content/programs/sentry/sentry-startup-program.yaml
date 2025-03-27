@@ -15,11 +15,10 @@ description: >-
   pricing based on usage needs, and priority consideration for extended
   partnerships. For startups requiring advanced monitoring, paid plans starting
   at $26/month come with a 10% annual discount. All participants must adhere to
-  Sentry’s terms of service, and approval is granted at Sentry’s discretion.
+  Sentry's terms of service, and approval is granted at Sentry's discretion.
 status: Active
 tags:
   - monitoring
-  - apm
   - devops
   - dev tools
 url: https://sentry.io/sponsorship/?promo_name=startup-sponsorship
@@ -66,7 +65,7 @@ faq:
     answer: >-
       Eligible startups must either not be using Sentry, use the
       open-source/self-hosted version, or be on a free/developer plan without
-      previous paid usage. Applicants must also comply with Sentry’s terms of
+      previous paid usage. Applicants must also comply with Sentry's terms of
       service.
   - question: Are the discount percentages publicly disclosed?
     answer: >-
