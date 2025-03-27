@@ -1,0 +1,16 @@
+active: true
+name: TiDB Cloud Serverless
+short_name: TiDB
+slug: tidb
+color: '#46b28f'
+url: https://ossinsight.io/open-source-heroes/
+intro: >-
+  TiDB Cloud Serverless offers up to $2000 in free credits for open-source
+  contributors, enabling the building of scalable, cost-effective applications.
+best_deal: Best Deal $$$
+video: ''
+tags:
+  - cloud
+  - open source
+  - serverless
+  - database
