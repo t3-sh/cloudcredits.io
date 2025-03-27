@@ -25,7 +25,7 @@ url: https://www.deepgram.com/pricing/
 value_type: credits
 currency: USD
 min_value: 200
-max_value: 100000
+max_value: 200
 community_notes:
   - title: Transparent Billing
     body: >-
