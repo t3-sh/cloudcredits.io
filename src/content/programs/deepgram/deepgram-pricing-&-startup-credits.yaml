@@ -44,7 +44,7 @@ community_notes:
       validity upon maintaining monthly active usage.
     source_url: https://www.deepgram.com/pricing/
 tiers:
-  - name: Pay As You Go Plan
+  - name: $200 Free Credits
     intro: >-
       Starts with $200 free credit and then moves to pay-as-you-go billing. No
       minimums, expiration, or credit card required, with per-minute rates based
