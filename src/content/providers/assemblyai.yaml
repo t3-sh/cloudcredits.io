@@ -2,16 +2,16 @@ active: true
 name: AssemblyAI
 short_name: AssemblyAI
 slug: assemblyai
-color: '#00C0F7'
+color: "#00C0F7"
 url: https://www.assemblyai.com
 intro: >-
   A provider of cutting-edge voice AI solutions, empowering startups to build
   voice-powered applications using advanced speech-to-text technology.
 best_deal: Up to $150,000 in free API credits for startups
-video: ''
+video: ""
 tags:
-  - voice
-  - speech
   - ai
-  - startup
+  - speech
   - api
+  - saas
+  - agents

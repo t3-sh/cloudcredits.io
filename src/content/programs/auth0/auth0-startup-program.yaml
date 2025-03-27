@@ -17,9 +17,11 @@ description: >-
   with limited features.
 status: Active
 tags:
-  - authentication
   - cybersecurity
-  - b2b
+  - api
+  - saas
+  - dev tools
+  - compliance
 url: https://auth0.com/startup-program
 value_type: credits
 currency: USD

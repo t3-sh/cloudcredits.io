@@ -2,15 +2,16 @@ active: true
 name: Deepgram
 short_name: Deepgram
 slug: deepgram
-color: '#ff6600'
+color: "#ff6600"
 url: https://deepgram.com
 intro: >-
   A provider empowering technical founders and early-stage startups to integrate
   advanced speech recognition into their products.
 best_deal: Up to $100,000 in credits for 12 months
-video: ''
+video: ""
 tags:
-  - speech recognition
-  - AI
-  - startup
-  - voice
+  - speech
+  - ai
+  - api
+  - llm
+  - saas

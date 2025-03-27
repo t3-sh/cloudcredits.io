@@ -3,7 +3,7 @@ provider_slug: gumlet
 title: Gumlet Startup Credits Program
 meta_title: Gumlet Startup Credits Program - Optimize Your Media Delivery
 intro: >-
-  Gumlet’s SCP enables startups to deliver optimized video and image content
+  Gumlet's SCP enables startups to deliver optimized video and image content
   across platforms at half the cost.
 description: >-
   Gumlet's Startup Credits Program (SCP) provides emerging companies with
@@ -14,13 +14,13 @@ description: >-
   personalized onboarding and migration support, and a developer-friendly setup
   with comprehensive API and webhook integrations. It is designed for startups
   registered within the last 4 years, with less than $10M in funding, and not
-  currently using Gumlet’s paid services, including those from partner VC
+  currently using Gumlet's paid services, including those from partner VC
   portfolios.
 status: Active
 tags:
   - media
-  - video
-  - drm
+  - cdn
+  - cloud
   - ai
 url: https://gumlet.com/startup-credits
 value_type: discount
@@ -54,7 +54,7 @@ tiers:
     effort_level: 3
     steps_to_apply:
       - name: Apply Online
-        description: Complete the online application form on Gumlet’s startup portal.
+        description: Complete the online application form on Gumlet's startup portal.
         action: Apply Now
         action_url: https://gumlet.com/startup-credits
       - name: Submit Documents
@@ -64,7 +64,7 @@ tiers:
         action: Upload Documents
         action_url: https://gumlet.com/startup-credits
 faq:
-  - question: What is Gumlet’s Startup Credits Program?
+  - question: What is Gumlet's Startup Credits Program?
     answer: >-
       It is a program that offers startups a 50% discount on all Gumlet media
       services for the first year, along with full platform access and dedicated
@@ -72,12 +72,12 @@ faq:
   - question: Who is eligible for the program?
     answer: >-
       Startups registered within the last 4 years, with less than $10M in
-      funding, not currently using Gumlet’s paid services, and those within
+      funding, not currently using Gumlet's paid services, and those within
       partner VC portfolios are eligible.
   - question: How do I apply?
     answer: >-
       Applicants must complete the online application form, provide the
-      necessary documents, and choose an integration method on Gumlet’s startup
+      necessary documents, and choose an integration method on Gumlet's startup
       portal.
   - question: What support is provided?
     answer: >-

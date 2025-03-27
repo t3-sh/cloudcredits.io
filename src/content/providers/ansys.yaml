@@ -2,15 +2,15 @@ active: true
 name: Ansys
 short_name: Ansys
 slug: ansys
-color: '#3B668E'
+color: "#3B668E"
 url: https://www.ansys.com
 intro: >-
   Ansys provides world-class multiphysics simulation tools for engineering and
   product development, with specialized solutions for early-stage startups.
 best_deal: Discounted access for startups
-video: ''
+video: ""
 tags:
-  - engineering
   - simulation
-  - startups
-  - discount
+  - engineering
+  - manufacturing
+  - 3d

@@ -19,8 +19,9 @@ description: >-
 status: Active
 tags:
   - search
-  - discovery
+  - api
   - dev tools
+  - saas
 url: https://www.algolia.com/startup-program/
 value_type: credits
 currency: USD

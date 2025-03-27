@@ -18,8 +18,10 @@ description: >-
 status: Active
 tags:
   - monitoring
-  - observability
   - kubernetes
+  - devops
+  - dev tools
+  - cybersecurity
 url: https://www.datadoghq.com/partner/datadog-for-startups/
 value_type: discount
 currency: USD

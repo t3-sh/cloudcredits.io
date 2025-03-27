@@ -1,5 +1,6 @@
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
+import { ALLOWED_TAGS } from "./tags";
 
 /*
   Providers collection schema
@@ -16,13 +17,12 @@ const providersCollection = defineCollection({
     intro: z.string(),
     best_deal: z.string().max(50).default("Best Deal $$$"),
     video: z.string(),
-    tags: z.array(z.string()).max(5).default([]),
+    tags: z.array(z.enum(ALLOWED_TAGS)).max(5).default([]),
   }),
 });
 
 /*
   Programs collection schema
-  TODO: we probably need a custom loaded to handle subdirectories
 */
 const programsCollection = defineCollection({
   loader: glob({ pattern: "**/*.yaml", base: "src/content/programs" }),
@@ -37,7 +37,7 @@ const programsCollection = defineCollection({
     status: z
       .enum(["Active", "Discontinued", "Beta", "Upcoming"])
       .default("Active"),
-    tags: z.array(z.string()).max(5).default([]),
+    tags: z.array(z.enum(ALLOWED_TAGS)).max(5).default([]),
     url: z.string(),
     value_type: z.enum(["credits", "discount"]).default("credits"),
     currency: z.enum(["USD", "EUR"]).default("USD"),

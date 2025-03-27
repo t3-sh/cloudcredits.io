@@ -19,8 +19,10 @@ description: >-
 status: Active
 tags:
   - kubernetes
-  - startup
   - cloud
+  - devops
+  - enterprise
+  - hosting
 url: https://www.civo.com/signup
 value_type: credits
 currency: USD

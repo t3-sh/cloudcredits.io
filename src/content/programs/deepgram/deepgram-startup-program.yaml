@@ -16,10 +16,11 @@ description: >-
   voice-enabled solutions.
 status: Active
 tags:
-  - speech recognition
-  - AI
-  - startup
-  - voice
+  - speech
+  - ai
+  - api
+  - llm
+  - saas
 url: https://deepgram.com/startup-program
 value_type: credits
 currency: USD

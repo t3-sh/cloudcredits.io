@@ -17,10 +17,10 @@ description: >-
 status: Active
 tags:
   - ai
-  - voice
+  - speech
   - agents
   - customer support
-  - text-to-speech
+  - ml
 url: https://tally.so/r/31JO8Q
 value_type: credits
 currency: USD
@@ -61,7 +61,7 @@ faq:
   - question: What is the Rime $5K Credits Program?
     answer: >-
       It is a program offering $5,000 in API credits for YC startups to access
-      Rime’s advanced text-to-speech capabilities, along with priority support
+      Rime's advanced text-to-speech capabilities, along with priority support
       and early feature access.
   - question: Who is eligible for the program?
     answer: >-

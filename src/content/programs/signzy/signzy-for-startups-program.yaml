@@ -19,7 +19,7 @@ description: >-
   tech-enabled companies.
 status: Active
 tags:
-  - fintech
+  - finance
   - kyc
   - onboarding
 url: https://www.signzy.com/startups
@@ -67,7 +67,7 @@ faq:
       to a partner portal.
   - question: How does Signzy ensure regulatory compliance?
     answer: >-
-      It comes pre-configured for global regulations, including RBI’s Video KYC
+      It comes pre-configured for global regulations, including RBI's Video KYC
       norms and GDPR, with ISO 27001 and SOC 2 certifications.
   - question: How is data security maintained?
     answer: >-

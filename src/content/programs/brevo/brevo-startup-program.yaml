@@ -19,10 +19,11 @@ description: >-
   tiers based on funding stage to maximize growth potential.
 status: Active
 tags:
+  - email
   - marketing
   - crm
-  - email
-  - sms
+  - saas
+  - automation
 url: https://www.brevo.com/startups
 value_type: discount
 min_value: 20

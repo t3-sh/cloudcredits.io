@@ -3,7 +3,7 @@ provider_slug: shotstack
 title: Shotstack Startup Program
 meta_title: Build Your Startup with Shotstack
 intro: >-
-  Empower your startup with Shotstack’s advanced video editing API. Qualifying
+  Empower your startup with Shotstack's advanced video editing API. Qualifying
   startups receive an 80% discount on Professional plans and $5,000 in credits
   for 12 months, along with robust developer support and access to a global
   community.
@@ -18,7 +18,6 @@ description: >-
   incorporated for less than 3 years and to have raised up to Series A funding.
 status: Active
 tags:
-  - video
   - media
   - ai
 url: https://shotstack.io/startup

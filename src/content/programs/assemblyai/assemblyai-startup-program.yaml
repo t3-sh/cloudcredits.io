@@ -21,11 +21,11 @@ description: >-
   additional conditions for premium feature usage.
 status: Active
 tags:
-  - voice
-  - speech
   - ai
-  - startup
+  - speech
   - api
+  - saas
+  - agents
 url: https://www.assemblyai.com/startup-program
 value_type: credits
 currency: USD
