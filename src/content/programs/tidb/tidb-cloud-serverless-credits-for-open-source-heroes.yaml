@@ -1,0 +1,84 @@
+draft: false
+provider_slug: tidb
+title: TiDB Cloud Serverless Credits for Open-Source Heroes
+meta_title: Free TiDB Cloud Credits for Open-Source Innovators
+intro: >-
+  TiDB Cloud Serverless offers up to $2000 in free credits for open-source
+  contributors. Claim your credits by linking your GitHub account and start
+  building scalable, cost-effective applications.
+description: >-
+  TiDB Cloud Serverless provides open-source contributors with up to $2000 in
+  free credits to fuel innovative projects. This program offers a generous free
+  tier with 25 GiB of storage and 250 million Request Units monthly, elastic
+  scaling of compute and storage, and advanced features including vector search,
+  HTAP capabilities, and AI integrations. With a pay-as-you-go model for usage
+  beyond free credits, the platform supports a wide range of use cases from
+  personal blogs to enterprise-grade applications. Eligible participants simply
+  log in with their GitHub account to calculate and redeem credits, which are
+  valid for 12 months.
+status: Active
+tags:
+  - cloud
+  - open source
+  - serverless
+  - database
+url: https://ossinsight.io/open-source-heroes/
+value_type: credits
+currency: USD
+max_value: 2000
+community_notes:
+  - title: Community Praise
+    body: >-
+      Developers have shared that TiDB Cloud Serverless enables scalable,
+      cost-effective application building, powering projects from personal blogs
+      to enterprise-grade solutions.
+    source_url: https://ossinsight.io/open-source-heroes/
+tiers:
+  - name: TiDB Cloud Serverless Credits
+    intro: >-
+      Open-source contributors can claim up to $2000 in free credits by linking
+      their GitHub account.
+    max_value: 2000
+    url: https://ossinsight.io/open-source-heroes/
+    benefits:
+      - Up to $2000 in free credits for TiDB Cloud Serverless
+      - Generous free tier with 25 GiB storage and 250 million RUs monthly
+      - Elastic scaling of compute and storage
+      - Advanced features including vector search and HTAP capabilities
+      - Pay-as-you-go pricing for additional usage
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Open-source contributors
+      - >-
+        Excludes PingCAP employees, contractors, affiliates and their immediate
+        families
+    effort_level: 1
+    steps_to_apply:
+      - name: Link GitHub
+        description: Authenticate via your GitHub account on the OSS Insight platform.
+        action: Link Account
+        action_url: https://ossinsight.io/open-source-heroes/
+      - name: Claim Credits
+        description: Calculate and redeem your eligible credits after linking GitHub.
+        action: Claim Now
+        action_url: https://ossinsight.io/open-source-heroes/
+      - name: Start Building
+        description: Begin using TiDB Cloud Serverless with your redeemed credits.
+        action: Get Started
+        action_url: https://ossinsight.io/open-source-heroes/
+faq:
+  - question: Why does TiDB support the open-source community?
+    answer: >-
+      TiDB believes that open source fosters innovation, collaboration, and
+      community-driven development.
+  - question: How do I claim my credits?
+    answer: >-
+      Log in with your GitHub account to calculate and redeem your credits,
+      which will be automatically applied to your TiDB Cloud or OSS Insight
+      account.
+  - question: How can I contact support if I face issues?
+    answer: >-
+      You can reach out to the support team at ossinsight@pingcap.com for
+      assistance with credit redemption.
