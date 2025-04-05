@@ -1,0 +1,107 @@
+draft: false
+provider_slug: neo4j
+title: Neo4j Startup Program
+meta_title: Neo4j Startup Program - Empowering Startups with Graph Database Technology
+intro: >-
+  The Neo4j Startup Program supports innovative startups by providing access to
+  the world’s leading graph database and advanced graph technology tools,
+  enabling startups to build and grow scalable, data-driven applications.
+description: >-
+  The program offers two main benefits. First, Neo4j Aura™ for Startups provides
+  a cloud-based graph database service with affordable pricing at 9 cents per
+  GB-hour, complete with monitoring, upgrades, backups, Neo4j Bloom, and the
+  APOC library. Second, eligible startups receive a free Neo4j Enterprise
+  License that enables mission-critical applications with support for multiple
+  production, test/staging, and development machines. Eligibility requires 50 or
+  fewer employees, less than $3MM USD annual revenue, and a willingness to share
+  startup success stories. This program is designed for venture-backed,
+  angel-backed, or self-funded startups that use Neo4j to directly support their
+  business operations.
+status: Active
+tags:
+  - database
+  - cloud
+  - enterprise
+url: https://neo4j.com/neo-startup-program/
+value_type: credits
+currency: USD
+min_value: 0
+max_value: 0
+community_notes: []
+tiers:
+  - name: Neo4j Aura™ for Startups
+    intro: >-
+      Access a fully managed, cloud-based graph database service with advanced
+      features and affordable pay-as-you-go pricing at 9 cents per GB-hour.
+    max_value: 0
+    url: https://neo4j.com/neo-startup-program/
+    benefits:
+      - Cloud-based graph database service
+      - Affordable pricing at 9 cents per GB-hour
+      - Includes monitoring, upgrades, backups, Neo4j Bloom, and APOC library
+      - Scales with startup needs
+      - Compatible with official drivers and bolt protocol support
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - 50 or fewer employees
+      - Less than $3MM USD annual revenue
+      - Venture-backed, angel-backed, or self-funded startups
+      - Must use Neo4j to support business operations
+      - Willing to share startup success stories with the Neo4j community
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Account
+        description: Login or create an account to sign up for the Neo4j Startup Program
+        action: Register
+        action_url: https://neo4j.com/neo-startup-program/
+      - name: Submit Application
+        description: Provide details on how the startup will use Neo4j
+        action: Apply Now
+        action_url: https://neo4j.com/neo-startup-program/
+  - name: Free Neo4j Enterprise License for Startups
+    intro: >-
+      Receive a free Neo4j Enterprise License to run mission-critical, clustered
+      graph database applications on-premises or in the cloud.
+    max_value: 0
+    url: https://neo4j.com/neo-startup-program/
+    benefits:
+      - Free license of Neo4j Enterprise
+      - Supports mission-critical applications
+      - Includes 3 production, 3 test/staging, and 6 development machines
+      - Each machine supports up to 256GB RAM and 24 cores
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - 50 or fewer employees
+      - Less than $3MM USD annual revenue
+      - Venture-backed, angel-backed, or self-funded startups
+      - Must use Neo4j to support business operations
+      - Willing to share startup success stories with the Neo4j community
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Account
+        description: Login or create an account to sign up for the Neo4j Startup Program
+        action: Register
+        action_url: https://neo4j.com/neo-startup-program/
+      - name: Submit Application
+        description: Provide details on how the startup will utilize Neo4j Enterprise
+        action: Apply Now
+        action_url: https://neo4j.com/neo-startup-program/
+faq:
+  - question: Can startups use Neo4j Bloom?
+    answer: >-
+      Yes, through the Startup Program’s Enterprise License; Neo4j Bloom is
+      available as part of the offering and is not included in the Community
+      Edition.
+  - question: What if AuraDB isn’t suitable?
+    answer: >-
+      Startups can request a free self-hosted Neo4j Enterprise License by
+      emailing startups@neo4j.com and explaining their needs.
+  - question: Is enterprise support included?
+    answer: >-
+      No, enterprise-class support is not included; participants are encouraged
+      to use community forums, with discounted support plans available
+      separately.
+  - question: How long does application approval take?
+    answer: It typically takes a few days, with status updates provided via email.
