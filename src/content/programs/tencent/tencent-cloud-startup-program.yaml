@@ -1,0 +1,78 @@
+draft: false
+provider_slug: tencent
+title: Tencent Cloud Startup Program
+meta_title: Cloud Support and Credits for Startups
+intro: >-
+  Empower startups to build and grow with the full force of Tencent Cloud. The
+  program offers comprehensive support including financial vouchers, service
+  discounts, training resources, and marketing opportunities.
+description: >-
+  Tencent Cloud Startup Program is designed to support both VC-backed and
+  self-funded startups to build, grow, and scale. Leveraging Tencent Cloud's
+  extensive resources, the program provides up to $100,000 USD in cloud service
+  vouchers, exclusive discounts on Tencent Cloud products, technical workshops,
+  dedicated customer engineering support, and co-marketing initiatives. Eligible
+  startups must be operational with a founding date within the last 5 years
+  (extended to 10 years for Web3 startups) and have not previously received
+  substantial Tencent Cloud credits. The application process involves account
+  registration and identity verification, submission of the application form
+  with company and funding details, a 2-week review period, and onboarding upon
+  approval.
+status: Active
+tags:
+  - cloud
+  - asia
+  - finance
+url: https://intl.cloud.tencent.com/developer/startup
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes: []
+tiers:
+  - name: Core Startup Benefits
+    intro: >-
+      Receive comprehensive support including up to $100,000 in cloud service
+      vouchers, exclusive service discounts, technical workshops, and marketing
+      opportunities.
+    max_value: 100000
+    url: https://intl.cloud.tencent.com/developer/startup
+    benefits:
+      - Up to $100,000 USD in cloud service vouchers
+      - Exclusive service discounts on Tencent Cloud products
+      - Technical workshops and dedicated customer engineering support
+      - Co-marketing and exposure through Tencent's partner network
+      - Complimentary access to 100+ products for prototyping and testing
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - VC-backed or self-funded startups with operational viability
+      - Founded within the last 5 years (extended to 10 years for Web3 startups)
+      - No prior substantial Tencent Cloud credits received
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Tencent Cloud Account
+        description: Register and complete identity verification on Tencent Cloud.
+        action: Sign Up
+        action_url: https://intl.cloud.tencent.com/
+      - name: Fill Application Form
+        description: >-
+          Submit the official application form with company registration and
+          funding details.
+        action: Apply Now
+        action_url: https://intl.cloud.tencent.com/developer/startup
+      - name: Await Approval
+        description: >-
+          Tencent Cloud reviews the application within two weeks and notifies
+          successful applicants via email.
+faq:
+  - question: What is the application review timeline?
+    answer: >-
+      Applications are processed within two weeks. Successful applicants will be
+      notified via email; if no response is received within two weeks, the
+      application may be considered unsuccessful.
+  - question: Who is eligible for the Tencent Cloud Startup Program?
+    answer: >-
+      Eligible startups are either VC-backed or self-funded with proven
+      operational viability, founded within the last 5 years (or 10 years for
+      Web3 startups), and have not received substantial Tencent Cloud credits
+      previously.

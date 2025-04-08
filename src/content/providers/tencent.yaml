@@ -1,0 +1,16 @@
+active: true
+name: Tencent Cloud
+short_name: Tencent
+slug: tencent
+color: '#00BCD4'
+url: https://intl.cloud.tencent.com
+intro: >-
+  Empower startups to build and grow with the full force of Tencent Cloud. The
+  program offers comprehensive support including finance, service discounts,
+  training resources, and marketing opportunities.
+best_deal: Up to $100,000 USD in cloud service vouchers
+video: ''
+tags:
+  - cloud
+  - asia
+  - finance
