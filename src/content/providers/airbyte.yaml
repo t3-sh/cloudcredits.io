@@ -1,0 +1,16 @@
+active: true
+name: Airbyte
+short_name: Airbyte
+slug: airbyte
+color: '#A6168A'
+url: https://airbyte.com/yc-program
+intro: >-
+  Airbyte's YC Startup Program offers up to $100,000 in Airbyte Cloud credits,
+  free access to an interactive learning platform, guaranteed priority workshop
+  enrollment, and exclusive swag for Y Combinator companies.
+best_deal: Best Deal $$$
+video: ''
+tags:
+  - cloud
+  - data
+  - open source
