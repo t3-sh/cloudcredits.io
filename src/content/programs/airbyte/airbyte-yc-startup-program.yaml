@@ -1,0 +1,76 @@
+draft: false
+provider_slug: airbyte
+title: Airbyte YC Startup Program
+meta_title: Cloud Credits & Benefits for YC Startups
+intro: >-
+  Airbyte's YC Startup Program offers up to $100,000 in Airbyte Cloud credits,
+  free access to an interactive learning platform, guaranteed priority workshop
+  enrollment, and exclusive swag for Y Combinator companies.
+description: >-
+  Airbyte's Y Combinator Startup Promotion is designed to help YC companies
+  streamline data integration and accelerate pipeline development. The program
+  provides up to $100,000 in Airbyte Cloud credits for connector operations,
+  data volume processing, and premium support. In addition, participants gain
+  free access to comprehensive learning resources including tutorials on
+  connector building and API integration, along with priority enrollment in
+  technical workshops covering real-time data sync configurations, vector
+  database integrations, and GDPR-compliant data handling. Eligibility is
+  reserved for current or previous YC batch companies that have raised less than
+  $5M and have accepted Airbyte Cloud's standard Terms of Service. This
+  promotion enables YC startups to build enterprise-grade data infrastructure
+  without any upfront costs.
+status: Active
+tags:
+  - cloud
+  - data
+  - open source
+url: https://airbyte.com/yc-program
+value_type: credits
+currency: USD
+max_value: 100000
+community_notes: []
+tiers:
+  - name: Standard YC Tier
+    intro: >-
+      For YC companies not currently using Airbyte Cloud services, offering up
+      to $100,000 in credits, free learning resources, priority workshop
+      enrollment, and exclusive swag.
+    max_value: 100000
+    url: https://airbyte.com/yc-program
+    benefits:
+      - >-
+        $100,000 in Airbyte Cloud credits for connector operations, data volume
+        processing, and premium support.
+      - >-
+        Free access to an interactive learning platform with tutorials and API
+        integration guides.
+      - Priority enrollment in technical deep-dive workshops.
+      - Exclusive Airbyte swag package for team members.
+    benefits_level: 2
+    duration:
+      - 18 months
+    eligibility:
+      - Enrolled in a current or previous Y Combinator batch
+      - Not currently using Airbyte Cloud services
+      - Raised less than $5M total
+      - Accepted Airbyte Cloud standard Terms of Service
+      - Offer not valid for existing Airbyte customers
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply via YC Portal
+        description: >-
+          YC companies automatically qualify. Sign up through the dedicated YC
+          onboarding portal.
+        action: Apply Now
+        action_url: https://airbyte.com/yc-program
+faq:
+  - question: How do I apply for the Airbyte YC Startup Program?
+    answer: >-
+      YC companies automatically qualify and can sign up through the dedicated
+      YC onboarding portal.
+  - question: How long are the Airbyte Cloud credits valid?
+    answer: Credits remain valid for 18 months from the activation date.
+  - question: What does the workshop cover?
+    answer: >-
+      The workshop includes sessions on real-time data sync configurations,
+      vector database integrations, and GDPR-compliant data handling.
