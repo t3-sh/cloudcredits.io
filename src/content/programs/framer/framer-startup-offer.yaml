@@ -1,0 +1,77 @@
+draft: false
+provider_slug: framer
+title: Framer Startup Offer
+meta_title: Framer Startup Offer - Build Stunning Websites
+intro: >-
+  Empowering emerging businesses, Framer's Startup Offer provides a combined
+  $2,000 in credits to design, develop, and host a captivating website, along
+  with access to an integrated design-to-publish workflow.
+description: >-
+  Framer's Startup Offer supports early-stage startups by providing $1,000 in
+  Contra Credit to hire a dedicated Framer Expert and $1,000 in Framer Credit
+  for hosting and ongoing site management. This program eliminates the friction
+  of launching a professional website by combining expert guidance, an
+  integrated design-to-publish workflow, and performance enhancements that allow
+  websites to load 50% faster. Backed by Framer’s robust platform and funding,
+  it empowers emerging businesses to build and maintain high-quality online
+  presences.
+status: Active
+tags:
+  - web design
+  - design
+  - hosting
+url: https://www.framer.com/startup-offer
+value_type: credits
+currency: USD
+min_value: 2000
+max_value: 2000
+community_notes:
+  - title: YC S23 Success
+    body: >-
+      The Y Combinator S23 startups showcased their innovative websites built
+      with Framer, demonstrating the platform's power to empower emerging
+      businesses.
+    source_url: https://yc23.framer.website
+tiers:
+  - name: Framer Startup Offer
+    intro: >-
+      Receive $1,000 Contra Credit for hiring a dedicated Framer Expert plus
+      $1,000 Framer Credit for website hosting and management.
+    max_value: 2000
+    url: https://www.framer.com/startup-offer
+    benefits:
+      - $1,000 Contra Credit to hire a dedicated Framer Expert
+      - $1,000 Framer Credit for hosting and ongoing site management
+      - Integrated design-to-publish workflow for seamless website creation
+      - Performance optimization with sites loading 50% faster
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - Early-stage startups seeking a professional online presence
+      - Emerging businesses aiming to accelerate growth
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Complete the online form on Framer's startup page to register for the
+          offer.
+        action: Apply Now
+        action_url: https://www.framer.com/startup-offer
+faq:
+  - question: What does the Framer Startup Offer include?
+    answer: >-
+      It includes $1,000 in Contra Credit for hiring a Framer Expert and $1,000
+      in Framer Credit for hosting and ongoing management, along with an
+      integrated workflow for seamless website creation.
+  - question: Who is eligible for this offer?
+    answer: >-
+      The offer is targeted at early-stage startups and emerging businesses
+      looking to establish a compelling online presence.
+  - question: How do I apply for the Framer Startup Offer?
+    answer: >-
+      Visit the startup offer page and complete the online application form to
+      get started.
+  - question: What performance benefits does Framer provide?
+    answer: >-
+      Framer enhances website performance by enabling interactivity 50% faster,
+      ensuring an outstanding user experience.
