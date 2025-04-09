@@ -1,0 +1,112 @@
+draft: false
+provider_slug: huawei
+title: Huawei Cloud Startup Program
+meta_title: Huawei Cloud Startup Program - Global Startup Initiative
+intro: >-
+  Huawei Cloud offers a comprehensive startup program that empowers early-stage
+  companies with up to USD 150,000 in cloud credits, dedicated migration
+  support, entrepreneurial coaching, and global market access.
+description: >-
+  The Huawei Cloud Startup Program is a global initiative designed to accelerate
+  innovation by providing startups with essential cloud resources, technical
+  expertise, business enablement, and market opportunities. It supports agile
+  cloud migration through dedicated teams, offers entrepreneurial enablement
+  including coaching and best practices sharing, and facilitates strategic
+  partnerships through co-selling and joint marketing opportunities. Targeted at
+  independently operated startups under 5 years old and in pre-seed to Series A
+  stages, the program is tailored for ventures focused on AI, SaaS,
+  sustainability, and digital transformation, serving regions across
+  Asia-Pacific, Europe, and the Middle East.
+status: Active
+tags:
+  - cloud
+  - ai
+  - enterprise
+  - saas
+  - asia
+url: https://startup.huaweicloud.com/intl/center
+value_type: credits
+currency: USD
+max_value: 150000
+community_notes:
+  - title: FeiLiu Tech Testimonial
+    body: >-
+      CTO Lu Weicheng from FeiLiu Tech shared how the program helped reduce
+      cloud costs and provided reliable, stable cloud services with dedicated
+      support during their early startup stages.
+    source_url: https://startup.huaweicloud.com/intl/center
+  - title: Lingcai Tech Experience
+    body: >-
+      CEO Wang Ze noted that the Huawei Cloud team's personalized engagement and
+      emphasis on security made it possible to implement a robust SaaS solution
+      for smart finance and taxation.
+    source_url: https://startup.huaweicloud.com/intl/center
+  - title: ARCTIC DATA Success
+    body: >-
+      CEO Liu Yixin highlighted how the program drove continuous growth through
+      technical support, marketing resources, and joint go-to-market
+      opportunities, exceeding their expectations.
+    source_url: https://startup.huaweicloud.com/intl/center
+tiers:
+  - name: Huawei Cloud Startup Tier
+    intro: >-
+      Provides up to USD 150,000 in cloud credits along with entrepreneurial
+      coaching, technical support, and market access opportunities to accelerate
+      startup growth.
+    max_value: 150000
+    url: https://startup.huaweicloud.com/intl/center
+    benefits:
+      - Up to USD 150,000 cloud credits voucher
+      - Dedicated technical teams for agile cloud migration
+      - Entrepreneurial coaching and industry best practices
+      - Co-selling and joint marketing opportunities
+      - Access to Huawei’s global ecosystem
+    benefits_level: 3
+    duration:
+      - Ongoing
+    eligibility:
+      - Independently operated startups
+      - Under 5 years old
+      - Pre-seed to Series A stage
+      - Focus on AI, SaaS, sustainability, or digital transformation
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Account
+        description: Register on the Huawei Cloud startup portal to begin your application.
+        action: Sign Up
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Complete Registration
+        description: >-
+          Submit business information and complete enterprise certification as
+          required.
+        action: Register
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Undergo Audit
+        description: >-
+          Have your application reviewed by Huawei Cloud within 10 business
+          days.
+        action: Review Process
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Application Processing
+        description: Monitor the status of your application as it is processed.
+        action: Check Status
+        action_url: https://startup.huaweicloud.com/intl/center
+      - name: Approval
+        description: >-
+          Upon successful review, gain access to the credits and support
+          provided by the program.
+        action: Get Started
+        action_url: https://startup.huaweicloud.com/intl/center
+faq:
+  - question: Can non-tech startups apply?
+    answer: >-
+      Yes, although the program prioritizes ventures leveraging cloud, AI, or
+      IoT, non-tech startups may also apply.
+  - question: Is the cloud credit renewable?
+    answer: >-
+      Credits are typically provided as one-time support, but exceptional
+      startups may qualify for extended support.
+  - question: How long does the audit process take?
+    answer: >-
+      Huawei Cloud reviews applications within 10 business days as part of the
+      audit process.
