@@ -1,0 +1,18 @@
+active: true
+name: Huawei Cloud
+short_name: Huawei Cloud
+slug: huawei
+color: '#00763d'
+url: https://startup.huaweicloud.com/intl/center
+intro: >-
+  Huawei Cloud offers a comprehensive startup program that empowers early-stage
+  companies with up to USD 150,000 in cloud credits, dedicated migration
+  support, entrepreneurial coaching, and global market access.
+best_deal: Up to USD 150,000 of cloud credits
+video: ''
+tags:
+  - cloud
+  - ai
+  - enterprise
+  - saas
+  - asia
