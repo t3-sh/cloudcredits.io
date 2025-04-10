@@ -325,23 +325,27 @@ const logo = miniExists ? miniPath : regularPath;
       <!-- Header -->
       <div class="text-center py-20">
         <div class="container">
-          <div class="flex items-center justify-center gap-4 mb-8">
+          <div class="flex flex-col items-center gap-8 mb-8">
             {
               logo && (
-                <ImageMod
-                  src={logo}
-                  class="h-12 w-auto provider-logo"
-                  width={48}
-                  height={48}
-                  alt={provider.data.name || "Provider logo"}
-                  format="svg"
-                />
+                <div class="relative group">
+                  <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-black/5 dark:from-white/20 dark:to-white/5 blur-xl rounded-full" />
+                  <div class="absolute inset-0 bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-full" />
+                  <div class="relative p-3">
+                    <ImageMod
+                      src={logo}
+                      class="h-10 w-auto provider-logo"
+                      width={56}
+                      height={56}
+                      alt={provider.data.name || "Provider logo"}
+                      format="svg"
+                    />
+                  </div>
+                </div>
               )
             }
-            <div class="flex items-center gap-3">
-              <h1 class="text-4xl font-bold">{title}</h1>
-              <ProgramStatusIndicator status={status} text={status} />
-            </div>
+            <ProgramStatusIndicator status={status} text={status} />
+            <h1 class="text-4xl font-bold">{title}</h1>
           </div>
 
           <div
@@ -531,7 +535,7 @@ const logo = miniExists ? miniPath : regularPath;
 
                           {/* Simplified Benefits Level Indicator */}
                           <div class="mb-6">
-                            <div class="flex items-center gap-3 mb-2">
+                            <div class="flex items-center gap-3 mb-2 min-h-[4rem]">
                               <div
                                 class="p-1.5 rounded-full"
                                 style={`background-color: ${color}20;`}
@@ -621,7 +625,7 @@ const logo = miniExists ? miniPath : regularPath;
 
                           {/* Simplified Application Complexity Indicator */}
                           <div class="mb-6">
-                            <div class="flex items-center gap-3 mb-2">
+                            <div class="flex items-center gap-3 mb-2 min-h-[4rem]">
                               <div
                                 class="p-1.5 rounded-full"
                                 style={`background-color: ${color}20;`}
@@ -842,6 +846,17 @@ const logo = miniExists ? miniPath : regularPath;
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
               transform: translateY(-2px);
               transition: all 0.3s ease;
+            }
+
+            .provider-logo {
+              filter: contrast(1.2) drop-shadow(0 0 8px rgba(0, 0, 0, 0.1))
+                drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+            }
+
+            :global(.dark) .provider-logo {
+              filter: contrast(1.2)
+                drop-shadow(0 0 8px rgba(255, 255, 255, 0.1))
+                drop-shadow(0 0 1px rgba(255, 255, 255, 0.3));
             }
           </style>
         </div>

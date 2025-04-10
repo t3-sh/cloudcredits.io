@@ -47,7 +47,7 @@ This project uses [Astro](https://astro.build/) and is managed with [pnpm](https
 
 ```bash
 # Clone the repository
-git clone https://github.com/DUALSTACKS/cloudcredits.io.git
+git clone https://github.com/t3-sh/cloudcredits.io.git
 cd cloudcredits.io
 
 # Install dependencies
@@ -89,11 +89,11 @@ pnpm preview
 <table>
   <tr>
     <td align="center"><a href="https://github.com/NominalTrajectory"><img src="https://github.com/NominalTrajectory.png" width="100px;" alt=""/><br /><sub><b>@NominalTrajectory</b></sub></a></td>
-    <td>Lead Maintainer<br/>ivan@dualstacks.com<br/><a href="https://x.com/ivxn_sh">X</a> | <a href="https://www.linkedin.com/in/ivxn-sh/">LinkedIn</a></td>
+    <td>Lead Maintainer<br/>iven@t3sh.com<br/><a href="https://x.com/ivxn_sh">X</a> | <a href="https://www.linkedin.com/in/ivxn-sh/">LinkedIn</a></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/tienthai0205"><img src="https://github.com/tienthai0205.png" width="100px;" alt=""/><br /><sub><b>@tienthai0205</b></sub></a></td>
-    <td>Maintainer<br/>tien@dualstacks.com<br/><a href="https://x.com/alie_steward">X</a> | <a href="https://www.linkedin.com/in/tien-t-thai/">LinkedIn</a></td>
+    <td>Maintainer<br/>tien@t3sh.com<br/><a href="https://x.com/alie_steward">X</a> | <a href="https://www.linkedin.com/in/tien-t-thai/">LinkedIn</a></td>
   </tr>
 </table>
 
@@ -101,8 +101,8 @@ pnpm preview
 
 Thanks to all the people who have contributed to this project!
 
-<a href="https://github.com/DUALSTACKS/cloudcredits.io/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DUALSTACKS/cloudcredits.io" alt="Contributors" />
+<a href="https://github.com/t3-sh/cloudcredits.io/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=t3-sh/cloudcredits.io" alt="Contributors" />
 </a>
 
 ## 🙌 Support Us!

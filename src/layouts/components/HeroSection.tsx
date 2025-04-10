@@ -193,7 +193,7 @@ export default function HeroSection() {
             <span className="leading-none self-center ml-1">→</span>
           </a>
           <a
-            href="https://github.com/DUALSTACKS/cloudcredits.io"
+            href="https://github.com/t3-sh/cloudcredits.io"
             className="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex items-center gap-2"
             target="_blank"
           >
