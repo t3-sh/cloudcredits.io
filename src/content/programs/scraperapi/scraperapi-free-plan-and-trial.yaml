@@ -21,8 +21,8 @@ tags:
 url: https://www.scraperapi.com/pricing
 value_type: credits
 currency: USD
-min_value: 1000
-max_value: 5000
+min_value: 3
+max_value: 3
 community_notes: []
 tiers:
   - name: 7-day Trial
@@ -30,7 +30,7 @@ tiers:
       Activate a 7-day trial to receive 5,000 API credits with full feature
       access, including geotargeting, JS rendering, proxy rotation, and CAPTCHA
       handling.
-    max_value: 5000
+    max_value: 3
     url: https://www.scraperapi.com/pricing
     benefits:
       - 5,000 API credits during trial
@@ -51,29 +51,6 @@ tiers:
         description: >-
           Register for an account on ScraperAPI to activate the 7-day trial
           period.
-        action: Sign Up
-        action_url: https://www.scraperapi.com/signup
-  - name: Permanent Free Tier
-    intro: >-
-      Ongoing free plan offering 1,000 API credits per month with a limit of 5
-      concurrent connections.
-    max_value: 1000
-    url: https://www.scraperapi.com/pricing
-    benefits:
-      - 1,000 API credits per month
-      - 5 concurrent connections
-      - Access to core features including proxy rotation and CAPTCHA handling
-      - No credit card required
-    benefits_level: 1
-    duration:
-      - Monthly
-    eligibility:
-      - Available to all new users
-      - Ideal for small-scale projects
-    effort_level: 1
-    steps_to_apply:
-      - name: Sign Up
-        description: Create an account to start using the permanent free tier.
         action: Sign Up
         action_url: https://www.scraperapi.com/signup
 faq:
