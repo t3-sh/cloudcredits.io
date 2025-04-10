@@ -1,0 +1,18 @@
+active: true
+name: DataStax Astra DB
+short_name: Astra DB
+slug: datastax
+color: '#2448e4'
+url: https://www.datastax.com/products/astra
+intro: >-
+  A cloud-native vector database for building production-ready generative AI
+  applications. It delivers high relevance vector search, fast responses, and a
+  free tier offering $300/year in credits along with 40GB storage.
+best_deal: $300/year credits and 40GB storage
+video: ''
+tags:
+  - ai
+  - database
+  - cloud
+  - serverless
+  - enterprise
