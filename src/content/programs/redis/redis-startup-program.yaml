@@ -1,0 +1,88 @@
+draft: false
+provider_slug: redis
+title: Redis Startup Program
+meta_title: Scale Your Startup Faster
+intro: >-
+  The program offers early-stage startups free Redis Cloud access for 12 months
+  along with technical support, early feature access, and go-to-market
+  opportunities to build fast, real-time applications.
+description: >-
+  Redis for Startups is a comprehensive program designed to help early-stage
+  companies build and scale real-time applications using Redis' high-performance
+  data platform. It provides free Redis Cloud access for 12 months with usage
+  limits, $10,000 in Redis credits, and accelerated development resources
+  including pre-configured templates and hands-on workshops. Additionally, the
+  program offers dedicated technical support with monthly expert office hours,
+  co-marketing opportunities, and access to a broad partner network including VC
+  introductions and cloud provider partnerships. The program is structured in
+  phases – Discovery, Scale, and Growth – to optimize architecture, performance
+  tuning, and enterprise readiness, ensuring that startups can leverage Redis to
+  achieve significant performance improvements and cost reductions.
+status: Active
+tags:
+  - database
+  - cloud
+  - dev tools
+  - ai
+url: https://redis.com/startup-program
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes:
+  - title: Docugami Case Study
+    body: >-
+      Docugami uses Redis to easily store, search, and update vector embeddings
+      at scale.
+    source_url: https://redis.com/customer-stories#docugami
+  - title: Flowdesk Performance
+    body: >-
+      Flowdesk processes 1 million daily orders with low latency and zero
+      downtime using Redis.
+    source_url: https://redis.com/customer-stories#flowdesk
+tiers:
+  - name: Redis Startup Tier
+    intro: >-
+      This tier offers qualifying startups 12 months of free Redis Cloud access,
+      $10,000 in credits, early access to new features, comprehensive technical
+      support, and growth opportunities through co-marketing and networking.
+    max_value: 10000
+    url: https://redis.com/startup-program
+    benefits:
+      - 12 months of free Redis Cloud access (usage limits apply)
+      - Priority early access to new Redis features and products
+      - Dedicated customer support with monthly expert office hours
+      - $10,000 in Redis credits for qualifying startups
+      - Co-marketing and networking opportunities
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Privately-held startups
+      - Less than $5M in total funding
+      - >-
+        Building technology using Redis for real-time data processing and AI/ML
+        applications
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Submit your technical architecture details and growth roadmap via the
+          Redis partner portal.
+        action: Apply Now
+        action_url: https://redis.com/startup-program/apply
+faq:
+  - question: What does the Redis Startup Program offer?
+    answer: >-
+      It provides early-stage startups with free Redis Cloud access for 12
+      months, $10,000 in Redis credits, dedicated technical support, early
+      feature access, and co-marketing opportunities to scale their
+      applications.
+  - question: Who is eligible for the program?
+    answer: >-
+      Startups must be privately-held, have less than $5M in funding, and be
+      focused on building real-time applications using Redis' core capabilities.
+  - question: How long does the program last and what is the application process?
+    answer: >-
+      The program runs for 12 months and is structured in phases including
+      Discovery, Scale, and Growth. Applications are reviewed within 7-10
+      business days through the Redis partner portal.
