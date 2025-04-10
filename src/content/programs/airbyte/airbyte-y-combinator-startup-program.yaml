@@ -1,0 +1,78 @@
+draft: false
+provider_slug: airbyte
+title: Airbyte Y Combinator Startup Program
+meta_title: YC Startup Credits and Resources
+intro: >-
+  Airbyte offers Y Combinator startups up to $75,000 in Airbyte Cloud credits
+  along with free educational resources, workshops, swag, and priority support
+  to accelerate data integration workflows.
+description: >-
+  The Airbyte Y Combinator Startup Program is designed to empower YC startups by
+  providing $75,000 in Airbyte Cloud credits for seamless data integration
+  across 550+ connectors. Participants receive free access to the Airbyte
+  learning platform, guaranteed enrollment in hands-on workshops, exclusive
+  Airbyte swag, and priority support. To qualify, companies must be current or
+  alumni of Y Combinator, have raised less than $5M in total funding, and comply
+  with Airbyte Cloud's standard Terms of Service. Existing Airbyte customers are
+  not eligible.
+status: Active
+tags:
+  - cloud
+  - data
+  - education
+  - dev tools
+url: https://airbyte.com/company/ycombinator-startup-promotion
+value_type: credits
+currency: USD
+min_value: 75000
+max_value: 75000
+community_notes: []
+tiers:
+  - name: Airbyte YC Startup Tier
+    intro: >-
+      Designed exclusively for YC startups, this tier offers a fixed $75,000 in
+      Airbyte Cloud credits along with essential learning resources, workshop
+      access, swag, and priority support.
+    max_value: 75000
+    url: https://airbyte.com/company/ycombinator-startup-promotion
+    benefits:
+      - $75,000 in Airbyte Cloud credits
+      - Free access to the Airbyte learning platform
+      - Guaranteed spot in upcoming Airbyte workshops
+      - Exclusive Airbyte swag
+      - Priority support with fast response times
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - Must be enrolled in a current or previous Y Combinator batch
+      - Total funding raised must be under $5M
+      - Must accept Airbyte Cloud’s standard Terms of Service
+      - Existing Airbyte customers are not eligible
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit YC Enrollment Proof
+        description: >-
+          Provide documentation verifying enrollment in a current or past Y
+          Combinator batch.
+        action: Apply Now
+        action_url: https://airbyte.com/company/ycombinator-startup-promotion
+      - name: Complete Onboarding
+        description: Finish Airbyte Cloud onboarding and accept the Terms of Service.
+        action: Accept Terms
+        action_url: >-
+          https://airbyte.com/terms?__hstc=128150995.2d74a93459380ae5afb86ba39ca9b66b.1670318411557.1670318411557.1670318411557.1
+faq:
+  - question: What is the Airbyte YC Startup Program?
+    answer: >-
+      It provides eligible YC startups with $75,000 in Airbyte Cloud credits,
+      free access to learning resources, guaranteed workshop enrollment,
+      exclusive swag, and priority support to enhance data integration
+      workflows.
+  - question: Who is eligible to apply?
+    answer: >-
+      Companies currently or previously part of Y Combinator, with less than $5M
+      in total funding and not existing Airbyte customers, are eligible.
+  - question: How do I apply for the program?
+    answer: >-
+      Submit proof of YC enrollment via the promotion page and complete Airbyte
+      Cloud onboarding by accepting the Terms of Service.
