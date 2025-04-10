@@ -23,16 +23,16 @@ tags:
   - workflow
   - free trial
 url: https://linear.app/startups
-value_type: credits
+value_type: discount
 currency: USD
-max_value: 6
+max_value: 100
 community_notes: []
 tiers:
   - name: Linear Startup Tier
     intro: >-
       Eligible startups receive up to 6 months free access to Linear’s premium
       project management tools, available on their Basic or Business plans.
-    max_value: 6
+    max_value: 100
     url: https://linear.app/startups
     benefits:
       - 6 months free access to either Basic or Business plans
@@ -50,7 +50,7 @@ tiers:
       - >-
         Affiliated with an official Linear partner (accelerators, investors, or
         incubators)
-    effort_level: 2
+    effort_level: 3
     steps_to_apply:
       - name: Obtain Partner Code
         description: >-
