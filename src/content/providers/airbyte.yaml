@@ -1,0 +1,16 @@
+active: true
+name: Airbyte
+short_name: Airbyte
+slug: airbyte
+color: '#625EFF'
+url: https://airbyte.com
+intro: >-
+  A modern data integration platform tailored to support YC startups with up to
+  $75,000 in cloud credits and comprehensive resources.
+best_deal: Up to $75,000 in Airbyte Cloud credits
+video: ''
+tags:
+  - cloud
+  - data
+  - education
+  - dev tools
