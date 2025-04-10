@@ -1,0 +1,107 @@
+draft: false
+provider_slug: appwrite
+title: Appwrite Startups Program
+meta_title: Build Your Startup with Appwrite - $20,000 Cloud Credits & Scale
+intro: >-
+  The Appwrite Startups Program supports early-stage startups with a complete
+  backend solution, offering $20,000 in cloud credits for Appwrite Scale for 12
+  months along with priority support.
+description: >-
+  The Appwrite Startups Program offers early-stage companies a comprehensive
+  backend solution with financial and technical support to accelerate growth.
+  Participants gain full access to the Appwrite Scale plan, which includes
+  unlimited team members, advanced compliance measures, and dedicated support
+  channels. The program provides $20,000 in cloud credits for 12 months to
+  reduce upfront infrastructure costs, along with priority email support and
+  access to a vibrant open source community. Eligible startups include those
+  established within the last decade with a functional website and a team of two
+  or more members. After applying via the program page, selected startups will
+  receive a redemption code and detailed onboarding instructions. Additional
+  support such as migration tools and custom plans are available for projects
+  with greater needs.
+status: Active
+tags:
+  - cloud
+  - open source
+  - dev tools
+  - compliance
+url: https://appwrite.io/startups
+value_type: credits
+currency: USD
+max_value: 20000
+community_notes:
+  - title: Testimonial from Marius Bolik
+    body: >-
+      The integrated user authentication and the ease of creating data
+      structures have undoubtedly saved us several weeks' worth of time.
+    source_url: https://appwrite.io/startups
+  - title: Testimonial from Ryan O'Conner
+    body: >-
+      There's no struggling with writing backend code and working with
+      databases, as that's already taken care of.
+    source_url: https://appwrite.io/startups
+  - title: Testimonial from Souvik Sarkar
+    body: >-
+      Appwrite comes with built-in security features like authentication,
+      database security, and more, reducing the time and effort you need to
+      spend on securing your application.
+    source_url: https://appwrite.io/startups
+tiers:
+  - name: Appwrite Cloud Scale Tier
+    intro: >-
+      Eligible startups receive full access to the Appwrite Scale plan with
+      $20,000 cloud credits for 12 months along with priority email support.
+    max_value: 20000
+    url: https://appwrite.io/startups
+    benefits:
+      - Complete backend access via Appwrite Scale plan
+      - Up to $20,000 cloud credits for 12 months
+      - Priority email support and dedicated program manager
+      - Access to community support and private Discord channel
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Early-stage startups
+      - Established within the last decade
+      - Functional website
+      - Team of two or more members
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the application form with your full name, email, company
+          name, and website on the program page.
+        action: Apply Now
+        action_url: https://appwrite.io/startups
+      - name: Await Approval
+        description: >-
+          After submission, wait for an email with a redemption code and
+          onboarding instructions.
+faq:
+  - question: How do I apply?
+    answer: >-
+      Submit the application form on the program page with your full name,
+      email, company name, and website.
+  - question: What happens after I apply?
+    answer: >-
+      The Appwrite team evaluates your application. If selected, you will
+      receive an email with a special code to redeem your cloud credits and
+      detailed onboarding instructions.
+  - question: Who is eligible to apply?
+    answer: >-
+      Eligible applicants are early-stage startups established within the last
+      decade with a functional website and a team of two or more. Pro and Free
+      plan users can apply, while existing Scale users cannot.
+  - question: What if we need more resources than what is offered?
+    answer: >-
+      If additional resources are required, Appwrite can discuss tailored
+      solutions to meet your specific needs.
+  - question: What happens after the 12 months run out?
+    answer: >-
+      Approximately one month before the term ends, Appwrite will reevaluate
+      your usage and provide a fitting plan based on your needs.
+  - question: What kind of support is provided?
+    answer: >-
+      Participants receive priority email support, access to a private Discord
+      channel with direct engineering access, and a dedicated program manager.
