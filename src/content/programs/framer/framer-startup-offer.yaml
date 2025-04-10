@@ -1,0 +1,102 @@
+draft: false
+provider_slug: framer
+title: Framer Startup Offer
+meta_title: Framer Startup Offer - Professional Website Solutions for Startups
+intro: >-
+  Empowering early-stage startups with a $2000 credit package: $1,000 for hiring
+  a vetted Framer Expert via Contra and $1,000 for Framer hosting and
+  maintenance, enabling seamless website creation and management.
+description: >-
+  Framer's Startup Offer supports emerging businesses, particularly those from
+  accelerator programs like Y Combinator S23, by providing a dual credit
+  package. Startups receive $1,000 in Contra credit to hire a dedicated Framer
+  Expert for website design and development, as well as $1,000 in Framer credit
+  to cover hosting, domain management, and ongoing site maintenance. This
+  initiative bridges design and functionality, ensuring startups achieve a
+  compelling online presence using a no-code platform with expert guidance.
+status: Active
+tags:
+  - design
+  - web design
+  - no-code
+  - hosting
+url: https://www.framer.com/startup-offer
+value_type: credits
+currency: USD
+min_value: 2000
+max_value: 2000
+community_notes:
+  - title: YC S23 Showcase
+    body: >-
+      Over 200 Y Combinator S23 startups have built eye-catching websites using
+      Framer. Explore the showcase at yc23.framer.website for inspiration.
+    source_url: https://yc23.framer.website
+  - title: No-Code Innovation
+    body: >-
+      Framer’s platform enables startups to create responsive, interactive
+      websites without coding, supported by significant Series C funding.
+    source_url: https://www.framer.com
+tiers:
+  - name: Contra Expert Hiring Credit
+    intro: >-
+      Receive $1,000 in credit on Contra to hire a vetted Framer Expert for
+      designing and developing your startup's website.
+    max_value: 1000
+    url: https://www.framer.com/startup-offer
+    benefits:
+      - Hire a dedicated Framer Expert
+      - Access to vetted talent through Contra
+      - Professional website design support
+    benefits_level: 2
+    duration:
+      - One-time credit
+    eligibility:
+      - Early-stage startups
+      - Accelerator program participants encouraged
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply for Contra Credit
+        description: >-
+          Visit the Framer Startup Offer page to access Contra credit for hiring
+          a Framer Expert.
+        action: Apply Now
+        action_url: https://www.framer.com/startup-offer
+  - name: Framer Hosting & Maintenance Credit
+    intro: >-
+      Receive $1,000 in credit to cover hosting, domain management, and ongoing
+      website maintenance on Framer’s platform.
+    max_value: 1000
+    url: https://www.framer.com/startup-offer
+    benefits:
+      - Framer credit for hosting and maintenance
+      - Domain management support
+      - Seamless website operations
+    benefits_level: 2
+    duration:
+      - One-time credit upon activation
+    eligibility:
+      - Early-stage startups
+      - Emerging businesses looking to build their online presence
+    effort_level: 2
+    steps_to_apply:
+      - name: Activate Framer Credit
+        description: >-
+          Visit the Framer Startup Offer page to activate your Framer credit for
+          hosting and site management.
+        action: Apply Now
+        action_url: https://www.framer.com/startup-offer
+faq:
+  - question: What does the Framer Startup Offer include?
+    answer: >-
+      It provides a dual $2000 credit package: $1,000 in Contra credit for
+      hiring a Framer Expert and $1,000 in Framer credit for website hosting and
+      maintenance.
+  - question: Who is eligible to apply?
+    answer: >-
+      The program targets early-stage startups, particularly those participating
+      in accelerator programs like Y Combinator, with no strict industry
+      restrictions.
+  - question: How can I apply for the Framer Startup Offer?
+    answer: >-
+      Visit https://www.framer.com/startup-offer to access the application
+      process and activate your credits.
