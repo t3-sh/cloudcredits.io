@@ -1,6 +1,6 @@
 draft: false
 provider_slug: datastax
-title: 'DataStax Astra DB: One-Stop Generative AI Stack'
+title: 'DataStax Astra DB: $300 Free Trial'
 meta_title: DataStax Astra DB - Cloud Native Generative AI Database
 intro: >-
   A cloud-native vector database for building production-ready generative AI
@@ -64,56 +64,6 @@ tiers:
         description: Register for a free account on DataStax Astra DB.
         action: Get Started
         action_url: https://www.datastax.com/products/astra
-  - name: Pay As You Go
-    intro: >-
-      Usage-based billing with premium regions and private endpoints for scaling
-      production applications.
-    max_value: 0
-    url: https://www.datastax.com/products/astra
-    benefits:
-      - Usage-based billing
-      - Premium regions
-      - Private endpoints
-      - Scalable performance
-    benefits_level: 2
-    duration:
-      - Ongoing billing
-    eligibility:
-      - Production applications
-      - Users with a payment method on file
-    effort_level: 2
-    steps_to_apply:
-      - name: Upgrade Account
-        description: Add a payment method to switch to the Pay As You Go plan.
-        action: Upgrade
-        action_url: https://www.datastax.com/products/astra
-  - name: Enterprise
-    intro: >-
-      Custom SLAs, dedicated support, and hybrid-cloud options for large-scale
-      deployments.
-    max_value: 0
-    url: https://www.datastax.com/contact-us
-    benefits:
-      - Custom SLAs
-      - Dedicated support
-      - Hybrid-cloud options
-      - Enhanced security
-      - Compliance certifications
-    benefits_level: 3
-    duration:
-      - Custom contract
-    eligibility:
-      - Large-scale deployments
-      - Enterprise requirements
-      - Needs for compliance and security
-    effort_level: 3
-    steps_to_apply:
-      - name: Contact Sales
-        description: >-
-          Reach out to DataStax sales for custom enterprise pricing and
-          requirements.
-        action: Contact
-        action_url: https://www.datastax.com/contact-us
 faq:
   - question: How does Astra DB improve RAG performance?
     answer: >-
