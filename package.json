@@ -2,7 +2,7 @@
   "name": "cloudcredits.io",
   "version": "0.1.0",
   "description": "Most comprehensive community-driven credits/discounts/perks database for startups and builders.",
-  "author": "DUALSTACKS",
+  "author": "t3sh",
   "license": "MIT",
   "packageManager": "pnpm@9.15.4",
   "scripts": {

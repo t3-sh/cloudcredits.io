@@ -13,13 +13,26 @@ let parts = [
 ];
 
 paths.forEach((label: string, i: number) => {
-  const href = `/${paths.slice(0, i + 1).join("/")}`;
-  label !== "page" &&
+  // Special handling for providers section
+  if (label === "providers" && paths[i + 1]) {
     parts.push({
-      label: humanize(label.replace(".html", "").replace(/[-_]/g, " ")) || "",
-      href,
-      "aria-label": Astro.url.pathname === href ? "page" : undefined,
+      label: "Providers",
+      href: "/providers",
+      "aria-label": Astro.url.pathname === "/providers" ? "page" : undefined,
     });
+    // Skip the provider slug in the path if it's followed by "programs"
+    if (paths[i + 2] === "programs") {
+      return;
+    }
+  } else if (label !== "programs") {
+    const href = `/${paths.slice(0, i + 1).join("/")}`;
+    label !== "page" &&
+      parts.push({
+        label: humanize(label.replace(".html", "").replace(/[-_]/g, " ")) || "",
+        href,
+        "aria-label": Astro.url.pathname === href ? "page" : undefined,
+      });
+  }
 });
 ---
 

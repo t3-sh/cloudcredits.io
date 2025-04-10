@@ -90,14 +90,20 @@ const logo = `/images/providers/${slug}.svg`;
       <div class="text-center py-20">
         {
           logo && (
-            <ImageMod
-              src={logo}
-              class="mx-auto mb-10 max-h-[60px] w-auto"
-              width={120}
-              height={60}
-              alt={`${name} logo`}
-              format="svg"
-            />
+            <div class="relative group inline-flex justify-center mb-10">
+              <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black/20 to-black/5 dark:from-white/20 dark:to-white/5 blur-xl rounded-full" />
+              <div class="absolute inset-0 w-full h-full bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-full" />
+              <div class="relative p-3">
+                <ImageMod
+                  src={logo}
+                  class="max-h-[60px] w-auto provider-logo"
+                  width={120}
+                  height={60}
+                  alt={`${name} logo`}
+                  format="svg"
+                />
+              </div>
+            </div>
           )
         }
 
@@ -171,3 +177,15 @@ const logo = `/images/providers/${slug}.svg`;
     </div>
   </section>
 </Base>
+
+<style>
+  .provider-logo {
+    filter: contrast(1.2) drop-shadow(0 0 8px rgba(0, 0, 0, 0.1))
+      drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+  }
+
+  :global(.dark) .provider-logo {
+    filter: contrast(1.2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.1))
+      drop-shadow(0 0 1px rgba(255, 255, 255, 0.3));
+  }
+</style>
