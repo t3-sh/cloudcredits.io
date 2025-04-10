@@ -1,0 +1,133 @@
+draft: false
+provider_slug: datastax
+title: 'DataStax Astra DB: One-Stop Generative AI Stack'
+meta_title: DataStax Astra DB - Cloud Native Generative AI Database
+intro: >-
+  A cloud-native vector database for building production-ready generative AI
+  applications. It delivers high relevance vector search, fast responses, and a
+  free tier offering $300/year in credits along with 40GB storage.
+description: >-
+  DataStax Astra DB is a cloud-native vector database designed to power
+  generative AI applications. It combines real-time data processing with native
+  vector search capabilities and seamless integration with Apache Cassandra. Key
+  benefits include generative AI optimization with up to 20% higher relevance
+  and 74x faster responses compared to competitors, an intuitive schema-less API
+  that supports complex document filtering and hybrid searches, and native
+  integrations with LangChain, LlamaIndex, Amazon Bedrock, and Google Vertex AI.
+  With a free tier offering $300/year in credits and 40GB storage, it caters to
+  startups and developers, while scalable Pay As You Go and Enterprise plans
+  address production and large-scale deployment needs.
+status: Active
+tags:
+  - ai
+  - database
+  - cloud
+  - serverless
+  - enterprise
+url: https://www.datastax.com/products/astra
+value_type: credits
+currency: USD
+max_value: 300
+community_notes:
+  - title: GigaOm Report
+    body: >-
+      Dec 2023 GigaOm Report found that Astra DB provides up to 20% higher
+      relevance and 74x faster responses compared to Pinecone.
+    source_url: https://www.gigaom.com/
+  - title: Cost Efficiency
+    body: >-
+      Astra DB's serverless architecture can reduce operational costs by up to
+      5× compared to traditional databases.
+    source_url: https://www.datastax.com/products/astra
+tiers:
+  - name: Free
+    intro: >-
+      40 GB storage, $300/year credits, and basic support for startups and
+      developers testing AI prototypes.
+    max_value: 300
+    url: https://www.datastax.com/products/astra
+    benefits:
+      - 40 GB storage
+      - $300/year in credits
+      - Basic support
+      - No credit card required
+      - Intuitive API access
+    benefits_level: 1
+    duration:
+      - 1 year
+    eligibility:
+      - Startups
+      - Developers testing AI prototypes
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: Register for a free account on DataStax Astra DB.
+        action: Get Started
+        action_url: https://www.datastax.com/products/astra
+  - name: Pay As You Go
+    intro: >-
+      Usage-based billing with premium regions and private endpoints for scaling
+      production applications.
+    max_value: 0
+    url: https://www.datastax.com/products/astra
+    benefits:
+      - Usage-based billing
+      - Premium regions
+      - Private endpoints
+      - Scalable performance
+    benefits_level: 2
+    duration:
+      - Ongoing billing
+    eligibility:
+      - Production applications
+      - Users with a payment method on file
+    effort_level: 2
+    steps_to_apply:
+      - name: Upgrade Account
+        description: Add a payment method to switch to the Pay As You Go plan.
+        action: Upgrade
+        action_url: https://www.datastax.com/products/astra
+  - name: Enterprise
+    intro: >-
+      Custom SLAs, dedicated support, and hybrid-cloud options for large-scale
+      deployments.
+    max_value: 0
+    url: https://www.datastax.com/contact-us
+    benefits:
+      - Custom SLAs
+      - Dedicated support
+      - Hybrid-cloud options
+      - Enhanced security
+      - Compliance certifications
+    benefits_level: 3
+    duration:
+      - Custom contract
+    eligibility:
+      - Large-scale deployments
+      - Enterprise requirements
+      - Needs for compliance and security
+    effort_level: 3
+    steps_to_apply:
+      - name: Contact Sales
+        description: >-
+          Reach out to DataStax sales for custom enterprise pricing and
+          requirements.
+        action: Contact
+        action_url: https://www.datastax.com/contact-us
+faq:
+  - question: How does Astra DB improve RAG performance?
+    answer: >-
+      It uses hybrid search with server-side reranking via NVIDIA NeMo Retriever
+      to reduce hallucinations by 45%.
+  - question: Can it handle real-time analytics?
+    answer: >-
+      Yes, Astra DB integrates with Astra Streaming for fraud detection and IoT
+      use cases.
+  - question: What languages are supported?
+    answer: Astra DB supports Python, Java, Node.js, REST, and GraphQL APIs.
+  - question: Is data transfer between regions chargeable?
+    answer: Yes, cross-region replication incurs metered egress fees.
+  - question: How does pricing compare to Pinecone?
+    answer: >-
+      DataStax claims Astra DB delivers 74× faster responses and 20% higher
+      relevance at a lower total cost of ownership.
