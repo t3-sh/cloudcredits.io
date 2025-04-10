@@ -1,0 +1,74 @@
+draft: false
+provider_slug: databricks
+title: Databricks for Startups Program
+meta_title: Databricks for Startups Program - Support for Data-Driven Startups
+intro: >-
+  Databricks offers startups up to $50,000 in credits to accelerate product
+  development on its Lakehouse Platform, backed by expert technical support and
+  go-to-market resources.
+description: >-
+  Databricks offers a comprehensive program to support startups building
+  scalable, data-driven applications using its Lakehouse Platform. The program
+  provides up to $50,000 in credits, free business-tier technical support, and
+  access to marketing and customer networks. Designed for VC-funded,
+  data-centric startups, it helps optimize data infrastructure while enabling
+  rapid product development and market expansion. Additional opportunities
+  include participation in challenges like the Generative AI Startup Challenge
+  and the Built-On Databricks Challenge.
+status: Active
+tags:
+  - big data
+  - analytics
+  - ai
+  - cloud
+url: https://www.databricks.com/product/startups
+value_type: credits
+currency: USD
+max_value: 50000
+community_notes:
+  - title: Generative AI Startup Challenge
+    body: >-
+      Offers over $1M in prizes for startups using Databricks to build AI
+      solutions, judged by industry experts.
+    source_url: https://www.databricks.com/product/startups
+  - title: Built-On Databricks Challenge
+    body: >-
+      A 2025 competition offering over $1M in prizes for B2B applications
+      leveraging Databricks, judged by top executives and VC partners.
+    source_url: https://www.databricks.com/product/startups
+tiers:
+  - name: Standard Credits Tier
+    intro: >-
+      Access up to $50,000 in free credits along with expert technical support
+      and go-to-market resources for VC-backed startups.
+    max_value: 50000
+    url: https://www.databricks.com/product/startups
+    benefits:
+      - Up to $50,000 in Databricks credits
+      - Free business-tier technical support
+      - Access to go-to-market resources
+      - Expert technical guidance
+      - Scalable Lakehouse Platform for data and AI
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - VC-funded startups
+      - Startups building data-driven applications
+      - Preferably with ≤ $8M funding and <5 years in operation
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Apply via the Databricks for Startups portal.
+        action: Apply Now
+        action_url: https://www.databricks.com/product/startups
+faq:
+  - question: Can non-technical teams use Databricks?
+    answer: >-
+      Yes—the Lakehouse Platform supports dashboards for business users and
+      enables non-technical teams to gain insights.
+  - question: Is prior Databricks experience required?
+    answer: No, but applicants must demonstrate a data or AI-focused product roadmap.
+  - question: What post-credit costs apply?
+    answer: >-
+      After the credits are used, startups transition to a pay-as-you-go pricing
+      model with volume discounts available.
