@@ -1,17 +1,14 @@
 ---
 import Base from "@/layouts/Base.astro";
-import {
-  getCombinedTags,
-  getAllCombinedTags,
-} from "@/lib/taxonomyParser.astro";
+import { getCombinedTags, getAllTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 import { FaTag } from "react-icons/fa6";
 
 // Get all unique tags
 const tags = await getCombinedTags();
-// Get all tag instances (including duplicates for counting)
-const allTags = await getAllCombinedTags();
+// Get all program tag instances (including duplicates for counting)
+const allTags = await getAllTaxonomy("programs", "tags");
 
 // Sort tags alphabetically
 tags.sort();
