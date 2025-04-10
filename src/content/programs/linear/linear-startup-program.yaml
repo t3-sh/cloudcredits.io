@@ -1,0 +1,83 @@
+draft: false
+provider_slug: linear
+title: Linear Startup Program
+meta_title: Linear Startup Program - Free Access for Early-Stage Startups
+intro: >-
+  The Linear Startup Program offers early-stage startups up to 6 months of free
+  access to Linear’s premium project management tools, designed to streamline
+  product development workflows.
+description: >-
+  This program provides eligible startups with free access for 6 months to
+  Linear’s Basic and Business plans. It includes advanced project management
+  features such as Cycles for sprint planning, Projects for roadmap management,
+  custom workflows, and integrations with GitHub, Figma, and Slack, alongside
+  real-time collaboration tools. The program is intended for startups with fewer
+  than 50 employees that are new to Linear’s paid plans. Applicants must obtain
+  a partner code from an affiliated accelerator, investor, or incubator and
+  submit it via the program page while logged into an admin account. After the
+  free period, standard pricing applies starting at $10 per user per month.
+status: Active
+tags:
+  - project management
+  - collaboration
+  - workflow
+  - free trial
+url: https://linear.app/startups
+value_type: credits
+currency: USD
+max_value: 6
+community_notes: []
+tiers:
+  - name: Linear Startup Tier
+    intro: >-
+      Eligible startups receive up to 6 months free access to Linear’s premium
+      project management tools, available on their Basic or Business plans.
+    max_value: 6
+    url: https://linear.app/startups
+    benefits:
+      - 6 months free access to either Basic or Business plans
+      - >-
+        Advanced features including Cycles for sprint planning and Projects for
+        roadmap management
+      - Custom workflows and integrations with GitHub, Figma, and Slack
+      - Real-time collaboration and a lightweight, fast interface
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - Startups with fewer than 50 employees
+      - Must be new to Linear’s paid plans
+      - >-
+        Affiliated with an official Linear partner (accelerators, investors, or
+        incubators)
+    effort_level: 2
+    steps_to_apply:
+      - name: Obtain Partner Code
+        description: >-
+          Obtain a partner code from your affiliated accelerator, investor, or
+          incubator.
+      - name: Submit Code
+        description: >-
+          Submit the partner code via Linear’s startup program page while logged
+          into an admin account.
+        action: Submit Code
+        action_url: https://linear.app/startups
+      - name: Upgrade Workspace
+        description: >-
+          Upgrade your workspace to a paid plan to have the credits applied
+          automatically.
+        action: Upgrade Now
+        action_url: https://linear.app/startups
+faq:
+  - question: What if my investor isn’t a Linear partner?
+    answer: >-
+      If an investor is not recognized as a Linear partner, they should apply
+      through Linear’s partner application form.
+  - question: What alternatives are available if my startup is ineligible?
+    answer: >-
+      Startups that do not qualify for the program can continue using Linear’s
+      free plan, which includes unlimited users and 250 active issues.
+  - question: What happens after the 6-month free period?
+    answer: >-
+      After 6 months, startups will transition to standard pricing, starting at
+      $10 per user per month.
