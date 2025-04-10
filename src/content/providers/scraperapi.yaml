@@ -1,0 +1,15 @@
+active: true
+name: ScraperAPI
+short_name: ScraperAPI
+slug: scraperapi
+color: '#007BFF'
+url: https://www.scraperapi.com
+intro: >-
+  ScraperAPI offers a comprehensive free plan and trial designed for testing and
+  small-scale web scraping projects.
+best_deal: 5,000 API credits for 7-day trial.
+video: ''
+tags:
+  - scraping
+  - api
+  - free trial
