@@ -1,0 +1,83 @@
+draft: false
+provider_slug: stytch
+title: Stytch Startup Program
+meta_title: Stytch Startup Program - Free Authentication for Startups
+intro: >-
+  Venture-backed startups get free, unlimited access to Stytch’s authentication
+  and fraud prevention platform until they reach Series A funding or three years
+  post-incorporation.
+description: >-
+  The Stytch Startup Program offers venture-backed startups free access to
+  Stytch’s complete platform for authentication, authorization, and fraud
+  prevention until Series A funding or three years post-incorporation, whichever
+  comes first. It includes full access to B2B and B2C auth tools—featuring
+  custom email domains, full HTML email control, SMS provider failover,
+  unlimited monthly active users (MAUs), unlimited organizations, and
+  enterprise-level SSO/SCIM integrations—along with developer support via Slack
+  and email. After reaching the milestone, startups transition to Stytch’s
+  transparent, usage-based pricing model.
+status: Active
+tags:
+  - dev tools
+  - enterprise
+  - api
+  - saas
+url: https://stytch.com/credits
+value_type: credits
+currency: USD
+max_value: 0
+community_notes: []
+tiers:
+  - name: Stytch Startup Program
+    intro: >-
+      Provides venture-backed startups unlimited access to the complete
+      authentication and fraud prevention platform until Series A funding or
+      three years post-incorporation.
+    max_value: 0
+    url: https://stytch.com/credits
+    benefits:
+      - Complete access to B2B and B2C authentication tools
+      - Unlimited MAUs and organizations
+      - Enterprise SSO/SCIM integrations
+      - Developer support via Slack and email
+      - >-
+        Custom email domains and full HTML email control with SMS provider
+        failover
+    benefits_level: 2
+    duration:
+      - Until Series A funding or 3 years post-incorporation
+    eligibility:
+      - Venture-backed startups
+      - Have not raised a Series A funding round
+      - Incorporated ≤3 years ago
+      - Not an existing enterprise contracted customer
+      - No prior redemption of a startup deal
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Visit the Stytch credits page and complete the application form.
+        action: Apply Now
+        action_url: https://stytch.com/credits
+faq:
+  - question: What’s included in the Stytch Startup Program?
+    answer: >-
+      The program offers free access to the complete Stytch authentication and
+      fraud prevention platform, including B2B and B2C auth tools, custom email
+      domains, full HTML email control, SMS provider failover, unlimited MAUs,
+      unlimited organizations, and enterprise SSO/SCIM integrations.
+  - question: Is developer support included?
+    answer: >-
+      Yes, participants receive developer support via Slack and email to help
+      with technical questions and implementation.
+  - question: Is device fingerprinting part of the program?
+    answer: >-
+      Yes, device fingerprinting is included as part of the advanced security
+      features alongside MFA, SSO, and RBAC.
+  - question: How does billing work after Series A or three years?
+    answer: >-
+      After reaching Series A funding or three years post-incorporation,
+      startups transition to Stytch’s transparent, usage-based pricing model.
+  - question: How do I apply to the Stytch Startup Program?
+    answer: >-
+      Visit the Stytch credits page at https://stytch.com/credits and complete
+      the application form. For any questions, contact startups@stytch.com.
