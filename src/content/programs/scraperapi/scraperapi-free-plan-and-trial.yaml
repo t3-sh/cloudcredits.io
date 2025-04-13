@@ -1,0 +1,71 @@
+draft: false
+provider_slug: scraperapi
+title: ScraperAPI Free Plan and Trial
+meta_title: ScraperAPI Free and Trial API Credits
+intro: >-
+  ScraperAPI offers a comprehensive free plan and trial designed for testing and
+  small-scale web scraping projects.
+description: >-
+  The program includes a 7-day trial that provides 5,000 API credits with full
+  access to features such as geotargeting, JS rendering, proxy rotation, and
+  CAPTCHA handling, all without requiring a credit card. After the trial, users
+  benefit from a permanent free tier offering 1,000 API credits monthly with up
+  to 5 concurrent connections. Email support and detailed usage metrics are
+  available during the trial period, with options to request additional credits
+  for testing via support.
+status: Active
+tags:
+  - scraping
+  - api
+  - free trial
+url: https://www.scraperapi.com/pricing
+value_type: credits
+currency: USD
+min_value: 3
+max_value: 3
+community_notes: []
+tiers:
+  - name: 7-day Trial
+    intro: >-
+      Activate a 7-day trial to receive 5,000 API credits with full feature
+      access, including geotargeting, JS rendering, proxy rotation, and CAPTCHA
+      handling.
+    max_value: 3
+    url: https://www.scraperapi.com/pricing
+    benefits:
+      - 5,000 API credits during trial
+      - >-
+        Full access to features including geotargeting, JS rendering, and proxy
+        rotation
+      - No credit card required
+      - Email support during trial period
+    benefits_level: 2
+    duration:
+      - 7 days
+    eligibility:
+      - New users
+      - Small-scale web scraping projects
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register for an account on ScraperAPI to activate the 7-day trial
+          period.
+        action: Sign Up
+        action_url: https://www.scraperapi.com/signup
+faq:
+  - question: What does the 7-day trial offer?
+    answer: >-
+      It provides 5,000 API credits to fully test ScraperAPI’s features
+      including geotargeting, JS rendering, proxy rotation, and CAPTCHA
+      handling.
+  - question: What is included in the permanent free tier?
+    answer: >-
+      The free tier offers 1,000 API credits per month with a concurrency limit
+      of 5 connections for small-scale web scraping projects.
+  - question: Do I need to provide a credit card to sign up?
+    answer: No, signing up for ScraperAPI’s free plan does not require a credit card.
+  - question: Can I get additional testing credits?
+    answer: >-
+      If additional API credits are needed during the trial, users can contact
+      ScraperAPI support for assistance.
