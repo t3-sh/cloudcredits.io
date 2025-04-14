@@ -2,7 +2,7 @@ active: true
 name: Redis
 short_name: Redis
 slug: redis
-color: '#DCFF1E'
+color: "#DCFF1E"
 url: https://redis.com
 intro: >-
   Redis offers an in-memory data platform that serves as a database, cache, and
@@ -10,7 +10,7 @@ intro: >-
   handling various types of applications, such as real-time analytics, session
   storage, and messaging systems.
 best_deal: $10,000 in Redis credits for startups
-video: ''
+video: ""
 tags:
   - database
   - cloud

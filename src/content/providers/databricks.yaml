@@ -2,11 +2,11 @@ active: true
 name: Databricks
 short_name: Databricks
 slug: databricks
-color: '#FF3621'
+color: "#FF3621"
 url: https://www.databricks.com
 intro: A platform for data, analytics, and AI that accelerates innovation.
 best_deal: Up to $50,000 in credits for startups
-video: ''
+video: ""
 tags:
   - big data
   - analytics

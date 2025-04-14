@@ -2,14 +2,14 @@ active: true
 name: Linear
 short_name: Linear
 slug: linear
-color: '#5E6AD2'
+color: "#5E6AD2"
 url: https://linear.app
 intro: >-
   A streamlined project management tool for product development, offering
   features like sprint planning, roadmap management, custom workflows, and
   integrations with GitHub, Figma, and Slack.
 best_deal: 6 months free
-video: ''
+video: ""
 tags:
   - project management
   - collaboration
