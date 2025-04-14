@@ -2,13 +2,13 @@ active: true
 name: TiDB Cloud
 short_name: TiDB Cloud
 slug: tidb
-color: '#9d4ec5'
+color: "#DB1509"
 url: https://www.pingcap.com/products/tidb-cloud
 intro: >-
   A distributed hybrid transactional and analytical database designed for
   scalable, cloud-native applications.
 best_deal: Best Deal $$$
-video: ''
+video: ""
 tags:
   - database
   - cloud

@@ -2,13 +2,13 @@ active: true
 name: Stytch
 short_name: Stytch
 slug: stytch
-color: '#e6fd13'
+color: "#e6fd13"
 url: https://stytch.com
 intro: >-
   A provider that offers authentication and fraud prevention solutions with
   flexible API usage for startups and enterprises.
 best_deal: Free until Series A
-video: ''
+video: ""
 tags:
   - dev tools
   - enterprise

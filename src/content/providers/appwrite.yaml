@@ -2,13 +2,13 @@ active: true
 name: Appwrite
 short_name: Appwrite
 slug: appwrite
-color: '#FD366E'
+color: "#FD366E"
 url: https://appwrite.io
 intro: >-
   Appwrite provides an open-source backend server for web, mobile, and Flutter
   developers to create secure and scalable applications with ease.
 best_deal: $20,000 Cloud Credits for Startups
-video: ''
+video: ""
 tags:
   - cloud
   - open source

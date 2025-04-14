@@ -2,14 +2,14 @@ active: true
 name: Neo4j
 short_name: Neo4j
 slug: neo4j
-color: '#00A5C4'
+color: "#00A5C4"
 url: https://neo4j.com
 intro: >-
   The Neo4j Startup Program supports innovative startups by providing access to
   the world’s leading graph database and advanced graph technology tools,
   enabling startups to build and grow scalable, data-driven applications.
 best_deal: Neo4j Aura™ for Startups at 9 cents per GB-hour
-video: ''
+video: ""
 tags:
   - database
   - cloud
