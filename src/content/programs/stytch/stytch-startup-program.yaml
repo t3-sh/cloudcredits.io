@@ -23,9 +23,10 @@ tags:
   - api
   - saas
 url: https://stytch.com/credits
-value_type: credits
+value_type: discount
 currency: USD
-max_value: 0
+max_value: 100
+min_value: 100
 community_notes: []
 tiers:
   - name: Stytch Startup Program
@@ -33,7 +34,7 @@ tiers:
       Provides venture-backed startups unlimited access to the complete
       authentication and fraud prevention platform until Series A funding or
       three years post-incorporation.
-    max_value: 0
+    max_value: 100
     url: https://stytch.com/credits
     benefits:
       - Complete access to B2B and B2C authentication tools
