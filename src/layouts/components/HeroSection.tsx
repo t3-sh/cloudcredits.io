@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import useTheme from "@/hooks/useTheme";
+import AIInput from "./AIInput";
 
 export default function HeroSection() {
   const theme = useTheme();
   const [activeIconIndex, setActiveIconIndex] = useState(0);
   const carouselIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const glassCardStyle = {
     background:
@@ -120,6 +122,14 @@ export default function HeroSection() {
     };
   }, [allIconCards.length]);
 
+  const handleAISubmit = (value: string) => {
+    console.log("AI query submitted:", value);
+    // Set loading state before redirecting
+    setIsLoading(true);
+    // Redirect to the assistant page with the prompt parameter
+    window.location.href = `/deals/assistant?prompt=${encodeURIComponent(value)}`;
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       <motion.div
@@ -200,6 +210,22 @@ export default function HeroSection() {
             <FaGithub size={20} />
             <span className="leading-none self-center">Star on GitHub</span>
           </a>
+        </motion.div>
+
+        {/* AI Input section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.7, duration: 0.6 }}
+          className="w-full max-w-4xl mx-auto mb-10"
+        >
+          <div className="text-center mb-4">
+            <span className="text-gray-600 dark:text-gray-400">or</span>
+            <span className="ml-2 font-medium text-dark dark:text-white">
+              Ask AI
+            </span>
+          </div>
+          <AIInput onSubmit={handleAISubmit} loading={isLoading} />
         </motion.div>
 
         {/* Single icon carousel with labels */}

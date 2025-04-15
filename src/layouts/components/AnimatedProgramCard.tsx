@@ -30,9 +30,9 @@ export function AnimatedProgramCard({
   return (
     <motion.div
       className={`group relative rounded-2xl h-full min-h-[28rem] flex flex-col overflow-hidden
-      backdrop-blur-xl bg-white/10 dark:bg-black/20
-      border border-white/5 dark:border-white/10
-      shadow-[0_8px_32px_rgba(0,0,0,0.03),inset_0_0_0_1px_rgba(255,255,255,0.1)]
+      backdrop-blur-xl bg-white/70 dark:bg-black/20
+      border border-gray-200/50 dark:border-white/10
+      shadow-[0_8px_32px_rgba(0,0,0,0.06),0_2px_8px_rgba(0,0,0,0.04),inset_0_0_0_1px_rgba(255,255,255,0.5)]
       dark:shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_0_0_1px_rgba(255,255,255,0.05)]
       will-change-transform backface-visible-hidden
       transform-gpu`}
@@ -60,9 +60,9 @@ export function AnimatedProgramCard({
       }}
     >
       <motion.div
-        className="absolute inset-0 opacity-70 dark:opacity-90"
+        className="absolute inset-0 opacity-50 dark:opacity-90"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.7 }}
+        animate={{ opacity: 0.5 }}
         transition={{ duration: 1 }}
         style={{
           background: `
@@ -98,10 +98,10 @@ export function AnimatedProgramCard({
         style={{
           background: `radial-gradient(
             circle at top,
-            ${color}35 0%,
-            ${color}25 20%,
-            ${color}15 40%,
-            ${color}05 60%,
+            ${color}40 0%,
+            ${color}30 20%,
+            ${color}20 40%,
+            ${color}10 60%,
             transparent 100%
           )`,
         }}
@@ -111,7 +111,7 @@ export function AnimatedProgramCard({
         className="absolute inset-0"
         initial={{ opacity: 0, x: "-100%" }}
         whileHover={{
-          opacity: [0, 0.5, 0],
+          opacity: [0, 0.6, 0],
           x: ["100%", "0%", "-100%"],
           transition: {
             duration: 2,
@@ -124,9 +124,9 @@ export function AnimatedProgramCard({
           background: `linear-gradient(
             105deg,
             transparent 0%,
-            ${color}15 10%,
-            ${color}25 20%,
-            ${color}15 30%,
+            ${color}20 10%,
+            ${color}30 20%,
+            ${color}20 30%,
             transparent 50%
           )`,
         }}

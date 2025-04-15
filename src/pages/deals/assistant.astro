@@ -1,0 +1,299 @@
+---
+import { getCollection } from "astro:content";
+import Base from "@/layouts/Base.astro";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import AIInput from "@/layouts/components/AIInput";
+import PageHeader from "@/partials/PageHeader.astro";
+
+export const prerender = false;
+
+// Get all programs from the content collection
+const allPrograms = await getCollection("programs");
+
+// Handle both form submissions and URL parameters
+let prompt = "";
+let apiResponse: {
+  summary: string;
+  programs: Array<{ title: string }>;
+} | null = null;
+let matchedPrograms: typeof allPrograms = [];
+let summary = "";
+let isLoading = false;
+let error = "";
+
+if (Astro.request.method === "POST") {
+  try {
+    const formData = await Astro.request.formData();
+    prompt = formData.get("prompt")?.toString() || "";
+  } catch (error) {
+    console.error("Error parsing form data:", error);
+    error = "Failed to process your request. Please try again.";
+  }
+} else {
+  // For GET requests, check URL parameters
+  const url = new URL(Astro.request.url);
+  prompt = url.searchParams.get("prompt") || "";
+}
+
+// Call the API if we have a prompt
+if (prompt) {
+  isLoading = true;
+  try {
+    const response = await fetch(
+      "https://n8n.backbone.t3sh.com/webhook/cloudcredits/chat",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      },
+    );
+
+    if (!response.ok) {
+      throw new Error(`API responded with status: ${response.status}`);
+    }
+
+    apiResponse = await response.json();
+
+    if (!apiResponse || typeof apiResponse.summary !== "string") {
+      throw new Error("Invalid API response format");
+    }
+
+    summary = apiResponse.summary;
+
+    // Find programs by title from the collection
+    if (apiResponse.programs && Array.isArray(apiResponse.programs)) {
+      matchedPrograms = apiResponse.programs
+        .map((program: { title: string }) => {
+          return allPrograms.find((p) => p.data.title === program.title);
+        })
+        .filter((p): p is (typeof allPrograms)[0] => p !== undefined);
+    }
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    error = "AI can't handle this right now. Please try again later.";
+  } finally {
+    isLoading = false;
+  }
+}
+---
+
+<script>
+  // Add TypeScript declaration for the global handleAISubmit function
+  declare global {
+    interface Window {
+      handleAISubmit: (value: string) => Promise<void>;
+    }
+  }
+
+  // Initialize client-side state
+  let clientIsLoading = false;
+  let clientPrompt = "";
+  let clientSummary = "";
+
+  // Parse initial state from server-rendered HTML
+  document.addEventListener("DOMContentLoaded", () => {
+    const summaryEl = document.querySelector("[data-summary]");
+    if (summaryEl) {
+      clientSummary = summaryEl.innerHTML;
+    }
+  });
+
+  // Define the submit handler function globally
+  window.handleAISubmit = async function (value: string) {
+    if (clientIsLoading) return; // Prevent multiple submissions
+
+    clientPrompt = value;
+    clientIsLoading = true;
+
+    // Update loading state in UI
+    updateLoadingState(true);
+
+    try {
+      // Call API directly from client
+      const response = await fetch(
+        "https://n8n.backbone.t3sh.com/webhook/cloudcredits/chat",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt: value }),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error(`API responded with status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (!data || typeof data.summary !== "string") {
+        throw new Error("Invalid API response format");
+      }
+
+      clientSummary = data.summary;
+
+      // Update summary in the UI immediately
+      updateSummary(data.summary);
+
+      // For programs, redirect to server-side rendering with the prompt
+      // This ensures we use Astro's content collection for program lookup
+      const url = new URL(window.location.href);
+      url.searchParams.set("prompt", value);
+      window.location.href = url.toString();
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      showError("AI can't handle this right now. Please try again later.");
+      clientIsLoading = false;
+      updateLoadingState(false);
+    }
+  };
+
+  function updateLoadingState(isLoading: boolean) {
+    const aiInput = document.querySelector("[data-ai-input]");
+    if (aiInput) {
+      if (isLoading) {
+        aiInput.setAttribute("data-loading", "true");
+      } else {
+        aiInput.removeAttribute("data-loading");
+      }
+    }
+
+    // Toggle loading indicator visibility
+    const loadingIndicator = document.getElementById("loading-indicator");
+    if (loadingIndicator) {
+      loadingIndicator.style.display = isLoading ? "flex" : "none";
+    }
+
+    // Toggle results container visibility
+    const resultsContainer = document.getElementById("results-container");
+    if (resultsContainer) {
+      resultsContainer.style.display = !isLoading ? "block" : "none";
+    }
+
+    // Toggle empty state visibility
+    const emptyState = document.getElementById("empty-state");
+    if (emptyState) {
+      emptyState.style.display =
+        !isLoading && !clientSummary ? "block" : "none";
+    }
+  }
+
+  function updateSummary(summary: string) {
+    // Update summary
+    const summaryContainer = document.getElementById("summary-container");
+    if (summaryContainer) {
+      summaryContainer.innerHTML = summary.replace(/\n/g, "<br>");
+      if (summaryContainer.parentElement) {
+        summaryContainer.parentElement.style.display = summary
+          ? "block"
+          : "none";
+      }
+    }
+  }
+
+  function showError(message: string) {
+    const errorContainer = document.getElementById("error-message");
+    if (errorContainer) {
+      errorContainer.innerHTML = `
+        <div class="py-2">${message}</div>
+        <div class="mt-4">
+          <a href="/providers" class="btn bg-primary text-white px-6 py-2 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90">
+            <span class="leading-none self-center">Explore Deals</span>
+            <span class="leading-none self-center ml-1">→</span>
+          </a>
+        </div>
+      `;
+      errorContainer.style.display = "block";
+    }
+  }
+</script>
+
+<Base title="Ask AI">
+  <PageHeader title="Ask AI" />
+
+  <!-- AI Input Section - Full width but with max-width for the input -->
+  <div class="container">
+    <div
+      class="max-w-3xl mx-auto mb-8 mt-8"
+      data-ai-input={isLoading ? "true" : null}
+    >
+      <AIInput client:only="react" loading={isLoading} />
+    </div>
+  </div>
+
+  <section class="section-sm">
+    <div class="container">
+      <!-- Error message container -->
+      {
+        error && (
+          <div
+            id="error-message"
+            class="text-center py-6 px-6 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 rounded-lg mb-6"
+          >
+            <div class="py-2">{error}</div>
+            <div class="mt-4">
+              <a
+                href="/providers"
+                class="btn bg-primary text-white px-6 py-2 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+              >
+                <span class="leading-none self-center">Explore Deals</span>
+                <span class="leading-none self-center ml-1">→</span>
+              </a>
+            </div>
+          </div>
+        )
+      }
+
+      <!-- Results container -->
+      <div
+        id="results-container"
+        style={summary ? "display: block" : "display: none"}
+      >
+        <!-- Summary - Full width but readable -->
+        {
+          summary && (
+            <div
+              class="mb-10 prose prose-lg dark:prose-invert max-w-5xl mx-auto"
+              data-summary
+            >
+              <div
+                id="summary-container"
+                set:html={summary.replace(/\n/g, "<br>")}
+              />
+            </div>
+          )
+        }
+
+        <!-- Programs - Full width grid -->
+        {
+          matchedPrograms.length > 0 ? (
+            <div id="programs-container">
+              <h2 class="mb-6">Recommended Programs</h2>
+              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+                {matchedPrograms.map((program) => (
+                  <ProgramCard program={program} />
+                ))}
+              </div>
+            </div>
+          ) : prompt ? (
+            <div id="no-results" class="text-center py-10">
+              <h3>No matching programs found</h3>
+            </div>
+          ) : null
+        }
+      </div>
+
+      <!-- Empty state -->
+      <div
+        id="empty-state"
+        class="text-center py-10"
+        style={!prompt && !isLoading ? "display: block" : "display: none"}
+      >
+        <h3>...</h3>
+      </div>
+    </div>
+  </section>
+</Base>
