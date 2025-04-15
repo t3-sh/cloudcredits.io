@@ -1,5 +1,9 @@
 # ☁️ CloudCredits.io
 
+<p align="center">
+  <img src="public/images/logo.svg" alt="CloudCredits.io Logo" width="200"/>
+</p>
+
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **[CloudCredits.io](https://cloudcredits.io)** is an open source, community-powered platform for discovering cloud, SaaS, other credit programs for startups, businesses, developers, builders.
