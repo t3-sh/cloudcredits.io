@@ -9,14 +9,18 @@ import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import sharp from "sharp";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
+
   image: {
     service: sharp(),
   },
+
   integrations: [
     react(),
     sitemap(),
@@ -36,6 +40,7 @@ export default defineConfig({
     }),
     mdx(),
   ],
+
   markdown: {
     remarkPlugins: [
       remarkToc,
@@ -52,4 +57,6 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
+
+  adapter: vercel(),
 });
