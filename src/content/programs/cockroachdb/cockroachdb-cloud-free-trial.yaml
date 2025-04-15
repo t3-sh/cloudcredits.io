@@ -1,0 +1,77 @@
+draft: false
+provider_slug: cockroachdb
+title: CockroachDB Cloud Free Trial
+meta_title: CockroachDB Cloud Free Trial Credits
+intro: >-
+  New organizations receive $400 in free credits to trial CockroachDB Cloud,
+  available across all cluster plans.
+description: >-
+  CockroachDB Cloud offers a $400 free trial credit for new organizations to
+  explore its fully managed, distributed SQL database service. The credits are
+  automatically applied to the first $400 of costs for any cluster, whether
+  using Standard, Advanced, or Basic plans. Users receive email notifications
+  about usage milestones, and a 30-day grace period is provided after the trial
+  ends to prevent data loss. A payment method must be added before the trial
+  concludes to ensure continuous service. Tools are available for cost
+  estimation and transitioning to monthly billing.
+status: Active
+tags:
+  - free trial
+  - cloud
+  - database
+url: https://www.cockroachlabs.com/product/cockroachdb-cloud/
+value_type: credits
+currency: USD
+min_value: 400
+max_value: 400
+community_notes:
+  - title: Free Trial Documentation
+    body: >-
+      Detailed documentation outlines the free trial credit usage, notification
+      schedule, and grace period guidelines for CockroachDB Cloud.
+    source_url: https://www.cockroachlabs.com/docs/cockroachcloud/free-trial
+tiers:
+  - name: Free Trial
+    intro: >-
+      Receive $400 in free credits for new organization accounts to explore
+      CockroachDB Cloud across all cluster plans.
+    max_value: 400
+    url: https://www.cockroachlabs.com/product/cockroachdb-cloud/
+    benefits:
+      - $400 free credits applied to any cluster
+      - Applicable to Standard, Advanced, and Basic plans
+      - >-
+        Automatic email notifications for credit consumption and trial
+        milestones
+      - 30-day grace period with throttled performance post-trial
+      - Cost estimation tools available
+    benefits_level: 2
+    duration:
+      - Until $400 credits are consumed
+      - 30-day grace period
+    eligibility:
+      - Only first organization per user
+      - Not applicable to invited users
+      - Invoice-billed organizations are ineligible
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: >-
+          Register for a CockroachDB Cloud account to automatically receive the
+          free trial credits.
+        action: Register
+        action_url: https://www.cockroachlabs.com/product/cockroachdb-cloud/
+faq:
+  - question: How long do the free trial credits last?
+    answer: >-
+      The duration depends on cluster size; larger clusters may consume the $400
+      credits in about 10 days, while smaller clusters can last up to 30 days.
+  - question: Can invited users receive free trial credits?
+    answer: >-
+      Only the first organization created by a user qualifies for the free
+      trial; invited users share the existing organization's credits.
+  - question: What happens after the free trial ends?
+    answer: >-
+      Once the free credits are used up or expire, monthly billing begins
+      immediately, and a 30-day grace period is provided to add a payment method
+      before clusters are deleted.
