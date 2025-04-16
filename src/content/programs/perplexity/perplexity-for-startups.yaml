@@ -1,0 +1,68 @@
+draft: false
+provider_slug: perplexity
+title: Perplexity for Startups
+meta_title: 6 Months Free Enterprise Pro + $5K API Credits for Startups
+intro: >-
+  Perplexity offers eligible startups 6 months of free Enterprise Pro for up to 50 seats, 
+  providing advanced AI research capabilities and unlimited Claude-powered conversations.
+description: >-
+  Perplexity for Startups program provides eligible early-stage companies with 
+  6 months of free Enterprise Pro access for up to 50 team members, along with 
+  $5,000 in API credits. This includes access to advanced AI models like 
+  Claude 3, unlimited conversations, higher-quality responses, and the ability to 
+  upload and analyze files. The program helps startups leverage AI for research, 
+  analysis, and problem-solving while managing costs during their growth phase.
+status: Active
+tags:
+  - ai
+  - research
+  - llm
+  - enterprise
+url: https://www.perplexity.ai/startups
+value_type: credits
+currency: USD
+max_value: 5000
+community_notes: []
+tiers:
+  - name: Enterprise Pro Access
+    intro: >-
+      6 months of free Enterprise Pro access for up to 50 seats
+    max_value: 5000
+    url: https://www.perplexity.ai/startups
+    benefits:
+      - Access to Claude 3 and advanced AI models
+      - Unlimited AI conversations
+      - Higher quality responses
+      - File upload and analysis
+      - Up to 50 team member seats
+    benefits_level: 3
+    duration:
+      - 6 months
+    eligibility:
+      - Must be an early-stage startup
+      - Have received less than $10M in funding
+      - Less than 5 years old
+      - Associated with one of approved Startup Partners
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply
+        description: >-
+          Fill out the application form with your startup details
+        action: Apply Now
+        action_url: https://www.perplexity.ai/startups
+  - name: API Credits
+    intro: >-
+      $5,000 in API credits for building with Perplexity
+    max_value: 5000
+    url: https://www.perplexity.ai/startups
+    benefits:
+      - $5,000 in API credits
+      - Build custom AI applications
+      - Access to Perplexity's API capabilities
+    benefits_level: 3
+    duration:
+      - Until credits are exhausted
+    eligibility:
+      - Same as Enterprise Pro access
+    effort_level: 2
+faq: []
