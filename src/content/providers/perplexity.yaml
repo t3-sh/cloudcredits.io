@@ -1,0 +1,17 @@
+draft: false
+active: true
+name: Perplexity AI
+short_name: Perplexity
+slug: perplexity
+color: "#20808D"
+url: https://www.perplexity.ai/startups
+intro: >-
+  Perplexity for Startups offers eligible companies 6 months of free Enterprise Pro 
+  for up to 50 seats and $5,000 in API credits to build AI-powered applications.
+best_deal: 6mo free Enterprise Pro + $5K API credits
+video: ""
+tags:
+  - ai
+  - research
+  - llm
+  - enterprise
