@@ -1,0 +1,18 @@
+active: true
+name: OpenAI
+short_name: OpenAI
+slug: openai
+color: '#2BDFDC'
+url: https://openai.com
+intro: >-
+  A platform enabling developers to create advanced AI services and
+  applications, offering a suite of models and APIs driven by cutting-edge
+  research in artificial intelligence.
+best_deal: Best Deal $$$
+video: ''
+tags:
+  - ai
+  - api
+  - research
+  - llm
+  - openai
