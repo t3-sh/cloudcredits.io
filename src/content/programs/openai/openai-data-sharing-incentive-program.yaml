@@ -1,0 +1,77 @@
+draft: false
+provider_slug: openai
+title: OpenAI Data Sharing Incentive Program
+meta_title: OpenAI Data Sharing Incentive Program
+intro: >-
+  Earn up to 1M free API tokens daily by sharing API data and feedback to
+  enhance model performance while retaining control over your data.
+description: >-
+  OpenAI's Data Sharing Incentive Program allows eligible organizations to
+  contribute API data—including prompts, completions, evaluations, and
+  Playground feedback—in exchange for up to 1M free API tokens per day. The
+  program is designed to improve AI model performance through targeted feedback,
+  with features like granular control over sharing settings, automated PII
+  redaction for privacy protection, and built-in content safety filters.
+  Participation requires a non-enterprise OpenAI API account with organization
+  owner privileges, and it excludes Zero Data Retention customers. Tokens are
+  allocated on a 24-hour rolling basis, and unused tokens do not roll over.
+status: Active
+tags:
+  - openai
+  - api
+  - ai
+  - data
+url: >-
+  https://help.openai.com/en/articles/10306912-sharing-feedback-evals-and-api-data-with-openai
+value_type: credits
+currency: USD
+max_value: 1000000
+community_notes:
+  - title: Privacy and Data Handling
+    body: >-
+      Sensitive information is automatically redacted using PII redaction, and
+      built-in safety filters ensure compliance and data privacy.
+    source_url: >-
+      https://help.openai.com/en/articles/10306912-sharing-feedback-evals-and-api-data-with-openai
+tiers:
+  - name: Data Sharing Incentive
+    intro: >-
+      Earn up to 1M free API tokens daily by opting in to share API data,
+      including text completions, evaluation results, and Playground feedback.
+    max_value: 1000000
+    url: >-
+      https://help.openai.com/en/articles/10306912-sharing-feedback-evals-and-api-data-with-openai
+    benefits:
+      - Free API tokens up to 1M per day
+      - Influence model improvement through shared feedback
+      - Granular control with project-level opt-in
+      - Automated PII redaction for privacy
+    benefits_level: 2
+    duration:
+      - Daily allocation
+    eligibility:
+      - Non-enterprise OpenAI API organizations
+      - Organization owner privileges required
+      - Excludes Zero Data Retention customers
+    effort_level: 1
+    steps_to_apply:
+      - name: Configure Data Sharing
+        description: >-
+          Enable data sharing via the API dashboard by selecting between
+          organization-wide or project-specific options.
+        action: Enable Sharing
+        action_url: >-
+          https://help.openai.com/en/articles/10306912-sharing-feedback-evals-and-api-data-with-openai
+faq:
+  - question: How does token refresh work?
+    answer: >-
+      Tokens are allocated in a 24-hour rolling window from the first shared
+      request each day.
+  - question: Can I revoke data sharing?
+    answer: >-
+      Historical data remains in training sets, though new data can be
+      immediately excluded by disabling sharing.
+  - question: What types of data are collected?
+    answer: >-
+      The program collects API prompts, completions, evaluations, and Playground
+      feedback to help improve AI model performance.
