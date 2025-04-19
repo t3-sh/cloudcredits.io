@@ -1,0 +1,74 @@
+draft: false
+provider_slug: mux
+title: Mux for Startups
+meta_title: Mux for Startups - Video Infrastructure Credits & Analytics
+intro: >-
+  Get a minimum of $500 in Mux video credits, free video analytics, and expert
+  onboarding support to build and scale live and on-demand streaming.
+description: >-
+  Mux's startup program provides comprehensive video infrastructure support
+  tailored for early-stage companies, offering credits for encoding, storage,
+  and delivery of live and on-demand video. Participants also get free access to
+  Mux Data analytics for performance insights and dedicated support from video
+  experts, including optional consultations with Mux co-founders Jonathan Dahl
+  and Steve Heffernan.
+status: Active
+tags:
+  - cdn
+  - media
+  - analytics
+  - dev tools
+  - monitoring
+url: https://mux.com/startups
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 500
+community_notes: []
+tiers:
+  - name: Startup Tier
+    intro: >-
+      Startups receive a minimum of $500 in video credits for Mux Video, with
+      eligibility for additional credits through investor partnerships.
+    max_value: 500
+    url: https://mux.com/startups
+    benefits:
+      - $500 in credits for encoding, storage, and delivery
+      - Free access to Mux Data video performance analytics
+      - Dedicated onboarding support from video infrastructure specialists
+      - Optional consultations with Mux co-founders
+      - Real-time monitoring and live simulcasting tools
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Startups only
+      - Not an existing Mux customer
+      - First-time recipients of Mux credits
+      - Credits must be redeemed within 12 months
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign Up for Mux
+        description: Create a new Mux account to access the startup program application.
+        action: Sign Up
+        action_url: https://mux.com/signup
+      - name: Apply to the Startup Program
+        description: Fill out and submit the Mux Startup Program application form.
+        action: Apply Now
+        action_url: https://mux.com/startups
+faq:
+  - question: What does the Mux startup program include?
+    answer: >-
+      Startups receive a minimum of $500 in video credits, free access to Mux
+      Data analytics, dedicated onboarding support from video experts, and
+      optional consultations with Mux co-founders.
+  - question: How long do the credits last?
+    answer: >-
+      Credits expire one year after activation and must be used within 12
+      months.
+  - question: Is a credit card required to apply?
+    answer: No, a credit card is not required to activate the Mux Startup Program.
+  - question: Can existing Mux customers apply?
+    answer: >-
+      No, the program is only available to new Mux customers who have not
+      previously received credits.
