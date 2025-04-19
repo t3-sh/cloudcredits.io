@@ -50,9 +50,10 @@ if (prompt) {
       },
     );
 
+    console.log(response);
+
     if (!response.ok) {
-      // Try to parse API JSON error message for 4xx
-      let msg = `AI can't handle this right now. Please try again later.`;
+      let msg = `:/ AI can't handle this right now. Please try again later.`;
       if (response.status >= 400 && response.status < 500) {
         try {
           const errData = await response.json();

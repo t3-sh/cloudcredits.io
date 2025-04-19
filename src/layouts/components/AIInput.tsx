@@ -19,11 +19,8 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
 
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const newDataRef = useRef<any[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState("");
-  const [animating, setAnimating] = useState(false);
   const [internalLoading, setInternalLoading] = useState(loading);
 
   // Sync external loading prop with internal state
@@ -92,161 +89,49 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
     };
   }, []);
 
-  const draw = useCallback(() => {
-    if (!inputRef.current) return;
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    canvas.width = 800;
-    canvas.height = 800;
-    ctx.clearRect(0, 0, 800, 800);
-    const computedStyles = getComputedStyle(inputRef.current);
-
-    const fontSize = parseFloat(computedStyles.getPropertyValue("font-size"));
-    ctx.font = `${fontSize * 2}px ${computedStyles.fontFamily}`;
-    ctx.fillStyle = "#FFF";
-    ctx.fillText(value, 16, 40);
-
-    const imageData = ctx.getImageData(0, 0, 800, 800);
-    const pixelData = imageData.data;
-    const newData: any[] = [];
-
-    for (let t = 0; t < 800; t++) {
-      let i = 4 * t * 800;
-      for (let n = 0; n < 800; n++) {
-        let e = i + 4 * n;
-        if (
-          pixelData[e] !== 0 &&
-          pixelData[e + 1] !== 0 &&
-          pixelData[e + 2] !== 0
-        ) {
-          newData.push({
-            x: n,
-            y: t,
-            color: [
-              pixelData[e],
-              pixelData[e + 1],
-              pixelData[e + 2],
-              pixelData[e + 3],
-            ],
-          });
-        }
-      }
-    }
-
-    newDataRef.current = newData.map(({ x, y, color }) => ({
-      x,
-      y,
-      r: 1,
-      color: `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${color[3]})`,
-    }));
-  }, [value]);
-
-  useEffect(() => {
-    draw();
-  }, [value, draw]);
-
-  const animate = (start: number) => {
-    const animateFrame = (pos: number = 0) => {
-      requestAnimationFrame(() => {
-        const newArr = [];
-        for (let i = 0; i < newDataRef.current.length; i++) {
-          const current = newDataRef.current[i];
-          if (current.x < pos) {
-            newArr.push(current);
-          } else {
-            if (current.r <= 0) {
-              current.r = 0;
-              continue;
-            }
-            current.x += Math.random() > 0.5 ? 1 : -1;
-            current.y += Math.random() > 0.5 ? 1 : -1;
-            current.r -= 0.05 * Math.random();
-            newArr.push(current);
-          }
-        }
-        newDataRef.current = newArr;
-        const ctx = canvasRef.current?.getContext("2d");
-        if (ctx) {
-          ctx.clearRect(pos, 0, 800, 800);
-          newDataRef.current.forEach((t) => {
-            const { x: n, y: i, r: s, color: color } = t;
-            if (n > pos) {
-              ctx.beginPath();
-              ctx.rect(n, i, s, s);
-              ctx.fillStyle = color;
-              ctx.strokeStyle = color;
-              ctx.stroke();
-            }
-          });
-        }
-        if (newDataRef.current.length > 0) {
-          animateFrame(pos - 8);
-        } else {
-          setValue("");
-          setAnimating(false);
-        }
-      });
-    };
-    animateFrame(start);
-  };
-
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && !animating && !internalLoading) {
-      vanishAndSubmit();
+    if (e.key === "Enter" && !internalLoading) {
+      handleFormSubmit();
     }
   };
 
-  const vanishAndSubmit = () => {
-    if (!value.trim() || internalLoading || animating) return;
+  const handleFormSubmit = async () => {
+    if (!value.trim() || internalLoading) return;
 
-    // Set both internal loading and animating states
-    setAnimating(true);
     setInternalLoading(true);
-    draw();
-
     const inputValue = value;
-    if (inputValue && inputRef.current) {
-      const maxX = newDataRef.current.reduce(
-        (prev, current) => (current.x > prev ? current.x : prev),
-        0,
-      );
-      animate(maxX);
 
+    try {
       if (typeof window !== "undefined") {
-        // First check if onSubmit prop is provided and use it
         if (onSubmit) {
-          try {
-            onSubmit(inputValue);
-          } catch (error) {
-            console.error("Error calling onSubmit:", error);
-            setInternalLoading(false);
-          }
+          await onSubmit(inputValue);
+        } else if ("handleAISubmit" in window) {
+          await (window as any).handleAISubmit(inputValue);
         }
-        // Only fall back to global handleAISubmit if onSubmit prop wasn't provided
-        else if ("handleAISubmit" in window) {
-          try {
-            (window as any).handleAISubmit(inputValue);
-          } catch (error) {
-            console.error("Error calling handleAISubmit:", error);
-            setInternalLoading(false);
-          }
-        }
+        // Clear input after successful submission
+        setValue("");
+      }
+    } catch (error) {
+      console.error("Error during submission:", error);
+      // Optionally handle the error state, e.g., show a message to the user
+    } finally {
+      // Ensure loading state is reset even if there was an error or no submit handler
+      // But don't reset if external loading prop is true
+      if (!loading) {
+        setInternalLoading(false);
       }
     }
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!internalLoading && !animating) {
-      vanishAndSubmit();
+    if (!internalLoading) {
+      handleFormSubmit();
     }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!animating && !internalLoading) {
+    if (!internalLoading) {
       // Enforce max length
       if (e.target.value.length <= MAX_LENGTH) {
         setValue(e.target.value);
@@ -255,7 +140,7 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
   };
 
   // Determine if input should be disabled
-  const isDisabled = internalLoading || animating;
+  const isDisabled = internalLoading;
 
   return (
     <form
@@ -263,12 +148,6 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
       onSubmit={handleSubmit}
       style={{ pointerEvents: isDisabled ? "none" : "auto" }}
     >
-      <canvas
-        className={`absolute pointer-events-none text-base transform scale-50 top-[25%] left-2 sm:left-8 origin-top-left filter invert dark:invert-0 pr-20 ${
-          !animating ? "opacity-0" : "opacity-100"
-        }`}
-        ref={canvasRef}
-      />
       <input
         // Limit input length
         maxLength={MAX_LENGTH}
@@ -279,9 +158,7 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
         type="text"
         disabled={isDisabled}
         placeholder={internalLoading ? "Thinking..." : ""}
-        className={`w-full relative text-sm sm:text-base z-50 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-5 sm:pl-12 pr-20 ${
-          animating ? "text-transparent dark:text-transparent" : ""
-        } ${isDisabled ? "cursor-not-allowed" : ""}`}
+        className={`w-full relative text-sm sm:text-base z-50 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-5 sm:pl-12 pr-20 ${isDisabled ? "cursor-not-allowed" : ""}`}
       />
 
       <button
@@ -349,15 +226,6 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
               className="dark:text-zinc-500 text-sm sm:text-base font-normal text-neutral-500 pl-5 sm:pl-12 text-left w-[calc(100%-3rem)] truncate"
             >
               {placeholders[currentPlaceholder]}
-            </motion.p>
-          )}
-          {internalLoading && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-sm sm:text-base font-normal text-primary pl-5 sm:pl-12 text-left w-[calc(100%-3rem)] truncate"
-            >
-              {animating ? "Processing..." : ""}
             </motion.p>
           )}
         </AnimatePresence>
