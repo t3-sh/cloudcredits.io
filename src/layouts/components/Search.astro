@@ -423,13 +423,6 @@ import { plainify } from "@/lib/utils/textConverter";
           }),
         );
 
-        console.log("Pagefind search results:", {
-          query,
-          totalResults: results.length,
-          rawSearch: search,
-          processedResults: results,
-        });
-
         const endTime = performance.now();
         const totalTime = ((endTime - startTime) / 1000).toFixed(3);
 
