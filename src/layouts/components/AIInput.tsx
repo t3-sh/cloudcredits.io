@@ -7,13 +7,14 @@ interface AIInputProps {
 }
 
 export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
+  const MAX_LENGTH = 500;
   const placeholders = [
     "find a free KYC as a service API for a fintech startup",
-    "looking at least $30k for GPUs credits to scale my AI startup, simple application process",
-    "i need text-to-speech and voice generating API credits for my call answering SaaS",
-    "i need free access to a quantum computer for my research",
-    "i need a free or very cheap kubernetes cluster for my school project",
-    "email campaign and customer support for a marketing agency",
+    "looking for at least $30k in GPU credits to scale my AI startup, simple application process",
+    "I need text-to-speech and voice generating API credits for my call answering SaaS",
+    "I need free access to a quantum computer for my research",
+    "I need a free or very cheap Kubernetes cluster for my school project",
+    "need email campaign and customer support tools for a marketing agency",
   ];
 
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
@@ -246,7 +247,10 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!animating && !internalLoading) {
-      setValue(e.target.value);
+      // Enforce max length
+      if (e.target.value.length <= MAX_LENGTH) {
+        setValue(e.target.value);
+      }
     }
   };
 
@@ -266,6 +270,8 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
         ref={canvasRef}
       />
       <input
+        // Limit input length
+        maxLength={MAX_LENGTH}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         ref={inputRef}
@@ -355,6 +361,10 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
             </motion.p>
           )}
         </AnimatePresence>
+      </div>
+      {/* Character counter */}
+      <div className="absolute bottom-1 right-3 text-xs text-gray-500 z-50">
+        {value.length}/{MAX_LENGTH}
       </div>
     </form>
   );
