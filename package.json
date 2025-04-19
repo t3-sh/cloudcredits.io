@@ -4,7 +4,7 @@
   "description": "Most comprehensive community-driven credits/discounts/perks database for startups and builders.",
   "author": "t3sh",
   "license": "MIT",
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "dev": "astro dev",
     "dev:search": "astro build && npx pagefind --site dist/client && npx shx cp -r dist/client/pagefind public/ && astro dev",
