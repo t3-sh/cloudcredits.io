@@ -7,6 +7,7 @@ interface AIInputProps {
 }
 
 export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
+  const MAX_LENGTH = 500;
   const placeholders = [
     "find a free KYC as a service API for a fintech startup",
     "looking at least $30k for GPUs credits to scale my AI startup, simple application process",
@@ -246,7 +247,10 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!animating && !internalLoading) {
-      setValue(e.target.value);
+      // Enforce max length
+      if (e.target.value.length <= MAX_LENGTH) {
+        setValue(e.target.value);
+      }
     }
   };
 
@@ -266,6 +270,8 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
         ref={canvasRef}
       />
       <input
+        // Limit input length
+        maxLength={MAX_LENGTH}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         ref={inputRef}
@@ -355,6 +361,10 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
             </motion.p>
           )}
         </AnimatePresence>
+      </div>
+      {/* Character counter */}
+      <div className="absolute bottom-1 right-3 text-xs text-gray-500 z-50">
+        {value.length}/{MAX_LENGTH}
       </div>
     </form>
   );

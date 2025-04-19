@@ -2,7 +2,7 @@ active: true
 name: xAI
 short_name: xAI
 slug: xai
-color: '#2196F3'
+color: "#2196F3"
 url: https://api.x.ai/console/billing#credits
 intro: >-
   xAI's Data Sharing Program offers developers a recurring $150 monthly credit
@@ -11,7 +11,7 @@ intro: >-
   improvement, with stringent data protection, no third-party marketing, and
   enterprise-grade encryption.
 best_deal: $150 Monthly API Credits
-video: ''
+video: ""
 tags:
   - api
   - ai
