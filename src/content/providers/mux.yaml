@@ -2,14 +2,14 @@ active: true
 name: Mux
 short_name: Mux
 slug: mux
-color: '#00AA3C'
+color: "#00AA3C"
 url: https://mux.com/startups
 intro: >-
   Mux's startup program provides comprehensive video infrastructure support
   tailored for early-stage companies, offering credits for encoding, storage,
   and delivery of live and on-demand video.
 best_deal: $500 in credits for video infrastructure
-video: ''
+video: ""
 tags:
   - cdn
   - media

@@ -4,7 +4,7 @@
     "base_url": "https://cloudcredits.io",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/favicon.ico",
     "logo": "/images/logo.svg",
     "logo_darkmode": "/images/logo-darkmode.svg",
     "logo_width": "80",

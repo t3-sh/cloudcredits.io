@@ -2,7 +2,13 @@
 import Base from "@/layouts/Base.astro";
 import { getCollection } from "astro:content";
 import ImageMod from "@/components/ImageMod.astro";
-import { FaCheck, FaArrowRight, FaCalendar, FaTag } from "react-icons/fa";
+import {
+  FaCheck,
+  FaArrowRight,
+  FaCalendar,
+  FaTag,
+  FaGithub,
+} from "react-icons/fa";
 import { slugify } from "@/lib/utils/textConverter";
 import Steps from "@/layouts/components/Steps.astro";
 import Accordion from "@/components/Accordion.astro";
@@ -58,6 +64,10 @@ const {
 
 const color = provider.data.color || "#232f3e";
 const currencySymbol = currency === "USD" ? "$" : "€";
+const repoUrl = "https://github.com/t3-sh/cloudcredits.io";
+const branch = "main";
+const filePath = `src/content/programs/${program.id}.yaml`;
+const editUrl = `${repoUrl}/edit/${branch}/${filePath}`;
 
 // Map benefits level to cosmic levels
 const benefitsLevelMap = {
@@ -315,11 +325,21 @@ const logo = miniExists ? miniPath : regularPath;
 
     <!-- Content -->
     <div class="relative z-10">
-      <!-- Breadcrumbs -->
-      <div class="container pt-8">
-        <div class="flex justify-center">
-          <Breadcrumbs className="mb-8" />
-        </div>
+      <!-- Centered Breadcrumbs and Edit Button -->
+      <div
+        class="container pt-8 relative flex items-center justify-center mb-8"
+      >
+        <Breadcrumbs />
+        <a
+          id="editOnGitHub"
+          href={editUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="absolute right-0 inline-flex items-center gap-1 text-sm text-primary hover:underline"
+        >
+          <FaGithub />
+          Edit on GitHub
+        </a>
       </div>
 
       <!-- Header -->
@@ -891,4 +911,36 @@ const logo = miniExists ? miniPath : regularPath;
       </div>
     </div>
   </div>
+  <script client:load>
+    (() => {
+      const editBtn = document.getElementById("editOnGitHub");
+      if (!editBtn) return;
+      let tooltip;
+      function createTooltip() {
+        tooltip = document.createElement("div");
+        tooltip.setAttribute(
+          "style",
+          "position:absolute;padding:4px 8px;background:rgba(0,0,0,0.8);color:#fff;border-radius:4px;font-size:12px;z-index:1000;cursor:pointer",
+        );
+        tooltip.textContent = "Edit on GitHub";
+        tooltip.addEventListener("click", () =>
+          window.open(editBtn.href, "_blank"),
+        );
+        document.body.appendChild(tooltip);
+      }
+      document.addEventListener("selectionchange", () => {
+        const selection = window.getSelection();
+        const text = selection ? selection.toString() : "";
+        if (text.length > 0) {
+          const rect = selection.getRangeAt(0).getBoundingClientRect();
+          if (!tooltip) createTooltip();
+          tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 4}px`;
+          tooltip.style.left = `${rect.left + window.scrollX}px`;
+          tooltip.style.display = "block";
+        } else if (tooltip && !tooltip.matches(":hover")) {
+          tooltip.style.display = "none";
+        }
+      });
+    })();
+  </script>
 </Base>
