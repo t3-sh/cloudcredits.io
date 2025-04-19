@@ -16,4 +16,4 @@ clean:
 format:
 	pnpm run format
 
-.PHONY: dev dev-search build preview clean format
+.PHONY: dev dev-search build preview clean format up down
