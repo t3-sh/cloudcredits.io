@@ -1,0 +1,15 @@
+active: true
+name: Unity
+short_name: Unity
+slug: unity
+color: '#2196f3'
+url: https://unity.com
+intro: >-
+  A leading platform for developing and operating interactive, real-time 3D
+  (RT3D) content.
+best_deal: $800 sign-up credit for Unity Multiplay
+video: ''
+tags:
+  - cloud
+  - hosting
+  - free trial

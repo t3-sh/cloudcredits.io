@@ -1,0 +1,93 @@
+draft: false
+provider_slug: unity
+title: Unity Multiplay Game Server Hosting Sign-up Credit
+meta_title: Unity Multiplay $800 Sign-up Credit - Unity Gaming Services
+intro: >-
+  Get an $800 sign-up credit for Unity Multiplay Game Server Hosting to offset
+  hosting costs for new Unity Gaming Services organizations.
+description: >-
+  Unity offers new Unity Gaming Services organizations an $800 Multiplay sign-up
+  credit applied to Multiplay Game Server Hosting and Matchmaker service
+  charges. Credits are automatically applied to billing, valid for six months
+  after activation, shared across all projects under one organization, and
+  reduce payable amounts until exhausted. This program helps developers launch
+  multiplayer games with reduced initial infrastructure expenses and visibility
+  into usage through dashboard tracking and email notifications.
+status: Active
+tags:
+  - cloud
+  - hosting
+  - free trial
+url: https://unity.com/gaming-services/multiplay
+value_type: credits
+currency: USD
+min_value: 800
+max_value: 800
+community_notes:
+  - title: Multiplay Billing Documentation
+    body: >-
+      Detailed documentation on how billing and credits are applied and
+      monitored for Unity Multiplay Game Server Hosting.
+    source_url: https://docs.unity.com/multiplay/billing.html
+  - title: Unity Gaming Services Terms of Service
+    body: >-
+      Credits start counting down upon accepting Unity Gaming Services terms of
+      service for your organization.
+    source_url: https://unity.com/legal/terms-of-service/ugsv2
+tiers:
+  - name: Multiplay Sign-up Credit
+    intro: >-
+      New Unity Gaming Services organizations receive an $800 credit for
+      Multiplay Hosting and Matchmaker charges.
+    max_value: 800
+    url: https://unity.com/gaming-services/multiplay
+    benefits:
+      - $800 credit applied to Multiplay Hosting and Matchmaker service charges
+      - Credits valid for six months after activation
+      - Organization-wide credit sharing across all UGS projects
+      - Automatic offset of billing charges until credits are exhausted
+      - Dashboard tracking and email notifications for credit usage
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - First-time Unity Gaming Services organizations
+      - >-
+        Must activate Unity Gaming Services terms of service to start credit
+        timer
+      - Credits apply exclusively to Multiplay Hosting and Matchmaker charges
+    effort_level: 1
+    steps_to_apply:
+      - name: Create Unity Gaming Services Organization
+        description: >-
+          Sign up for Unity Gaming Services and create a new organization to
+          access Multiplay.
+        action: Sign Up
+        action_url: https://dashboard.unity.com
+      - name: Activate Multiplay Service
+        description: >-
+          Accept the Unity Gaming Services terms of service to activate
+          Multiplay and start the credit period.
+        action: Activate
+        action_url: https://dashboard.unity.com/gaming-services/multiplay
+faq:
+  - question: Who is eligible for the Multiplay sign-up credit?
+    answer: >-
+      New Unity Gaming Services organizations that have not previously used
+      Multiplay receive the credit automatically upon service activation.
+  - question: When do the credits expire?
+    answer: >-
+      Credits expire six months after activating Unity Gaming Services terms of
+      service for your organization.
+  - question: Can I use the credits for other Unity services?
+    answer: >-
+      No, credits apply exclusively to Multiplay Game Server Hosting and
+      Matchmaker service charges and are non-transferable.
+  - question: What happens after I exhaust the credits?
+    answer: >-
+      Any further Multiplay Hosting and Matchmaker charges accrue at standard
+      rates and are billed at the end of each cycle.
+  - question: How can I monitor my credit usage?
+    answer: >-
+      Use the Unity Cloud Dashboard under Administration > Costs and usage
+      reporting, and watch for email notifications as credits deplete.
