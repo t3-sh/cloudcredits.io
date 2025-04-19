@@ -1,0 +1,87 @@
+draft: false
+provider_slug: xai
+title: Data Sharing Program
+meta_title: xAI Data Sharing Program - $150 Monthly API Credits
+intro: >-
+  Get $150 per month in free API credits from xAI by opting in to share your API
+  usage data.
+description: >-
+  xAI's Data Sharing Program offers developers a recurring $150 monthly credit
+  for API usage across all Grok models in exchange for consenting to share API
+  request metadata and outputs. This initiative supports AI innovation and model
+  improvement, with stringent data protection, no third-party marketing, and
+  enterprise-grade encryption. Eligible teams can enroll at the team level,
+  maintaining flexibility across multiple teams, and must meet minimal spending
+  and geographic requirements.
+status: Active
+tags:
+  - api
+  - ai
+  - data
+  - cloud
+  - llm
+url: https://api.x.ai/console/billing#credits
+value_type: credits
+currency: USD
+min_value: 150
+max_value: 150
+community_notes: []
+tiers:
+  - name: Standard Tier
+    intro: >-
+      Enroll teams to receive $150 monthly API credits in exchange for data
+      sharing.
+    max_value: 150
+    url: https://api.x.ai/console/billing#credits
+    benefits:
+      - $150 monthly API credits
+      - No data monetization or third-party marketing
+      - Team-level enrollment flexibility
+      - Enterprise-grade encryption and GDPR compliance
+    benefits_level: 2
+    duration:
+      - Recurring monthly
+    eligibility:
+      - Team must have spent at least $5 on API
+      - Only team administrators can enable data sharing
+      - Teams must not be based in excluded regions
+    effort_level: 1
+    steps_to_apply:
+      - name: Access Credits Section
+        description: Go to the Credits Section on the xAI API Console Billing page.
+        action: Open Billing Console
+        action_url: https://api.x.ai/console/billing#credits
+      - name: Verify Spending
+        description: Ensure the team has at least $5 in total API spending.
+        action: Check Usage
+      - name: Review Agreement
+        description: Read and accept the data sharing terms.
+        action: Review Terms
+      - name: Confirm Enrollment
+        description: Confirm your decision to enroll; this action is irreversible.
+        action: Confirm
+faq:
+  - question: How do I enroll in the Data Sharing Program?
+    answer: >-
+      Team administrators can opt in via the Credits Section on the xAI API
+      Console Billing page. Enrollment is permanent and cannot be reversed.
+  - question: What are the eligibility requirements?
+    answer: >-
+      Teams must have at least $5 in API spending, only team admins can enable
+      data sharing, and teams based in excluded regions are not eligible.
+  - question: Which countries are excluded from the program?
+    answer: >-
+      Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark,
+      Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy,
+      Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal,
+      Romania, Slovakia, Slovenia, Spain, Sweden, Iceland, Liechtenstein,
+      Norway, and United Kingdom.
+  - question: Can I opt out after enrolling?
+    answer: >-
+      No. Once a team opts in to data sharing, the decision is permanent and
+      cannot be undone.
+  - question: How is my data used?
+    answer: >-
+      Shared API request metadata and outputs are used solely to improve xAI
+      models and optimize service performance. Data remains protected under
+      enterprise-grade encryption and is not used for third-party marketing.
