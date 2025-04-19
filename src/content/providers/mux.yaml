@@ -1,0 +1,16 @@
+active: true
+name: Mux
+short_name: Mux
+slug: mux
+color: '#00AA3C'
+url: https://mux.com
+intro: >-
+  Empowering startups with scalable video infrastructure, providing at least
+  $500 in free credits, full access to video performance analytics, and expert
+  support.
+best_deal: At least $500 in free credits for startups
+video: ''
+tags:
+  - media
+  - analytics
+  - cloud
