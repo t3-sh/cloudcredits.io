@@ -2,6 +2,23 @@
 import Base from "@/layouts/Base.astro";
 import HeroSection from "@/layouts/components/HeroSection";
 import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+
+const allPrograms = await getCollection("programs");
+const featuredProgramTitles = [
+  "Airtable for Startups",
+  "GitHub for Startups",
+  "Notion for Startups",
+  "Perplexity for Startups",
+  "xAI Data Sharing Program",
+  "ElevenLabs 3-Month Free Business-Tier",
+];
+const featuredPrograms = allPrograms.filter((p) =>
+  featuredProgramTitles.includes(p.data.title),
+);
+const rotationAngles = [-3, -1, 2, 1, -2, 3];
 ---
 
 <Base>
@@ -9,4 +26,41 @@ import AnimatedBackground from "@/layouts/components/AnimatedBackground";
   <div class="relative flex items-center justify-center min-h-screen">
     <HeroSection client:load />
   </div>
+
+  <!-- Featured Programs Section -->
+  <section class="section py-16 relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Stellar Picks
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        {
+          featuredPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              class="relative"
+              style={`top: ${index % 3 === 0 ? "0" : index % 3 === 1 ? "1rem" : "-1rem"};`}
+              initial={{
+                opacity: 0,
+                y: 50,
+                scale: 0.8,
+                rotate: rotationAngles[index % rotationAngles.length],
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                rotate: rotationAngles[index % rotationAngles.length],
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              whileHover={{ scale: 1.05, zIndex: 10 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </Base>
