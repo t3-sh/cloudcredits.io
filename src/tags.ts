@@ -78,4 +78,5 @@ export const ALLOWED_TAGS = [
   "web design",
   "web3",
   "workflow",
+  "video",
 ] as const;
