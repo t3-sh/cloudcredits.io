@@ -1,3 +1,6 @@
+install:
+	pnpm install
+
 dev:
 	pnpm run dev
 
@@ -16,4 +19,4 @@ clean:
 format:
 	pnpm run format
 
-.PHONY: dev dev-search build preview clean format up down
+.PHONY: dev dev-search build preview clean format install

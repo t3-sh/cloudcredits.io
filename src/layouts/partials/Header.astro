@@ -4,6 +4,8 @@ import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import { IoSearch } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import social from "@/config/social.json";
 
 export interface ChildNavigationLink {
   name: string;
@@ -20,6 +22,7 @@ export interface NavigationLink {
 const { main }: { main: NavigationLink[] } = menu;
 const { navigation_button, settings } = config;
 const { pathname } = Astro.url;
+const github = social.main.find((item) => item.name === "github");
 ---
 
 <header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`}>
@@ -137,6 +140,19 @@ const { pathname } = Astro.url;
             href={navigation_button.link}
           >
             {navigation_button.label}
+          </a>
+        )
+      }
+      {
+        github && (
+          <a
+            href={github.link}
+            class="text-xl text-dark dark:text-white hover:text-primary dark:hover:text-darkmode-primary ml-5"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
           </a>
         )
       }
