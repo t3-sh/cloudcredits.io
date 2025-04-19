@@ -1,0 +1,20 @@
+active: true
+name: xAI
+short_name: xAI
+slug: xai
+color: '#2196F3'
+url: https://api.x.ai/console/billing#credits
+intro: >-
+  xAI's Data Sharing Program offers developers a recurring $150 monthly credit
+  for API usage across all Grok models in exchange for consenting to share API
+  request metadata and outputs. This initiative supports AI innovation and model
+  improvement, with stringent data protection, no third-party marketing, and
+  enterprise-grade encryption.
+best_deal: $150 Monthly API Credits
+video: ''
+tags:
+  - api
+  - ai
+  - data
+  - cloud
+  - llm
