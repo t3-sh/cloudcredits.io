@@ -1,0 +1,72 @@
+draft: false
+provider_slug: mux
+title: Mux Startup Program
+meta_title: Mux Startup Program - Empowering Startups with Scalable Video Infrastructure
+intro: >-
+  Receive at least $500 in free credits, full access to video performance
+  analytics via Mux Data, and expert support to build world-class video
+  experiences.
+description: >-
+  Mux's startup program is designed for early-stage companies that are new to
+  Mux. It offers a minimum of $500 in credits for encoding, storage, and
+  delivery of live and on-demand video, with potential for additional credits
+  based on investor relationships. The program also provides free access to Mux
+  Data for in-depth video analytics and expert guidance, including possible
+  consultations with Mux's co-founders. Credits must be used within 12 months of
+  activation, giving startups a year to fully leverage Mux's scalable and
+  flexible video infrastructure.
+status: Active
+tags:
+  - media
+  - analytics
+  - cloud
+url: https://mux.com/startups
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 500
+community_notes:
+  - title: Consistent Quality and Performance
+    body: >-
+      Mux has been praised for its consistency and quality, with streamers
+      noting excellent performance and reliability.
+    source_url: https://mux.com/testimonials
+  - title: Scalable and Cost-Effective
+    body: >-
+      Startups have leveraged Mux credits to scale video content while keeping
+      infrastructure costs manageable.
+    source_url: https://mux.com/testimonials
+  - title: Expert Support and Guidance
+    body: >-
+      Mux provides hands-on support from industry experts, helping startups
+      navigate video technology challenges.
+    source_url: https://mux.com/testimonials
+tiers:
+  - name: Base Tier
+    intro: >-
+      Get at least $500 in free credits along with full access to Mux Data and
+      expert support to jumpstart your video projects.
+    max_value: 500
+    url: https://mux.com/startups
+    benefits:
+      - $500+ in free credits for encoding, storage, and delivery
+      - Free access to Mux Data for video performance analytics
+      - Expert support including potential consultation with co-founders
+      - Scalable infrastructure for live and on-demand streaming
+      - Flexible integration for any business model
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Early-stage startups
+      - Not an existing Mux customer
+      - First-time Mux credit recipients
+    effort_level: 1
+    steps_to_apply: []
+faq:
+  - question: Who is eligible for the Mux Startup Program?
+    answer: >-
+      The program is exclusive to early-stage startups that are first-time Mux
+      credit recipients and are not current Mux customers.
+  - question: How long are the credits valid?
+    answer: Credits must be used within 12 months of activation.
