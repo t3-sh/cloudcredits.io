@@ -10,11 +10,11 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
   const MAX_LENGTH = 500;
   const placeholders = [
     "find a free KYC as a service API for a fintech startup",
-    "looking at least $30k for GPUs credits to scale my AI startup, simple application process",
-    "i need text-to-speech and voice generating API credits for my call answering SaaS",
-    "i need free access to a quantum computer for my research",
-    "i need a free or very cheap kubernetes cluster for my school project",
-    "email campaign and customer support for a marketing agency",
+    "looking for at least $30k in GPU credits to scale my AI startup, simple application process",
+    "I need text-to-speech and voice generating API credits for my call answering SaaS",
+    "I need free access to a quantum computer for my research",
+    "I need a free or very cheap Kubernetes cluster for my school project",
+    "need email campaign and customer support tools for a marketing agency",
   ];
 
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
