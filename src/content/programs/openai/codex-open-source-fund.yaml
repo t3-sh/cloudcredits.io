@@ -1,0 +1,58 @@
+draft: false
+provider_slug: openai
+title: Codex Open Source Fund
+meta_title: OpenAI Codex Open Source Fund
+intro: "Open-source projects building with Codex CLI or OpenAI models can apply for $25,000 API credit grants, part of a $1\_million initiative by OpenAI."
+description: "The Codex Open Source Fund is a $1\_million initiative by OpenAI to support open-source projects that integrate Codex CLI or other OpenAI models. Grants are awarded in increments of $25,000 in OpenAI API credits, distributed on a rolling basis. Participants also gain technical guidance from the OpenAI team and ecosystem support to accelerate adoption of Codex CLI across diverse programming languages, including Python, JavaScript, and Shell."
+status: Active
+tags:
+  - open source
+  - openai
+  - api
+  - ai
+url: https://openai.com/form/codex-open-source-fund/
+value_type: credits
+currency: USD
+min_value: 25000
+max_value: 25000
+community_notes: []
+tiers:
+  - name: API Credit Grants
+    intro: >-
+      Grants awarded in increments of $25,000 in OpenAI API credits on a rolling
+      basis.
+    max_value: 25000
+    url: https://openai.com/form/codex-open-source-fund/
+    benefits:
+      - $25,000 OpenAI API credits per grant
+      - Technical guidance from OpenAI team
+      - Ecosystem support for Codex CLI adoption
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - Open-source projects integrating Codex CLI or OpenAI models
+      - Projects aligned with OpenAI’s mission of safe and beneficial AI
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out and submit the application form to apply for the fund.
+        action: Apply
+        action_url: https://openai.com/form/codex-open-source-fund/
+faq:
+  - question: What is Codex CLI?
+    answer: >-
+      A lightweight, open-source tool that runs AI-powered code suggestions
+      directly in your terminal. It processes code locally, enhancing security
+      and speed.
+  - question: Can non-developers apply?
+    answer: >-
+      The fund prioritizes technical projects, but interdisciplinary teams are
+      encouraged if they integrate Codex CLI effectively.
+  - question: Are there usage restrictions?
+    answer: >-
+      API credits must be used for projects compliant with OpenAI’s usage
+      policies.
+  - question: How are applications reviewed?
+    answer: >-
+      Proposals are reviewed on a rolling basis with no fixed deadline. Selected
+      projects receive grants and technical guidance from the OpenAI team.
