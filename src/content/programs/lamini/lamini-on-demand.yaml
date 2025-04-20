@@ -1,0 +1,86 @@
+draft: false
+provider_slug: lamini
+title: Lamini On-Demand
+meta_title: Lamini On-Demand - $300 Free Credit
+intro: >-
+  Get $300 in free credit to explore Lamini On-Demand’s high-performance GPU
+  cluster for LLM tuning and inference with no long-term commitments.
+description: >-
+  Lamini On-Demand provides a self-service, pay-as-you-go platform for running
+  LLM tuning and inference jobs on a high-performance GPU cluster. New and
+  existing users receive $300 in free credit to get started. Inference is billed
+  at $0.50 per million tokens, covering input, output, and JSON structured
+  responses. Tuning costs $1 per step on one GPU, scaling linearly with
+  additional GPUs for faster performance. Users benefit from advanced features
+  like memory tuning for mixture-of-experts models, guaranteed JSON output, and
+  flexible burst across GPUs. Credits can be purchased in $100 increments via
+  the account dashboard. For enterprise-scale needs, Lamini also offers Reserved
+  GPU clusters and Self-Managed licenses for on-premise or air-gapped
+  deployments.
+status: Active
+tags:
+  - ai
+  - gpu
+  - llm
+  - cloud
+  - api
+url: https://app.lamini.ai/account
+value_type: credits
+currency: USD
+min_value: 300
+max_value: 300
+community_notes: []
+tiers:
+  - name: On-Demand Pay-as-you-go
+    intro: >-
+      Access GPU tuning and inference with $300 free credit and simple
+      usage-based pricing.
+    max_value: 300
+    url: https://app.lamini.ai/account
+    benefits:
+      - $300 free credit upon signup
+      - $0.50 per million inference tokens
+      - $1 per tuning step per GPU (linear scaling)
+      - Memory Tuning for mixture-of-experts models
+      - Burst tuning across multiple GPUs
+    benefits_level: 3
+    duration:
+      - Until credits are exhausted
+    eligibility:
+      - New and existing Lamini users
+      - No long-term commitments required
+    effort_level: 1
+    steps_to_apply:
+      - name: Create a Lamini account
+        description: >-
+          Sign up on the Lamini platform to automatically receive $300 in free
+          credit.
+        action: Sign Up
+        action_url: https://app.lamini.ai/account
+      - name: Run your first job
+        description: >-
+          Start a tuning or inference job in the On-Demand dashboard to utilize
+          your free credit.
+        action: Use Now
+        action_url: https://app.lamini.ai/account
+faq:
+  - question: How do I redeem the $300 free credit?
+    answer: >-
+      The $300 free credit is automatically applied to your Lamini account after
+      signing up or logging in to the On-Demand platform.
+  - question: Does the free credit expire?
+    answer: >-
+      There is no specified expiration date; credits remain valid until they are
+      fully used.
+  - question: What are the rates after the free credit?
+    answer: >-
+      Inference costs $0.50 per million tokens, and tuning costs $1 per step on
+      one GPU, scaling linearly with additional GPUs.
+  - question: Can I purchase more credit?
+    answer: >-
+      Yes, you can buy additional credits in $100 increments from your account
+      dashboard.
+  - question: Are there other deployment options?
+    answer: >-
+      For larger or dedicated workloads, Lamini offers Reserved GPU clusters and
+      Self-Managed licenses for on-premise or air-gapped environments.
