@@ -1,0 +1,17 @@
+active: true
+name: Chargebee
+short_name: Chargebee
+slug: chargebee
+color: '#500ad2'
+url: https://www.chargebee.com
+intro: >-
+  Subscription billing platform offering automation, analytics, and tiered
+  startup discounts with white-glove onboarding support.
+best_deal: 40% off Y1 & 20% off Y2 Performance Plan
+video: ''
+tags:
+  - b2b
+  - automation
+  - finance
+  - saas
+  - onboarding
