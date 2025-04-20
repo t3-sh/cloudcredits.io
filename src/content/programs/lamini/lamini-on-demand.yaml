@@ -43,7 +43,7 @@ tiers:
       - $1 per tuning step per GPU (linear scaling)
       - Memory Tuning for mixture-of-experts models
       - Burst tuning across multiple GPUs
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - Until credits are exhausted
     eligibility:
