@@ -42,7 +42,7 @@ tiers:
         Access to pricing experimentation, invoicing automation, tax compliance,
         and revenue reporting tools
       - Unified customer portal for subscription management
-    benefits_level: 3
+    benefits_level: 2
     duration:
       - 2 years
     eligibility:
