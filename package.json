@@ -7,12 +7,13 @@
   "packageManager": "pnpm@10.8.1",
   "scripts": {
     "dev": "astro dev",
-    "dev:search": "astro build && npx pagefind --site dist/client && npx shx cp -r dist/client/pagefind public/ && astro dev",
-    "build": "astro build && npx pagefind --site dist/client",
+    "build": "astro build && pagefind --site .vercel/output/static && cp -r .vercel/output/static/pagefind public/",
     "preview": "astro preview",
+    "astro": "astro",
+    "build:local": "pnpm run clean:pagefind && pnpm run build",
+    "clean:pagefind": "rm -rf public/pagefind",
     "check": "astro check",
-    "format": "prettier -w ./src",
-    "clean": "rm -rf dist/ node_modules/.vite public/pagefind"
+    "format": "prettier -w ./src"
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",

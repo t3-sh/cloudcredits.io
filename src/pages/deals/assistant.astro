@@ -50,8 +50,6 @@ if (prompt) {
       },
     );
 
-    console.log(response);
-
     if (!response.ok) {
       let msg = `:/ AI can't handle this right now. Please try again later.`;
       if (response.status >= 400 && response.status < 500) {
