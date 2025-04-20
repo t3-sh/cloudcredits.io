@@ -1,0 +1,125 @@
+draft: false
+provider_slug: chargebee
+title: 'Chargebee Startup Program: Billing Foundations that Unlock Recurring Growth'
+meta_title: Chargebee Startup Program – Billing Foundations that Unlock Recurring Growth
+intro: >-
+  Eligible startups can save over $4,000 across two years with tiered discounts
+  on Chargebee's Performance Plan and get white-glove onboarding support.
+description: >-
+  Chargebee’s Startup Program provides early-stage companies with tiered
+  discounts on its Performance Plan, white-glove onboarding support, and
+  comprehensive subscription management tools. Participants can save over $4,000
+  across two years with 40% off in year one and 20% off in year two, while
+  accessing features such as pricing experimentation, automated invoicing,
+  revenue analytics, tax compliance, and customer portal capabilities. The
+  program is designed for new Chargebee customers within Chargebee’s Partner
+  Accelerator/VC network that have raised under $5M.
+status: Active
+tags:
+  - b2b
+  - automation
+  - finance
+  - saas
+  - onboarding
+url: https://www.chargebee.com/trial-signup/?ref=partnerstartups
+value_type: discount
+currency: USD
+min_value: 20
+max_value: 40
+community_notes: []
+tiers:
+  - name: Performance Plan Discount
+    intro: >-
+      Save 40% on the Performance Plan in year one and 20% in year two, plus
+      white-glove onboarding support.
+    max_value: 40
+    url: https://www.chargebee.com/trial-signup/?ref=partnerstartups
+    benefits:
+      - 40% off Performance Plan for the first year
+      - 20% off Performance Plan for the second year
+      - White-glove onboarding support
+      - >-
+        Access to pricing experimentation, invoicing automation, tax compliance,
+        and revenue reporting tools
+      - Unified customer portal for subscription management
+    benefits_level: 3
+    duration:
+      - 2 years
+    eligibility:
+      - Member of Chargebee’s Partner Accelerator/VC network
+      - New Chargebee customer
+      - Raised less than $5 million in funding
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit application form
+        description: Fill out the online application form on Chargebee's website.
+        action: Apply Now
+        action_url: https://www.chargebee.com/trial-signup/?ref=partnerstartups
+      - name: Application review
+        description: >-
+          Chargebee's team will review your application and contact you with
+          next steps.
+  - name: Starter Plan
+    intro: >-
+      Free until $250K in cumulative billing, then 0.75% fee on billing
+      thereafter.
+    max_value: 100
+    url: https://www.chargebee.com/trial-signup/?ref=partnerstartups
+    benefits:
+      - Free usage up to $250,000 in billing
+      - 0.75% fee on billing after threshold
+      - Access to core subscription management features
+      - Basic analytics and reporting
+      - Self-service sign-up with no upfront commitment
+    benefits_level: 1
+    duration:
+      - Until $250,000 cumulative billing
+    eligibility:
+      - Available to any startup evaluating Chargebee
+      - No partner network or funding requirements
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign up for Starter Plan
+        description: >-
+          Create a Chargebee account and sign up for the Starter Plan on the
+          free trial page.
+        action: Sign Up
+        action_url: https://www.chargebee.com/trial-signup/?ref=partnerstartups
+faq:
+  - question: What does the Chargebee for Startups offer include?
+    answer: >-
+      Eligible startups receive 40% off the Performance Plan for the first year
+      and 20% off for the second year, full access to Chargebee’s billing,
+      reporting, and automation tools, and white-glove onboarding support—saving
+      over $4,000 across two years.
+  - question: Who is eligible for the Chargebee for Startups offer?
+    answer: >-
+      Startups must be new Chargebee customers, part of Chargebee’s Partner
+      Accelerator/VC network, and have raised less than $5 million in funding.
+  - question: How do I apply for the offer?
+    answer: >-
+      Fill out the online application form on Chargebee’s website. The Chargebee
+      team will review your application and contact you with the next steps.
+  - question: Do you have an offer if my startup is not ready for the Performance Plan?
+    answer: >-
+      Yes. Startups can begin with the Starter Plan, which is free until $250K
+      in cumulative billing and then incurs a 0.75% fee on billing thereafter.
+  - question: What kind of onboarding support will I receive?
+    answer: >-
+      A Chargebee onboarding specialist will conduct a personalized call to
+      understand your business needs and map out a tailored implementation plan.
+  - question: How do I know if my accelerator or VC is a Chargebee partner?
+    answer: >-
+      Check your accelerator or VC perks directory for Chargebee Billing’s offer
+      or reach out to your program manager. If not listed, ask them to contact
+      partnerships@chargebee.com.
+  - question: >-
+      Why am I seeing a different Chargebee offer on my accelerator/VC's
+      directory?
+    answer: >-
+      Some partner directories may not be updated. Ask your accelerator or VC
+      program manager to contact Chargebee for the latest offer details.
+  - question: How can I contact support if I have questions?
+    answer: >-
+      Reach out via the chat feature on Chargebee’s website or email
+      startups@chargebee.com.
