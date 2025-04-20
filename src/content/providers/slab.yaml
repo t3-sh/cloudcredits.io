@@ -1,0 +1,16 @@
+active: true
+name: Slab
+short_name: Slab
+slug: slab
+color: "#ff4143"
+url: https://slab.com/nonprofits-education
+intro: >-
+  Knowledge management platform offering collaborative documentation solutions
+  for teams, now discounted for nonprofits and educational institutions.
+best_deal: Free Startup Plan or 50% off Business Plan
+video: ""
+tags:
+  - docs
+  - collaboration
+  - education
+  - saas

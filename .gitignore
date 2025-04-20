@@ -10,6 +10,7 @@ _site/
 .vercel
 .netlify
 .turbo/
+public/pagefind/
 
 # logs and caches
 *.log

@@ -1,0 +1,116 @@
+draft: false
+provider_slug: slab
+title: Slab Nonprofit & Education Discount Program
+meta_title: Slab Discounts for Nonprofits and Educational Institutions
+intro: >-
+  Registered nonprofit organizations and accredited educational institutions
+  receive free access to Slab's Startup Plan and 50% off the Business Plan to
+  power collaborative documentation and knowledge sharing.
+description: >-
+  Slab's Nonprofit & Education Discount Program enables registered nonprofit
+  organizations, accredited educational institutions, school districts, and
+  academic departments to access their knowledge management platform at reduced
+  cost. Eligible participants can apply through a simple online form to verify
+  their status and choose between a free Startup Plan with unlimited users or a
+  50% discount on the Business Plan. The program applies to new and existing
+  accounts without user caps and unlocks features such as collaborative
+  documentation tools, integrations with Slack, Google Workspace, and GitHub,
+  advanced search, and API access.
+status: Active
+tags:
+  - docs
+  - collaboration
+  - education
+  - saas
+url: https://slab.com/nonprofits-education
+value_type: discount
+currency: USD
+min_value: 50
+max_value: 100
+community_notes: []
+tiers:
+  - name: Startup Plan (100% off)
+    intro: >-
+      Eligible organizations receive Slab's Startup Plan free with unlimited
+      users.
+    max_value: 100
+    url: https://slab.com/nonprofits-education
+    benefits:
+      - Unlimited users
+      - Collaborative documentation tools
+      - Slack, Google Workspace, and GitHub integrations
+      - Advanced search functionality
+      - API access
+    benefits_level: 2
+    duration:
+      - Ongoing with verified status
+    eligibility:
+      - Registered nonprofit organizations
+      - Accredited educational institutions
+      - School districts and academic departments
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit application
+        description: >-
+          Provide your official email address, team URL, organization purpose
+          (nonprofit or educational), plan selection, and website URL via Slab's
+          dedicated portal.
+        action: Apply Now
+        action_url: https://slab.com/nonprofits-education
+      - name: Verify organization
+        description: >-
+          Slab will verify your organizational website and approve your
+          discount, typically within a few business days.
+  - name: Business Plan (50% off)
+    intro: Eligible organizations receive 50% off Slab's Business Plan.
+    max_value: 50
+    url: https://slab.com/nonprofits-education
+    benefits:
+      - 50% off standard Business Plan pricing
+      - Unlimited users
+      - Collaborative documentation tools
+      - Integrations with Slack, Google Workspace, and GitHub
+      - Advanced search and API access
+    benefits_level: 2
+    duration:
+      - Ongoing with verified status
+    eligibility:
+      - Registered nonprofit organizations
+      - Accredited educational institutions
+      - School districts and academic departments
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit application
+        description: >-
+          Provide your official email address, team URL, organization purpose
+          (nonprofit or educational), plan selection, and website URL via Slab's
+          dedicated portal.
+        action: Apply Now
+        action_url: https://slab.com/nonprofits-education
+      - name: Verify organization
+        description: >-
+          Slab will verify your organizational website and approve your
+          discount, typically within a few business days.
+faq:
+  - question: Who is eligible for the program?
+    answer: >-
+      Registered nonprofit organizations, accredited educational institutions,
+      school districts, and academic departments can apply for the discount
+      program.
+  - question: What plans are included?
+    answer: >-
+      Eligible organizations can receive the Startup Plan free with unlimited
+      users or 50% off the Business Plan.
+  - question: How do I apply?
+    answer: >-
+      Submit your organizational details via Slab's dedicated portal. Slab will
+      verify your status and email you an approval, typically within a few
+      business days.
+  - question: Can existing Slab accounts participate?
+    answer: >-
+      Yes, the discount program is available to both new and existing accounts
+      with no user caps.
+  - question: Are there any additional fees or paperwork?
+    answer: >-
+      No additional paperwork is required beyond the online form, and there are
+      no participation fees.
