@@ -1,0 +1,74 @@
+draft: false
+provider_slug: snyk
+title: Secure Developer Program
+intro: >-
+  Independent open-source projects receive unlimited Snyk Enterprise security
+  tooling, dedicated security advisory, community access, and co‑branding
+  opportunities.
+description: >-
+  Snyk’s Secure Developer Program empowers non‑corporate-backed open‑source
+  maintainers by granting full enterprise‑grade Snyk licenses with unlimited
+  usage for vulnerability scanning, license compliance checks, and continuous
+  integration pipeline integration. Participants gain direct collaboration with
+  Snyk’s Developer Relations team, an invite to a dedicated Discord server for
+  peer networking and security Q&A, and co‑branding visibility on Snyk’s
+  platform.
+status: Active
+tags:
+  - cybersecurity
+  - open source
+  - dev tools
+  - devops
+url: https://partners.snyk.io/prm/English/c/developer_application
+value_type: credits
+currency: USD
+max_value: 0
+community_notes: []
+tiers:
+  - name: Secure Developer Program
+    intro: >-
+      Non‑corporate-backed open‑source projects receive full Snyk Enterprise
+      entitlements with expert support and community access.
+    max_value: 0
+    url: https://partners.snyk.io/prm/English/c/developer_application
+    benefits:
+      - Unlimited Snyk Enterprise licenses for qualifying open‑source projects
+      - Vulnerability scanning and license compliance features
+      - >-
+        Dedicated security advisory for CI/CD and development environment
+        integration
+      - Invite to Snyk Discord for peer networking and security Q&A
+      - Co‑branding opportunities with Snyk
+    benefits_level: 3
+    duration: []
+    eligibility:
+      - Independent open‑source projects not backed by any corporate entity
+      - Projects with at least 10,000 GitHub stars
+      - >-
+        Commitment to display Snyk logo and link back in project README and
+        website
+      - Permission for Snyk to use project logo and related content
+      - Active engagement with Snyk’s Developer Relations team and community
+    effort_level: 2
+    steps_to_apply:
+      - name: Apply for existing projects
+        description: >-
+          Click the button to apply under the existing open‑source project
+          application form.
+        action: Apply Now
+        action_url: https://partners.snyk.io/prm/English/c/developer_application
+      - name: Apply for new projects
+        description: >-
+          Submit details through the new project application form to join the
+          program.
+        action: Apply Now
+        action_url: https://partners.snyk.io/prm/English/c/developer_project_application
+faq:
+  - question: Can corporate‑sponsored projects apply?
+    answer: >-
+      No—only independent, community‑driven open‑source projects qualify for the
+      Secure Developer Program.
+  - question: Are Snyk licenses usable for private or non‑open‑source projects?
+    answer: >-
+      No—full Snyk Enterprise entitlements provided under this program are
+      restricted to approved open‑source projects only.
