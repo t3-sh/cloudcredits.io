@@ -10,6 +10,7 @@ import config from "./src/config/config.json";
 import sharp from "sharp";
 
 import vercel from "@astrojs/vercel";
+import { pagefindCopier } from './pagefind-copier.js';
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,6 +41,7 @@ export default defineConfig({
       ],
     }),
     mdx(),
+    pagefindCopier(),
   ],
 
   markdown: {

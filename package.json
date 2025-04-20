@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:search": "astro build && npx pagefind --site dist/client && npx shx cp -r dist/client/pagefind public/ && astro dev",
-    "build": "astro build && npx pagefind --site dist/client && npx shx cp -r dist/client/pagefind public/",
+    "build": "astro build && npx pagefind --site dist/client",
     "preview": "astro preview",
     "check": "astro check",
     "format": "prettier -w ./src",
