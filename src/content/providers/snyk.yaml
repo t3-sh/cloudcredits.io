@@ -1,0 +1,17 @@
+active: true
+name: Snyk
+short_name: Snyk
+slug: snyk
+color: '#145DEB'
+url: https://www.snyk.io
+intro: >-
+  Snyk’s Secure Developer Program empowers independent open-source maintainers
+  with unlimited enterprise-grade security tooling, dedicated advisory, and
+  community access.
+best_deal: Unlimited Snyk Enterprise licenses for open-source
+video: ''
+tags:
+  - cybersecurity
+  - open source
+  - dev tools
+  - devops
