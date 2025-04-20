@@ -1,0 +1,17 @@
+active: true
+name: Lamini
+short_name: Lamini
+slug: lamini
+color: '#ff6c71'
+url: https://app.lamini.ai/account
+intro: >-
+  Get $300 in free credit to explore Lamini On-Demand’s high-performance GPU
+  cluster for LLM tuning and inference with no long-term commitments.
+best_deal: $300 free credit for GPU cluster usage
+video: ''
+tags:
+  - ai
+  - gpu
+  - llm
+  - cloud
+  - api
