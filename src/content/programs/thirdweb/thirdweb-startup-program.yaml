@@ -41,7 +41,7 @@ tiers:
         Access to audited smart contracts, developer tools, and wallet
         infrastructure for 2,000+ EVM chains
       - Expert workshops, office hours, and community networking opportunities
-    benefits_level: 3
+    benefits_level: 1
     duration:
       - 4 weeks intensive program
       - 3 months free infrastructure access
@@ -49,7 +49,7 @@ tiers:
       - Startups building web3 applications or games
       - Projects exploring AI/blockchain integration
       - Teams at any stage, from ideation to scaling
-    effort_level: 2
+    effort_level: 1
     steps_to_apply:
       - name: Check eligibility
         description: >-
