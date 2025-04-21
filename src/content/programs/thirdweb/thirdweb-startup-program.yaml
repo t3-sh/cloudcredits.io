@@ -1,0 +1,74 @@
+draft: false
+provider_slug: thirdweb
+title: thirdweb Startup Program
+intro: >-
+  Receive over $690 in value including $100 usage credits, three months free of
+  Growth Plan and Standard Engine Plan, plus mentorship and resources to
+  accelerate web3 and AI development.
+description: >-
+  thirdweb's Startup Program is a four-week intensive accelerator designed to
+  help startups build, scale, and generate revenue by integrating blockchain and
+  AI. Participants receive $100 in usage credits, three free months each of the
+  Growth Plan and Standard Engine Plan, and access to audited smart contracts,
+  developer tools, and wallet infrastructure across 2,000+ EVM chains. The
+  program also offers expert workshops, AMAs, office hours with mentors, and
+  networking opportunities in thirdweb’s community, along with demo exposure to
+  investors and partners.
+status: Active
+tags:
+  - web3
+  - blockchain
+  - ai
+  - dev tools
+url: https://thirdweb.com/community/startup-program
+value_type: credits
+currency: USD
+min_value: 100
+max_value: 690
+community_notes: []
+tiers:
+  - name: thirdweb Startup Program
+    intro: >-
+      Four-week intensive web3 and AI accelerator with infrastructure credits
+      and mentorship.
+    max_value: 690
+    url: https://thirdweb.com/community/startup-program
+    benefits:
+      - $100 usage credits
+      - 3 months free Growth Plan ($297 value)
+      - 3 months free Standard Engine Plan ($297 value)
+      - >-
+        Access to audited smart contracts, developer tools, and wallet
+        infrastructure for 2,000+ EVM chains
+      - Expert workshops, office hours, and community networking opportunities
+    benefits_level: 3
+    duration:
+      - 4 weeks intensive program
+      - 3 months free infrastructure access
+    eligibility:
+      - Startups building web3 applications or games
+      - Projects exploring AI/blockchain integration
+      - Teams at any stage, from ideation to scaling
+    effort_level: 2
+    steps_to_apply:
+      - name: Check eligibility
+        description: >-
+          Review the program requirements to ensure your startup aligns with the
+          web3 and AI integration focus areas.
+        action: Review Criteria
+        action_url: https://thirdweb.com/community/startup-program
+      - name: Submit application
+        description: Complete the application form on the thirdweb Startup Program portal.
+        action: Apply Now
+        action_url: https://thirdweb.com/community/startup-program
+faq:
+  - question: Is there any cost to join the program?
+    answer: No, the program is fully subsidized for accepted teams.
+  - question: How long does the program last?
+    answer: >-
+      The accelerator runs for 4 weeks, followed by 3 months of free
+      infrastructure access.
+  - question: How do I apply?
+    answer: >-
+      Submit your application through the thirdweb Startup Program portal:
+      https://thirdweb.com/community/startup-program.
