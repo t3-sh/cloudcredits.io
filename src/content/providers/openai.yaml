@@ -2,13 +2,13 @@ active: true
 name: OpenAI
 short_name: OpenAI
 slug: openai
-color: '#2BDFDC'
+color: "#2BDFDC"
 url: https://openai.com
 intro: >-
   AI research lab offering cutting-edge models and APIs, including support
   initiatives like the Codex Open Source Fund.
 best_deal: $25,000 API credit grants
-video: ''
+video: ""
 tags:
   - ai
   - api

@@ -4,11 +4,11 @@ install:
 dev:
 	pnpm run dev
 
-dev-search:
-	pnpm run dev:search
+dev-search: build
+	pnpm run dev
 
 build:
-	pnpm run build
+	pnpm run build:local
 
 preview: build
 	pnpm run preview
