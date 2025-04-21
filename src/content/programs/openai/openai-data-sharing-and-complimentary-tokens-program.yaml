@@ -1,0 +1,119 @@
+draft: false
+provider_slug: openai
+title: OpenAI Data Sharing and Complimentary Tokens Program
+meta_title: OpenAI Data Sharing - Complimentary Token Incentive
+intro: "Organizations can opt in to share feedback, evaluations, and API usage data with OpenAI to help improve models and receive up to 11\_M complimentary tokens per day."
+description: >-
+  OpenAI's Data Sharing Program allows API users to contribute feedback,
+  evaluation data, prompts, completions, and traces to support model improvement
+  and research. Participants maintain granular control over their data sharing
+  settings at the organization or project level, with the ability to opt in or
+  out at any time. Eligible organizations receive daily complimentary tokens on
+  shared API traffic for specified GPT-4 and o‑series models, helping offset
+  usage costs while contributing to future model advancements.
+status: Active
+tags:
+  - api
+  - ai
+  - agents
+  - data
+  - openai
+url: https://platform.openai.com/docs/guides/data-sharing
+value_type: credits
+currency: USD
+min_value: 50
+max_value: 2000
+community_notes: []
+tiers:
+  - name: Usage Tiers 1-2 Complimentary Tokens
+    intro: "Organizations in usage Tiers\_1‑2 receive daily complimentary tokens on shared API traffic."
+    max_value: 50
+    url: https://platform.openai.com/account/data-sharing
+    benefits:
+      - "Up to 250\_000 free tokens per day for gpt-4.5-preview, gpt-4.1, gpt-4o, o1, and o1-preview models"
+      - "Up to 2\_500\_000 free tokens per day for gpt-4.1-mini, gpt-4.1-nano, gpt-4o-mini, o1-mini, and o3-mini models"
+      - Automatic application upon enabling data sharing
+      - Granular control over which projects share data
+    benefits_level: 2
+    duration:
+      - Daily (refreshes at 00:00 UTC)
+    eligibility:
+      - >-
+        Account owner must enable data sharing at the organization or project
+        level
+      - >-
+        Organization must not have Zero Data Retention enabled or be on certain
+        Enterprise plans
+      - Utilization of approved GPT-4 and o‑series models
+      - "Membership in usage Tiers\_1 or\_2"
+    effort_level: 2
+    steps_to_apply:
+      - name: Opt in to Data Sharing
+        description: >-
+          Organization owners navigate to the data sharing settings in the
+          OpenAI API Dashboard and enable sharing for all or selected projects.
+        action: Enable Sharing
+        action_url: https://platform.openai.com/account/data-sharing
+      - name: Confirm Eligibility
+        description: >-
+          Check the data sharing page to see if the "You're eligible for free
+          daily usage on traffic shared with OpenAI" message appears.
+        action: Verify Eligibility
+        action_url: https://platform.openai.com/account/data-sharing
+  - name: Usage Tiers 3-5 Complimentary Tokens
+    intro: "Organizations in usage Tiers\_3‑5 receive higher daily complimentary tokens on shared API traffic."
+    max_value: 2000
+    url: https://platform.openai.com/account/data-sharing
+    benefits:
+      - "Up to 1\_000\_000 free tokens per day for gpt-4.5-preview, gpt-4.1, gpt-4o, o1, and o1-preview models"
+      - "Up to 10\_000\_000 free tokens per day for gpt-4.1-mini, gpt-4.1-nano, gpt-4o-mini, o1-mini, and o3-mini models"
+      - Automatic application upon enabling data sharing
+      - Granular control over which projects share data
+    benefits_level: 2
+    duration:
+      - Daily (refreshes at 00:00 UTC)
+    eligibility:
+      - >-
+        Account owner must enable data sharing at the organization or project
+        level
+      - >-
+        Organization must not have Zero Data Retention enabled or be on certain
+        Enterprise plans
+      - Utilization of approved GPT-4 and o‑series models
+      - "Membership in usage Tiers\_3,\_4, or\_5"
+    effort_level: 2
+    steps_to_apply:
+      - name: Opt in to Data Sharing
+        description: >-
+          Organization owners navigate to the data sharing settings in the
+          OpenAI API Dashboard and enable sharing for all or selected projects.
+        action: Enable Sharing
+        action_url: https://platform.openai.com/account/data-sharing
+      - name: Confirm Enrollment
+        description: "Check the data sharing page to see if the \"You're enrolled for up to 11\_million complimentary tokens per day\" message appears."
+        action: Verify Enrollment
+        action_url: https://platform.openai.com/account/data-sharing
+faq:
+  - question: What is the OpenAI Data Sharing Program?
+    answer: >-
+      An initiative allowing organizations to share feedback, evaluation
+      results, prompts, completions, and traces to help improve OpenAI models in
+      exchange for complimentary daily tokens.
+  - question: How do I opt in to share data?
+    answer: >-
+      Organization owners can navigate to the API Dashboard data sharing
+      settings and enable data sharing for all or selected projects; members can
+      then submit feedback or share traffic.
+  - question: How are complimentary tokens applied?
+    answer: "Once data sharing is enabled and eligibility confirmed, free daily tokens are automatically applied to shared usage on supported GPT-4 and o‑series models; tokens refresh daily at 00:00\_UTC."
+  - question: Which models are eligible for complimentary tokens?
+    answer: >-
+      Supported models include gpt-4.5-preview-2025-02-27, gpt-4.1-2025-04-14,
+      gpt-4o-2024-05-13, gpt-4o-2024-08-06, gpt-4o-2024-11-20, o3-2025-04-16,
+      o1-preview-2024-09-12, o1-2024-12-17, gpt-4.1-mini-2025-04-14,
+      gpt-4.1-nano-2025-04-14, gpt-4o-mini-2024-07-18, o4-mini-2025-04-16,
+      o1-mini-2024-09-12, and o3-mini-2025-01-31.
+  - question: Can I opt out if I don't want to share data?
+    answer: >-
+      Yes, you can disable data sharing at any time via the data sharing
+      settings page.
