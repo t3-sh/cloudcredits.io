@@ -1,0 +1,17 @@
+draft: false
+active: true
+name: RemotePass
+short_name: RemotePass
+slug: remotepass
+color: "#4D61FC"
+url: https://www.remotepass.com/startup-program
+intro: >-
+  RemotePass offers early-stage startups with less than $5M in funding significant discounts 
+  on their global hiring platform, including 1 month free and then 33% off for 9 months for contractors.
+best_deal: 1mo free + 33% off for 9 months
+video: ""
+tags:
+  - hr
+  - enterprise
+  - saas
+  - compliance

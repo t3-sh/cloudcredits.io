@@ -1,0 +1,66 @@
+draft: false
+provider_slug: remotepass
+title: RemotePass Startup Program
+meta_title: 1 Month Free + 33% Off for 9 Months for Contractors
+intro: >-
+  RemotePass offers early-stage startups significant discounts on their global hiring platform, 
+  helping companies hire and manage contractors and employees worldwide.
+description: >-
+  RemotePass's startup program helps early-stage companies hire globally with significant 
+  discounts. The program includes 1 month free followed by 33% off for 9 months for 
+  contractors, plus 15% off employee hiring for a full year. The platform enables 
+  compliant hiring in 120+ countries, with features for payroll, benefits management, 
+  and contractor payments.
+status: Active
+tags:
+  - hr
+  - enterprise
+  - saas
+  - compliance
+url: https://www.remotepass.com/startup-program
+value_type: discount
+currency: USD
+max_value: 33
+community_notes: []
+tiers:
+  - name: Contractor Hiring Discount
+    intro: >-
+      1 month free followed by 33% off for 9 months on contractor hiring
+    max_value: 33
+    url: https://www.remotepass.com/startup-program
+    benefits:
+      - 1 month completely free + 33% off for 9 months
+      - Hire in 120+ countries with compliance
+      - Automated payments and management
+      - Full contractor management tools
+      - Global payroll handling
+    benefits_level: 2
+    duration:
+      - 10 months
+    eligibility:
+      - Less than $5M in funding
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply
+        description: >-
+          Contact RemotePass to verify eligibility and get started
+        action: Get Started
+        action_url: https://www.remotepass.com/startup-program
+  - name: Employee Hiring Discount
+    intro: >-
+      15% discount on employee hiring for 1 year
+    max_value: 15
+    url: https://www.remotepass.com/startup-program
+    benefits:
+      - 15% off for 12 months
+      - Full-time employee hiring globally
+      - Benefits and payroll management
+      - Compliance handling
+      - Automated tools
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Less than $5M in funding
+    effort_level: 1
+faq: [] 
