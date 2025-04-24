@@ -1,0 +1,108 @@
+draft: false
+provider_slug: cursorful
+title: Cursorful Screen Recorder
+meta_title: Screen Recorder with Automatic Zoom and Pan
+intro: >-
+  Use the Cursorful browser extension to record beautiful screen recordings with
+  automatic cursor-following zooms and pans, no sign-up required.
+description: >-
+  Cursorful is a browser-based screen recorder that captures your desktop and
+  automatically pans and zooms to follow the cursor based on click activity. It
+  features an editor for fine-tuning zoom positions, depths, and timing, custom
+  or preset backgrounds, and toolbar hiding for clean visuals. Videos can be
+  exported in multiple aspect ratios and are rendered locally, ensuring privacy.
+  The free plan offers unlimited exports and core features, while the Pro plan
+  unlocks commercial licensing, camera and microphone support, 4K exports,
+  lifetime offline access, and one year of future cloud features and desktop
+  application access.
+status: Active
+tags:
+  - dev tools
+  - automation
+  - media
+  - productivity
+  - saas
+url: https://cursorful.com
+value_type: credits
+currency: USD
+min_value: 0
+max_value: 59
+community_notes: []
+tiers:
+  - name: Cursorful Free
+    intro: >-
+      Personal and educational use with unlimited video exports and core
+      recording features, no sign-up required.
+    max_value: 0
+    url: https://cursorful.com
+    benefits:
+      - Unlimited video exports
+      - Automatic zoom and pan
+      - Add, remove and edit zooms
+      - Preset and custom backgrounds
+      - Export in multiple aspect ratios
+    benefits_level: 1
+    duration:
+      - Unlimited
+    eligibility:
+      - Personal and educational use
+    effort_level: 1
+    steps_to_apply:
+      - name: Install Cursorful
+        description: >-
+          Install the Cursorful extension from your browser's extension store;
+          no sign-up required.
+        action: Install
+        action_url: https://cursorful.com/get-started
+  - name: Cursorful Pro
+    intro: >-
+      Commercial and corporate use with lifetime offline access and one-year
+      cloud feature access via a one-time payment.
+    max_value: 59
+    url: https://cursorful.com/pricing
+    benefits:
+      - Camera and microphone support
+      - 4K exports
+      - Lifetime access to offline features
+      - 1-year access to future cloud features
+      - Access to desktop apps upon release
+    benefits_level: 3
+    duration:
+      - Lifetime (offline features)
+      - 1 year (cloud features)
+    eligibility:
+      - Commercial and corporate use
+      - 1 user, up to 3 browser profiles
+    effort_level: 2
+    steps_to_apply:
+      - name: Purchase Pro plan
+        description: >-
+          Complete the one-time payment to upgrade to Cursorful Pro and unlock
+          all features.
+        action: Upgrade
+        action_url: https://cursorful.com/pricing
+faq:
+  - question: Will my videos be uploaded to Cursorful's servers?
+    answer: >-
+      No, unless you explicitly opt in to cloud features, videos are rendered
+      and stored locally on your machine and never leave the browser.
+  - question: Do you support Firefox?
+    answer: >-
+      Firefox is not supported due to missing extension features and
+      architecture limitations.
+  - question: What triggers the automatic zoom?
+    answer: >-
+      Automatic zoom activates when two or more clicks occur within a
+      three-second window; follow-cursor zoom continues as long as clicks keep
+      happening, and you can adjust or remove zooms in the editor after
+      recording completes.
+  - question: Does Cursorful record the entire desktop or just the browser?
+    answer: >-
+      Cursorful records the entire desktop then automatically crops to the
+      browser; if you switch to another application, recording continues but
+      follow-cursor and auto-zoom are disabled until you return to the browser.
+  - question: Do you offer a student discount?
+    answer: >-
+      There is no student discount; the Pro license already includes a $40
+      early-bird discount, and additional discounts are not available due to the
+      costs of future cloud features support.
