@@ -1,0 +1,17 @@
+active: true
+name: Cursorful Screen Recorder
+short_name: Cursorful
+slug: cursorful
+color: '#68e395'
+url: https://cursorful.com
+intro: >-
+  Browser-based screen recorder with automatic cursor-following zooms and pans,
+  no sign-up required.
+best_deal: Free unlimited exports; Pro for $59
+video: ''
+tags:
+  - dev tools
+  - automation
+  - media
+  - productivity
+  - saas
