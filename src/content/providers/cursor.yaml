@@ -1,0 +1,16 @@
+active: true
+name: Cursor
+short_name: Cursor
+slug: cursor
+color: '#CCCCCC'
+url: https://www.cursor.com
+intro: >-
+  A modern AI-driven code editor offering advanced debugging, context-aware
+  assistance, and sandbox environments for developers.
+best_deal: Free 1-year Cursor Pro for Students
+video: ''
+tags:
+  - education
+  - dev tools
+  - ai
+  - productivity

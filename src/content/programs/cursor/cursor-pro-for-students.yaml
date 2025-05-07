@@ -1,0 +1,93 @@
+draft: false
+provider_slug: cursor
+title: Cursor Pro for Students
+meta_title: Cursor Pro for Students | Free 1-Year Student Offer
+intro: >-
+  Verified students get one full year of free Cursor Pro, an AI-powered code
+  editor with advanced debugging and AI assistance.
+description: >-
+  Cursor's Student Program provides verified students with 12 months of free
+  access to Cursor Pro's premium AI-driven code editor. Participants benefit
+  from advanced models that optimize code, context-aware assistance, sandbox
+  environments, and efficient handling of large codebases to accelerate
+  learning, research, and development workflows.
+status: Active
+tags:
+  - education
+  - dev tools
+  - ai
+  - productivity
+url: https://www.cursor.com/students
+value_type: discount
+currency: USD
+max_value: 100
+community_notes: []
+tiers:
+  - name: Cursor Pro Student
+    intro: >-
+      Validated students receive one full year of free Cursor Pro with all
+      premium features.
+    max_value: 100
+    url: https://www.cursor.com/students
+    benefits:
+      - Full access to all Pro features for 12 months
+      - 500 fast premium AI requests per month and unlimited slower requests
+      - AI-driven debugging with real-time optimization suggestions
+      - Context-aware assistance connecting notes, files, or repositories
+      - Instant sandbox environments for experiments and prototyping
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Students with a valid .edu email or equivalent academic verification
+    effort_level: 2
+    steps_to_apply:
+      - name: Verify Status
+        description: >-
+          Click 'Verify Status' on the student page and follow the instructions
+          to confirm your student email.
+        action: Verify Status
+        action_url: https://www.cursor.com/students
+      - name: Activate Pro Features
+        description: >-
+          After verification, go to your account settings and enable Cursor Pro
+          to start your free year.
+        action: Activate Pro
+        action_url: https://www.cursor.com/account/settings
+faq:
+  - question: How do I get the student discount?
+    answer: >-
+      Verify your student status by clicking "Verify Status" on the student page
+      and following the instructions. Existing Cursor Pro users will receive an
+      automatic refund for unused billing cycles and have the discount applied
+      immediately. New users must sign up for Cursor Pro in their account
+      settings after verification.
+  - question: What is included with the student discount?
+    answer: >-
+      You get access to all Pro features for a year, including 500 fast premium
+      AI requests per month, unlimited slower requests, AI-driven debugging,
+      context-aware assistance, sandbox environments, and large codebase
+      handling.
+  - question: What happens after the year is up?
+    answer: >-
+      Your subscription will automatically renew at the regular price unless you
+      cancel. You can cancel at any time to maintain access through the end of
+      the current billing period.
+  - question: Can I use the student discount if I already have a Cursor subscription?
+    answer: >-
+      Yes. Cursor will automatically cancel your existing subscription, refund
+      any unused time, and apply the student discount immediately to your new
+      subscription.
+  - question: What if I exceed 500 fast premium requests per month?
+    answer: >-
+      Additional usage will incur charges only if you have enabled pay-as-you-go
+      pricing for fast premium requests.
+  - question: How does Cursor perform on large codebases?
+    answer: >-
+      Cursor efficiently handles massive codebases with hundreds of thousands of
+      files through smart indexing, ensuring fast suggestions and seamless
+      navigation.
+  - question: Where can I ask more questions?
+    answer: >-
+      Email hi@cursor.com for any additional inquiries about the student
+      program.
