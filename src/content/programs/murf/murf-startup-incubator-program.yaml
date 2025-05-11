@@ -1,0 +1,82 @@
+draft: false
+provider_slug: murf
+title: Murf Startup Incubator Program
+meta_title: Murf Startup Incubator Program
+intro: >-
+  Early-stage startups receive $5,000 in credits over 3 months to access Murf's
+  AI voice and text-to-speech API.
+description: >-
+  The Murf Startup Incubator Program empowers early-stage startups by providing
+  $5,000 in credits (equivalent to 50 million characters) for 3 months to
+  integrate Murf's advanced AI voice and text-to-speech API. Participants gain
+  access to over 200 ultra-realistic voices in 20+ languages, voice
+  customization and style adjustments, collaboration features, AI voice
+  changers, and dedicated team support. After the trial, startups can continue
+  on a Pay-As-You-Go plan at $1 per 10,000 characters, subscribe to the Business
+  Plan from $66/month, or negotiate custom Enterprise pricing.
+status: Active
+tags:
+  - ai
+  - speech
+  - api
+  - free trial
+url: https://murf.ai/startup-incubator
+value_type: credits
+currency: USD
+min_value: 5000
+max_value: 5000
+community_notes: []
+tiers:
+  - name: Startup Incubator Credits
+    intro: Receive $5,000 in Murf API credits (50 million characters) for 3 months.
+    max_value: 5000
+    url: https://murf.ai/startup-incubator
+    benefits:
+      - $5,000 in Murf API credits (equivalent to 50 million characters)
+      - Access to 200+ ultra-realistic AI voices in 20+ languages
+      - Voice customization and style adjustments
+      - Collaboration features and AI voice changers
+      - Dedicated team assistance for optimizing voice content strategies
+    benefits_level: 2
+    duration:
+      - 3 months
+    eligibility:
+      - Company incorporated within the last 10 years
+      - Fewer than 100 employees
+      - Fully functioning company website
+      - Valid use case for Murf API
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: >-
+          Fill out the application form with company details and your valid use
+          case.
+        action: Apply
+        action_url: https://murf.ai/startup-incubator
+      - name: Application Review
+        description: Murf's team evaluates your submission within 1-2 days.
+      - name: Credit Activation
+        description: >-
+          Approved startups receive immediate activation of $5,000 credits (50
+          million characters).
+faq:
+  - question: What does the Murf Startup Incubator Program include?
+    answer: >-
+      Provides $5,000 worth of Murf API credits (50 million characters) over 3
+      months, access to advanced AI voice features, collaboration tools, and
+      dedicated support.
+  - question: Who is eligible to apply?
+    answer: >-
+      Startups incorporated within the last 10 years, with fewer than 100
+      employees, a fully functioning website, and a valid use case for Murf's
+      API. Resellers and non-compliant use cases are excluded.
+  - question: What happens if I use more than $5,000 in credits during the trial?
+    answer: >-
+      Additional usage is billed at $1 per 10,000 characters. Applicants receive
+      an email notification to upgrade to the Pay-As-You-Go plan to avoid
+      service interruptions.
+  - question: What are the options after the trial ends?
+    answer: >-
+      Startups can continue on the Pay-As-You-Go plan at $1 per 10,000
+      characters, upgrade to the Business Plan from $66/month, or contact sales
+      for custom enterprise pricing.
