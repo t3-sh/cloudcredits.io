@@ -1,0 +1,92 @@
+draft: false
+provider_slug: statsig
+title: Statsig Startup Program
+meta_title: Statsig Startup Program
+intro: >-
+  Get started with $50,000 in credits on Statsig's all-in-one platform for
+  feature shipping, testing, and analytics, plus exclusive perks.
+description: >-
+  Statsig's startup program provides early-stage companies with one billion free
+  events per month for 12 months (worth $50K+ in credits), full access to
+  Enterprise-tier experimentation and analytics features, priority support,
+  exclusive swag, and referral bonuses. The program empowers rapidly scaling
+  startups to consolidate data, optimize feature rollouts, and measure their
+  product impact with minimal setup and cost.
+status: Active
+tags:
+  - analytics
+  - dev tools
+  - data
+  - automation
+  - saas
+url: https://forms.gle/iYScfes8Vy6gNMQ3A
+value_type: credits
+currency: USD
+min_value: 50000
+max_value: 50000
+community_notes: []
+tiers:
+  - name: Statsig Startup Program
+    intro: >-
+      Receive 1 billion free events per month for 12 months (worth $50K+), full
+      Enterprise-tier features, exclusive swag, and referral perks.
+    max_value: 50000
+    url: https://forms.gle/iYScfes8Vy6gNMQ3A
+    benefits:
+      - 1B free events per month for 12 months (equivalent to $50K+ in credits)
+      - >-
+        Access to all Enterprise-tier features including advanced A/B/n testing,
+        multi-armed bandits, unlimited feature flags, dynamic configurations,
+        and staged rollouts
+      - Priority Slack and email support with next business day responses
+      - Exclusive Statsig swag upon enrollment
+      - Referral program to double event credits for each referred startup
+    benefits_level: 3
+    duration:
+      - 12 months
+    eligibility:
+      - Company founded within the last 5 years
+      - Raised less than $50 million in funding
+      - Startups with over 25,000 monthly active users (MAU)
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit application
+        description: Complete the Startup Program application form (~5 minutes).
+        action: Apply Now
+        action_url: https://forms.gle/iYScfes8Vy6gNMQ3A
+      - name: Receive confirmation
+        description: >-
+          Expect an email within 1 business day confirming your credits and
+          providing a coupon for exclusive swag.
+faq:
+  - question: What are the qualification criteria for the Statsig Startup Program?
+    answer: >-
+      The program accepts companies founded within the last 5 years that have
+      raised less than $50M in funding. It is optimized for startups with a
+      significant user base (over 25K MAU) who are scaling rapidly and need
+      extra event volume.
+  - question: I’m a new startup. When should I apply for the Startup Program?
+    answer: >-
+      This program is designed for venture-backed startups with a large user
+      base scaling fast. If you’re a small startup just getting started, the
+      free Developer Tier (1M events/mo) is likely a better fit. You can upgrade
+      or apply to the Startup Program when you need more events.
+  - question: What’s included in the Statsig Startup Program?
+    answer: >-
+      Participants receive one billion free events per month for 12 months
+      (worth $50K+), full access to Enterprise-tier feature flags, product
+      analytics, experimentation tools, and A/B/n testing. For additional
+      events, referral bonuses can double your credits.
+  - question: What happens at the end of the year?
+    answer: >-
+      At the end of the 12-month period, startups can choose to graduate into
+      Statsig’s Enterprise, Pro, or Free tier based on their ongoing needs.
+  - question: What level of support is included?
+    answer: >-
+      Startup Program participants receive priority support equivalent to the
+      Pro tier, with Slack and email responses within one business day.
+  - question: How do I get my swag?
+    answer: >-
+      After submitting your application, expect a confirmation email within 1
+      business day that includes credit confirmation and a coupon to redeem
+      exclusive Statsig swag.
