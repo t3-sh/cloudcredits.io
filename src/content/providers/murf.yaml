@@ -1,0 +1,16 @@
+active: true
+name: Murf
+short_name: Murf
+slug: murf
+color: '#735dff'
+url: https://murf.ai
+intro: >-
+  AI-driven voice and text-to-speech API offering 200+ ultra-realistic voices,
+  customizable styles, and collaboration features.
+best_deal: Up to $5,000 credits for 3 months
+video: ''
+tags:
+  - ai
+  - speech
+  - api
+  - free trial
