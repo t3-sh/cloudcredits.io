@@ -1,0 +1,123 @@
+draft: false
+provider_slug: snapchat
+title: Snapchat Advertising Credit Offer
+intro: >-
+  New advertisers on Snapchat can receive $375 in ad credits for spending $350,
+  valid for 30 days, for first-time advertisers only.
+description: >-
+  Snapchat's Advertising Credit Offer incentivizes first-time advertisers to
+  launch campaigns on the platform by matching ad spend with free credits. New
+  advertisers who spend $350 receive $375 in ad credits, automatically applied
+  once the spend threshold is met within 14 days. Credits expire 30 days after
+  issuance and apply only to advertising inventory costs (excluding taxes). The
+  offer is limited to one per business account, non-transferable, and cannot be
+  combined with other promotions.
+status: Active
+tags:
+  - advertising
+  - social
+  - marketing
+url: https://ads.snapchat.com/
+value_type: credits
+currency: USD
+min_value: 75
+max_value: 375
+community_notes: []
+tiers:
+  - name: Standard Credit Offer
+    intro: Spend $350 on ads and receive $375 in Snapchat ad credits.
+    max_value: 375
+    url: https://ads.snapchat.com/
+    benefits:
+      - $375 ad credits for $350 spend
+      - Credits apply only to advertising inventory costs (taxes excluded)
+      - Credits expire after 30 days
+      - >-
+        Access to professional creative services with two rounds of feedback per
+        deliverable
+    benefits_level: 2
+    duration:
+      - 30 days
+    eligibility:
+      - First-time advertisers only
+      - One offer per business account
+      - Campaigns must comply with Snap's advertising policies
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Snapchat Business Account
+        description: >-
+          Sign up for a personal Snapchat account and then create a business Ads
+          Manager account by clicking 'Create an ad'.
+        action: Sign Up
+        action_url: https://ads.snapchat.com/
+      - name: Link Payment Method
+        description: Add a valid payment method to your Ads Manager to authorize ad spend.
+        action: Add Payment
+      - name: Meet Spend Threshold
+        description: >-
+          Accrue at least $350 in ad spend within 14 days of accepting the
+          offer; payment must clear successfully.
+        action: Launch Campaign
+      - name: Receive Credits
+        description: >-
+          Credits will be applied to your Ad Account within one business day of
+          meeting the spend requirements.
+        action: Check Account
+  - name: Flexible Budget Offer
+    intro: Spend $50 on ads and receive $75 in Snapchat ad credits.
+    max_value: 75
+    url: https://ads.snapchat.com/
+    benefits:
+      - $75 ad credits for $50 spend
+      - Credits apply only to advertising inventory costs (taxes excluded)
+      - Credits expire after 30 days
+      - >-
+        Access to professional creative services with two rounds of feedback per
+        deliverable
+    benefits_level: 1
+    duration:
+      - 30 days
+    eligibility:
+      - First-time advertisers only
+      - One offer per business account
+      - Campaigns must comply with Snap's advertising policies
+    effort_level: 2
+    steps_to_apply:
+      - name: Create Snapchat Business Account
+        description: >-
+          Sign up for a personal Snapchat account and then create a business Ads
+          Manager account by clicking 'Create an ad'.
+        action: Sign Up
+        action_url: https://ads.snapchat.com/
+      - name: Link Payment Method
+        description: Add a valid payment method to your Ads Manager to authorize ad spend.
+        action: Add Payment
+      - name: Meet Spend Threshold
+        description: >-
+          Accrue at least $50 in ad spend within 14 days of accepting the offer;
+          payment must clear successfully.
+        action: Launch Campaign
+      - name: Receive Credits
+        description: >-
+          Credits will be applied to your Ad Account within one business day of
+          meeting the spend requirements.
+        action: Check Account
+faq:
+  - question: Can existing advertisers qualify?
+    answer: >-
+      No. The offer is exclusively for first-time advertisers who have never
+      used Snapchat Ads Manager.
+  - question: What happens if I don't spend the full credit?
+    answer: >-
+      Any unused credits expire permanently 30 days after issuance and cannot be
+      recovered.
+  - question: Can I combine this credit with other promotions?
+    answer: >-
+      No. The credit cannot be used in combination with any other coupon or
+      promotional offer.
+  - question: When will the ad credits appear in my account?
+    answer: >-
+      Credits are applied within one business day after you meet the spend and
+      payment conditions.
+  - question: Is the credit redeemable for cash?
+    answer: No. This offer is not redeemable for cash or cash equivalents.
