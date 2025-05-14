@@ -1,0 +1,14 @@
+active: true
+name: Snapchat
+short_name: Snapchat
+slug: snapchat
+color: '#FFFC00'
+url: https://ads.snapchat.com/
+intro: >-
+  A multimedia messaging and social platform offering immersive advertising
+  solutions to reach Snapchat's engaged audience.
+best_deal: $375 ad credits for $350 spend
+video: ''
+tags:
+  - advertising
+  - social
