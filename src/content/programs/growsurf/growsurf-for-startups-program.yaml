@@ -1,0 +1,106 @@
+draft: false
+provider_slug: growsurf
+title: GrowSurf for Startups Program
+meta_title: GrowSurf for Startups Program - Referral Marketing for Startups
+intro: >-
+  Qualified early-stage startups receive referral marketing discounts and bonus
+  participants with GrowSurf's platform to accelerate growth.
+description: >-
+  GrowSurf for Startups provides Seed and Series A companies discounted access
+  to GrowSurf's referral marketing platform, enabling automated referral
+  campaigns, custom portals, fraud protection, and detailed analytics.
+  Seed-stage startups with up to $2 million in funding receive 50% off their
+  first year plus a 20,000 participant bonus, while Series A-stage startups with
+  over $2 million receive 25% off plus a 10,000 participant bonus. The discount
+  applies for 12 months, with participant bonuses available for the lifetime of
+  an active subscription. Eligible startups must be new GrowSurf customers,
+  associated with approved VC, incubator, or accelerator partners, and maintain
+  a live website and LinkedIn profile.
+status: Active
+tags:
+  - marketing
+  - saas
+url: https://growsurf.com/growsurf-for-startups
+value_type: discount
+currency: USD
+min_value: 25
+max_value: 50
+community_notes: []
+tiers:
+  - name: Seed Stage
+    intro: Get 50% off first year and 20,000 lifetime participant bonus.
+    max_value: 50
+    url: https://growsurf.com/growsurf-for-startups
+    benefits:
+      - 50% first-year discount
+      - 20,000 lifetime bonus participants
+      - Automated referral campaigns and custom portals
+      - Fraud detection and detailed analytics
+    benefits_level: 2
+    duration:
+      - 12 months discount
+      - Lifetime participant bonus
+    eligibility:
+      - Raised up to $2M in Seed funding
+      - Associated with an approved VC, incubator, or accelerator
+      - New GrowSurf customers
+      - Live website and valid LinkedIn profile
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out and submit the GrowSurf for Startups application form.
+        action: Apply Now
+        action_url: https://growsurf.com/growsurf-for-startups
+  - name: Series A Stage
+    intro: Get 25% off first year and 10,000 lifetime participant bonus.
+    max_value: 25
+    url: https://growsurf.com/growsurf-for-startups
+    benefits:
+      - 25% first-year discount
+      - 10,000 lifetime bonus participants
+      - Automated referral campaigns and custom portals
+      - Fraud detection and detailed analytics
+    benefits_level: 1
+    duration:
+      - 12 months discount
+      - Lifetime participant bonus
+    eligibility:
+      - Raised over $2M in Series A funding
+      - Associated with an approved VC, incubator, or accelerator
+      - New GrowSurf customers
+      - Live website and valid LinkedIn profile
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit Application
+        description: Fill out and submit the GrowSurf for Startups application form.
+        action: Apply Now
+        action_url: https://growsurf.com/growsurf-for-startups
+faq:
+  - question: What are the eligibility requirements for GrowSurf for Startups?
+    answer: >-
+      Eligible startups must be at Series A or earlier, associated with an
+      approved VC, incubator, or accelerator, have a live website, a valid
+      LinkedIn profile, and be new GrowSurf customers. Seed-tier applicants can
+      have up to $2M in funding, while Series A-tier applicants must have raised
+      over $2M but not beyond Series A.
+  - question: How do I apply for GrowSurf for Startups?
+    answer: >-
+      Submit the application form at https://growsurf.com/growsurf-for-startups.
+      Application processing typically takes up to 5 business days.
+  - question: Can I apply if I'm already using GrowSurf?
+    answer: >-
+      No. The program is only available to new GrowSurf customers and cannot be
+      applied to existing subscriptions.
+  - question: What if I have applied but have not heard back yet?
+    answer: >-
+      If you have not received a response within 5 business days, please contact
+      the GrowSurf team for assistance.
+  - question: When and where will I receive my promo code?
+    answer: >-
+      Upon acceptance, GrowSurf will send a unique promo code that is
+      automatically applied to your account and your participant bonus will be
+      reflected in your usage.
+  - question: When does my promo code expire?
+    answer: >-
+      Promo codes last for 12 months from issuance, while participant bonuses
+      remain active for the lifetime of an active subscription.
