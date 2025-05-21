@@ -1,0 +1,97 @@
+draft: false
+provider_slug: navan
+title: Navan First Active Admin (Hotels) Promotion
+intro: >-
+  Eligible first administrator users receive $500 in Navan Rewards Points after
+  their company completes a qualified hotel booking on Navan’s platform within
+  30 days of onboarding.
+description: >-
+  Navan’s First Active Admin (Hotels) Promotion rewards the first administrator
+  user of a new small business customer with $500 in Navan Rewards Points. To
+  qualify, participants must register a company (≤200 employees) via Navan’s
+  online portal, complete onboarding, and make a qualified hotel booking of at
+  least $500 (excluding taxes and fees) within 30 days. Rewards points are
+  redeemable for prepaid personal hotel stays on Navan’s platform, apply only to
+  base rates, and cannot be exchanged for cash; participants are responsible for
+  taxes, fees, and incidental expenses. Currency conversion uses the rate at the
+  time of redemption. Navan reserves the right to modify or terminate the
+  promotion, substitute rewards, and disqualify participants for tampering.
+  Promotion governed by Navan’s Terms and California law.
+status: Active
+tags:
+  - b2b
+  - finance
+url: https://navan.com/terms/new-years-admin-promotion-terms
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 500
+community_notes: []
+tiers:
+  - name: First Active Admin (Hotels)
+    intro: >-
+      Eligible first administrator users receive $500 in Navan Rewards Points
+      after a qualified hotel booking.
+    max_value: 500
+    url: https://navan.com/terms/new-years-admin-promotion-terms
+    benefits:
+      - $500 in Navan Rewards Points redeemable for prepaid personal hotel stays
+      - >-
+        Rewards apply to hotel base rates; participants cover taxes, fees, and
+        incidental expenses
+      - Currency conversion at the exchange rate on redemption date
+      - >-
+        Points are non-transferable, non-refundable, and cannot be exchanged for
+        cash
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - >-
+        First administrator user of a new small business customer (≤200
+        employees)
+      - Company must sign up via Navan’s online portal and complete onboarding
+      - >-
+        Make a qualified hotel booking of ≥$500 (excluding taxes/fees) within 30
+        days of onboarding
+      - Cannot have signed up via a referral program
+      - >-
+        Be ≥18 years old and not an employee of Navan, its affiliates, or
+        companies headquartered in India
+    effort_level: 2
+    steps_to_apply:
+      - name: Register as a small business customer
+        description: >-
+          Sign up a new small business customer (≤200 employees) via Navan’s
+          online portal and become the first administrator user.
+        action: Sign Up
+        action_url: https://navan.com
+      - name: Complete a qualified booking
+        description: >-
+          Within 30 days of onboarding, make at least one qualified business
+          hotel booking of $500 or more (excluding taxes and fees) on Navan’s
+          platform.
+        action: Book Hotels
+        action_url: https://navan.com
+faq:
+  - question: How do rewards work?
+    answer: >-
+      Participants receive $500 in Navan Rewards Points, which are
+      non-transferable, non-refundable, and can be redeemed for prepaid personal
+      hotel stays on Navan’s platform, covering only base rates; participants
+      are responsible for taxes, fees, and incidental expenses.
+  - question: What qualifies as a Qualified Business Booking?
+    answer: >-
+      A booking of at least $500 for hotel accommodations on Navan’s business
+      travel platform, excluding taxes and fees, made within 30 days of the
+      company’s completed onboarding.
+  - question: Who is eligible for this promotion?
+    answer: >-
+      The first administrator user of a new small business customer (≤200
+      employees) who signs up via Navan’s online portal, is at least 18 years
+      old, has not signed up via a referral, and is not an employee of Navan,
+      its subsidiaries, affiliates, or promotional agencies, or of companies
+      headquartered in India.
+  - question: Can the reward be exchanged for cash?
+    answer: >-
+      No, the rewards points cannot be exchanged for cash, are non-refundable,
+      and points apply only to the base rate of prepaid hotels.
