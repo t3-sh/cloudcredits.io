@@ -1,0 +1,123 @@
+draft: false
+provider_slug: linkedin
+title: >-
+  LinkedIn Premium Subscription Offer for Microsoft for Startups Founders Hub
+  Members
+meta_title: LinkedIn Premium Discount for Microsoft for Startups Founders Hub
+intro: >-
+  Microsoft for Startups Founders Hub members receive 75% off LinkedIn Sales
+  Navigator Core, Recruiter Lite, and Premium Business subscriptions for four
+  months, plus up to $1,000 in ad credits, $150,000 in Azure credits, and access
+  to partner tools and mentorship.
+description: >-
+  Partnership between LinkedIn and Microsoft for Startups Founders Hub provides
+  startup founders with deeply discounted LinkedIn tools, advertising and cloud
+  credits, and partner resources to accelerate growth. Qualified members get a
+  four-month, 75% discount on Sales Navigator Core, Recruiter Lite, and Premium
+  Business (one license each), up to $1,000 in LinkedIn ad credits, and up to
+  $150,000 in Azure credits over four years. Additional benefits include access
+  to OpenAI’s GPT-3, no-code platforms like Bubble, partner tools from Stripe
+  and AngelList, and mentorship via the Microsoft Mentor Network.
+status: Active
+tags:
+  - social
+  - sales
+  - hr
+  - marketing
+  - advertising
+url: https://startups.microsoft.com/founders-hub
+value_type: discount
+currency: USD
+min_value: 75
+max_value: 75
+community_notes: []
+tiers:
+  - name: LinkedIn Premium & Credits Bundle
+    intro: >-
+      75% discount for four months on LinkedIn Sales Navigator Core, Recruiter
+      Lite, and Premium Business plus ad credits, Azure credits, and partner
+      resources.
+    max_value: 75
+    url: https://startups.microsoft.com/founders-hub
+    benefits:
+      - >-
+        75% off Sales Navigator Core, Recruiter Lite, and Premium Business
+        subscriptions for four months
+      - Up to $1,000 in LinkedIn ad credits
+      - Up to $150,000 in Azure credits over four years
+      - Access to OpenAI GPT-3, Bubble, Stripe, and AngelList tools
+      - Mentorship via Microsoft Mentor Network
+    benefits_level: 3
+    duration:
+      - 4 months for LinkedIn subscriptions
+      - 2 weeks for ad credits
+      - Up to 4 years for Azure credits
+    eligibility:
+      - Microsoft for Startups Founders Hub members
+      - No existing LinkedIn Premium subscription
+    effort_level: 2
+    steps_to_apply:
+      - name: Verify Founders Hub Membership
+        description: >-
+          Sign in through Microsoft for Startups Founders Hub to confirm
+          eligibility.
+        action: Sign In
+        action_url: https://startups.microsoft.com/founders-hub
+      - name: Redeem LinkedIn Premium Offer
+        description: >-
+          Click the redemption link provided after verification to activate the
+          four-month, 75% discount on your LinkedIn subscriptions.
+        action: Redeem Offer
+        action_url: https://www.linkedin.com
+faq:
+  - question: Who is eligible for the offer?
+    answer: >-
+      The offer is exclusively available to Microsoft for Startups Founders Hub
+      members who do not currently have a LinkedIn Premium subscription and
+      agree to the promotional terms.
+  - question: What if I am not a member of Microsoft for Startups Founders Hub?
+    answer: >-
+      This four-month LinkedIn Premium subscription at 75% off is an exclusive
+      benefit for Founders Hub members and is not available to non-members.
+  - question: How will membership be verified?
+    answer: >-
+      You must sign in through Microsoft for Startups Founders Hub; the system
+      will automatically verify your membership before allowing you to redeem
+      the offer.
+  - question: >-
+      Where can I sign up for the LinkedIn Premium subscription promotional
+      offer for Founders Hub members?
+    answer: >-
+      Eligible members can access details and redeem the promotional offer by
+      visiting the Microsoft for Startups Founders Hub benefits page at
+      https://startups.microsoft.com/founders-hub.
+  - question: How do I know if my LinkedIn Premium subscription promotion was redeemed?
+    answer: >-
+      You will see "PREMIUM" next to your profile photo on your homepage, a gold
+      LinkedIn logo on your profile, and a "Premium features" link in the "Me"
+      dropdown menu.
+  - question: What if I need to change information on my LinkedIn account?
+    answer: >-
+      You can update your account information at any time in the "Settings &
+      Privacy" section on LinkedIn.
+  - question: What happens when the promotional offer ends?
+    answer: >-
+      After the four-month promotional period, your subscription will convert to
+      a paid plan at the standard monthly rate; you can cancel at any time to
+      avoid charges.
+  - question: Do I need a credit or debit card to redeem the offer?
+    answer: >-
+      Yes, you will need to provide a valid credit or debit card when activating
+      your Premium subscription.
+  - question: Where can I ask billing questions?
+    answer: Any billing-related questions can be directed to the LinkedIn Help Center.
+  - question: >-
+      Can I exchange the subscription for more ad credits or a different Premium
+      subscription?
+    answer: >-
+      No, the offer is fixed to the three specified LinkedIn subscriptions and
+      cannot be exchanged for ad credits or other subscription types.
+  - question: By when do I have to use the ad credits granted as part of the program?
+    answer: >-
+      LinkedIn ad credits must be used within two weeks of issuance, or they
+      will expire.
