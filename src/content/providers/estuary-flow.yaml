@@ -1,0 +1,17 @@
+active: true
+name: Estuary Flow
+short_name: Estuary Flow
+slug: estuary-flow
+color: '#5072eb'
+url: https://estuary.dev/startup/
+intro: >-
+  Real-time data integration and analytics platform centralizing data from 200+
+  sources.
+best_deal: $2,000 credits for 12 months
+video: ''
+tags:
+  - cloud
+  - data
+  - analytics
+  - big data
+  - database

@@ -1,0 +1,73 @@
+draft: false
+provider_slug: estuary-flow
+title: Estuary Flow Startup Program
+intro: >-
+  Get $2,000 in free credits for Estuary Flow's Cloud plan over 12 months, plus
+  complimentary email and Slack-based technical support and access to
+  step-by-step tutorials and live workshops to streamline real-time data
+  integration.
+description: >-
+  The Estuary Flow Startup Program supports early-stage startups by providing
+  $2,000 in credits for the Cloud plan valid for 12 months. Participants receive
+  complimentary technical support via email and Slack, comprehensive
+  step-by-step tutorials, live workshops, and expert guidance. Estuary Flow
+  centralizes and analyzes real-time data from 200+ sources—operational
+  databases like PostgreSQL, MySQL, MongoDB; cloud apps such as Salesforce,
+  HubSpot, Netsuite, Intercom, Zendesk; real-time streams including Kafka,
+  Kinesis, Webhooks—and integrates seamlessly with destinations like Snowflake,
+  Databricks, Google BigQuery, Apache Iceberg, Tinybird, and more.
+status: Active
+tags:
+  - cloud
+  - data
+  - analytics
+  - big data
+  - database
+url: https://estuary.dev/startup/
+value_type: credits
+currency: USD
+min_value: 2000
+max_value: 2000
+community_notes: []
+tiers:
+  - name: Startup Program
+    intro: >-
+      Early-stage startups receive $2,000 in credits, technical support, and
+      educational resources over 12 months.
+    max_value: 2000
+    url: https://estuary.dev/startup/
+    benefits:
+      - $2,000 in credits for Estuary’s Cloud plan
+      - 12-month validity period
+      - Email and Slack-based technical support
+      - Access to step-by-step tutorials and live workshops
+      - Expert guidance for real-time data integration
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Raised less than $5 million in total funding
+      - Not current or former Estuary Flow customers
+      - Early-stage startups
+      - No startup accelerator affiliation required
+    effort_level: 1
+    steps_to_apply:
+      - name: Submit application form
+        description: Complete the online application via Estuary’s startup portal.
+        action: Apply Now
+        action_url: https://estuary.dev/startup/
+      - name: Receive eligibility confirmation
+        description: Estuary Flow confirms eligibility within 2–3 business days.
+      - name: Activate credits and schedule demo
+        description: >-
+          Upon approval, activate credits and schedule a live demo to see
+          Estuary Flow in action.
+faq:
+  - question: What happens after the 12-month period?
+    answer: Startups can transition to standard pricing or explore enterprise plans.
+  - question: Can credits be used for third-party services?
+    answer: Credits apply exclusively to Estuary Flow’s Cloud plan.
+  - question: Is technical support available 24/7?
+    answer: Support is provided during business hours via email and Slack.
+  - question: Are non-profits or pre-revenue startups eligible?
+    answer: Yes, provided they meet the funding criteria.
