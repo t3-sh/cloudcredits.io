@@ -1,0 +1,116 @@
+draft: false
+provider_slug: attio
+title: Attio Startup Program
+meta_title: CRM for Startups - Attio Startup Program
+intro: >-
+  Apply to Attio’s Startup Program to get up to 80% off the Annual Pro Plan and
+  $5,000 in marketplace credit to build a tailored CRM and scale efficiently.
+description: >-
+  Attio’s Startup Program helps early-stage, venture-backed companies scale by
+  offering deep discounts on its Annual Pro Plan and additional marketplace
+  credits. Eligible startups can receive 80% off if they have raised up to $5M,
+  or 50% off if they have raised over $5M but remain pre-Series B, along with
+  $5,000 in credit through NachoNacho. Participants get full Pro features
+  including unlimited objects, SAML/SSO, advanced data enrichment, priority
+  support, real-time collaboration, and integrations with Zapier and robust
+  APIs.
+status: Active
+tags:
+  - crm
+  - saas
+  - b2b
+  - collaboration
+url: https://attio.com/startups
+value_type: discount
+currency: USD
+min_value: 50
+max_value: 80
+community_notes: []
+tiers:
+  - name: 80% off Annual Pro Plan
+    intro: >-
+      Startups that have raised up to $5M in funding and are incorporated less
+      than five years ago can get 80% off the Annual Pro Plan.
+    max_value: 80
+    url: https://attio.com/startups
+    benefits:
+      - 80% off the Annual Pro Plan for one year
+      - $5,000 credit via NachoNacho marketplace for new customers
+      - >-
+        Unlimited objects, SAML/SSO, advanced data enrichment, and priority
+        support
+      - Real-time collaboration and customizable workflows
+      - Integrations with Zapier and robust APIs
+    benefits_level: 3
+    duration:
+      - 1 year
+    eligibility:
+      - Raised up to $5M in funding
+      - Venture-backed
+      - Incorporated less than 5 years ago
+      - Applied within 90 days of signup
+      - Maximum 10 seats per account
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign up for Attio
+        description: Create an Attio account to start the application process.
+        action: Sign Up
+        action_url: https://attio.com/signup
+      - name: Apply to the Startup Program
+        description: Complete the Startup Program application within 90 days of signup.
+        action: Apply Now
+        action_url: https://attio.com/startups
+  - name: 50% off Annual Pro Plan
+    intro: >-
+      Startups that have raised over $5M but remain pre-Series B can receive 50%
+      off the Annual Pro Plan for one year.
+    max_value: 50
+    url: https://attio.com/startups
+    benefits:
+      - 50% off the Annual Pro Plan for one year
+      - >-
+        Unlimited objects, SAML/SSO, advanced data enrichment, and priority
+        support
+      - Real-time collaboration and customizable workflows
+      - Integrations with Zapier and robust APIs
+    benefits_level: 2
+    duration:
+      - 1 year
+    eligibility:
+      - Raised more than $5M in funding
+      - No Series B or later funding rounds
+      - Venture-backed
+      - Incorporated less than 5 years ago
+      - Applied within 90 days of signup
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign up for Attio
+        description: Create an Attio account to start the application process.
+        action: Sign Up
+        action_url: https://attio.com/signup
+      - name: Apply to the Startup Program
+        description: Complete the Startup Program application within 90 days of signup.
+        action: Apply Now
+        action_url: https://attio.com/startups
+faq:
+  - question: Who is eligible to participate in Attio’s Startup Program?
+    answer: >-
+      Venture-backed startups incorporated less than five years ago. Tier
+      eligibility depends on funding level: up to $5M for 80% off, over $5M but
+      pre-Series B for 50% off. Applicants must apply within 90 days of signing
+      up and comply with maximum seat limits.
+  - question: How long do the discounts last?
+    answer: Discounts apply to the Annual Pro Plan for one year from the start date.
+  - question: Can existing Attio users apply for the discounts?
+    answer: >-
+      No. The 80% or 50% discounts and the $5,000 marketplace credit are only
+      available to new customers.
+  - question: How do I apply?
+    answer: >-
+      Sign up for an Attio account and complete the Startup Program application
+      within 90 days through the Attio startup portal or partner platforms such
+      as Secret or NachoNacho.
+  - question: What is the $5,000 credit via NachoNacho marketplace?
+    answer: >-
+      New eligible startups also receive $5,000 in credits through the
+      NachoNacho marketplace for additional tools and services.
