@@ -123,10 +123,8 @@ export default function HeroSection() {
   }, [allIconCards.length]);
 
   const handleAISubmit = (value: string) => {
-    console.log("AI query submitted:", value);
-    // Set loading state before redirecting
     setIsLoading(true);
-    // Redirect to the assistant page with the prompt parameter
+    // Navigate to assistant page with the prompt
     window.location.href = `/deals/assistant?prompt=${encodeURIComponent(value)}`;
   };
 

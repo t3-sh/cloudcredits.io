@@ -2,13 +2,13 @@ active: true
 name: LinkedIn
 short_name: LinkedIn
 slug: linkedin
-color: '#0073B1'
+color: "#0073B1"
 url: https://www.linkedin.com
 intro: >-
   Professional networking platform connecting millions of users worldwide for
   career opportunities, business networking, and knowledge sharing.
 best_deal: 75% off Premium subscriptions for four months
-video: ''
+video: ""
 tags:
   - social
   - sales
