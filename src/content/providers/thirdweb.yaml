@@ -2,13 +2,13 @@ active: true
 name: thirdweb
 short_name: thirdweb
 slug: thirdweb
-color: '#3385FF'
+color: "#3385FF"
 url: https://thirdweb.com
 intro: >-
   Web3 and AI development platform with audited smart contracts, developer
   tools, and wallet infrastructure across 2,000+ EVM chains.
 best_deal: Over $690 credits & 3 months free
-video: ''
+video: ""
 tags:
   - web3
   - blockchain

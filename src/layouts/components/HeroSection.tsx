@@ -124,10 +124,7 @@ export default function HeroSection() {
 
   const handleAISubmit = (value: string) => {
     setIsLoading(true);
-    const indicator = document.getElementById("loading-indicator");
-    if (indicator) {
-      indicator.style.display = "flex";
-    }
+    // Navigate to assistant page with the prompt
     window.location.href = `/deals/assistant?prompt=${encodeURIComponent(value)}`;
   };
 

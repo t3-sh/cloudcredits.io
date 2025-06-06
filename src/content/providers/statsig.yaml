@@ -2,13 +2,13 @@ active: true
 name: Statsig
 short_name: Statsig
 slug: statsig
-color: '#5695f6'
+color: "#5695f6"
 url: https://statsig.com
 intro: >-
   An all-in-one platform for feature shipping, testing, and analytics to help
   teams optimize rollouts and measure impact.
 best_deal: $50K credits for 12 months
-video: ''
+video: ""
 tags:
   - analytics
   - dev tools
