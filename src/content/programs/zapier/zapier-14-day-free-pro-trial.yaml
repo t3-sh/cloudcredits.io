@@ -1,0 +1,76 @@
+draft: false
+provider_slug: zapier
+title: Zapier 14-Day Free Pro Trial
+meta_title: Zapier 14-Day Free Pro Trial - CloudCredits.io
+intro: >-
+  New Zapier users get a 14-day free trial of Pro features including premium app
+  integrations, multi-step Zaps, custom scheduling, and priority support.
+description: >-
+  Zapier offers new accounts a 14-day free trial of its Pro plan, providing
+  access to premium app integrations like PayPal and Facebook Lead Ads,
+  unlimited multi-step workflows, custom Zap scheduling, and priority email and
+  phone support. This trial allows businesses to explore advanced automation
+  capabilities without requiring a credit card or commitment. After 14 days,
+  accounts revert to the free tier with existing workflows and settings intact.
+status: Active
+tags:
+  - free trial
+  - automation
+  - workflow
+  - dev tools
+  - api
+url: https://zapier.com/pricing/
+value_type: discount
+currency: USD
+max_value: 100
+community_notes: []
+tiers:
+  - name: Free Pro Trial
+    intro: New users get full access to Pro features for 14 days
+    max_value: 100
+    url: https://zapier.com/pricing/
+    benefits:
+      - Access to premium app integrations like PayPal and Facebook Lead Ads
+      - Unlimited multi-step Zaps
+      - Custom Zap scheduling
+      - Priority email and phone support
+    benefits_level: 2
+    duration:
+      - 14 days
+    eligibility:
+      - New Zapier accounts only
+      - Email verification required
+      - No payment method needed
+    effort_level: 1
+    steps_to_apply:
+      - name: Create a Zapier Account
+        description: Sign up for a new Zapier account to activate the free trial
+        action: Sign Up
+        action_url: https://zapier.com/sign-up
+      - name: Verify Your Email
+        description: Click the verification link sent to your email to enable Pro features
+        action: Verify
+      - name: Build Zaps
+        description: >-
+          Use Pro features to create Zaps with premium apps, custom schedules,
+          and multi-step workflows
+        action: Build Zaps
+        action_url: https://zapier.com/app
+faq:
+  - question: Can I extend the trial?
+    answer: >-
+      No – the free trial is strictly 14 days. After it ends, you must upgrade
+      to a paid plan to continue using Pro features.
+  - question: What happens to my data when the trial ends?
+    answer: >-
+      All workflows, Zaps, and settings remain intact after the trial. Your
+      account reverts to the free tier and you can continue using any Zaps
+      within free plan limits.
+  - question: Do I need to provide payment information?
+    answer: >-
+      No – the trial does not require a credit card and will auto-expire unless
+      you choose to upgrade.
+  - question: Can I downgrade mid-trial?
+    answer: >-
+      Yes – you can switch to the free plan at any time, and Pro features will
+      be disabled immediately.
