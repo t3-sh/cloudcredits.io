@@ -1,0 +1,88 @@
+draft: false
+provider_slug: playai
+title: PlayAI Education & Nonprofit Discount
+meta_title: 20% PlayAI Discount for Students, Educators, and Nonprofits
+intro: >-
+  Students, educators, and verified nonprofit organizations receive a 20%
+  discount on every PlayAI subscription plan.
+description: >-
+  PlayAI extends a permanent 20% price reduction across all subscription
+  tiers—Creator, Unlimited, and Enterprise—to make its AI-powered text-to-speech
+  tools more affordable for academic and social-impact use cases. Eligible
+  applicants simply create a free trial, submit proof of status, and receive the
+  discounted rates once approved (within 48 hours).
+status: Active
+tags:
+  - education
+  - ai
+  - speech
+  - saas
+url: https://play.ht/
+value_type: discount
+currency: USD
+min_value: 20
+max_value: 20
+community_notes: []
+tiers:
+  - name: Education & Nonprofit 20% Discount
+    intro: Flat 20% price reduction on all PlayAI plans for qualified applicants.
+    max_value: 20
+    url: https://play.ht/
+    benefits:
+      - 20% recurring discount on any subscription tier
+      - Full access to text-to-speech conversion and voice editing features
+      - Commercial usage rights retained during active subscription
+      - Ability to upgrade or downgrade plans at any time
+      - Live-chat and email support
+    benefits_level: 1
+    duration:
+      - Ongoing while eligibility is maintained
+    eligibility:
+      - Currently enrolled students with valid student ID
+      - Faculty or staff using an accredited institutional email
+      - U.S. nonprofits with a 501(c)(3) determination letter
+      - International NGOs with a website clearly indicating nonprofit status
+    effort_level: 2
+    steps_to_apply:
+      - name: Sign up for free trial
+        description: Create a PlayAI account to initiate the trial period.
+        action: Sign Up
+        action_url: https://play.ht/
+      - name: Submit verification documents
+        description: >-
+          Email the required proof of student, educator, or nonprofit status to
+          support@play.ht.
+        action: Email documents
+      - name: Await approval
+        description: PlayAI reviews submissions and applies the discount within 48 hours.
+faq:
+  - question: When are characters deducted?
+    answer: >-
+      Characters are deducted each time you “Convert” or “Re-Convert” text to
+      audio. Re-converting deducts the full character count again because the
+      entire text must be processed.
+  - question: What happens if I run out of characters?
+    answer: >-
+      You can purchase additional character packs at any time if your plan quota
+      has been exhausted.
+  - question: Do unused characters roll over to the next cycle?
+    answer: No. Unused characters reset at the start of each new subscription period.
+  - question: Can I receive a refund?
+    answer: >-
+      Payments for one-time packs or subscriptions are generally non-refundable.
+      Contact support if you experience a technical issue immediately after
+      purchase.
+  - question: How does canceling my subscription affect my content?
+    answer: >-
+      You retain any unused characters until the end of the billing cycle, but
+      features such as embedded audio players or podcast hosting stop
+      functioning after cancellation. Audio already used commercially remains
+      valid.
+  - question: Can I upgrade or downgrade later?
+    answer: >-
+      Yes. You may upgrade, downgrade, or cancel your plan at any time by
+      contacting support.
+  - question: Do you offer other discounts?
+    answer: >-
+      Beyond this program, PlayAI currently offers only the 20% discount for
+      students, educators, and nonprofits.
