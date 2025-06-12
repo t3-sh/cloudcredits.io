@@ -1,0 +1,16 @@
+active: true
+name: PlayAI
+short_name: PlayAI
+slug: playai
+color: '#564ad2'
+url: https://play.ht/
+intro: >-
+  AI-powered text-to-speech platform offering customizable voices and editing
+  features.
+best_deal: 20% off all subscription plans
+video: ''
+tags:
+  - education
+  - ai
+  - speech
+  - saas
