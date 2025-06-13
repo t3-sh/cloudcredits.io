@@ -1,0 +1,118 @@
+draft: false
+provider_slug: hootsuite
+title: Hootsuite Nonprofit Discount (HootGiving Program)
+meta_title: Save up to 75% on Hootsuite Professional & Team Plans for Nonprofits
+intro: >-
+  Eligible nonprofit organizations can access Hootsuite Professional or Team
+  plans at up to 75% off regular pricing through the HootGiving Program.
+description: >-
+  Hootsuite’s HootGiving Program offers significant, perpetual discounts on its
+  social media management platform to help registered charities and nonprofits
+  grow awareness, engage communities, and raise more funds. Participating
+  organizations receive full-featured Professional or Team plans—including bulk
+  scheduling, OwlyWriter AI content assistance, real-time analytics, and a
+  unified inbox—while saving an average of three hours per week on social
+  execution. Validation is handled via TechSoup or Percent, and well-known
+  nonprofits like WWF and UNESCO already leverage the program.
+status: Active
+tags:
+  - social
+  - marketing
+  - saas
+  - productivity
+  - collaboration
+url: https://www.hootsuite.com/nonprofit-discount
+value_type: discount
+currency: USD
+min_value: 74
+max_value: 75
+community_notes: []
+tiers:
+  - name: Professional Plan (Nonprofit Discount)
+    intro: >-
+      75 % off Hootsuite Professional—$24.50/month instead of $99/month (annual
+      billing).
+    max_value: 75
+    url: https://www.hootsuite.com/nonprofit-discount
+    benefits:
+      - 1 user & up to 10 social accounts
+      - Unlimited post scheduling with bulk upload
+      - Unified inbox to manage messages across networks
+      - Real-time analytics & exportable reports
+      - OwlyWriter AI and Canva content templates
+    benefits_level: 2
+    duration:
+      - Ongoing while nonprofit status remains valid
+    eligibility:
+      - Verified nonprofit/charity via TechSoup or Percent
+      - Operates in a country supported by Hootsuite
+      - Excludes political orgs, schools, hospitals, and government agencies
+    effort_level: 2
+    steps_to_apply:
+      - name: Validate nonprofit status
+        description: >-
+          Create or log into a TechSoup or Percent account to obtain a
+          validation token confirming charitable status.
+        action: Validate
+        action_url: https://www.techsoup.org/
+      - name: Submit application
+        description: >-
+          Choose the Professional plan on Hootsuite’s HootGiving page and enter
+          the validation token during checkout.
+        action: Apply Now
+        action_url: https://www.hootsuite.com/nonprofit-discount#apply
+  - name: Team Plan (Nonprofit Discount)
+    intro: >-
+      74 % off Hootsuite Team—$64.50/month instead of $249/month (annual
+      billing).
+    max_value: 74
+    url: https://www.hootsuite.com/nonprofit-discount
+    benefits:
+      - 3 users & up to 20 social accounts
+      - Team assignments and permission controls
+      - 1 custom-branded URL and social media certification
+      - Advanced analytics with custom report builder
+      - Bulk scheduling & unified inbox
+    benefits_level: 3
+    duration:
+      - Ongoing while nonprofit status remains valid
+    eligibility:
+      - Verified nonprofit/charity via TechSoup or Percent
+      - Operates in a country supported by Hootsuite
+      - Excludes political orgs, schools, hospitals, and government agencies
+    effort_level: 2
+    steps_to_apply:
+      - name: Validate nonprofit status
+        description: >-
+          Obtain a TechSoup or Percent validation token confirming charitable
+          status.
+        action: Validate
+        action_url: https://www.techsoup.org/
+      - name: Submit application
+        description: >-
+          Select the Team plan on Hootsuite’s HootGiving portal, add the
+          validation token, and complete checkout.
+        action: Apply Now
+        action_url: https://www.hootsuite.com/nonprofit-discount#apply
+faq:
+  - question: Who is eligible for Hootsuite’s nonprofit discount?
+    answer: >-
+      Registered charities and nonprofit organizations in good standing that can
+      be validated through TechSoup or Percent are eligible. Schools, hospitals,
+      government bodies, and political organizations are excluded.
+  - question: How much can nonprofits save?
+    answer: >-
+      Eligible nonprofits receive up to a 75 % discount on the Professional plan
+      and approximately 74 % off the Team plan, billed annually in USD.
+  - question: Which social networks can be managed with the discounted plans?
+    answer: >-
+      Both plans support Instagram, Facebook, Twitter, LinkedIn, YouTube,
+      Pinterest, and TikTok.
+  - question: Is the discount time-limited?
+    answer: >-
+      The reduced pricing remains in effect as long as the organization
+      maintains verified nonprofit status and complies with Hootsuite’s terms.
+  - question: Can I apply through a partner like TechSoup?
+    answer: >-
+      Yes. Applicants may apply directly on Hootsuite’s site or via TechSoup,
+      which streamlines validation for many regions.
