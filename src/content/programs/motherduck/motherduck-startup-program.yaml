@@ -1,0 +1,86 @@
+draft: false
+provider_slug: motherduck
+title: MotherDuck Startup Program
+meta_title: MotherDuck Startup Program – 50% Discount for Startups
+intro: >-
+  Qualified startups receive 50% off an annual MotherDuck Business Plan
+  contract, following a 21-day free trial and without any feature gating.
+description: >-
+  MotherDuck’s Startup Program gives early-stage companies affordable access to
+  its modern analytics data warehouse. Participants benefit from per-user
+  compute isolation ("ducklings"), built-in cost attribution, compatibility with
+  50+ data tools, and dedicated onboarding support. The offer provides a
+  one-year 50% discount on Business Plan contracts (minimum $6,000 spend for
+  $12,000 in platform value) that must be executed within 12 months of
+  acceptance. The program targets teams with ≤20 employees and ≤$5 million in
+  funding and is extended to new or free-tier customers only.
+status: Active
+tags:
+  - analytics
+  - data
+  - database
+  - big data
+url: https://motherduck.com/startups
+value_type: discount
+currency: USD
+max_value: 50
+community_notes: []
+tiers:
+  - name: 50% Startup Discount
+    intro: >-
+      Half-price annual Business Plan for eligible startups, on top of the
+      standard 21-day free trial.
+    max_value: 50
+    url: https://motherduck.com/startups
+    benefits:
+      - 50% discount on Business Plan contract (min. $6k annual spend)
+      - Full feature access with no gating or hidden fees
+      - User-level compute instances and cost visibility
+      - Native integrations with 50+ data tools
+      - Dedicated support to optimise data architecture
+    benefits_level: 2
+    duration:
+      - 12-month contract
+    eligibility:
+      - ≤20 employees
+      - ≤$5M total funding
+      - Active public website (not in stealth)
+      - New or existing Free-tier MotherDuck customer
+      - Company email required (no personal emails)
+    effort_level: 2
+    steps_to_apply:
+      - name: Review eligibility
+        description: >-
+          Confirm your startup meets size, funding, and customer-status criteria
+          listed on the website.
+      - name: Submit application form
+        description: Provide company details and agree to minimum contract size.
+        action: Apply Now
+        action_url: https://motherduck.com/startups
+      - name: Sign discounted contract
+        description: >-
+          Upon approval, execute the annual agreement within 12 months to lock
+          in the 50% discount.
+faq:
+  - question: Who is eligible for MotherDuck’s Startup Program?
+    answer: >-
+      Startups with fewer than 20 employees and no more than $5 million in
+      funding (including bootstrapped) that are new customers or existing users
+      on the Free plan can apply. Paid-plan customers are not eligible.
+  - question: Does the 50% discount expire?
+    answer: >-
+      Yes. The discounted annual contract must be signed within 12 months of
+      program acceptance to remain valid.
+  - question: Is there a minimum contract size?
+    answer: >-
+      The discount applies to Business Plan contracts of at least $6,000 per
+      year, representing $12,000 in platform credits after the 50% reduction.
+  - question: What support will my startup receive?
+    answer: >-
+      MotherDuck’s support team contacts accepted startups to discuss goals,
+      answer questions, and provide technical guidance for deploying analytics
+      workloads.
+  - question: Can current MotherDuck customers join?
+    answer: >-
+      Only startups on the Free tier may apply. Existing paid-plan customers are
+      not eligible for the Startup Program.

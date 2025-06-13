@@ -1,0 +1,16 @@
+active: true
+name: MotherDuck
+short_name: MotherDuck
+slug: motherduck
+color: '#FFDE02'
+url: https://motherduck.com
+intro: >-
+  Modern analytics data warehouse delivering per-user compute isolation
+  ("ducklings"), built-in cost attribution, and native integrations.
+best_deal: 50% off Business Plan for startups (min $6k spend)
+video: ''
+tags:
+  - analytics
+  - data
+  - database
+  - big data
