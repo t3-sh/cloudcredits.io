@@ -1,0 +1,16 @@
+active: true
+name: Snyk
+short_name: Snyk
+slug: snyk
+color: '#145DEB'
+url: https://snyk.io
+intro: >-
+  Developer-first security platform that scans open-source dependencies,
+  containers, and infrastructure-as-code to detect and fix vulnerabilities.
+best_deal: Free enterprise entitlements for OSS
+video: ''
+tags:
+  - open source
+  - cybersecurity
+  - dev tools
+  - devops
