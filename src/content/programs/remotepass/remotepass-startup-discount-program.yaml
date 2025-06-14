@@ -1,0 +1,115 @@
+draft: false
+provider_slug: remotepass
+title: RemotePass Startup Discount Program
+meta_title: RemotePass Startup Program – Global Hiring & Payroll Discounts
+intro: >-
+  Early-stage startups with under $5 million in funding receive 1 month of
+  contractor management free, 33% off for the following 9 months, and 15% off
+  employee payroll services for a full year.
+description: >-
+  RemotePass’s Startup Program helps young companies hire and pay global talent
+  at lower cost. Participants unlock a free first month of contractor
+  management, heavily-discounted contractor fees for the next nine months, and a
+  year-long 15 % discount on full-time employee payroll. The offer includes
+  automated compliance in 120+ countries, multi-currency payouts, tax
+  withholding, contract storage, prepaid cards, and optional health-care
+  benefits—making it easier for founders to build remote teams without setting
+  up foreign entities.
+status: Active
+tags:
+  - payroll
+  - hr
+  - compliance
+  - saas
+url: https://www.remotepass.com/startups
+value_type: discount
+currency: USD
+min_value: 15
+max_value: 100
+community_notes: []
+tiers:
+  - name: Contractor Management Offer
+    intro: 1 month free followed by 33% off for 9 months on contractor fees.
+    max_value: 100
+    url: https://www.remotepass.com/startups
+    benefits:
+      - 100% discount first month
+      - 33% discount for the next 9 months
+      - Hire contractors in 120+ countries with full compliance
+      - Instant multi-currency payments & USD card
+      - Automated contracts, invoicing, and expense tracking
+    benefits_level: 2
+    duration:
+      - 1 month free
+      - 9 months discounted
+    eligibility:
+      - Startup funding below $5 M
+      - Pre-seed, Seed, or Series A stage
+      - New RemotePass customer
+      - Contractor engagements only
+    effort_level: 2
+    steps_to_apply:
+      - name: Create RemotePass Account
+        description: Sign up with company details to access the dashboard.
+        action: Sign Up
+        action_url: https://www.remotepass.com/signup
+      - name: Submit Startup Program Form
+        description: >-
+          Verify funding stage and team size to activate the contractor
+          discount.
+        action: Apply Now
+        action_url: https://www.remotepass.com/startups#apply
+  - name: Employee Payroll Offer
+    intro: 15% discount for 12 months on full-time employee management services.
+    max_value: 15
+    url: https://www.remotepass.com/startups
+    benefits:
+      - 15% off employer of record fees for 1 year
+      - Hire full-time employees without a local entity
+      - Local benefits & health insurance administration
+      - Global payroll with tax withholding
+      - Compliance and document storage
+    benefits_level: 1
+    duration:
+      - 12 months
+    eligibility:
+      - Startup funding below $5 M
+      - Pre-seed, Seed, or Series A stage
+      - New RemotePass customer
+      - Employee engagements only
+    effort_level: 2
+    steps_to_apply:
+      - name: Create RemotePass Account
+        description: Register your company profile to access employee hiring tools.
+        action: Sign Up
+        action_url: https://www.remotepass.com/signup
+      - name: Upload Funding Proof
+        description: >-
+          Provide documentation showing funding is under $5 M and company is
+          early-stage.
+        action: Upload Docs
+        action_url: https://www.remotepass.com/startups#verification
+faq:
+  - question: Who qualifies for the RemotePass Startup Program?
+    answer: >-
+      Any early-stage company worldwide that has raised less than US$5 million
+      (typically pre-seed, seed, or Series A) and is not an existing RemotePass
+      customer.
+  - question: Can startups with more than $5 million in funding participate?
+    answer: >-
+      The core discount is limited to startups under the $5 million threshold,
+      but RemotePass can create bespoke packages for growth-stage companies
+      through direct consultation.
+  - question: Is the promotion available to current RemotePass customers?
+    answer: >-
+      No. The listed discounts and the free month apply only to new enrollments
+      initiated through the startup program application flow.
+  - question: How long do the discounts last?
+    answer: >-
+      For contractor services, the first month is free and the following nine
+      months are 33% off. Employee payroll services receive a 15% discount for a
+      full 12 months.
+  - question: What savings can startups expect compared to standard pricing?
+    answer: >-
+      Participants typically reduce first-year global hiring and payroll costs
+      by 40–60% relative to RemotePass’s standard enterprise plans.
