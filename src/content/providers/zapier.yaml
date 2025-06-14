@@ -2,13 +2,13 @@ active: true
 name: Zapier
 short_name: Zapier
 slug: zapier
-color: '#FF4F00'
+color: "#FF4F00"
 url: https://zapier.com
 intro: >-
   A no-code automation platform that connects hundreds of apps and automates
   workflows with multi-step Zaps.
 best_deal: 14-day free Pro trial
-video: ''
+video: ""
 tags:
   - free trial
   - automation

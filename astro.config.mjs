@@ -9,7 +9,7 @@ import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import sharp from "sharp";
 
-import vercel from "@astrojs/vercel";
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -59,5 +59,5 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
 
-  adapter: vercel(),
+  adapter: netlify(),
 });

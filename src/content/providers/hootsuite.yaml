@@ -2,14 +2,14 @@ active: true
 name: Hootsuite
 short_name: Hootsuite
 slug: hootsuite
-color: '#FF4C46'
+color: "#FF4C46"
 url: https://www.hootsuite.com
 intro: >-
   Social media management platform offering scheduling, analytics, and team
   collaboration tools, with significant nonprofit discounts through the
   HootGiving program.
 best_deal: Up to 75% off Hootsuite Professional & Team Plans
-video: ''
+video: ""
 tags:
   - social
   - marketing
