@@ -59,5 +59,7 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
 
-  adapter: netlify(),
+  adapter: netlify({
+    imageCDN: false,
+  }),
 });
