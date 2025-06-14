@@ -1,0 +1,16 @@
+active: true
+name: Mistral AI
+short_name: Mistral
+slug: mistral
+color: '#ffd800'
+url: https://mistral.ai
+intro: >-
+  French AI startup developing open, high-performance large language and
+  multimodal models and APIs.
+best_deal: Free API credits and VIP perks for ambassadors
+video: ''
+tags:
+  - ai
+  - api
+  - dev tools
+  - collaboration

@@ -1,0 +1,87 @@
+draft: false
+provider_slug: mistral
+title: Mistral AI Ambassador Program
+meta_title: Mistral AI Ambassador Program – Apply by July 1, 2025
+intro: >-
+  Earn free API credits, early-access to new features, and VIP recognition by
+  joining the six-month Mistral AI Ambassador Program.
+description: >-
+  The Mistral AI Ambassador Program invites passionate AI practitioners to
+  advocate for Mistral’s models, create educational content, and support the
+  growing community. Ambassadors receive complimentary API credits for “la
+  Plateforme,” early previews of upcoming tools, public recognition, and
+  priority access to events while committing to produce monthly contributions
+  and serve for at least six months.
+status: Active
+tags:
+  - ai
+  - api
+  - dev tools
+  - collaboration
+url: https://mistral.ai/ambassador-program
+value_type: credits
+currency: USD
+max_value: 0
+community_notes: []
+tiers:
+  - name: Ambassador
+    intro: >-
+      Single-tier cohort for experts who advocate, create content, and support
+      Mistral’s community for six months.
+    max_value: 0
+    url: https://mistral.ai/ambassador-program
+    benefits:
+      - Free API credits on la Plateforme
+      - Early access to unreleased features and direct feedback channels
+      - Public recognition on website, Discord, and events
+      - VIP invitations to Mistral-hosted meet-ups and workshops
+      - Dedicated Discord/Slack channels with Mistral engineers
+    benefits_level: 2
+    duration:
+      - 6 months (August 2025 – January 2026)
+    eligibility:
+      - Demonstrated AI/ML expertise
+      - Previous public advocacy for Mistral (posts, talks, tutorials)
+      - Commitment to monthly contributions
+      - Minimum age 13 (parental consent if <18)
+      - Willing to complete a bi-yearly contribution review
+    effort_level: 3
+    steps_to_apply:
+      - name: Submit application
+        description: >-
+          Complete the online form before July 1 2025 with details of past work
+          and plans as an Ambassador.
+        action: Apply Now
+        action_url: https://mistral.ai/ambassador-program#apply
+      - name: Join Discord
+        description: >-
+          Enter Mistral’s Discord server to stay updated on the selection
+          process and community activities.
+        action: Join Discord
+        action_url: https://discord.gg/mistralai
+      - name: Interview (if shortlisted)
+        description: >-
+          Participate in a brief interview with the Mistral team to discuss fit
+          and expectations.
+        action: Prepare for Interview
+faq:
+  - question: When is the application deadline?
+    answer: >-
+      Applications for the Summer 2025 cohort close on July 1 2025. Selected
+      applicants will be notified by the end of July.
+  - question: How long is the commitment?
+    answer: >-
+      Ambassadors commit to a six-month term (August 2025 – January 2026) with a
+      bi-yearly performance assessment.
+  - question: What monthly contribution is required?
+    answer: >-
+      At least one technical content piece, event, or significant
+      community-support activity must be delivered each month.
+  - question: Do Ambassadors receive monetary compensation?
+    answer: >-
+      Ambassadors receive free API credits and exclusive perks but no direct
+      financial payment.
+  - question: Can students apply?
+    answer: >-
+      Yes. Applicants must be at least 13 years old; those under 18 require
+      parental consent.
