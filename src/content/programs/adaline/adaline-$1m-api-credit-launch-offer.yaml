@@ -1,0 +1,84 @@
+draft: false
+provider_slug: adaline
+title: Adaline $1M API Credit Launch Offer
+meta_title: Adaline General Availability – $10K API Credits for First 100 Teams
+intro: >-
+  First 100 eligible team workspaces receive $10,000 in Adaline API credits to
+  iterate, evaluate, deploy, and monitor LLM applications.
+description: >-
+  To celebrate its general availability release, Adaline is granting a total of
+  $1 million in API credits—$10,000 per workspace—to the first 100 eligible
+  teams that sign up. The platform unifies prompt iteration, evaluation,
+  deployment, and monitoring for large-language-model (LLM) applications and is
+  already trusted by companies such as Salesforce, DoorDash, Discord, and
+  McKinsey.
+status: Active
+tags:
+  - ai
+  - llm
+  - api
+  - dev tools
+  - saas
+url: https://www.adaline.ai
+value_type: credits
+currency: USD
+min_value: 10000
+max_value: 10000
+community_notes: []
+tiers:
+  - name: General Availability Launch Credit
+    intro: $10,000 in Adaline API credits for the first 100 eligible team workspaces.
+    max_value: 10000
+    url: https://www.adaline.ai/signup
+    benefits:
+      - $10,000 Adaline API credits
+      - Full access to Adaline’s iterate–evaluate–deploy–monitor toolchain
+      - Collaborative workspace for engineers, PMs, and researchers
+      - Support for 300+ AI models with 99.998% historical uptime
+      - Real-time logs, analytics, and versioning
+    benefits_level: 2
+    duration:
+      - Credits remain until fully consumed
+    eligibility:
+      - Must create a team workspace (not an individual account)
+      - Among the first 100 eligible sign-ups after GA launch
+      - Agree to Adaline Terms of Service
+      - Use credits for Adaline API usage
+      - One grant per organization
+    effort_level: 1
+    steps_to_apply:
+      - name: Sign Up
+        description: Create an Adaline account and choose the Team Workspace option.
+        action: Sign Up
+        action_url: https://www.adaline.ai/signup
+      - name: Verify Workspace Eligibility
+        description: >-
+          Adaline automatically checks if your workspace is within the first 100
+          eligible teams.
+        action: Await Confirmation
+      - name: Start Building
+        description: >-
+          Once approved, the $10,000 credits are applied to your workspace for
+          immediate use.
+faq:
+  - question: Who is eligible for the $10K Adaline API credits?
+    answer: >-
+      Only team workspaces—rather than individual accounts—that are among the
+      first 100 eligible sign-ups after general availability qualify for the
+      $10,000 credit package.
+  - question: Is there a deadline to claim the credits?
+    answer: >-
+      The offer remains open until the 100-workspace cap is reached; teams are
+      encouraged to sign up quickly to secure their spot.
+  - question: Do the credits expire?
+    answer: >-
+      No. Once granted, the $10,000 in API credits remain in your workspace
+      account until they are fully consumed.
+  - question: What happens if my team signs up after the first 100 slots are filled?
+    answer: >-
+      Teams beyond the first 100 will still receive Adaline’s standard free tier
+      but will not receive the additional $10,000 credit package.
+  - question: Can multiple people on my team use the credits?
+    answer: >-
+      Yes. Credits are attached to the workspace and can be used collaboratively
+      by all invited team members.
