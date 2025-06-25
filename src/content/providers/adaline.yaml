@@ -1,0 +1,18 @@
+active: true
+name: Adaline
+short_name: Adaline
+slug: adaline
+color: '#2BDFDC'
+url: https://www.adaline.ai
+intro: >-
+  A unified platform for prompt iteration, evaluation, deployment, and
+  monitoring of large language model applications, trusted by Salesforce,
+  DoorDash, Discord, and McKinsey.
+best_deal: $10,000 API credits for first 100 teams
+video: ''
+tags:
+  - ai
+  - llm
+  - api
+  - dev tools
+  - saas
