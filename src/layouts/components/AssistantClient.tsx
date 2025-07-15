@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import AIInput from "./AIInput";
 import ProgramCard from "./ProgramCard";
 import LoadingIndicator from "./LoadingIndicator";
+import StarCTADialog from "./StarCTADialog";
+import { useStarCTA } from "./useStarCTA";
 
 interface Program {
   id: string;
@@ -56,6 +58,7 @@ export default function AssistantClient({
   const [matchedPrograms, setMatchedPrograms] = useState<Program[]>([]);
   const [prompt, setPrompt] = useState("");
   const [hasProcessedUrlPrompt, setHasProcessedUrlPrompt] = useState(false);
+  const { shouldShow, triggerStarCTA, closeStarCTA } = useStarCTA();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -120,6 +123,9 @@ export default function AssistantClient({
           .filter((p): p is Program => p !== undefined);
         setMatchedPrograms(matched);
       }
+
+      // Trigger star CTA after successful response
+      triggerStarCTA();
     } catch (err) {
       console.error("Error fetching data:", err);
       setError(
@@ -294,6 +300,9 @@ export default function AssistantClient({
           )}
         </div>
       </section>
+
+      {/* Star CTA Dialog */}
+      <StarCTADialog show={shouldShow} onClose={closeStarCTA} />
     </>
   );
 }
