@@ -1,0 +1,51 @@
+name: '[production] Deploy to Cloudflare Pages'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies and update lockfile
+        run: |
+          pnpm install --no-frozen-lockfile
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add pnpm-lock.yaml
+          git commit -m "chore: update pnpm-lock.yaml" || echo "No changes to commit"
+          git push origin main || echo "No changes to push"
+
+      - name: Build site
+        run: pnpm run build
+
+      - name: Deploy to Cloudflare Pages
+        id: deployment
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '3'
+          command: >
+            pages deploy dist
+            --project-name=cloudcredits-io
+            --branch=main

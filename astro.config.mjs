@@ -9,7 +9,6 @@ import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import sharp from "sharp";
 
-import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -59,7 +58,4 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
 
-  adapter: netlify({
-    imageCDN: false,
-  }),
 });

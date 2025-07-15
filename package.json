@@ -18,7 +18,6 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/mdx": "4.0.3",
-    "@astrojs/netlify": "^6.3.4",
     "@astrojs/react": "4.1.2",
     "@astrojs/rss": "4.0.11",
     "@astrojs/sitemap": "3.2.1",

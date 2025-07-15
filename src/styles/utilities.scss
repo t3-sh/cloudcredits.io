@@ -26,3 +26,112 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+/* Animation utilities */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Special AI button animation with logo colors */
+@keyframes ai-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(72, 211, 213, 0.4),
+      0 0 40px rgba(254, 199, 71, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(72, 211, 213, 0.6),
+      0 0 60px rgba(254, 199, 71, 0.4);
+  }
+}
+
+.animate-ai-glow {
+  animation: ai-glow 3s ease-in-out infinite;
+}
+
+/* Frosted glass AI button */
+.ai-button-glass {
+  @apply relative overflow-hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(72, 211, 213, 0.15) 0%,
+    rgba(254, 199, 71, 0.15) 100%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.ai-button-glass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.ai-button-glass:hover::before {
+  left: 100%;
+}
+
+.ai-button-glass:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(72, 211, 213, 0.25) 0%,
+    rgba(254, 199, 71, 0.25) 100%
+  );
+  border-color: rgba(72, 211, 213, 0.3);
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(72, 211, 213, 0.3);
+}

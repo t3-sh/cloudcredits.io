@@ -3,12 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import useTheme from "@/hooks/useTheme";
 import AIInput from "./AIInput";
+import { isFeatureEnabled } from "@/lib/featureFlags";
 
 export default function HeroSection() {
   const theme = useTheme();
   const [activeIconIndex, setActiveIconIndex] = useState(0);
   const carouselIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const askAIEnabled = isFeatureEnabled("askAI");
 
   const glassCardStyle = {
     background:
@@ -210,21 +212,24 @@ export default function HeroSection() {
           </a>
         </motion.div>
 
-        {/* AI Input section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.7, duration: 0.6 }}
-          className="w-full max-w-4xl mx-auto mb-10"
-        >
-          <div className="text-center mb-4">
-            <span className="text-gray-600 dark:text-gray-400">or</span>
-            <span className="ml-2 font-medium text-dark dark:text-white">
-              Ask AI
-            </span>
-          </div>
-          <AIInput onSubmit={handleAISubmit} loading={isLoading} />
-        </motion.div>
+        {/* AI Input section - only show if feature is enabled */}
+        {askAIEnabled && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.7, duration: 0.6 }}
+            className="w-full max-w-4xl mx-auto mb-10"
+          >
+            <div className="text-center mb-4">
+              <span className="text-gray-600 dark:text-gray-400">or</span>
+              <span className="ml-2 font-medium text-dark dark:text-white inline-flex items-center gap-2">
+                <span className="text-lg">⚡</span>
+                Ask AI Guru
+              </span>
+            </div>
+            <AIInput onSubmit={handleAISubmit} loading={isLoading} />
+          </motion.div>
+        )}
 
         {/* Single icon carousel with labels */}
         <motion.div

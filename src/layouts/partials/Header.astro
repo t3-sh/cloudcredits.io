@@ -6,6 +6,7 @@ import menu from "@/config/menu.json";
 import { IoSearch } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import social from "@/config/social.json";
+import { isFeatureEnabled } from "@/lib/featureFlags";
 
 export interface ChildNavigationLink {
   name: string;
@@ -17,12 +18,14 @@ export interface NavigationLink {
   url: string;
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
+  special?: boolean;
 }
 
 const { main }: { main: NavigationLink[] } = menu;
 const { navigation_button, settings } = config;
 const { pathname } = Astro.url;
 const github = social.main.find((item) => item.name === "github");
+const askAIEnabled = isFeatureEnabled("askAI");
 ---
 
 <header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`}>
@@ -130,6 +133,20 @@ const github = social.main.find((item) => item.name === "github");
           >
             <IoSearch />
           </button>
+        )
+      }
+      {
+        askAIEnabled && (
+          <a
+            href="/deals/assistant"
+            class="ai-button-glass px-4 py-2 rounded-full text-sm font-semibold text-gray-800 dark:text-white transition-all duration-500 mr-5 animate-ai-glow hover:scale-105"
+            aria-label="Ask AI Assistant"
+          >
+            <span class="relative z-10 flex items-center gap-2">
+              <span class="text-lg">⚡</span>
+              Ask AI Guru
+            </span>
+          </a>
         )
       }
       <ThemeSwitcher className="mr-5" />

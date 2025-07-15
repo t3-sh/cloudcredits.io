@@ -5,10 +5,11 @@ import AnimatedBackground from "@/layouts/components/AnimatedBackground";
 import { getCollection } from "astro:content";
 import ProgramCard from "@/layouts/components/ProgramCard.astro";
 import { motion } from "framer-motion";
+import { isFeatureEnabled } from "@/lib/featureFlags";
 
 const allPrograms = await getCollection("programs");
 const featuredProgramTitles = [
-  "Airtable for Startups",
+  "Deepgram $200 Free Credits",
   "GitHub for Startups",
   "Notion for Startups",
   "Perplexity for Startups",
@@ -19,6 +20,7 @@ const featuredPrograms = allPrograms.filter((p) =>
   featuredProgramTitles.includes(p.data.title),
 );
 const rotationAngles = [-3, -1, 2, 1, -2, 3];
+const askAIEnabled = isFeatureEnabled("askAI");
 ---
 
 <Base>

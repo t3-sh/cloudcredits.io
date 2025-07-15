@@ -24,10 +24,6 @@
         {
           "name": "Categories",
           "url": "/tags"
-        },
-        {
-          "name": "Ask AI",
-          "url": "/deals/assistant"
         }
       ]
     },

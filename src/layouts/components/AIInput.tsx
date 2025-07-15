@@ -21,17 +21,12 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState("");
-  const [internalLoading, setInternalLoading] = useState(false);
-
-  // Check if we have a prompt in URL (means we're processing)
+  // Check if we have a prompt in URL and set it as the value
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const prompt = urlParams.get("prompt");
     if (prompt) {
       setValue(prompt);
-      setInternalLoading(true);
-      // Show loading state briefly then hide it since results are already rendered
-      setTimeout(() => setInternalLoading(false), 1000);
     }
   }, []);
 
@@ -43,7 +38,7 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
   };
 
   useEffect(() => {
-    if (!internalLoading) {
+    if (!loading) {
       startAnimation();
     }
     return () => {
@@ -51,27 +46,23 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
         clearInterval(intervalRef.current);
       }
     };
-  }, [internalLoading]);
+  }, [loading]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && !internalLoading) {
+    if (e.key === "Enter" && !loading) {
       handleFormSubmit();
     }
   };
 
   const handleFormSubmit = async () => {
-    if (!value.trim() || internalLoading) return;
+    if (!value.trim() || loading) return;
 
-    // Show loading immediately
-    setInternalLoading(true);
     const inputValue = value;
 
     try {
       if (typeof window !== "undefined") {
         if (onSubmit) {
           await onSubmit(inputValue);
-        } else if ("handleAISubmit" in window) {
-          await (window as any).handleAISubmit(inputValue);
         } else {
           // Fallback: navigate directly
           const url = new URL(window.location.href);
@@ -82,19 +73,18 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
       }
     } catch (error) {
       console.error("Error during submission:", error);
-      setInternalLoading(false);
     }
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!internalLoading) {
+    if (!loading) {
       handleFormSubmit();
     }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!internalLoading) {
+    if (!loading) {
       if (e.target.value.length <= MAX_LENGTH) {
         setValue(e.target.value);
       }
@@ -127,7 +117,7 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
       >
         {/* Shimmer overlay when loading */}
         <AnimatePresence>
-          {internalLoading && (
+          {loading && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -159,17 +149,17 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
           ref={inputRef}
           value={value}
           type="text"
-          disabled={internalLoading}
+          disabled={loading}
           placeholder=""
           className="w-full relative text-sm sm:text-base z-10 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-5 sm:pl-12 pr-20 disabled:cursor-not-allowed"
         />
 
         <button
-          disabled={!value.trim() || internalLoading}
+          disabled={!value.trim() || loading}
           type="submit"
           className="absolute right-3 top-1/2 z-40 -translate-y-1/2 h-10 w-10 rounded-full disabled:bg-gray-100 bg-black dark:bg-zinc-900 dark:disabled:bg-zinc-800 transition-all duration-200 flex items-center justify-center"
         >
-          {internalLoading ? (
+          {loading ? (
             <div className="animate-spin h-5 w-5 border-2 border-white/20 border-t-white rounded-full" />
           ) : (
             <motion.svg
@@ -207,7 +197,7 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
 
         <div className="absolute inset-0 flex items-center rounded-full pointer-events-none z-20">
           <AnimatePresence mode="wait">
-            {internalLoading ? (
+            {loading ? (
               <motion.div
                 key="thinking"
                 initial={{ opacity: 0, y: 5 }}
@@ -237,23 +227,6 @@ export default function AIInput({ onSubmit, loading = false }: AIInputProps) {
           {value.length}/{MAX_LENGTH}
         </div>
       </form>
-
-      {/* Loading message below input */}
-      <AnimatePresence>
-        {internalLoading && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="mt-4 text-center"
-          >
-            <div className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200/50 dark:border-gray-700/50">
-              <div className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
-              <span>Thinking...</span>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
