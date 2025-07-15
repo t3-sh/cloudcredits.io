@@ -1,0 +1,90 @@
+provider_slug: "namecheap"
+title: "Namecheap Education Program"
+meta_title: "Free .ME Domain for Students - Namecheap Education Program"
+intro: "University students get a free .ME domain for one year plus GitHub Pages hosting and professional tools to kickstart their online presence"
+description: "Comprehensive educational program offering free .ME domains to over 200,000 students worldwide since 2014, with additional discounts on popular TLDs, GitHub Pages integration, and professional development tools including logo maker and business card designer."
+status: "Active"
+url: "https://nc.me/"
+min_value: 0
+max_value: 50
+value_type: "credits"
+currency: "USD"
+tags: ["domains", "education", "hosting"]
+date: 2025-07-15
+
+tiers:
+  - name: "Free .ME Domain Bundle"
+    intro: "Complete free bundle for university students including domain, hosting, and professional tools"
+    max_value: 50
+    url: "https://nc.me/"
+    benefits:
+      - "Free .ME domain for 1 year (typically $8.88 value)"
+      - "GitHub Pages hosting setup included"
+      - "Professional logo maker tool access"
+      - "Business card design tools"
+      - "SSL certificate included"
+      - "Access to educational resources and Guru Guides"
+    benefits_level: 2
+    duration: ["1 year"]
+    eligibility:
+      - "University students with .edu email address"
+      - "Faculty and staff with .edu email address"
+      - "Must be from US, UK, Canadian, or Australian universities"
+      - "Must be at least 13 years old"
+      - "One domain per TLD per household/business"
+    effort_level: 1
+    timeline_indication: "Immediate activation upon email verification"
+    steps_to_apply:
+      - name: "Visit nc.me Website"
+        description: "Go to the Namecheap Education Program website"
+        action: "Start Application"
+        action_url: "https://nc.me/"
+      - name: "Search for Domain"
+        description: "Use the domain search tool to find your desired domain name"
+        action: "Search Domain"
+        action_url: "https://nc.me/"
+      - name: "Verify Student Status"
+        description: "Verify your student status using your .edu email address"
+        action: "Verify Email"
+        action_url: "https://nc.me/"
+      - name: "Complete Registration"
+        description: "Complete the registration process and receive GitHub Pages setup link"
+        action: "Complete Setup"
+        action_url: "https://nc.me/"
+
+  - name: "Discounted Domain Options"
+    intro: "Additional domain extensions available at discounted rates for students"
+    max_value: 25
+    url: "https://nc.me/"
+    benefits:
+      - ".io domain for $24.88 (first year discount)"
+      - ".tech domain for $0.48 (first year discount)"
+      - ".com domain for $8.88 (first year discount)"
+      - ".website domain for $0.48 (first year discount)"
+    benefits_level: 1
+    duration: ["1 year"]
+    eligibility:
+      - "Same eligibility as free .ME domain"
+      - "Must be enrolled in supported university"
+      - "Limited to one domain per TLD per household"
+    effort_level: 1
+    timeline_indication: "Immediate activation upon payment"
+    steps_to_apply:
+      - name: "Access Through nc.me"
+        description: "Access discounted domains through the main education program"
+        action: "View Options"
+        action_url: "https://nc.me/"
+
+faq:
+  - question: "What is included in the free education bundle?"
+    answer: "The free bundle includes a .ME domain for one year, GitHub Pages hosting setup, logo maker tool, business card designer, and SSL certificate. After the first year, GitHub Pages costs $15/year with auto-renewal."
+  - question: "Who is eligible for the program?"
+    answer: "University students, faculty, and staff with .edu email addresses from US, UK, Canadian, and Australian universities. You must be at least 13 years old and have a valid educational email address."
+  - question: "How many domains can I get?"
+    answer: "You can get one domain per TLD (domain extension) per household/business. For example, you could get one .me domain and one .com domain, but not two .me domains."
+  - question: "What happens after the first year?"
+    answer: "The .ME domain will auto-renew at regular pricing. GitHub Pages will cost $15/year. You'll receive a 30-day notification email before renewal with an option to opt-out."
+  - question: "What universities are supported?"
+    answer: "The program supports universities in the US, UK, Canada, and Australia. If your university is not listed, you can request consideration for inclusion in the program."
+  - question: "How do I set up GitHub Pages?"
+    answer: "After completing registration, you'll receive a link to set up GitHub Pages. If you don't receive the confirmation email, check your spam folder."
