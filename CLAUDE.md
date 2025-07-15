@@ -107,7 +107,7 @@ Use this exact prompt to generate the program JSON:
 RULES:
 1. Parse as much information as possible from the given website content. Don't drop anything.
 2. Write about providers as third party. So refer to them/their, etc, instead of us, our, etc.
-3. Make sure you assign the most appropriate tags from the ones offered in the JSON schema.
+3. CRITICAL: Make sure you assign the most appropriate tags from the ones defined in src/tags.ts (ALLOWED_TAGS array).
 4. Refer to the good examples of existing programs."
 
 **Input format**:
@@ -172,7 +172,7 @@ Use this exact prompt to generate the provider JSON:
 
 **Prompt**: "Based on the offer information, you must compile a summary YAML about provider. Only return final JSON and nothing else. It must follow the JSON schema strictly and it must respect the max size of fields in JSON schema (if set).
 
-Make sure you assign the most appropriate tags from the ones offered in the JSON schema.
+CRITICAL: Make sure you assign the most appropriate tags from the ones defined in src/tags.ts (ALLOWED_TAGS array).
 
 Refer to the below good examples."
 
@@ -369,8 +369,8 @@ Reference these exact examples when generating provider data:
 ```
 
 ### Important Guidelines:
-- Write about providers in third person (they/their, not us/our)
-- Assign appropriate tags from existing taxonomy
+- Write about providers in third person (they/their, not us/our)  
+- Assign appropriate tags from the ALLOWED_TAGS array defined in src/tags.ts
 - Follow existing examples for structure and formatting
 - Use kebab-case for file names and slugs
 - Ensure all URLs are valid and accessible
@@ -381,7 +381,7 @@ Reference these exact examples when generating provider data:
 - Add currency field when applicable (USD, EUR, etc.)
 
 ### Available Tags:
-Use existing tags from the taxonomy: cloud, database, dev tools, collaboration, crm, sales, marketing, ai, security, analytics, storage, etc.
+CRITICAL: Use only tags from the ALLOWED_TAGS array defined in src/tags.ts. Before assigning tags, always reference this file to ensure you're using valid tags.
 
 ### File Structure:
 ```

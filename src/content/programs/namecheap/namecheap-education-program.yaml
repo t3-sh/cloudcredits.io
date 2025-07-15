@@ -9,7 +9,7 @@ min_value: 0
 max_value: 50
 value_type: "credits"
 currency: "USD"
-tags: ["domains", "education", "hosting"]
+tags: ["hosting", "education"]
 date: 2025-07-15
 
 tiers:
