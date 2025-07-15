@@ -1,5 +1,7 @@
 # Claude Code Instructions for cloudcredits.io
 
+IMPORTANT: only follow these instructions if you were asked to add a new program/deal (content update request). Otherwise, ignore this file.
+
 ## How to add a new provider and program
 
 When a user requests adding a new provider or program, follow this systematic process to replicate the n8n workflow functionality:
@@ -34,7 +36,7 @@ node scripts/scrape-clean-text.js https://example.com/startup-program
 - Automatically removes common navigation and footer elements
 - Normalizes whitespace and formatting
 - Returns clean, structured JSON output
-- Handles authentication using `BROWSERLESS_API_KEY` from `.claude/settings.local.json`
+- Handles authentication using `BROWSERLESS_API_KEY` from environment variables available to Claude.
 
 is**Output Format**:
 ```json
@@ -404,7 +406,7 @@ Authorization: Bearer <brandfetch_token>
 
 Where:
 - `{domain}` is extracted from the provider's main URL (e.g., `scaleway.com` from `https://www.scaleway.com`)
-- `<brandfetch_token>` is available in `.claude/settings.local.json` or `.claude/settings.json` under the Brandfetch API key configuration
+- `<brandfetch_token>` is available in environment variables available to Claude agent.
 
 #### Step 2: Process Brandfetch Response
 Look for the following in the API response:
