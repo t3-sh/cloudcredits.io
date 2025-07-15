@@ -220,7 +220,8 @@ tags: ["relevant", "tags"]
 1. Ensure all files are created with proper content and formatting
 2. Validate that provider and program YAML files follow the specified structure
 3. Confirm logo is downloaded (if applicable) and saved correctly
-4. The GitHub Action will automatically handle branch creation, commits, and PR creation
+4. CRITICAL: before pushing any code try to build project first to make sure it builds with `pnpm run build`. Otherwise solve build issues first
+5. The GitHub Action will automatically handle branch creation, commits, and PR creation
 
 ### Program Data Examples
 Reference these exact examples when generating program data:
