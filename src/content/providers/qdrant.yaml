@@ -1,0 +1,16 @@
+active: true
+name: "Qdrant"
+short_name: "Qdrant"
+slug: qdrant
+url: https://qdrant.tech
+color: "#9e0d38"
+best_deal: "20% off Qdrant Cloud for first year"
+intro: >-
+  Open-source vector database delivering fast similarity search with a cloud
+  offering for AI applications.
+video: ""
+tags:
+  - database
+  - ai
+  - open source
+  - search

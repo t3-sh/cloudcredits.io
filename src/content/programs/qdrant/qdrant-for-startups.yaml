@@ -1,0 +1,64 @@
+provider_slug: qdrant
+title: Qdrant for Startups
+meta_title: Qdrant for Startups Program
+intro: >-
+  Enjoy a 20% discount on Qdrant Cloud plus expert guidance and partner perks
+  for AI-focused startups.
+description: >-
+  Qdrant for Startups supports early-stage companies building AI-driven
+  products with a yearlong discount on the managed vector database,
+  personalized technical advice, and co-marketing opportunities. Participants
+  also receive perks from Hugging Face, LlamaIndex, and Airbyte.
+status: Active
+url: https://qdrant.tech/qdrant-for-startups/
+max_value: 20
+value_type: discount
+tags: ["database", "ai", "open source"]
+date: 2025-07-16
+
+tiers:
+  - name: Qdrant for Startups
+    intro: 20% off Qdrant Cloud for first year
+    max_value: 20
+    url: https://qdrant.tech/qdrant-for-startups/
+    benefits:
+      - "20% discount on Qdrant Cloud for 12 months"
+      - "One-on-one technical sessions with Qdrant experts"
+      - "Partner perks from Hugging Face, LlamaIndex, and Airbyte"
+      - "Co-marketing opportunities"
+    benefits_level: 2
+    duration: ["12 months"]
+    eligibility:
+      - "New user of Qdrant Cloud"
+      - "Pre-seed, Seed, or Series A startup under five years old"
+      - "Less than $5M in funding"
+      - "Have not participated in Qdrant for Startups before"
+      - "Building an AI-driven product or service"
+    effort_level: 2
+    timeline_indication: "Applications reviewed within 7-10 business days"
+    steps_to_apply:
+      - name: "Apply Online"
+        description: "Submit details about your startup and plans for using Qdrant"
+        action: "Apply Now"
+        action_url: https://qdrant.tech/qdrant-for-startups/
+
+faq:
+  - question: "What are the eligibility requirements?"
+    answer: >-
+      Startups must be new Qdrant Cloud users, pre-seed to Series A with less
+      than $5M in funding, building AI-driven products, and billing directly
+      with Qdrant.
+  - question: "How long is the discount valid?"
+    answer: >-
+      The 20% discount is valid for 12 months from acceptance and applies only
+      to Qdrant Cloud services billed through Qdrant.
+  - question: "How can I maximize co-marketing opportunities?"
+    answer: >-
+      Engage with the Qdrant marketing team for social media features,
+      webinars, and case studies highlighting your use of Qdrant.
+  - question: "Can existing customers apply?"
+    answer: >-
+      Yes, existing customers may apply if their cloud account was created
+      within the last 30 days.
+  - question: "Who can I contact for more information?"
+    answer: "Email startups@qdrant.com for assistance."
