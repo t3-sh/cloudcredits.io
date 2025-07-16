@@ -1,0 +1,10 @@
+active: true
+name: "Help Scout"
+short_name: "Help Scout"
+slug: "helpscout"
+url: "https://www.helpscout.com"
+color: "#1292EE"
+best_deal: "6 months free customer support platform"
+intro: "Customer support platform offering shared inbox, knowledge base, live chat, and in-app messaging to help startups build world-class support teams."
+video: ""
+tags: ["customer support", "saas", "collaboration"]

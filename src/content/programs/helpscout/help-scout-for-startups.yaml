@@ -1,0 +1,49 @@
+provider_slug: "helpscout"
+title: "Help Scout for Startups"
+meta_title: "Help Scout for Startups - 6 Months Free Customer Support Platform"
+intro: "Get 6 months free on a customer support platform that lets you keep it simple, move fast, and focus on delighting customers"
+description: "Comprehensive customer support platform offering shared inbox, knowledge base, live chat, and in-app messaging capabilities. Help Scout provides everything startups need to build a world-class support team with unlimited users and AI-powered tools for scaling customer communications."
+status: "Active"
+url: "https://www.helpscout.com/startups/"
+min_value: 100
+max_value: 100
+value_type: "discount"
+tags: ["customer support", "saas", "collaboration", "free trial"]
+date: 2025-07-16
+
+tiers:
+  - name: "Help Scout Plus - 6 Months Free"
+    intro: "Complete customer support platform with no limitations for eligible startups"
+    max_value: 100
+    url: "https://www.helpscout.com/startups/"
+    benefits:
+      - "6 months free access to Help Scout Plus (no limitations)"
+      - "Unlimited users and AI-powered tools"
+      - "Shared inbox, knowledge base, and live chat"
+      - "In-app messaging and customer management"
+      - "Integration with 90+ tools and world-class support"
+    benefits_level: 2
+    duration: ["6 months"]
+    eligibility:
+      - "New Help Scout customers only"
+      - "Incorporated tech startup"
+      - "Less than two years old"
+      - "Generating under $1 million in annual recurring revenue (ARR)"
+      - "Bootstrappers welcome (no funding requirements)"
+    effort_level: 1
+    timeline_indication: "Immediate activation upon approval"
+    steps_to_apply:
+      - name: "Apply for Help Scout Startup Program"
+        description: "Complete the application form to get 6 months free access"
+        action: "Apply Now"
+        action_url: "https://www.helpscout.com/startups/"
+
+faq:
+  - question: "What is included in Help Scout Plus?"
+    answer: "Help Scout Plus includes unlimited users, shared inbox, knowledge base, live chat, in-app messaging, customer management, detailed reports, AI-powered tools, and integrations with 90+ tools. There are no limitations during the 6-month free period."
+  - question: "What are the eligibility requirements?"
+    answer: "To qualify, your company must be a new Help Scout customer, an incorporated tech startup less than two years old, and generating under $1 million in annual recurring revenue (ARR). Unlike other programs, there are no funding requirements - bootstrappers are welcome."
+  - question: "How much can the knowledge base reduce email volume?"
+    answer: "Help Scout's knowledge base can help reduce email volume by up to 30% by enabling customers to find answers to common questions themselves."
+  - question: "What companies use Help Scout?"
+    answer: "Teams from Slack, Reddit, Figma, Segment, Zapier, and AngelList all started and scaled with Help Scout. Today their platform powers more than 12,000+ growing businesses."

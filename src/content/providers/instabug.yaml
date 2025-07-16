@@ -1,0 +1,10 @@
+active: true
+name: "Instabug"
+short_name: "Instabug"
+slug: "instabug"
+url: "https://www.instabug.com"
+color: "#64b5f9"
+best_deal: "Startup discounts on mobile observability platform"
+intro: "AI-powered mobile observability platform providing bug reporting, crash analytics, and performance monitoring for iOS, Android, React Native, and Flutter apps."
+video: ""
+tags: ["dev tools", "monitoring", "analytics"]

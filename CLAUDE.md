@@ -204,11 +204,14 @@ tags: ["relevant", "tags"]
 
 ### Step 5: Handle Provider Logo
 1. Check if provider already exists at `src/content/providers/{slug}.yaml`
-2. If provider is new, attempt to download logo from Brandfetch:
-   - Use provider's domain to search for logo
-   - Download SVG format if available
-   - Save to `public/images/providers/{slug}.svg`
-   - Extract accent color from Brandfetch data (default: #2BDFDC)
+2. If provider is new, use the logo download script to get logo and brand color:
+   ```bash
+   node scripts/download-logo.js <domain> <provider-slug>
+   ```
+   - Example: `node scripts/download-logo.js instabug.com instabug`
+   - Script automatically downloads SVG format if available (or high-quality PNG)
+   - Saves to `public/images/providers/{slug}.svg`
+   - Returns brand color and logo information in JSON format
 3. If logo cannot be found, proceed without logo (GitHub Action will handle any necessary notifications)
 
 ### Step 6: Create Files
@@ -396,63 +399,56 @@ public/images/providers/
 └── {slug}.svg
 ```
 
-### Logo Download Instructions (Brandfetch)
-When adding a new provider, use Brandfetch API to download the logo:
+### Logo Download Script Usage
+Use the dedicated script for downloading provider logos and extracting brand colors:
 
-#### Step 1: Call Brandfetch API
+**Script Location**: `scripts/download-logo.js`
+**Usage**: 
+```bash
+node scripts/download-logo.js <domain> <provider-slug>
 ```
-GET https://api.brandfetch.io/v2/brands/{domain}
-Authorization: Bearer <brandfetch_token>
+
+**Example Usage**:
+```bash
+node scripts/download-logo.js instabug.com instabug
 ```
 
-Where:
-- `{domain}` is extracted from the provider's main URL (e.g., `scaleway.com` from `https://www.scaleway.com`)
-- `<brandfetch_token>` is available in environment variables available to Claude agent.
+**Script Features**:
+- Uses Brandfetch API to fetch brand data and logos
+- Automatically downloads SVG format logos (preferred) or high-quality PNG
+- Handles redirects and follows download URLs properly
+- Extracts accent colors from brand data
+- Saves logos to `public/images/providers/{slug}.svg`
+- Returns structured JSON output with brand information
+- Handles authentication using `BRANDFETCH_API_KEY` from environment variables
 
-#### Step 2: Process Brandfetch Response
-Look for the following in the API response:
-- **Logo URL**: Find SVG format logos (preferred) or high-quality PNG from the logos array
-- **Brand Color**: Extract the accent color from the colors array (typically the primary brand color)
-- **Fallback**: If no suitable logo found, use default color `#2BDFDC`
-
-#### Step 3: Download and Save Logo
-1. Download the logo file from the URL found in Brandfetch response
-2. Save as `public/images/providers/{slug}.svg` (always use .svg extension even for PNG)
-3. If download fails, proceed without logo and comment on the issue
-
-#### Step 4: Extract Brand Color
-1. Look for `accent` or `primary` color in the Brandfetch colors array
-2. Use format `#RRGGBB` (hex color code)
-3. Update the provider YAML file with the extracted color
-4. Default to `#2BDFDC` if no color found
-
-#### Example Brandfetch Response Structure:
+**Output Format**:
 ```json
 {
-  "domain": "scaleway.com",
-  "logos": [
-    {
-      "type": "icon",
-      "theme": "light",
-      "formats": [
-        {
-          "format": "svg",
-          "src": "https://asset.brandfetch.io/logo.svg"
-        }
-      ]
-    }
-  ],
-  "colors": [
-    {
-      "hex": "#8C3FED",
-      "type": "accent"
-    }
-  ]
+  "success": true,
+  "domain": "instabug.com",
+  "providerSlug": "instabug",
+  "color": "#64b5f9",
+  "logoDownloaded": true,
+  "brandData": {
+    "name": "Instabug",
+    "description": "AI-powered mobile observability platform..."
+  },
+  "logoPath": "/path/to/public/images/providers/instabug.svg",
+  "logoFormat": "svg",
+  "logoType": "logo"
 }
 ```
 
-#### Error Handling:
-- If Brandfetch API returns 404 or error, continue without logo
-- If logo download fails, continue without logo
-- If logo cannot be retrieved, proceed without logo (GitHub Action handles notifications)
-- Never fail the entire process due to logo issues
+**Error Handling**:
+- If Brandfetch API returns 404 or brand not found, returns success=false with default color
+- If logo download fails, continues with brand color extraction but logoDownloaded=false
+- Always returns a valid color (defaults to #2BDFDC if none found)
+- Never fails the entire process due to logo issues - always provides usable output
+
+**Script Technical Details**:
+- Uses Brandfetch `/v2/brands/{domain}` endpoint for brand data
+- Prefers SVG format logos over PNG for better scalability
+- Uses curl with redirect following for reliable file downloads
+- Automatically creates directory structure if needed
+- Validates domain and provider slug inputs

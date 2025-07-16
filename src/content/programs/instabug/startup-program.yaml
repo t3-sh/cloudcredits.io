@@ -1,0 +1,55 @@
+provider_slug: "instabug"
+title: "Instabug Startup Program"
+meta_title: "Instabug Startup Program - CloudCredits.io"
+intro: "Get startup discounts on Instabug's AI-powered mobile observability platform used by 25,000+ mobile teams including Figma, Verizon, and DoorDash"
+description: "Startup discount program offering reduced pricing on all Instabug plans for eligible early-stage companies. Instabug provides comprehensive mobile observability including bug reporting, crash analytics, performance monitoring, session replay, and feature flags for iOS, Android, React Native, and Flutter apps."
+status: "Active"
+url: "https://www.instabug.com/startups"
+value_type: "discount"
+currency: "USD"
+max_value: 149
+tags: ["dev tools", "monitoring", "analytics"]
+date: 2025-07-16
+
+tiers:
+  - name: "Startup Discount"
+    intro: "Discount on all Instabug plans for eligible startup teams"
+    max_value: 149
+    url: "https://www.instabug.com/startups"
+    benefits:
+      - "Discount on all Instabug plans (standard plans start at $149/month)"
+      - "AI-powered mobile observability platform access"
+      - "Bug reporting with shake-to-send functionality"
+      - "Comprehensive crash reporting and analytics"
+      - "App performance monitoring and session replay"
+    benefits_level: 2
+    eligibility:
+      - "New users to Instabug"
+      - "Small teams (fewer than 100 people)"
+      - "Startup companies"
+      - "Must have company website"
+      - "Must provide Crunchbase profile link"
+    effort_level: 2
+    steps_to_apply:
+      - name: "Complete Startup Application"
+        description: "Fill out the comprehensive application form with company details, funding information, and team size"
+        action: "Apply Now"
+        action_url: "https://www.instabug.com/startups/apply"
+      - name: "Await Review"
+        description: "Instabug team reviews applications and notifies applicants of eligibility status"
+        action: "Wait for Response"
+        action_url: "https://www.instabug.com/startups"
+
+faq:
+  - question: "What does the Instabug Startup Program include?"
+    answer: "The program provides discounted access to Instabug's comprehensive mobile observability platform, including bug reporting, crash analytics, performance monitoring, session replay, release management, feature flags, and in-app feedback tools for mobile app development teams."
+  - question: "What are the eligibility requirements?"
+    answer: "Eligible startups must be new users to Instabug, have fewer than 100 team members, provide a company website and Crunchbase profile, and be actively building mobile applications. The program is designed for early-stage startup teams."
+  - question: "What information is required in the application?"
+    answer: "The application requires your full name and role, email address, company website URL, Crunchbase profile link, social media links, team size, current incubator/accelerator affiliation, funding received to date, and how you learned about the discount program."
+  - question: "What platforms does Instabug support?"
+    answer: "Instabug supports iOS, Android, React Native, and Flutter applications, providing comprehensive mobile observability across all major mobile development platforms."
+  - question: "What is the standard pricing for Instabug?"
+    answer: "Standard Instabug plans start at $149 per month, with a 20% discount available for annual plans and a 14-day free trial. The startup program provides additional discounts on top of standard pricing."
+  - question: "How long does the application process take?"
+    answer: "Instabug reviews applications and notifies applicants of their eligibility status, though specific timeline details are not publicly disclosed. Approved startups receive access to discounted pricing on all Instabug plans."
