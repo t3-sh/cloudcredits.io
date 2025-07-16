@@ -1,0 +1,90 @@
+draft: false
+provider_slug: qdrant
+title: Qdrant for Startups
+meta_title: Qdrant for Startups Program
+intro: >-
+  AI-focused startups receive a 20% discount on Qdrant Cloud for 12 months,
+  one-on-one technical guidance, and exclusive partner perks.
+description: >-
+  Qdrant for Startups is an initiative supporting early-stage, AI-driven
+  companies with cost savings, expert advice, and an ecosystem of partner
+  benefits. Eligible ventures get a 20% discount on Qdrant Cloud for their first
+  year, direct access to Qdrant engineers for personalized sessions, and special
+  offers from Hugging Face, LlamaIndex, and Airbyte. The program helps founders
+  reduce infrastructure expenses, accelerate product development, and gain
+  co-marketing exposure through social media features, Discord talks, webinars,
+  and case studies.
+status: Active
+tags:
+  - ai
+  - database
+  - search
+  - open source
+url: https://qdrant.tech/qdrant-for-startups/
+value_type: discount
+currency: USD
+min_value: 20
+max_value: 20
+community_notes: []
+tiers:
+  - name: Qdrant for Startups
+    intro: >-
+      20% discount on Qdrant Cloud plus technical and partner benefits for 12
+      months.
+    max_value: 20
+    url: https://qdrant.tech/qdrant-for-startups/
+    benefits:
+      - 20% discount on Qdrant Cloud services
+      - One-on-one sessions with Qdrant experts
+      - Partner perks from Hugging Face, LlamaIndex, and Airbyte
+      - Co-marketing opportunities (social media, webinars, case studies)
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Pre-seed, Seed, or Series A startups (<5 years old)
+      - Less than $5M total funding
+      - AI-driven product or service
+      - New to Qdrant Cloud or account ≤30 days old
+      - Direct billing with Qdrant (not via marketplace)
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit online application
+        description: >-
+          Complete the startup application form with company details and planned
+          Qdrant usage.
+        action: Apply Now
+        action_url: https://qdrant.tech/qdrant-for-startups/
+      - name: Await review
+        description: >-
+          Qdrant reviews applications within 7-10 business days and notifies
+          selected startups.
+faq:
+  - question: What are the eligibility requirements?
+    answer: >-
+      Startups must be pre-seed, seed, or Series A (under five years old) with
+      less than $5M in funding, build AI-driven products or services, be new to
+      Qdrant Cloud (or have an account created within 30 days), bill directly
+      with Qdrant, and not have previously joined the program.
+  - question: How can I apply to the Qdrant Startup Program?
+    answer: >-
+      Apply through the online form on the program page, providing details about
+      your startup and intended Qdrant usage. Applications are reviewed within
+      7-10 business days.
+  - question: What criteria are used to select startups?
+    answer: >-
+      Qdrant evaluates innovation potential, alignment with its vector database
+      capabilities, and the clarity of a startup’s vision for using Qdrant.
+  - question: How long is the discount valid and what are the conditions?
+    answer: >-
+      The 20% discount lasts 12 months from acceptance and applies only to
+      Qdrant Cloud services billed directly through Qdrant (via Stripe). A valid
+      credit card must be added to the account.
+  - question: Can existing Qdrant customers apply?
+    answer: >-
+      Yes. Existing customers are eligible if their Qdrant Cloud account was
+      created within 30 days prior to application.
+  - question: Can I reapply if my application is rejected?
+    answer: >-
+      Startups may reapply after 60 days if circumstances change or additional
+      information is available.
