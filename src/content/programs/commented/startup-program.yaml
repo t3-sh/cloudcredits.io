@@ -1,0 +1,47 @@
+provider_slug: "commented"
+title: "Commented Startup Program"
+meta_title: "Commented.io Startup Program - 75% Discount for Early-Stage Companies"
+intro: "Get up to 75% discount on Commented Business Plan for a full year - a collaborative platform for team commenting, feedback, and productivity enhancement"
+description: "Annual discount program offering significant savings on Commented's web-based collaboration platform that enables teams to add comments and annotations to any web content. The program includes features like team commenting, status tracking, mobile SDK integration, and extensive tool integrations to accelerate product development by up to 75%."
+status: "Active"
+url: "https://commented.typeform.com/startup-program"
+min_value: 75
+max_value: 75
+value_type: "discount"
+tags: ["collaboration", "productivity", "dev tools", "project management", "saas"]
+date: 2025-07-16
+
+tiers:
+  - name: "Startup Accelerator Plan"
+    intro: "75% discount on Commented Business Plan designed for early-stage startups to enhance team collaboration and productivity"
+    max_value: 75
+    url: "https://commented.typeform.com/startup-program"
+    benefits:
+      - "75% discount on Commented Business Plan for a full year"
+      - "Team commenting with status tracking and member assignment"
+      - "Mobile SDK integration for iOS and Android apps"
+      - "Extensive integrations with Asana, Jira, Notion, Slack, Linear, and Figma"
+      - "AI content writer and accelerate development by up to 75%"
+    benefits_level: 3
+    duration: ["1 year"]
+    eligibility:
+      - "Startup incorporated less than 2 years ago"
+      - "Have raised no more than $1M in total funding"
+      - "Must sign up before the end of the current year"
+    effort_level: 1
+    timeline_indication: "Immediate activation upon approval"
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Apply through the dedicated Typeform to get your startup discount"
+        action: "Get my discount"
+        action_url: "https://commented.typeform.com/startup-program"
+
+faq:
+  - question: "What is the Commented Startup Program?"
+    answer: "A program offering up to 75% discount on Commented Business Plan for early-stage startups to enhance team collaboration and productivity through web-based commenting and annotation tools."
+  - question: "Who is eligible for the program?"
+    answer: "Startups that are incorporated less than 2 years ago and have raised no more than $1M in total funding. Companies must sign up before the end of the current year to be eligible."
+  - question: "What features are included in the Commented Business Plan?"
+    answer: "The plan includes team commenting, status tracking, member assignment, public commenting, mobile SDK integration, AI content writer, and integrations with popular tools like Asana, Jira, Notion, Slack, Linear, and Figma."
+  - question: "How does Commented help accelerate product development?"
+    answer: "Commented enables direct feedback on live websites and applications, eliminating the need for cumbersome explanations or extensive documentation, helping teams regain valuable time and accelerate development by up to 75%."
