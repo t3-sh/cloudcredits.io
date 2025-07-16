@@ -1,0 +1,63 @@
+provider_slug: "adaline"
+title: "Adaline API Credits Program"
+meta_title: "Adaline $1MM API Credits Program - CloudCredits.io"
+intro: "Get $10,000 in free Adaline API credits to build and scale AI applications with their collaborative LLM platform trusted by Salesforce, DoorDash, and Discord."
+description: "Adaline is celebrating their general availability by giving away $1,000,000 in API credits to the first 100 eligible team workspaces. Each qualifying workspace receives $10,000 in credits to use Adaline's end-to-end platform for building AI-powered applications. The platform provides prompt management, testing & evaluation, deployment, and monitoring across 300+ AI models, processing 5B+ tokens daily with 99.998% uptime. Used by iconic companies like Salesforce, DoorDash, Discord, HubSpot, and McKinsey for mission-critical LLM applications."
+status: "Active"
+tags:
+  - "ai"
+  - "api"
+  - "llm"
+  - "collaboration"
+  - "dev tools"
+url: "https://www.adaline.ai/blog/adaline-is-generally-available-giving-1mm-in-api-credits?utm_source=17akp"
+value_type: "credits"
+currency: "USD"
+max_value: 10000
+date: 2025-07-16
+
+community_notes: []
+
+tiers:
+  - name: "Team Workspace Credits"
+    intro: "First 100 eligible team workspaces receive $10,000 in Adaline API credits to build collaborative AI applications"
+    max_value: 10000
+    url: "https://app.adaline.ai?utm_source=ga-blog-post"
+    benefits:
+      - "$10,000 in Adaline API credits"
+      - "Access to 300+ AI models"
+      - "Collaborative prompt management across all LLM providers"
+      - "Multi-modal testing with automatic version history"
+      - "Multi-environment deployments with smart diffing and rollbacks"
+    benefits_level: 3
+    duration:
+      - "Limited to first 100 eligible workspaces"
+    eligibility:
+      - "Team workspace qualification (specific criteria not publicly detailed)"
+      - "Subject to eligibility verification upon sign-up"
+      - "Limited to first 100 qualified applicants"
+    effort_level: 2
+    timeline_indication: "Upon approval and workspace verification"
+    steps_to_apply:
+      - name: "Sign Up for Adaline"
+        description: "Create your team workspace account on the Adaline platform"
+        action: "Sign Up"
+        action_url: "https://app.adaline.ai?utm_source=ga-blog-post"
+      - name: "Workspace Verification"
+        description: "Complete workspace setup and eligibility verification process"
+        action: "Complete Setup"
+        action_url: "https://app.adaline.ai"
+
+faq:
+  - question: "What is Adaline?"
+    answer: "Adaline is an end-to-end platform for product and engineering teams building AI-powered applications. It provides collaborative prompt management, testing & evaluation, deployment, and monitoring across 300+ AI models."
+  - question: "How much credits does each workspace get?"
+    answer: "Each eligible team workspace receives $10,000 in Adaline API credits as part of the $1,000,000 total program."
+  - question: "Who is eligible for the credits?"
+    answer: "The credits are available to the first 100 eligible team workspaces. Specific eligibility criteria are determined during the sign-up and verification process."
+  - question: "Is there a deadline to claim the credits?"
+    answer: "The program is limited to the first 100 eligible team workspaces, so it operates on a first-come, first-served basis until the allocation is exhausted."
+  - question: "What companies use Adaline?"
+    answer: "Adaline is trusted by major companies including Salesforce, DoorDash, Discord, HubSpot, McKinsey, and many others for mission-critical LLM applications."
+  - question: "What makes Adaline different from other LLM platforms?"
+    answer: "Adaline focuses on collaborative, transparent, and rigorous AI application development. It's designed as shared infrastructure for teams, not just another dev tool, with enterprise-grade reliability and comprehensive model support."
