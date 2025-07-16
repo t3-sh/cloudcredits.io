@@ -1,0 +1,15 @@
+active: true
+name: "Adaline"
+short_name: "Adaline"
+slug: "adaline"
+color: "#48b119"
+url: "https://www.adaline.ai"
+intro: "End-to-end platform for building AI-powered applications collaboratively with prompt management, testing, deployment, and monitoring across 300+ AI models."
+best_deal: "$10,000 API credits"
+video: ""
+tags:
+  - "ai"
+  - "api"
+  - "llm"
+  - "collaboration"
+  - "dev tools"

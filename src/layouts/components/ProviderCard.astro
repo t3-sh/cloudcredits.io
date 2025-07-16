@@ -16,7 +16,19 @@ const {
   short_name,
   best_deal,
 } = data.data;
-const logo = `/images/providers/${slug}.svg`;
+
+// Check for logo format (SVG first, then PNG)
+const svgLogo = `/images/providers/${slug}.svg`;
+const pngLogo = `/images/providers/${slug}.png`;
+const svgImages = import.meta.glob("/public/images/providers/*.svg");
+const pngImages = import.meta.glob("/public/images/providers/*.png");
+
+const svgExists = svgImages[`/public${svgLogo}`];
+const pngExists = pngImages[`/public${pngLogo}`];
+
+const logo = svgExists ? svgLogo : (pngExists ? pngLogo : svgLogo);
+const logoFormat = svgExists ? "svg" : (pngExists ? "png" : "svg");
+
 const { colors, gradients } = config.theme;
 ---
 
@@ -34,7 +46,7 @@ const { colors, gradients } = config.theme;
               alt={name}
               width={180}
               height={80}
-              format="svg"
+              format={logoFormat}
             />
           </div>
         )
