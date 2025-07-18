@@ -37,7 +37,7 @@ tiers:
       - name: "Review Eligibility"
         description: "Ensure your startup meets all eligibility criteria"
         action: "Check Requirements"
-        action_url: "https://wope.typeform.com/early-stage"
+        action_url: "https://wope.com/early-stage"
       - name: "Complete Application"
         description: "Fill out the application form with startup details"
         action: "Apply Now"
