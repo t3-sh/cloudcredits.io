@@ -1,0 +1,70 @@
+provider_slug: "wope"
+title: "Wope Early Stage Program"
+meta_title: "Wope Early Stage Program - Up to 80% Discount on AI-Powered SEO Tools"
+intro: "Get up to 80% off Wope's AI-powered SEO and marketing platform for early-stage startups with full access to keyword research, competitor analysis, and content optimization tools"
+description: "Comprehensive discount program offering significant savings on Wope's suite of AI-powered SEO tools for qualified early-stage startups. The program provides full platform access including intelligent keyword research and tracking, 360° competitor analysis, AI-powered content optimization, and comprehensive site audits, along with dedicated support and educational resources."
+status: "Active"
+url: "https://wope.typeform.com/early-stage"
+min_value: 50
+max_value: 80
+value_type: "discount"
+currency: "USD"
+tags: ["seo", "marketing", "ai", "analytics", "saas"]
+date: 2025-07-18
+
+tiers:
+  - name: "Early Stage Discount Program"
+    intro: "Multi-year discount program with decreasing discounts for qualified early-stage startups"
+    max_value: 80
+    url: "https://wope.typeform.com/early-stage"
+    benefits:
+      - "80% discount for the first year"
+      - "50% discount for the second year"
+      - "Full access to AI-powered SEO tools and analytics"
+      - "Onboarding assistance and expert support"
+      - "Unlimited users and websites"
+    benefits_level: 3
+    duration: ["2 years with discounts"]
+    eligibility:
+      - "Less than $2 million in total funding"
+      - "Company less than 3 years old"
+      - "Team of 10 or fewer employees"
+      - "Must not be a current Wope customer"
+      - "Must be an active, operating startup"
+    effort_level: 2
+    timeline_indication: "Application review and approval process"
+    steps_to_apply:
+      - name: "Review Eligibility"
+        description: "Ensure your startup meets all eligibility criteria"
+        action: "Check Requirements"
+        action_url: "https://wope.typeform.com/early-stage"
+      - name: "Complete Application"
+        description: "Fill out the application form with startup details"
+        action: "Apply Now"
+        action_url: "https://wope.typeform.com/early-stage"
+      - name: "Approval Process"
+        description: "Wope team reviews application for eligibility verification"
+        action: "Wait for Review"
+        action_url: ""
+      - name: "Account Setup"
+        description: "Receive onboarding assistance for platform setup"
+        action: "Get Started"
+        action_url: ""
+
+faq:
+  - question: "What features are included in the Wope Early Stage Program?"
+    answer: "As an Early Stage Program member, you'll have full access to Wope's suite of SEO tools, including intelligent keyword research and tracking, 360° competitor analysis, AI-powered content optimization, and comprehensive site audits."
+  - question: "How much can I save with the Early Stage Program?"
+    answer: "You can save up to 80% on Wope's AI-powered marketing platform. You'll enjoy an 80% discount for the first year and 50% off for the second year."
+  - question: "How do I know if my startup is eligible?"
+    answer: "To qualify, your startup must have less than $2M in funding, be less than 3 years old, have a team of 10 or fewer employees, and not be a current Wope customer."
+  - question: "What kind of support is provided to Early Stage Program members?"
+    answer: "As an Early Stage Program member, you'll receive onboarding assistance and support from their expert team. Plus, gain access to exclusive educational resources and events tailored specifically for startups."
+  - question: "Can I upgrade or downgrade my plan during the Early Stage Program?"
+    answer: "Yes, you can upgrade or downgrade your plan at any time during the Early Stage Program. However, the discount percentages are applied to the plan you initially signed up for. If you upgrade, the discount will be applied to the price difference between your original and new plans."
+  - question: "What happens if my startup no longer meets the eligibility criteria during the program?"
+    answer: "If your startup no longer meets the eligibility criteria (e.g., you raise more than $2M in funding or grow beyond 10 employees), you can continue to benefit from the Early Stage Program discounts for the remainder of your current billing cycle. After that, your subscription will renew at the standard pricing."
+  - question: "Is there a limit to the number of users or websites I can add to my Wope account?"
+    answer: "No, there is no limit to the number of users or websites you can add to your Wope account during the Early Stage Program. However, certain plan tiers have usage limits for specific features, such as the number of keywords tracked or pages crawled."
+  - question: "What if I have more questions or need assistance during the Early Stage Program?"
+    answer: "Their dedicated support team is available to help every step of the way. As an Early Stage Program member, you'll have access to all support channels, ensuring that your questions are answered promptly and thoroughly. You can reach out via email or live chat."
