@@ -1,0 +1,13 @@
+active: true
+name: "Freshworks"
+short_name: "Freshworks"
+slug: "freshworks"
+url: "https://www.freshworks.com"
+color: "#d82b00"
+best_deal: "$3,000 credits for FreshStack startup program"
+intro: "Building tech that works for everyone, making it easy for IT, customer service, sales, marketers and HR to do their job and delight their customers."
+video: ""
+tags:
+  - "crm"
+  - "customer support"
+  - "saas"

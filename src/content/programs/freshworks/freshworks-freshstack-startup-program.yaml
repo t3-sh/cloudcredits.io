@@ -1,0 +1,44 @@
+provider_slug: "freshworks"
+title: "Freshworks FreshStack Startup Program"
+meta_title: "Freshworks FreshStack Startup Program - CloudCredits.io"
+intro: "Get $3,000 in credits for Freshworks' suite of customer experience and business software solutions"
+description: "Freshworks FreshStack startup program provides $3,000 in credits to help early-stage companies access their comprehensive suite of customer service, sales, and business software solutions."
+status: "Active"
+url: "https://www.freshworks.com/company/partners/startup-program/freshstack/"
+min_value: 3000
+max_value: 3000
+value_type: "credits"
+currency: "USD"
+tags: ["crm", "customer support", "saas"]
+date: 2025-07-23
+
+tiers:
+  - name: "FreshStack Program"
+    intro: "Startup program offering $3,000 in Freshworks credits"
+    max_value: 3000
+    url: "https://www.freshworks.com/company/partners/startup-program/freshstack/"
+    benefits:
+      - "$3,000 in Freshworks credits"
+      - "Access to Freshworks suite including Freshdesk, Freshsales, Freshmarketer"
+      - "Customer experience and business software solutions"
+      - "Technical support and onboarding assistance"
+    benefits_level: 2
+    duration: ["TBD"]
+    eligibility:
+      - "Early-stage startup"
+      - "Qualifying business criteria"
+    effort_level: 2
+    timeline_indication: "Application review required"
+    steps_to_apply:
+      - name: "Apply for FreshStack Program"
+        description: "Submit application through Freshworks startup program page"
+        action: "Apply Now"
+        action_url: "https://www.freshworks.com/company/partners/startup-program/freshstack/"
+
+faq:
+  - question: "What is the FreshStack startup program?"
+    answer: "FreshStack is Freshworks' startup program that provides $3,000 in credits to help early-stage companies access their suite of customer experience and business software solutions."
+  - question: "What products are included in the program?"
+    answer: "The program typically includes access to Freshworks' suite of products including Freshdesk for customer support, Freshsales CRM, Freshmarketer for marketing automation, and other business solutions."
+  - question: "Who is eligible for the program?"
+    answer: "The program is designed for early-stage startups that meet qualifying business criteria. Specific eligibility requirements should be verified on the official program page."
