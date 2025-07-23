@@ -1,0 +1,85 @@
+draft: false
+provider_slug: beefree
+title: Beefree SDK Startup Program
+meta_title: Beefree SDK Startup Program – $10K Credits for SaaS Startups
+intro: >-
+  Receive $10,000 in Beefree SDK credits and a 12-month 50% discount to embed a
+  world-class, drag-and-drop content builder in your SaaS application.
+description: >-
+  The Beefree SDK Startup Program helps early-stage SaaS companies accelerate
+  go-to-market by offering $10,000 in platform credits, dedicated onboarding
+  support, optional access to 1,800+ responsive templates, and co-marketing
+  opportunities. Targeted at startups founded within the last three years and
+  with less than $5 million in total funding, the program removes budget and
+  resource constraints so teams can integrate a fully white-labeled, no-code
+  email and content builder in weeks instead of months.
+status: Active
+tags:
+  - email
+  - dev tools
+  - saas
+  - design
+  - marketing
+url: https://developers.beefree.io/startup-program
+value_type: credits
+currency: USD
+max_value: 10000
+community_notes: []
+tiers:
+  - name: Startup Program
+    intro: $10,000 credits plus 12-month 50% discount after credits run out.
+    max_value: 10000
+    url: https://developers.beefree.io/startup-program
+    benefits:
+      - >-
+        $10,000 in Beefree SDK credits (covers 10 months of Core or 4 months of
+        Superpowers)
+      - 50% off Core or Superpowers for 12 months once credits are exhausted
+      - Dedicated priority support for faster integration
+      - Optional Template Catalog API with 1,800+ responsive templates
+      - Co-marketing and visibility opportunities
+    benefits_level: 2
+    duration:
+      - 10 months credits (Core) or 4 months credits (Superpowers)
+      - Additional 12 months at 50% discount
+    eligibility:
+      - Company founded less than 3 years ago
+      - Raised under $5 million in total funding
+      - Early-stage SaaS product embedding content/email capabilities
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit application
+        description: >-
+          Complete the online form on Beefree’s website with basic company
+          details and funding information.
+        action: Apply now
+        action_url: https://developers.beefree.io/startup-program#apply
+      - name: Eligibility review
+        description: >-
+          Beefree’s team reviews the submission and verifies eligibility (2–3
+          business days).
+      - name: Activate credits
+        description: >-
+          Upon approval, credits are applied instantly and a program lead
+          schedules onboarding.
+faq:
+  - question: How do the $10,000 credits work?
+    answer: >-
+      Credits can be applied toward the Core plan ($1,000 per month for 10
+      months) or the Superpowers plan ($2,500 per month for 4 months).
+  - question: What happens after the credits are used?
+    answer: >-
+      Startups receive a 50% discount on either the Core or Superpowers plan for
+      the next 12 months.
+  - question: Can I use credits on the Enterprise plan?
+    answer: >-
+      No. Credits and subsequent discounts are limited to the Core and
+      Superpowers plans.
+  - question: How long does approval take?
+    answer: >-
+      Applications are typically reviewed within 2–3 business days, and credits
+      are activated immediately upon approval.
+  - question: Are there hidden fees?
+    answer: >-
+      There are no hidden fees. Any additional usage-based costs (such as API
+      overages) are clearly documented in the pricing details.
