@@ -1,0 +1,15 @@
+active: true
+name: Reddit Ads
+short_name: Reddit
+slug: reddit
+color: '#FF4500'
+url: https://ads.reddit.com
+intro: >-
+  Reddit’s advertising platform lets brands connect with millions of users
+  through interest- and community-based ad campaigns.
+best_deal: Spend $500, get $500 Reddit ad credit
+video: ''
+tags:
+  - advertising
+  - marketing
+  - social
