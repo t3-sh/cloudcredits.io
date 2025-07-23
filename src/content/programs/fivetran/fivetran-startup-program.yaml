@@ -1,0 +1,113 @@
+draft: false
+provider_slug: fivetran
+title: Fivetran Startup Program
+meta_title: Fivetran Startup Program – $50K in Free Usage for YC Startups
+intro: >-
+  Y Combinator startups receive $50,000 in free Fivetran usage for 12 months,
+  plus technical support and onboarding resources.
+description: >-
+  Fivetran’s Startup Program gives eligible Y Combinator companies access to
+  fully managed data-pipeline infrastructure without cost during their earliest
+  stage. Participants obtain $50 K of credits on the Standard plan,
+  complimentary technical support, and guided tutorials and workshops. Two
+  tailored promotions—Standard Fivetran and Powered by Fivetran—cover internal
+  analytics use cases or embedding customer-source pipelines inside a product,
+  helping founders focus on building rather than maintaining ETL processes.
+status: Active
+tags:
+  - analytics
+  - big data
+  - data
+  - saas
+  - api
+url: https://go.fivetran.com/startup-program-standard-yc
+value_type: credits
+currency: USD
+max_value: 50000
+community_notes: []
+tiers:
+  - name: Standard Fivetran
+    intro: >-
+      Use Fivetran connectors to centralize your own company data for internal
+      analytics.
+    max_value: 50000
+    url: https://go.fivetran.com/startup-program-standard-yc
+    benefits:
+      - $50,000 in Fivetran Standard-plan usage credits
+      - Complimentary technical support for 12 months
+      - 700+ pre-built data connectors
+      - Step-by-step tutorials and live workshops
+      - Automatic data pipeline maintenance and monitoring
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Current or most recent YC batch company
+      - Raised less than $5 M in funding
+      - Not a current or former Fivetran customer
+    effort_level: 2
+    steps_to_apply:
+      - name: Complete online application
+        description: >-
+          Fill out the Standard Fivetran Startup Program form with company and
+          YC batch details.
+        action: Apply now
+        action_url: https://go.fivetran.com/startup-program-standard-yc
+      - name: Verification
+        description: >-
+          Fivetran reviews YC enrollment and funding information before issuing
+          credits.
+  - name: Powered by Fivetran
+    intro: >-
+      Embed Fivetran pipelines so your customers can connect their own data
+      sources inside your product.
+    max_value: 50000
+    url: https://go.fivetran.com/startup-program-pbf-yc
+    benefits:
+      - $50,000 in Fivetran Standard-plan usage credits
+      - Complimentary technical support for 12 months
+      - White-label or embedded connector experience
+      - Live workshops with Fivetran solution architects
+      - Accelerated go-to-market resources
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Current or most recent YC batch company
+      - Raised less than $5 M in funding
+      - Not a current or former Fivetran customer
+    effort_level: 2
+    steps_to_apply:
+      - name: Complete online application
+        description: >-
+          Submit the Powered by Fivetran Startup Program form with product
+          embedding details.
+        action: Apply now
+        action_url: https://go.fivetran.com/startup-program-pbf-yc
+      - name: Verification
+        description: >-
+          Fivetran validates eligibility and intended embedded use case prior to
+          credit issuance.
+faq:
+  - question: How much free usage do YC startups receive?
+    answer: >-
+      Eligible companies get $50,000 in Fivetran Standard-plan credits that can
+      be consumed over 12 months.
+  - question: Who qualifies for the Fivetran Startup Program?
+    answer: >-
+      Startups must be enrolled in the current or most recent Y Combinator
+      batch, have raised under $5 million, and must not be an existing or past
+      Fivetran customer.
+  - question: What is the difference between the two promotions?
+    answer: >-
+      Standard Fivetran covers internal analytics use cases, while Powered by
+      Fivetran is designed for embedding pipelines that let customers connect
+      their own data sources inside your product.
+  - question: Do the credits expire?
+    answer: >-
+      Yes. All unused credits expire 12 months after activation and cannot be
+      combined with other offers.
+  - question: Is there any cost after the credits are consumed?
+    answer: >-
+      Usage that exceeds the $50 K credit or continues beyond the 12-month
+      window is billed at standard Fivetran rates.
