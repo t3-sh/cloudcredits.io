@@ -1,0 +1,10 @@
+active: true
+name: "Jotform"
+short_name: "Jotform"
+slug: "jotform"
+url: "https://www.jotform.com"
+color: "#FF6100"
+best_deal: "50% off for nonprofits & education"
+intro: "Powerful form builder platform enabling organizations to create custom forms, surveys, and applications without coding."
+video: ""
+tags: ["forms", "no-code", "productivity", "education"]

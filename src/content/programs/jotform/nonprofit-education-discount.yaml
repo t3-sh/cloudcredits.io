@@ -1,0 +1,121 @@
+provider_slug: "jotform"
+title: "Jotform Nonprofit & Education Program"
+meta_title: "Jotform Nonprofit & Education Program - 50% Off"
+intro: "Qualified nonprofit organizations and educational institutions save 50% on Jotform plans with specialized tools for their unique needs"
+description: "Combined discount program offering 50% savings on Jotform paid plans for both registered nonprofit organizations and educational institutions. The program provides access to premium form building features, donation collection tools, educational templates, and specialized data collection capabilities to support organizations making a positive impact and educational institutions."
+status: "Active"
+url: "https://www.jotform.com/nonprofit/pricing/"
+min_value: 50
+max_value: 50
+value_type: "discount"
+currency: "USD"
+tags: ["forms", "education", "no-code", "productivity"]
+date: 2025-01-23
+
+tiers:
+  - name: "Nonprofit Discount"
+    intro: "50% discount on Bronze, Silver, and Gold plans for qualified nonprofit organizations"
+    max_value: 50
+    url: "https://www.jotform.com/nonprofit/pricing/"
+    benefits:
+      - "50% discount on Bronze, Silver, and Gold plans"
+      - "Access to all premium features"
+      - "Donation form templates for fundraising"
+      - "Payment processing for donations"
+      - "Priority customer support"
+    benefits_level: 2
+    duration: ["Annual commitment required"]
+    eligibility:
+      - "Registered 501(c)(3) nonprofit organization in the US"
+      - "International organizations with equivalent nonprofit status"
+      - "Must provide IRS determination letter or equivalent proof"
+      - "Religious organizations may qualify if meeting nonprofit criteria"
+    effort_level: 2
+    timeline_indication: "3-5 business days for verification"
+    steps_to_apply:
+      - name: "Access Nonprofit Pricing Page"
+        description: "Visit the dedicated nonprofit pricing page on Jotform's website"
+        action: "Visit Nonprofit Page"
+        action_url: "https://www.jotform.com/nonprofit/pricing/"
+      - name: "Claim Your Discount"
+        description: "Click the 'Claim Your Discount' button to start the application process"
+        action: "Claim Discount"
+        action_url: "https://www.jotform.com/nonprofit/pricing/"
+      - name: "Complete Application Form"
+        description: "Fill out the discount application form with organization details and intended use case"
+        action: "Complete Application"
+        action_url: "https://www.jotform.com/nonprofit/pricing/"
+      - name: "Provide Documentation"
+        description: "Upload proof of nonprofit status including IRS determination letter or equivalent"
+        action: "Upload Documents"
+        action_url: "https://www.jotform.com/nonprofit/pricing/"
+      - name: "Wait for Verification"
+        description: "Allow 3-5 business days for Jotform to verify nonprofit status and approve application"
+        action: "Await Approval"
+        action_url: "https://www.jotform.com/nonprofit/pricing/"
+      - name: "Apply Discount Code"
+        description: "Use the provided discount code during plan subscription to receive 50% off"
+        action: "Subscribe with Discount"
+        action_url: "https://www.jotform.com/pricing/"
+
+  - name: "Education Discount"
+    intro: "50% discount on any paid Jotform plan for qualified educational users"
+    max_value: 50
+    url: "https://www.jotform.com/education/pricing/"
+    benefits:
+      - "50% discount on any paid Jotform plan"
+      - "Access to all premium features"
+      - "FERPA-compliant data handling"
+      - "Educational form templates"
+      - "Google Classroom integration"
+    benefits_level: 2
+    duration: ["Valid for duration of educational affiliation"]
+    eligibility:
+      - "Accredited educational institutions (K-12, colleges, universities)"
+      - "Individual educators with valid school email addresses"
+      - "Students currently enrolled in educational programs"
+      - "Educational staff and administrators"
+      - "Homeschool educators with appropriate documentation"
+    effort_level: 2
+    timeline_indication: "2-3 business days for verification"
+    steps_to_apply:
+      - name: "Access Education Pricing Page"
+        description: "Visit the dedicated education pricing page on Jotform's website"
+        action: "Visit Education Page"
+        action_url: "https://www.jotform.com/education/pricing/"
+      - name: "Claim Your Discount"
+        description: "Click 'Claim Your Discount' to start the educational verification process"
+        action: "Claim Discount"
+        action_url: "https://www.jotform.com/education/pricing/"
+      - name: "Complete Verification Form"
+        description: "Fill out the educational verification form with institution details and intended use cases"
+        action: "Complete Form"
+        action_url: "https://www.jotform.com/education/pricing/"
+      - name: "Upload Documentation"
+        description: "Provide educational institution email address, student ID, staff identification, or equivalent documentation"
+        action: "Upload Proof"
+        action_url: "https://www.jotform.com/education/pricing/"
+      - name: "Submit for Review"
+        description: "Submit application and wait for verification within 2-3 business days"
+        action: "Submit Application"
+        action_url: "https://www.jotform.com/education/pricing/"
+      - name: "Apply Discount Code"
+        description: "Use the discount code received via email during plan selection and checkout"
+        action: "Subscribe with Discount"
+        action_url: "https://www.jotform.com/pricing/"
+
+faq:
+  - question: "What types of organizations qualify for the nonprofit discount?"
+    answer: "Registered 501(c)(3) nonprofit organizations in the United States qualify, as well as international organizations with equivalent nonprofit status documentation. Religious organizations may qualify if they meet nonprofit criteria."
+  - question: "Who qualifies for the educational discount?"
+    answer: "Accredited educational institutions (K-12, colleges, universities), individual educators with valid school email addresses, currently enrolled students, educational staff and administrators, homeschool educators with documentation, educational nonprofits, and libraries qualify."
+  - question: "What documentation is required to prove nonprofit status?"
+    answer: "Organizations must provide an IRS determination letter or equivalent proof of nonprofit status. International organizations need to provide equivalent nonprofit status documentation from their country."
+  - question: "What verification is required for the education discount?"
+    answer: "Valid educational institution email address (.edu domain preferred), current student ID or staff identification, official documentation of educational affiliation, or for homeschool educators, state registration or curriculum documentation."
+  - question: "How long does the verification process take?"
+    answer: "The nonprofit verification process typically takes 3-5 business days, while educational verification takes 2-3 business days after submitting all required documentation."
+  - question: "Can these discounts be combined with other offers?"
+    answer: "No, neither the nonprofit nor education discount can be combined with other promotional offers and both apply only to new subscriptions."
+  - question: "Are there special features for educational users?"
+    answer: "Yes, educational users get access to FERPA-compliant data handling, educational form templates, LMS integrations, Google Classroom integration, and specialized educational webinars and training resources."
