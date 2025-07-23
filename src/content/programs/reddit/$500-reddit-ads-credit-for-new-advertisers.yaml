@@ -1,0 +1,84 @@
+draft: false
+provider_slug: reddit
+title: $500 Reddit Ads Credit for New Advertisers
+meta_title: Get $500 in Ad Credit When You Spend $500 on Reddit Ads
+intro: >-
+  New Reddit Ads accounts receive a $500 advertising credit after spending $500
+  within 30 days.
+description: >-
+  Reddit offers a one-time $500 ad credit to help first-time advertisers test
+  campaigns across 100,000+ interest-based communities. To unlock the credit,
+  the new advertiser must accept the offer within 30 days of creating the
+  account and spend $500 on ads within the following 30 days. Once unlocked, the
+  credit must be used within 30 days, effectively doubling the advertiser’s
+  initial budget.
+status: Active
+tags:
+  - advertising
+  - marketing
+  - social
+url: https://ads.reddit.com
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 500
+community_notes: []
+tiers:
+  - name: $500 Ad Credit Match
+    intro: Spend $500 and receive an additional $500 in Reddit ad credit.
+    max_value: 500
+    url: https://ads.reddit.com
+    benefits:
+      - $500 advertising credit
+      - Access to 100k+ subreddit targeting options
+      - Automatic credit application once spend threshold is met
+      - Up to 18× potential brand-awareness lift
+      - Higher user trust and 2.5× customer spend vs. other platforms
+    benefits_level: 1
+    duration:
+      - Accept credit within 30 days of account creation
+      - Spend $500 within 30 days of accepting credit
+      - Use unlocked credit within 30 days
+    eligibility:
+      - New Reddit Ads accounts only
+      - One credit per advertiser account
+      - Must meet $500 spend threshold in required timeframe
+    effort_level: 1
+    steps_to_apply:
+      - name: Create Reddit Ads account
+        description: Sign up for a new Reddit Ads account to qualify for the promotion.
+        action: Get Started
+        action_url: https://ads.reddit.com
+      - name: Accept the promo credit
+        description: >-
+          Claim the $500 credit within 30 days of account creation from the
+          promotions tab.
+      - name: Launch campaigns
+        description: >-
+          Spend $500 on ads within 30 days of accepting the credit to unlock the
+          bonus.
+      - name: Credit auto-applies
+        description: >-
+          Once the $500 spend threshold is reached, the $500 credit becomes
+          available automatically.
+      - name: Use credit
+        description: >-
+          Deploy the unlocked $500 credit within 30 days on additional Reddit ad
+          campaigns.
+faq:
+  - question: Who is eligible for the $500 Reddit Ads credit?
+    answer: >-
+      Only advertisers that create a brand-new Reddit Ads account and have not
+      previously advertised on the platform are eligible.
+  - question: What happens if I don’t spend $500 within 30 days?
+    answer: >-
+      If the $500 spend threshold is not met within 30 days of accepting the
+      offer, the promotional credit expires and cannot be reclaimed.
+  - question: Can the credit be combined with other promotions?
+    answer: >-
+      No. The offer is limited to one credit per account and is
+      non-transferable. It cannot be combined with other promotions.
+  - question: When is the credit applied to my account?
+    answer: >-
+      The $500 credit is automatically unlocked and applied as soon as the $500
+      spend requirement is fulfilled.
