@@ -1,0 +1,18 @@
+active: true
+name: Scalingo
+short_name: Scalingo
+slug: scalingo
+color: '#505050'
+url: https://scalingo.com/startups
+intro: >-
+  Eligible startups receive up to €1,800 in hosting credits (up to €200/month
+  for 9 months), priority developer support, and GitOps-powered continuous
+  deployment on Scalingo’s GDPR-compliant European PaaS.
+best_deal: Up to €1,800 hosting credits for 9 months
+video: ''
+tags:
+  - cloud
+  - hosting
+  - devops
+  - europe
+  - compliance
