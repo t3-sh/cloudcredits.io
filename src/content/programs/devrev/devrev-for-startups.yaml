@@ -1,0 +1,92 @@
+draft: false
+provider_slug: devrev
+title: DevRev for Startups
+meta_title: DevRev for Startups Program – Up to $10K Credits & 50% Discount
+intro: >-
+  Early-stage startups receive up to $10,000 in DevRev credits, 12 months of
+  free Pro access, and a 50 % discount on the following year, along with expert
+  technical enablement.
+description: >-
+  DevRev’s startup program supports incubator, accelerator, and Seed/Series A
+  companies with a unified, AI-powered platform that replaces multiple support
+  and product-development tools. Qualified startups get $6,000 credits at
+  sign-up, can unlock another $4,000 by completing onboarding milestones, and
+  may claim 50 % off their next-year subscription if they commit within six
+  months after credit activation. Additional benefits include guidance from
+  technical experts, training modules, and access to DevRevU learning resources,
+  all delivered through DevRev’s global partner network spanning 100+ VCs and
+  accelerators in 87 countries.
+status: Active
+tags:
+  - ai
+  - customer support
+  - saas
+  - dev tools
+  - workflow
+url: https://devrev.ai/startups
+value_type: credits
+currency: USD
+min_value: 6000
+max_value: 10000
+community_notes: []
+tiers:
+  - name: Startup Pro Credits
+    intro: >-
+      12 months of Pro-tier access with up to $10K in credits and optional 50 %
+      discount on the next year.
+    max_value: 10000
+    url: https://devrev.ai/startups
+    benefits:
+      - $6,000 credits upon sign-up
+      - Additional $4,000 credits after onboarding milestones
+      - 12 months of free Pro-tier access
+      - 50 % discount on the following 1-year commitment (within 6 months)
+      - Technical experts, training modules, and DevRevU learning guides
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Incubator/accelerator-backed or Seed/Series A funded
+      - Associated with DevRev VC ecosystem partners
+      - New DevRev customer
+      - Funding up to Series A
+      - Early-stage startup
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit application
+        description: >-
+          Complete the online form on DevRev’s startup portal to provide company
+          and funding details.
+        action: Apply now
+        action_url: https://devrev.ai/startups/apply
+      - name: Complete onboarding milestones
+        description: >-
+          Integrate DevRev with existing workflows and finish required training
+          to unlock the remaining $4K credits.
+        action: Start onboarding
+        action_url: https://devrev.ai/startups
+faq:
+  - question: Who is eligible for DevRev’s startup credits?
+    answer: >-
+      Startups backed by an incubator, accelerator, or VC with funding up to
+      Series A that are new customers and affiliated with DevRev’s partner
+      ecosystem can apply.
+  - question: How are the $10K credits distributed?
+    answer: >-
+      DevRev grants $6,000 in credits immediately after approval and releases an
+      additional $4,000 once the startup completes key onboarding milestones
+      such as integrations and training.
+  - question: Are bootstrapped startups allowed to join?
+    answer: >-
+      No, the program currently requires outside funding (incubator,
+      accelerator, Seed, or Series A). Bootstrapped companies may instead begin
+      with DevRev’s free trial.
+  - question: What is the timeline for application review?
+    answer: >-
+      Most applications are reviewed within 5–7 business days, though additional
+      time may be needed for eligibility verification.
+  - question: How does the 50 % follow-up discount work?
+    answer: >-
+      After the 12-month credit period ends, startups have six months to commit
+      to a paid annual plan and receive a 50 % discount on that next-year
+      subscription.
