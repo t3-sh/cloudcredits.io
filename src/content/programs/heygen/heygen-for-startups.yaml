@@ -1,0 +1,104 @@
+provider_slug: "heygen"
+title: "HeyGen for Startups"
+meta_title: "HeyGen for Startups - AI Video Generation for Early-Stage Companies"
+intro: "Get up to 90% off HeyGen's AI video generation platform with enterprise-grade features, API credits, and advanced avatar technology for pre-Series B startups"
+description: "Specialized program offering innovative startup founders access to HeyGen's AI video generation platform at significantly reduced costs. The program provides enterprise-grade video creation tools including AI avatars, voice cloning, multi-language support, and comprehensive API access to help startups create professional video content during critical growth phases."
+status: "Active"
+url: "https://2ykg0d9nevz.typeform.com/to/pJG7WMLm"
+min_value: 75
+max_value: 90
+value_type: "discount"
+currency: "USD"
+tags: ["ai", "video", "marketing", "api", "b2b"]
+date: 2025-01-23
+
+tiers:
+  - name: "API Credits Package"
+    intro: "Massive discount on API credits for developers and technical teams"
+    max_value: 90
+    url: "https://2ykg0d9nevz.typeform.com/to/pJG7WMLm"
+    benefits:
+      - "$1,000 for 20,000 API credits (normally $10,000)"
+      - "90% discount on regular pricing"
+      - "AI-generated avatars with customization"
+      - "Multi-language voiceover capabilities"
+      - "Voice cloning technology"
+    benefits_level: 3
+    duration: ["One-time purchase"]
+    eligibility:
+      - "Pre-Series B startup stage"
+      - "Graduate from recognized accelerators (Y Combinator, Techstars)"
+      - "New HeyGen customers only"
+      - "Venture-backed company with credible traction"
+    effort_level: 2
+    timeline_indication: "Manual review required, approval via email"
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Fill out online eligibility form with company and accelerator details"
+        action: "Apply Now"
+        action_url: "https://2ykg0d9nevz.typeform.com/to/pJG7WMLm"
+      - name: "Manual Review Process"
+        description: "HeyGen verifies funding stage, accelerator affiliation, and company status"
+        action: "Wait for Review"
+        action_url: ""
+      - name: "Receive Discount Code"
+        description: "Get unique discount code via email upon approval"
+        action: "Check Email"
+        action_url: ""
+      - name: "Start Creating Videos"
+        description: "Begin using HeyGen's AI video generation platform with startup pricing"
+        action: "Access Platform"
+        action_url: "https://app.heygen.com/signup"
+
+  - name: "Enterprise Plan Package"
+    intro: "Full enterprise access at startup-friendly pricing for comprehensive video needs"
+    max_value: 75
+    url: "https://2ykg0d9nevz.typeform.com/to/pJG7WMLm"
+    benefits:
+      - "$7,500 for one-year Enterprise plan (normally $30,000)"
+      - "75% discount on enterprise pricing"
+      - "Advanced AI avatar generation"
+      - "Video translation and localization"
+      - "Priority customer support"
+    benefits_level: 3
+    duration: ["1 year"]
+    eligibility:
+      - "Pre-Series B startup stage"
+      - "Graduate from recognized accelerators (Y Combinator, Techstars)"
+      - "New HeyGen customers only"
+      - "Venture-backed company with credible traction"
+    effort_level: 2
+    timeline_indication: "Manual review required, approval via email"
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Fill out online eligibility form with company and accelerator details"
+        action: "Apply Now"
+        action_url: "https://2ykg0d9nevz.typeform.com/to/pJG7WMLm"
+      - name: "Manual Review Process"
+        description: "HeyGen verifies funding stage, accelerator affiliation, and company status"
+        action: "Wait for Review"
+        action_url: ""
+      - name: "Receive Discount Code"
+        description: "Get unique discount code via email upon approval"
+        action: "Check Email"
+        action_url: ""
+      - name: "Access Enterprise Platform"
+        description: "Begin using full enterprise features with startup pricing"
+        action: "Access Platform"
+        action_url: "https://app.heygen.com/signup"
+
+faq:
+  - question: "What is HeyGen for Startups?"
+    answer: "HeyGen for Startups is a specialized program offering innovative startup founders access to AI video generation tools at significantly reduced costs to accelerate business growth through professional video content creation."
+  - question: "Who is eligible for the HeyGen startup program?"
+    answer: "This program is for pre-Series B startups that have graduated from recognized accelerators like Y Combinator or Techstars, and are new to the HeyGen platform."
+  - question: "What are the benefits of the HeyGen startup program?"
+    answer: "Startups receive substantial discounts (75-90% off) on either API credits or Enterprise plan access, enabling professional video creation with advanced AI tools at startup-friendly pricing."
+  - question: "How can I apply for the HeyGen startup program?"
+    answer: "Eligible startups can apply online by filling out a quick eligibility form, followed by manual review and approval process."
+  - question: "What is included in HeyGen's video tools for startups?"
+    answer: "HeyGen provides AI-generated avatars, customizable templates, multi-language voiceovers, voice cloning, video translation, and comprehensive video generation capabilities."
+  - question: "What are the two pricing options available?"
+    answer: "Option A offers $1,000 for 20,000 API credits (normally $10,000, 90% discount). Option B offers $7,500 for a one-year Enterprise plan (normally $30,000, 75% discount)."
+  - question: "Is this offer available to existing HeyGen customers?"
+    answer: "No, this one-time introductory offer is valid only for new HeyGen customers who have not previously used the platform."
