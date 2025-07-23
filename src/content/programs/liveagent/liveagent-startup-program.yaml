@@ -1,0 +1,66 @@
+provider_slug: "liveagent"
+title: "LiveAgent Startup Program"
+meta_title: "LiveAgent Startup Program - Free Multi-Channel Help Desk"
+intro: "Get 6 months completely free of LiveAgent's Large plan plus 6 additional months at 50% off - comprehensive multi-channel customer support platform for early-stage startups"
+description: "Comprehensive startup program offering 12 months of benefits on LiveAgent's multi-channel help desk software. Startups receive 6 months completely free access to the Large plan followed by 6 months at 50% discount, providing email, live chat, social media integration, phone support, and self-service portal capabilities with no setup fees."
+status: "Active"
+url: "https://www.liveagent.com/startups/"
+min_value: 50
+max_value: 100
+value_type: "discount"
+currency: "USD"
+tags: ["customer support", "saas", "b2b", "free trial"]
+date: 2025-07-23
+
+tiers:
+  - name: "Startup Program"
+    intro: "12-month benefit program with 6 months free followed by 6 months at 50% discount on Large plan"
+    max_value: 100
+    url: "https://www.liveagent.com/startups/"
+    benefits:
+      - "6 months completely FREE of Large plan"
+      - "Additional 6 months at 50% discount"
+      - "Multi-channel support (email, live chat, phone, social media)"
+      - "Unlimited ticket handling capacity"
+      - "No setup fees or credit card required"
+    benefits_level: 3
+    duration: ["12 months"]
+    eligibility:
+      - "New to LiveAgent (not existing customers)"
+      - "In Angel, Pre-seed, Seed, or Series A funding stages"
+      - "Innovative online startup with maximum 40 employees"
+      - "Annual Recurring Revenue (ARR) up to $1 million"
+      - "Committed to ethical and socially responsible business practices"
+    effort_level: 2
+    timeline_indication: "Immediate access upon approval"
+    steps_to_apply:
+      - name: "Verify Eligibility"
+        description: "Ensure you meet all qualification criteria including funding stage, team size, and revenue requirements"
+        action: "Check Requirements"
+        action_url: "https://www.liveagent.com/startups/"
+      - name: "Submit Application"
+        description: "Complete the startup program application form with company details and documentation"
+        action: "Apply Now"
+        action_url: "https://www.liveagent.com/startups/"
+      - name: "Documentation Review"
+        description: "LiveAgent team reviews application and verifies eligibility requirements"
+        action: "Await Review"
+        action_url: "https://www.liveagent.com/startups/"
+      - name: "Access Platform"
+        description: "Upon approval, get immediate access to Large plan features with onboarding support"
+        action: "Start Using"
+        action_url: "https://www.liveagent.com/startups/"
+
+faq:
+  - question: "What is included in the LiveAgent Large plan for startups?"
+    answer: "The Large plan includes unlimited ticket handling, multi-channel support (email, live chat, phone, social media), advanced automation rules, real-time chat monitoring, knowledge base tools, advanced reporting, API access, mobile apps, custom branding, and priority support."
+  - question: "How long does the startup program last?"
+    answer: "The program provides 12 months of benefits: 6 months completely free access to the Large plan, followed by 6 additional months at 50% discount. After 12 months, standard pricing applies."
+  - question: "What are the eligibility requirements for the startup program?"
+    answer: "Startups must be new to LiveAgent, in Angel/Pre-seed/Seed/Series A funding stages, have maximum 40 employees, generate up to $1M ARR, and demonstrate ethical business practices."
+  - question: "Are there any setup fees or credit card requirements?"
+    answer: "No, there are no setup fees for qualified startups and no credit card is required to get started with the program."
+  - question: "Can existing LiveAgent customers apply for the startup program?"
+    answer: "No, the startup program is exclusively for companies that are new to LiveAgent's customer base. Existing customers are not eligible."
+  - question: "What happens after the 12-month program period ends?"
+    answer: "After the promotional period, startups transition to standard LiveAgent pricing. The platform is designed to grow with your company as it scales beyond the initial eligibility requirements."

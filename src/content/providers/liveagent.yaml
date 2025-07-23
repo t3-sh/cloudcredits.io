@@ -1,0 +1,10 @@
+active: true
+name: "LiveAgent"
+short_name: "LiveAgent"
+slug: "liveagent"
+url: "https://www.liveagent.com"
+color: "#f5912c"
+best_deal: "6 months free + 6 months 50% off Large plan"
+intro: "Multi-channel help desk software providing email, live chat, phone support, and social media integration for customer service teams."
+video: ""
+tags: ["customer support", "saas"]
