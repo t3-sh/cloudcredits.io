@@ -1,0 +1,88 @@
+draft: false
+provider_slug: scalingo
+title: Scalingo Startup Program
+meta_title: Scalingo Startup Program – 9 Months of Free EU Cloud Hosting
+intro: >-
+  Eligible startups receive up to €1,800 in hosting credits (up to €200/month
+  for 9 months), priority developer support, and GitOps-powered continuous
+  deployment on Scalingo’s GDPR-compliant European PaaS.
+description: >-
+  Scalingo’s Startup Program is designed to give early-stage companies an unfair
+  advantage by removing server management overhead and hosting costs for the
+  first nine months. Participants benefit from €1,800 worth of platform credits,
+  lightning-fast deployments through integrated GitOps workflows with GitHub and
+  GitLab, and hands-on technical support from Scalingo engineers. Applications
+  are open to startups and incubator cohorts building on more than 50 supported
+  languages, frameworks, and databases, all hosted in certified European data
+  centres with a 99.9 % SLA and full GDPR compliance.
+status: Active
+tags:
+  - cloud
+  - hosting
+  - devops
+  - europe
+  - compliance
+url: https://scalingo.com/startups
+value_type: credits
+currency: EUR
+max_value: 1800
+community_notes: []
+tiers:
+  - name: Scalingo Startup Program
+    intro: >-
+      9 months of free cloud hosting capped at €200 per month (total €1,800)
+      plus developer-level support and GitOps deployment.
+    max_value: 1800
+    url: https://scalingo.com/startups
+    benefits:
+      - €1,800 hosting credits over 9 months
+      - Free, priority technical support from Scalingo engineers
+      - Continuous deployment via GitOps with GitHub/GitLab
+      - GDPR-compliant hosting in EU data centres with 99.9 % SLA
+      - Support for 50+ languages, frameworks, and managed databases
+    benefits_level: 2
+    duration:
+      - 9 months
+    eligibility:
+      - Early-stage startups
+      - Startups participating in incubators or accelerators
+      - New to Scalingo PaaS
+      - Must contact Scalingo partnerships team to enrol
+    effort_level: 2
+    steps_to_apply:
+      - name: Reach out to Scalingo
+        description: >-
+          Email or fill out the contact form to express interest in the Startup
+          Program.
+        action: Contact Scalingo
+        action_url: https://scalingo.com/startups#contact
+      - name: Provide company details
+        description: >-
+          Share basic information about your startup, funding stage, and
+          expected platform usage for eligibility review.
+      - name: Receive confirmation
+        description: >-
+          Scalingo reviews the submission and, if approved, activates credits
+          for your account within a few business days.
+faq:
+  - question: How much credit do startups receive?
+    answer: >-
+      Approved startups receive up to €200 in hosting credits per month for nine
+      months, totalling €1,800.
+  - question: Which technologies does Scalingo support?
+    answer: >-
+      The platform natively supports more than 50 languages, frameworks, and
+      popular databases including Node.js, Ruby, Python, PHP, PostgreSQL, MySQL,
+      and MongoDB.
+  - question: Is the data hosted in the European Union?
+    answer: >-
+      Yes, all applications and databases run in certified European data centres
+      that are fully GDPR compliant and backed by a 99.9 % SLA.
+  - question: What kind of support is included?
+    answer: >-
+      Startups enjoy priority access to Scalingo’s developer support team at no
+      additional cost throughout the 9-month program period.
+  - question: How do I apply?
+    answer: >-
+      Simply contact Scalingo via the Startup Program page, provide your company
+      details, and their partnerships team will guide you through activation.
