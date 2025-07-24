@@ -2,7 +2,7 @@ active: true
 name: Mergify
 short_name: Mergify
 slug: mergify
-color: '#2BDFDC'
+color: '#28abe1'
 url: https://mergify.com/startups
 intro: >-
   Automate GitHub workflows and accelerate engineering velocity with Mergify’s
