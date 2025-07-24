@@ -1,0 +1,106 @@
+draft: false
+provider_slug: netcore
+title: Netcore Cloud B2C Startup Program
+meta_title: >-
+  Netcore Cloud B2C Startup Program – Up to $30,000 in Marketing Automation
+  Credits
+intro: >-
+  Eligible early-stage B2C startups receive up to $30,000 in Netcore Cloud
+  platform credits, mentorship from industry leaders, and investor networking
+  opportunities.
+description: >-
+  Netcore Cloud’s B2C Startup Program supports high-growth consumer startups
+  focused on retention by granting up to $30,000 in credits for Netcore’s
+  AI-powered omnichannel marketing platform. In addition to financial support,
+  participants gain access to two dedicated mentorship tracks—ProfiGrowth
+  Academy and D2C Blaze 2.0—plus curated connections to investors and a
+  nationwide network of enablers. The program is free to join and combines
+  virtual and in-person sessions, helping founders optimise email, SMS,
+  WhatsApp, RCS, and other engagement channels while scaling sustainably.
+status: Active
+tags:
+  - marketing
+  - email
+  - automation
+  - ai
+  - saas
+url: https://netcorecloud.com/startup-program/
+value_type: credits
+currency: USD
+max_value: 30000
+community_notes: []
+tiers:
+  - name: Netcore B2C Startup Tier
+    intro: >-
+      Receive up to $30,000 in Netcore Cloud platform credits plus mentorship
+      and investor access.
+    max_value: 30000
+    url: https://netcorecloud.com/startup-program/
+    benefits:
+      - $30,000 Netcore Cloud credits (save up to 50% on marketing spend)
+      - Access to AI-powered omnichannel engagement tools
+      - ProfiGrowth Academy expert mentorship sessions
+      - D2C Blaze 2.0 accelerator cohort with investor connects
+      - Curated nationwide network of partners and enablers
+    benefits_level: 2
+    duration: []
+    eligibility:
+      - B2C startup with a focus on user retention
+      - Operational for less than 3 years
+      - Raised under $15 million in funding
+      - Experiencing strong traction and ready to scale
+      - Not an existing Netcore customer
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit online application
+        description: >-
+          Complete the form outlining your startup’s team, product, traction,
+          and growth goals.
+        action: Apply Now
+        action_url: https://netcorecloud.com/startup-program/
+      - name: Participate in follow-up conversation
+        description: >-
+          If shortlisted, discuss your retention strategy and scaling needs with
+          the Netcore program team.
+faq:
+  - question: Who is eligible to apply?
+    answer: >-
+      Startups operating fewer than 3 years, having secured less than $15
+      million in funding, focused on B2C retention, and not currently using
+      Netcore products.
+  - question: What support does the program provide?
+    answer: >-
+      Up to $30,000 in platform credits, tailored mentorship, investor
+      introductions, and access to Netcore’s partner ecosystem.
+  - question: How can the Netcore credits be used?
+    answer: >-
+      Credits are redeemable across Netcore’s omnichannel marketing automation
+      suite, including email, SMS, WhatsApp, push notifications, and more.
+  - question: What is the application process?
+    answer: >-
+      Submit the online form; selected startups will be invited to a follow-up
+      conversation before final acceptance.
+  - question: How are startups selected for the cohort?
+    answer: >-
+      Netcore evaluates innovation, existing traction, scalability, and
+      alignment with a retention-first growth strategy.
+  - question: Do you accept applications from all locations?
+    answer: Yes. The program runs nationwide with both virtual and in-person sessions.
+  - question: Is there a cost to join the program?
+    answer: No. Participation is free and credits are provided without upfront fees.
+  - question: What resources are required from participating startups?
+    answer: >-
+      Startups should allocate a developer for implementation and someone able
+      to dedicate 4-5 hours per week post-onboarding.
+  - question: When is the best time to apply?
+    answer: >-
+      Apply when your team is prioritising retention and prepared to scale
+      marketing operations.
+  - question: Can we apply if we don’t meet every eligibility criterion?
+    answer: >-
+      Yes. Netcore reviews applications holistically and encourages startups to
+      apply even if they fall short on one criterion.
+  - question: Will the accelerator be virtual or in-person?
+    answer: >-
+      The program offers a hybrid model with both virtual workshops and
+      in-person sessions across India.
