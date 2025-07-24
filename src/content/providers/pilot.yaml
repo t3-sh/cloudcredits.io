@@ -1,0 +1,17 @@
+active: true
+name: Pilot
+short_name: Pilot
+slug: pilot
+color: '#5F2EE5'
+url: https://pilot.com/startups
+intro: >-
+  Early-stage companies get up to $30,000 in Pilot credits to build a super
+  wiki, plus visibility perks and referral rewards.
+best_deal: Up to $30,000 in Pilot credits
+video: ''
+tags:
+  - docs
+  - collaboration
+  - productivity
+  - saas
+  - ai

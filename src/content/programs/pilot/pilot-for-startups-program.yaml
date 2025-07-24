@@ -1,0 +1,93 @@
+draft: false
+provider_slug: pilot
+title: Pilot for Startups Program
+meta_title: Pilot for Startups – $30,000 Knowledge-Management Credits
+intro: >-
+  Early-stage companies get up to $30,000 in Pilot credits to build a super
+  wiki, plus visibility perks and referral rewards.
+description: >-
+  Pilot’s Startup Program supports young teams that need an affordable,
+  integrated knowledge base. Qualified startups receive $30k in subscription
+  credits valid for their first year, monthly spotlight promotion across Pilot’s
+  channels, custom founder merchandise, and a $10k referral bonus for
+  introducing other startups, investors, or accelerators. Eligibility is limited
+  to new customers that are less than two years old, have raised under $1
+  million, and employ fewer than ten people.
+status: Active
+tags:
+  - docs
+  - collaboration
+  - productivity
+  - saas
+  - ai
+url: https://pilot.com/startups
+value_type: credits
+currency: USD
+max_value: 30000
+community_notes: []
+tiers:
+  - name: Pilot Startup Credits
+    intro: >-
+      $30,000 in credits toward Pilot’s knowledge-management platform for one
+      year.
+    max_value: 30000
+    url: https://pilot.com/startups
+    benefits:
+      - $30,000 platform credits (first year)
+      - Monthly startup spotlights on Pilot’s channels
+      - $10,000 referral bonus for successful introductions
+      - Custom founder and team merchandise
+      - 'Premium support: live chat & 1:1 Zoom'
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Company < 2 years old
+      - Raised < $1 million funding
+      - < 10 employees
+      - New to Pilot (no existing subscription)
+      - Honest representation of eligibility required
+    effort_level: 2
+    steps_to_apply:
+      - name: Complete application form
+        description: >-
+          Fill out the online form with basic company details and confirm
+          eligibility.
+        action: Apply Now
+        action_url: https://pilot.com/startups/apply
+      - name: Await review
+        description: >-
+          Pilot’s team evaluates the application and contacts you with next
+          steps.
+      - name: Activate credits
+        description: >-
+          Upon approval, follow onboarding instructions to apply the $30k
+          credits to your new Pilot account.
+faq:
+  - question: How do I apply?
+    answer: >-
+      Submit the online application form. Pilot’s team will review your
+      information and send instructions to access the credits.
+  - question: What can I use the $30,000 credit for?
+    answer: >-
+      Credits apply to Pilot’s software subscription during your first year,
+      allowing you to create and scale a super wiki at no cost until the credit
+      is exhausted.
+  - question: How do referral perks work?
+    answer: >-
+      Pilot provides a unique referral link after enrollment. You receive an
+      additional $10,000 in credits for each eligible accelerator, investor, or
+      startup that signs up via your link.
+  - question: Am I eligible if I’m already a Pilot customer?
+    answer: >-
+      Existing customers or Early Access participants may still qualify for a
+      startup discount. Contact Pilot Support to review your situation.
+  - question: What happens if my team grows beyond 10 employees?
+    answer: >-
+      If you exceed the 10-employee threshold after joining, reach out to
+      Support to reassess your plan. Pilot works with growing startups to find
+      suitable solutions.
+  - question: What if I misrepresent my eligibility?
+    answer: >-
+      Providing false information violates Pilot’s terms of service and may
+      result in the revocation of credits and other actions.
