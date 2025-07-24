@@ -8,6 +8,8 @@ import StatGroup from "@/components/StatGroup.astro";
 import Stat from "@/components/Stat.astro";
 import { getCollection } from "astro:content";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
+import fs from "node:fs";
+import path from "node:path";
 
 // get all static paths for providers
 export async function getStaticPaths() {
@@ -66,7 +68,14 @@ const currency =
   creditPrograms.length > 0 ? creditPrograms[0].data.currency : "USD";
 const currencySymbol = currency === "USD" ? "$" : "€";
 
-const logo = `/images/providers/${slug}.svg`;
+// Check for logo format (SVG first, then PNG)
+const publicDir = path.join(process.cwd(), "public");
+const svgPath = `/images/providers/${slug}.svg`;
+const pngPath = `/images/providers/${slug}.png`;
+const svgExists = fs.existsSync(path.join(publicDir, svgPath.slice(1)));
+const pngExists = fs.existsSync(path.join(publicDir, pngPath.slice(1)));
+
+const logo = svgExists ? svgPath : (pngExists ? pngPath : svgPath);
 ---
 
 <Base

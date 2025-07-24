@@ -302,13 +302,17 @@ function renderCombinedLevels(
   `;
 }
 
-// Check if mini version exists in the public directory
+// Check for logo format (mini SVG, regular SVG, then PNG)
 const publicDir = path.join(process.cwd(), "public");
-const miniPath = `/images/providers/${provider.data.slug}.mini.svg`;
-const regularPath = `/images/providers/${provider.data.slug}.svg`;
-const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));
+const miniSvgPath = `/images/providers/${provider.data.slug}.mini.svg`;
+const regularSvgPath = `/images/providers/${provider.data.slug}.svg`;
+const regularPngPath = `/images/providers/${provider.data.slug}.png`;
 
-const logo = miniExists ? miniPath : regularPath;
+const miniSvgExists = fs.existsSync(path.join(publicDir, miniSvgPath.slice(1)));
+const regularSvgExists = fs.existsSync(path.join(publicDir, regularSvgPath.slice(1)));
+const regularPngExists = fs.existsSync(path.join(publicDir, regularPngPath.slice(1)));
+
+const logo = miniSvgExists ? miniSvgPath : (regularSvgExists ? regularSvgPath : (regularPngExists ? regularPngPath : regularSvgPath));
 ---
 
 <Base
