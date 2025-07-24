@@ -1,0 +1,18 @@
+active: true
+name: Alloy Automation
+short_name: Alloy
+slug: alloy
+color: '#286EFA'
+url: https://runalloy.com
+intro: >-
+  Alloy Automation equips early-stage companies with enterprise-grade
+  integration infrastructure, AI agents, and 200+ pre-built connectors so they
+  can automate complex workflows and scale faster.
+best_deal: Tailored credits and extended trials for startups
+video: ''
+tags:
+  - automation
+  - api
+  - workflow
+  - e-commerce
+  - saas
