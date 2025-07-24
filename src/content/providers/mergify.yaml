@@ -1,0 +1,18 @@
+active: true
+name: Mergify
+short_name: Mergify
+slug: mergify
+color: '#2BDFDC'
+url: https://mergify.com/startups
+intro: >-
+  Automate GitHub workflows and accelerate engineering velocity with Mergify’s
+  Advanced plan free for up to 12 months, covering 50 developer seats and
+  $12,000 in credits.
+best_deal: Up to $12,000 credits for 1 year
+video: ''
+tags:
+  - dev tools
+  - devops
+  - automation
+  - ci/cd
+  - saas
