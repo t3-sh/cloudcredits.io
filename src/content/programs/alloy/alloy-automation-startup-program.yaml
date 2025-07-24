@@ -5,18 +5,18 @@ meta_title: >-
   Alloy Automation Startup Program – Integration & Workflow Automation for
   Startups
 intro: >-
-  Alloy Automation equips early-stage companies with enterprise-grade
+  Get up to $2,000 in Alloy credits. Alloy Automation equips early-stage companies with enterprise-grade
   integration infrastructure, AI agents, and 200+ pre-built connectors so they
   can automate complex workflows and scale faster.
 description: >-
   The Alloy Automation Startup Program gives young software, e-commerce,
-  fintech, and logistics companies access to Alloy’s unified integration
+  fintech, and logistics companies up to $2,000 in credits for access to Alloy's unified integration
   platform. Startups can embed ready-made connectors, build no-code/low-code
   workflows, and leverage AI-driven agents to eliminate manual data transfer,
   reduce operational costs, and launch integrations up to 70 % faster.
   Additional perks include developer documentation, error-handling dashboards,
   on-prem deployment options for strict compliance, and live guidance from
-  Alloy’s solutions team.
+  Alloy's solutions team.
 status: Active
 tags:
   - automation
@@ -27,14 +27,14 @@ tags:
 url: https://runalloy.com
 value_type: credits
 currency: USD
-max_value: 0
+max_value: 2000
 community_notes: []
 tiers:
   - name: Alloy Automation Startup Access
     intro: >-
-      Single-tier offer providing full access to Alloy’s integration platform,
+      Single-tier offer providing up to $2,000 in credits for full access to Alloy's integration platform,
       AI agents, and support resources.
-    max_value: 0
+    max_value: 2000
     url: https://runalloy.com
     benefits:
       - Full use of Alloy’s unified API and 200+ connectors
@@ -46,9 +46,9 @@ tiers:
     duration:
       - Ongoing access while enrolled
     eligibility:
-      - Early-stage startups (pre-Series B)
-      - Operating in software, retail, fintech, or logistics
-      - Need for workflow automation or embedded integrations
+      - Founded less than 5 years ago
+      - Pre-seed, seed, Series A, or Series B startups
+      - Not an existing Alloy Automation customer
     effort_level: 2
     steps_to_apply:
       - name: Book a demo
@@ -73,14 +73,12 @@ faq:
       technical support.
   - question: Is there any cost to join?
     answer: >-
-      Alloy tailors pricing and potential credits during the consultation. Many
-      early-stage startups qualify for significant cost coverage or extended
-      trials.
+      Qualified startups can receive up to $2,000 in Alloy credits to get started
+      with the platform at no upfront cost.
   - question: Who is eligible?
     answer: >-
-      Early-stage companies (typically up to Series B) building products in
-      software, e-commerce, fintech, or logistics that require robust
-      integrations and workflow automation.
+      Startups founded less than 5 years ago that are pre-seed, seed, Series A, or Series B,
+      and are not existing Alloy Automation customers.
   - question: How long does access last?
     answer: >-
       Access is ongoing as long as the startup remains in good standing with
