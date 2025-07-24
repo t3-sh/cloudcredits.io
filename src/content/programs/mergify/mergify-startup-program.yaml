@@ -1,0 +1,82 @@
+draft: false
+provider_slug: mergify
+title: Mergify Startup Program
+meta_title: Mergify Startup Program – Up to $12,000 Credits for Early-Stage Teams
+intro: >-
+  Early-stage startups receive Mergify’s Advanced plan free for up to 12 months,
+  covering 50 developer seats and $12,000 in product credits.
+description: >-
+  Mergify’s Startup Program helps young companies automate GitHub workflows and
+  accelerate engineering velocity by granting a year of free access (worth
+  $12,000) to the Advanced plan. Participants get 50 seats, unlimited
+  pull-request automation, merge queues, speculative checks, conflict
+  resolution, and priority merges. The offer targets teams under two years old
+  with no more than 50 employees that are new to Mergify, and promises a 24-hour
+  eligibility response plus a quick onboarding call.
+status: Active
+tags:
+  - dev tools
+  - devops
+  - automation
+  - ci/cd
+  - saas
+url: https://mergify.com/startups
+value_type: credits
+currency: USD
+min_value: 12000
+max_value: 12000
+community_notes: []
+tiers:
+  - name: Advanced Plan – Startup Tier
+    intro: >-
+      Free Advanced plan with up to 50 seats and $12,000 in credits for 12
+      months.
+    max_value: 12000
+    url: https://mergify.com/startups
+    benefits:
+      - 50 seats of Mergify Advanced plan
+      - Unlimited pull request automation
+      - Merge queues & speculative checks
+      - Automatic conflict resolution and backporting
+      - Priority merge capabilities
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Company exists < 2 years
+      - ≤50 employees
+      - Not an existing Mergify customer
+      - Early-stage startup
+    effort_level: 2
+    steps_to_apply:
+      - name: Submit application
+        description: Fill out the company details form on the Startup Program page.
+        action: Apply now
+        action_url: https://mergify.com/startups
+      - name: Schedule onboarding call
+        description: Book a short call to confirm eligibility and set up your workspace.
+        action: Book call
+        action_url: https://mergify.com/startups
+faq:
+  - question: What is included in the Mergify Startup Program?
+    answer: >-
+      Eligible startups receive the Advanced plan free for up to 12 months,
+      covering 50 developer seats and all premium automation features (worth
+      $12,000).
+  - question: Who is eligible to apply?
+    answer: >-
+      Startups that are less than two years old, have 50 or fewer employees, and
+      are not already Mergify customers qualify for the program.
+  - question: How long does approval take?
+    answer: >-
+      Mergify commits to responding within 24 hours after the application is
+      submitted.
+  - question: What happens during the onboarding call?
+    answer: >-
+      The Mergify team verifies eligibility, answers questions, and helps set up
+      your Mergify workspace so you can start automating pull requests
+      immediately.
+  - question: What if my team exceeds 50 seats during the year?
+    answer: >-
+      Additional seats or usage beyond the covered 50 seats or $12,000 credit
+      will be billed at standard Mergify pricing.
