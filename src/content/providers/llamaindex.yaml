@@ -1,0 +1,10 @@
+active: true
+name: "LlamaIndex"
+short_name: "LlamaIndex"
+slug: "llamaindex"
+url: "https://llamaindex.ai"
+color: "#45dff8"
+best_deal: "10,000 free credits for document intelligence"
+intro: "Production-grade document intelligence platform with enterprise parsing, extraction, and indexing capabilities for AI applications."
+video: ""
+tags: ["ai", "ml", "llm", "api", "data"]
