@@ -1,0 +1,54 @@
+provider_slug: "llamaindex"
+title: "LlamaCloud Free Credits"
+meta_title: "LlamaCloud - 10,000 Free Credits for Document Intelligence"
+intro: "Get 10,000 free credits for production-grade document intelligence with LlamaCloud's enterprise-grade parsing, extraction, and indexing platform"
+description: "LlamaCloud offers a comprehensive document intelligence platform with 10,000 free credits for startups and developers. The platform provides enterprise-grade document processing capabilities including LlamaParse for document transformation, LlamaExtract for structured data extraction, and LlamaIndex for knowledge base creation. Features include support for 50+ file formats, human-in-the-loop review, page-level citations, confidence scoring, smart chunking, and retrieval-ready embeddings optimized for RAG applications and AI agents."
+status: "Active"
+url: "https://cloud.llamaindex.ai"
+min_value: 10
+max_value: 10
+value_type: "credits"
+currency: "USD"
+tags: ["ai", "ml", "llm", "api", "data"]
+date: 2025-01-27
+
+tiers:
+  - name: "Free Tier"
+    intro: "Free tier offering 10,000 credits for document intelligence and processing"
+    max_value: 10
+    url: "https://cloud.llamaindex.ai"
+    benefits:
+      - "10,000 free credits ($10 USD equivalent)"
+      - "Access to LlamaParse for 50+ document formats"
+      - "LlamaExtract for structured data extraction"
+      - "Human-in-the-loop review capabilities"
+      - "Integration with 40+ vector databases"
+    benefits_level: 2
+    duration: ["Ongoing"]
+    eligibility:
+      - "Any developer or startup"
+      - "No funding requirements"
+      - "Account registration required"
+    effort_level: 1
+    timeline_indication: "Immediate access upon registration"
+    steps_to_apply:
+      - name: "Create Account"
+        description: "Sign up for a free LlamaCloud account to get immediate access to 10,000 credits"
+        action: "Sign Up"
+        action_url: "https://cloud.llamaindex.ai"
+
+faq:
+  - question: "What is LlamaCloud?"
+    answer: "LlamaCloud is a hosted service for enterprise-grade document intelligence powered by LlamaIndex. It provides production-ready document processing, extraction, and indexing capabilities for building RAG applications and AI agents."
+  - question: "How many credits do I get for free?"
+    answer: "New users receive 10,000 free credits (equivalent to $10 USD) upon account registration, with no funding requirements or approval process needed."
+  - question: "What can I do with the free credits?"
+    answer: "The free credits can be used for document parsing (1-45 credits per page), data extraction (5-60 credits per page), and indexing (1-2 credits per page) across 50+ file formats including PDF, DOCX, PPTX, and more."
+  - question: "What file formats are supported?"
+    answer: "LlamaCloud supports 50+ formats including PDF, DOCX, PPTX, XLSX, HTML, EPUB, images, and more through their LlamaParse component."
+  - question: "How does the credit system work?"
+    answer: "Credits are consumed based on processing mode and document complexity. Fast mode uses 1 credit per page, Balanced mode uses 3 credits per page, and Premium mode uses 45 credits per page. Extraction and indexing have separate credit costs."
+  - question: "Can I upgrade from the free tier?"
+    answer: "Yes, paid plans are available starting at $50/month (Starter plan with 50,000 credits), $500/month (Pro plan with 500,000 credits), and custom Enterprise pricing for larger organizations."
+  - question: "What makes LlamaCloud different from other document processing services?"
+    answer: "LlamaCloud offers enterprise-grade features including human-in-the-loop review, page-level citations, confidence scoring, smart chunking optimized for RAG applications, and native integration with 40+ vector databases."
