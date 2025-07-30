@@ -1,0 +1,15 @@
+active: true
+name: "Mem0"
+short_name: "Mem0"
+slug: "mem0"
+url: "https://mem0.ai"
+color: "#e6ffa2"
+best_deal: "Free API credits for AI memory platform"
+intro: "AI memory platform that enables personalized experiences by providing persistent memory capabilities for AI applications and agents."
+video: ""
+tags:
+  - ai
+  - api
+  - ml
+  - agents
+  - saas

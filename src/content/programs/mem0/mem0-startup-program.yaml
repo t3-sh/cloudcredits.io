@@ -1,0 +1,53 @@
+provider_slug: "mem0"
+title: "Mem0 Startup Program"
+meta_title: "Mem0 Startup Program - AI Memory Platform Credits"
+intro: "Get free API credits to build personalized AI applications with Mem0's persistent memory platform designed for AI agents and applications"
+description: "The Mem0 Startup Program provides early-stage startups with free API credits to integrate persistent memory capabilities into their AI applications. Mem0's platform enables AI systems to remember user preferences, conversation history, and contextual information across sessions, creating more personalized and intelligent user experiences. The platform supports various memory types including user preferences, conversation history, and knowledge graphs, making it ideal for building sophisticated AI agents and applications that can maintain context and improve over time."
+status: "Active"
+url: "https://mem0.ai/startup-program"
+min_value: 100
+max_value: 5000
+value_type: "credits"
+currency: "USD"
+tags: ["ai", "api", "ml", "agents", "saas"]
+date: 2025-07-30
+
+tiers:
+  - name: "Startup Tier"
+    intro: "Free API credits for early-stage startups building AI applications with memory capabilities"
+    max_value: 5000
+    url: "https://mem0.ai/startup-program"
+    benefits:
+      - "Free API credits for Mem0 memory platform"
+      - "Access to persistent memory APIs for AI agents"
+      - "User preference and conversation history storage"
+      - "Integration with popular LLM frameworks"
+      - "Technical support and community access"
+    benefits_level: 2
+    duration: ["6-12 months"]
+    eligibility:
+      - "Early-stage startups and developers"
+      - "Building AI applications or agents"
+      - "Focus on personalized user experiences"
+      - "Active development of AI-powered products"
+    effort_level: 2
+    timeline_indication: "Review within 7-14 business days"
+    steps_to_apply:
+      - name: "Apply for Program"
+        description: "Submit your startup application with details about your AI project and use case for persistent memory"
+        action: "Apply Now"
+        action_url: "https://mem0.ai/startup-program"
+
+faq:
+  - question: "What is Mem0?"
+    answer: "Mem0 is an AI memory platform that enables applications to remember user preferences, conversation history, and contextual information across sessions, creating more personalized AI experiences."
+  - question: "Who is eligible for the startup program?"
+    answer: "Early-stage startups and developers building AI applications or agents that would benefit from persistent memory capabilities are eligible to apply."
+  - question: "What kind of memory capabilities does Mem0 provide?"
+    answer: "Mem0 provides various memory types including user preferences, conversation history, knowledge graphs, and contextual information storage for AI applications."
+  - question: "How long are the credits valid?"
+    answer: "Program credits are typically valid for 6-12 months from the date of approval, allowing sufficient time for development and testing."
+  - question: "Can I integrate Mem0 with existing AI frameworks?"
+    answer: "Yes, Mem0 provides APIs and SDKs that can be integrated with popular LLM frameworks and AI development platforms."
+  - question: "What support is provided to program participants?"
+    answer: "Participants receive technical documentation, API support, and access to the Mem0 developer community for guidance and best practices."
