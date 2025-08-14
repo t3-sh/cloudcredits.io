@@ -1,0 +1,10 @@
+active: true
+name: "Mergify"
+short_name: "Mergify"
+slug: "mergify"
+url: "https://mergify.com"
+color: "#28abe1"
+best_deal: "$12,000 credits for 12 months"
+intro: "Automated pull request merging platform that streamlines development workflows with intelligent merge automation and CI/CD integration."
+video: ""
+tags: ["dev tools", "automation", "ci/cd"]
