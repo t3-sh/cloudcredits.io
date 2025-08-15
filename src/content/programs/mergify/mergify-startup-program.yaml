@@ -1,0 +1,59 @@
+provider_slug: "mergify"
+title: "Mergify Startup Program"
+meta_title: "Mergify Startup Program - Free Merge Automation for Startups"
+intro: "Get $12,000 in credits for automated pull request merging with up to 50 developer seats free for 12 months"
+description: "Comprehensive startup program offering merge automation platform access with substantial credits, extended duration, and dedicated support for early-stage companies transitioning from startup to scaleup. Includes automated pull request merging, development workflow optimization, and enterprise features."
+status: "Active"
+url: "https://forms.mergify.com/startup"
+min_value: 12000
+max_value: 12000
+value_type: "credits"
+currency: "USD"
+tags: ["dev tools", "automation", "ci/cd", "productivity"]
+date: 2025-08-14
+
+tiers:
+  - name: "Startup Program"
+    intro: "Complete merge automation platform access for early-stage companies"
+    max_value: 12000
+    url: "https://forms.mergify.com/startup"
+    benefits:
+      - "$12,000 in platform credits"
+      - "Up to 50 developer seats included"
+      - "12-month program duration"
+      - "Automated pull request merging with customizable rules"
+      - "24-hour application response guarantee"
+    benefits_level: 3
+    duration: ["12 months"]
+    eligibility:
+      - "Company exists for less than 2 years"
+      - "50 or fewer employees across organization"
+      - "Not already a Mergify customer"
+      - "Early-stage startup status"
+    effort_level: 1
+    timeline_indication: "24 hours"
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Fill out the online application with company details and team information"
+        action: "Apply Now"
+        action_url: "https://forms.mergify.com/startup"
+      - name: "Await Confirmation"
+        description: "Mergify team reviews application and confirms eligibility within 24 hours"
+        action: "Check Email"
+        action_url: ""
+      - name: "Join Onboarding Call"
+        description: "Schedule and attend personalized setup call with Mergify team member"
+        action: "Schedule Call"
+        action_url: ""
+
+faq:
+  - question: "What is included in the $12,000 credit value?"
+    answer: "The credits provide access to Mergify's full merge automation platform including automated pull request merging, enterprise features, CI/CD integration, and support for up to 50 developer seats."
+  - question: "How long does the program last?"
+    answer: "The startup program provides 12 months of free access to the platform with full feature access and support."
+  - question: "What are the eligibility requirements?"
+    answer: "Companies must exist for less than 2 years, have 50 or fewer employees, and not be existing Mergify customers. Early-stage startup status is required."
+  - question: "How quickly will I hear back after applying?"
+    answer: "Mergify guarantees a response within 24 hours of application submission, including eligibility confirmation and next steps."
+  - question: "What happens during the onboarding call?"
+    answer: "The onboarding call includes technical setup guidance, workspace configuration, feature walkthrough, and Q&A for implementation planning with a dedicated Mergify team member."
