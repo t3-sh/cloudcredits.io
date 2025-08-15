@@ -1,0 +1,62 @@
+draft: false
+provider_slug: neon
+title: Neon $100 Credits
+meta_title: Neon $100 Credits for New Customers
+intro: >-
+  Get $100 in Neon credits to try out their serverless Postgres database platform for free.
+description: >-
+  Neon offers $100 in credits for new customers to explore their serverless PostgreSQL database platform. 
+  This promotion allows users to experience Neon's features including instant database branching, 
+  serverless scaling, and integrated CI/CD support without upfront costs. The credits can be applied 
+  to any Neon service and are available for both new signups and existing users through the promotional link.
+status: Active
+tags:
+  - database
+  - serverless
+  - cloud
+  - free trial
+url: https://fyi.neon.tech/credits
+value_type: credits
+currency: USD
+max_value: 100
+date: 2025-08-15
+community_notes: []
+tiers:
+  - name: Free Credits Tier
+    intro: >-
+      Claim $100 in Neon credits to explore serverless PostgreSQL features at no cost.
+    max_value: 100
+    url: https://fyi.neon.tech/credits
+    benefits:
+      - $100 in Neon credits
+      - Access to serverless PostgreSQL database
+      - Instant database branching capabilities
+      - Automated scaling based on usage
+      - No upfront commitment required
+    benefits_level: 1
+    duration:
+      - Until credits are used
+    eligibility:
+      - New customers (also works for existing users)
+      - No specific requirements
+    effort_level: 1
+    timeline_indication: Immediate activation
+    steps_to_apply:
+      - name: Access Credits Link
+        description: >-
+          Visit the promotional link to claim your $100 in Neon credits.
+        action: Get Credits
+        action_url: https://fyi.neon.tech/credits
+faq:
+  - question: Who can claim the $100 Neon credits?
+    answer: >-
+      Both new customers and existing users can claim the $100 credits through the promotional link.
+  - question: How long do the credits last?
+    answer: >-
+      The credits remain in your account until they are fully used up.
+  - question: What can I use the credits for?
+    answer: >-
+      The credits can be applied to any Neon service including database compute, storage, and data transfer costs.
+  - question: How do I claim the credits?
+    answer: >-
+      Simply visit the promotional link at https://fyi.neon.tech/credits to add the credits to your account.
