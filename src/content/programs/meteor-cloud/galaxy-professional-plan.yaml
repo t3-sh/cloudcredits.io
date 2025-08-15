@@ -1,0 +1,65 @@
+provider_slug: "meteor-cloud"
+title: "Meteor Cloud Galaxy Professional Plan"
+meta_title: "Meteor Cloud Galaxy - $600 Credits for 1 Year - CloudCredits.io"
+intro: "Get $600 in credits for 1 year on Galaxy, the only cloud platform built specifically for Meteor.js applications with auto-scaling and professional DevOps features"
+description: "Limited-time promotional offer providing access to Meteor Cloud Galaxy's Professional Plan, featuring Meteor-specific optimization, auto-scaling capabilities, Meteor APM integration, pre-rendering support, and advanced security features. The platform offers a centralized dashboard for monitoring performance and reducing DevOps overhead, specifically designed for Meteor.js applications."
+status: "Active"
+url: "https://beta.galaxycloud.app/"
+min_value: 600
+max_value: 600
+value_type: "credits"
+currency: "USD"
+tags: ["cloud", "hosting", "devops", "dev tools", "monitoring"]
+date: 2025-08-15
+
+tiers:
+  - name: "Professional Plan Credits"
+    intro: "Full access to Galaxy Professional Plan features with $600 credits for first-time subscribers"
+    max_value: 600
+    url: "https://beta.galaxycloud.app/"
+    benefits:
+      - "$600 in hosting credits for 1 year"
+      - "Auto-scaling capabilities for traffic management"
+      - "Meteor APM (Application Performance Monitoring)"
+      - "Pre-rendering support for SEO optimization"
+      - "Advanced security features and SSL certificates"
+    benefits_level: 3
+    duration: ["1 year"]
+    eligibility:
+      - "Must be a first-time Meteor Cloud (Galaxy) subscriber"
+      - "Valid credit card required for account verification"
+      - "Application must be built using Meteor.js framework"
+      - "Must create account through promotional link"
+    effort_level: 2
+    timeline_indication: "Immediate activation upon signup and verification"
+    steps_to_apply:
+      - name: "Create Galaxy Account"
+        description: "Sign up for a new Meteor Cloud account at the promotional link"
+        action: "Sign Up"
+        action_url: "https://beta.galaxycloud.app/"
+      - name: "Complete Verification"
+        description: "Verify your email address and add a valid credit card to activate the account"
+        action: "Verify Account"
+        action_url: "https://beta.galaxycloud.app/"
+      - name: "Apply Coupon Code"
+        description: "Enter the promotional coupon code during checkout to redeem the $600 credits"
+        action: "Redeem Offer"
+        action_url: "https://beta.galaxycloud.app/"
+      - name: "Deploy Application"
+        description: "Deploy your Meteor.js application to start using the platform"
+        action: "Deploy App"
+        action_url: "https://beta.galaxycloud.app/"
+
+faq:
+  - question: "What makes Meteor Cloud different from other cloud hosting platforms?"
+    answer: "Meteor Cloud is the only platform built specifically for Meteor.js applications, offering native integration with Meteor's development tools, automatic optimization for Meteor apps, and specialized support from Meteor.js experts."
+  - question: "Who is eligible for this $600 credit offer?"
+    answer: "The offer is available to first-time Meteor Cloud (Galaxy) subscribers who sign up through the promotional link, add a valid credit card to their account, and have not previously used Meteor Cloud services."
+  - question: "How does the auto-scaling feature work?"
+    answer: "The platform automatically monitors your application's resource usage and scales containers up or down based on demand, ensuring optimal performance during traffic spikes while controlling costs during low-usage periods."
+  - question: "What happens after the $600 credits are used?"
+    answer: "After the promotional credits are consumed, you can continue using the platform with standard Professional Plan pricing, upgrade to enterprise solutions, or adjust your plan based on your needs."
+  - question: "Can I migrate my existing Meteor.js application from another platform?"
+    answer: "Yes, Meteor Cloud provides migration assistance from other platforms like Heroku and AWS, including application optimization recommendations and performance tuning guidance."
+  - question: "What security features are included in the Professional Plan?"
+    answer: "The Professional Plan includes SSL certificates, DDoS protection, secure data encryption, regular security updates, and compliance with industry security standards."

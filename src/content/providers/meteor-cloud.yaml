@@ -1,0 +1,10 @@
+active: true
+name: "Meteor Cloud"
+short_name: "Meteor Cloud"
+slug: "meteor-cloud"
+url: "https://www.meteor.com/cloud"
+color: "#de4f4f"
+best_deal: "$600 credits for 1 year on Galaxy"
+intro: "The only cloud platform built specifically for Meteor.js applications with auto-scaling, APM integration, and professional DevOps features."
+video: ""
+tags: ["cloud", "hosting", "devops"]
