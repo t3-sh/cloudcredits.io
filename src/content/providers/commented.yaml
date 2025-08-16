@@ -7,4 +7,5 @@ color: "#5e3dc2"
 best_deal: "75% discount on Business Plan for 1 year"
 intro: "Web-based collaboration platform that enables teams to add comments and annotations to any web content for enhanced feedback and productivity."
 video: ""
-tags: ["collaboration", "productivity", "dev tools", "project management", "saas"]
+tags:
+  ["collaboration", "productivity", "dev tools", "project management", "saas"]

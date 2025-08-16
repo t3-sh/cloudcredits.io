@@ -8,8 +8,6 @@ import { FaTag } from "react-icons/fa6";
 import { getCollection } from "astro:content";
 import { AnimatedProgramCard } from "./AnimatedProgramCard";
 import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
-import fs from "node:fs";
-import path from "node:path";
 
 interface Props {
   program: CollectionEntry<"programs">;
@@ -50,18 +48,8 @@ const lowestEffortLevel = Math.max(
 );
 const effort = effortLevelMap[lowestEffortLevel as EffortLevel];
 
-// Check if mini version exists in the public directory
-const publicDir = path.join(process.cwd(), "public");
-const miniSvgPath = `/images/providers/${provider_slug}.mini.svg`;
-const regularSvgPath = `/images/providers/${provider_slug}.svg`;
-const regularPngPath = `/images/providers/${provider_slug}.png`;
-
-const miniSvgExists = fs.existsSync(path.join(publicDir, miniSvgPath.slice(1)));
-const regularSvgExists = fs.existsSync(path.join(publicDir, regularSvgPath.slice(1)));
-const regularPngExists = fs.existsSync(path.join(publicDir, regularPngPath.slice(1)));
-
-const logo = miniSvgExists ? miniSvgPath : (regularSvgExists ? regularSvgPath : (regularPngExists ? regularPngPath : regularSvgPath));
-const logoFormat = miniSvgExists ? "svg" : (regularSvgExists ? "svg" : (regularPngExists ? "png" : "svg"));
+// Check if mini version exists in the public directory, fall back to regular version
+const logo = `/images/providers/${provider_slug}.mini.svg`;
 
 const programSlug = program.id
   .split("/")
@@ -91,7 +79,7 @@ const programSlug = program.id
               alt={title}
               width={180}
               height={64}
-              format={logoFormat}
+              format="svg"
             />
           </div>
           <h4

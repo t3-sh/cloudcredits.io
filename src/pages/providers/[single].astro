@@ -1,6 +1,6 @@
 ---
 import ProgramCard from "@/components/ProgramCard.astro";
-import ImageMod from "@/components/ImageMod.astro";
+import ImageMod from "@/layouts/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { render } from "astro:content";
@@ -67,6 +67,7 @@ const currency =
 const currencySymbol = currency === "USD" ? "$" : "€";
 
 const logo = `/images/providers/${slug}.svg`;
+
 ---
 
 <Base

@@ -60,6 +60,30 @@ export default function AssistantClient({
   const [hasProcessedUrlPrompt, setHasProcessedUrlPrompt] = useState(false);
   const { shouldShow, triggerStarCTA, closeStarCTA } = useStarCTA();
 
+  // Restore cached results on mount
+  useEffect(() => {
+    const cached = sessionStorage.getItem("ai-assistant-results");
+    if (cached) {
+      try {
+        const {
+          prompt: cachedPrompt,
+          summary: cachedSummary,
+          programIds,
+        } = JSON.parse(cached);
+        setPrompt(cachedPrompt);
+        setSummary(cachedSummary);
+
+        // Restore matched programs from IDs
+        const matched = programIds
+          .map((id: string) => allPrograms.find((p) => p.id === id))
+          .filter((p: Program | undefined): p is Program => p !== undefined);
+        setMatchedPrograms(matched);
+      } catch (e) {
+        console.error("Failed to restore cached results:", e);
+      }
+    }
+  }, []);
+
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const urlPrompt = urlParams.get("prompt");
@@ -122,6 +146,16 @@ export default function AssistantClient({
           })
           .filter((p): p is Program => p !== undefined);
         setMatchedPrograms(matched);
+
+        // Cache results in sessionStorage
+        sessionStorage.setItem(
+          "ai-assistant-results",
+          JSON.stringify({
+            prompt: inputPrompt,
+            summary: apiResponse.summary,
+            programIds: matched.map((p) => p.id),
+          }),
+        );
       }
 
       // Trigger star CTA after successful response

@@ -77,7 +77,8 @@ export default function StarCTADialog({ show, onClose }: StarCTADialogProps) {
               This helped you save money?
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-              Star us on GitHub! It takes 2 seconds and helps us build better tools for finding free cloud credits.
+              Star us on GitHub! It takes 2 seconds and helps us build better
+              tools for finding free cloud credits.
             </p>
           </div>
 

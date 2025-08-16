@@ -110,9 +110,9 @@ export default function ProgramCard({ program, allProviders }: Props) {
                   onError={(e) => {
                     // Fallback to regular logo if mini doesn't exist
                     const target = e.target as HTMLImageElement;
-                    if (target.src.includes('.mini.svg')) {
+                    if (target.src.includes(".mini.svg")) {
                       target.src = `/images/providers/${provider_slug}.svg`;
-                    } else if (target.src.includes('.svg')) {
+                    } else if (target.src.includes(".svg")) {
                       target.src = `/images/providers/${provider_slug}.png`;
                     }
                   }}

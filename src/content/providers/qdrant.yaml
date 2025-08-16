@@ -2,13 +2,13 @@ active: true
 name: Qdrant
 short_name: Qdrant
 slug: qdrant
-color: '#DC244C'
+color: "#DC244C"
 url: https://qdrant.tech
 intro: >-
   An open source vector database optimized for similarity search and AI
   applications, available via Qdrant Cloud or self-hosted deployments.
 best_deal: 20% discount on Qdrant Cloud for 12 months
-video: ''
+video: ""
 tags:
   - ai
   - database

@@ -14,8 +14,6 @@ import Steps from "@/layouts/components/Steps.astro";
 import Accordion from "@/components/Accordion.astro";
 import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
-import fs from "node:fs";
-import path from "node:path";
 import AnimatedBackground from "@/layouts/components/AnimatedBackground";
 
 export async function getStaticPaths() {
@@ -302,13 +300,8 @@ function renderCombinedLevels(
   `;
 }
 
-// Check if mini version exists in the public directory
-const publicDir = path.join(process.cwd(), "public");
-const miniPath = `/images/providers/${provider.data.slug}.mini.svg`;
-const regularPath = `/images/providers/${provider.data.slug}.svg`;
-const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));
-
-const logo = miniExists ? miniPath : regularPath;
+// Check if mini version exists in the public directory, fall back to regular version
+const logo = `/images/providers/${provider.data.slug}.mini.svg`;
 ---
 
 <Base

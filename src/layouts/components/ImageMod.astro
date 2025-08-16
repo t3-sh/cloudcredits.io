@@ -35,6 +35,7 @@ const images = import.meta.glob("/public/images/**/*.{jpeg,jpg,png,gif,svg}");
 
 const isValidPath = images[src] ? true : false;
 
+
 // Log a warning message in red if the image is not found
 !isValidPath &&
   console.error(
