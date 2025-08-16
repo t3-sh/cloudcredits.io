@@ -1,0 +1,65 @@
+provider_slug: "elevenlabs"
+title: "AI Student Pack"
+meta_title: "AI Student Pack - $1,500+ Free AI Tools for Students"
+intro: "Get $1,500+ in free credits on 16 AI tools that help students study, create, and build faster with comprehensive back-to-school discounts"
+description: "A comprehensive collection of AI tools and services specifically designed for students, offering over $1,500 in free credits and discounts across 16 different AI platforms. The program addresses fundamental student challenges of time constraints and budget limitations by providing access to premium AI tools at no or reduced cost, enabling students to study more efficiently, create higher-quality content, and build projects faster."
+status: "Active"
+url: "https://aistudentpack.com"
+min_value: 55
+max_value: 1500
+value_type: "credits"
+currency: "USD"
+tags: ["ai", "education", "speech", "productivity"]
+date: 2025-08-16
+
+tiers:
+  - name: "AI Student Pack Bundle"
+    intro: "Complete collection of 16 AI tools with free credits and student discounts for studying, creating, and building"
+    max_value: 1500
+    url: "https://aistudentpack.com"
+    benefits:
+      - "ElevenLabs Creator Plan - 3 months free (worth $66)"
+      - "ElevenReader Plus - 1 year free (worth $96)"
+      - "Access to 14 additional AI tools with student discounts"
+      - "100k+ monthly AI voice generation credits"
+      - "Professional voice cloning and commercial license"
+    benefits_level: 3
+    duration: ["1 month to 1 year varying by tool"]
+    eligibility:
+      - "Valid student email address required"
+      - "Must be enrolled at educational institution"
+      - "New users only for some tools"
+      - "Limited quantities available (first 3,000-5,000 students for some offers)"
+    effort_level: 1
+    timeline_indication: "Immediate access upon email verification"
+    steps_to_apply:
+      - name: "Visit AI Student Pack"
+        description: "Go to the official AI Student Pack website"
+        action: "Access Pack"
+        action_url: "https://aistudentpack.com"
+      - name: "Sign In with Student Email"
+        description: "Authenticate using your valid student email address (.edu or institutional email)"
+        action: "Sign In"
+        action_url: "https://aistudentpack.com"
+      - name: "Verify Email"
+        description: "Complete the email verification process"
+        action: "Verify"
+        action_url: "https://aistudentpack.com"
+      - name: "Claim Individual Tools"
+        description: "Browse and claim benefits for each AI tool in the pack"
+        action: "Claim Benefits"
+        action_url: "https://aistudentpack.com"
+
+faq:
+  - question: "What is the AI Student Pack?"
+    answer: "The AI Student Pack is a comprehensive collection of 16 AI tools offering over $1,500 in free credits and discounts specifically designed for students to help them study, create, and build faster."
+  - question: "Who is eligible for the AI Student Pack?"
+    answer: "Students at all levels (undergraduate, graduate, continuing education) with a valid student email address (.edu or institutional email) are eligible to access the program."
+  - question: "How do I access the AI Student Pack?"
+    answer: "Visit aistudentpack.com and sign in with your valid student email address. After email verification, you can claim individual tool benefits through the platform."
+  - question: "Are there any limitations to the offers?"
+    answer: "Yes, some offers have limited quantities (first 3,000-5,000 students), are restricted to new users only, and benefits are one-time claims per student. Duration varies by tool from 1 month to 1 year."
+  - question: "What are the main tools included?"
+    answer: "Key tools include ElevenLabs (3 months free Creator Plan worth $66) for AI text-to-speech, ElevenReader Plus (1 year free worth $96) for converting study materials to audio, plus 14 additional AI tools with student discounts."
+  - question: "Is the program available globally?"
+    answer: "The program appears to be globally available with no specific regional restrictions mentioned, as long as you have a valid student email address."
