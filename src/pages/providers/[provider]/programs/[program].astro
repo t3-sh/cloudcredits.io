@@ -300,8 +300,32 @@ function renderCombinedLevels(
   `;
 }
 
-// Check if mini version exists in the public directory, fall back to regular version
-const logo = `/images/providers/${provider.data.slug}.mini.svg`;
+// Check for logo format (mini SVG first, then regular SVG, then PNG)
+const miniSvgLogo = `/images/providers/${provider.data.slug}.mini.svg`;
+const svgLogo = `/images/providers/${provider.data.slug}.svg`;
+const pngLogo = `/images/providers/${provider.data.slug}.png`;
+const miniSvgImages = import.meta.glob("/public/images/providers/*.mini.svg");
+const svgImages = import.meta.glob("/public/images/providers/*.svg");
+const pngImages = import.meta.glob("/public/images/providers/*.png");
+
+const miniSvgExists = miniSvgImages[`/public${miniSvgLogo}`];
+const svgExists = svgImages[`/public${svgLogo}`];
+const pngExists = pngImages[`/public${pngLogo}`];
+
+const logo = miniSvgExists
+  ? miniSvgLogo
+  : svgExists
+    ? svgLogo
+    : pngExists
+      ? pngLogo
+      : svgLogo;
+const logoFormat = miniSvgExists
+  ? "svg"
+  : svgExists
+    ? "svg"
+    : pngExists
+      ? "png"
+      : "svg";
 ---
 
 <Base
@@ -351,7 +375,7 @@ const logo = `/images/providers/${provider.data.slug}.mini.svg`;
                       width={56}
                       height={56}
                       alt={provider.data.name || "Provider logo"}
-                      format="svg"
+                      format={logoFormat}
                     />
                   </div>
                 </div>

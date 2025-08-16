@@ -66,8 +66,32 @@ const currency =
   creditPrograms.length > 0 ? creditPrograms[0].data.currency : "USD";
 const currencySymbol = currency === "USD" ? "$" : "€";
 
-const logo = `/images/providers/${slug}.svg`;
+// Check for logo format (mini SVG first, then regular SVG, then PNG)
+const miniSvgLogo = `/images/providers/${slug}.mini.svg`;
+const svgLogo = `/images/providers/${slug}.svg`;
+const pngLogo = `/images/providers/${slug}.png`;
+const miniSvgImages = import.meta.glob("/public/images/providers/*.mini.svg");
+const svgImages = import.meta.glob("/public/images/providers/*.svg");
+const pngImages = import.meta.glob("/public/images/providers/*.png");
 
+const miniSvgExists = miniSvgImages[`/public${miniSvgLogo}`];
+const svgExists = svgImages[`/public${svgLogo}`];
+const pngExists = pngImages[`/public${pngLogo}`];
+
+const logo = miniSvgExists
+  ? miniSvgLogo
+  : svgExists
+    ? svgLogo
+    : pngExists
+      ? pngLogo
+      : svgLogo;
+const logoFormat = miniSvgExists
+  ? "svg"
+  : svgExists
+    ? "svg"
+    : pngExists
+      ? "png"
+      : "svg";
 ---
 
 <Base
@@ -101,7 +125,7 @@ const logo = `/images/providers/${slug}.svg`;
                   width={120}
                   height={60}
                   alt={`${name} logo`}
-                  format="svg"
+                  format={logoFormat}
                 />
               </div>
             </div>
