@@ -27,7 +27,11 @@ const { programs, providers } = await getItemsByTag(tag!);
 const sortedPrograms = sortByDate(programs);
 ---
 
-<Base title={`${tag!} - Tag`}>
+<Base
+  title={`${humanize(tag!)} Credits & Deals - CloudCredits.io`}
+  meta_title={`Best ${humanize(tag!)} Startup Credits & Deals | CloudCredits.io`}
+  description={`Find the best ${tag} credits and deals for startups. Discover verified programs with ${tag} services, including eligibility requirements and application steps.`}
+>
   <div class="section pt-14">
     <div class="container">
       <div class="flex justify-center mb-10">
