@@ -1,0 +1,10 @@
+active: true
+name: "Browserless"
+short_name: "Browserless"
+slug: "browserless"
+url: "https://browserless.io"
+color: "#f7df1d"
+best_deal: "1,000 free monthly browser automation requests"
+intro: "Cloud-based headless browser automation platform providing REST APIs for web scraping, PDF generation, and screenshot capture without infrastructure management."
+video: ""
+tags: ["automation", "dev tools", "api", "cloud", "scraping"]
