@@ -1,0 +1,68 @@
+provider_slug: "fireworks"
+title: "Fireworks Ignite Startup Program"
+meta_title: "Fireworks Ignite Startup Program - Up to $100K Credits"
+intro: "Get up to $100,000 in Fireworks credits, priority support, and exclusive access to product roadmap sessions for AI startups"
+description: "Comprehensive support program for early-stage companies building AI applications, providing substantial computational resources, technical expertise, and exclusive access to help startups scale their AI solutions using Fireworks' generative AI inference platform."
+status: "Active"
+url: "https://fireworks.ai/startup-program"
+min_value: 0
+max_value: 100000
+value_type: "credits"
+currency: "USD"
+tags: ["ai", "ml", "llm", "open source", "api"]
+date: 2025-08-17
+
+tiers:
+  - name: "Fireworks Ignite Program"
+    intro: "Comprehensive AI infrastructure support for qualifying early-stage companies with substantial funding"
+    max_value: 100000
+    url: "https://fireworks.ai/startup-program"
+    benefits:
+      - "Up to $100,000 in Fireworks credits (expire after 1 year)"
+      - "Priority support with expedited response times from technical experts"
+      - "Architectural guidance and implementation support"
+      - "Exclusive product roadmap sessions with Fireworks product team"
+      - "Early access to new models, APIs, and VIP startup events"
+    benefits_level: 3
+    duration: ["1 year"]
+    eligibility:
+      - "Registered company with functional website"
+      - "Privately held, for-profit entity"
+      - "Founded within the last 5 years"
+      - "Secured funding exceeding $10,000,000 USD"
+      - "Evaluating open-source models for production use case"
+    effort_level: 3
+    timeline_indication: "7-14 business days for application review"
+    steps_to_apply:
+      - name: "Create Fireworks Account"
+        description: "Register at fireworks.ai and verify email address"
+        action: "Sign Up"
+        action_url: "https://fireworks.ai"
+      - name: "Submit Program Application"
+        description: "Complete detailed application with company info, funding documentation, and technical questionnaire"
+        action: "Apply to Program"
+        action_url: "https://fireworks.ai/startup-program"
+      - name: "Application Review"
+        description: "Fireworks team evaluates technical fit and business potential (7-14 days)"
+        action: "Await Review"
+        action_url: ""
+      - name: "Onboarding"
+        description: "Receive onboarding guide and credits distribution upon approval"
+        action: "Complete Onboarding"
+        action_url: ""
+
+faq:
+  - question: "What types of AI models does Fireworks support?"
+    answer: "Fireworks provides access to a comprehensive catalog of open-source language models, including models for text generation, reasoning, coding, and specialized domain applications. The platform supports both small and large language models optimized for various use cases."
+  - question: "Can international companies apply?"
+    answer: "Yes, the program is open to companies worldwide, though funding requirements are specified in USD and companies must have legal entity status in their jurisdiction."
+  - question: "What level of architectural guidance is provided?"
+    answer: "Architectural guidance includes consultation on model selection, infrastructure optimization, scaling strategies, and best practices for production AI deployment."
+  - question: "How does priority support differ from standard support?"
+    answer: "Priority support provides faster response times (typically 24-48 hours), dedicated support channels, and access to senior technical experts for complex implementation challenges."
+  - question: "What happens after credits expire?"
+    answer: "Companies transition to standard Fireworks pricing but maintain access to the platform and any ongoing technical relationships established during the program."
+  - question: "Is there a minimum usage requirement?"
+    answer: "While there's no strict minimum usage requirement, companies are expected to actively use the platform for legitimate business purposes and demonstrate meaningful engagement with Fireworks services."
+  - question: "Can companies reapply after the 1-year credit period?"
+    answer: "Program benefits are designed for early-stage support. Companies may be considered for additional programs based on their growth and continued partnership potential."

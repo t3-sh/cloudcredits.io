@@ -1,0 +1,10 @@
+active: true
+name: "Fireworks"
+short_name: "Fireworks"
+slug: "fireworks"
+url: "https://fireworks.ai"
+color: "#6720ff"
+best_deal: "Up to $100,000 credits for AI startups"
+intro: "Generative AI inference platform offering fast, reliable access to open-source language models with enterprise-grade infrastructure."
+video: ""
+tags: ["ai", "ml", "llm", "api"]
