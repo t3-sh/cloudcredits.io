@@ -1,8 +1,7 @@
 # Claude Code Instructions for cloudcredits.io
 
-IMPORTANT: only follow these instructions if you were asked to add a new program/deal (content update request). Otherwise, ignore this file.
-
 ## How to add a new provider and program
+IMPORTANT: only follow these instructions if you were asked to add a new program/deal (content update request). Otherwise, ignore this file.
 
 When a user requests adding a new provider or program, follow this systematic process to replicate the n8n workflow functionality:
 
@@ -452,3 +451,108 @@ node scripts/download-logo.js instabug.com instabug
 - Uses curl with redirect following for reliable file downloads
 - Automatically creates directory structure if needed
 - Validates domain and provider slug inputs
+
+# CloudCredits.io — Content, Language & Voice Memo
+
+## 1) Positioning (use everywhere)
+- **CloudCredits** is a *community-built startup credits vault* — a massive, open-source stash of cloud & SaaS funding offers so builders can ship more and burn less.  
+- Don’t call it a “directory.” Approved nouns: **Vault, Stash, Megapack, Massive Collection**.  
+- Replace any “directory” mentions (e.g., on About) with “vault / stash / megapack.”
+
+## 2) Audience
+Solo founders, solopreneurs, indie hackers, fresh startups, vibe coders, product builders. Write to one smart builder in a rush.
+
+## 3) Voice & Tone
+- **Bold, confident, sleek, simple.** Short lines. Punchy verbs. No corporate filler.  
+- **Builder-energy.** Encourage action: “Apply today,” “Snag credits,” “Spin up now,” “Why not ship?”  
+- **Transparent & community-first.** You’re open-source, zero affiliates, zero ads — highlight that as trust fuel.
+
+### Word bank
+- Use: vault, stash, haul, credits, perks, founder deals, burn, runway, ship, snag, unlock, build.  
+- Avoid: directory, portal, comprehensive solution, leverage synergies, stakeholders.
+
+### Style rules
+- Sentences ≤ 16 words.  
+- Prefer **verbs > adjectives**.  
+- Headings are statements, not labels: “Stop paying, start building.”  
+- Always include a direct CTA.
+
+## 4) Page archetypes & on-page templates
+Design every page to rank in Google *and* be cleanly consumed by LLMs.
+
+**A. Provider/Program pages**  
+Use consistent fields in this order: **H1**, 1-line summary, **Value ($)**, **Range (up to $)**, **Eligibility**, **How to Apply**, **Time to Apply**, **Post-credit costs**, **Gotchas**, **FAQ**. Keep H1 strong, add a tight summary and a “Gotchas” box.
+
+**B. Category pages**  
+Example: “GPU & LLM credits.” Start with a 2-sentence overview, then an **ItemList** of top offers, followed by FAQs answering the exact queries founders ask.
+
+**C. Comparison pages**  
+“OpenAI vs. Anthropic startup credits,” “Top credits for pre-revenue SaaS,” etc. Include a scannable table + verdicts.
+
+**D. Guides / Playbooks (blog)**  
+“How to unlock $XX in [Provider] credits,” “Post-credit costs to expect,” “Credits for solo founders by stack.”
+
+## 5) SEO fundamentals (non-negotiable)
+- **Search Essentials alignment.** Use the exact words people search (e.g., *startup credits, founder deals, free cloud credits*) in titles, H1s, body, alt text, and links.  
+- **People-first content.** Helpful, reliable, written for humans; thin or purely SEO’d content loses.  
+- **Titles & descriptions.**  
+  - Title ≤ ~60 chars: “Deepgram $200 Free Credits — Startup Program | CloudCredits Vault”  
+  - Meta ≤ ~160 chars, action-forward: “Snag $200 in Deepgram credits. See eligibility, steps, and post-credit costs.”  
+- **Core Web Vitals (speed = rank & trust).** Optimize for **INP** (keep interactions <200ms), especially search and “Ask AI Guru.”  
+- **Sitemaps & internal links.** Ship an XML sitemap and link it in `robots.txt`; keep internal links crawlable.  
+- **Faceted navigation.** If you add filters (value, eligibility, provider), prevent crawl traps (e.g., disallow noisy param combos).  
+- **Canonicalization.** If similar pages exist (e.g., filtered lists vs. “All”), set a clear canonical.
+
+## 6) Structured data (for Google & LLMs)
+- **List pages:** add **`ItemList`** with `itemListElement` linking to each program page.  
+- **Program pages:** pick the closest fit:  
+  - **`SoftwareApplication`** when the offer is for a SaaS/app (include `offers`).  
+  - **`Product`** when it’s priced like a product with `offers` (use carefully for services).  
+- Prefer **JSON-LD** and follow structured-data policies.
+
+## 7) LLM & AI-search discoverability
+- **Self-ID sentence (site-wide near top of About + footer):**  
+  “CloudCredits is a community-built **vault** of startup credits and founder deals — fully open-source, zero affiliates, zero ads.”  
+  (LLMs latch onto crisp, repeated entity definitions.)  
+- **Q&A blocks.** End each page with 5–8 precise Q&As founders ask (eligibility, KYC, proof of incorporation, stack requirements).  
+- **Let reputable AI crawlers in.** Unless you intend to block them, allow OpenAI’s crawler, PerplexityBot, and Common Crawl CCBot via `robots.txt` (verify IPs if needed).  
+- **No special “AI Overviews” tags.** Keep doing high-quality, people-first content.
+
+## 8) Reusable copy patterns (drop-in)
+- **Hero (Home):**  
+  “Build more. Burn less.  
+  A community-built **vault** of cloud & SaaS credits. Open-source. No ads. No affiliates.”  
+  (CTA: **Explore the Vault** / **Ask the AI Guru**)  
+- **Program summary (first line):**  
+  “Up to **$X** in credits. **Eligibility:** [1-liner]. **Apply time:** ~[N] mins. **Gotchas:** [1].”  
+- **CTAs:** “Apply now,” “Get the credits,” “Unlock the vault,” “Compare offers,” “Show me the cheapest path.”
+
+## 9) Editorial playbook (to rank & get shared)
+- **Weekly:** “New Founder Deals (Week of YYYY-MM-DD)” + 3 micro-case studies (who got what, how).  
+- **Bi-weekly deep dives:** “Post-credit costs for [Provider]: What hits your burn next.”  
+- **Comparisons:** “Top credits for solo founders building with [Next.js, Python, Rust, Rails].”  
+- **Playbooks:** “How to secure $xx,xxx in credits in a weekend.”
+
+Each post should: (1) lead with a takeaway, (2) include a comparison table, (3) end with 6–8 FAQs, (4) link to 3+ internal program pages.
+
+## 10) Navigation & microcopy fixes (quick wins)
+- Replace **“directory”** on About with “vault / stash / megapack.”  
+- Keep “Stellar Picks,” but add criteria in one line (“value, speed to apply, solo-friendly”).  
+- Add a persistent CTA near search and “Ask AI Guru” (“Find credits for my stack”).
+
+## 11) Publishing checklist (use before every push)
+**Language**
+- [ ] Headline is punchy, benefit-first, ≤ 60 chars.  
+- [ ] First 2 lines answer **what, who, how to apply**.  
+- [ ] One clear CTA near the top.
+
+**On-page SEO**
+- [ ] Primary keyword in title, H1, first 100 words, alt text, and one internal link.  
+- [ ] JSON-LD added (ItemList or SoftwareApplication/Product as appropriate).  
+- [ ] 5–8 FAQs with crisp, one-paragraph answers.  
+- [ ] Internal links to 3+ related programs.
+
+**Tech**
+- [ ] INP under 200ms on interactive elements (test in PSI/LH).  
+- [ ] Page indexed, linked in sitemap; sitemap listed in `robots.txt`.  
+- [ ] Facet URLs respected (no crawl traps).
