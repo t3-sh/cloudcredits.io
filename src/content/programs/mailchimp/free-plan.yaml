@@ -1,0 +1,53 @@
+provider_slug: "mailchimp"
+title: "Mailchimp Free Plan"
+meta_title: "Mailchimp Free Plan - Free Email Marketing for 500 Contacts"
+intro: "Free forever email marketing plan with up to 500 contacts and 1,000 monthly email sends, perfect for small businesses and startups"
+description: "Mailchimp's Free Plan provides essential email marketing tools for small businesses and startups at no cost. The plan includes basic email campaigns, templates, signup forms, one landing page, limited automation, and basic reporting. Ideal for businesses with up to 500 contacts who send up to 1,000 emails per month. While it includes Mailchimp branding and has limited features compared to paid plans, it offers a solid foundation for email marketing without any time restrictions."
+status: "Active"
+url: "https://mailchimp.com/pricing/"
+min_value: 0
+max_value: 0
+value_type: "credits"
+currency: "USD"
+tags: ["email", "marketing", "free trial", "automation", "analytics"]
+date: 2025-01-15
+
+tiers:
+  - name: "Free Plan"
+    intro: "Forever free email marketing with essential features for small businesses"
+    max_value: 0
+    url: "https://mailchimp.com/pricing/"
+    benefits:
+      - "Up to 500 contacts and 1,000 monthly email sends"
+      - "Basic email campaigns and templates"
+      - "1 landing page and signup forms"
+      - "Limited automation and A/B testing"
+      - "Essential analytics and email support"
+    benefits_level: 1
+    duration: ["Forever"]
+    eligibility:
+      - "Available to anyone (individuals, small businesses, nonprofits)"
+      - "Valid email address required"
+      - "Must comply with Mailchimp's Terms of Service"
+      - "Must follow anti-spam policies"
+    effort_level: 1
+    timeline_indication: "Immediate activation"
+    steps_to_apply:
+      - name: "Sign Up"
+        description: "Create a free Mailchimp account"
+        action: "Sign Up Free"
+        action_url: "https://mailchimp.com/pricing/"
+
+faq:
+  - question: "What happens when I reach 500 contacts?"
+    answer: "Once you reach 500 contacts, you cannot add new contacts until you remove existing ones or upgrade to a paid plan. Existing contacts remain accessible and you can continue using other features."
+  - question: "What happens if I exceed 1,000 monthly emails?"
+    answer: "You cannot send new campaigns until the next month or until you upgrade to a paid plan. Scheduled campaigns may be paused, but your account and previous data remain accessible."
+  - question: "Can I remove Mailchimp branding from emails?"
+    answer: "No, the Free Plan includes 'Powered by Mailchimp' branding in all emails. You need to upgrade to a paid plan to remove this branding."
+  - question: "Is there a time limit on the Free Plan?"
+    answer: "No, the Free Plan is available forever with no time restrictions. It's not a trial - it's a permanent free tier."
+  - question: "What support is available on the Free Plan?"
+    answer: "Free Plan users have access to email support only. Phone and chat support are available with paid plans."
+  - question: "Can I upgrade anytime?"
+    answer: "Yes, you can upgrade to any paid plan at any time directly from your account dashboard. Your data and contacts will be preserved during the upgrade."

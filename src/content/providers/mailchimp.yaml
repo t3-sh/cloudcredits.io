@@ -1,0 +1,13 @@
+active: true
+name: "Mailchimp"
+short_name: "Mailchimp"
+slug: "mailchimp"
+url: "https://mailchimp.com"
+color: "#007c89"
+best_deal: "Free forever plan for up to 500 contacts"
+intro: "All-in-one email marketing platform helping businesses grow with automated campaigns, audience insights, and personalized content."
+video: ""
+tags:
+  - "email"
+  - "marketing"
+  - "automation"
