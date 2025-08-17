@@ -5,12 +5,16 @@ import Accordion from "@/layouts/components/Accordion.astro";
 import StatGroup from "@/layouts/components/StatGroup.astro";
 import Stat from "@/layouts/components/Stat.astro";
 import Social from "@/layouts/components/Social.astro";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="About CloudCredits.io - Open Source Startup Credits Directory"
   meta_title="About CloudCredits.io - Community-Built Credits Vault"
   description="Learn about CloudCredits.io - the open-source, community-driven platform helping startups find cloud credits and SaaS deals. Zero affiliates, no ads, just helpful resources for builders."
+  canonical={canonical}
 >
   <PageHeader title="About" />
 

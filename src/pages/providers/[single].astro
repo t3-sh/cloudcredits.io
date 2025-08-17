@@ -9,6 +9,7 @@ import { getCollection } from "astro:content";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
 import LogoSpot from "@/components/LogoSpot.tsx";
 import "@/styles/logo-spot.css";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 // get all static paths for providers
 export async function getStaticPaths() {
@@ -95,6 +96,8 @@ const logo = miniSvgExists
     : pngExists
       ? pngLogo
       : svgLogo;
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
@@ -104,6 +107,7 @@ const logo = miniSvgExists
   image={logo}
   searchable
   search_collection="providers"
+  canonical={canonical}
 >
   <section class="relative min-h-screen" data-pagefind-meta={`image:${logo}`}>
     <!-- Content -->

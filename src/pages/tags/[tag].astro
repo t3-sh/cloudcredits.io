@@ -7,6 +7,7 @@ import PageHeader from "@/partials/PageHeader.astro";
 import ProgramCard from "@/layouts/components/ProgramCard.astro";
 import ProviderCard from "@/layouts/components/ProviderCard.astro";
 import { FaTag } from "react-icons/fa6";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 export async function getStaticPaths() {
   const tags = await getCombinedTags();
@@ -25,12 +26,15 @@ const { programs, providers } = await getItemsByTag(tag!);
 
 // Sort programs by date if available
 const sortedPrograms = sortByDate(programs);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title={`${humanize(tag!)} Credits & Deals - CloudCredits.io`}
   meta_title={`Best ${humanize(tag!)} Startup Credits & Deals | CloudCredits.io`}
   description={`Find the best ${tag} credits and deals for startups. Discover verified programs with ${tag} services, including eligibility requirements and application steps.`}
+  canonical={canonical}
 >
   <div class="section pt-14">
     <div class="container">
