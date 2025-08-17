@@ -1,8 +1,8 @@
-provider_slug: "google"
+provider_slug: "googally"
 title: "Google Workspace Promo Code"
 meta_title: "Google Workspace 15% Discount - Save on Business Plans"
-intro: "Get 15% off Google Workspace business plans for the first 3 months through authorized resellers in 24 countries"
-description: "Promotional discount program offering 15% savings on Google Workspace business plans for new customers in 24 countries. Includes access to Gmail, Calendar, Meet, Drive, Docs, and other collaboration tools with full features during the promotional period."
+intro: "Get 15% off Google Workspace business plans for the first 3 months through Googally, an authorized Google reseller in 24 countries"
+description: "Promotional discount program offered by Googally, an authorized Google reseller and migration specialist, providing 15% savings on Google Workspace business plans for new customers in 24 countries. Includes access to Gmail, Calendar, Meet, Drive, Docs, and other collaboration tools with full features during the promotional period."
 status: "Active"
 url: "https://www.googally.com/workspace/promo-code"
 min_value: 15
@@ -14,7 +14,7 @@ date: 2025-08-17
 
 tiers:
   - name: "Business Starter Discount"
-    intro: "15% off the entry-level plan with essential collaboration features"
+    intro: "15% off the entry-level plan with essential collaboration features through Googally"
     max_value: 15
     url: "https://www.googally.com/workspace/promo-code"
     benefits:
@@ -22,7 +22,7 @@ tiers:
       - "30GB pooled storage per user"
       - "Custom business email with Gmail"
       - "Video meetings up to 100 participants"
-      - "Standard security and limited AI features"
+      - "Expert migration support from Googally team"
     benefits_level: 1
     duration: ["3 months"]
     eligibility:
@@ -34,7 +34,7 @@ tiers:
     timeline_indication: "Instant automated delivery"
     steps_to_apply:
       - name: "Fill Request Form"
-        description: "Complete the form to request your promo code"
+        description: "Complete the form on Googally's website to request your promo code"
         action: "Get Promo Code"
         action_url: "https://www.googally.com/workspace/promo-code"
       - name: "Create Google Workspace Account"
@@ -47,7 +47,7 @@ tiers:
         action_url: "https://workspace.google.com"
 
   - name: "Business Standard Discount"
-    intro: "15% off the standard plan with enhanced features and storage"
+    intro: "15% off the standard plan with enhanced features and storage through Googally"
     max_value: 15
     url: "https://www.googally.com/workspace/promo-code"
     benefits:
@@ -55,7 +55,7 @@ tiers:
       - "2TB pooled storage per user"
       - "Enhanced video meetings up to 150 participants"
       - "Full Gemini AI features in Workspace apps"
-      - "Advanced admin and email features"
+      - "Expert migration support from Googally team"
     benefits_level: 2
     duration: ["3 months"]
     eligibility:
@@ -67,7 +67,7 @@ tiers:
     timeline_indication: "Instant automated delivery"
     steps_to_apply:
       - name: "Fill Request Form"
-        description: "Complete the form to request your promo code"
+        description: "Complete the form on Googally's website to request your promo code"
         action: "Get Promo Code"
         action_url: "https://www.googally.com/workspace/promo-code"
       - name: "Create Google Workspace Account"
@@ -80,7 +80,7 @@ tiers:
         action_url: "https://workspace.google.com"
 
   - name: "Business Plus Discount"
-    intro: "15% off the premium plan with maximum storage and advanced security"
+    intro: "15% off the premium plan with maximum storage and advanced security through Googally"
     max_value: 15
     url: "https://www.googally.com/workspace/promo-code"
     benefits:
@@ -88,7 +88,7 @@ tiers:
       - "5TB pooled storage per user"
       - "Video meetings up to 500 participants"
       - "Enhanced security and compliance features"
-      - "Advanced Gemini AI and premium admin controls"
+      - "Expert migration support from Googally team"
     benefits_level: 3
     duration: ["3 months"]
     eligibility:
@@ -100,7 +100,7 @@ tiers:
     timeline_indication: "Instant automated delivery"
     steps_to_apply:
       - name: "Fill Request Form"
-        description: "Complete the form to request your promo code"
+        description: "Complete the form on Googally's website to request your promo code"
         action: "Get Promo Code"
         action_url: "https://www.googally.com/workspace/promo-code"
       - name: "Create Google Workspace Account"
@@ -113,6 +113,8 @@ tiers:
         action_url: "https://workspace.google.com"
 
 faq:
+  - question: "What is Googally and how are they related to Google?"
+    answer: "Googally is an authorized Google reseller and migration specialist that helps businesses transition to Google Workspace. They are not Google directly, but an official partner that can provide promotional pricing and expert support for Google Workspace implementations."
   - question: "Which countries are eligible for this promo code?"
     answer: "The promo code is available in 24 countries including USA, Canada, Argentina, Mexico, Colombia, Brazil, Peru, Chile, India, Australia, UAE, New Zealand, Singapore, Japan, Hong Kong, UK, Germany, Netherlands, France, Spain, Ireland, Portugal, Belgium, and Italy."
   - question: "Can existing Google Workspace customers use this promo code?"
@@ -124,6 +126,6 @@ faq:
   - question: "What happens if I cancel during the promotional period?"
     answer: "If you cancel your subscription during the 3-month promotional period, the promo code becomes void. Standard Google Workspace cancellation policies apply."
   - question: "How quickly will I receive the promo code?"
-    answer: "The promo code is delivered instantly through an automated system after you complete the request form."
+    answer: "The promo code is delivered instantly through an automated system after you complete the request form on Googally's website."
   - question: "Can I apply the promo code to an existing account?"
     answer: "No, promo codes must be applied during the initial signup process and cannot be retroactively applied to existing Google Workspace accounts."
