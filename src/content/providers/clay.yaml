@@ -1,0 +1,10 @@
+active: true
+name: "Clay"
+short_name: "Clay"
+slug: "clay"
+url: "https://www.clay.com"
+color: "#2BDFDC"
+best_deal: "100 credits monthly (1,200 annually) for free"
+intro: "A comprehensive data enrichment and lead generation platform that helps sales and marketing teams find, enrich, and engage with prospects at scale using 50+ data providers."
+video: ""
+tags: ["data", "sales", "marketing", "crm", "b2b"]

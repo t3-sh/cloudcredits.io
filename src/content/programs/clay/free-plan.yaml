@@ -1,0 +1,60 @@
+provider_slug: "clay"
+title: "Clay Free Plan"
+meta_title: "Clay Free Plan - 100 Credits Monthly | CloudCredits.io"
+intro: "Get 100 monthly credits (1,200 annually) for data enrichment with unlimited users, data exports, and access to 50+ data providers"
+description: "Clay's free plan provides 100 monthly credits for comprehensive data enrichment including email finding, phone discovery, company data, and social profiles. Users get access to the full Clay platform with CRM integrations, Chrome extension, and community support without requiring a credit card."
+status: "Active"
+url: "https://www.clay.com/pricing"
+min_value: 100
+max_value: 1200
+value_type: "credits"
+tags: ["data", "sales", "marketing", "crm", "b2b"]
+date: 2025-08-17
+
+tiers:
+  - name: "Free Plan"
+    intro: "100 monthly credits for data enrichment with full platform access and unlimited users"
+    max_value: 1200
+    url: "https://www.clay.com/pricing"
+    benefits:
+      - "100 credits per month (1,200 annually)"
+      - "Email finder and verification"
+      - "Phone number and company data discovery"
+      - "Access to 50+ data providers"
+      - "CRM integrations and Chrome extension"
+    benefits_level: 2
+    duration: ["Ongoing"]
+    eligibility:
+      - "No specific requirements"
+      - "Available globally"
+      - "Valid email address required"
+      - "Must comply with data privacy regulations"
+    effort_level: 1
+    timeline_indication: "Immediate access upon signup"
+    steps_to_apply:
+      - name: "Sign Up"
+        description: "Create a free account on Clay's website"
+        action: "Get Started Free"
+        action_url: "https://www.clay.com"
+      - name: "Verify Email"
+        description: "Complete email verification to activate your account"
+        action: "Check Email"
+        action_url: ""
+      - name: "Complete Onboarding"
+        description: "Follow the interactive product tour and setup process"
+        action: "Start Onboarding"
+        action_url: ""
+
+faq:
+  - question: "Do the 100 free credits roll over to the next month?"
+    answer: "No, the 100 free credits reset monthly and do not accumulate or roll over to the following month."
+  - question: "What counts as one credit?"
+    answer: "One credit typically equals one data enrichment action, such as finding an email address, phone number, or enriching a contact profile."
+  - question: "Is there a time limit on the free plan?"
+    answer: "No, the free plan is available indefinitely with no expiration date."
+  - question: "What integrations are available on the free plan?"
+    answer: "The free plan includes access to basic CRM integrations, Google Sheets, Zapier, and popular email marketing platforms."
+  - question: "Can multiple team members use one free account?"
+    answer: "The free plan is designed for individual use. Team collaboration features are available in paid plans."
+  - question: "What happens if I exceed my monthly credit limit?"
+    answer: "Once you use all 100 credits, you'll need to wait until the next monthly cycle or upgrade to a paid plan for additional credits."
