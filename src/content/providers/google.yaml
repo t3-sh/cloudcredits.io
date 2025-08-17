@@ -1,7 +1,7 @@
 active: true
 name: "Google Workspace"
 short_name: "Google"
-slug: "google-workspace"
+slug: "google"
 url: "https://workspace.google.com"
 color: "#4285F4"
 best_deal: "15% off for first 3 months"
