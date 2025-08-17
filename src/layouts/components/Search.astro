@@ -336,7 +336,9 @@ import { plainify } from "@/lib/utils/textConverter";
 
     function getContentIcon(type, slug = "") {
       if (type === "providers") {
-        return `/images/providers/${slug}.png`;
+        // This function is actually not used for providers since we use item.meta.image
+        // But keeping it for backward compatibility
+        return `/images/providers/${slug}.svg`;
       } else if (type === "programs") {
         return "/images/rocket.png";
       }

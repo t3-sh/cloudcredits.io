@@ -2,13 +2,13 @@ active: true
 name: Beefree
 short_name: Beefree
 slug: beefree
-color: '#7747ff'
+color: "#7747ff"
 url: https://developers.beefree.io/startup-program
 intro: >-
   Embeddable drag-and-drop content and email builder SDK for SaaS apps, offering
   $10,000 credits and 50% discount.
 best_deal: Up to $10K SDK credits + 12-month 50% discount
-video: ''
+video: ""
 tags:
   - email
   - dev tools

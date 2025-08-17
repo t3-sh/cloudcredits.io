@@ -2,13 +2,13 @@ active: true
 name: Fivetran
 short_name: Fivetran
 slug: fivetran
-color: '#007FFF'
+color: "#007FFF"
 url: https://www.fivetran.com
 intro: >-
   A fully managed data integration platform automating ELT pipelines with 200+
   pre-built connectors for seamless analytics.
 best_deal: $50K in free Fivetran credits for 12 months
-video: ''
+video: ""
 tags:
   - analytics
   - big data

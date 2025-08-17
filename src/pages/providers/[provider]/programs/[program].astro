@@ -1,7 +1,8 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { getCollection } from "astro:content";
-import ImageMod from "@/components/ImageMod.astro";
+import LogoSpot from "@/components/LogoSpot.tsx";
+import "@/styles/logo-spot.css";
 import {
   FaCheck,
   FaArrowRight,
@@ -14,8 +15,6 @@ import Steps from "@/layouts/components/Steps.astro";
 import Accordion from "@/components/Accordion.astro";
 import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
-import fs from "node:fs";
-import path from "node:path";
 import AnimatedBackground from "@/layouts/components/AnimatedBackground";
 
 export async function getStaticPaths() {
@@ -302,13 +301,34 @@ function renderCombinedLevels(
   `;
 }
 
-// Check if mini version exists in the public directory
-const publicDir = path.join(process.cwd(), "public");
-const miniPath = `/images/providers/${provider.data.slug}.mini.svg`;
-const regularPath = `/images/providers/${provider.data.slug}.svg`;
-const miniExists = fs.existsSync(path.join(publicDir, miniPath.slice(1)));
+// Check for logo format (mini SVG first, then regular SVG, then PNG)
+const miniSvgLogo = `/images/providers/${provider.data.slug}.mini.svg`;
+const svgLogo = `/images/providers/${provider.data.slug}.svg`;
+const pngLogo = `/images/providers/${provider.data.slug}.png`;
+const miniSvgImages = import.meta.glob("/public/images/providers/*.mini.svg");
+const svgImages = import.meta.glob("/public/images/providers/*.svg");
+const pngImages = import.meta.glob("/public/images/providers/*.png");
 
-const logo = miniExists ? miniPath : regularPath;
+const miniSvgExists = Object.prototype.hasOwnProperty.call(
+  miniSvgImages,
+  `/public${miniSvgLogo}`,
+);
+const svgExists = Object.prototype.hasOwnProperty.call(
+  svgImages,
+  `/public${svgLogo}`,
+);
+const pngExists = Object.prototype.hasOwnProperty.call(
+  pngImages,
+  `/public${pngLogo}`,
+);
+
+const logo = miniSvgExists
+  ? miniSvgLogo
+  : svgExists
+    ? svgLogo
+    : pngExists
+      ? pngLogo
+      : svgLogo;
 ---
 
 <Base
@@ -348,19 +368,14 @@ const logo = miniExists ? miniPath : regularPath;
           <div class="flex flex-col items-center gap-8 mb-8">
             {
               logo && (
-                <div class="relative group">
-                  <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-black/5 dark:from-white/20 dark:to-white/5 blur-xl rounded-full" />
-                  <div class="absolute inset-0 bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-full" />
-                  <div class="relative p-3">
-                    <ImageMod
-                      src={logo}
-                      class="h-10 w-auto provider-logo"
-                      width={56}
-                      height={56}
-                      alt={provider.data.name || "Provider logo"}
-                      format="svg"
-                    />
-                  </div>
+                <div class="relative group inline-flex justify-center mb-10">
+                  <LogoSpot
+                    client:visible
+                    src={logo}
+                    name={provider.data.name || "Provider logo"}
+                    width={280}
+                    height={148}
+                  />
                 </div>
               )
             }
@@ -911,35 +926,47 @@ const logo = miniExists ? miniPath : regularPath;
       </div>
     </div>
   </div>
-  <script client:load>
+  <script>
     (() => {
-      const editBtn = document.getElementById("editOnGitHub");
-      if (!editBtn) return;
-      let tooltip;
+      const maybeEditBtn = document.getElementById("editOnGitHub");
+      if (!(maybeEditBtn instanceof HTMLAnchorElement)) return;
+      const editBtnEl = maybeEditBtn;
+      let tooltipEl: HTMLDivElement | null = null;
       function createTooltip() {
-        tooltip = document.createElement("div");
-        tooltip.setAttribute(
+        const el = document.createElement("div");
+        el.setAttribute(
           "style",
           "position:absolute;padding:4px 8px;background:rgba(0,0,0,0.8);color:#fff;border-radius:4px;font-size:12px;z-index:1000;cursor:pointer",
         );
-        tooltip.textContent = "Edit on GitHub";
-        tooltip.addEventListener("click", () =>
-          window.open(editBtn.href, "_blank"),
+        el.textContent = "Edit on GitHub";
+        el.addEventListener("click", () =>
+          window.open(editBtnEl.href, "_blank"),
         );
-        document.body.appendChild(tooltip);
+        document.body.appendChild(el);
+        tooltipEl = el;
       }
       document.addEventListener("selectionchange", () => {
         const selection = window.getSelection();
-        const text = selection ? selection.toString() : "";
-        if (text.length > 0) {
-          const rect = selection.getRangeAt(0).getBoundingClientRect();
-          if (!tooltip) createTooltip();
-          tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 4}px`;
-          tooltip.style.left = `${rect.left + window.scrollX}px`;
-          tooltip.style.display = "block";
-        } else if (tooltip && !tooltip.matches(":hover")) {
-          tooltip.style.display = "none";
+        if (!selection || selection.rangeCount === 0) {
+          if (tooltipEl && !tooltipEl.matches(":hover")) {
+            tooltipEl.style.display = "none";
+          }
+          return;
         }
+        const text = selection.toString();
+        if (text.length === 0) {
+          if (tooltipEl && !tooltipEl.matches(":hover")) {
+            tooltipEl.style.display = "none";
+          }
+          return;
+        }
+        const range = selection.getRangeAt(0);
+        const rect = range.getBoundingClientRect();
+        if (!tooltipEl) createTooltip();
+        if (!tooltipEl) return;
+        tooltipEl.style.top = `${rect.top + window.scrollY - tooltipEl.offsetHeight - 4}px`;
+        tooltipEl.style.left = `${rect.left + window.scrollX}px`;
+        tooltipEl.style.display = "block";
       });
     })();
   </script>

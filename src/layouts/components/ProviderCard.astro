@@ -26,8 +26,8 @@ const pngImages = import.meta.glob("/public/images/providers/*.png");
 const svgExists = svgImages[`/public${svgLogo}`];
 const pngExists = pngImages[`/public${pngLogo}`];
 
-const logo = svgExists ? svgLogo : (pngExists ? pngLogo : svgLogo);
-const logoFormat = svgExists ? "svg" : (pngExists ? "png" : "svg");
+const logo = svgExists ? svgLogo : pngExists ? pngLogo : svgLogo;
+const logoFormat = svgExists ? "svg" : pngExists ? "png" : "svg";
 
 const { colors, gradients } = config.theme;
 ---

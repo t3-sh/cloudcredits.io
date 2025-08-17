@@ -8,7 +8,8 @@ url: "https://commented.typeform.com/startup-program"
 min_value: 75
 max_value: 75
 value_type: "discount"
-tags: ["collaboration", "productivity", "dev tools", "project management", "saas"]
+tags:
+  ["collaboration", "productivity", "dev tools", "project management", "saas"]
 date: 2025-07-16
 
 tiers:
