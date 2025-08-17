@@ -75,6 +75,7 @@ export default function ProgramCard({ program, allProviders }: Props) {
   const effort = effortLevelMap[lowestEffortLevel as EffortLevel];
 
   // Simple logo path logic - preferring mini version if available
+  // Note: Using mini.svg as default, with client-side fallback via onError
   const logo = `/images/providers/${provider_slug}.mini.svg`;
 
   const programSlug = program.id
@@ -108,12 +109,18 @@ export default function ProgramCard({ program, allProviders }: Props) {
                   width={180}
                   height={64}
                   onError={(e) => {
-                    // Fallback to regular logo if mini doesn't exist
+                    // Fallback logic: mini.svg → regular.svg → .png
                     const target = e.target as HTMLImageElement;
                     if (target.src.includes(".mini.svg")) {
                       target.src = `/images/providers/${provider_slug}.svg`;
-                    } else if (target.src.includes(".svg")) {
+                    } else if (
+                      target.src.includes(".svg") &&
+                      !target.src.includes(".mini.svg")
+                    ) {
                       target.src = `/images/providers/${provider_slug}.png`;
+                    } else {
+                      // Final fallback - hide the image if even PNG doesn't exist
+                      target.style.display = "none";
                     }
                   }}
                 />

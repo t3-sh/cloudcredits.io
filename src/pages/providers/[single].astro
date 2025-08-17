@@ -1,6 +1,5 @@
 ---
 import ProgramCard from "@/components/ProgramCard.astro";
-import ImageMod from "@/layouts/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { render } from "astro:content";
@@ -8,6 +7,8 @@ import StatGroup from "@/components/StatGroup.astro";
 import Stat from "@/components/Stat.astro";
 import { getCollection } from "astro:content";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
+import LogoSpot from "@/components/LogoSpot.tsx";
+import "@/styles/logo-spot.css";
 
 // get all static paths for providers
 export async function getStaticPaths() {
@@ -66,8 +67,34 @@ const currency =
   creditPrograms.length > 0 ? creditPrograms[0].data.currency : "USD";
 const currencySymbol = currency === "USD" ? "$" : "€";
 
-const logo = `/images/providers/${slug}.svg`;
+// Check for logo format (mini SVG first, then regular SVG, then PNG)
+const miniSvgLogo = `/images/providers/${slug}.mini.svg`;
+const svgLogo = `/images/providers/${slug}.svg`;
+const pngLogo = `/images/providers/${slug}.png`;
+const miniSvgImages = import.meta.glob("/public/images/providers/*.mini.svg");
+const svgImages = import.meta.glob("/public/images/providers/*.svg");
+const pngImages = import.meta.glob("/public/images/providers/*.png");
 
+const miniSvgExists = Object.prototype.hasOwnProperty.call(
+  miniSvgImages,
+  `/public${miniSvgLogo}`,
+);
+const svgExists = Object.prototype.hasOwnProperty.call(
+  svgImages,
+  `/public${svgLogo}`,
+);
+const pngExists = Object.prototype.hasOwnProperty.call(
+  pngImages,
+  `/public${pngLogo}`,
+);
+
+const logo = miniSvgExists
+  ? miniSvgLogo
+  : svgExists
+    ? svgLogo
+    : pngExists
+      ? pngLogo
+      : svgLogo;
 ---
 
 <Base
@@ -92,18 +119,13 @@ const logo = `/images/providers/${slug}.svg`;
         {
           logo && (
             <div class="relative group inline-flex justify-center mb-10">
-              <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-black/20 to-black/5 dark:from-white/20 dark:to-white/5 blur-xl rounded-full" />
-              <div class="absolute inset-0 w-full h-full bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-full" />
-              <div class="relative p-3">
-                <ImageMod
-                  src={logo}
-                  class="max-h-[60px] w-auto provider-logo"
-                  width={120}
-                  height={60}
-                  alt={`${name} logo`}
-                  format="svg"
-                />
-              </div>
+              <LogoSpot
+                client:visible
+                src={logo}
+                name={name}
+                width={560}
+                height={296}
+              />
             </div>
           )
         }

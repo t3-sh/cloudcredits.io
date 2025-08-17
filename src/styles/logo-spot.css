@@ -1,0 +1,45 @@
+:root {
+  --ls-spot-w: 80%;
+  --ls-spot-h: 48%;
+  --ls-spot-blur: 20px;
+  --ls-spot-a: 0.28;
+  --ls-ring-a: 0.45;
+}
+
+.ls-host {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  overflow: visible;
+}
+
+.ls-spot {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: var(--ls-spot-w);
+  height: var(--ls-spot-h);
+  border-radius: 999px;
+  background: radial-gradient(
+    50% 60% at 50% 55%,
+    hsl(var(--ls-h) var(--ls-s) var(--ls-l) / var(--ls-a)) 0%,
+    hsl(var(--ls-h) var(--ls-s) var(--ls-l) / 0) 95%
+  );
+  filter: blur(var(--ls-spot-blur));
+  pointer-events: none;
+}
+
+.ls-img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0.35px rgba(0, 0, 0, var(--ls-ring-a)))
+    drop-shadow(0 0 0.35px rgba(255, 255, 255, var(--ls-ring-a)));
+}
+
+@media (prefers-contrast: more) {
+  .ls-img {
+    filter: drop-shadow(0 0 0.6px rgba(0, 0, 0, 0.6))
+      drop-shadow(0 0 0.6px rgba(255, 255, 255, 0.6));
+  }
+}
