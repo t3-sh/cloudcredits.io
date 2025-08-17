@@ -5,6 +5,7 @@ import AIInput from "@/layouts/components/AIInput";
 import PageHeader from "@/partials/PageHeader.astro";
 import AssistantClient from "@/layouts/components/AssistantClient";
 import { isFeatureEnabled } from "@/lib/featureFlags";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 // Check if Ask AI feature is enabled
 const askAIEnabled = isFeatureEnabled("askAI");
@@ -17,12 +18,15 @@ if (!askAIEnabled) {
 // Get all programs and providers from the content collection for client-side matching
 const allPrograms = await getCollection("programs");
 const allProviders = await getCollection("providers");
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="Ask AI Assistant - Find Best Startup Credits & Deals"
   meta_title="AI Assistant for Startup Credits | CloudCredits.io"
   description="Ask our AI assistant to find the perfect cloud credits and startup deals for your specific needs. Get personalized recommendations from 150+ verified programs."
+  canonical={canonical}
 >
   <PageHeader title="Ask AI" />
 

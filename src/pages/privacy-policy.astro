@@ -1,12 +1,16 @@
 ---
 import Base from "@/layouts/Base.astro";
 import PageHeader from "@/partials/PageHeader.astro";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="Privacy Policy - CloudCredits.io"
   meta_title="Privacy Policy - Zero Data Collection | CloudCredits.io"
   description="CloudCredits.io privacy policy: We collect zero personal data, use no analytics or tracking cookies, and don't sell information. Learn about our commitment to user privacy."
+  canonical={canonical}
 >
   <PageHeader title="Privacy Policy" />
 

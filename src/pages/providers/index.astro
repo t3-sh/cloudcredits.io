@@ -5,6 +5,7 @@ import PageHeader from "@/partials/PageHeader.astro";
 import ProviderCard from "@/components/ProviderCard.astro";
 import StatGroup from "@/components/StatGroup.astro";
 import Stat from "@/components/Stat.astro";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 const providers = await getCollection("providers");
 const activeProviders = providers.filter((provider) => provider.data.active);
@@ -14,12 +15,15 @@ const allPrograms = await getCollection("programs");
 const activePrograms = allPrograms.filter(
   (program) => program.data.status === "Active",
 );
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="Cloud Providers & SaaS Companies - CloudCredits.io"
   meta_title="Top Cloud Providers Offering Startup Credits | CloudCredits.io"
   description="Discover 50+ cloud providers and SaaS companies offering startup credits: AWS, Google Cloud, Azure, MongoDB, Stripe, and more. Find the best deals for your startup's stack."
+  canonical={canonical}
 >
   <PageHeader title="Providers" />
   <div class="container mt-8">

@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import ProgramCard from "@/layouts/components/ProgramCard.astro";
 import { motion } from "framer-motion";
 import { isFeatureEnabled } from "@/lib/featureFlags";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 const allPrograms = await getCollection("programs");
 const featuredProgramTitles = [
@@ -21,12 +22,14 @@ const featuredPrograms = allPrograms.filter((p) =>
 );
 const rotationAngles = [-3, -1, 2, 1, -2, 3];
 const askAIEnabled = isFeatureEnabled("askAI");
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="CloudCredits.io - Community Vault of Startup Credits & Deals"
   meta_title="CloudCredits.io - Free Cloud Credits Vault for Startups"
   description="Discover 150+ startup credits and cloud deals worth $1M+. Open-source vault of AWS, Google Cloud, Azure credits, SaaS discounts, and founder deals. No ads, no affiliates."
+  canonical={canonical}
 >
   <AnimatedBackground client:load />
   <div class="relative flex items-center justify-center min-h-screen">

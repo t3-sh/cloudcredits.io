@@ -4,6 +4,7 @@ import { getCombinedTags, getAllTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 import { FaTag } from "react-icons/fa6";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 // Get all unique tags
 const tags = await getCombinedTags();
@@ -12,12 +13,15 @@ const allTags = await getAllTaxonomy("programs", "tags");
 
 // Sort tags alphabetically
 tags.sort();
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="Categories - Browse Cloud Credits by Tag | CloudCredits.io"
   meta_title="Startup Credits Categories - AWS, AI, Database & More"
   description="Browse cloud credits and startup deals by category: cloud infrastructure, AI/ML, databases, monitoring, security, and more. Find deals that match your tech stack."
+  canonical={canonical}
 >
   <PageHeader title={"Categories"} />
   <section class="section pt-4">

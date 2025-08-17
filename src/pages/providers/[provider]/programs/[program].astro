@@ -16,6 +16,7 @@ import Accordion from "@/components/Accordion.astro";
 import ProgramStatusIndicator from "@/layouts/components/ProgramStatusIndicator.astro";
 import Breadcrumbs from "@/layouts/components/Breadcrumbs.astro";
 import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 export async function getStaticPaths() {
   const programs = await getCollection("programs");
@@ -329,6 +330,8 @@ const logo = miniSvgExists
     : pngExists
       ? pngLogo
       : svgLogo;
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
@@ -338,6 +341,7 @@ const logo = miniSvgExists
   image={logo}
   searchable
   search_collection="programs"
+  canonical={canonical}
 >
   <div class="relative min-h-screen" data-pagefind-meta={`image:${logo}`}>
     <!-- Replace gradient background with AnimatedBackground -->

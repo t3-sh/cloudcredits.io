@@ -4,6 +4,7 @@ import PageHeader from "@/partials/PageHeader.astro";
 import GrainBackground from "@/layouts/components/GrainBackground.astro";
 import config from "@/config/config.json";
 import { AnimatedRoadmap } from "@/layouts/components/AnimatedRoadmap";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 // Define roadmap items with categories and dates
 const functionalityItems = [
@@ -112,12 +113,15 @@ const roadmapItems = [...functionalityItems, ...contentItems].sort((a, b) => {
 // Use the teal color from the primary color palette for primary and a complementary color for secondary
 const primaryColor = config.theme.colors.primary.teal;
 const secondaryColor = config.theme.colors.primary.purple;
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="CloudCredits.io Roadmap - Future Features & Development Plan"
   meta_title="CloudCredits.io Roadmap 2025 - AI Chat, Community Notes & More"
   description="See what's coming to CloudCredits.io: AI chat assistant with RAG, community notes, advanced filtering, 50+ new listings, and more features planned for 2025."
+  canonical={canonical}
 >
   <PageHeader title="Roadmap" />
 

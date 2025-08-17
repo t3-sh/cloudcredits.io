@@ -6,6 +6,7 @@ import ProgramCard from "@/layouts/components/ProgramCard.astro";
 import StatGroup from "@/components/StatGroup.astro";
 import Stat from "@/components/Stat.astro";
 import { FaFilter } from "react-icons/fa";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 // Get all programs and providers
 const allPrograms = await getCollection("programs");
@@ -37,12 +38,15 @@ const allTags = [
 
 // Sort tags alphabetically
 allTags.sort();
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
   title="Startup Deals & Cloud Credits - CloudCredits.io"
   meta_title="150+ Free Cloud Credits & Startup Deals | CloudCredits.io"
   description="Browse 150+ verified startup deals: AWS credits, Google Cloud, Azure, MongoDB, GitHub, Notion discounts. Filter by tags, value, and eligibility. Updated daily by community."
+  canonical={canonical}
 >
   <PageHeader title="Deals" />
 
