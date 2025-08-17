@@ -1,0 +1,62 @@
+provider_slug: "browserless"
+title: "Browserless Free Tier"
+meta_title: "Browserless Free Tier - 1,000 Free Browser Automation Requests"
+intro: "Get 1,000 free monthly requests for headless browser automation including web scraping, PDF generation, and screenshot capture with zero infrastructure setup"
+description: "Free tier program offering cloud-based headless Chrome and Firefox browsers accessible through REST APIs. Eliminates the need for developers to manage browser infrastructure while providing comprehensive automation capabilities including web scraping, PDF generation, screenshot capture, and general browser automation."
+status: "Active"
+url: "https://browserless.io"
+min_value: 10
+max_value: 20
+value_type: "credits"
+currency: "USD"
+tags: ["automation", "dev tools", "api", "cloud", "scraping"]
+date: 2025-08-17
+
+tiers:
+  - name: "Free Tier"
+    intro: "Monthly allocation of browser automation requests with full API access and zero infrastructure management"
+    max_value: 20
+    url: "https://browserless.io"
+    benefits:
+      - "1,000 API requests per month"
+      - "Headless Chrome and Firefox browsers"
+      - "Web scraping with JavaScript rendering"
+      - "PDF generation and screenshot capture"
+      - "Full Puppeteer, Playwright, Selenium compatibility"
+    benefits_level: 2
+    duration: ["Ongoing monthly allocation"]
+    eligibility:
+      - "Email registration required"
+      - "Email verification mandatory"
+      - "One free account per user/organization"
+      - "Must comply with fair use policy"
+      - "Legal business purposes only"
+    effort_level: 1
+    timeline_indication: "Immediate activation after email verification"
+    steps_to_apply:
+      - name: "Create Account"
+        description: "Sign up with email address and create password"
+        action: "Get Started"
+        action_url: "https://browserless.io"
+      - name: "Verify Email"
+        description: "Check email for verification link and activate account"
+        action: "Verify Email"
+        action_url: "https://browserless.io"
+      - name: "Generate API Key"
+        description: "Access dashboard and create API key for integration"
+        action: "Access Dashboard"
+        action_url: "https://browserless.io"
+
+faq:
+  - question: "What happens when I reach the 1,000 request limit?"
+    answer: "Your service will be temporarily suspended until the next monthly reset. You can upgrade to a paid plan for continued access or wait for the monthly reset on the first day of each month."
+  - question: "What browsers are supported in the free tier?"
+    answer: "The free plan supports headless Chrome and Firefox browsers, both maintained at the latest stable versions with automatic updates."
+  - question: "Is a credit card required for the free plan?"
+    answer: "No, the free plan requires only email registration without any payment information or credit card details."
+  - question: "Do unused requests roll over to the next month?"
+    answer: "No, unused requests do not carry over. Each month you receive a fresh allocation of 1,000 requests that resets on the first day of the month."
+  - question: "What's the maximum execution time per request?"
+    answer: "Each request has a default timeout of 30 seconds, which covers page loading and script execution time, with a 1GB memory limit per browser session."
+  - question: "Can I use this for web scraping?"
+    answer: "Yes, the service includes comprehensive web scraping capabilities with JavaScript rendering, built-in wait conditions, selectors, and anti-detection features."
