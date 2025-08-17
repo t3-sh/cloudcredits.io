@@ -1,0 +1,10 @@
+active: true
+name: "Google Workspace"
+short_name: "Google"
+slug: "google-workspace"
+url: "https://workspace.google.com"
+color: "#4285F4"
+best_deal: "15% off for first 3 months"
+intro: "Cloud-based productivity and collaboration suite featuring Gmail, Drive, Docs, Sheets, Meet, and Calendar for businesses of all sizes."
+video: ""
+tags: ["productivity", "collaboration", "email", "enterprise", "b2b"]
