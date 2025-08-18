@@ -1,0 +1,59 @@
+provider_slug: "neo4j"
+title: "Neo4j AuraDB Free Plan"
+meta_title: "Neo4j AuraDB Free Plan - Forever Free Graph Database | CloudCredits.io"
+intro: "Free forever graph database with 50,000 nodes, 175,000 relationships, and Neo4j Bloom included - no credit card required"
+description: "Neo4j AuraDB Free offers a fully functional graph database for learning and exploration. The free instance supports up to 50,000 nodes and 175,000 relationships, includes Neo4j Bloom for visualization, and provides enterprise-grade security. Perfect for developers getting started with graph databases, small projects, and proof-of-concepts."
+status: "Active"
+url: "https://neo4j.com/cloud/platform/aura-graph-database/"
+min_value: 0
+max_value: 0
+value_type: "credits"
+tags: ["database", "cloud", "free trial"]
+
+tiers:
+  - name: "AuraDB Free"
+    intro: "Forever free graph database for learning and small projects"
+    max_value: 0
+    url: "https://console.neo4j.io/"
+    benefits:
+      - "Up to 50,000 nodes and 175,000 relationships"
+      - "Neo4j Bloom graph visualization included"
+      - "99.95% uptime SLA with zero administration"
+      - "Enterprise-grade security and multi-cloud availability"
+      - "No credit card required"
+    benefits_level: 2
+    duration: ["Forever"]
+    eligibility:
+      - "Anyone can sign up"
+      - "No credit card required"
+      - "Individual developers and small projects"
+    effort_level: 1
+    timeline_indication: "Instant activation"
+    steps_to_apply:
+      - name: "Create Free Account"
+        description: "Sign up for a free Neo4j Aura account"
+        action: "Start Free"
+        action_url: "https://console.neo4j.io/"
+      - name: "Create Database"
+        description: "Create your free AuraDB instance"
+        action: "Get Started"
+        action_url: "https://console.neo4j.io/"
+
+faq:
+  - question: "What happens when I reach the node/relationship limits?"
+    answer: "The free plan supports up to 50,000 nodes and 175,000 relationships. If you need more capacity, you can upgrade to a paid plan or optimize your data model."
+  
+  - question: "Does the database pause after inactivity?"
+    answer: "Yes, the free instance pauses after 3 days of inactivity, but it can be resumed with no data loss. Your data remains safe and accessible."
+  
+  - question: "Is Neo4j Bloom included in the free plan?"
+    answer: "Yes, Neo4j Bloom for graph visualization and exploration is included in the free plan."
+  
+  - question: "Can I use this for commercial projects?"
+    answer: "The free plan is primarily intended for learning, development, and small projects. For production commercial use, consider upgrading to a paid plan."
+  
+  - question: "What security features are included?"
+    answer: "The free plan includes enterprise-grade security with encryption at rest and in transit, network security, and compliance with industry standards."
+  
+  - question: "Can I export my data if I need to upgrade?"
+    answer: "Yes, you can export your data and migrate to paid plans or self-hosted Neo4j instances as needed."
