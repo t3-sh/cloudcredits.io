@@ -1,0 +1,103 @@
+draft: false
+provider_slug: neo4j
+title: Neo4j AuraDB Free Plan
+meta_title: Neo4j AuraDB Free Plan - Free Graph Database Forever
+intro: >-
+  Get one fully-functional graph database forever with 50,000 nodes, 175,000
+  relationships, and Neo4j Bloom - no credit card required
+description: >-
+  Permanent free access to Neo4j's cloud-managed graph database service
+  designed for developers and small teams. This enterprise-grade database
+  provides full Neo4j functionality including Cypher query language, APOC
+  library, and Neo4j Bloom visualization tool. The free instance automatically
+  pauses after 3 days of inactivity but resumes instantly with no data loss,
+  making it perfect for development, testing, and proof-of-concept projects.
+status: Active
+url: https://neo4j.com/cloud/platform/aura-graph-database/
+min_value: 0
+max_value: 0
+value_type: credits
+tags:
+  - database
+  - free trial
+  - dev tools
+date: 2025-08-18
+community_notes: []
+tiers:
+  - name: AuraDB Free Forever
+    intro: >-
+      Fully-functional graph database instance with no expiration date and
+      enterprise-grade features
+    max_value: 0
+    url: https://neo4j.com/cloud/platform/aura-graph-database/
+    benefits:
+      - One fully-functional AuraDB graph database instance forever
+      - Up to 50,000 nodes and 175,000 relationships capacity
+      - Neo4j Bloom integration for visual graph exploration
+      - Full Cypher query language and APOC library support
+      - Automatic pause after 3 days with instant resume, zero data loss
+    benefits_level: 2
+    duration:
+      - forever
+    eligibility:
+      - Any user with valid email address
+      - No company size or revenue restrictions
+      - Available for educational and commercial development use
+      - One free instance per account
+    effort_level: 1
+    timeline_indication: Instant provisioning
+    steps_to_apply:
+      - name: Create Neo4j Account
+        description: Sign up with email address - no credit card required
+        action: Register Free
+        action_url: https://neo4j.com/cloud/platform/aura-graph-database/
+      - name: Verify Email
+        description: Complete email verification to activate account
+        action: Verify Email
+        action_url: ""
+      - name: Create Free Database
+        description: >-
+          Instantly provision your free AuraDB instance through the console
+        action: Create Database
+        action_url: ""
+faq:
+  - question: Is the Neo4j AuraDB free plan really permanent?
+    answer: >-
+      Yes, Neo4j AuraDB Free Plan is designed to be 'free forever' with no
+      hidden charges or expiration dates. Users can maintain their free instance
+      indefinitely as long as they comply with the terms of service.
+  - question: What happens if I exceed the 50,000 node limit?
+    answer: >-
+      The system will prevent adding additional nodes once the limit is reached.
+      Users will need to either remove existing data or upgrade to a paid plan
+      to continue adding data.
+  - question: Can I use the free plan for commercial applications?
+    answer: >-
+      The free plan is intended for development, testing, and proof-of-concept
+      work. For production commercial applications, Neo4j recommends upgrading
+      to AuraDB Professional or Enterprise plans.
+  - question: How do I resume a paused database?
+    answer: >-
+      Paused databases can be resumed instantly through the AuraDB console or
+      by attempting to connect with any Neo4j driver. The resume process is
+      automatic and requires no manual intervention.
+  - question: Is my data backed up on the free plan?
+    answer: >-
+      Yes, Neo4j manages automatic backups for free tier instances. However,
+      users are responsible for their own data export if they need additional
+      backup security.
+  - question: Do I need a credit card to sign up?
+    answer: >-
+      No, the Neo4j AuraDB Free Plan requires only email verification for
+      signup. No credit card or payment information is needed to access the
+      free tier.
+  - question: What happens during the automatic pause after 3 days of inactivity?
+    answer: >-
+      The database pauses to conserve resources but all data remains intact
+      with zero data loss. You can resume instantly through the console or by
+      connecting with any query, and the process is completely free.
+  - question: Can I get enterprise support with the free plan?
+    answer: >-
+      The free plan includes community support through Neo4j's forums and
+      documentation. Enterprise support requires upgrading to paid AuraDB
+      Professional or Enterprise plans.
