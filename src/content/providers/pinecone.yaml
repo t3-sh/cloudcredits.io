@@ -1,0 +1,10 @@
+active: true
+name: "Pinecone"
+short_name: "Pinecone"
+slug: "pinecone"
+url: "https://www.pinecone.io"
+color: "#1C17FF"
+best_deal: "Free Standard Tier and Pro Support for startups"
+intro: "Purpose-built vector database for AI applications offering fast, accurate semantic search and retrieval for large-scale machine learning workloads."
+video: ""
+tags: ["ai", "database", "ml"]
