@@ -1,0 +1,72 @@
+provider_slug: "pinecone"
+title: "Pinecone for Startups"
+meta_title: "Pinecone for Startups - Free Vector Database Credits | CloudCredits.io"
+intro: "Free access to Pinecone's Standard Tier and Pro Support for AI startups building vector search applications"
+description: "Comprehensive startup program offering free access to Pinecone's purpose-built vector database with Standard Tier features, Pro Support, and technical guidance for scaling AI applications from POC to production. Includes advanced features like RBAC, backups, multi-cloud deployment, and dedicated Slack support."
+status: "Active"
+url: "https://www.pinecone.io/startup-program/"
+min_value: 70
+max_value: 840
+value_type: "credits"
+currency: "USD"
+tags: ["ai", "database", "ml", "cloud", "api"]
+date: 2025-08-18
+
+tiers:
+  - name: "Standard Tier Access"
+    intro: "Free access to Pinecone's Standard Tier with Pro Support for qualifying startups"
+    max_value: 840
+    url: "https://www.pinecone.io/startup-program/"
+    benefits:
+      - "Free access to Pinecone's Standard Tier (normally $70/month)"
+      - "Pro Support with faster response times and dedicated Slack channel"
+      - "Multi-cloud deployment with RBAC and automated backups"
+      - "Enterprise features: Private Endpoints, SSO, and customer-managed encryption"
+      - "Technical guidance for scaling from POC to production"
+    benefits_level: 3
+    duration: ["12 months"]
+    eligibility:
+      - "Fewer than 100 employees"
+      - "Series A funding stage or earlier"
+      - "Building AI/ML applications requiring vector search"
+      - "Active development using vector embeddings"
+    effort_level: 2
+    timeline_indication: "5-7 business days"
+    steps_to_apply:
+      - name: "Submit Application"
+        description: "Complete the startup program application form with company details"
+        action: "Apply Now"
+        action_url: "https://www.pinecone.io/startup-program/"
+      - name: "Company Verification"
+        description: "Provide proof of company size and funding status"
+        action: "Submit Documentation"
+        action_url: "https://www.pinecone.io/startup-program/"
+      - name: "Technical Review"
+        description: "Describe your AI/ML use case and vector search requirements"
+        action: "Technical Assessment"
+        action_url: "https://www.pinecone.io/startup-program/"
+
+faq:
+  - question: "What is included in Pinecone's Standard Tier?"
+    answer: "The Standard Tier includes serverless vector database access, multi-cloud deployment options, RBAC, backups, import capabilities, Prometheus metrics, and 99.95% uptime SLA - normally priced at $70/month."
+  
+  - question: "How long does the startup program last?"
+    answer: "The program provides 12 months of free access from approval, with possible extensions for qualifying startups showing growth and continued eligibility."
+  
+  - question: "What funding stages are eligible?"
+    answer: "Startups at Series A funding stage or earlier are eligible, including pre-seed, seed, and early-stage companies with fewer than 100 employees."
+  
+  - question: "What kind of support is included?"
+    answer: "Pro Support tier with faster response times, dedicated Slack channel access, technical guidance for scaling, and access to Pinecone's partner ecosystem."
+  
+  - question: "Can I use Pinecone on any cloud provider?"
+    answer: "Yes, the program includes access to any cloud/region deployment across AWS, Google Cloud, and Azure with the same features and performance guarantees."
+  
+  - question: "What happens after the 12-month program ends?"
+    answer: "Startups can transition to paid plans with continued startup discounts, or apply for program extensions if they still meet the eligibility criteria."
+  
+  - question: "How quickly can I get started after approval?"
+    answer: "Account setup is immediate upon approval, with the technical support team contacting you within 48 hours for onboarding and setup assistance."
+  
+  - question: "What are the usage limits during the program?"
+    answer: "The program provides Standard Tier access with usage credits for vector operations and storage, with specific limits based on the tier's standard allocation and startup needs."
