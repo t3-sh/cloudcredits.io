@@ -7,20 +7,26 @@ import config from "@/config/config.json";
  */
 export function getCanonicalURL(pathname: string): string {
   const { base_url, trailing_slash } = config.site;
-  
+
   // Normalize pathname - remove leading slash if present
-  const normalizedPath = pathname.startsWith("/") ? pathname.slice(1) : pathname;
-  
+  const normalizedPath = pathname.startsWith("/")
+    ? pathname.slice(1)
+    : pathname;
+
   // Build canonical URL
   let canonicalURL = `${base_url}/${normalizedPath}`;
-  
+
   // Handle trailing slash preference
   if (trailing_slash && !canonicalURL.endsWith("/") && normalizedPath !== "") {
     canonicalURL += "/";
-  } else if (!trailing_slash && canonicalURL.endsWith("/") && normalizedPath !== "") {
+  } else if (
+    !trailing_slash &&
+    canonicalURL.endsWith("/") &&
+    normalizedPath !== ""
+  ) {
     canonicalURL = canonicalURL.slice(0, -1);
   }
-  
+
   return canonicalURL;
 }
 
