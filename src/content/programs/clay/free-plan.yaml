@@ -5,16 +5,17 @@ intro: "Get 100 monthly credits (1,200 annually) for data enrichment with unlimi
 description: "Clay's free plan provides 100 monthly credits for comprehensive data enrichment including email finding, phone discovery, company data, and social profiles. Users get access to the full Clay platform with CRM integrations, Chrome extension, and community support without requiring a credit card."
 status: "Active"
 url: "https://www.clay.com/pricing"
-min_value: 100
-max_value: 1200
+min_value: 0
+max_value: 0
 value_type: "credits"
+currency: "USD"
 tags: ["data", "sales", "marketing", "crm", "b2b"]
 date: 2025-08-17
 
 tiers:
   - name: "Free Plan"
     intro: "100 monthly credits for data enrichment with full platform access and unlimited users"
-    max_value: 1200
+    max_value: 0
     url: "https://www.clay.com/pricing"
     benefits:
       - "100 credits per month (1,200 annually)"
