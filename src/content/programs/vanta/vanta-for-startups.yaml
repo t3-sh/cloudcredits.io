@@ -1,0 +1,60 @@
+provider_slug: "vanta"
+title: "Vanta for Startups"
+meta_title: "Vanta for Startups - CloudCredits.io"
+intro: "Get up to $1,000 off Vanta's security compliance automation platform trusted by 1,000+ YC-backed founders"
+description: "Comprehensive security compliance program offering automated evidence collection for SOC 2 and ISO 27001 certifications, with dedicated support and managed services to get startups audit-ready in as little as 4 weeks."
+status: "Active"
+url: "https://www.vanta.com/solutions/startup"
+min_value: 500
+max_value: 1000
+value_type: "discount"
+currency: "USD"
+tags: ["compliance", "cybersecurity", "b2b", "saas"]
+date: 2025-08-19
+
+tiers:
+  - name: "Core Program"
+    intro: "Essential compliance automation for first-time SOC 2 or ISO 27001 certification"
+    max_value: 1000
+    url: "https://www.vanta.com/solutions/startup"
+    benefits:
+      - "Up to $1,000 off Vanta's Core plan"
+      - "90% automated evidence collection for SOC 2 or ISO 27001"
+      - "Vanta AI with AI-powered test remediation"
+      - "Included penetration test or internal audit"
+      - "Customer-facing Trust Center and expert support"
+    benefits_level: 3
+    duration: ["12 months"]
+    eligibility:
+      - "Early-stage startups seeking first-time compliance certification"
+      - "Companies building B2B products requiring enterprise security"
+      - "Startups with limited internal compliance resources"
+    effort_level: 2
+    timeline_indication: "4-6 weeks to audit-ready status"
+    steps_to_apply:
+      - name: "Request Demo"
+        description: "Schedule a consultation to assess your compliance needs"
+        action: "Request a Demo"
+        action_url: "https://www.vanta.com/demo1"
+      - name: "Complete Application"
+        description: "Apply for the startup program during onboarding"
+        action: "Apply for Startup Program"
+        action_url: "https://www.vanta.com/solutions/startup"
+
+faq:
+  - question: "What does the Vanta startup program include?"
+    answer: "Up to $1,000 discount on Vanta's compliance automation platform, including automated evidence collection for SOC 2/ISO 27001, AI-powered remediation, policy templates, and expert support to get audit-ready in 4-6 weeks."
+  - question: "How much can startups save with Vanta?"
+    answer: "Eligible startups can save up to $1,000 on their first year of Vanta's Core plan, which typically ranges from $3,000-$12,000 annually depending on company size and requirements."
+  - question: "What compliance frameworks does Vanta support?"
+    answer: "Vanta supports SOC 2, ISO 27001, HIPAA, GDPR, and other major compliance frameworks. The startup program focuses primarily on SOC 2 and ISO 27001 for first-time certification."
+  - question: "How long does it take to become compliant?"
+    answer: "With Vanta's automation and managed service partners, startups can become audit-ready in as little as 4 weeks, compared to 6-12 months with manual compliance processes."
+  - question: "What integrations are available?"
+    answer: "Vanta offers 300+ integrations with popular startup tools including AWS, GCP, Azure, GitHub, Slack, Jira, and most HR and development platforms used by startups."
+  - question: "Is ongoing support included?"
+    answer: "Yes, all plans include 24/5 product support via live chat, dedicated Customer Success team, Account Manager, and access to Vanta's help center and training resources."
+  - question: "Can Vanta help with vendor risk management?"
+    answer: "Yes, Vanta includes vendor risk management workflows, and the Plus tier offers Questionnaire Automation for managing vendor security assessments efficiently."
+  - question: "What happens after achieving compliance?"
+    answer: "Vanta provides continuous compliance monitoring to ensure you stay compliant year-round, not just at audit time. This includes automated evidence collection and real-time security monitoring."
