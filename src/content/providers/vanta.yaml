@@ -1,0 +1,10 @@
+active: true
+name: "Vanta"
+short_name: "Vanta"
+slug: "vanta"
+url: "https://www.vanta.com"
+color: "#AC55FF"
+best_deal: "Up to $1,000 off compliance automation platform"
+intro: "Security compliance automation platform that helps startups achieve SOC 2 and ISO 27001 certifications with 90% automated evidence collection."
+video: ""
+tags: ["compliance", "cybersecurity", "b2b"]
