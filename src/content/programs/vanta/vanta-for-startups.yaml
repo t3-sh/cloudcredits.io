@@ -23,13 +23,13 @@ tiers:
       - "Vanta AI with AI-powered test remediation"
       - "Included penetration test or internal audit"
       - "Customer-facing Trust Center and expert support"
-    benefits_level: 3
+    benefits_level: 1
     duration: ["12 months"]
     eligibility:
       - "Early-stage startups seeking first-time compliance certification"
       - "Companies building B2B products requiring enterprise security"
       - "Startups with limited internal compliance resources"
-    effort_level: 2
+    effort_level: 1
     timeline_indication: "4-6 weeks to audit-ready status"
     steps_to_apply:
       - name: "Request Demo"
