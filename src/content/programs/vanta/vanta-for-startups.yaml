@@ -5,9 +5,9 @@ intro: "Get up to $1,000 off Vanta's security compliance automation platform tru
 description: "Comprehensive security compliance program offering automated evidence collection for SOC 2 and ISO 27001 certifications, with dedicated support and managed services to get startups audit-ready in as little as 4 weeks."
 status: "Active"
 url: "https://www.vanta.com/solutions/startup"
-min_value: 500
+min_value: 1000
 max_value: 1000
-value_type: "discount"
+value_type: "credits"
 currency: "USD"
 tags: ["compliance", "cybersecurity", "b2b", "saas"]
 date: 2025-08-19
@@ -23,13 +23,13 @@ tiers:
       - "Vanta AI with AI-powered test remediation"
       - "Included penetration test or internal audit"
       - "Customer-facing Trust Center and expert support"
-    benefits_level: 3
+    benefits_level: 1
     duration: ["12 months"]
     eligibility:
       - "Early-stage startups seeking first-time compliance certification"
       - "Companies building B2B products requiring enterprise security"
       - "Startups with limited internal compliance resources"
-    effort_level: 2
+    effort_level: 1
     timeline_indication: "4-6 weeks to audit-ready status"
     steps_to_apply:
       - name: "Request Demo"
