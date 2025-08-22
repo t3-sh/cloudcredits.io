@@ -42,18 +42,18 @@ tiers:
 faq:
   - question: "What happens when I reach the node/relationship limits?"
     answer: "The free plan supports up to 50,000 nodes and 175,000 relationships. If you need more capacity, you can upgrade to a paid plan or optimize your data model."
-  
+
   - question: "Does the database pause after inactivity?"
     answer: "Yes, the free instance pauses after 3 days of inactivity, but it can be resumed with no data loss. Your data remains safe and accessible."
-  
+
   - question: "Is Neo4j Bloom included in the free plan?"
     answer: "Yes, Neo4j Bloom for graph visualization and exploration is included in the free plan."
-  
+
   - question: "Can I use this for commercial projects?"
     answer: "The free plan is primarily intended for learning, development, and small projects. For production commercial use, consider upgrading to a paid plan."
-  
+
   - question: "What security features are included?"
     answer: "The free plan includes enterprise-grade security with encryption at rest and in transit, network security, and compliance with industry standards."
-  
+
   - question: "Can I export my data if I need to upgrade?"
     answer: "Yes, you can export your data and migrate to paid plans or self-hosted Neo4j instances as needed."

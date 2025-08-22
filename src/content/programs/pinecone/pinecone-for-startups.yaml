@@ -49,24 +49,24 @@ tiers:
 faq:
   - question: "What is included in Pinecone's Standard Tier?"
     answer: "The Standard Tier includes serverless vector database access, multi-cloud deployment options, RBAC, backups, import capabilities, Prometheus metrics, and 99.95% uptime SLA - normally priced at $70/month."
-  
+
   - question: "How long does the startup program last?"
     answer: "The program provides 12 months of free access from approval, with possible extensions for qualifying startups showing growth and continued eligibility."
-  
+
   - question: "What funding stages are eligible?"
     answer: "Startups at Series A funding stage or earlier are eligible, including pre-seed, seed, and early-stage companies with fewer than 100 employees."
-  
+
   - question: "What kind of support is included?"
     answer: "Pro Support tier with faster response times, dedicated Slack channel access, technical guidance for scaling, and access to Pinecone's partner ecosystem."
-  
+
   - question: "Can I use Pinecone on any cloud provider?"
     answer: "Yes, the program includes access to any cloud/region deployment across AWS, Google Cloud, and Azure with the same features and performance guarantees."
-  
+
   - question: "What happens after the 12-month program ends?"
     answer: "Startups can transition to paid plans with continued startup discounts, or apply for program extensions if they still meet the eligibility criteria."
-  
+
   - question: "How quickly can I get started after approval?"
     answer: "Account setup is immediate upon approval, with the technical support team contacting you within 48 hours for onboarding and setup assistance."
-  
+
   - question: "What are the usage limits during the program?"
     answer: "The program provides Standard Tier access with usage credits for vector operations and storage, with specific limits based on the tier's standard allocation and startup needs."
