@@ -1,0 +1,10 @@
+active: true
+name: "Capture The Bug"
+short_name: "Capture The Bug"
+slug: "capture-the-bug"
+url: "https://capturethebug.xyz"
+color: "#0066cc"
+best_deal: "$1,000 pentest credits"
+intro: "Manual penetration testing platform providing real-time security assessments and compliance-ready reports for startups and growing companies."
+video: ""
+tags: ["cybersecurity", "compliance", "enterprise"]
