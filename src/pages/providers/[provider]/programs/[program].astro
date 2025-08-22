@@ -235,7 +235,7 @@ function renderCombinedLevels(
                   const isCurrentLevel = num === bKey;
                   return `
                   <div class="flex flex-col items-center">
-                    <img src="${benefitsLevelMap[num as 1 | 2 | 3 | 4].icon}" alt="" 
+                    <img src="${benefitsLevelMap[num as 1 | 2 | 3 | 4].icon}" alt="${benefitsLevelMap[num as 1 | 2 | 3 | 4].name} - ${benefitsLevelMap[num as 1 | 2 | 3 | 4].description}" 
                          class="w-5 h-5 ${isActive ? "opacity-100" : "opacity-40"} ${isCurrentLevel ? "scale-125" : "scale-100"}" />
                     ${
                       isCurrentLevel
@@ -281,7 +281,7 @@ function renderCombinedLevels(
                   const isCurrentLevel = num === eKey;
                   return `
                   <div class="flex flex-col items-center">
-                    <img src="${effortLevelMap[num as 1 | 2 | 3 | 4].icon}" alt="" 
+                    <img src="${effortLevelMap[num as 1 | 2 | 3 | 4].icon}" alt="${effortLevelMap[num as 1 | 2 | 3 | 4].name} - ${effortLevelMap[num as 1 | 2 | 3 | 4].description}" 
                          class="w-5 h-5 ${isActive ? "opacity-100" : "opacity-40"} ${isCurrentLevel ? "scale-125" : "scale-100"}" />
                     ${
                       isCurrentLevel
@@ -585,11 +585,15 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                       tier.benefits_level as 1 | 2 | 3 | 4
                                     ].icon
                                   }
-                                  alt={
+                                  alt={`${
                                     benefitsLevelMap[
                                       tier.benefits_level as 1 | 2 | 3 | 4
                                     ].name
-                                  }
+                                  } - ${
+                                    benefitsLevelMap[
+                                      tier.benefits_level as 1 | 2 | 3 | 4
+                                    ].description
+                                  }`}
                                   class="w-8 h-8"
                                 />
                               </div>
@@ -631,7 +635,11 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                       benefitsLevelMap[num as 1 | 2 | 3 | 4]
                                         .icon
                                     }
-                                    alt=""
+                                    alt={`${
+                                      benefitsLevelMap[num as 1 | 2 | 3 | 4].name
+                                    } - ${
+                                      benefitsLevelMap[num as 1 | 2 | 3 | 4].description
+                                    }`}
                                     class={`w-5 h-5 ${num <= tier.benefits_level ? "opacity-100" : "opacity-40"} ${num === tier.benefits_level ? "scale-125" : "scale-100"}`}
                                   />
                                   {num === tier.benefits_level && (
@@ -675,11 +683,15 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                       tier.effort_level as 1 | 2 | 3 | 4
                                     ].icon
                                   }
-                                  alt={
+                                  alt={`${
                                     effortLevelMap[
                                       tier.effort_level as 1 | 2 | 3 | 4
                                     ].name
-                                  }
+                                  } - ${
+                                    effortLevelMap[
+                                      tier.effort_level as 1 | 2 | 3 | 4
+                                    ].description
+                                  }`}
                                   class="w-8 h-8"
                                 />
                               </div>
@@ -720,7 +732,11 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                     src={
                                       effortLevelMap[num as 1 | 2 | 3 | 4].icon
                                     }
-                                    alt=""
+                                    alt={`${
+                                      effortLevelMap[num as 1 | 2 | 3 | 4].name
+                                    } - ${
+                                      effortLevelMap[num as 1 | 2 | 3 | 4].description
+                                    }`}
                                     class={`w-5 h-5 ${num <= tier.effort_level ? "opacity-100" : "opacity-40"} ${num === tier.effort_level ? "scale-125" : "scale-100"}`}
                                   />
                                   {num === tier.effort_level && (
