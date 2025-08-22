@@ -1,0 +1,6 @@
+name = "cloudcredits-io"
+compatibility_date = "2025-08-22"
+
+[assets]
+directory = "./dist"
+html_handling = "drop-trailing-slash"

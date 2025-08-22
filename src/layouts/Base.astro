@@ -9,6 +9,7 @@ import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
 import Search from "@/layouts/components/Search.astro";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
 
 const pf = theme.fonts.font_family.primary;
 const sf = theme.fonts.font_family.secondary;
@@ -52,6 +53,8 @@ const {
   noindex,
   canonical,
 } = Astro.props;
+
+const ogUrl = canonical ?? getCanonicalFromAstroURL(Astro.url);
 ---
 
 <!doctype html>
@@ -154,10 +157,7 @@ const {
       )}
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:url" content={ogUrl} />
 
     <!-- twitter-title -->
     <meta
