@@ -1,3 +1,0 @@
-[assets]
-directory = "./dist"
-html_handling = "drop-trailing-slash"
