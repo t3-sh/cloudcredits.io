@@ -1,4 +1,5 @@
-name = "cloudcredits-io"compatibility_date = "2025-08-22"
+name = "cloudcredits-io"
+compatibility_date = "2025-08-22"
 
 [assets]
 directory = "./dist"
