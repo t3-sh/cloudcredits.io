@@ -1,0 +1,16 @@
+active: true
+name: Pangea
+short_name: Pangea
+slug: pangea
+color: "#2e7ec7"
+url: https://pangea.cloud
+intro: >-
+  AI security platform providing the industry's broadest set of security
+  guardrails that can be added to applications with just a few lines of code.
+best_deal: Startup program with security API credits
+video: ""
+tags:
+  - cybersecurity
+  - ai
+  - api
+  - dev tools
