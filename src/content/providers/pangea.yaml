@@ -1,0 +1,10 @@
+active: true
+name: "Pangea"
+short_name: "Pangea"
+slug: "pangea"
+url: "https://pangea.cloud"
+color: "#2e7ec7"
+best_deal: "Startup program for AI security guardrails"
+intro: "Security API platform providing guardrails and protection services specifically designed for AI applications with the industry's broadest set of AI security controls."
+video: ""
+tags: ["cybersecurity", "ai", "api", "dev tools"]
