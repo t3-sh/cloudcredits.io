@@ -1,0 +1,67 @@
+provider_slug: "capture-the-bug"
+title: "Capture The Bug Startup Program"
+meta_title: "Capture The Bug $1,000 Pentest Credits - Startup Program"
+intro: "Get $1,000 in penetration testing credits for early-stage teams building digital products with manual, real-time security testing"
+description: "Specialized startup program offering $1,000 in pentest credits for pre-seed to Series A companies. Features manual penetration testing, compliance-ready reports (SOC 2, ISO 27001, HIPAA), retesting support, and fast turnaround times designed for startups preparing for enterprise customers and security audits."
+status: "Active"
+url: "https://capturethebug.xyz/Claim-Credit"
+min_value: 1000
+max_value: 1000
+value_type: "credits"
+currency: "USD"
+tags: ["cybersecurity", "compliance", "enterprise", "b2b"]
+date: 2025-08-22
+
+tiers:
+  - name: "Startup Pentest Credit"
+    intro: "Complete penetration testing service with $1,000 credit for early-stage teams"
+    max_value: 1000
+    url: "https://capturethebug.xyz/Claim-Credit"
+    benefits:
+      - "$1,000 pentest credit for first security assessment"
+      - "Manual, real-time penetration testing with no automation noise"
+      - "Compliance-ready reports for SOC 2, ISO 27001, and HIPAA"
+      - "Retesting and fix guidance included without new contracts"
+      - "Fast turnaround with results delivered in days, not weeks"
+    benefits_level: 3
+    duration: ["30 days to use credit after claim"]
+    eligibility:
+      - "Pre-seed to Series A startup stage"
+      - "Less than 100 employees"
+      - "Building a digital product (web app, mobile app, or API)"
+      - "Willing to start first pentest within 30 days of credit claim"
+      - "Priority access for accelerator-backed teams (YC, Techstars, Antler, etc.)"
+    effort_level: 2
+    timeline_indication: "24 hours application review, 30 days to use credit"
+    steps_to_apply:
+      - name: "Complete Application Form"
+        description: "Fill out the startup credit application with company details, product info, and compliance needs"
+        action: "Claim Credit"
+        action_url: "https://capturethebug.xyz/Claim-Credit"
+      - name: "Application Review"
+        description: "Capture The Bug reviews applications within 24 hours"
+        action: "Wait for Approval"
+        action_url: ""
+      - name: "Schedule First Pentest"
+        description: "Once approved, schedule your first penetration test within 30 days"
+        action: "Schedule Test"
+        action_url: ""
+
+faq:
+  - question: "What types of testing are included in the $1,000 credit?"
+    answer: "The credit covers manual penetration testing of web applications, mobile apps, or APIs. This includes comprehensive security assessment, compliance-ready reports, fix guidance, and retesting of key vulnerabilities without additional contracts."
+  
+  - question: "How long do I have to use the $1,000 credit?"
+    answer: "Credits are valid for 30 days after they are claimed. You must also be willing to start your first pentest within 30 days of claiming the credit."
+  
+  - question: "What compliance standards do the reports support?"
+    answer: "Capture The Bug provides audit-ready reports formatted for SOC 2, ISO 27001, and HIPAA compliance requirements, designed to help close enterprise deals and build trust with customers."
+  
+  - question: "Do I need to be backed by a specific accelerator?"
+    answer: "No, but accelerator-backed teams (YC, Techstars, Antler, Blackbird, Icehouse, Startmate) receive priority access. All pre-seed to Series A startups with less than 100 employees can apply."
+  
+  - question: "How long does the application review take?"
+    answer: "Applications are reviewed within 24 hours of submission. You'll receive confirmation and next steps quickly after applying."
+  
+  - question: "What happens after I use the $1,000 credit?"
+    answer: "The credit covers your first penetration test. For ongoing testing needs, Capture The Bug offers flexible PTaaS (Penetration Testing as a Service) plans that scale with your startup's growth and security requirements."
