@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue geometric arrow -->
+  <path d="M20 20 L70 20 L70 35 L95 60 L70 85 L70 100 L20 100 L55 60 Z" fill="#42B8DD"/>
+  
+  <!-- Purple "pangea" text -->
+  <text x="120" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="600" fill="#7B3F98">pangea</text>
+</svg>
