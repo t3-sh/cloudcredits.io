@@ -1,0 +1,91 @@
+draft: false
+provider_slug: pangea
+title: Pangea Startup Program
+meta_title: "Pangea Startup Program - AI Security Credits for Startups"
+intro: >-
+  Get AI security credits to implement security guardrails for AI applications
+  with Pangea's comprehensive security API platform, designed for startups
+  building secure AI applications.
+description: >-
+  Pangea's Startup Program provides early-stage companies with credits to access
+  their comprehensive AI security platform. The program includes access to
+  security APIs like Prompt Guard for AI application protection, Secure Audit
+  Log for compliance, IP Intelligence for threat detection, and other security
+  services. Pangea empowers startups to ship secure AI applications quickly
+  with security guardrails that can be integrated with just a few lines of
+  code.
+status: Active
+tags:
+  - cybersecurity
+  - ai
+  - api
+  - dev tools
+url: https://pangea.cloud/pricing/startup/
+value_type: credits
+currency: USD
+min_value: 500
+max_value: 5000
+date: 2025-08-23
+community_notes: []
+tiers:
+  - name: Startup Program
+    intro: >-
+      Provides credits to access Pangea's AI security APIs including Prompt
+      Guard, AI Guard, Secure Audit Log, and other security services for
+      startups building AI applications.
+    max_value: 5000
+    url: https://pangea.cloud/pricing/startup/
+    benefits:
+      - Credits for AI security APIs including Prompt Guard and AI Guard
+      - Access to Secure Audit Log for compliance
+      - IP Intelligence and threat detection services
+      - Data sanitization with Redact and Vault services
+      - Developer-first APIs with easy integration
+    benefits_level: 2
+    duration:
+      - 12 months
+    eligibility:
+      - Early-stage startups building AI applications
+      - Companies focused on AI/ML product development
+      - First-time Pangea customers
+      - Startups requiring AI security solutions
+    effort_level: 2
+    timeline_indication: "5-7 business days"
+    steps_to_apply:
+      - name: Visit Startup Program Page
+        description: >-
+          Go to Pangea's startup program page to learn about the available
+          benefits and requirements.
+        action: Learn More
+        action_url: https://pangea.cloud/pricing/startup/
+      - name: Contact Pangea
+        description: >-
+          Reach out to Pangea's team to discuss your startup's security needs
+          and apply for the program.
+        action: Contact Sales
+        action_url: https://pangea.cloud/contact
+faq:
+  - question: What security services does Pangea provide?
+    answer: >-
+      Pangea offers a comprehensive suite of AI security APIs including Prompt
+      Guard for prompt injection protection, AI Guard for general AI security,
+      Secure Audit Log, Redact for data sanitization, IP Intelligence, Embargo
+      Check, Vault for secrets management, and Authentication services.
+  - question: Who is eligible for the Pangea Startup Program?
+    answer: >-
+      The program is designed for early-stage startups building AI applications
+      who need security guardrails and are first-time Pangea customers.
+  - question: How do I integrate Pangea's security APIs?
+    answer: >-
+      Pangea's APIs are designed for developers with easy integration requiring
+      just a few lines of code. They provide comprehensive documentation and
+      SDKs for popular programming languages.
+  - question: What happens after the startup program credits are used?
+    answer: >-
+      After the credits are exhausted, you can continue using Pangea's services
+      with their standard pricing plans or apply for additional startup support
+      if still eligible.
+  - question: How long does the application process take?
+    answer: >-
+      Applications are typically reviewed within 5-7 business days, with
+      onboarding support provided to approved companies.
