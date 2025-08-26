@@ -1,0 +1,54 @@
+draft: false
+provider_slug: pangea
+title: "Pangea Startup Program"
+meta_title: "Pangea Startup Program - AI Security Credits | CloudCredits"
+intro: "Access to Pangea's AI security guardrails and protection services designed for startups building secure AI applications with just a few lines of code."
+description: "Pangea's Startup Program provides early-stage companies access to their comprehensive AI security API platform, featuring security guardrails specifically designed for AI applications. The program helps startups implement enterprise-grade AI security controls without significant upfront costs, enabling secure AI application development with minimal integration complexity."
+status: "Active"
+tags: ["cybersecurity", "ai", "api", "dev tools"]
+url: "https://pangea.cloud/pricing/startup/"
+value_type: "credits"
+currency: "USD"
+min_value: 0
+max_value: 5000
+community_notes: 
+  - title: "Program Details Need Verification"
+    body: "Program information compiled from limited public sources due to web scraping limitations. Details should be verified with Pangea directly."
+    source_url: "https://pangea.cloud"
+date: 2025-08-23
+tiers:
+  - name: "Startup Tier"
+    intro: "Access to Pangea's AI security guardrails for qualifying startups"
+    max_value: 5000
+    url: "https://pangea.cloud/pricing/startup/"
+    benefits:
+      - "AI security guardrails and protection services"
+      - "API-based security controls for AI applications"
+      - "Integration with just a few lines of code"
+      - "Access to comprehensive security controls"
+      - "Technical documentation and support"
+    benefits_level: 2
+    duration: ["6-12 months"]
+    eligibility:
+      - "Early-stage startups building AI applications"
+      - "Companies with limited funding"
+      - "First-time Pangea users"
+      - "Active development of AI-powered applications"
+    effort_level: 2
+    timeline_indication: "5-10 business days for review"
+    steps_to_apply:
+      - name: "Visit Startup Program Page"
+        description: "Access the startup program application on Pangea's website"
+        action: "Apply Now"
+        action_url: "https://pangea.cloud/pricing/startup/"
+faq:
+  - question: "What AI security services are included?"
+    answer: "Pangea provides security guardrails specifically designed for AI applications, including protection controls that can be integrated with minimal code changes."
+  - question: "Who is eligible for the startup program?"
+    answer: "Early-stage startups building AI applications, particularly those with limited funding and first-time Pangea users."
+  - question: "How long does the program last?"
+    answer: "The program typically provides benefits for 6-12 months, though exact duration may vary based on individual circumstances."
+  - question: "What happens after the program period ends?"
+    answer: "Startups will need to transition to paid plans to continue using Pangea's services at standard pricing rates."
+  - question: "Is technical support included?"
+    answer: "Yes, the program includes technical documentation and support to help with integration and implementation."
