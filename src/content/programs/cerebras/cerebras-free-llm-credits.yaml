@@ -18,15 +18,15 @@ tags:
 url: https://cerebras.ai/build-with-us
 value_type: credits
 currency: USD
-min_value: 0
-max_value: 182
+min_value: 0.5
+max_value: 0.5
 community_notes: []
 tiers:
   - name: Free Daily Tokens
     intro: >-
       Access 1 million free tokens per day for LLM inference through the
       Cerebras API. Tokens refresh daily and additional usage is pay-as-you-go.
-    max_value: 182
+    max_value: 0.5
     url: https://cerebras.ai/build-with-us
     benefits:
       - 1M free tokens per day for LLM inference

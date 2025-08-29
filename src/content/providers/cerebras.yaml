@@ -2,7 +2,7 @@ active: true
 name: Cerebras
 short_name: Cerebras
 slug: cerebras
-color: "#F15A29"
+color: "#F05A28"
 url: https://cerebras.ai
 intro: >-
   Cerebras provides high-performance AI compute and inference services powered
