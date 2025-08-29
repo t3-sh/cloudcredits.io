@@ -33,7 +33,7 @@ tiers:
       - Instant API access with no waitlist
       - Access to state-of-the-art open and proprietary models
       - Community support via Discord
-    benefits_level: 2
+    benefits_level: 1
     duration:
       - Daily (tokens refresh every 24 hours)
     eligibility:
