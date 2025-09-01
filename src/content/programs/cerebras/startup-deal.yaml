@@ -1,0 +1,49 @@
+provider_slug: cerebras
+title: Cerebras Startup Deal
+meta_title: Up to $22.5k in Inference Credits
+intro: >-
+  Get up to $22,500 worth of inference on Cerebras Cloud plus priority support
+  and co-marketing opportunities.
+description: >-
+  Cerebras offers startups significant inference credits on its cloud platform,
+  enabling them to experiment with AI workloads while receiving dedicated
+  support and promotional collaboration.
+status: Active
+tags:
+  - ai
+  - gpu
+  - cloud
+url: https://www.cerebras.ai/startup-deal
+value_type: credits
+currency: USD
+max_value: 22500
+tiers:
+  - name: Startup Deal
+    intro: Up to $22.5k in inference credits with added support and co-marketing.
+    max_value: 22500
+    url: https://www.cerebras.ai/startup-deal
+    benefits:
+      - Up to $22.5k worth of inference on Cerebras Cloud
+      - Priority support
+      - Co-marketing opportunities
+    benefits_level: 2
+    eligibility:
+      - Startups building AI applications
+    effort:
+      - Online application form
+    effort_level: 1
+    steps_to_apply:
+      - name: Apply Online
+        description: Fill out the startup deal application form.
+        action: Apply
+        action_url: https://share.hsforms.com/11Msw6D6mSGuRLIWky7P4Iw5c85x
+success_stories:
+  - title: Delphi
+    summary: OpenCall’s AI phone agents became faster and more reliable after switching to Cerebras.
+    link: https://youtu.be/bQv13grdbjo
+  - title: OpenCall
+    summary: Built real-time AI-powered contact centers with minimal latency on Cerebras.
+    link: https://youtu.be/sS7cPRfOaV0
+  - title: Alex
+    summary: Code Apply saw execution time drop from 15 seconds to under one using Cerebras Inference.
+    link: https://youtu.be/bnudu7Jxqjc

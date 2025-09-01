@@ -5,12 +5,15 @@ slug: cerebras
 color: "#F05A28"
 url: https://cerebras.ai
 intro: >-
-  Cerebras provides high-performance AI compute and inference services powered
-  by its wafer-scale hardware, enabling developers to build and deploy large
-  language models efficiently.
-best_deal: 1M free tokens per day for LLM inference
+  Cerebras builds wafer-scale AI processors and the CS-2 system, delivering
+  massive compute for training and inference. Through Cerebras Cloud they
+  expose this hardware via simple APIs, letting teams run large language models
+  with high throughput and low latency.
+best_deal: Up to $22.5k in inference credits for startups
 video: ""
 tags:
   - ai
   - llm
   - api
+  - cloud
+  - gpu
