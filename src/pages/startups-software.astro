@@ -1,0 +1,587 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+// Get software-focused programs
+const allPrograms = await getCollection("programs");
+const softwarePrograms = allPrograms
+  .filter(
+    (p) =>
+      p.data.tags?.some((tag) =>
+        [
+          "saas",
+          "dev tools",
+          "productivity",
+          "design",
+          "collaboration",
+          "automation",
+          "no-code",
+          "low-code",
+        ].includes(tag),
+      ) ||
+      p.data.title.toLowerCase().includes("software") ||
+      p.data.intro.toLowerCase().includes("software") ||
+      p.data.description.toLowerCase().includes("software"),
+  )
+  .slice(0, 18);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Startups Software 2025 - Best SaaS Tools & Software Deals"
+  meta_title="Startup Software & SaaS Tools - Free Programs & Discounts"
+  description="Essential software for startups: SaaS tools, productivity apps, development software, and business applications. 150+ verified programs with free access and startup discounts."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+  >
+    <div class="text-center px-4 z-20 w-full max-w-6xl mx-auto">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark dark:text-white"
+      >
+        Essential Software for Startups
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto"
+      >
+        Discover great software tools and SaaS platforms for startups. From
+        development tools to business applications - all with startup-friendly
+        pricing and free programs.
+      </p>
+
+      <!-- Software Categories Preview -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto"
+      >
+        {
+          [
+            { icon: "💻", label: "Development" },
+            { icon: "🎨", label: "Design & Creative" },
+            { icon: "📊", label: "Business Apps" },
+            { icon: "🤖", label: "AI & Automation" },
+          ].map((cat) => (
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+              <div class="text-2xl mb-2">{cat.icon}</div>
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">
+                {cat.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex justify-center gap-4">
+        <a
+          href="#software-categories"
+          class="btn bg-primary text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+        >
+          <span>Browse Software</span>
+          <span>↓</span>
+        </a>
+        <a
+          href="#free-software"
+          class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <span>Free Programs</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Categories -->
+  <section
+    id="software-categories"
+    class="section py-16 bg-gray-50 dark:bg-gray-900"
+  >
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Software Categories for Every Startup Need
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto"
+      >
+        From MVP development to scaling operations - find the right software
+        tools for every stage of your startup journey.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-16">
+        {
+          [
+            {
+              category: "Development & Engineering",
+              description:
+                "IDEs, version control, deployment platforms, databases, and development frameworks for building products",
+              software: [
+                "GitHub",
+                "JetBrains",
+                "Vercel",
+                "Railway",
+                "MongoDB",
+                "Retool",
+              ],
+              useCases: [
+                "Code repositories",
+                "IDE & editors",
+                "Deployment & hosting",
+                "Database management",
+                "API development",
+              ],
+              icon: "💻",
+              pricing: "Free to $50/month",
+              startupBenefit: "Up to 12 months free",
+            },
+            {
+              category: "Design & Creative Tools",
+              description:
+                "Design software, prototyping tools, image editing, and creative platforms for product and marketing",
+              software: [
+                "Figma",
+                "Framer",
+                "Adobe Creative",
+                "Canva",
+                "Sketch",
+                "InVision",
+              ],
+              useCases: [
+                "UI/UX design",
+                "Prototyping",
+                "Brand assets",
+                "Marketing materials",
+                "Presentations",
+              ],
+              icon: "🎨",
+              pricing: "Free to $30/month",
+              startupBenefit: "Up to 50% off",
+            },
+            {
+              category: "Business & Operations",
+              description:
+                "CRM, project management, accounting, HR, and operational software for running your business",
+              software: [
+                "HubSpot",
+                "Notion",
+                "Asana",
+                "QuickBooks",
+                "Slack",
+                "Linear",
+              ],
+              useCases: [
+                "Customer management",
+                "Project tracking",
+                "Team collaboration",
+                "Financial management",
+                "Documentation",
+              ],
+              icon: "📊",
+              pricing: "$10-100/month",
+              startupBenefit: "Up to 75% off first year",
+            },
+            {
+              category: "Marketing & Growth",
+              description:
+                "Email marketing, social media, analytics, SEO, and growth tools for customer acquisition",
+              software: [
+                "Mailchimp",
+                "Hootsuite",
+                "Google Analytics",
+                "Mixpanel",
+                "Segment",
+                "Brevo",
+              ],
+              useCases: [
+                "Email campaigns",
+                "Social media",
+                "Website analytics",
+                "User tracking",
+                "A/B testing",
+              ],
+              icon: "📈",
+              pricing: "Free to $200/month",
+              startupBenefit: "Extended free tiers",
+            },
+            {
+              category: "AI & Automation",
+              description:
+                "AI platforms, machine learning tools, workflow automation, and intelligent software solutions",
+              software: [
+                "OpenAI",
+                "Anthropic",
+                "Zapier",
+                "n8n",
+                "Make",
+                "Retool Workflows",
+              ],
+              useCases: [
+                "AI integration",
+                "Workflow automation",
+                "Data processing",
+                "Customer support",
+                "Content generation",
+              ],
+              icon: "🤖",
+              pricing: "$20-500/month",
+              startupBenefit: "Up to $100K credits",
+            },
+            {
+              category: "Security & Infrastructure",
+              description:
+                "Cloud security, monitoring, backup, compliance, and infrastructure management tools",
+              software: [
+                "1Password",
+                "Vanta",
+                "Sentry",
+                "DataDog",
+                "Auth0",
+                "Cloudflare",
+              ],
+              useCases: [
+                "Password management",
+                "Security compliance",
+                "Error monitoring",
+                "Performance tracking",
+                "Authentication",
+              ],
+              icon: "🔒",
+              pricing: "$5-300/month",
+              startupBenefit: "Up to 6 months free",
+            },
+          ].map((cat, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <span class="text-4xl mr-4">{cat.icon}</span>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-dark dark:text-white">
+                      {cat.category}
+                    </h3>
+                    <div class="flex items-center gap-4 mt-1">
+                      <span class="text-sm text-gray-500 dark:text-gray-400">
+                        {cat.pricing}
+                      </span>
+                      <span class="text-sm text-primary font-medium">
+                        {cat.startupBenefit}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6">
+                {cat.description}
+              </p>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-medium text-dark dark:text-white mb-3">
+                    Common Use Cases:
+                  </h4>
+                  <ul class="space-y-2">
+                    {cat.useCases.map((useCase) => (
+                      <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                        {useCase}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-medium text-dark dark:text-white mb-3">
+                    Popular Software:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    {cat.software.map((tool) => (
+                      <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Software Programs -->
+  <section id="free-software" class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Free Software Programs for Startups
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Verified startup programs offering free access, extended trials, and
+        significant discounts on essential software.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          softwarePrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/providers"
+          class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 inline-flex items-center gap-2"
+        >
+          <span>View All Software Programs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Stack Recommendations -->
+  <section class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          Recommended Software Stacks by Startup Type
+        </h2>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          {
+            [
+              {
+                type: "SaaS Startup",
+                description: "B2B software companies building web applications",
+                stack: {
+                  Development: ["GitHub", "Vercel", "Railway", "MongoDB"],
+                  Design: ["Figma", "Framer"],
+                  Business: ["HubSpot", "Linear", "Notion"],
+                  Marketing: ["Mailchimp", "Mixpanel", "PostHog"],
+                  Operations: ["Slack", "1Password", "Sentry"],
+                },
+                monthlyBudget: "$200-800",
+                icon: "💻",
+              },
+              {
+                type: "E-commerce Startup",
+                description: "Online retail and marketplace businesses",
+                stack: {
+                  Platform: ["Shopify", "WooCommerce", "Stripe"],
+                  Design: ["Canva", "Adobe", "Figma"],
+                  Marketing: ["Mailchimp", "Google Ads", "Facebook Ads"],
+                  Analytics: ["Google Analytics", "Hotjar", "Klaviyo"],
+                  Operations: ["Asana", "Zendesk", "QuickBooks"],
+                },
+                monthlyBudget: "$300-1000",
+                icon: "🛒",
+              },
+              {
+                type: "AI/ML Startup",
+                description:
+                  "Companies building AI-powered products and services",
+                stack: {
+                  "AI/ML": [
+                    "OpenAI",
+                    "Anthropic",
+                    "Hugging Face",
+                    "Weights & Biases",
+                  ],
+                  Infrastructure: ["AWS", "Google Cloud", "MongoDB", "Redis"],
+                  Development: ["GitHub", "JetBrains", "Docker", "Kubernetes"],
+                  Data: ["Databricks", "Snowflake", "dbt", "Airbyte"],
+                  Monitoring: ["DataDog", "Sentry", "Grafana"],
+                },
+                monthlyBudget: "$500-2000",
+                icon: "🤖",
+              },
+            ].map((startup, index) => (
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700">
+                <div class="text-center mb-6">
+                  <div class="text-4xl mb-3">{startup.icon}</div>
+                  <h3 class="text-xl font-semibold text-dark dark:text-white">
+                    {startup.type}
+                  </h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                    {startup.description}
+                  </p>
+                </div>
+
+                <div class="space-y-4 mb-6">
+                  {Object.entries(startup.stack).map(([category, tools]) => (
+                    <div>
+                      <h4 class="font-medium text-dark dark:text-white mb-2 text-sm">
+                        {category}:
+                      </h4>
+                      <div class="flex flex-wrap gap-1">
+                        {tools.map((tool) => (
+                          <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-gray-600 dark:text-gray-400">
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div class="pt-4 border-t border-gray-200 dark:border-gray-700 text-center">
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    Typical Monthly Budget:
+                  </div>
+                  <div class="text-lg font-semibold text-primary">
+                    {startup.monthlyBudget}
+                  </div>
+                  <div class="text-xs text-gray-400 mt-1">
+                    With startup discounts: 50-75% less
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Selection Guide -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          How to Choose the Right Software for Your Startup
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-semibold mb-6 text-dark dark:text-white">
+              Key Selection Criteria
+            </h3>
+            <div class="space-y-4">
+              {
+                [
+                  {
+                    criteria: "Startup-Friendly Pricing",
+                    description:
+                      "Look for free tiers, startup programs, and usage-based pricing that scales with growth",
+                  },
+                  {
+                    criteria: "Easy Integration",
+                    description:
+                      "Choose tools that integrate well with your existing stack and have good APIs",
+                  },
+                  {
+                    criteria: "Scalability",
+                    description:
+                      "Ensure the software can grow with your team and handle increased usage",
+                  },
+                  {
+                    criteria: "Learning Curve",
+                    description:
+                      "Consider implementation time and training requirements for your team",
+                  },
+                  {
+                    criteria: "Support Quality",
+                    description:
+                      "Evaluate documentation, community support, and customer service responsiveness",
+                  },
+                ].map((item) => (
+                  <div class="border-l-4 border-primary pl-4">
+                    <h4 class="font-semibold text-dark dark:text-white mb-1">
+                      {item.criteria}
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 class="text-xl font-semibold mb-6 text-dark dark:text-white">
+              Software Budget Planning
+            </h3>
+
+            <div class="space-y-4">
+              <div
+                class="flex justify-between items-center pb-2 border-b border-gray-200 dark:border-gray-700"
+              >
+                <span class="text-gray-600 dark:text-gray-400">Pre-Revenue</span
+                >
+                <span class="font-semibold text-dark dark:text-white"
+                  >$0-200/month</span
+                >
+              </div>
+              <div
+                class="flex justify-between items-center pb-2 border-b border-gray-200 dark:border-gray-700"
+              >
+                <span class="text-gray-600 dark:text-gray-400"
+                  >Early Revenue</span
+                >
+                <span class="font-semibold text-dark dark:text-white"
+                  >$200-800/month</span
+                >
+              </div>
+              <div
+                class="flex justify-between items-center pb-2 border-b border-gray-200 dark:border-gray-700"
+              >
+                <span class="text-gray-600 dark:text-gray-400"
+                  >Growth Stage</span
+                >
+                <span class="font-semibold text-dark dark:text-white"
+                  >$800-3000/month</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-600 dark:text-gray-400">Scale Stage</span
+                >
+                <span class="font-semibold text-dark dark:text-white"
+                  >$3000+/month</span
+                >
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+              <h4 class="font-semibold text-green-900 dark:text-green-100 mb-2">
+                💡 Cost Optimization Tip
+              </h4>
+              <p class="text-green-800 dark:text-green-200 text-sm">
+                Using startup programs can help reduce software costs
+                significantly in the first 1-2 years, potentially saving
+                thousands annually.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

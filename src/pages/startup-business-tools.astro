@@ -1,0 +1,414 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+// Get business-focused programs
+const allPrograms = await getCollection("programs");
+const businessPrograms = allPrograms
+  .filter(
+    (p) =>
+      p.data.tags?.some((tag) =>
+        [
+          "crm",
+          "marketing",
+          "sales",
+          "productivity",
+          "analytics",
+          "customer support",
+          "finance",
+          "hr",
+        ].includes(tag),
+      ) ||
+      p.data.title.toLowerCase().includes("business") ||
+      p.data.intro.toLowerCase().includes("business"),
+  )
+  .slice(0, 15);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Startup Business Tools 2025 - Essential Software for Growing Companies"
+  meta_title="Best Startup Business Tools - CRM, Marketing & Operations Software"
+  description="Essential business tools for startups: CRM systems, marketing automation, analytics, customer support, and operations software. 150+ verified deals and free programs for growing companies."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+  >
+    <div class="text-center px-4 z-20 w-full max-w-6xl mx-auto">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark dark:text-white"
+      >
+        Essential Startup Business Tools
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto"
+      >
+        The complete toolkit for startup operations: CRM, marketing automation,
+        analytics, customer support, and business management software. All with
+        startup-friendly pricing.
+      </p>
+
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-2xl mx-auto"
+      >
+        {
+          [
+            { icon: "📊", label: "Analytics & BI" },
+            { icon: "🤝", label: "CRM & Sales" },
+            { icon: "📧", label: "Marketing Tools" },
+            { icon: "💬", label: "Customer Support" },
+          ].map((tool) => (
+            <div class="text-center">
+              <div class="text-3xl mb-2">{tool.icon}</div>
+              <div class="text-sm font-medium text-gray-600 dark:text-gray-400">
+                {tool.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex justify-center gap-4">
+        <a
+          href="#business-tools"
+          class="btn bg-primary text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+        >
+          <span>Explore Business Tools</span>
+          <span>↓</span>
+        </a>
+        <a
+          href="/providers"
+          class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <span>All Deals</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Tool Categories -->
+  <section
+    id="business-tools"
+    class="section py-16 bg-gray-50 dark:bg-gray-900"
+  >
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Business Tools That Scale With Your Startup
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto"
+      >
+        From day one operations to enterprise-scale systems - find the right
+        business tools for every stage of your startup journey.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-16">
+        {
+          [
+            {
+              category: "Sales & CRM",
+              description:
+                "Customer relationship management, sales automation, and pipeline tracking tools",
+              benefits: [
+                "Track leads & customers",
+                "Automate sales processes",
+                "Manage pipeline",
+                "Generate reports",
+              ],
+              tools: [
+                "HubSpot CRM",
+                "Salesforce",
+                "Pipedrive",
+                "Attio",
+                "Apollo",
+              ],
+              icon: "🤝",
+              savings: "Up to 75% off",
+            },
+            {
+              category: "Marketing Automation",
+              description:
+                "Email marketing, social media management, and campaign automation platforms",
+              benefits: [
+                "Email campaigns",
+                "Social media scheduling",
+                "Lead nurturing",
+                "Marketing analytics",
+              ],
+              tools: ["Mailchimp", "Brevo", "Hootsuite", "Segment", "Mixpanel"],
+              icon: "📧",
+              savings: "Up to $50K credits",
+            },
+            {
+              category: "Analytics & Business Intelligence",
+              description:
+                "Data analytics, business intelligence, and performance tracking solutions",
+              benefits: [
+                "Track KPIs",
+                "User analytics",
+                "Revenue insights",
+                "Custom dashboards",
+              ],
+              tools: [
+                "Google Analytics",
+                "Mixpanel",
+                "Amplitude",
+                "Segment",
+                "PostHog",
+              ],
+              icon: "📊",
+              savings: "Up to $25K credits",
+            },
+            {
+              category: "Customer Support",
+              description:
+                "Help desk software, live chat, and customer success platforms",
+              benefits: [
+                "Live chat support",
+                "Ticket management",
+                "Knowledge base",
+                "Customer feedback",
+              ],
+              tools: [
+                "Intercom",
+                "Zendesk",
+                "Help Scout",
+                "Front",
+                "LiveAgent",
+              ],
+              icon: "💬",
+              savings: "Up to 50% off",
+            },
+            {
+              category: "Project Management",
+              description:
+                "Task management, team collaboration, and workflow automation tools",
+              benefits: [
+                "Task tracking",
+                "Team collaboration",
+                "Project timelines",
+                "Resource planning",
+              ],
+              tools: ["Asana", "Linear", "Notion", "ClickUp", "Monday.com"],
+              icon: "📋",
+              savings: "Up to 12 months free",
+            },
+            {
+              category: "Finance & Operations",
+              description:
+                "Accounting, invoicing, expense management, and business operations software",
+              benefits: [
+                "Financial tracking",
+                "Invoice management",
+                "Expense reports",
+                "Tax compliance",
+              ],
+              tools: ["Stripe Atlas", "QuickBooks", "Xero", "Brex", "Mercury"],
+              icon: "💰",
+              savings: "Up to $10K credits",
+            },
+          ].map((cat, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <span class="text-4xl mr-4">{cat.icon}</span>
+                  <div>
+                    <h3 class="text-2xl font-semibold text-dark dark:text-white">
+                      {cat.category}
+                    </h3>
+                    <span class="text-sm text-primary font-medium">
+                      {cat.savings}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-gray-600 dark:text-gray-400 mb-6">
+                {cat.description}
+              </p>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-medium text-dark dark:text-white mb-3">
+                    Key Benefits:
+                  </h4>
+                  <ul class="space-y-2">
+                    {cat.benefits.map((benefit) => (
+                      <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-medium text-dark dark:text-white mb-3">
+                    Popular Tools:
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    {cat.tools.map((tool) => (
+                      <span class="text-xs px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Business Programs -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Top Business Tool Deals for Startups
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Verified startup programs offering significant savings on essential
+        business software.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          businessPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Success Framework -->
+  <section class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          The Startup Business Stack Framework
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          {
+            [
+              {
+                stage: "Foundation Stage",
+                subtitle: "0-10 employees",
+                description:
+                  "Essential tools to get your business operations running",
+                tools: [
+                  "Basic CRM",
+                  "Email marketing",
+                  "Accounting software",
+                  "Project management",
+                ],
+                budget: "$0-500/month",
+                icon: "🚀",
+              },
+              {
+                stage: "Growth Stage",
+                subtitle: "10-50 employees",
+                description:
+                  "Advanced tools to scale operations and improve efficiency",
+                tools: [
+                  "Advanced CRM",
+                  "Marketing automation",
+                  "Analytics platform",
+                  "Customer support",
+                ],
+                budget: "$500-2000/month",
+                icon: "📈",
+              },
+              {
+                stage: "Scale Stage",
+                subtitle: "50+ employees",
+                description:
+                  "Enterprise tools for complex operations and team management",
+                tools: [
+                  "Enterprise CRM",
+                  "Business intelligence",
+                  "Advanced analytics",
+                  "Multi-channel support",
+                ],
+                budget: "$2000+/month",
+                icon: "🏢",
+              },
+            ].map((stage, index) => (
+              <div class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700">
+                <div class="text-center mb-6">
+                  <div class="text-4xl mb-3">{stage.icon}</div>
+                  <h3 class="text-xl font-semibold text-dark dark:text-white">
+                    {stage.stage}
+                  </h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    {stage.subtitle}
+                  </p>
+                </div>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6 text-center">
+                  {stage.description}
+                </p>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-medium text-dark dark:text-white mb-2">
+                      Recommended Tools:
+                    </h4>
+                    <ul class="space-y-1">
+                      {stage.tools.map((tool) => (
+                        <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                          <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                          {tool}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <div class="flex justify-between items-center">
+                      <span class="text-sm text-gray-500 dark:text-gray-400">
+                        Typical Budget:
+                      </span>
+                      <span class="font-semibold text-primary">
+                        {stage.budget}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

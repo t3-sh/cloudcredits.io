@@ -186,6 +186,9 @@ export default function AssistantClient({
       <div className="container">
         <div className="max-w-3xl mx-auto mb-8 mt-8">
           <AIInput onSubmit={handleSubmit} loading={isLoading} />
+          <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
+            ⏱️ I usually respond within 30 seconds - hang tight!
+          </p>
         </div>
       </div>
 

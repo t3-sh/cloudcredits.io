@@ -50,18 +50,18 @@ tiers:
 faq:
   - question: "What types of testing are included in the $1,000 credit?"
     answer: "The credit covers manual penetration testing of web applications, mobile apps, or APIs. This includes comprehensive security assessment, compliance-ready reports, fix guidance, and retesting of key vulnerabilities without additional contracts."
-  
+
   - question: "How long do I have to use the $1,000 credit?"
     answer: "Credits are valid for 30 days after they are claimed. You must also be willing to start your first pentest within 30 days of claiming the credit."
-  
+
   - question: "What compliance standards do the reports support?"
     answer: "Capture The Bug provides audit-ready reports formatted for SOC 2, ISO 27001, and HIPAA compliance requirements, designed to help close enterprise deals and build trust with customers."
-  
+
   - question: "Do I need to be backed by a specific accelerator?"
     answer: "No, but accelerator-backed teams (YC, Techstars, Antler, Blackbird, Icehouse, Startmate) receive priority access. All pre-seed to Series A startups with less than 100 employees can apply."
-  
+
   - question: "How long does the application review take?"
     answer: "Applications are reviewed within 24 hours of submission. You'll receive confirmation and next steps quickly after applying."
-  
+
   - question: "What happens after I use the $1,000 credit?"
     answer: "The credit covers your first penetration test. For ongoing testing needs, Capture The Bug offers flexible PTaaS (Penetration Testing as a Service) plans that scale with your startup's growth and security requirements."

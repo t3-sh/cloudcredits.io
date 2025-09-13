@@ -1,0 +1,161 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const allPrograms = await getCollection("programs");
+
+const aiTags = new Set([
+  "ai",
+  "llm",
+  "openai",
+  "anthropic",
+  "agents",
+  "ml",
+  "speech",
+]);
+
+const aiPrograms = allPrograms.filter((p) => {
+  const tags = (p.data.tags as string[] | undefined) || [];
+  return tags.some((t) => aiTags.has(t));
+});
+
+// Manual curated order (coolest first)
+const curatedProviderOrder = [
+  "mistral",
+  "openai",
+  "xai",
+  "pinecone",
+  "llamaindex",
+  "mem0",
+  "deepgram",
+  "fireworks",
+  "heygen",
+  "pangea",
+  "gcp",
+  "azure",
+  "scaleway",
+  "wope",
+];
+
+const curatedPrograms = aiPrograms.sort((a, b) => {
+  const ai = curatedProviderOrder.indexOf(a.data.provider_slug as string);
+  const bi = curatedProviderOrder.indexOf(b.data.provider_slug as string);
+  if (ai !== -1 && bi !== -1) return ai - bi;
+  if (ai !== -1) return -1;
+  if (bi !== -1) return 1;
+  return (b.data.max_value || 0) - (a.data.max_value || 0);
+});
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="AI deals (2025) — Best credits & discounts for builders"
+  meta_title="AI deal: credits, discounts, and startup offers (curated 2025)"
+  description="The best AI deals for startups: model credits, vector DB offers, speech AI, and infrastructure discounts. Skip the noise, find what actually works."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <section
+    class="min-h-[60vh] flex flex-col items-center justify-center text-center px-6"
+  >
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+      Best AI deals (curated 2025)
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mb-6"
+    >
+      The AI deals that actually matter. Credits, discounts, and startup offers
+      to help you ship without burning through cash.
+    </p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a
+        href="#programs"
+        class="btn bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90"
+        >See deals</a
+      >
+      <a
+        href="#how-it-works"
+        class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >How to choose</a
+      >
+    </div>
+  </section>
+
+  <section id="programs" class="section py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Editor’s picks: standout AI deals
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10"
+      >
+        Ordered by what's most interesting. Always double-check the details on
+        the official page before applying.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          curatedPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        How to choose an AI deal (quick take)
+      </h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Models & inference deals</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Start with one provider and one model family</li>
+            <li>Track cost per request early</li>
+            <li>Prefer serverless until usage is steady</li>
+            <li>Use smaller context unless necessary</li>
+          </ul>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">
+            Data, vectors & agent stack deals
+          </h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Vector DB for retrieval; keep schemas simple</li>
+            <li>Guardrails first, orchestration later</li>
+            <li>Evaluate evals; don’t fly blind</li>
+            <li>Log prompts and outcomes from day one</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto mt-10 text-sm text-gray-600 dark:text-gray-400 text-center"
+      >
+        Deal terms evolve. Check the official program page for the latest
+        credits, limits, and timelines before applying.
+      </div>
+    </div>
+  </section>
+</Base>

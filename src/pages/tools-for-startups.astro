@@ -1,0 +1,560 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+// Get all programs and categorize them
+const allPrograms = await getCollection("programs");
+const toolPrograms = allPrograms.slice(0, 24); // Get more programs for this comprehensive page
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Tools for Startups 2025 - Complete Startup Toolkit & Resources"
+  meta_title="Complete Startup Tools List - 200+ Essential Tools & Resources"
+  description="The ultimate collection of tools for startups: development, marketing, design, analytics, and business tools. 200+ verified programs with free access and startup discounts."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+  >
+    <div class="text-center px-4 z-20 w-full max-w-6xl mx-auto">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark dark:text-white"
+      >
+        Complete Toolkit for Startups
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto"
+      >
+        Every tool your startup needs to build, launch, and scale successfully.
+        From idea validation to IPO - discover 200+ essential tools with
+        startup-friendly pricing.
+      </p>
+
+      <!-- Tool Stats -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto"
+      >
+        {
+          [
+            { number: "200+", label: "Essential Tools", icon: "🛠️" },
+            { number: "15+", label: "Categories", icon: "📂" },
+            { number: "$2M+", label: "Free Credits", icon: "💰" },
+            { number: "Daily", label: "Updates", icon: "🔄" },
+          ].map((stat) => (
+            <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div class="text-2xl mb-2">{stat.icon}</div>
+              <div class="text-2xl font-bold text-primary">{stat.number}</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">
+                {stat.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex justify-center gap-4">
+        <a
+          href="#startup-toolkit"
+          class="btn bg-primary text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+        >
+          <span>Explore Toolkit</span>
+          <span>↓</span>
+        </a>
+        <a
+          href="#free-tools"
+          class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <span>Free Tools</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Startup Toolkit Overview -->
+  <section
+    id="startup-toolkit"
+    class="section py-16 bg-gray-50 dark:bg-gray-900"
+  >
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        The Complete Startup Toolkit
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto"
+      >
+        Every successful startup needs the right tools. We've organized 200+
+        essential tools by function and startup stage.
+      </p>
+
+      <!-- Tool Categories Grid -->
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16"
+      >
+        {
+          [
+            {
+              category: "Development & Tech",
+              tools: ["GitHub", "Vercel", "Railway", "MongoDB", "Redis"],
+              description: "Build and deploy your product",
+              icon: "💻",
+              count: "40+",
+              topSaving: "$100K AWS credits",
+            },
+            {
+              category: "Design & UX",
+              tools: ["Figma", "Framer", "Adobe", "Sketch", "InVision"],
+              description: "Create beautiful user experiences",
+              icon: "🎨",
+              count: "20+",
+              topSaving: "50% off Creative Suite",
+            },
+            {
+              category: "Marketing & Growth",
+              tools: ["HubSpot", "Mailchimp", "Google Ads", "Mixpanel"],
+              description: "Acquire and retain customers",
+              icon: "📈",
+              count: "35+",
+              topSaving: "75% off HubSpot",
+            },
+            {
+              category: "Analytics & Data",
+              tools: ["Google Analytics", "Amplitude", "Segment", "PostHog"],
+              description: "Make data-driven decisions",
+              icon: "📊",
+              count: "25+",
+              topSaving: "$50K in credits",
+            },
+            {
+              category: "Communication",
+              tools: ["Slack", "Discord", "Zoom", "Loom", "Calendly"],
+              description: "Connect with team and customers",
+              icon: "💬",
+              count: "18+",
+              topSaving: "12 months free",
+            },
+            {
+              category: "Productivity",
+              tools: ["Notion", "Asana", "Linear", "ClickUp", "Airtable"],
+              description: "Organize work and collaborate",
+              icon: "⚡",
+              count: "22+",
+              topSaving: "6 months free",
+            },
+            {
+              category: "Finance & Legal",
+              tools: ["Stripe", "QuickBooks", "Brex", "Mercury", "Clerky"],
+              description: "Manage money and compliance",
+              icon: "💰",
+              count: "15+",
+              topSaving: "$10K in credits",
+            },
+            {
+              category: "AI & Automation",
+              tools: ["OpenAI", "Anthropic", "Zapier", "n8n", "Make"],
+              description: "Automate and enhance with AI",
+              icon: "🤖",
+              count: "30+",
+              topSaving: "$100K AI credits",
+            },
+          ].map((cat, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 group">
+              <div class="text-center mb-4">
+                <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">
+                  {cat.icon}
+                </div>
+                <h3 class="text-lg font-semibold text-dark dark:text-white mb-1">
+                  {cat.category}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  {cat.description}
+                </p>
+                <div class="flex justify-between items-center text-xs">
+                  <span class="text-gray-500 dark:text-gray-400">
+                    {cat.count} tools
+                  </span>
+                  <span class="text-primary font-medium">{cat.topSaving}</span>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <h4 class="text-xs font-medium text-gray-700 dark:text-gray-300">
+                  Popular Tools:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  {cat.tools.slice(0, 3).map((tool) => (
+                    <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-gray-600 dark:text-gray-400">
+                      {tool}
+                    </span>
+                  ))}
+                  {cat.tools.length > 3 && (
+                    <span class="text-xs px-2 py-1 bg-primary/10 text-primary rounded">
+                      +{cat.tools.length - 3} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools by Startup Stage -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+      >
+        Tools by Startup Stage
+      </h2>
+
+      <div class="space-y-12">
+        {
+          [
+            {
+              stage: "Idea & Validation",
+              subtitle: "Pre-product, 0-2 people",
+              description: "Validate your idea and build your first prototype",
+              budget: "$0-100/month",
+              tools: {
+                "Research & Validation": [
+                  "Typeform",
+                  "Google Forms",
+                  "Calendly",
+                  "Zoom",
+                ],
+                "Design & Prototyping": ["Figma", "Framer", "Canva", "Miro"],
+                "Basic Development": ["GitHub", "Vercel", "Netlify", "Replit"],
+                Communication: ["Gmail", "Slack", "Discord", "Loom"],
+              },
+              icon: "💡",
+              color: "yellow",
+            },
+            {
+              stage: "Build & Launch",
+              subtitle: "MVP development, 2-5 people",
+              description:
+                "Build your minimum viable product and launch to first customers",
+              budget: "$100-500/month",
+              tools: {
+                Development: ["GitHub", "Railway", "MongoDB", "Retool"],
+                Design: ["Figma", "Framer", "Adobe", "Sketch"],
+                Marketing: [
+                  "Mailchimp",
+                  "Buffer",
+                  "Google Analytics",
+                  "Hotjar",
+                ],
+                Operations: ["Notion", "Linear", "Slack", "1Password"],
+              },
+              icon: "🚀",
+              color: "blue",
+            },
+            {
+              stage: "Growth & Scale",
+              subtitle: "Product-market fit, 5-20 people",
+              description: "Scale your product, team, and customer acquisition",
+              budget: "$500-2000/month",
+              tools: {
+                "Advanced Development": [
+                  "AWS",
+                  "DataDog",
+                  "Sentry",
+                  "CircleCI",
+                ],
+                "Sales & Marketing": [
+                  "HubSpot",
+                  "Intercom",
+                  "Mixpanel",
+                  "Segment",
+                ],
+                "Team Management": [
+                  "Asana",
+                  "Zendesk",
+                  "BambooHR",
+                  "Greenhouse",
+                ],
+                Finance: ["Stripe", "QuickBooks", "Brex", "Pilot"],
+              },
+              icon: "📈",
+              color: "green",
+            },
+            {
+              stage: "Enterprise & IPO",
+              subtitle: "Mature product, 20+ people",
+              description: "Enterprise-grade tools for large-scale operations",
+              budget: "$2000+/month",
+              tools: {
+                Infrastructure: [
+                  "AWS Enterprise",
+                  "Kubernetes",
+                  "Terraform",
+                  "Vault",
+                ],
+                "Enterprise Sales": [
+                  "Salesforce",
+                  "Outreach",
+                  "Gong",
+                  "ChurnZero",
+                ],
+                "Advanced Analytics": [
+                  "Databricks",
+                  "Snowflake",
+                  "Looker",
+                  "dbt",
+                ],
+                Compliance: ["Vanta", "Drata", "OneTrust", "Varonis"],
+              },
+              icon: "🏢",
+              color: "purple",
+            },
+          ].map((stage, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+              <div class="bg-gradient-to-r from-primary/10 to-primary/5 p-8">
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center">
+                    <div class="text-5xl mr-4">{stage.icon}</div>
+                    <div>
+                      <h3 class="text-2xl font-bold text-dark dark:text-white">
+                        {stage.stage}
+                      </h3>
+                      <p class="text-gray-600 dark:text-gray-400">
+                        {stage.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Typical Budget
+                    </div>
+                    <div class="text-xl font-bold text-primary">
+                      {stage.budget}
+                    </div>
+                  </div>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">
+                  {stage.description}
+                </p>
+              </div>
+
+              <div class="p-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {Object.entries(stage.tools).map(([category, tools]) => (
+                    <div>
+                      <h4 class="font-semibold text-dark dark:text-white mb-3 text-sm">
+                        {category}
+                      </h4>
+                      <div class="space-y-2">
+                        {tools.map((tool) => (
+                          <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                            <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                            {tool}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Tools Section -->
+  <section id="free-tools" class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Free Tools & Startup Programs
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Start building without breaking the bank. These verified programs offer
+        free access and significant discounts.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          toolPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.03 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/providers"
+          class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 inline-flex items-center gap-2"
+        >
+          <span>View All 200+ Tools</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tool Selection Guide -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          How to Build Your Startup Tool Stack
+        </h2>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-dark dark:text-white">
+              Tool Selection Framework
+            </h3>
+            <div class="space-y-6">
+              {
+                [
+                  {
+                    step: "1",
+                    title: "Start with Essentials",
+                    description:
+                      "Focus on tools that directly impact product development and customer acquisition. Avoid feature bloat.",
+                  },
+                  {
+                    step: "2",
+                    title: "Prioritize Integration",
+                    description:
+                      "Choose tools that work well together. A connected stack is more efficient than isolated tools.",
+                  },
+                  {
+                    step: "3",
+                    title: "Consider Total Cost",
+                    description:
+                      "Factor in setup time, training, and ongoing maintenance, not just subscription costs.",
+                  },
+                  {
+                    step: "4",
+                    title: "Plan for Scale",
+                    description:
+                      "Select tools that can grow with your startup. Avoid frequent migrations that waste time.",
+                  },
+                  {
+                    step: "5",
+                    title: "Leverage Free Programs",
+                    description:
+                      "Use startup programs to reduce costs by 50-90% in your early years.",
+                  },
+                ].map((item) => (
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-white font-bold">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-dark dark:text-white mb-2">
+                        {item.title}
+                      </h4>
+                      <p class="text-gray-600 dark:text-gray-400">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+            >
+              <h3 class="text-xl font-semibold mb-6 text-dark dark:text-white">
+                Tool Budget Breakdown
+              </h3>
+              <div class="space-y-4">
+                {
+                  [
+                    {
+                      category: "Development & Infrastructure",
+                      percentage: "40%",
+                      amount: "$200-800",
+                    },
+                    {
+                      category: "Marketing & Sales",
+                      percentage: "25%",
+                      amount: "$125-400",
+                    },
+                    {
+                      category: "Productivity & Operations",
+                      percentage: "20%",
+                      amount: "$100-300",
+                    },
+                    {
+                      category: "Design & Creative",
+                      percentage: "10%",
+                      amount: "$50-150",
+                    },
+                    {
+                      category: "Analytics & Monitoring",
+                      percentage: "5%",
+                      amount: "$25-100",
+                    },
+                  ].map((item) => (
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <div class="font-medium text-dark dark:text-white text-sm">
+                          {item.category}
+                        </div>
+                        <div class="text-gray-500 dark:text-gray-400 text-xs">
+                          {item.amount}/month
+                        </div>
+                      </div>
+                      <div class="text-primary font-bold">
+                        {item.percentage}
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-r from-primary/10 to-purple-500/10 rounded-xl p-8 border border-primary/20"
+            >
+              <h3 class="text-xl font-semibold mb-4 text-dark dark:text-white">
+                💡 Pro Tip
+              </h3>
+              <p class="text-gray-700 dark:text-gray-300">
+                The average startup's tool spending can grow quickly. By
+                leveraging startup programs, you can often reduce this cost
+                significantly in the early years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

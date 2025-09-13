@@ -1,0 +1,176 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const allPrograms = await getCollection("programs");
+
+const videoTag = "video";
+const coreSlugs = new Set(["heygen", "mux", "shotstack"]);
+
+const videoPrograms = allPrograms.filter((p) => {
+  const tags = (p.data.tags as string[] | undefined) || [];
+  const tagged = tags.includes(videoTag);
+  const provider = coreSlugs.has(p.data.provider_slug as string);
+  const mentions = /video|avatar|stream|render/i.test(
+    `${p.data.title || ""} ${p.data.description || ""}`,
+  );
+  return tagged || provider || mentions;
+});
+
+const corePrograms = videoPrograms
+  .filter((p) => coreSlugs.has(p.data.provider_slug as string))
+  .sort((a, b) => (b.data.max_value || 0) - (a.data.max_value || 0));
+
+const relatedPrograms = videoPrograms.filter(
+  (p) => !coreSlugs.has(p.data.provider_slug as string),
+);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Free AI tools for video creation (2025) — Founder-friendly picks"
+  meta_title="Free AI tools for video creation — startup-friendly video tools"
+  description="A simple list of free and startup-friendly AI video tools: avatar generation, editing APIs, and video infrastructure credits to help you create without heavy spend."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <section
+    class="min-h-[60vh] flex flex-col items-center justify-center text-center px-6"
+  >
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+      Free AI tools for video creation
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mb-6"
+    >
+      Practical options to prototype and ship video. Keep it lightweight;
+      upgrade only when the workflow sticks.
+    </p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a
+        href="#programs"
+        class="btn bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90"
+        >See tools</a
+      >
+      <a
+        href="#how-it-works"
+        class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >How to choose</a
+      >
+    </div>
+  </section>
+
+  <section id="programs" class="section py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Startup-friendly AI video tools
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10"
+      >
+        These include free plans, credits, or strong startup discounts for AI
+        video.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          corePrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-4 max-w-3xl mx-auto">
+        <div
+          class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm text-blue-900 dark:text-blue-100"
+        >
+          Tip: Start with templates and short clips. Add avatars, dubbing, or
+          renders once the basic workflow is consistent.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        How to choose (quick take)
+      </h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Creator tools</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Pick one avatar/video generator for drafts</li>
+            <li>Reuse templates to keep output consistent</li>
+            <li>Record real audio when quality matters</li>
+            <li>Export short formats first (≤60s)</li>
+          </ul>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Infra & APIs</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Leverage credits for encoding/storage</li>
+            <li>Prototype with web UI before API work</li>
+            <li>Track cost per render early</li>
+            <li>Optimize bitrate and resolutions later</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto mt-10 text-sm text-gray-600 dark:text-gray-400 text-center"
+      >
+        Offer terms change—confirm on the official page before applying.
+      </div>
+    </div>
+  </section>
+
+  {
+    relatedPrograms.length > 0 && (
+      <section class="section py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+            Related video offers
+          </h2>
+          <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
+            Not strictly creation tools, but useful for hosting, analytics, or
+            automation.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {relatedPrograms.map((program, index) => (
+              <motion.div
+                client:load
+                key={program.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.45, delay: index * 0.05 }}
+              >
+                <ProgramCard program={program} />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Base>

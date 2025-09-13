@@ -636,9 +636,11 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                         .icon
                                     }
                                     alt={`${
-                                      benefitsLevelMap[num as 1 | 2 | 3 | 4].name
+                                      benefitsLevelMap[num as 1 | 2 | 3 | 4]
+                                        .name
                                     } - ${
-                                      benefitsLevelMap[num as 1 | 2 | 3 | 4].description
+                                      benefitsLevelMap[num as 1 | 2 | 3 | 4]
+                                        .description
                                     }`}
                                     class={`w-5 h-5 ${num <= tier.benefits_level ? "opacity-100" : "opacity-40"} ${num === tier.benefits_level ? "scale-125" : "scale-100"}`}
                                   />
@@ -735,7 +737,8 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
                                     alt={`${
                                       effortLevelMap[num as 1 | 2 | 3 | 4].name
                                     } - ${
-                                      effortLevelMap[num as 1 | 2 | 3 | 4].description
+                                      effortLevelMap[num as 1 | 2 | 3 | 4]
+                                        .description
                                     }`}
                                     class={`w-5 h-5 ${num <= tier.effort_level ? "opacity-100" : "opacity-40"} ${num === tier.effort_level ? "scale-125" : "scale-100"}`}
                                   />

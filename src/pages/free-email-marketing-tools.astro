@@ -1,0 +1,180 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const allPrograms = await getCollection("programs");
+
+const emailTag = "email";
+const coreSlugs = new Set(["mailchimp", "customerio", "brevo", "postmark"]);
+
+const emailPrograms = allPrograms.filter((p) => {
+  const tags = (p.data.tags as string[] | undefined) || [];
+  return tags.includes(emailTag);
+});
+
+const corePrograms = emailPrograms
+  .sort((a, b) => {
+    const aFree =
+      (a.data.min_value || 0) === 0 || /free/i.test(a.data.title || "");
+    const bFree =
+      (b.data.min_value || 0) === 0 || /free/i.test(b.data.title || "");
+    if (aFree !== bFree) return aFree ? -1 : 1;
+    return (b.data.max_value || 0) - (a.data.max_value || 0);
+  })
+  .filter((p) => coreSlugs.has(p.data.provider_slug as string));
+
+const relatedPrograms = emailPrograms.filter(
+  (p) => !coreSlugs.has(p.data.provider_slug as string),
+);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Free email marketing tools (2025) — Simple guide for startups"
+  meta_title="Free email marketing tools — best free & startup-friendly options"
+  description="A clean, no-hype list of free email marketing tools and startup offers: Mailchimp Free, Customer.io Startup, Brevo, Postmark, and more."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <section
+    class="min-h-[60vh] flex flex-col items-center justify-center text-center px-6"
+  >
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+      Free email marketing tools
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mb-6"
+    >
+      Practical options for solo founders and small teams. Start free, keep
+      costs predictable, and only add complexity when it’s useful.
+    </p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a
+        href="#programs"
+        class="btn bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90"
+        >See tools</a
+      >
+      <a
+        href="#how-it-works"
+        class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >How to choose</a
+      >
+    </div>
+  </section>
+
+  <section id="programs" class="section py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Starter-friendly email tools
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10"
+      >
+        These programs include forever-free tiers or meaningful startup offers.
+        Keep it simple: send a useful email regularly.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          corePrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-4 max-w-3xl mx-auto">
+        <div
+          class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm text-blue-900 dark:text-blue-100"
+        >
+          Tip: Ship a lightweight welcome sequence first. Add segmentation and
+          automations only after you see replies or conversions.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        How to choose (quick take)
+      </h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">
+            Start free, focus on signal
+          </h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Pick a forever-free plan if possible</li>
+            <li>Collect opt-ins with one form and one list</li>
+            <li>Send 1 useful update per week or month</li>
+            <li>Measure replies and simple conversions</li>
+          </ul>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">When to upgrade</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>You hit contact or send limits</li>
+            <li>You need multi-channel or advanced segmentation</li>
+            <li>Transactional email requires dedicated deliverability</li>
+            <li>Your list grows beyond a single audience</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto mt-10 text-sm text-gray-600 dark:text-gray-400 text-center"
+      >
+        Program details change. Always confirm on the official page before
+        applying or switching.
+      </div>
+    </div>
+  </section>
+
+  {
+    relatedPrograms.length > 0 && (
+      <section class="section py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+            Related email tools
+          </h2>
+          <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
+            Tools adjacent to email marketing that may help with setup or ops.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {relatedPrograms.map((program, index) => (
+              <motion.div
+                client:load
+                key={program.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.45, delay: index * 0.05 }}
+              >
+                <ProgramCard program={program} />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Base>

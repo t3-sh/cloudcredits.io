@@ -1,0 +1,131 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const allPrograms = await getCollection("programs");
+
+const awsPrograms = allPrograms
+  .filter((p) => p.data.provider_slug === "aws")
+  .sort((a, b) => (b.data.max_value || 0) - (a.data.max_value || 0));
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="AWS Credits for Startups (2025) — Simple Guide"
+  meta_title="AWS credits for startups — how to get $1K–$100K"
+  description="A no-fluff guide for indie devs and small teams on getting AWS credits: AWS Activate (Founders & Portfolio) and AWS Rapid Ramp."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <section
+    class="min-h-[60vh] flex flex-col items-center justify-center text-center px-6"
+  >
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+      AWS credits for startups
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mb-6"
+    >
+      Clear paths to real AWS credits. Built for solo founders, indie devs, and
+      builders in public.
+    </p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a
+        href="#programs"
+        class="btn bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90"
+        >See programs</a
+      >
+      <a
+        href="#how-it-works"
+        class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >How it works</a
+      >
+    </div>
+  </section>
+
+  <section id="programs" class="section py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Official AWS programs
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10"
+      >
+        These are the official AWS tracks that offer credits. No pushy stuff.
+        Just the facts.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          awsPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-4 max-w-3xl mx-auto">
+        <div
+          class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm text-blue-900 dark:text-blue-100"
+        >
+          Tip: If you’re not affiliated with a VC/accelerator, start with
+          Activate Founders. If you are, ask your partner for an Organization ID
+          and apply under Activate Portfolio.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        How to qualify (at a glance)
+      </h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Activate Founders</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Self-funded or early stage</li>
+            <li>Founded within ~10 years</li>
+            <li>Functioning company website</li>
+            <li>New to AWS Activate credits</li>
+          </ul>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Activate Portfolio</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Affiliated with an AWS Activate Provider (VC, accelerator)</li>
+            <li>Organization ID from your provider</li>
+            <li>Within prior-credit limits</li>
+            <li>Functioning website; early to growth stage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto mt-10 text-sm text-gray-600 dark:text-gray-400 text-center"
+      >
+        Eligibility and review are at AWS’s discretion. Always confirm details
+        on the official page before applying.
+      </div>
+    </div>
+  </section>
+</Base>

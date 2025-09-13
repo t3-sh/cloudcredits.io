@@ -11,7 +11,7 @@ value_type: "credits"
 currency: "USD"
 min_value: 0
 max_value: 5000
-community_notes: 
+community_notes:
   - title: "Program Details Need Verification"
     body: "Program information compiled from limited public sources due to web scraping limitations. Details should be verified with Pangea directly."
     source_url: "https://pangea.cloud"

@@ -1,0 +1,189 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+const allPrograms = await getCollection("programs");
+
+const analyticsTags = ["analytics", "business intelligence"];
+const coreSlugs = new Set([
+  "amplitude",
+  "mixpanel",
+  "posthog",
+  "segment",
+  "grafana",
+  "databricks",
+  "motherduck",
+  "fivetran",
+  "statsig",
+  "influxdata",
+]);
+
+const corePrograms = allPrograms
+  .filter((p) => {
+    const tags = (p.data.tags as string[] | undefined) || [];
+    const hasTag = tags.some((t) => analyticsTags.includes(t));
+    const inCore = coreSlugs.has(p.data.provider_slug as string);
+    return hasTag || inCore;
+  })
+  .sort((a, b) => (b.data.max_value || 0) - (a.data.max_value || 0));
+
+const relatedPrograms = allPrograms.filter((p) => {
+  const tags = (p.data.tags as string[] | undefined) || [];
+  const hasTag = tags.some((t) => analyticsTags.includes(t));
+  const isCore = corePrograms.some((c) => c.id === p.id);
+  return hasTag && !isCore;
+});
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Business tools for analysis (2025) — Startup-friendly deals"
+  meta_title="Business tools for analysis — startup deals on analytics & BI"
+  description="A no-fluff list of business tools for analysis: product analytics, BI, ETL, and data stack offers for startups and solo builders."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <section
+    class="min-h-[60vh] flex flex-col items-center justify-center text-center px-6"
+  >
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+      Business tools for analysis
+    </h1>
+    <p
+      class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mb-6"
+    >
+      Straightforward startup deals on analytics and BI tools. Built for solo
+      founders, indie devs, and small teams.
+    </p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a
+        href="#programs"
+        class="btn bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-90"
+        >See programs</a
+      >
+      <a
+        href="#how-it-works"
+        class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >How to choose</a
+      >
+    </div>
+  </section>
+
+  <section id="programs" class="section py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Startup-friendly analytics & BI programs
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10"
+      >
+        Core programs that help you instrument product analytics, centralize
+        data, and build simple dashboards without overkill.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          corePrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="mt-12 grid gap-4 max-w-3xl mx-auto">
+        <div
+          class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-sm text-blue-900 dark:text-blue-100"
+        >
+          Tip: If you’re early, ship with product analytics first. Add BI and
+          ETL once you have consistent events and questions dashboards can
+          answer.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        How to choose (quick take)
+      </h2>
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">
+            Product analytics (fast start)
+          </h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Track key events, funnels, and retention</li>
+            <li>Pick one tool you’ll actually open</li>
+            <li>Instrument 3–5 events before launch</li>
+            <li>Review weekly, adjust once per month</li>
+          </ul>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+        >
+          <h3 class="font-semibold text-lg mb-3">Data stack (growing teams)</h3>
+          <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+            <li>Pipeline data into a warehouse</li>
+            <li>Model basics: users, events, revenue</li>
+            <li>Layer a lightweight BI for dashboards</li>
+            <li>Keep costs variable and scoped</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-3xl mx-auto mt-10 text-sm text-gray-600 dark:text-gray-400 text-center"
+      >
+        Details vary by provider. Always check the official program page before
+        applying.
+      </div>
+    </div>
+  </section>
+
+  {
+    relatedPrograms.length > 0 && (
+      <section class="section py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+            Related tools with analytics features
+          </h2>
+          <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
+            Not strictly analytics platforms, but useful while you’re learning
+            from early usage.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {relatedPrograms.map((program, index) => (
+              <motion.div
+                client:load
+                key={program.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.45, delay: index * 0.05 }}
+              >
+                <ProgramCard program={program} />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Base>

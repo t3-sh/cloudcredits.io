@@ -1,0 +1,467 @@
+---
+import Base from "@/layouts/Base.astro";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+// Get credit-based programs
+const allPrograms = await getCollection("programs");
+const creditPrograms = allPrograms
+  .filter(
+    (p) =>
+      p.data.value_type === "credits" ||
+      p.data.title.toLowerCase().includes("credit") ||
+      p.data.intro.toLowerCase().includes("credit") ||
+      p.data.max_value >= 1000,
+  )
+  .slice(0, 18);
+
+// Sort by max value descending
+creditPrograms.sort(
+  (a, b) => (b.data.max_value || 0) - (a.data.max_value || 0),
+);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Credits for Startups 2025 - $2M+ in Free Cloud & Software Credits"
+  meta_title="Startup Credits & Free Cloud Credits - AWS, Google Cloud, Azure"
+  description="Get free credits for startups: $2M+ in verified cloud credits from AWS, Google Cloud, Azure, plus SaaS credits. Open source vault of 200+ startup credit programs."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+  >
+    <div class="text-center px-4 z-20 w-full max-w-6xl mx-auto">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark dark:text-white"
+      >
+        Free Credits for Startups
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto"
+      >
+        Access over $2 million in verified startup credits from AWS, Google
+        Cloud, Azure, and 100+ SaaS platforms. Bootstrap your startup with free
+        cloud infrastructure and software credits.
+      </p>
+
+      <!-- Credit Stats -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto"
+      >
+        {
+          [
+            { amount: "$2M+", label: "Total Credits Available", icon: "💰" },
+            { amount: "200+", label: "Credit Programs", icon: "🎯" },
+            { amount: "$100K+", label: "Largest Single Credit", icon: "🚀" },
+            { amount: "100%", label: "Verified & Updated", icon: "✅" },
+          ].map((stat) => (
+            <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div class="text-2xl mb-2">{stat.icon}</div>
+              <div class="text-2xl font-bold text-primary">{stat.amount}</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">
+                {stat.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex justify-center gap-4">
+        <a
+          href="#cloud-credits"
+          class="btn bg-primary text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+        >
+          <span>Browse Credits</span>
+          <span>↓</span>
+        </a>
+        <a
+          href="#how-to-apply"
+          class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <span>How to Apply</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Credits Overview -->
+  <section id="cloud-credits" class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Major Cloud Credits for Startups
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto"
+      >
+        The biggest cloud providers offer substantial credits to help startups
+        build and scale without upfront infrastructure costs.
+      </p>
+
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        {
+          [
+            {
+              provider: "Amazon Web Services",
+              logo: "☁️",
+              maxCredit: "$100,000",
+              programs: ["AWS Activate", "AWS Startups", "AWS for Startups"],
+              benefits: [
+                "Up to $100K in credits",
+                "Technical support",
+                "Training resources",
+                "Startup events",
+              ],
+              eligibility: [
+                "VC-backed startups",
+                "Incubator/accelerator participants",
+                "Self-funded startups",
+              ],
+              color: "orange",
+            },
+            {
+              provider: "Google Cloud Platform",
+              logo: "🌐",
+              maxCredit: "$100,000",
+              programs: [
+                "Google for Startups",
+                "Google Cloud Credits",
+                "Startup Program",
+              ],
+              benefits: [
+                "Up to $100K in credits",
+                "Technical training",
+                "Go-to-market support",
+                "Mentor network",
+              ],
+              eligibility: [
+                "Early-stage startups",
+                "Technology companies",
+                "AI/ML startups",
+              ],
+              color: "blue",
+            },
+            {
+              provider: "Microsoft Azure",
+              logo: "⚡",
+              maxCredit: "$25,000",
+              programs: [
+                "Microsoft for Startups",
+                "Azure Credits",
+                "Founders Hub",
+              ],
+              benefits: [
+                "Up to $25K in credits",
+                "Technical support",
+                "Sales co-selling",
+                "Partnership opportunities",
+              ],
+              eligibility: [
+                "B2B startups",
+                "SaaS companies",
+                "Enterprise-focused startups",
+              ],
+              color: "purple",
+            },
+          ].map((cloud, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300">
+              <div class="text-center mb-6">
+                <div class="text-6xl mb-4">{cloud.logo}</div>
+                <h3 class="text-2xl font-bold text-dark dark:text-white mb-2">
+                  {cloud.provider}
+                </h3>
+                <div class="text-3xl font-bold text-primary">
+                  {cloud.maxCredit}
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  in credits
+                </div>
+              </div>
+
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-dark dark:text-white mb-3">
+                    Benefits Include:
+                  </h4>
+                  <ul class="space-y-2">
+                    {cloud.benefits.map((benefit) => (
+                      <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-dark dark:text-white mb-3">
+                    Eligibility:
+                  </h4>
+                  <ul class="space-y-2">
+                    {cloud.eligibility.map((req) => (
+                      <li class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                        <span class="w-1.5 h-1.5 bg-green-500 rounded-full mr-3" />
+                        {req}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <div class="flex flex-wrap gap-2">
+                    {cloud.programs.map((program) => (
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">
+                        {program}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- All Credit Programs -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        All Startup Credit Programs
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Complete list of verified credit programs, sorted by value. From cloud
+        infrastructure to SaaS platforms.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          creditPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/providers"
+          class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 inline-flex items-center gap-2"
+        >
+          <span>View All Programs</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Apply Section -->
+  <section id="how-to-apply" class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          How to Get Startup Credits
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-dark dark:text-white">
+              Step-by-Step Process
+            </h3>
+            <div class="space-y-6">
+              {
+                [
+                  {
+                    step: "1",
+                    title: "Choose Your Credits",
+                    description:
+                      "Browse our verified list and select the credit programs that match your startup's needs and stage.",
+                  },
+                  {
+                    step: "2",
+                    title: "Check Eligibility",
+                    description:
+                      "Review the eligibility requirements for each program. Most require incorporation and some funding history.",
+                  },
+                  {
+                    step: "3",
+                    title: "Prepare Documentation",
+                    description:
+                      "Gather required documents: incorporation papers, pitch deck, financial statements, and team information.",
+                  },
+                  {
+                    step: "4",
+                    title: "Apply Strategically",
+                    description:
+                      "Apply to multiple programs simultaneously. Don't wait - many have limited spots and first-come basis.",
+                  },
+                  {
+                    step: "5",
+                    title: "Follow Up & Use",
+                    description:
+                      "Track applications, follow up on pending requests, and make sure to use credits before they expire.",
+                  },
+                ].map((item) => (
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-white font-bold">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-dark dark:text-white mb-2">
+                        {item.title}
+                      </h4>
+                      <p class="text-gray-600 dark:text-gray-400">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 class="text-xl font-semibold mb-6 text-dark dark:text-white">
+              Pro Tips for Success
+            </h3>
+            <div class="space-y-4">
+              {
+                [
+                  "Apply early in your startup journey - many programs have funding limits",
+                  "Join accelerators/incubators for easier access to top-tier programs",
+                  "Have a clear, compelling pitch deck ready before applying",
+                  "Track expiration dates and usage to maximize value",
+                  "Stack multiple programs - you can often qualify for several",
+                  "Network with other founders who've successfully applied",
+                ].map((tip, index) => (
+                  <div class="flex items-start gap-3">
+                    <span class="text-primary font-bold">•</span>
+                    <span class="text-gray-600 dark:text-gray-400 text-sm">
+                      {tip}
+                    </span>
+                  </div>
+                ))
+              }
+            </div>
+
+            <div class="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <h4 class="font-semibold text-blue-900 dark:text-blue-100 mb-2">
+                💡 A Helpful Tip
+              </h4>
+              <p class="text-blue-800 dark:text-blue-200 text-sm">
+                Applying right after raising funding or joining an accelerator
+                can be a good move. Programs often see this as positive
+                validation for your startup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credit Categories -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+      >
+        Credits by Category
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          [
+            {
+              category: "Cloud Infrastructure",
+              icon: "☁️",
+              count: "50+",
+              maxValue: "$100K",
+            },
+            {
+              category: "AI & Machine Learning",
+              icon: "🤖",
+              count: "25+",
+              maxValue: "$50K",
+            },
+            {
+              category: "Development Tools",
+              icon: "⚙️",
+              count: "30+",
+              maxValue: "$25K",
+            },
+            {
+              category: "Marketing & Analytics",
+              icon: "📈",
+              count: "20+",
+              maxValue: "$10K",
+            },
+            {
+              category: "Database & Storage",
+              icon: "🗄️",
+              count: "15+",
+              maxValue: "$15K",
+            },
+            {
+              category: "Communication Tools",
+              icon: "💬",
+              count: "12+",
+              maxValue: "$5K",
+            },
+            {
+              category: "Design & Creative",
+              icon: "🎨",
+              count: "10+",
+              maxValue: "$3K",
+            },
+            {
+              category: "Security & Compliance",
+              icon: "🔒",
+              count: "8+",
+              maxValue: "$20K",
+            },
+          ].map((cat) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center hover:shadow-lg transition-shadow">
+              <div class="text-3xl mb-3">{cat.icon}</div>
+              <h3 class="font-semibold text-dark dark:text-white mb-2">
+                {cat.category}
+              </h3>
+              <div class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                {cat.count} programs
+              </div>
+              <div class="text-lg font-bold text-primary">
+                Up to {cat.maxValue}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

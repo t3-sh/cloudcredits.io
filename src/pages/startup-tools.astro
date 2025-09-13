@@ -1,0 +1,321 @@
+---
+import Base from "@/layouts/Base.astro";
+import HeroSection from "@/layouts/components/HeroSection";
+import AnimatedBackground from "@/layouts/components/AnimatedBackground";
+import { getCollection } from "astro:content";
+import ProgramCard from "@/layouts/components/ProgramCard.astro";
+import { motion } from "framer-motion";
+import { getCanonicalFromAstroURL } from "@/lib/utils/canonical";
+
+// Get startup-focused programs
+const allPrograms = await getCollection("programs");
+const startupPrograms = allPrograms
+  .filter(
+    (p) =>
+      p.data.title.toLowerCase().includes("startup") ||
+      p.data.intro.toLowerCase().includes("startup") ||
+      p.data.tags?.some((tag) =>
+        ["dev tools", "productivity", "saas", "crm", "marketing"].includes(tag),
+      ),
+  )
+  .slice(0, 12);
+
+const canonical = getCanonicalFromAstroURL(Astro.url);
+---
+
+<Base
+  title="Best Startup Tools 2025 - Free Software & SaaS Deals | CloudCredits.io"
+  meta_title="Startup Tools 2025 - 200+ Free Software Deals & SaaS Credits"
+  description="Discover the best startup tools and software deals for 2025. 200+ verified programs including dev tools, marketing software, CRM systems, and productivity apps. All free and open source."
+  canonical={canonical}
+>
+  <AnimatedBackground client:load />
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+  >
+    <div class="text-center px-4 z-20 w-full max-w-6xl mx-auto">
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-dark dark:text-white"
+      >
+        Best Startup Tools for 2025
+      </h1>
+      <p
+        class="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto"
+      >
+        A comprehensive collection of startup tools, software deals, and SaaS
+        credits. Handpicked by founders, verified by our open source community,
+        and updated daily.
+      </p>
+
+      <div class="flex items-center justify-center flex-wrap gap-6 mb-10">
+        {
+          [
+            { stat: "200+", label: "Startup Tools", icon: "🛠️" },
+            { stat: "$2M+", label: "Total Value", icon: "💰" },
+            { stat: "100%", label: "Open Source", icon: "🔓" },
+            { stat: "Daily", label: "Updates", icon: "🔄" },
+          ].map((item, index) => (
+            <div class="text-center">
+              <div class="text-2xl mb-1">{item.icon}</div>
+              <div class="text-2xl font-bold text-primary">{item.stat}</div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">
+                {item.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="flex justify-center gap-4 mb-12">
+        <a
+          href="#tools"
+          class="btn bg-primary text-white px-8 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90"
+        >
+          <span>Browse Tools</span>
+          <span>↓</span>
+        </a>
+        <a
+          href="https://github.com/t3-sh/cloudcredits.io"
+          class="btn border border-gray-600 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+          target="_blank"
+        >
+          <span>⭐ Star on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tool Categories -->
+  <section id="tools" class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+      >
+        Startup Tools by Category
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {
+          [
+            {
+              category: "Development Tools",
+              description:
+                "IDEs, version control, deployment platforms, and development frameworks",
+              tools: [
+                "GitHub Enterprise",
+                "JetBrains",
+                "Retool",
+                "Vercel",
+                "Railway",
+              ],
+              icon: "⚙️",
+              color: "blue",
+            },
+            {
+              category: "Marketing & Sales",
+              description:
+                "CRM systems, email marketing, social media management, and analytics",
+              tools: [
+                "HubSpot",
+                "Mailchimp",
+                "Intercom",
+                "Mixpanel",
+                "Segment",
+              ],
+              icon: "📈",
+              color: "green",
+            },
+            {
+              category: "Cloud & Infrastructure",
+              description:
+                "Cloud hosting, databases, CDN, monitoring, and DevOps tools",
+              tools: [
+                "AWS",
+                "Google Cloud",
+                "Azure",
+                "DigitalOcean",
+                "MongoDB",
+              ],
+              icon: "☁️",
+              color: "purple",
+            },
+            {
+              category: "Productivity & Collaboration",
+              description:
+                "Project management, communication, documentation, and workflow tools",
+              tools: ["Notion", "Slack", "Asana", "Figma", "Linear"],
+              icon: "⚡",
+              color: "yellow",
+            },
+            {
+              category: "AI & Machine Learning",
+              description:
+                "AI platforms, machine learning tools, and data science frameworks",
+              tools: [
+                "OpenAI",
+                "Anthropic",
+                "Fireworks",
+                "Cerebras",
+                "Deepgram",
+              ],
+              icon: "🤖",
+              color: "red",
+            },
+            {
+              category: "Design & Creative",
+              description:
+                "Design tools, image editing, video creation, and creative platforms",
+              tools: ["Figma", "Framer", "Canva", "Adobe", "Sketch"],
+              icon: "🎨",
+              color: "pink",
+            },
+          ].map((cat, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-3">{cat.icon}</span>
+                <h3 class="text-xl font-semibold text-dark dark:text-white">
+                  {cat.category}
+                </h3>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                {cat.description}
+              </p>
+              <div class="flex flex-wrap gap-2">
+                {cat.tools.map((tool) => (
+                  <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Startup Programs -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Top Startup Programs & Deals
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Verified startup programs offering significant credits, discounts, and
+        free access to essential business tools.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          startupPrograms.map((program, index) => (
+            <motion.div
+              client:load
+              key={program.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProgramCard program={program} />
+            </motion.div>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/providers"
+          class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 inline-flex items-center gap-2"
+        >
+          <span>View All Startup Tools</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark dark:text-white"
+        >
+          A Community-Driven Vault for Founders
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="space-y-6">
+              {
+                [
+                  {
+                    title: "Verified by Real Founders",
+                    description:
+                      "Every tool and deal is tested and verified by actual startup founders, not marketing teams.",
+                  },
+                  {
+                    title: "Always Up-to-Date",
+                    description:
+                      "Our open source community ensures deals are fresh and expired programs are removed immediately.",
+                  },
+                  {
+                    title: "No Affiliate Nonsense",
+                    description:
+                      "Zero affiliate links, zero commissions. Just honest recommendations from the startup community.",
+                  },
+                  {
+                    title: "Open Source & Transparent",
+                    description:
+                      "Complete transparency - see exactly how deals are sourced and verified on GitHub.",
+                  },
+                ].map((feature, index) => (
+                  <div class="flex items-start gap-4">
+                    <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0 mt-1">
+                      <span class="text-white text-sm">✓</span>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-dark dark:text-white mb-2">
+                        {feature.title}
+                      </h3>
+                      <p class="text-gray-600 dark:text-gray-400">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+
+          <div
+            class="bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700"
+          >
+            <h3 class="text-xl font-semibold mb-6 text-dark dark:text-white">
+              Help Build the Vault
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">
+              This is an open source project built by and for the startup
+              community. Found a deal we're missing? Want to fix an error? Your
+              contributions are welcome!
+            </p>
+            <a
+              href="https://github.com/t3-sh/cloudcredits.io"
+              class="btn bg-primary text-white px-6 py-3 rounded-md inline-flex items-center gap-2 hover:bg-opacity-90 w-full text-center justify-center"
+              target="_blank"
+            >
+              <span>Contribute on GitHub</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

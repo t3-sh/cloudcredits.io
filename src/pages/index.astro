@@ -26,22 +26,84 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
 ---
 
 <Base
-  title="CloudCredits.io - Community Vault of Startup Credits & Deals"
-  meta_title="CloudCredits.io - Free Cloud Credits Vault for Startups"
-  description="Discover 150+ startup credits and cloud deals worth $1M+. Open-source vault of AWS, Google Cloud, Azure credits, SaaS discounts, and founder deals. No ads, no affiliates."
+  title="Best Startup Tools & Credits - Free Open Source Vault | CloudCredits.io"
+  meta_title="Startup Tools & Credits - 200+ Free Deals for Startups | CloudCredits.io"
+  description="The biggest open source vault of startup tools, business software deals & credits. 200+ verified programs worth $2M+ including AWS, Google Cloud, SaaS tools. Zero ads, zero affiliates."
   canonical={canonical}
 >
+  <!-- JSON-LD Structured Data -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "CloudCredits.io",
+      alternateName: "Best Startup Tools & Credits Vault",
+      url: "https://cloudcredits.io",
+      description:
+        "The biggest open source vault of startup tools, business software deals & credits. 200+ verified programs worth $2M+ including AWS, Google Cloud, SaaS tools.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://cloudcredits.io/providers?search={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        name: "Startup Tools Categories",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Cloud & Infrastructure",
+            url: "https://cloudcredits.io/credits-for-startups",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Development Tools",
+            url: "https://cloudcredits.io/startup-tools",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Marketing & Sales",
+            url: "https://cloudcredits.io/startup-business-tools",
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: "Productivity Tools",
+            url: "https://cloudcredits.io/startups-software",
+          },
+          {
+            "@type": "ListItem",
+            position: 5,
+            name: "All Tools",
+            url: "https://cloudcredits.io/tools-for-startups",
+          },
+        ],
+      },
+    })}
+  />
+  >
   <AnimatedBackground client:load />
   <div class="relative flex items-center justify-center min-h-screen">
     <HeroSection client:load />
   </div>
 
-  <!-- Featured Programs Section -->
+  <!-- Featured Startup Tools Section -->
   <section class="section py-16 relative overflow-hidden">
     <div class="container mx-auto px-6 relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-        Stellar Picks
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+        Top Startup Tools & Credits
       </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Hand-picked business tools and software deals from our open source
+        community vault - perfect for bootstrapped startups and growing
+        companies.
+      </p>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
         {
           featuredPrograms.map((program, index) => (
@@ -69,6 +131,314 @@ const canonical = getCanonicalFromAstroURL(Astro.url);
             </motion.div>
           ))
         }
+      </div>
+    </div>
+  </section>
+
+  <!-- Startup Tools Categories Section -->
+  <section class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4 text-dark dark:text-white"
+        >
+          Essential Startup Business Tools
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          From cloud infrastructure to marketing automation - discover the
+          software tools that successful startups use to scale efficiently and
+          cost-effectively.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {
+          [
+            {
+              name: "Cloud & Infrastructure",
+              count: "50+",
+              icon: "☁️",
+              href: "/credits-for-startups",
+            },
+            {
+              name: "AI & Machine Learning",
+              count: "30+",
+              icon: "🤖",
+              href: "/tags/ai",
+            },
+            {
+              name: "Development Tools",
+              count: "25+",
+              icon: "⚙️",
+              href: "/startup-tools",
+            },
+            {
+              name: "Marketing & Sales",
+              count: "20+",
+              icon: "📈",
+              href: "/startup-business-tools",
+            },
+            {
+              name: "Analytics & Data",
+              count: "15+",
+              icon: "📊",
+              href: "/tags/analytics",
+            },
+            {
+              name: "Productivity Tools",
+              count: "18+",
+              icon: "⚡",
+              href: "/startups-software",
+            },
+            {
+              name: "Customer Support",
+              count: "12+",
+              icon: "💬",
+              href: "/tags/customer-support",
+            },
+            {
+              name: "Design & Creative",
+              count: "10+",
+              icon: "🎨",
+              href: "/tools-for-startups",
+            },
+          ].map((category, index) => (
+            <a
+              href={category.href}
+              class="group bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
+            >
+              <div class="text-3xl mb-3">{category.icon}</div>
+              <h3 class="font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors">
+                {category.name}
+              </h3>
+              <span class="text-sm text-gray-500 dark:text-gray-400">
+                {category.count} deals
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Our Startup Vault Section -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4 text-dark dark:text-white"
+        >
+          An Open Source Vault Built for Builders
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          Built by startup founders who understand the challenges of finding
+          legitimate, valuable deals without the noise.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {
+          [
+            {
+              title: "Always Fresh & Updated",
+              description:
+                "Community-driven updates ensure you never miss new startup programs or expire deals. Our open source approach keeps everything transparent and current.",
+              icon: "🔄",
+            },
+            {
+              title: "Verified & Tested",
+              description:
+                "Every deal is verified by real founders. No fake programs, no expired offers - just legitimate opportunities that actually work for startups.",
+              icon: "✅",
+            },
+            {
+              title: "No Hidden Agenda",
+              description:
+                "Zero affiliate links, zero ads, zero bias. We're not making money from your clicks - just helping the startup community grow together.",
+              icon: "🤝",
+            },
+          ].map((feature, index) => (
+            <div class="text-center">
+              <div class="text-4xl mb-4">{feature.icon}</div>
+              <h3 class="text-xl font-semibold mb-4 text-dark dark:text-white">
+                {feature.title}
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Startup Success Stories Section -->
+  <section class="section py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4 text-dark dark:text-white"
+        >
+          Real Savings from the Vault
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          Real startups saving thousands with tools and credits from our vault.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          [
+            {
+              amount: "$100K+",
+              provider: "AWS Credits",
+              description:
+                "Bootstrap your cloud infrastructure with comprehensive AWS startup programs",
+              tags: ["Cloud", "Infrastructure"],
+            },
+            {
+              amount: "$50K+",
+              provider: "Google Cloud",
+              description:
+                "Scale your applications with Google's powerful cloud platform and AI tools",
+              tags: ["Cloud", "AI"],
+            },
+            {
+              amount: "$25K+",
+              provider: "Azure Credits",
+              description:
+                "Enterprise-grade cloud services perfect for B2B startups and SaaS companies",
+              tags: ["Cloud", "Enterprise"],
+            },
+            {
+              amount: "75% Off",
+              provider: "HubSpot CRM",
+              description:
+                "Complete sales and marketing automation platform for growing startups",
+              tags: ["CRM", "Marketing"],
+            },
+            {
+              amount: "$10K+",
+              provider: "Retool Platform",
+              description:
+                "Build internal tools and dashboards without complex development",
+              tags: ["Dev Tools", "Productivity"],
+            },
+            {
+              amount: "12 Months Free",
+              provider: "GitHub Enterprise",
+              description:
+                "Advanced collaboration and security features for startup development teams",
+              tags: ["Dev Tools", "Collaboration"],
+            },
+          ].map((story, index) => (
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-2xl font-bold text-primary">
+                  {story.amount}
+                </span>
+                <div class="flex gap-2">
+                  {story.tags.map((tag) => (
+                    <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <h3 class="font-semibold text-dark dark:text-white mb-2">
+                {story.provider}
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">
+                {story.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore More Section -->
+  <section class="section py-16">
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark dark:text-white"
+      >
+        Explore Startup Resources
+      </h2>
+      <p
+        class="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
+        Dive deeper into specific categories of startup tools and resources
+        tailored to your needs.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          [
+            {
+              title: "Startup Tools",
+              description:
+                "Complete guide to essential tools for building and scaling startups",
+              href: "/startup-tools",
+              icon: "🛠️",
+              highlight: "200+ Tools",
+            },
+            {
+              title: "Business Tools",
+              description:
+                "CRM, marketing, operations, and business management software",
+              href: "/startup-business-tools",
+              icon: "📊",
+              highlight: "Business Focus",
+            },
+            {
+              title: "Free Credits",
+              description:
+                "Cloud credits, SaaS credits, and startup funding programs",
+              href: "/credits-for-startups",
+              icon: "💰",
+              highlight: "$2M+ Credits",
+            },
+            {
+              title: "Software & SaaS",
+              description:
+                "Productivity software, development tools, and SaaS platforms",
+              href: "/startups-software",
+              icon: "💻",
+              highlight: "SaaS Deals",
+            },
+          ].map((resource, index) => (
+            <a
+              href={resource.href}
+              class="group bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
+            >
+              <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">
+                {resource.icon}
+              </div>
+              <h3 class="text-xl font-semibold text-dark dark:text-white mb-2 group-hover:text-primary transition-colors">
+                {resource.title}
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
+                {resource.description}
+              </p>
+              <span class="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
+                {resource.highlight}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/tools-for-startups"
+          class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 inline-flex items-center gap-2"
+        >
+          <span>Complete Startup Toolkit</span>
+          <span>→</span>
+        </a>
       </div>
     </div>
   </section>

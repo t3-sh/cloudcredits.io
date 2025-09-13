@@ -149,13 +149,14 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.6 }}
           >
-            Community collection of best Cloud/SaaS deals
+            The Biggest Open Source Vault of Startup Tools & Credits
           </motion.h1>
         </div>
 
         <div className="mb-10 max-w-2xl mx-auto flex flex-col items-center text-center gap-4">
           <span className="text-lg inline-block text-gray-700 dark:text-gray-300">
-            Discover, compare, and secure cloud credits to build without limits
+            200+ verified startup business tools, software deals & credits worth
+            $2M+ - curated by founders, for founders
           </span>
 
           <motion.div
@@ -165,9 +166,9 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
           >
             {[
-              { color: "blue", text: "Fully Open Source", icon: "•" },
-              { color: "green", text: "Zero Affiliations", icon: "•" },
-              { color: "yellow", text: "Zero Ads", icon: "•" },
+              { color: "blue", text: "Freshest Deals", icon: "🚀" },
+              { color: "green", text: "Open Source Vault", icon: "🔓" },
+              { color: "yellow", text: "Zero Ads", icon: "✨" },
             ].map((uvp, index) => (
               <motion.div
                 key={index}
@@ -199,7 +200,9 @@ export default function HeroSection() {
             href="/providers"
             className="btn bg-primary text-white px-8 py-3 rounded-md mr-4 inline-flex items-center gap-2 hover:bg-opacity-90"
           >
-            <span className="leading-none self-center">Explore Deals</span>
+            <span className="leading-none self-center">
+              Browse Startup Tools
+            </span>
             <span className="leading-none self-center ml-1">→</span>
           </a>
           <a
