@@ -1,0 +1,53 @@
+draft: false
+provider_slug: databento
+title: Databento $125 Sign-Up Credits
+meta_title: Databento $125 Sign-Up Credits for Historical Market Data
+intro: >-
+  Databento grants new users $125 in credits upon signup to explore its
+  historical market data and APIs.
+description: >-
+  New Databento accounts receive $125 in platform credits that can be applied
+  toward historical data across any available dataset. Credits allow users to
+  test the service and access all features immediately. Each team is eligible
+  for one set of credits, which expire six months after account creation.
+status: Active
+tags:
+  - api
+  - data
+  - finance
+  - free trial
+url: https://databento.com/pricing
+value_type: credits
+currency: USD
+max_value: 125
+community_notes: []
+tiers:
+  - name: Sign-Up Credits
+    intro: >-
+      Receive $125 in Databento credits to use on historical market data.
+    max_value: 125
+    url: https://databento.com/pricing
+    benefits:
+      - $125 in credits for historical data
+      - Immediate access to all features and datasets
+    benefits_level: 2
+    duration:
+      - 6 months
+    eligibility:
+      - New Databento users only
+      - One set of credits per team
+    effort_level: 1
+    steps_to_apply:
+      - name: Create a Databento account
+        description: Sign up to automatically receive credits
+        action: Sign Up
+        action_url: https://databento.com/signup
+faq:
+  - question: How much credit do new users receive?
+    answer: New users receive $125 in credits for historical market data.
+  - question: When do the credits expire?
+    answer: Credits expire six months after signup.
+  - question: Can a team receive multiple credit grants?
+    answer: Each team is eligible for one set of credits.
+  - question: What can the credits be used for?
+    answer: Credits can be applied to historical data from any Databento dataset.

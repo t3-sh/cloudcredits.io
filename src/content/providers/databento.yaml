@@ -1,0 +1,15 @@
+active: true
+name: Databento
+short_name: Databento
+slug: databento
+color: "#6165F0"
+url: https://databento.com
+intro: >-
+  Self-service market data platform offering historical and real-time datasets
+  across asset classes through flexible APIs.
+best_deal: $125 in free credits for new accounts
+video: ""
+tags:
+  - api
+  - data
+  - finance
