@@ -34,6 +34,17 @@ CloudCredits.io is powered by AI agents that continually surface official startu
 
 We welcome pull requests that add new verified programs, improve data quality, or enhance the site experience. Please review the [contribution guidelines](CONTRIBUTING.md) before submitting changes or opening issues. Roadmap ideas are also tracked on the public [2025 roadmap](https://cloudcredits.io/roadmap).
 
+### Hacktoberfest 2025
+
+CloudCredits.io is participating in [Hacktoberfest 2025](https://hacktoberfest.com)! If you want your contributions to count toward the event:
+
+- **Register on hacktoberfest.com between September 15 and October 31.** Registration is required before contributing.
+- **Open non-draft PRs between October 1 and October 31** against public, unarchived repositories. Draft PRs do not count toward the challenge.
+- **Aim for six accepted PRs/MRs.** For 2025, completions require six PRs that are merged, receive an overall approving review, or are labeled `hacktoberfest-accepted`. Each accepted PR levels up your official Holopin digital badge after the 7-day review window (which can extend into November).
+- **Avoid spammy PRs.** Submitting two or more spam or invalid PRs can disqualify you from the event.
+
+To make participation easier, maintainers highlight contributor-friendly tasks with the `hacktoberfest`, `good first issue`, and `help wanted` labels and keep the `hacktoberfest` topic on this repository throughout the event. When your PR is ready, we will merge it, leave an approving review, or add the `hacktoberfest-accepted` label so it counts toward your progress. If you need help getting started, join the [Discord](https://discord.gg/h5FYzCb6aa) and say hello!
+
 ## Local Development
 
 This project uses [Astro](https://astro.build/) and is managed with [pnpm](https://pnpm.io/).
