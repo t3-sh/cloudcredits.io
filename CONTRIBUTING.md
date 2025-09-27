@@ -4,6 +4,16 @@ Welcome! There are many ways to contribute—from writing code to adding program
 
 ---
 
+### Hacktoberfest Participation
+
+CloudCredits.io opts in to Hacktoberfest each year. To help contributions count:
+
+- Maintainers keep issues labeled with `hacktoberfest`, `good first issue`, and `help wanted` when they are ready for community pickup.
+- Reviewers merge qualifying work, leave an overall approving review, or apply the `hacktoberfest-accepted` label so your PR is accepted during the 7-day review window.
+- Please register at [hacktoberfest.com](https://hacktoberfest.com) before submitting October PRs, and avoid spammy or low-effort submissions—they will be marked `invalid` or `spam` per the event rules.
+
+---
+
 ### 1. Code Contributions
 
 - **Tech Stack**  
