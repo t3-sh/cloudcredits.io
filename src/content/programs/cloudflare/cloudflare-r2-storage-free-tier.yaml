@@ -1,0 +1,78 @@
+draft: false
+provider_slug: cloudflare
+title: Cloudflare R2 Storage Free Tier
+meta_title: Cloudflare R2 Storage Free Tier - 10 GB Free S3-Compatible Storage
+intro: >-
+  Cloudflare R2 Storage offers a permanently free allowance of S3-compatible
+  object storage, operations, and zero-egress data transfer so teams can test
+  and launch workloads without upfront spend.
+description: >-
+  The Cloudflare R2 Storage free tier provides 10 GB-month of Standard storage
+  each month along with 1 million Class A requests, 10 million Class B
+  requests, and free egress via the R2 S3 API. Based on published pricing, the
+  included operations and storage represent roughly $8.25 in monthly value
+  while letting builders prototype object storage-backed applications with
+  Cloudflare's global network and zero-egress architecture.
+status: Active
+tags:
+  - cloud
+  - data
+  - hosting
+  - serverless
+url: https://developers.cloudflare.com/r2/pricing/
+value_type: credits
+currency: USD
+max_value: 8.25
+date: 2025-10-09
+tiers:
+  - name: Always Free Allowance
+    intro: >-
+      Monthly quota of Cloudflare R2 Standard storage and API operations with
+      zero egress charges when accessed through the S3-compatible endpoints.
+    max_value: 8.25
+    url: https://developers.cloudflare.com/r2/pricing/
+    benefits:
+      - 10 GB-month of Standard storage every month
+      - 1 million Class A operations per month
+      - 10 million Class B operations per month
+      - Zero egress fees when transferring directly from R2, including via the S3 API
+    benefits_level: 1
+    duration:
+      - Ongoing monthly allocation
+    eligibility:
+      - Cloudflare account with R2 subscription enabled in the dashboard
+      - Compliance with Cloudflare R2 terms of service and acceptable use policies
+    effort_level: 1
+    steps_to_apply:
+      - name: Enable R2
+        description: >-
+          Sign in to the Cloudflare dashboard, purchase or enable R2, and follow
+          the getting started guide prerequisites.
+        action: Go to Dashboard
+        action_url: https://dash.cloudflare.com/?to=/:account/r2/overview
+      - name: Create an R2 bucket
+        description: >-
+          From the R2 overview page, select Create bucket, name it, and confirm
+          to provision storage.
+        action: Create Bucket
+        action_url: https://developers.cloudflare.com/r2/get-started/
+      - name: Upload your first object
+        description: >-
+          Open the new bucket, choose Upload, and add sample content to begin
+          using the free tier allocation.
+        action: Upload Object
+        action_url: https://developers.cloudflare.com/r2/get-started/
+faq:
+  - question: What usage is included in the Cloudflare R2 free tier?
+    answer: >-
+      The free tier covers 10 GB-month of Standard storage, 1 million Class A
+      operations, 10 million Class B operations, and free data transfer when
+      accessing R2 directly each month.
+  - question: Does the free tier apply to Infrequent Access storage?
+    answer: >-
+      No. The free allowances only cover the Standard storage class and do not
+      apply to the Infrequent Access tier.
+  - question: Are egress fees waived when using the R2 free tier?
+    answer: >-
+      Yes. Data transferred directly from R2 through the Workers API, S3 API, or
+      r2.dev domains does not incur egress charges.
