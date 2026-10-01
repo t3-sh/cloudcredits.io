@@ -1,31 +1,33 @@
 provider_slug: "aws"
 title: "AWS Activate"
 meta_title: "Get AWS Activate Credits - AWS Startups"
-intro: "Apply for up to $100,000 in AWS Activate credits and unlock access to our partners' tools and services."
-description: "AWS helps startups bring their ideas to life through AWS Activate. As you build and scale your business, Activate Credits grow with you to support your changing needs. If you're an AWS Activate member, you may be eligible for up to $100,000 in credits to help offset your AWS bill."
+intro: "Eligible startups can apply for up to $200,000 in AWS Activate Portfolio credits; self-funded founders start with $1,000."
+description: "AWS Activate offers promotional credits for eligible pre-Series B startups founded within the last 10 years with an AWS account on the Paid Tier Plan. Founders start with $1,000, with selected participants eligible for additional credits up to $5,000. Portfolio applicants need an Activate Provider Organization ID and may qualify for up to $200,000. Credit awards are subject to AWS approval."
+date: 2026-10-02
 status: "Active"
 tags: ["cloud"]
 url: "https://aws.amazon.com/startups/credits"
 value_type: "credits"
 currency: "USD"
 min_value: 1000
-max_value: 100000
+max_value: 200000
 
 tiers:
   - name: "Activate Founders"
     intro: "Start here if your startup is not yet associated with an Activate Provider"
-    max_value: 1000
+    max_value: 5000
     url: "https://aws.amazon.com/startups/credits"
     benefits:
-      - "$1,000 USD AWS Activate Credits"
+      - "Start with $1,000 USD; selected participants may qualify for additional credits up to $5,000"
       - "Eligible for usage on hundreds of AWS services"
-    benefits_level: 1
+    benefits_level: 2
     duration: []
     eligibility:
-      - "New to AWS Activate Credits"
-      - "Self-funded or pre-Series B (most recent funding round must be within the last 12 months, if applicable)"
+      - "New to Activate Credits or requesting more credits than previously received"
+      - "Self-funded and pre-Series B"
       - "Have a fully-functioning company website"
       - "Founded in the past 10 years"
+      - "AWS account on the Paid Tier Plan"
     effort_level: 1
     steps_to_apply:
       - name: "Create AWS Builder ID"
@@ -39,18 +41,19 @@ tiers:
 
   - name: "Activate Portfolio"
     intro: "Start here if your startup is associated with an Activate Provider"
-    max_value: 100000
+    max_value: 200000
     url: "https://aws.amazon.com/startups/credits"
     benefits:
-      - "Up to $100,000 USD AWS Activate Credits"
+      - "Up to $200,000 USD AWS Activate Credits, subject to approval"
       - "Eligible for usage on hundreds of AWS services"
-    benefits_level: 3
+    benefits_level: 4
     duration: []
     eligibility:
-      - "Have not previously received AWS Activate Credits of equal or greater value"
-      - "Self-funded or pre-Series B (most recent funding round must be within the last 12 months, if applicable)"
+      - "New to Activate Credits or requesting more credits than previously received"
+      - "Pre-Series B with an Organization ID from an Activate Provider"
       - "Have a fully-functioning company website"
       - "Founded in the past 10 years"
+      - "AWS account on the Paid Tier Plan"
     effort_level: 3
     steps_to_apply:
       - name: "Obtain Organization ID"
